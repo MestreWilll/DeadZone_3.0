@@ -8689,6 +8689,8 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.image75:setTop(0);
     obj.image75:setWidth(115);
     obj.image75:setHeight(115);
+    obj.image75:setCursor("handPoint");
+    obj.image75:setHitTest(true);
     obj.image75:setName("image75");
 
     obj.ItensComuns = GUI.fromHandle(_obj_newObject("image"));
@@ -9564,7 +9566,31 @@ local function constructNew_frmDZ_Ficha1_svg()
             			 self.FichaPrincipal.visible = false
         end, obj);
 
-    obj._e_event106 = obj.ItensComuns:addEventListener("onClick",
+    obj._e_event106 = obj.image75:addEventListener("onClick",
+        function (_)
+            if Firecast.getMesaDe(sheet).meuJogador.isMestre then
+                                    local PontosDeBusca = (sheet.PontosDeBusca or 0) +1;
+                                    if PontosDeBusca >= 0 then
+                                    sheet.PontosDeBusca = PontosDeBusca;
+                                                 else 
+                                        showMessage("OPA! Não pode passar de 0");   
+                                     end;		
+                                     end;
+        end, obj);
+
+    obj._e_event107 = obj.image75:addEventListener("onMenu",
+        function (_, x, y)
+            if Firecast.getMesaDe(sheet).meuJogador.isMestre then
+                                    local PontosDeBusca = (sheet.PontosDeBusca or 0) -1;
+                                    if PontosDeBusca >= 0 then
+                                    sheet.PontosDeBusca = PontosDeBusca;
+                                                 else 
+                                        showMessage("OPA! Não pode passar de 0");   
+                                     end;		
+                                     end;
+        end, obj);
+
+    obj._e_event108 = obj.ItensComuns:addEventListener("onClick",
         function (_)
             local PontosDeBusca = (sheet.PontosDeBusca or 0) -1;
             					 if PontosDeBusca >= 0 then
@@ -9574,7 +9600,7 @@ local function constructNew_frmDZ_Ficha1_svg()
             					  end;
         end, obj);
 
-    obj._e_event107 = obj.label81:addEventListener("onClick",
+    obj._e_event109 = obj.label81:addEventListener("onClick",
         function (_)
             if Firecast.getMesaDe(sheet).meuJogador.isMestre then
             				   dialogs.inputQuery("Pontos", "Insira a quantidade de pontos:", "",
@@ -9587,7 +9613,7 @@ local function constructNew_frmDZ_Ficha1_svg()
             			   end
         end, obj);
 
-    obj._e_event108 = obj.image76:addEventListener("onClick",
+    obj._e_event110 = obj.image76:addEventListener("onClick",
         function (_)
             if rrpg.getMesaDe(sheet).meuJogador.isMestre then
             	dialogs.inputQuery("Carteira do jogador", "Colocar dinheiro para jogador:", "",
@@ -9597,7 +9623,7 @@ local function constructNew_frmDZ_Ficha1_svg()
             	end;
         end, obj);
 
-    obj._e_event109 = obj.dataLink16:addEventListener("onChange",
+    obj._e_event111 = obj.dataLink16:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             function format_thousand(v)
             local s = string.format("%d", math.floor(v))
@@ -9611,7 +9637,7 @@ local function constructNew_frmDZ_Ficha1_svg()
             self.labSoma3.text = '$' .. format_thousand(sheet.soma);
         end, obj);
 
-    obj._e_event110 = obj.image77:addEventListener("onClick",
+    obj._e_event112 = obj.image77:addEventListener("onClick",
         function (_)
             if rrpg.getMesaDe(sheet).meuJogador.isMestre then
                         dialogs.inputQuery("Carteira", "Novo valor:", "",
@@ -9621,7 +9647,7 @@ local function constructNew_frmDZ_Ficha1_svg()
                         end;
         end, obj);
 
-    obj._e_event111 = obj.dataLink17:addEventListener("onChange",
+    obj._e_event113 = obj.dataLink17:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet.Nivel >= 1 then
             sheet.ItemNome = 'Arco'
@@ -10014,6 +10040,8 @@ local function constructNew_frmDZ_Ficha1_svg()
         end, obj);
 
     function obj:_releaseEvents()
+        __o_rrpgObjs.removeEventListenerById(self._e_event113);
+        __o_rrpgObjs.removeEventListenerById(self._e_event112);
         __o_rrpgObjs.removeEventListenerById(self._e_event111);
         __o_rrpgObjs.removeEventListenerById(self._e_event110);
         __o_rrpgObjs.removeEventListenerById(self._e_event109);

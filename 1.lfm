@@ -1555,8 +1555,30 @@
                 <!-- Aqui dentro fica todo o layout dos itens que serão rolados -->
                 <!-- Botao para click -->
                 <layout name="Botao" left="1193" top="703" width="200" height="200" >
-                    <image src="images/olho.png" left="10" top="0" width="115" height="115" />
-                    <image src="images/Botao.png" cursor="handPoint" hitTest="true" name="ItensComuns" left="0" top="100" width="130" height="30" >
+                    <image src="images/olho.png" left="10" top="0" width="115" height="115" cursor="handPoint" hitTest="true">
+                    <event name="onClick">
+                        if Firecast.getMesaDe(sheet).meuJogador.isMestre then
+                        local PontosDeBusca = (sheet.PontosDeBusca or 0) +1;
+                        if PontosDeBusca >= 0 then
+                        sheet.PontosDeBusca = PontosDeBusca;
+                                     else 
+                            showMessage("OPA! Não pode passar de 0");   
+                         end;		
+                         end;
+                    </event>
+                    <event name="onMenu">
+                        if Firecast.getMesaDe(sheet).meuJogador.isMestre then
+                        local PontosDeBusca = (sheet.PontosDeBusca or 0) -1;
+                        if PontosDeBusca >= 0 then
+                        sheet.PontosDeBusca = PontosDeBusca;
+                                     else 
+                            showMessage("OPA! Não pode passar de 0");   
+                         end;		
+                         end;
+
+                    </event>
+                    </image>
+                    <image src="images/Botao.png" cursor="handPoint" hitTest="true" name="ItensComuns" left="0" top="100" width="130" height="30">
                         <event name="onClick">
 					 local PontosDeBusca = (sheet.PontosDeBusca or 0) -1;
 					 if PontosDeBusca >= 0 then

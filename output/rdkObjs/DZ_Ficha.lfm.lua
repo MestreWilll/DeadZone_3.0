@@ -8708,6 +8708,8 @@ local function constructNew_frmDZ_Ficha()
     obj.image75:setTop(0);
     obj.image75:setWidth(115);
     obj.image75:setHeight(115);
+    obj.image75:setCursor("handPoint");
+    obj.image75:setHitTest(true);
     obj.image75:setName("image75");
 
     obj.ItensComuns = GUI.fromHandle(_obj_newObject("image"));
@@ -18390,7 +18392,31 @@ local function constructNew_frmDZ_Ficha()
             			 self.FichaPrincipal.visible = false
         end, obj);
 
-    obj._e_event106 = obj.ItensComuns:addEventListener("onClick",
+    obj._e_event106 = obj.image75:addEventListener("onClick",
+        function (_)
+            if Firecast.getMesaDe(sheet).meuJogador.isMestre then
+                                    local PontosDeBusca = (sheet.PontosDeBusca or 0) +1;
+                                    if PontosDeBusca >= 0 then
+                                    sheet.PontosDeBusca = PontosDeBusca;
+                                                 else 
+                                        showMessage("OPA! Não pode passar de 0");   
+                                     end;		
+                                     end;
+        end, obj);
+
+    obj._e_event107 = obj.image75:addEventListener("onMenu",
+        function (_, x, y)
+            if Firecast.getMesaDe(sheet).meuJogador.isMestre then
+                                    local PontosDeBusca = (sheet.PontosDeBusca or 0) -1;
+                                    if PontosDeBusca >= 0 then
+                                    sheet.PontosDeBusca = PontosDeBusca;
+                                                 else 
+                                        showMessage("OPA! Não pode passar de 0");   
+                                     end;		
+                                     end;
+        end, obj);
+
+    obj._e_event108 = obj.ItensComuns:addEventListener("onClick",
         function (_)
             local PontosDeBusca = (sheet.PontosDeBusca or 0) -1;
             					 if PontosDeBusca >= 0 then
@@ -18400,7 +18426,7 @@ local function constructNew_frmDZ_Ficha()
             					  end;
         end, obj);
 
-    obj._e_event107 = obj.label81:addEventListener("onClick",
+    obj._e_event109 = obj.label81:addEventListener("onClick",
         function (_)
             if Firecast.getMesaDe(sheet).meuJogador.isMestre then
             				   dialogs.inputQuery("Pontos", "Insira a quantidade de pontos:", "",
@@ -18413,7 +18439,7 @@ local function constructNew_frmDZ_Ficha()
             			   end
         end, obj);
 
-    obj._e_event108 = obj.image76:addEventListener("onClick",
+    obj._e_event110 = obj.image76:addEventListener("onClick",
         function (_)
             if rrpg.getMesaDe(sheet).meuJogador.isMestre then
             	dialogs.inputQuery("Carteira do jogador", "Colocar dinheiro para jogador:", "",
@@ -18423,7 +18449,7 @@ local function constructNew_frmDZ_Ficha()
             	end;
         end, obj);
 
-    obj._e_event109 = obj.dataLink16:addEventListener("onChange",
+    obj._e_event111 = obj.dataLink16:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             function format_thousand(v)
             local s = string.format("%d", math.floor(v))
@@ -18437,7 +18463,7 @@ local function constructNew_frmDZ_Ficha()
             self.labSoma3.text = '$' .. format_thousand(sheet.soma);
         end, obj);
 
-    obj._e_event110 = obj.image77:addEventListener("onClick",
+    obj._e_event112 = obj.image77:addEventListener("onClick",
         function (_)
             if rrpg.getMesaDe(sheet).meuJogador.isMestre then
                         dialogs.inputQuery("Carteira", "Novo valor:", "",
@@ -18447,7 +18473,7 @@ local function constructNew_frmDZ_Ficha()
                         end;
         end, obj);
 
-    obj._e_event111 = obj.dataLink17:addEventListener("onChange",
+    obj._e_event113 = obj.dataLink17:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet.Nivel >= 1 then
             sheet.ItemNome = 'Arco'
@@ -18839,30 +18865,30 @@ local function constructNew_frmDZ_Ficha()
                             end;
         end, obj);
 
-    obj._e_event112 = obj.button82:addEventListener("onClick",
+    obj._e_event114 = obj.button82:addEventListener("onClick",
         function (_)
             self.rclNote:append();
         end, obj);
 
-    obj._e_event113 = obj.image81:addEventListener("onClick",
+    obj._e_event115 = obj.image81:addEventListener("onClick",
         function (_)
             self.ApresentaLoja.visible = false;
                         self.LojaDeArmas.visible = true;
         end, obj);
 
-    obj._e_event114 = obj.image82:addEventListener("onClick",
+    obj._e_event116 = obj.image82:addEventListener("onClick",
         function (_)
             self.LojaCorpoACorpo.visible = true
                         self.ApresentaLoja.visible = false;
         end, obj);
 
-    obj._e_event115 = obj.image83:addEventListener("onClick",
+    obj._e_event117 = obj.image83:addEventListener("onClick",
         function (_)
             self.ApresentaLoja.visible = false;
                         self.LojaArmaduras.visible = true;
         end, obj);
 
-    obj._e_event116 = obj.button83:addEventListener("onClick",
+    obj._e_event118 = obj.button83:addEventListener("onClick",
         function (_)
             sheet.Preco = ''
                     sheet.ItemNome = ''
@@ -19090,7 +19116,7 @@ local function constructNew_frmDZ_Ficha()
             sheet.ImagemArma24 = ''
         end, obj);
 
-    obj._e_event117 = obj.button84:addEventListener("onClick",
+    obj._e_event119 = obj.button84:addEventListener("onClick",
         function (_)
             sheet.Preco = '1200'
             Iniciativa = '-2'
@@ -19350,7 +19376,7 @@ local function constructNew_frmDZ_Ficha()
             sheet.ItemNome23 = 'Submetralhadora'
         end, obj);
 
-    obj._e_event118 = obj.dataLink18:addEventListener("onChange",
+    obj._e_event120 = obj.dataLink18:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             function format_thousand(v)
                     local s = string.format("%d", math.floor(v))
@@ -19364,7 +19390,7 @@ local function constructNew_frmDZ_Ficha()
                       self.labSoma2.text = '$' .. format_thousand(sheet.soma);
         end, obj);
 
-    obj._e_event119 = obj.image85:addEventListener("onClick",
+    obj._e_event121 = obj.image85:addEventListener("onClick",
         function (_)
             if rrpg.getMesaDe(sheet).meuJogador.isMestre then
                         dialogs.inputQuery("Carteira", "Novo valor:", "",
@@ -19374,13 +19400,13 @@ local function constructNew_frmDZ_Ficha()
                         end;
         end, obj);
 
-    obj._e_event120 = obj.image86:addEventListener("onClick",
+    obj._e_event122 = obj.image86:addEventListener("onClick",
         function (_)
             self.LojaDeArmas.visible = false;
                         self.ApresentaLoja.visible = true;
         end, obj);
 
-    obj._e_event121 = obj.label85:addEventListener("onClick",
+    obj._e_event123 = obj.label85:addEventListener("onClick",
         function (_)
             if rrpg.getMesaDe(sheet).meuJogador.isMestre then
             			dialogs.inputQuery("Carteira", "Novo valor:", "",
@@ -19390,7 +19416,7 @@ local function constructNew_frmDZ_Ficha()
             			end;
         end, obj);
 
-    obj._e_event122 = obj.image88:addEventListener("onClick",
+    obj._e_event124 = obj.image88:addEventListener("onClick",
         function (_)
             local Soma = (sheet.Soma or 0) -1200;
             						         if Soma >= 0 then
@@ -19404,7 +19430,7 @@ local function constructNew_frmDZ_Ficha()
             		end;
         end, obj);
 
-    obj._e_event123 = obj.label93:addEventListener("onClick",
+    obj._e_event125 = obj.label93:addEventListener("onClick",
         function (_)
             if rrpg.getMesaDe(sheet).meuJogador.isMestre then
             			dialogs.inputQuery("Carteira", "Novo valor:", "",
@@ -19414,7 +19440,7 @@ local function constructNew_frmDZ_Ficha()
             			end;
         end, obj);
 
-    obj._e_event124 = obj.image91:addEventListener("onClick",
+    obj._e_event126 = obj.image91:addEventListener("onClick",
         function (_)
             local Soma = (sheet.Soma or 0) -1200;
             						         if Soma >= 0 then
@@ -19428,7 +19454,7 @@ local function constructNew_frmDZ_Ficha()
             		end;
         end, obj);
 
-    obj._e_event125 = obj.label101:addEventListener("onClick",
+    obj._e_event127 = obj.label101:addEventListener("onClick",
         function (_)
             if rrpg.getMesaDe(sheet).meuJogador.isMestre then
             			dialogs.inputQuery("Carteira", "Novo valor:", "",
@@ -19438,7 +19464,7 @@ local function constructNew_frmDZ_Ficha()
             			end;
         end, obj);
 
-    obj._e_event126 = obj.image94:addEventListener("onClick",
+    obj._e_event128 = obj.image94:addEventListener("onClick",
         function (_)
             local Soma = (sheet.Soma or 0) -1200;
             						         if Soma >= 0 then
@@ -19452,7 +19478,7 @@ local function constructNew_frmDZ_Ficha()
             		end;
         end, obj);
 
-    obj._e_event127 = obj.label109:addEventListener("onClick",
+    obj._e_event129 = obj.label109:addEventListener("onClick",
         function (_)
             if rrpg.getMesaDe(sheet).meuJogador.isMestre then
             			dialogs.inputQuery("Carteira", "Novo valor:", "",
@@ -19462,7 +19488,7 @@ local function constructNew_frmDZ_Ficha()
             			end;
         end, obj);
 
-    obj._e_event128 = obj.image97:addEventListener("onClick",
+    obj._e_event130 = obj.image97:addEventListener("onClick",
         function (_)
             local Soma = (sheet.Soma or 0) -1200;
             						         if Soma >= 0 then
@@ -19476,7 +19502,7 @@ local function constructNew_frmDZ_Ficha()
             		end;
         end, obj);
 
-    obj._e_event129 = obj.label117:addEventListener("onClick",
+    obj._e_event131 = obj.label117:addEventListener("onClick",
         function (_)
             if rrpg.getMesaDe(sheet).meuJogador.isMestre then
             			dialogs.inputQuery("Carteira", "Novo valor:", "",
@@ -19486,7 +19512,7 @@ local function constructNew_frmDZ_Ficha()
             			end;
         end, obj);
 
-    obj._e_event130 = obj.image100:addEventListener("onClick",
+    obj._e_event132 = obj.image100:addEventListener("onClick",
         function (_)
             local Soma = (sheet.Soma or 0) -1200;
             						         if Soma >= 0 then
@@ -19500,7 +19526,7 @@ local function constructNew_frmDZ_Ficha()
             		end;
         end, obj);
 
-    obj._e_event131 = obj.label125:addEventListener("onClick",
+    obj._e_event133 = obj.label125:addEventListener("onClick",
         function (_)
             if rrpg.getMesaDe(sheet).meuJogador.isMestre then
             			dialogs.inputQuery("Carteira", "Novo valor:", "",
@@ -19510,7 +19536,7 @@ local function constructNew_frmDZ_Ficha()
             			end;
         end, obj);
 
-    obj._e_event132 = obj.image103:addEventListener("onClick",
+    obj._e_event134 = obj.image103:addEventListener("onClick",
         function (_)
             local Soma = (sheet.Soma or 0) -1200;
             						         if Soma >= 0 then
@@ -19524,7 +19550,7 @@ local function constructNew_frmDZ_Ficha()
             		end;
         end, obj);
 
-    obj._e_event133 = obj.label133:addEventListener("onClick",
+    obj._e_event135 = obj.label133:addEventListener("onClick",
         function (_)
             if rrpg.getMesaDe(sheet).meuJogador.isMestre then
             			dialogs.inputQuery("Carteira", "Novo valor:", "",
@@ -19534,7 +19560,7 @@ local function constructNew_frmDZ_Ficha()
             			end;
         end, obj);
 
-    obj._e_event134 = obj.image106:addEventListener("onClick",
+    obj._e_event136 = obj.image106:addEventListener("onClick",
         function (_)
             local Soma = (sheet.Soma or 0) -1200;
             						         if Soma >= 0 then
@@ -19548,7 +19574,7 @@ local function constructNew_frmDZ_Ficha()
             		end;
         end, obj);
 
-    obj._e_event135 = obj.label141:addEventListener("onClick",
+    obj._e_event137 = obj.label141:addEventListener("onClick",
         function (_)
             if rrpg.getMesaDe(sheet).meuJogador.isMestre then
             			dialogs.inputQuery("Carteira", "Novo valor:", "",
@@ -19558,7 +19584,7 @@ local function constructNew_frmDZ_Ficha()
             			end;
         end, obj);
 
-    obj._e_event136 = obj.image109:addEventListener("onClick",
+    obj._e_event138 = obj.image109:addEventListener("onClick",
         function (_)
             local Soma = (sheet.Soma or 0) -1200;
             						         if Soma >= 0 then
@@ -19572,7 +19598,7 @@ local function constructNew_frmDZ_Ficha()
             		end;
         end, obj);
 
-    obj._e_event137 = obj.label149:addEventListener("onClick",
+    obj._e_event139 = obj.label149:addEventListener("onClick",
         function (_)
             if rrpg.getMesaDe(sheet).meuJogador.isMestre then
             			dialogs.inputQuery("Carteira", "Novo valor:", "",
@@ -19582,7 +19608,7 @@ local function constructNew_frmDZ_Ficha()
             			end;
         end, obj);
 
-    obj._e_event138 = obj.image112:addEventListener("onClick",
+    obj._e_event140 = obj.image112:addEventListener("onClick",
         function (_)
             local Soma = (sheet.Soma or 0) -1200;
             						         if Soma >= 0 then
@@ -19596,7 +19622,7 @@ local function constructNew_frmDZ_Ficha()
             		end;
         end, obj);
 
-    obj._e_event139 = obj.label157:addEventListener("onClick",
+    obj._e_event141 = obj.label157:addEventListener("onClick",
         function (_)
             if rrpg.getMesaDe(sheet).meuJogador.isMestre then
             			dialogs.inputQuery("Carteira", "Novo valor:", "",
@@ -19606,7 +19632,7 @@ local function constructNew_frmDZ_Ficha()
             			end;
         end, obj);
 
-    obj._e_event140 = obj.image115:addEventListener("onClick",
+    obj._e_event142 = obj.image115:addEventListener("onClick",
         function (_)
             local Soma = (sheet.Soma or 0) -1200;
             						         if Soma >= 0 then
@@ -19620,7 +19646,7 @@ local function constructNew_frmDZ_Ficha()
             		end;
         end, obj);
 
-    obj._e_event141 = obj.label166:addEventListener("onClick",
+    obj._e_event143 = obj.label166:addEventListener("onClick",
         function (_)
             if rrpg.getMesaDe(sheet).meuJogador.isMestre then
             			dialogs.inputQuery("Carteira", "Novo valor:", "",
@@ -19630,7 +19656,7 @@ local function constructNew_frmDZ_Ficha()
             			end;
         end, obj);
 
-    obj._e_event142 = obj.image118:addEventListener("onClick",
+    obj._e_event144 = obj.image118:addEventListener("onClick",
         function (_)
             local Soma = (sheet.Soma or 0) -1200;
             						         if Soma >= 0 then
@@ -19644,7 +19670,7 @@ local function constructNew_frmDZ_Ficha()
             		end;
         end, obj);
 
-    obj._e_event143 = obj.label174:addEventListener("onClick",
+    obj._e_event145 = obj.label174:addEventListener("onClick",
         function (_)
             if rrpg.getMesaDe(sheet).meuJogador.isMestre then
             			dialogs.inputQuery("Carteira", "Novo valor:", "",
@@ -19654,7 +19680,7 @@ local function constructNew_frmDZ_Ficha()
             			end;
         end, obj);
 
-    obj._e_event144 = obj.image121:addEventListener("onClick",
+    obj._e_event146 = obj.image121:addEventListener("onClick",
         function (_)
             local Soma = (sheet.Soma or 0) -1200;
             						         if Soma >= 0 then
@@ -19668,7 +19694,7 @@ local function constructNew_frmDZ_Ficha()
             		end;
         end, obj);
 
-    obj._e_event145 = obj.label182:addEventListener("onClick",
+    obj._e_event147 = obj.label182:addEventListener("onClick",
         function (_)
             if rrpg.getMesaDe(sheet).meuJogador.isMestre then
             			dialogs.inputQuery("Carteira", "Novo valor:", "",
@@ -19678,7 +19704,7 @@ local function constructNew_frmDZ_Ficha()
             			end;
         end, obj);
 
-    obj._e_event146 = obj.image124:addEventListener("onClick",
+    obj._e_event148 = obj.image124:addEventListener("onClick",
         function (_)
             local Soma = (sheet.Soma or 0) -1200;
             						         if Soma >= 0 then
@@ -19692,7 +19718,7 @@ local function constructNew_frmDZ_Ficha()
             		end;
         end, obj);
 
-    obj._e_event147 = obj.label190:addEventListener("onClick",
+    obj._e_event149 = obj.label190:addEventListener("onClick",
         function (_)
             if rrpg.getMesaDe(sheet).meuJogador.isMestre then
             			dialogs.inputQuery("Carteira", "Novo valor:", "",
@@ -19702,7 +19728,7 @@ local function constructNew_frmDZ_Ficha()
             			end;
         end, obj);
 
-    obj._e_event148 = obj.image127:addEventListener("onClick",
+    obj._e_event150 = obj.image127:addEventListener("onClick",
         function (_)
             local Soma = (sheet.Soma or 0) -1200;
             						         if Soma >= 0 then
@@ -19716,7 +19742,7 @@ local function constructNew_frmDZ_Ficha()
             		end;
         end, obj);
 
-    obj._e_event149 = obj.label198:addEventListener("onClick",
+    obj._e_event151 = obj.label198:addEventListener("onClick",
         function (_)
             if rrpg.getMesaDe(sheet).meuJogador.isMestre then
             			dialogs.inputQuery("Carteira", "Novo valor:", "",
@@ -19726,7 +19752,7 @@ local function constructNew_frmDZ_Ficha()
             			end;
         end, obj);
 
-    obj._e_event150 = obj.image130:addEventListener("onClick",
+    obj._e_event152 = obj.image130:addEventListener("onClick",
         function (_)
             local Soma = (sheet.Soma or 0) -1200;
             						         if Soma >= 0 then
@@ -19740,7 +19766,7 @@ local function constructNew_frmDZ_Ficha()
             		end;
         end, obj);
 
-    obj._e_event151 = obj.label206:addEventListener("onClick",
+    obj._e_event153 = obj.label206:addEventListener("onClick",
         function (_)
             if rrpg.getMesaDe(sheet).meuJogador.isMestre then
             			dialogs.inputQuery("Carteira", "Novo valor:", "",
@@ -19750,7 +19776,7 @@ local function constructNew_frmDZ_Ficha()
             			end;
         end, obj);
 
-    obj._e_event152 = obj.image133:addEventListener("onClick",
+    obj._e_event154 = obj.image133:addEventListener("onClick",
         function (_)
             local Soma = (sheet.Soma or 0) -1200;
             						         if Soma >= 0 then
@@ -19764,7 +19790,7 @@ local function constructNew_frmDZ_Ficha()
             		end;
         end, obj);
 
-    obj._e_event153 = obj.label214:addEventListener("onClick",
+    obj._e_event155 = obj.label214:addEventListener("onClick",
         function (_)
             if rrpg.getMesaDe(sheet).meuJogador.isMestre then
             			dialogs.inputQuery("Carteira", "Novo valor:", "",
@@ -19774,7 +19800,7 @@ local function constructNew_frmDZ_Ficha()
             			end;
         end, obj);
 
-    obj._e_event154 = obj.image136:addEventListener("onClick",
+    obj._e_event156 = obj.image136:addEventListener("onClick",
         function (_)
             local Soma = (sheet.Soma or 0) -1200;
             						         if Soma >= 0 then
@@ -19788,7 +19814,7 @@ local function constructNew_frmDZ_Ficha()
             		end;
         end, obj);
 
-    obj._e_event155 = obj.label222:addEventListener("onClick",
+    obj._e_event157 = obj.label222:addEventListener("onClick",
         function (_)
             if rrpg.getMesaDe(sheet).meuJogador.isMestre then
             			dialogs.inputQuery("Carteira", "Novo valor:", "",
@@ -19798,7 +19824,7 @@ local function constructNew_frmDZ_Ficha()
             			end;
         end, obj);
 
-    obj._e_event156 = obj.image139:addEventListener("onClick",
+    obj._e_event158 = obj.image139:addEventListener("onClick",
         function (_)
             local Soma = (sheet.Soma or 0) -1200;
             						         if Soma >= 0 then
@@ -19812,7 +19838,7 @@ local function constructNew_frmDZ_Ficha()
             		end;
         end, obj);
 
-    obj._e_event157 = obj.label230:addEventListener("onClick",
+    obj._e_event159 = obj.label230:addEventListener("onClick",
         function (_)
             if rrpg.getMesaDe(sheet).meuJogador.isMestre then
             			dialogs.inputQuery("Carteira", "Novo valor:", "",
@@ -19822,7 +19848,7 @@ local function constructNew_frmDZ_Ficha()
             			end;
         end, obj);
 
-    obj._e_event158 = obj.image142:addEventListener("onClick",
+    obj._e_event160 = obj.image142:addEventListener("onClick",
         function (_)
             local Soma = (sheet.Soma or 0) -1200;
             						         if Soma >= 0 then
@@ -19836,7 +19862,7 @@ local function constructNew_frmDZ_Ficha()
             		end;
         end, obj);
 
-    obj._e_event159 = obj.label238:addEventListener("onClick",
+    obj._e_event161 = obj.label238:addEventListener("onClick",
         function (_)
             if rrpg.getMesaDe(sheet).meuJogador.isMestre then
             			dialogs.inputQuery("Carteira", "Novo valor:", "",
@@ -19846,7 +19872,7 @@ local function constructNew_frmDZ_Ficha()
             			end;
         end, obj);
 
-    obj._e_event160 = obj.image145:addEventListener("onClick",
+    obj._e_event162 = obj.image145:addEventListener("onClick",
         function (_)
             local Soma = (sheet.Soma or 0) -1200;
             						         if Soma >= 0 then
@@ -19860,7 +19886,7 @@ local function constructNew_frmDZ_Ficha()
             		end;
         end, obj);
 
-    obj._e_event161 = obj.label246:addEventListener("onClick",
+    obj._e_event163 = obj.label246:addEventListener("onClick",
         function (_)
             if rrpg.getMesaDe(sheet).meuJogador.isMestre then
             			dialogs.inputQuery("Carteira", "Novo valor:", "",
@@ -19870,7 +19896,7 @@ local function constructNew_frmDZ_Ficha()
             			end;
         end, obj);
 
-    obj._e_event162 = obj.image148:addEventListener("onClick",
+    obj._e_event164 = obj.image148:addEventListener("onClick",
         function (_)
             local Soma = (sheet.Soma or 0) -1200;
             						         if Soma >= 0 then
@@ -19884,7 +19910,7 @@ local function constructNew_frmDZ_Ficha()
             		end;
         end, obj);
 
-    obj._e_event163 = obj.label254:addEventListener("onClick",
+    obj._e_event165 = obj.label254:addEventListener("onClick",
         function (_)
             if rrpg.getMesaDe(sheet).meuJogador.isMestre then
             			dialogs.inputQuery("Carteira", "Novo valor:", "",
@@ -19894,7 +19920,7 @@ local function constructNew_frmDZ_Ficha()
             			end;
         end, obj);
 
-    obj._e_event164 = obj.image151:addEventListener("onClick",
+    obj._e_event166 = obj.image151:addEventListener("onClick",
         function (_)
             local Soma = (sheet.Soma or 0) -1200;
             						         if Soma >= 0 then
@@ -19908,7 +19934,7 @@ local function constructNew_frmDZ_Ficha()
             		end;
         end, obj);
 
-    obj._e_event165 = obj.label262:addEventListener("onClick",
+    obj._e_event167 = obj.label262:addEventListener("onClick",
         function (_)
             if rrpg.getMesaDe(sheet).meuJogador.isMestre then
             			dialogs.inputQuery("Carteira", "Novo valor:", "",
@@ -19918,7 +19944,7 @@ local function constructNew_frmDZ_Ficha()
             			end;
         end, obj);
 
-    obj._e_event166 = obj.image154:addEventListener("onClick",
+    obj._e_event168 = obj.image154:addEventListener("onClick",
         function (_)
             local Soma = (sheet.Soma or 0) -1200;
             						         if Soma >= 0 then
@@ -19932,7 +19958,7 @@ local function constructNew_frmDZ_Ficha()
             		end;
         end, obj);
 
-    obj._e_event167 = obj.label270:addEventListener("onClick",
+    obj._e_event169 = obj.label270:addEventListener("onClick",
         function (_)
             if rrpg.getMesaDe(sheet).meuJogador.isMestre then
             			dialogs.inputQuery("Carteira", "Novo valor:", "",
@@ -19942,7 +19968,7 @@ local function constructNew_frmDZ_Ficha()
             			end;
         end, obj);
 
-    obj._e_event168 = obj.image157:addEventListener("onClick",
+    obj._e_event170 = obj.image157:addEventListener("onClick",
         function (_)
             local Soma = (sheet.Soma or 0) -1200;
             						         if Soma >= 0 then
@@ -19956,7 +19982,7 @@ local function constructNew_frmDZ_Ficha()
             		end;
         end, obj);
 
-    obj._e_event169 = obj.button85:addEventListener("onClick",
+    obj._e_event171 = obj.button85:addEventListener("onClick",
         function (_)
             sheet.ItemNome25 = ''
                 sheet.Iniciativa25 = ''
@@ -20092,7 +20118,7 @@ local function constructNew_frmDZ_Ficha()
                 sheet.CD43 = ''
         end, obj);
 
-    obj._e_event170 = obj.button86:addEventListener("onClick",
+    obj._e_event172 = obj.button86:addEventListener("onClick",
         function (_)
             sheet.Preco25 = '1200'
                         sheet.ImagemArma25 = 'https://montblancbr.vteximg.com.br/arquivos/ids/161838-490-490/10883_1.jpg?v=637511754991900000'
@@ -20106,7 +20132,7 @@ local function constructNew_frmDZ_Ficha()
                         sheet.Preco25 = '1200'
         end, obj);
 
-    obj._e_event171 = obj.dataLink19:addEventListener("onChange",
+    obj._e_event173 = obj.dataLink19:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             function format_thousand(v)
                 local s = string.format("%d", math.floor(v))
@@ -20120,7 +20146,7 @@ local function constructNew_frmDZ_Ficha()
                   self.labSoma4.text = '$' .. format_thousand(sheet.soma);
         end, obj);
 
-    obj._e_event172 = obj.image160:addEventListener("onClick",
+    obj._e_event174 = obj.image160:addEventListener("onClick",
         function (_)
             if rrpg.getMesaDe(sheet).meuJogador.isMestre then
                                 dialogs.inputQuery("Carteira", "Novo valor:", "",
@@ -20130,13 +20156,13 @@ local function constructNew_frmDZ_Ficha()
                                 end;
         end, obj);
 
-    obj._e_event173 = obj.image161:addEventListener("onClick",
+    obj._e_event175 = obj.image161:addEventListener("onClick",
         function (_)
             self.LojaCorpoACorpo.visible = false;
                     self.ApresentaLoja.visible = true;
         end, obj);
 
-    obj._e_event174 = obj.label278:addEventListener("onClick",
+    obj._e_event176 = obj.label278:addEventListener("onClick",
         function (_)
             if rrpg.getMesaDe(sheet).meuJogador.isMestre then
                 dialogs.inputQuery("Carteira", "Novo valor:", "",
@@ -20146,7 +20172,7 @@ local function constructNew_frmDZ_Ficha()
                 end;
         end, obj);
 
-    obj._e_event175 = obj.Arma25:addEventListener("onClick",
+    obj._e_event177 = obj.Arma25:addEventListener("onClick",
         function (_)
             local Soma = (sheet.Soma or 0) -1200;
                                if Soma >= 0 then
@@ -20159,7 +20185,7 @@ local function constructNew_frmDZ_Ficha()
               end;
         end, obj);
 
-    obj._e_event176 = obj.label285:addEventListener("onClick",
+    obj._e_event178 = obj.label285:addEventListener("onClick",
         function (_)
             if rrpg.getMesaDe(sheet).meuJogador.isMestre then
                         dialogs.inputQuery("Carteira", "Novo valor:", "",
@@ -20169,7 +20195,7 @@ local function constructNew_frmDZ_Ficha()
                         end;
         end, obj);
 
-    obj._e_event177 = obj.Arma26:addEventListener("onClick",
+    obj._e_event179 = obj.Arma26:addEventListener("onClick",
         function (_)
             local Soma = (sheet.Soma or 0) -1200;
                                        if Soma >= 0 then
@@ -20182,7 +20208,7 @@ local function constructNew_frmDZ_Ficha()
                       end;
         end, obj);
 
-    obj._e_event178 = obj.label292:addEventListener("onClick",
+    obj._e_event180 = obj.label292:addEventListener("onClick",
         function (_)
             if rrpg.getMesaDe(sheet).meuJogador.isMestre then
                 dialogs.inputQuery("Carteira", "Novo valor:", "",
@@ -20192,7 +20218,7 @@ local function constructNew_frmDZ_Ficha()
                 end;
         end, obj);
 
-    obj._e_event179 = obj.Arma27:addEventListener("onClick",
+    obj._e_event181 = obj.Arma27:addEventListener("onClick",
         function (_)
             local Soma = (sheet.Soma or 0) -1200;
                                if Soma >= 0 then
@@ -20205,7 +20231,7 @@ local function constructNew_frmDZ_Ficha()
               end;
         end, obj);
 
-    obj._e_event180 = obj.label299:addEventListener("onClick",
+    obj._e_event182 = obj.label299:addEventListener("onClick",
         function (_)
             if rrpg.getMesaDe(sheet).meuJogador.isMestre then
                 dialogs.inputQuery("Carteira", "Novo valor:", "",
@@ -20215,7 +20241,7 @@ local function constructNew_frmDZ_Ficha()
                 end;
         end, obj);
 
-    obj._e_event181 = obj.Arma28:addEventListener("onClick",
+    obj._e_event183 = obj.Arma28:addEventListener("onClick",
         function (_)
             local Soma = (sheet.Soma or 0) -1200;
                                if Soma >= 0 then
@@ -20228,7 +20254,7 @@ local function constructNew_frmDZ_Ficha()
               end;
         end, obj);
 
-    obj._e_event182 = obj.label306:addEventListener("onClick",
+    obj._e_event184 = obj.label306:addEventListener("onClick",
         function (_)
             if rrpg.getMesaDe(sheet).meuJogador.isMestre then
                 dialogs.inputQuery("Carteira", "Novo valor:", "",
@@ -20238,7 +20264,7 @@ local function constructNew_frmDZ_Ficha()
                 end;
         end, obj);
 
-    obj._e_event183 = obj.Arma29:addEventListener("onClick",
+    obj._e_event185 = obj.Arma29:addEventListener("onClick",
         function (_)
             local Soma = (sheet.Soma or 0) -1200;
                                if Soma >= 0 then
@@ -20251,7 +20277,7 @@ local function constructNew_frmDZ_Ficha()
               end;
         end, obj);
 
-    obj._e_event184 = obj.label313:addEventListener("onClick",
+    obj._e_event186 = obj.label313:addEventListener("onClick",
         function (_)
             if rrpg.getMesaDe(sheet).meuJogador.isMestre then
                 dialogs.inputQuery("Carteira", "Novo valor:", "",
@@ -20261,7 +20287,7 @@ local function constructNew_frmDZ_Ficha()
                 end;
         end, obj);
 
-    obj._e_event185 = obj.Arma30:addEventListener("onClick",
+    obj._e_event187 = obj.Arma30:addEventListener("onClick",
         function (_)
             local Soma = (sheet.Soma or 0) -1200;
                                if Soma >= 0 then
@@ -20274,7 +20300,7 @@ local function constructNew_frmDZ_Ficha()
               end;
         end, obj);
 
-    obj._e_event186 = obj.label320:addEventListener("onClick",
+    obj._e_event188 = obj.label320:addEventListener("onClick",
         function (_)
             if rrpg.getMesaDe(sheet).meuJogador.isMestre then
                 dialogs.inputQuery("Carteira", "Novo valor:", "",
@@ -20284,7 +20310,7 @@ local function constructNew_frmDZ_Ficha()
                 end;
         end, obj);
 
-    obj._e_event187 = obj.Arma31:addEventListener("onClick",
+    obj._e_event189 = obj.Arma31:addEventListener("onClick",
         function (_)
             local Soma = (sheet.Soma or 0) -1200;
                                if Soma >= 0 then
@@ -20297,7 +20323,7 @@ local function constructNew_frmDZ_Ficha()
               end;
         end, obj);
 
-    obj._e_event188 = obj.label327:addEventListener("onClick",
+    obj._e_event190 = obj.label327:addEventListener("onClick",
         function (_)
             if rrpg.getMesaDe(sheet).meuJogador.isMestre then
                 dialogs.inputQuery("Carteira", "Novo valor:", "",
@@ -20307,7 +20333,7 @@ local function constructNew_frmDZ_Ficha()
                 end;
         end, obj);
 
-    obj._e_event189 = obj.Arma32:addEventListener("onClick",
+    obj._e_event191 = obj.Arma32:addEventListener("onClick",
         function (_)
             local Soma = (sheet.Soma or 0) -1200;
                                if Soma >= 0 then
@@ -20320,7 +20346,7 @@ local function constructNew_frmDZ_Ficha()
               end;
         end, obj);
 
-    obj._e_event190 = obj.label334:addEventListener("onClick",
+    obj._e_event192 = obj.label334:addEventListener("onClick",
         function (_)
             if rrpg.getMesaDe(sheet).meuJogador.isMestre then
                 dialogs.inputQuery("Carteira", "Novo valor:", "",
@@ -20330,7 +20356,7 @@ local function constructNew_frmDZ_Ficha()
                 end;
         end, obj);
 
-    obj._e_event191 = obj.Arma33:addEventListener("onClick",
+    obj._e_event193 = obj.Arma33:addEventListener("onClick",
         function (_)
             local Soma = (sheet.Soma or 0) -1200;
                                if Soma >= 0 then
@@ -20343,7 +20369,7 @@ local function constructNew_frmDZ_Ficha()
               end;
         end, obj);
 
-    obj._e_event192 = obj.label341:addEventListener("onClick",
+    obj._e_event194 = obj.label341:addEventListener("onClick",
         function (_)
             if rrpg.getMesaDe(sheet).meuJogador.isMestre then
                 dialogs.inputQuery("Carteira", "Novo valor:", "",
@@ -20353,7 +20379,7 @@ local function constructNew_frmDZ_Ficha()
                 end;
         end, obj);
 
-    obj._e_event193 = obj.Arma34:addEventListener("onClick",
+    obj._e_event195 = obj.Arma34:addEventListener("onClick",
         function (_)
             local Soma = (sheet.Soma or 0) -1200;
                                if Soma >= 0 then
@@ -20366,7 +20392,7 @@ local function constructNew_frmDZ_Ficha()
               end;
         end, obj);
 
-    obj._e_event194 = obj.label348:addEventListener("onClick",
+    obj._e_event196 = obj.label348:addEventListener("onClick",
         function (_)
             if rrpg.getMesaDe(sheet).meuJogador.isMestre then
                 dialogs.inputQuery("Carteira", "Novo valor:", "",
@@ -20376,7 +20402,7 @@ local function constructNew_frmDZ_Ficha()
                 end;
         end, obj);
 
-    obj._e_event195 = obj.Arma35:addEventListener("onClick",
+    obj._e_event197 = obj.Arma35:addEventListener("onClick",
         function (_)
             local Soma = (sheet.Soma or 0) -1200;
                                if Soma >= 0 then
@@ -20389,7 +20415,7 @@ local function constructNew_frmDZ_Ficha()
               end;
         end, obj);
 
-    obj._e_event196 = obj.label355:addEventListener("onClick",
+    obj._e_event198 = obj.label355:addEventListener("onClick",
         function (_)
             if rrpg.getMesaDe(sheet).meuJogador.isMestre then
                 dialogs.inputQuery("Carteira", "Novo valor:", "",
@@ -20399,7 +20425,7 @@ local function constructNew_frmDZ_Ficha()
                 end;
         end, obj);
 
-    obj._e_event197 = obj.Arma36:addEventListener("onClick",
+    obj._e_event199 = obj.Arma36:addEventListener("onClick",
         function (_)
             local Soma = (sheet.Soma or 0) -1200;
                                if Soma >= 0 then
@@ -20412,7 +20438,7 @@ local function constructNew_frmDZ_Ficha()
               end;
         end, obj);
 
-    obj._e_event198 = obj.label362:addEventListener("onClick",
+    obj._e_event200 = obj.label362:addEventListener("onClick",
         function (_)
             if rrpg.getMesaDe(sheet).meuJogador.isMestre then
                 dialogs.inputQuery("Carteira", "Novo valor:", "",
@@ -20422,7 +20448,7 @@ local function constructNew_frmDZ_Ficha()
                 end;
         end, obj);
 
-    obj._e_event199 = obj.Arma37:addEventListener("onClick",
+    obj._e_event201 = obj.Arma37:addEventListener("onClick",
         function (_)
             local Soma = (sheet.Soma or 0) -1200;
                                if Soma >= 0 then
@@ -20435,7 +20461,7 @@ local function constructNew_frmDZ_Ficha()
               end;
         end, obj);
 
-    obj._e_event200 = obj.label369:addEventListener("onClick",
+    obj._e_event202 = obj.label369:addEventListener("onClick",
         function (_)
             if rrpg.getMesaDe(sheet).meuJogador.isMestre then
                       dialogs.inputQuery("Carteira", "Novo valor:", "",
@@ -20445,7 +20471,7 @@ local function constructNew_frmDZ_Ficha()
                       end;
         end, obj);
 
-    obj._e_event201 = obj.Arma38:addEventListener("onClick",
+    obj._e_event203 = obj.Arma38:addEventListener("onClick",
         function (_)
             local Soma = (sheet.Soma or 0) -1200;
                                      if Soma >= 0 then
@@ -20458,7 +20484,7 @@ local function constructNew_frmDZ_Ficha()
                     end;
         end, obj);
 
-    obj._e_event202 = obj.label376:addEventListener("onClick",
+    obj._e_event204 = obj.label376:addEventListener("onClick",
         function (_)
             if rrpg.getMesaDe(sheet).meuJogador.isMestre then
                       dialogs.inputQuery("Carteira", "Novo valor:", "",
@@ -20468,7 +20494,7 @@ local function constructNew_frmDZ_Ficha()
                       end;
         end, obj);
 
-    obj._e_event203 = obj.Arma39:addEventListener("onClick",
+    obj._e_event205 = obj.Arma39:addEventListener("onClick",
         function (_)
             local Soma = (sheet.Soma or 0) -1200;
                                      if Soma >= 0 then
@@ -20481,7 +20507,7 @@ local function constructNew_frmDZ_Ficha()
                     end;
         end, obj);
 
-    obj._e_event204 = obj.label383:addEventListener("onClick",
+    obj._e_event206 = obj.label383:addEventListener("onClick",
         function (_)
             if rrpg.getMesaDe(sheet).meuJogador.isMestre then
                         dialogs.inputQuery("Carteira", "Novo valor:", "",
@@ -20491,7 +20517,7 @@ local function constructNew_frmDZ_Ficha()
                         end;
         end, obj);
 
-    obj._e_event205 = obj.Arma40:addEventListener("onClick",
+    obj._e_event207 = obj.Arma40:addEventListener("onClick",
         function (_)
             local Soma = (sheet.Soma or 0) -1200;
                                        if Soma >= 0 then
@@ -20504,7 +20530,7 @@ local function constructNew_frmDZ_Ficha()
                       end;
         end, obj);
 
-    obj._e_event206 = obj.label390:addEventListener("onClick",
+    obj._e_event208 = obj.label390:addEventListener("onClick",
         function (_)
             if rrpg.getMesaDe(sheet).meuJogador.isMestre then
                 dialogs.inputQuery("Carteira", "Novo valor:", "",
@@ -20514,7 +20540,7 @@ local function constructNew_frmDZ_Ficha()
                 end;
         end, obj);
 
-    obj._e_event207 = obj.Arma41:addEventListener("onClick",
+    obj._e_event209 = obj.Arma41:addEventListener("onClick",
         function (_)
             local Soma = (sheet.Soma or 0) -1200;
                                if Soma >= 0 then
@@ -20527,7 +20553,7 @@ local function constructNew_frmDZ_Ficha()
               end;
         end, obj);
 
-    obj._e_event208 = obj.label397:addEventListener("onClick",
+    obj._e_event210 = obj.label397:addEventListener("onClick",
         function (_)
             if rrpg.getMesaDe(sheet).meuJogador.isMestre then
                         dialogs.inputQuery("Carteira", "Novo valor:", "",
@@ -20537,7 +20563,7 @@ local function constructNew_frmDZ_Ficha()
                         end;
         end, obj);
 
-    obj._e_event209 = obj.Arma42:addEventListener("onClick",
+    obj._e_event211 = obj.Arma42:addEventListener("onClick",
         function (_)
             local Soma = (sheet.Soma or 0) -1200;
                                        if Soma >= 0 then
@@ -20550,7 +20576,7 @@ local function constructNew_frmDZ_Ficha()
                       end;
         end, obj);
 
-    obj._e_event210 = obj.label404:addEventListener("onClick",
+    obj._e_event212 = obj.label404:addEventListener("onClick",
         function (_)
             if rrpg.getMesaDe(sheet).meuJogador.isMestre then
                 dialogs.inputQuery("Carteira", "Novo valor:", "",
@@ -20560,7 +20586,7 @@ local function constructNew_frmDZ_Ficha()
                 end;
         end, obj);
 
-    obj._e_event211 = obj.Arma43:addEventListener("onClick",
+    obj._e_event213 = obj.Arma43:addEventListener("onClick",
         function (_)
             local Soma = (sheet.Soma or 0) -1200;
                                if Soma >= 0 then
@@ -20573,7 +20599,7 @@ local function constructNew_frmDZ_Ficha()
               end;
         end, obj);
 
-    obj._e_event212 = obj.label411:addEventListener("onClick",
+    obj._e_event214 = obj.label411:addEventListener("onClick",
         function (_)
             if rrpg.getMesaDe(sheet).meuJogador.isMestre then
                 dialogs.inputQuery("Carteira", "Novo valor:", "",
@@ -20583,7 +20609,7 @@ local function constructNew_frmDZ_Ficha()
                 end;
         end, obj);
 
-    obj._e_event213 = obj.Arma44:addEventListener("onClick",
+    obj._e_event215 = obj.Arma44:addEventListener("onClick",
         function (_)
             local Soma = (sheet.Soma or 0) -1200;
                                if Soma >= 0 then
@@ -20596,7 +20622,7 @@ local function constructNew_frmDZ_Ficha()
               end;
         end, obj);
 
-    obj._e_event214 = obj.dataLink20:addEventListener("onChange",
+    obj._e_event216 = obj.dataLink20:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             function format_thousand(v)
                         local s = string.format("%d", math.floor(v))
@@ -20610,7 +20636,7 @@ local function constructNew_frmDZ_Ficha()
                           self.labSoma5.text = '$' .. format_thousand(sheet.soma);
         end, obj);
 
-    obj._e_event215 = obj.image203:addEventListener("onClick",
+    obj._e_event217 = obj.image203:addEventListener("onClick",
         function (_)
             if rrpg.getMesaDe(sheet).meuJogador.isMestre then
                                         dialogs.inputQuery("Carteira", "Novo valor:", "",
@@ -20620,13 +20646,13 @@ local function constructNew_frmDZ_Ficha()
                                         end;
         end, obj);
 
-    obj._e_event216 = obj.image204:addEventListener("onClick",
+    obj._e_event218 = obj.image204:addEventListener("onClick",
         function (_)
             self.LojaArmaduras.visible = false;
                             self.ApresentaLoja.visible = true;
         end, obj);
 
-    obj._e_event217 = obj.label418:addEventListener("onClick",
+    obj._e_event219 = obj.label418:addEventListener("onClick",
         function (_)
             if rrpg.getMesaDe(sheet).meuJogador.isMestre then
                 dialogs.inputQuery("Carteira", "Novo valor:", "",
@@ -20636,7 +20662,7 @@ local function constructNew_frmDZ_Ficha()
                 end;
         end, obj);
 
-    obj._e_event218 = obj.Arma45:addEventListener("onClick",
+    obj._e_event220 = obj.Arma45:addEventListener("onClick",
         function (_)
             local Soma = (sheet.Soma or 0) -1200;
                                if Soma >= 0 then
@@ -20649,7 +20675,7 @@ local function constructNew_frmDZ_Ficha()
               end;
         end, obj);
 
-    obj._e_event219 = obj.label424:addEventListener("onClick",
+    obj._e_event221 = obj.label424:addEventListener("onClick",
         function (_)
             if rrpg.getMesaDe(sheet).meuJogador.isMestre then
                 dialogs.inputQuery("Carteira", "Novo valor:", "",
@@ -20659,7 +20685,7 @@ local function constructNew_frmDZ_Ficha()
                 end;
         end, obj);
 
-    obj._e_event220 = obj.Arma46:addEventListener("onClick",
+    obj._e_event222 = obj.Arma46:addEventListener("onClick",
         function (_)
             local Soma = (sheet.Soma or 0) -1200;
                                if Soma >= 0 then
@@ -20672,7 +20698,7 @@ local function constructNew_frmDZ_Ficha()
               end;
         end, obj);
 
-    obj._e_event221 = obj.label430:addEventListener("onClick",
+    obj._e_event223 = obj.label430:addEventListener("onClick",
         function (_)
             if rrpg.getMesaDe(sheet).meuJogador.isMestre then
                 dialogs.inputQuery("Carteira", "Novo valor:", "",
@@ -20682,7 +20708,7 @@ local function constructNew_frmDZ_Ficha()
                 end;
         end, obj);
 
-    obj._e_event222 = obj.Arma47:addEventListener("onClick",
+    obj._e_event224 = obj.Arma47:addEventListener("onClick",
         function (_)
             local Soma = (sheet.Soma or 0) -1200;
                                if Soma >= 0 then
@@ -20695,7 +20721,7 @@ local function constructNew_frmDZ_Ficha()
               end;
         end, obj);
 
-    obj._e_event223 = obj.label436:addEventListener("onClick",
+    obj._e_event225 = obj.label436:addEventListener("onClick",
         function (_)
             if rrpg.getMesaDe(sheet).meuJogador.isMestre then
                 dialogs.inputQuery("Carteira", "Novo valor:", "",
@@ -20705,7 +20731,7 @@ local function constructNew_frmDZ_Ficha()
                 end;
         end, obj);
 
-    obj._e_event224 = obj.Arma48:addEventListener("onClick",
+    obj._e_event226 = obj.Arma48:addEventListener("onClick",
         function (_)
             local Soma = (sheet.Soma or 0) -1200;
                                if Soma >= 0 then
@@ -20718,7 +20744,7 @@ local function constructNew_frmDZ_Ficha()
               end;
         end, obj);
 
-    obj._e_event225 = obj.label442:addEventListener("onClick",
+    obj._e_event227 = obj.label442:addEventListener("onClick",
         function (_)
             if rrpg.getMesaDe(sheet).meuJogador.isMestre then
                 dialogs.inputQuery("Carteira", "Novo valor:", "",
@@ -20728,7 +20754,7 @@ local function constructNew_frmDZ_Ficha()
                 end;
         end, obj);
 
-    obj._e_event226 = obj.Arma49:addEventListener("onClick",
+    obj._e_event228 = obj.Arma49:addEventListener("onClick",
         function (_)
             local Soma = (sheet.Soma or 0) -1200;
                                if Soma >= 0 then
@@ -20741,7 +20767,7 @@ local function constructNew_frmDZ_Ficha()
               end;
         end, obj);
 
-    obj._e_event227 = obj.label448:addEventListener("onClick",
+    obj._e_event229 = obj.label448:addEventListener("onClick",
         function (_)
             if rrpg.getMesaDe(sheet).meuJogador.isMestre then
                 dialogs.inputQuery("Carteira", "Novo valor:", "",
@@ -20751,7 +20777,7 @@ local function constructNew_frmDZ_Ficha()
                 end;
         end, obj);
 
-    obj._e_event228 = obj.Arma50:addEventListener("onClick",
+    obj._e_event230 = obj.Arma50:addEventListener("onClick",
         function (_)
             local Soma = (sheet.Soma or 0) -1200;
                                if Soma >= 0 then
@@ -20764,7 +20790,7 @@ local function constructNew_frmDZ_Ficha()
               end;
         end, obj);
 
-    obj._e_event229 = obj.label454:addEventListener("onClick",
+    obj._e_event231 = obj.label454:addEventListener("onClick",
         function (_)
             if rrpg.getMesaDe(sheet).meuJogador.isMestre then
                 dialogs.inputQuery("Carteira", "Novo valor:", "",
@@ -20774,7 +20800,7 @@ local function constructNew_frmDZ_Ficha()
                 end;
         end, obj);
 
-    obj._e_event230 = obj.Arma51:addEventListener("onClick",
+    obj._e_event232 = obj.Arma51:addEventListener("onClick",
         function (_)
             local Soma = (sheet.Soma or 0) -1200;
                                if Soma >= 0 then
@@ -20787,7 +20813,7 @@ local function constructNew_frmDZ_Ficha()
               end;
         end, obj);
 
-    obj._e_event231 = obj.label460:addEventListener("onClick",
+    obj._e_event233 = obj.label460:addEventListener("onClick",
         function (_)
             if rrpg.getMesaDe(sheet).meuJogador.isMestre then
                 dialogs.inputQuery("Carteira", "Novo valor:", "",
@@ -20797,7 +20823,7 @@ local function constructNew_frmDZ_Ficha()
                 end;
         end, obj);
 
-    obj._e_event232 = obj.Arma52:addEventListener("onClick",
+    obj._e_event234 = obj.Arma52:addEventListener("onClick",
         function (_)
             local Soma = (sheet.Soma or 0) -1200;
                                if Soma >= 0 then
@@ -20810,7 +20836,7 @@ local function constructNew_frmDZ_Ficha()
               end;
         end, obj);
 
-    obj._e_event233 = obj.label466:addEventListener("onClick",
+    obj._e_event235 = obj.label466:addEventListener("onClick",
         function (_)
             if rrpg.getMesaDe(sheet).meuJogador.isMestre then
                 dialogs.inputQuery("Carteira", "Novo valor:", "",
@@ -20820,7 +20846,7 @@ local function constructNew_frmDZ_Ficha()
                 end;
         end, obj);
 
-    obj._e_event234 = obj.Arma53:addEventListener("onClick",
+    obj._e_event236 = obj.Arma53:addEventListener("onClick",
         function (_)
             local Soma = (sheet.Soma or 0) -1200;
                                if Soma >= 0 then
@@ -20833,7 +20859,7 @@ local function constructNew_frmDZ_Ficha()
               end;
         end, obj);
 
-    obj._e_event235 = obj.label472:addEventListener("onClick",
+    obj._e_event237 = obj.label472:addEventListener("onClick",
         function (_)
             if rrpg.getMesaDe(sheet).meuJogador.isMestre then
                 dialogs.inputQuery("Carteira", "Novo valor:", "",
@@ -20843,7 +20869,7 @@ local function constructNew_frmDZ_Ficha()
                 end;
         end, obj);
 
-    obj._e_event236 = obj.Arma54:addEventListener("onClick",
+    obj._e_event238 = obj.Arma54:addEventListener("onClick",
         function (_)
             local Soma = (sheet.Soma or 0) -1200;
                                if Soma >= 0 then
@@ -20856,7 +20882,7 @@ local function constructNew_frmDZ_Ficha()
               end;
         end, obj);
 
-    obj._e_event237 = obj.label478:addEventListener("onClick",
+    obj._e_event239 = obj.label478:addEventListener("onClick",
         function (_)
             if rrpg.getMesaDe(sheet).meuJogador.isMestre then
                 dialogs.inputQuery("Carteira", "Novo valor:", "",
@@ -20866,7 +20892,7 @@ local function constructNew_frmDZ_Ficha()
                 end;
         end, obj);
 
-    obj._e_event238 = obj.Arma55:addEventListener("onClick",
+    obj._e_event240 = obj.Arma55:addEventListener("onClick",
         function (_)
             local Soma = (sheet.Soma or 0) -1200;
                                if Soma >= 0 then
@@ -20879,7 +20905,7 @@ local function constructNew_frmDZ_Ficha()
               end;
         end, obj);
 
-    obj._e_event239 = obj.label484:addEventListener("onClick",
+    obj._e_event241 = obj.label484:addEventListener("onClick",
         function (_)
             if rrpg.getMesaDe(sheet).meuJogador.isMestre then
                 dialogs.inputQuery("Carteira", "Novo valor:", "",
@@ -20889,7 +20915,7 @@ local function constructNew_frmDZ_Ficha()
                 end;
         end, obj);
 
-    obj._e_event240 = obj.Arma56:addEventListener("onClick",
+    obj._e_event242 = obj.Arma56:addEventListener("onClick",
         function (_)
             local Soma = (sheet.Soma or 0) -1200;
                                if Soma >= 0 then
@@ -20902,27 +20928,29 @@ local function constructNew_frmDZ_Ficha()
               end;
         end, obj);
 
-    obj._e_event241 = obj.button87:addEventListener("onClick",
+    obj._e_event243 = obj.button87:addEventListener("onClick",
         function (_)
             GUI.openInBrowser('https://github.com/rrpgfirecast/firecast/blob/master/Plugins/Sheets/Dead%20Zone%202.0/README.md')
         end, obj);
 
-    obj._e_event242 = obj.button88:addEventListener("onClick",
+    obj._e_event244 = obj.button88:addEventListener("onClick",
         function (_)
             GUI.openInBrowser('https://github.com/ooicram/DeadZoneRPG/raw/master/Plugins/Sheets/Dead%20Zone%202.0/output/Dead%20Zone%202.0.rpk')
         end, obj);
 
-    obj._e_event243 = obj.button89:addEventListener("onClick",
+    obj._e_event245 = obj.button89:addEventListener("onClick",
         function (_)
             GUI.openInBrowser('https://dl.dropboxusercontent.com/s/znq35lnlfxt8c7k/Dead_Zone_3.0.rpk?dl=0')
         end, obj);
 
-    obj._e_event244 = obj.button90:addEventListener("onClick",
+    obj._e_event246 = obj.button90:addEventListener("onClick",
         function (_)
             GUI.openInBrowser('https://github.com/MestreWilll')
         end, obj);
 
     function obj:_releaseEvents()
+        __o_rrpgObjs.removeEventListenerById(self._e_event246);
+        __o_rrpgObjs.removeEventListenerById(self._e_event245);
         __o_rrpgObjs.removeEventListenerById(self._e_event244);
         __o_rrpgObjs.removeEventListenerById(self._e_event243);
         __o_rrpgObjs.removeEventListenerById(self._e_event242);

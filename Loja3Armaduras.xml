@@ -4,7 +4,542 @@
         <rectangle align="client" color="white"> 
       <scrollBox align="client">
 
-        
+================================================================================================================================
+===========# Por fora do layout da lista de armas; Especificamente por cima #=============================================================================
+                
+        -- Dinheiro do player
+        <layout align="client">
+                
+            -- Imagem do dinheiro retangulo
+            <image src="images/dinheiroArma.png" left="0" top="5" width="180.37" height="80.25" />
+            <label left="26" top="30" fontStyle="bold" fontColor="white" fontSize="36" autoSize="true" wordWrap="false" name="labSoma5" cursor="handPoint" hitTest="true">
+              <dataLink field="Soma">
+                <event name="onChange">
+            function format_thousand(v)
+            local s = string.format("%d", math.floor(v))
+            local pos = string.len(s) % 3 
+            if pos == 0 then pos = 3 end
+            return string.sub(s, 1, pos)
+                .. "" .. string.gsub(string.sub(s, pos+1), "(...)", ".%1") 
+                .. "" .. string.sub(string.format("%.0f", v - math.floor(v)), 3) 
+            
+            end;
+              self.labSoma5.text = '$' .. format_thousand(sheet.soma);
+                </event>
+                    </dataLink>
+                  </label>
+                </layout>
+                <image left="0" top="0" width="130.37" height="62.25" hint="Seu dinheiro" cursor="handPoint" hitTest="true">
+                  <event name="onClick">
+                            if rrpg.getMesaDe(sheet).meuJogador.isMestre then
+                            dialogs.inputQuery("Carteira", "Novo valor:", "",
+                               function (valorPreenchido)
+                                          sheet.Soma = (sheet.Soma or 0 ) + valorPreenchido; 
+                            end);
+                            end;
+                        </event>
+                </image>
+                
+        -- Comeco do layout
+        <image src="images/botaoVoltar.png" left="200" top="29" width="50" height="50" cursor="handPoint" hint="Clique aqui para voltar" hitTest="true"><event name="onClick">
+                self.LojaArmaduras.visible = false;
+                self.ApresentaLoja.visible = true;
+            </event>
+                </image>
+================================================================================================================================
+===========# Todas as listas da loja #==========================================================================================
+<!-- 45 imagem -->
+<layout name="Armadura45" width="480" height="174" left="0" top="88">
+  <image src="images/LojaparaArmaduras.png" left="0" top="0" width="399" height="174"/>
+  // Preço da arma
+  <label left="22.25" top="20.50" width="107.25" height="37.88" fontSize="22" hint="Preço da Arma" field="Preco45" horzTextAlign="center" fontStyle="bold" fontColor="yellow" fontFamily="kalam" cursor="handPoint" hitTest="true">
+          <event name="onClick">
+    if rrpg.getMesaDe(sheet).meuJogador.isMestre then
+    dialogs.inputQuery("Carteira", "Novo valor:", "",
+       function (valorPreenchido)
+            sheet.Preco45 = (sheet.Preco45 or 0 ) + valorPreenchido; 
+    end);
+    end;
+      </event>
+  </label>
+  // Comprar
+  <image left="41.38" top="61.75" width="67.88" height="30" cursor="handPoint" hitTest="true" hint="Clique aqui para comprar" name="Arma45">
+      <event name="onClick">
+                       local Soma = (sheet.Soma or 0) -1200;
+                   if Soma >= 0 then
+local minhaMesa = rrpg.getMesaDe(sheet); 
+                local chat = minhaMesa.chat; 
+                chat:enviarMensagem("/me [§K12][§B]Comprou uma arma. ");
+         showMessage("Você acabou de comprar uma arma corpo a corpo, olhe na sua mochila");
+             else
+                   showMessage("Você não mais dinheiro"); 	
+  end;
+      </event>
+  </image>
+         // imagem da arma
+         <image left="2.56" top="93.00" width="136.69" height="77.69" style="proportional" center="true" editable="true" field="ImagemArma45"/>
+          // Nome do Item
+          <label left="197" top="10" width="249.25" height="39" fontSize="22" field="ItemNome45" fontStyle="bold" fontColor="black" fontFamily="kalam"/>
+          // Absorver_Aparar
+          <label left="243.50" top="46" width="149.25" height="38.63" horzTextAlign="center" field="AbsorverAparar45" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/>  
+          // CD 
+          <label left="182" top="86.13" width="61.88" height="38.87" horzTextAlign="center" field="CD45" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+          // Penalidade_de_Movimento
+          <label left="300" top="127" width="61.88" height="38.88" horzTextAlign="center" field="PenalidadedeMovimento45" fontSize="15" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+          // Penalidade_de_Percepção
+          <label left="336" top="86.12" width="61.88" height="38.88" horzTextAlign="center" field="PenalidadeDePercepcao45" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+      </layout>
+<!-- 46 imagem -->
+<layout name="Armadura46" width="480" height="174" left="0" top="270">
+  <image src="images/LojaparaArmaduras.png" left="0" top="0" width="399" height="174"/>
+  // Preço da arma
+  <label left="22.25" top="20.50" width="107.25" height="37.88" fontSize="22" hint="Preço da Arma" field="Preco46" horzTextAlign="center" fontStyle="bold" fontColor="yellow" fontFamily="kalam" cursor="handPoint" hitTest="true">
+          <event name="onClick">
+    if rrpg.getMesaDe(sheet).meuJogador.isMestre then
+    dialogs.inputQuery("Carteira", "Novo valor:", "",
+       function (valorPreenchido)
+            sheet.Preco46 = (sheet.Preco46 or 0 ) + valorPreenchido; 
+    end);
+    end;
+      </event>
+  </label>
+  // Comprar
+  <image left="41.38" top="61.75" width="67.88" height="30" cursor="handPoint" hitTest="true" hint="Clique aqui para comprar" name="Arma46">
+      <event name="onClick">
+                       local Soma = (sheet.Soma or 0) -1200;
+                   if Soma >= 0 then
+local minhaMesa = rrpg.getMesaDe(sheet); 
+                local chat = minhaMesa.chat; 
+                chat:enviarMensagem("/me [§K12][§B]Comprou uma arma. ");
+         showMessage("Você acabou de comprar uma arma corpo a corpo, olhe na sua mochila");
+             else
+                   showMessage("Você não mais dinheiro"); 	
+  end;
+      </event>
+  </image>
+         // imagem da arma
+         <image left="2.56" top="93.00" width="136.69" height="77.69" style="proportional" center="true" editable="true" field="ImagemArma46"/>
+          // Nome do Item
+          <label left="197" top="10" width="249.25" height="39" fontSize="22" field="ItemNome46" fontStyle="bold" fontColor="black" fontFamily="kalam"/>
+          // Absorver_Aparar
+          <label left="243.50" top="46" width="149.25" height="38.63" horzTextAlign="center" field="AbsorverAparar46" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/>  
+          // CD 
+          <label left="182" top="86.13" width="61.88" height="38.87" horzTextAlign="center" field="CD46" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+          // Penalidade_de_Movimento
+          <label left="300" top="127" width="61.88" height="38.88" horzTextAlign="center" field="PenalidadedeMovimento46" fontSize="15" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+          // Penalidade_de_Percepção
+          <label left="336" top="86.12" width="61.88" height="38.88" horzTextAlign="center" field="PenalidadeDePercepcao46" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+      </layout>
+<!-- 47 imagem -->
+<layout name="Armadura47" width="480" height="174" left="0" top="452">
+  <image src="images/LojaparaArmaduras.png" left="0" top="0" width="399" height="174"/>
+  // Preço da arma
+  <label left="22.25" top="20.50" width="107.25" height="37.88" fontSize="22" hint="Preço da Arma" field="Preco47" horzTextAlign="center" fontStyle="bold" fontColor="yellow" fontFamily="kalam" cursor="handPoint" hitTest="true">
+          <event name="onClick">
+    if rrpg.getMesaDe(sheet).meuJogador.isMestre then
+    dialogs.inputQuery("Carteira", "Novo valor:", "",
+       function (valorPreenchido)
+            sheet.Preco47 = (sheet.Preco47 or 0 ) + valorPreenchido; 
+    end);
+    end;
+      </event>
+  </label>
+  // Comprar
+  <image left="41.38" top="61.75" width="67.88" height="30" cursor="handPoint" hitTest="true" hint="Clique aqui para comprar" name="Arma47">
+      <event name="onClick">
+                       local Soma = (sheet.Soma or 0) -1200;
+                   if Soma >= 0 then
+local minhaMesa = rrpg.getMesaDe(sheet); 
+                local chat = minhaMesa.chat; 
+                chat:enviarMensagem("/me [§K12][§B]Comprou uma arma. ");
+         showMessage("Você acabou de comprar uma arma corpo a corpo, olhe na sua mochila");
+             else
+                   showMessage("Você não mais dinheiro"); 	
+  end;
+      </event>
+  </image>
+         // imagem da arma
+         <image left="2.56" top="93.00" width="136.69" height="77.69" style="proportional" center="true" editable="true" field="ImagemArma47"/>
+          // Nome do Item
+          <label left="197" top="10" width="249.25" height="39" fontSize="22" field="ItemNome47" fontStyle="bold" fontColor="black" fontFamily="kalam"/>
+          // Absorver_Aparar
+          <label left="243.50" top="46" width="149.25" height="38.63" horzTextAlign="center" field="AbsorverAparar47" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/>  
+          // CD 
+          <label left="182" top="86.13" width="61.88" height="38.87" horzTextAlign="center" field="CD47" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+          // Penalidade_de_Movimento
+          <label left="300" top="127" width="61.88" height="38.88" horzTextAlign="center" field="PenalidadedeMovimento47" fontSize="15" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+          // Penalidade_de_Percepção
+          <label left="336" top="86.12" width="61.88" height="38.88" horzTextAlign="center" field="PenalidadeDePercepcao47" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+      </layout>
+<!-- 48 imagem -->
+<layout name="Armadura48" width="480" height="174" left="0" top="634">
+  <image src="images/LojaparaArmaduras.png" left="0" top="0" width="399" height="174"/>
+  // Preço da arma
+  <label left="22.25" top="20.50" width="107.25" height="37.88" fontSize="22" hint="Preço da Arma" field="Preco48" horzTextAlign="center" fontStyle="bold" fontColor="yellow" fontFamily="kalam" cursor="handPoint" hitTest="true">
+          <event name="onClick">
+    if rrpg.getMesaDe(sheet).meuJogador.isMestre then
+    dialogs.inputQuery("Carteira", "Novo valor:", "",
+       function (valorPreenchido)
+            sheet.Preco48 = (sheet.Preco48 or 0 ) + valorPreenchido; 
+    end);
+    end;
+      </event>
+  </label>
+  // Comprar
+  <image left="41.38" top="61.75" width="67.88" height="30" cursor="handPoint" hitTest="true" hint="Clique aqui para comprar" name="Arma48">
+      <event name="onClick">
+                       local Soma = (sheet.Soma or 0) -1200;
+                   if Soma >= 0 then
+local minhaMesa = rrpg.getMesaDe(sheet); 
+                local chat = minhaMesa.chat; 
+                chat:enviarMensagem("/me [§K12][§B]Comprou uma arma. ");
+         showMessage("Você acabou de comprar uma arma corpo a corpo, olhe na sua mochila");
+             else
+                   showMessage("Você não mais dinheiro"); 	
+  end;
+      </event>
+  </image>
+         // imagem da arma
+         <image left="2.56" top="93.00" width="136.69" height="77.69" style="proportional" center="true" editable="true" field="ImagemArma48"/>
+          // Nome do Item
+          <label left="197" top="10" width="249.25" height="39" fontSize="22" field="ItemNome48" fontStyle="bold" fontColor="black" fontFamily="kalam"/>
+          // Absorver_Aparar
+          <label left="243.50" top="47" width="149.25" height="38.63" horzTextAlign="center" field="AbsorverAparar48" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/>  
+          // CD 
+          <label left="182" top="86.13" width="61.88" height="38.87" horzTextAlign="center" field="CD48" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+          // Penalidade_de_Movimento
+          <label left="300" top="127" width="61.88" height="38.88" horzTextAlign="center" field="PenalidadedeMovimento48" fontSize="15" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+          // Penalidade_de_Percepção
+          <label left="336" top="86.12" width="61.88" height="38.88" horzTextAlign="center" field="PenalidadeDePercepcao48" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+      </layout>
+<!-- 49 imagem -->
+<layout name="Armadura49" width="480" height="174" left="0" top="816">
+  <image src="images/LojaparaArmaduras.png" left="0" top="0" width="399" height="174"/>
+  // Preço da arma
+  <label left="22.25" top="20.50" width="107.25" height="37.88" fontSize="22" hint="Preço da Arma" field="Preco49" horzTextAlign="center" fontStyle="bold" fontColor="yellow" fontFamily="kalam" cursor="handPoint" hitTest="true">
+          <event name="onClick">
+    if rrpg.getMesaDe(sheet).meuJogador.isMestre then
+    dialogs.inputQuery("Carteira", "Novo valor:", "",
+       function (valorPreenchido)
+            sheet.Preco49 = (sheet.Preco49 or 0 ) + valorPreenchido; 
+    end);
+    end;
+      </event>
+  </label>
+  // Comprar
+  <image left="41.38" top="61.75" width="67.88" height="30" cursor="handPoint" hitTest="true" hint="Clique aqui para comprar" name="Arma49">
+      <event name="onClick">
+                       local Soma = (sheet.Soma or 0) -1200;
+                   if Soma >= 0 then
+local minhaMesa = rrpg.getMesaDe(sheet); 
+                local chat = minhaMesa.chat; 
+                chat:enviarMensagem("/me [§K12][§B]Comprou uma arma. ");
+         showMessage("Você acabou de comprar uma arma corpo a corpo, olhe na sua mochila");
+             else
+                   showMessage("Você não mais dinheiro"); 	
+  end;
+      </event>
+  </image>
+         // imagem da arma
+         <image left="2.56" top="93.00" width="136.69" height="77.69" style="proportional" center="true" editable="true" field="ImagemArma49"/>
+          // Nome do Item
+          <label left="197" top="10" width="249.25" height="39" fontSize="22" field="ItemNome49" fontStyle="bold" fontColor="black" fontFamily="kalam"/>
+          // Absorver_Aparar
+          <label left="243.50" top="47" width="149.25" height="38.63" horzTextAlign="center" field="AbsorverAparar49" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/>  
+          // CD 
+          <label left="182" top="86.13" width="61.88" height="38.87" horzTextAlign="center" field="CD49" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+          // Penalidade_de_Movimento
+          <label left="300" top="127" width="61.88" height="38.88" horzTextAlign="center" field="PenalidadedeMovimento49" fontSize="15" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+          // Penalidade_de_Percepção
+          <label left="336" top="86.12" width="61.88" height="38.88" horzTextAlign="center" field="PenalidadeDePercepcao49" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+      </layout>
+<!-- 50 imagem -->
+<layout name="Armadura50" width="480" height="174" left="0" top="998">
+  <image src="images/LojaparaArmaduras.png" left="0" top="0" width="399" height="174"/>
+  // Preço da arma
+  <label left="22.25" top="20.50" width="107.25" height="37.88" fontSize="22" hint="Preço da Arma" field="Preco50" horzTextAlign="center" fontStyle="bold" fontColor="yellow" fontFamily="kalam" cursor="handPoint" hitTest="true">
+          <event name="onClick">
+    if rrpg.getMesaDe(sheet).meuJogador.isMestre then
+    dialogs.inputQuery("Carteira", "Novo valor:", "",
+       function (valorPreenchido)
+            sheet.Preco50 = (sheet.Preco50 or 0 ) + valorPreenchido; 
+    end);
+    end;
+      </event>
+  </label>
+  // Comprar
+  <image left="41.38" top="61.75" width="67.88" height="30" cursor="handPoint" hitTest="true" hint="Clique aqui para comprar" name="Arma50">
+      <event name="onClick">
+                       local Soma = (sheet.Soma or 0) -1200;
+                   if Soma >= 0 then
+local minhaMesa = rrpg.getMesaDe(sheet); 
+                local chat = minhaMesa.chat; 
+                chat:enviarMensagem("/me [§K12][§B]Comprou uma arma. ");
+         showMessage("Você acabou de comprar uma arma corpo a corpo, olhe na sua mochila");
+             else
+                   showMessage("Você não mais dinheiro"); 	
+  end;
+      </event>
+  </image>
+         // imagem da arma
+         <image left="2.56" top="93.00" width="136.69" height="77.69" style="proportional" center="true" editable="true" field="ImagemArma50"/>
+          // Nome do Item
+          <label left="197" top="10" width="249.25" height="39" fontSize="22" field="ItemNome50" fontStyle="bold" fontColor="black" fontFamily="kalam"/>
+          // Absorver_Aparar
+          <label left="243.50" top="47" width="149.25" height="38.63" horzTextAlign="center" field="AbsorverAparar50" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/>  
+          // CD 
+          <label left="182" top="86.13" width="61.88" height="38.87" horzTextAlign="center" field="CD50" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+          // Penalidade_de_Movimento
+          <label left="300" top="127" width="61.88" height="38.88" horzTextAlign="center" field="PenalidadedeMovimento50" fontSize="15" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+          // Penalidade_de_Percepção
+          <label left="336" top="86.12" width="61.88" height="38.88" horzTextAlign="center" field="PenalidadeDePercepcao50" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+      </layout>
+<!-- 51 imagem -->
+<layout name="Armadura51" width="480" height="174" left="413" top="88">
+  <image src="images/LojaparaArmaduras.png" left="0" top="0" width="399" height="174"/>
+  // Preço da arma
+  <label left="22.25" top="20.50" width="107.25" height="37.88" fontSize="22" hint="Preço da Arma" field="Preco51" horzTextAlign="center" fontStyle="bold" fontColor="yellow" fontFamily="kalam" cursor="handPoint" hitTest="true">
+          <event name="onClick">
+    if rrpg.getMesaDe(sheet).meuJogador.isMestre then
+    dialogs.inputQuery("Carteira", "Novo valor:", "",
+       function (valorPreenchido)
+            sheet.Preco51 = (sheet.Preco51 or 0 ) + valorPreenchido; 
+    end);
+    end;
+      </event>
+  </label>
+  // Comprar
+  <image left="41.38" top="61.75" width="67.88" height="30" cursor="handPoint" hitTest="true" hint="Clique aqui para comprar" name="Arma51">
+      <event name="onClick">
+                       local Soma = (sheet.Soma or 0) -1200;
+                   if Soma >= 0 then
+local minhaMesa = rrpg.getMesaDe(sheet); 
+                local chat = minhaMesa.chat; 
+                chat:enviarMensagem("/me [§K12][§B]Comprou uma arma. ");
+         showMessage("Você acabou de comprar uma arma corpo a corpo, olhe na sua mochila");
+             else
+                   showMessage("Você não mais dinheiro"); 	
+  end;
+      </event>
+  </image>
+         // imagem da arma
+         <image left="2.56" top="93.00" width="136.69" height="77.69" style="proportional" center="true" editable="true" field="ImagemArma51"/>
+          // Nome do Item
+          <label left="197" top="10" width="249.25" height="39" fontSize="22" field="ItemNome51" fontStyle="bold" fontColor="black" fontFamily="kalam"/>
+          // Absorver_Aparar
+          <label left="243.51" top="47" width="149.25" height="38.63" horzTextAlign="center" field="AbsorverAparar51" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/>  
+          // CD 
+          <label left="182" top="86.13" width="61.88" height="38.87" horzTextAlign="center" field="CD51" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+          // Penalidade_de_Movimento
+          <label left="300" top="127" width="61.88" height="38.88" horzTextAlign="center" field="PenalidadedeMovimento51" fontSize="15" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+          // Penalidade_de_Percepção
+          <label left="336" top="86.12" width="61.88" height="38.88" horzTextAlign="center" field="PenalidadeDePercepcao51" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+      </layout>
+<!-- 52 imagem -->
+<layout name="Armadura52" width="480" height="174" left="413" top="270">
+  <image src="images/LojaparaArmaduras.png" left="0" top="0" width="399" height="174"/>
+  // Preço da arma
+  <label left="22.25" top="20.50" width="107.25" height="37.88" fontSize="22" hint="Preço da Arma" field="Preco52" horzTextAlign="center" fontStyle="bold" fontColor="yellow" fontFamily="kalam" cursor="handPoint" hitTest="true">
+          <event name="onClick">
+    if rrpg.getMesaDe(sheet).meuJogador.isMestre then
+    dialogs.inputQuery("Carteira", "Novo valor:", "",
+       function (valorPreenchido)
+            sheet.Preco52 = (sheet.Preco52 or 0 ) + valorPreenchido; 
+    end);
+    end;
+      </event>
+  </label>
+  // Comprar
+  <image left="41.38" top="61.75" width="67.88" height="30" cursor="handPoint" hitTest="true" hint="Clique aqui para comprar" name="Arma52">
+      <event name="onClick">
+                       local Soma = (sheet.Soma or 0) -1200;
+                   if Soma >= 0 then
+local minhaMesa = rrpg.getMesaDe(sheet); 
+                local chat = minhaMesa.chat; 
+                chat:enviarMensagem("/me [§K12][§B]Comprou uma arma. ");
+         showMessage("Você acabou de comprar uma arma corpo a corpo, olhe na sua mochila");
+             else
+                   showMessage("Você não mais dinheiro"); 	
+  end;
+      </event>
+  </image>
+         // imagem da arma
+         <image left="2.56" top="93.00" width="136.69" height="77.69" style="proportional" center="true" editable="true" field="ImagemArma52"/>
+          // Nome do Item
+          <label left="197" top="10" width="249.25" height="39" fontSize="22" field="ItemNome52" fontStyle="bold" fontColor="black" fontFamily="kalam"/>
+          // Absorver_Aparar
+          <label left="243.51" top="47" width="149.25" height="38.63" horzTextAlign="center" field="AbsorverAparar52" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/>  
+          // CD 
+          <label left="182" top="86.13" width="61.88" height="38.87" horzTextAlign="center" field="CD52" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+          // Penalidade_de_Movimento
+          <label left="300" top="127" width="61.88" height="38.88" horzTextAlign="center" field="PenalidadedeMovimento52" fontSize="15" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+          // Penalidade_de_Percepção
+          <label left="336" top="86.12" width="61.88" height="38.88" horzTextAlign="center" field="PenalidadeDePercepcao52" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+      </layout>
+<!-- 53 imagem -->
+<layout name="Armadura53" width="480" height="174" left="413" top="634">
+  <image src="images/LojaparaArmaduras.png" left="0" top="0" width="399" height="174"/>
+  // Preço da arma
+  <label left="22.25" top="20.50" width="107.25" height="37.88" fontSize="22" hint="Preço da Arma" field="Preco53" horzTextAlign="center" fontStyle="bold" fontColor="yellow" fontFamily="kalam" cursor="handPoint" hitTest="true">
+          <event name="onClick">
+    if rrpg.getMesaDe(sheet).meuJogador.isMestre then
+    dialogs.inputQuery("Carteira", "Novo valor:", "",
+       function (valorPreenchido)
+            sheet.Preco53 = (sheet.Preco53 or 0 ) + valorPreenchido; 
+    end);
+    end;
+      </event>
+  </label>
+  // Comprar
+  <image left="41.38" top="61.75" width="67.88" height="30" cursor="handPoint" hitTest="true" hint="Clique aqui para comprar" name="Arma53">
+      <event name="onClick">
+                       local Soma = (sheet.Soma or 0) -1200;
+                   if Soma >= 0 then
+local minhaMesa = rrpg.getMesaDe(sheet); 
+                local chat = minhaMesa.chat; 
+                chat:enviarMensagem("/me [§K12][§B]Comprou uma arma. ");
+         showMessage("Você acabou de comprar uma arma corpo a corpo, olhe na sua mochila");
+             else
+                   showMessage("Você não mais dinheiro"); 	
+  end;
+      </event>
+  </image>
+         // imagem da arma
+         <image left="2.56" top="93.00" width="136.69" height="77.69" style="proportional" center="true" editable="true" field="ImagemArma53"/>
+          // Nome do Item
+          <label left="197" top="10" width="249.25" height="39" fontSize="22" field="ItemNome53" fontStyle="bold" fontColor="black" fontFamily="kalam"/>
+          // Absorver_Aparar
+          <label left="243.51" top="47" width="149.25" height="38.63" horzTextAlign="center" field="AbsorverAparar53" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/>  
+          // CD 
+          <label left="182" top="86.13" width="61.88" height="38.87" horzTextAlign="center" field="CD53" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+          // Penalidade_de_Movimento
+          <label left="300" top="127" width="61.88" height="38.88" horzTextAlign="center" field="PenalidadedeMovimento53" fontSize="15" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+          // Penalidade_de_Percepção
+          <label left="336" top="86.12" width="61.88" height="38.88" horzTextAlign="center" field="PenalidadeDePercepão53" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+      </layout>
+<!-- 54 imagem -->
+<layout name="Armadura54" width="480" height="174" left="413" top="452">
+  <image src="images/LojaparaArmaduras.png" left="0" top="0" width="399" height="174"/>
+  // Preço da arma
+  <label left="22.25" top="20.50" width="107.25" height="37.88" fontSize="22" hint="Preço da Arma" field="Preco54" horzTextAlign="center" fontStyle="bold" fontColor="yellow" fontFamily="kalam" cursor="handPoint" hitTest="true">
+          <event name="onClick">
+    if rrpg.getMesaDe(sheet).meuJogador.isMestre then
+    dialogs.inputQuery("Carteira", "Novo valor:", "",
+       function (valorPreenchido)
+            sheet.Preco54 = (sheet.Preco54 or 0 ) + valorPreenchido; 
+    end);
+    end;
+      </event>
+  </label>
+  // Comprar
+  <image left="41.38" top="61.75" width="67.88" height="30" cursor="handPoint" hitTest="true" hint="Clique aqui para comprar" name="Arma54">
+      <event name="onClick">
+                       local Soma = (sheet.Soma or 0) -1200;
+                   if Soma >= 0 then
+local minhaMesa = rrpg.getMesaDe(sheet); 
+                local chat = minhaMesa.chat; 
+                chat:enviarMensagem("/me [§K12][§B]Comprou uma arma. ");
+         showMessage("Você acabou de comprar uma arma corpo a corpo, olhe na sua mochila");
+             else
+                   showMessage("Você não mais dinheiro"); 	
+  end;
+      </event>
+  </image>
+         // imagem da arma
+         <image left="2.56" top="93.00" width="136.69" height="77.69" style="proportional" center="true" editable="true" field="ImagemArma54"/>
+          // Nome do Item
+          <label left="197" top="10" width="249.25" height="39" fontSize="22" field="ItemNome54" fontStyle="bold" fontColor="black" fontFamily="kalam"/>
+          // Absorver_Aparar
+          <label left="243.51" top="47" width="149.25" height="38.63" horzTextAlign="center" field="AbsorverAparar54" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/>  
+          // CD 
+          <label left="182" top="86.13" width="61.88" height="38.87" horzTextAlign="center" field="CD54" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+          // Penalidade_de_Movimento
+          <label left="300" top="127" width="61.88" height="38.88" horzTextAlign="center" field="PenalidadedeMovimento54" fontSize="15" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+          // Penalidade_de_Percepção
+          <label left="336" top="86.12" width="61.88" height="38.88" horzTextAlign="center" field="PenalidadeDePercepcao54" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+      </layout>
+<!-- 55 imagem -->
+<layout name="Armadura55" width="480" height="174" left="413" top="816">
+  <image src="images/LojaparaArmaduras.png" left="0" top="0" width="399" height="174"/>
+  // Preço da arma
+  <label left="22.25" top="20.50" width="107.25" height="37.88" fontSize="22" hint="Preço da Arma" field="Preco55" horzTextAlign="center" fontStyle="bold" fontColor="yellow" fontFamily="kalam" cursor="handPoint" hitTest="true">
+          <event name="onClick">
+    if rrpg.getMesaDe(sheet).meuJogador.isMestre then
+    dialogs.inputQuery("Carteira", "Novo valor:", "",
+       function (valorPreenchido)
+            sheet.Preco55 = (sheet.Preco55 or 0 ) + valorPreenchido; 
+    end);
+    end;
+      </event>
+  </label>
+  // Comprar
+  <image left="41.38" top="61.75" width="67.88" height="30" cursor="handPoint" hitTest="true" hint="Clique aqui para comprar" name="Arma55">
+      <event name="onClick">
+                       local Soma = (sheet.Soma or 0) -1200;
+                   if Soma >= 0 then
+local minhaMesa = rrpg.getMesaDe(sheet); 
+                local chat = minhaMesa.chat; 
+                chat:enviarMensagem("/me [§K12][§B]Comprou uma arma. ");
+         showMessage("Você acabou de comprar uma arma corpo a corpo, olhe na sua mochila");
+             else
+                   showMessage("Você não mais dinheiro"); 	
+  end;
+      </event>
+  </image>
+         // imagem da arma
+         <image left="2.56" top="93.00" width="136.69" height="77.69" style="proportional" center="true" editable="true" field="ImagemArma55"/>
+          // Nome do Item
+          <label left="197" top="10" width="249.25" height="39" fontSize="22" field="ItemNome55" fontStyle="bold" fontColor="black" fontFamily="kalam"/>
+          // Absorver_Aparar
+          <label left="243.51" top="47" width="149.25" height="38.63" horzTextAlign="center" field="AbsorverAparar55" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/>  
+          // CD 
+          <label left="182" top="86.13" width="61.88" height="38.87" horzTextAlign="center" field="CD55" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+          // Penalidade_de_Movimento
+          <label left="300" top="127" width="61.88" height="38.88" horzTextAlign="center" field="PenalidadedeMovimento55" fontSize="15" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+          // Penalidade_de_Percepção
+          <label left="336" top="86.12" width="61.88" height="38.88" horzTextAlign="center" field="PenalidadeDePercepcao55" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+      </layout>
+<!-- 56 imagem -->
+<layout name="Armadura56" width="480" height="174" left="413" top="998">
+  <image src="images/LojaparaArmaduras.png" left="0" top="0" width="399" height="174"/>
+  // Preço da arma
+  <label left="22.25" top="20.50" width="107.25" height="37.88" fontSize="22" hint="Preço da Arma" field="Preco56" horzTextAlign="center" fontStyle="bold" fontColor="yellow" fontFamily="kalam" cursor="handPoint" hitTest="true">
+          <event name="onClick">
+    if rrpg.getMesaDe(sheet).meuJogador.isMestre then
+    dialogs.inputQuery("Carteira", "Novo valor:", "",
+       function (valorPreenchido)
+            sheet.Preco56 = (sheet.Preco56 or 0 ) + valorPreenchido; 
+    end);
+    end;
+      </event>
+  </label>
+  // Comprar
+  <image left="41.38" top="61.75" width="67.88" height="30" cursor="handPoint" hitTest="true" hint="Clique aqui para comprar" name="Arma56">
+      <event name="onClick">
+                       local Soma = (sheet.Soma or 0) -1200;
+                   if Soma >= 0 then
+local minhaMesa = rrpg.getMesaDe(sheet); 
+                local chat = minhaMesa.chat; 
+                chat:enviarMensagem("/me [§K12][§B]Comprou uma arma. ");
+         showMessage("Você acabou de comprar uma arma corpo a corpo, olhe na sua mochila");
+             else
+                   showMessage("Você não mais dinheiro"); 	
+  end;
+      </event>
+  </image>
+         // imagem da arma
+         <image left="2.56" top="93.00" width="136.69" height="77.69" style="proportional" center="true" editable="true" field="ImagemArma56"/>
+          // Nome do Item
+          <label left="197" top="10" width="249.25" height="39" fontSize="22" field="ItemNome56" fontStyle="bold" fontColor="black" fontFamily="kalam"/>
+          // Absorver_Aparar
+          <label left="243.51" top="47" width="149.25" height="38.63" horzTextAlign="center" field="AbsorverAparar56" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/>  
+          // CD 
+          <label left="182" top="86.13" width="61.88" height="38.87" horzTextAlign="center" field="CD56" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+          // Penalidade_de_Movimento
+          <label left="300" top="127" width="61.88" height="38.88" horzTextAlign="center" field="PenalidadedeMovimento56" fontSize="15" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+          // Penalidade_de_Percepção
+          <label left="336" top="86.12" width="61.88" height="38.88" horzTextAlign="center" field="PenalidadeDePercepcao56" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+      </layout>
     </scrollBox>
 </rectangle>
 </layout>  

@@ -15841,6 +15841,1573 @@ local function constructNew_frmDZ_Ficha()
     obj.scrollBox12:setAlign("client");
     obj.scrollBox12:setName("scrollBox12");
 
+    obj.layout156 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout156:setParent(obj.scrollBox12);
+    obj.layout156:setAlign("client");
+    obj.layout156:setName("layout156");
+
+    obj.image202 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image202:setParent(obj.layout156);
+    obj.image202:setSRC("images/dinheiroArma.png");
+    obj.image202:setLeft(0);
+    obj.image202:setTop(5);
+    obj.image202:setWidth(180.37);
+    obj.image202:setHeight(80.25);
+    obj.image202:setName("image202");
+
+    obj.labSoma5 = GUI.fromHandle(_obj_newObject("label"));
+    obj.labSoma5:setParent(obj.layout156);
+    obj.labSoma5:setLeft(26);
+    obj.labSoma5:setTop(30);
+    lfm_setPropAsString(obj.labSoma5, "fontStyle",  "bold");
+    obj.labSoma5:setFontColor("white");
+    obj.labSoma5:setFontSize(36);
+    obj.labSoma5:setAutoSize(true);
+    obj.labSoma5:setWordWrap(false);
+    obj.labSoma5:setName("labSoma5");
+    obj.labSoma5:setCursor("handPoint");
+    obj.labSoma5:setHitTest(true);
+
+    obj.dataLink20 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink20:setParent(obj.labSoma5);
+    obj.dataLink20:setField("Soma");
+    obj.dataLink20:setName("dataLink20");
+
+    obj.image203 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image203:setParent(obj.scrollBox12);
+    obj.image203:setLeft(0);
+    obj.image203:setTop(0);
+    obj.image203:setWidth(130.37);
+    obj.image203:setHeight(62.25);
+    obj.image203:setHint("Seu dinheiro");
+    obj.image203:setCursor("handPoint");
+    obj.image203:setHitTest(true);
+    obj.image203:setName("image203");
+
+    obj.image204 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image204:setParent(obj.scrollBox12);
+    obj.image204:setSRC("images/botaoVoltar.png");
+    obj.image204:setLeft(200);
+    obj.image204:setTop(29);
+    obj.image204:setWidth(50);
+    obj.image204:setHeight(50);
+    obj.image204:setCursor("handPoint");
+    obj.image204:setHint("Clique aqui para voltar");
+    obj.image204:setHitTest(true);
+    obj.image204:setName("image204");
+
+    obj.Armadura45 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.Armadura45:setParent(obj.scrollBox12);
+    obj.Armadura45:setName("Armadura45");
+    obj.Armadura45:setWidth(480);
+    obj.Armadura45:setHeight(174);
+    obj.Armadura45:setLeft(0);
+    obj.Armadura45:setTop(88);
+
+    obj.image205 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image205:setParent(obj.Armadura45);
+    obj.image205:setSRC("images/LojaparaArmaduras.png");
+    obj.image205:setLeft(0);
+    obj.image205:setTop(0);
+    obj.image205:setWidth(399);
+    obj.image205:setHeight(174);
+    obj.image205:setName("image205");
+
+    obj.label418 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label418:setParent(obj.Armadura45);
+    obj.label418:setLeft(22.25);
+    obj.label418:setTop(20.50);
+    obj.label418:setWidth(107.25);
+    obj.label418:setHeight(37.88);
+    obj.label418:setFontSize(22);
+    obj.label418:setHint("Preço da Arma");
+    obj.label418:setField("Preco45");
+    obj.label418:setHorzTextAlign("center");
+    lfm_setPropAsString(obj.label418, "fontStyle",  "bold");
+    obj.label418:setFontColor("yellow");
+    obj.label418:setFontFamily("kalam");
+    obj.label418:setCursor("handPoint");
+    obj.label418:setHitTest(true);
+    obj.label418:setName("label418");
+
+    obj.Arma45 = GUI.fromHandle(_obj_newObject("image"));
+    obj.Arma45:setParent(obj.Armadura45);
+    obj.Arma45:setLeft(41.38);
+    obj.Arma45:setTop(61.75);
+    obj.Arma45:setWidth(67.88);
+    obj.Arma45:setHeight(30);
+    obj.Arma45:setCursor("handPoint");
+    obj.Arma45:setHitTest(true);
+    obj.Arma45:setHint("Clique aqui para comprar");
+    obj.Arma45:setName("Arma45");
+
+    obj.image206 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image206:setParent(obj.Armadura45);
+    obj.image206:setLeft(2.56);
+    obj.image206:setTop(93.00);
+    obj.image206:setWidth(136.69);
+    obj.image206:setHeight(77.69);
+    obj.image206:setStyle("proportional");
+    obj.image206:setCenter(true);
+    obj.image206:setEditable(true);
+    obj.image206:setField("ImagemArma45");
+    obj.image206:setName("image206");
+
+    obj.label419 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label419:setParent(obj.Armadura45);
+    obj.label419:setLeft(197);
+    obj.label419:setTop(10);
+    obj.label419:setWidth(249.25);
+    obj.label419:setHeight(39);
+    obj.label419:setFontSize(22);
+    obj.label419:setField("ItemNome45");
+    lfm_setPropAsString(obj.label419, "fontStyle",  "bold");
+    obj.label419:setFontColor("black");
+    obj.label419:setFontFamily("kalam");
+    obj.label419:setName("label419");
+
+    obj.label420 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label420:setParent(obj.Armadura45);
+    obj.label420:setLeft(243.50);
+    obj.label420:setTop(46);
+    obj.label420:setWidth(149.25);
+    obj.label420:setHeight(38.63);
+    obj.label420:setHorzTextAlign("center");
+    obj.label420:setField("AbsorverAparar45");
+    obj.label420:setFontSize(19);
+    lfm_setPropAsString(obj.label420, "fontStyle",  "bold");
+    obj.label420:setFontColor("black");
+    obj.label420:setFontFamily("kalam");
+    obj.label420:setName("label420");
+
+    obj.label421 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label421:setParent(obj.Armadura45);
+    obj.label421:setLeft(182);
+    obj.label421:setTop(86.13);
+    obj.label421:setWidth(61.88);
+    obj.label421:setHeight(38.87);
+    obj.label421:setHorzTextAlign("center");
+    obj.label421:setField("CD45");
+    obj.label421:setFontSize(19);
+    lfm_setPropAsString(obj.label421, "fontStyle",  "bold");
+    obj.label421:setFontColor("black");
+    obj.label421:setFontFamily("kalam");
+    obj.label421:setName("label421");
+
+    obj.label422 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label422:setParent(obj.Armadura45);
+    obj.label422:setLeft(300);
+    obj.label422:setTop(127);
+    obj.label422:setWidth(61.88);
+    obj.label422:setHeight(38.88);
+    obj.label422:setHorzTextAlign("center");
+    obj.label422:setField("PenalidadedeMovimento45");
+    obj.label422:setFontSize(15);
+    lfm_setPropAsString(obj.label422, "fontStyle",  "bold");
+    obj.label422:setFontColor("black");
+    obj.label422:setFontFamily("kalam");
+    obj.label422:setName("label422");
+
+    obj.label423 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label423:setParent(obj.Armadura45);
+    obj.label423:setLeft(336);
+    obj.label423:setTop(86.12);
+    obj.label423:setWidth(61.88);
+    obj.label423:setHeight(38.88);
+    obj.label423:setHorzTextAlign("center");
+    obj.label423:setField("PenalidadeDePercepcao45");
+    obj.label423:setFontSize(19);
+    lfm_setPropAsString(obj.label423, "fontStyle",  "bold");
+    obj.label423:setFontColor("black");
+    obj.label423:setFontFamily("kalam");
+    obj.label423:setName("label423");
+
+    obj.Armadura46 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.Armadura46:setParent(obj.scrollBox12);
+    obj.Armadura46:setName("Armadura46");
+    obj.Armadura46:setWidth(480);
+    obj.Armadura46:setHeight(174);
+    obj.Armadura46:setLeft(0);
+    obj.Armadura46:setTop(270);
+
+    obj.image207 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image207:setParent(obj.Armadura46);
+    obj.image207:setSRC("images/LojaparaArmaduras.png");
+    obj.image207:setLeft(0);
+    obj.image207:setTop(0);
+    obj.image207:setWidth(399);
+    obj.image207:setHeight(174);
+    obj.image207:setName("image207");
+
+    obj.label424 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label424:setParent(obj.Armadura46);
+    obj.label424:setLeft(22.25);
+    obj.label424:setTop(20.50);
+    obj.label424:setWidth(107.25);
+    obj.label424:setHeight(37.88);
+    obj.label424:setFontSize(22);
+    obj.label424:setHint("Preço da Arma");
+    obj.label424:setField("Preco46");
+    obj.label424:setHorzTextAlign("center");
+    lfm_setPropAsString(obj.label424, "fontStyle",  "bold");
+    obj.label424:setFontColor("yellow");
+    obj.label424:setFontFamily("kalam");
+    obj.label424:setCursor("handPoint");
+    obj.label424:setHitTest(true);
+    obj.label424:setName("label424");
+
+    obj.Arma46 = GUI.fromHandle(_obj_newObject("image"));
+    obj.Arma46:setParent(obj.Armadura46);
+    obj.Arma46:setLeft(41.38);
+    obj.Arma46:setTop(61.75);
+    obj.Arma46:setWidth(67.88);
+    obj.Arma46:setHeight(30);
+    obj.Arma46:setCursor("handPoint");
+    obj.Arma46:setHitTest(true);
+    obj.Arma46:setHint("Clique aqui para comprar");
+    obj.Arma46:setName("Arma46");
+
+    obj.image208 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image208:setParent(obj.Armadura46);
+    obj.image208:setLeft(2.56);
+    obj.image208:setTop(93.00);
+    obj.image208:setWidth(136.69);
+    obj.image208:setHeight(77.69);
+    obj.image208:setStyle("proportional");
+    obj.image208:setCenter(true);
+    obj.image208:setEditable(true);
+    obj.image208:setField("ImagemArma46");
+    obj.image208:setName("image208");
+
+    obj.label425 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label425:setParent(obj.Armadura46);
+    obj.label425:setLeft(197);
+    obj.label425:setTop(10);
+    obj.label425:setWidth(249.25);
+    obj.label425:setHeight(39);
+    obj.label425:setFontSize(22);
+    obj.label425:setField("ItemNome46");
+    lfm_setPropAsString(obj.label425, "fontStyle",  "bold");
+    obj.label425:setFontColor("black");
+    obj.label425:setFontFamily("kalam");
+    obj.label425:setName("label425");
+
+    obj.label426 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label426:setParent(obj.Armadura46);
+    obj.label426:setLeft(243.50);
+    obj.label426:setTop(46);
+    obj.label426:setWidth(149.25);
+    obj.label426:setHeight(38.63);
+    obj.label426:setHorzTextAlign("center");
+    obj.label426:setField("AbsorverAparar46");
+    obj.label426:setFontSize(19);
+    lfm_setPropAsString(obj.label426, "fontStyle",  "bold");
+    obj.label426:setFontColor("black");
+    obj.label426:setFontFamily("kalam");
+    obj.label426:setName("label426");
+
+    obj.label427 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label427:setParent(obj.Armadura46);
+    obj.label427:setLeft(182);
+    obj.label427:setTop(86.13);
+    obj.label427:setWidth(61.88);
+    obj.label427:setHeight(38.87);
+    obj.label427:setHorzTextAlign("center");
+    obj.label427:setField("CD46");
+    obj.label427:setFontSize(19);
+    lfm_setPropAsString(obj.label427, "fontStyle",  "bold");
+    obj.label427:setFontColor("black");
+    obj.label427:setFontFamily("kalam");
+    obj.label427:setName("label427");
+
+    obj.label428 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label428:setParent(obj.Armadura46);
+    obj.label428:setLeft(300);
+    obj.label428:setTop(127);
+    obj.label428:setWidth(61.88);
+    obj.label428:setHeight(38.88);
+    obj.label428:setHorzTextAlign("center");
+    obj.label428:setField("PenalidadedeMovimento46");
+    obj.label428:setFontSize(15);
+    lfm_setPropAsString(obj.label428, "fontStyle",  "bold");
+    obj.label428:setFontColor("black");
+    obj.label428:setFontFamily("kalam");
+    obj.label428:setName("label428");
+
+    obj.label429 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label429:setParent(obj.Armadura46);
+    obj.label429:setLeft(336);
+    obj.label429:setTop(86.12);
+    obj.label429:setWidth(61.88);
+    obj.label429:setHeight(38.88);
+    obj.label429:setHorzTextAlign("center");
+    obj.label429:setField("PenalidadeDePercepcao46");
+    obj.label429:setFontSize(19);
+    lfm_setPropAsString(obj.label429, "fontStyle",  "bold");
+    obj.label429:setFontColor("black");
+    obj.label429:setFontFamily("kalam");
+    obj.label429:setName("label429");
+
+    obj.Armadura47 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.Armadura47:setParent(obj.scrollBox12);
+    obj.Armadura47:setName("Armadura47");
+    obj.Armadura47:setWidth(480);
+    obj.Armadura47:setHeight(174);
+    obj.Armadura47:setLeft(0);
+    obj.Armadura47:setTop(452);
+
+    obj.image209 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image209:setParent(obj.Armadura47);
+    obj.image209:setSRC("images/LojaparaArmaduras.png");
+    obj.image209:setLeft(0);
+    obj.image209:setTop(0);
+    obj.image209:setWidth(399);
+    obj.image209:setHeight(174);
+    obj.image209:setName("image209");
+
+    obj.label430 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label430:setParent(obj.Armadura47);
+    obj.label430:setLeft(22.25);
+    obj.label430:setTop(20.50);
+    obj.label430:setWidth(107.25);
+    obj.label430:setHeight(37.88);
+    obj.label430:setFontSize(22);
+    obj.label430:setHint("Preço da Arma");
+    obj.label430:setField("Preco47");
+    obj.label430:setHorzTextAlign("center");
+    lfm_setPropAsString(obj.label430, "fontStyle",  "bold");
+    obj.label430:setFontColor("yellow");
+    obj.label430:setFontFamily("kalam");
+    obj.label430:setCursor("handPoint");
+    obj.label430:setHitTest(true);
+    obj.label430:setName("label430");
+
+    obj.Arma47 = GUI.fromHandle(_obj_newObject("image"));
+    obj.Arma47:setParent(obj.Armadura47);
+    obj.Arma47:setLeft(41.38);
+    obj.Arma47:setTop(61.75);
+    obj.Arma47:setWidth(67.88);
+    obj.Arma47:setHeight(30);
+    obj.Arma47:setCursor("handPoint");
+    obj.Arma47:setHitTest(true);
+    obj.Arma47:setHint("Clique aqui para comprar");
+    obj.Arma47:setName("Arma47");
+
+    obj.image210 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image210:setParent(obj.Armadura47);
+    obj.image210:setLeft(2.56);
+    obj.image210:setTop(93.00);
+    obj.image210:setWidth(136.69);
+    obj.image210:setHeight(77.69);
+    obj.image210:setStyle("proportional");
+    obj.image210:setCenter(true);
+    obj.image210:setEditable(true);
+    obj.image210:setField("ImagemArma47");
+    obj.image210:setName("image210");
+
+    obj.label431 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label431:setParent(obj.Armadura47);
+    obj.label431:setLeft(197);
+    obj.label431:setTop(10);
+    obj.label431:setWidth(249.25);
+    obj.label431:setHeight(39);
+    obj.label431:setFontSize(22);
+    obj.label431:setField("ItemNome47");
+    lfm_setPropAsString(obj.label431, "fontStyle",  "bold");
+    obj.label431:setFontColor("black");
+    obj.label431:setFontFamily("kalam");
+    obj.label431:setName("label431");
+
+    obj.label432 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label432:setParent(obj.Armadura47);
+    obj.label432:setLeft(243.50);
+    obj.label432:setTop(46);
+    obj.label432:setWidth(149.25);
+    obj.label432:setHeight(38.63);
+    obj.label432:setHorzTextAlign("center");
+    obj.label432:setField("AbsorverAparar47");
+    obj.label432:setFontSize(19);
+    lfm_setPropAsString(obj.label432, "fontStyle",  "bold");
+    obj.label432:setFontColor("black");
+    obj.label432:setFontFamily("kalam");
+    obj.label432:setName("label432");
+
+    obj.label433 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label433:setParent(obj.Armadura47);
+    obj.label433:setLeft(182);
+    obj.label433:setTop(86.13);
+    obj.label433:setWidth(61.88);
+    obj.label433:setHeight(38.87);
+    obj.label433:setHorzTextAlign("center");
+    obj.label433:setField("CD47");
+    obj.label433:setFontSize(19);
+    lfm_setPropAsString(obj.label433, "fontStyle",  "bold");
+    obj.label433:setFontColor("black");
+    obj.label433:setFontFamily("kalam");
+    obj.label433:setName("label433");
+
+    obj.label434 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label434:setParent(obj.Armadura47);
+    obj.label434:setLeft(300);
+    obj.label434:setTop(127);
+    obj.label434:setWidth(61.88);
+    obj.label434:setHeight(38.88);
+    obj.label434:setHorzTextAlign("center");
+    obj.label434:setField("PenalidadedeMovimento47");
+    obj.label434:setFontSize(15);
+    lfm_setPropAsString(obj.label434, "fontStyle",  "bold");
+    obj.label434:setFontColor("black");
+    obj.label434:setFontFamily("kalam");
+    obj.label434:setName("label434");
+
+    obj.label435 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label435:setParent(obj.Armadura47);
+    obj.label435:setLeft(336);
+    obj.label435:setTop(86.12);
+    obj.label435:setWidth(61.88);
+    obj.label435:setHeight(38.88);
+    obj.label435:setHorzTextAlign("center");
+    obj.label435:setField("PenalidadeDePercepcao47");
+    obj.label435:setFontSize(19);
+    lfm_setPropAsString(obj.label435, "fontStyle",  "bold");
+    obj.label435:setFontColor("black");
+    obj.label435:setFontFamily("kalam");
+    obj.label435:setName("label435");
+
+    obj.Armadura48 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.Armadura48:setParent(obj.scrollBox12);
+    obj.Armadura48:setName("Armadura48");
+    obj.Armadura48:setWidth(480);
+    obj.Armadura48:setHeight(174);
+    obj.Armadura48:setLeft(0);
+    obj.Armadura48:setTop(634);
+
+    obj.image211 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image211:setParent(obj.Armadura48);
+    obj.image211:setSRC("images/LojaparaArmaduras.png");
+    obj.image211:setLeft(0);
+    obj.image211:setTop(0);
+    obj.image211:setWidth(399);
+    obj.image211:setHeight(174);
+    obj.image211:setName("image211");
+
+    obj.label436 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label436:setParent(obj.Armadura48);
+    obj.label436:setLeft(22.25);
+    obj.label436:setTop(20.50);
+    obj.label436:setWidth(107.25);
+    obj.label436:setHeight(37.88);
+    obj.label436:setFontSize(22);
+    obj.label436:setHint("Preço da Arma");
+    obj.label436:setField("Preco48");
+    obj.label436:setHorzTextAlign("center");
+    lfm_setPropAsString(obj.label436, "fontStyle",  "bold");
+    obj.label436:setFontColor("yellow");
+    obj.label436:setFontFamily("kalam");
+    obj.label436:setCursor("handPoint");
+    obj.label436:setHitTest(true);
+    obj.label436:setName("label436");
+
+    obj.Arma48 = GUI.fromHandle(_obj_newObject("image"));
+    obj.Arma48:setParent(obj.Armadura48);
+    obj.Arma48:setLeft(41.38);
+    obj.Arma48:setTop(61.75);
+    obj.Arma48:setWidth(67.88);
+    obj.Arma48:setHeight(30);
+    obj.Arma48:setCursor("handPoint");
+    obj.Arma48:setHitTest(true);
+    obj.Arma48:setHint("Clique aqui para comprar");
+    obj.Arma48:setName("Arma48");
+
+    obj.image212 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image212:setParent(obj.Armadura48);
+    obj.image212:setLeft(2.56);
+    obj.image212:setTop(93.00);
+    obj.image212:setWidth(136.69);
+    obj.image212:setHeight(77.69);
+    obj.image212:setStyle("proportional");
+    obj.image212:setCenter(true);
+    obj.image212:setEditable(true);
+    obj.image212:setField("ImagemArma48");
+    obj.image212:setName("image212");
+
+    obj.label437 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label437:setParent(obj.Armadura48);
+    obj.label437:setLeft(197);
+    obj.label437:setTop(10);
+    obj.label437:setWidth(249.25);
+    obj.label437:setHeight(39);
+    obj.label437:setFontSize(22);
+    obj.label437:setField("ItemNome48");
+    lfm_setPropAsString(obj.label437, "fontStyle",  "bold");
+    obj.label437:setFontColor("black");
+    obj.label437:setFontFamily("kalam");
+    obj.label437:setName("label437");
+
+    obj.label438 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label438:setParent(obj.Armadura48);
+    obj.label438:setLeft(243.50);
+    obj.label438:setTop(47);
+    obj.label438:setWidth(149.25);
+    obj.label438:setHeight(38.63);
+    obj.label438:setHorzTextAlign("center");
+    obj.label438:setField("AbsorverAparar48");
+    obj.label438:setFontSize(19);
+    lfm_setPropAsString(obj.label438, "fontStyle",  "bold");
+    obj.label438:setFontColor("black");
+    obj.label438:setFontFamily("kalam");
+    obj.label438:setName("label438");
+
+    obj.label439 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label439:setParent(obj.Armadura48);
+    obj.label439:setLeft(182);
+    obj.label439:setTop(86.13);
+    obj.label439:setWidth(61.88);
+    obj.label439:setHeight(38.87);
+    obj.label439:setHorzTextAlign("center");
+    obj.label439:setField("CD48");
+    obj.label439:setFontSize(19);
+    lfm_setPropAsString(obj.label439, "fontStyle",  "bold");
+    obj.label439:setFontColor("black");
+    obj.label439:setFontFamily("kalam");
+    obj.label439:setName("label439");
+
+    obj.label440 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label440:setParent(obj.Armadura48);
+    obj.label440:setLeft(300);
+    obj.label440:setTop(127);
+    obj.label440:setWidth(61.88);
+    obj.label440:setHeight(38.88);
+    obj.label440:setHorzTextAlign("center");
+    obj.label440:setField("PenalidadedeMovimento48");
+    obj.label440:setFontSize(15);
+    lfm_setPropAsString(obj.label440, "fontStyle",  "bold");
+    obj.label440:setFontColor("black");
+    obj.label440:setFontFamily("kalam");
+    obj.label440:setName("label440");
+
+    obj.label441 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label441:setParent(obj.Armadura48);
+    obj.label441:setLeft(336);
+    obj.label441:setTop(86.12);
+    obj.label441:setWidth(61.88);
+    obj.label441:setHeight(38.88);
+    obj.label441:setHorzTextAlign("center");
+    obj.label441:setField("PenalidadeDePercepcao48");
+    obj.label441:setFontSize(19);
+    lfm_setPropAsString(obj.label441, "fontStyle",  "bold");
+    obj.label441:setFontColor("black");
+    obj.label441:setFontFamily("kalam");
+    obj.label441:setName("label441");
+
+    obj.Armadura49 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.Armadura49:setParent(obj.scrollBox12);
+    obj.Armadura49:setName("Armadura49");
+    obj.Armadura49:setWidth(480);
+    obj.Armadura49:setHeight(174);
+    obj.Armadura49:setLeft(0);
+    obj.Armadura49:setTop(816);
+
+    obj.image213 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image213:setParent(obj.Armadura49);
+    obj.image213:setSRC("images/LojaparaArmaduras.png");
+    obj.image213:setLeft(0);
+    obj.image213:setTop(0);
+    obj.image213:setWidth(399);
+    obj.image213:setHeight(174);
+    obj.image213:setName("image213");
+
+    obj.label442 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label442:setParent(obj.Armadura49);
+    obj.label442:setLeft(22.25);
+    obj.label442:setTop(20.50);
+    obj.label442:setWidth(107.25);
+    obj.label442:setHeight(37.88);
+    obj.label442:setFontSize(22);
+    obj.label442:setHint("Preço da Arma");
+    obj.label442:setField("Preco49");
+    obj.label442:setHorzTextAlign("center");
+    lfm_setPropAsString(obj.label442, "fontStyle",  "bold");
+    obj.label442:setFontColor("yellow");
+    obj.label442:setFontFamily("kalam");
+    obj.label442:setCursor("handPoint");
+    obj.label442:setHitTest(true);
+    obj.label442:setName("label442");
+
+    obj.Arma49 = GUI.fromHandle(_obj_newObject("image"));
+    obj.Arma49:setParent(obj.Armadura49);
+    obj.Arma49:setLeft(41.38);
+    obj.Arma49:setTop(61.75);
+    obj.Arma49:setWidth(67.88);
+    obj.Arma49:setHeight(30);
+    obj.Arma49:setCursor("handPoint");
+    obj.Arma49:setHitTest(true);
+    obj.Arma49:setHint("Clique aqui para comprar");
+    obj.Arma49:setName("Arma49");
+
+    obj.image214 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image214:setParent(obj.Armadura49);
+    obj.image214:setLeft(2.56);
+    obj.image214:setTop(93.00);
+    obj.image214:setWidth(136.69);
+    obj.image214:setHeight(77.69);
+    obj.image214:setStyle("proportional");
+    obj.image214:setCenter(true);
+    obj.image214:setEditable(true);
+    obj.image214:setField("ImagemArma49");
+    obj.image214:setName("image214");
+
+    obj.label443 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label443:setParent(obj.Armadura49);
+    obj.label443:setLeft(197);
+    obj.label443:setTop(10);
+    obj.label443:setWidth(249.25);
+    obj.label443:setHeight(39);
+    obj.label443:setFontSize(22);
+    obj.label443:setField("ItemNome49");
+    lfm_setPropAsString(obj.label443, "fontStyle",  "bold");
+    obj.label443:setFontColor("black");
+    obj.label443:setFontFamily("kalam");
+    obj.label443:setName("label443");
+
+    obj.label444 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label444:setParent(obj.Armadura49);
+    obj.label444:setLeft(243.50);
+    obj.label444:setTop(47);
+    obj.label444:setWidth(149.25);
+    obj.label444:setHeight(38.63);
+    obj.label444:setHorzTextAlign("center");
+    obj.label444:setField("AbsorverAparar49");
+    obj.label444:setFontSize(19);
+    lfm_setPropAsString(obj.label444, "fontStyle",  "bold");
+    obj.label444:setFontColor("black");
+    obj.label444:setFontFamily("kalam");
+    obj.label444:setName("label444");
+
+    obj.label445 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label445:setParent(obj.Armadura49);
+    obj.label445:setLeft(182);
+    obj.label445:setTop(86.13);
+    obj.label445:setWidth(61.88);
+    obj.label445:setHeight(38.87);
+    obj.label445:setHorzTextAlign("center");
+    obj.label445:setField("CD49");
+    obj.label445:setFontSize(19);
+    lfm_setPropAsString(obj.label445, "fontStyle",  "bold");
+    obj.label445:setFontColor("black");
+    obj.label445:setFontFamily("kalam");
+    obj.label445:setName("label445");
+
+    obj.label446 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label446:setParent(obj.Armadura49);
+    obj.label446:setLeft(300);
+    obj.label446:setTop(127);
+    obj.label446:setWidth(61.88);
+    obj.label446:setHeight(38.88);
+    obj.label446:setHorzTextAlign("center");
+    obj.label446:setField("PenalidadedeMovimento49");
+    obj.label446:setFontSize(15);
+    lfm_setPropAsString(obj.label446, "fontStyle",  "bold");
+    obj.label446:setFontColor("black");
+    obj.label446:setFontFamily("kalam");
+    obj.label446:setName("label446");
+
+    obj.label447 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label447:setParent(obj.Armadura49);
+    obj.label447:setLeft(336);
+    obj.label447:setTop(86.12);
+    obj.label447:setWidth(61.88);
+    obj.label447:setHeight(38.88);
+    obj.label447:setHorzTextAlign("center");
+    obj.label447:setField("PenalidadeDePercepcao49");
+    obj.label447:setFontSize(19);
+    lfm_setPropAsString(obj.label447, "fontStyle",  "bold");
+    obj.label447:setFontColor("black");
+    obj.label447:setFontFamily("kalam");
+    obj.label447:setName("label447");
+
+    obj.Armadura50 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.Armadura50:setParent(obj.scrollBox12);
+    obj.Armadura50:setName("Armadura50");
+    obj.Armadura50:setWidth(480);
+    obj.Armadura50:setHeight(174);
+    obj.Armadura50:setLeft(0);
+    obj.Armadura50:setTop(998);
+
+    obj.image215 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image215:setParent(obj.Armadura50);
+    obj.image215:setSRC("images/LojaparaArmaduras.png");
+    obj.image215:setLeft(0);
+    obj.image215:setTop(0);
+    obj.image215:setWidth(399);
+    obj.image215:setHeight(174);
+    obj.image215:setName("image215");
+
+    obj.label448 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label448:setParent(obj.Armadura50);
+    obj.label448:setLeft(22.25);
+    obj.label448:setTop(20.50);
+    obj.label448:setWidth(107.25);
+    obj.label448:setHeight(37.88);
+    obj.label448:setFontSize(22);
+    obj.label448:setHint("Preço da Arma");
+    obj.label448:setField("Preco50");
+    obj.label448:setHorzTextAlign("center");
+    lfm_setPropAsString(obj.label448, "fontStyle",  "bold");
+    obj.label448:setFontColor("yellow");
+    obj.label448:setFontFamily("kalam");
+    obj.label448:setCursor("handPoint");
+    obj.label448:setHitTest(true);
+    obj.label448:setName("label448");
+
+    obj.Arma50 = GUI.fromHandle(_obj_newObject("image"));
+    obj.Arma50:setParent(obj.Armadura50);
+    obj.Arma50:setLeft(41.38);
+    obj.Arma50:setTop(61.75);
+    obj.Arma50:setWidth(67.88);
+    obj.Arma50:setHeight(30);
+    obj.Arma50:setCursor("handPoint");
+    obj.Arma50:setHitTest(true);
+    obj.Arma50:setHint("Clique aqui para comprar");
+    obj.Arma50:setName("Arma50");
+
+    obj.image216 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image216:setParent(obj.Armadura50);
+    obj.image216:setLeft(2.56);
+    obj.image216:setTop(93.00);
+    obj.image216:setWidth(136.69);
+    obj.image216:setHeight(77.69);
+    obj.image216:setStyle("proportional");
+    obj.image216:setCenter(true);
+    obj.image216:setEditable(true);
+    obj.image216:setField("ImagemArma50");
+    obj.image216:setName("image216");
+
+    obj.label449 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label449:setParent(obj.Armadura50);
+    obj.label449:setLeft(197);
+    obj.label449:setTop(10);
+    obj.label449:setWidth(249.25);
+    obj.label449:setHeight(39);
+    obj.label449:setFontSize(22);
+    obj.label449:setField("ItemNome50");
+    lfm_setPropAsString(obj.label449, "fontStyle",  "bold");
+    obj.label449:setFontColor("black");
+    obj.label449:setFontFamily("kalam");
+    obj.label449:setName("label449");
+
+    obj.label450 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label450:setParent(obj.Armadura50);
+    obj.label450:setLeft(243.50);
+    obj.label450:setTop(47);
+    obj.label450:setWidth(149.25);
+    obj.label450:setHeight(38.63);
+    obj.label450:setHorzTextAlign("center");
+    obj.label450:setField("AbsorverAparar50");
+    obj.label450:setFontSize(19);
+    lfm_setPropAsString(obj.label450, "fontStyle",  "bold");
+    obj.label450:setFontColor("black");
+    obj.label450:setFontFamily("kalam");
+    obj.label450:setName("label450");
+
+    obj.label451 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label451:setParent(obj.Armadura50);
+    obj.label451:setLeft(182);
+    obj.label451:setTop(86.13);
+    obj.label451:setWidth(61.88);
+    obj.label451:setHeight(38.87);
+    obj.label451:setHorzTextAlign("center");
+    obj.label451:setField("CD50");
+    obj.label451:setFontSize(19);
+    lfm_setPropAsString(obj.label451, "fontStyle",  "bold");
+    obj.label451:setFontColor("black");
+    obj.label451:setFontFamily("kalam");
+    obj.label451:setName("label451");
+
+    obj.label452 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label452:setParent(obj.Armadura50);
+    obj.label452:setLeft(300);
+    obj.label452:setTop(127);
+    obj.label452:setWidth(61.88);
+    obj.label452:setHeight(38.88);
+    obj.label452:setHorzTextAlign("center");
+    obj.label452:setField("PenalidadedeMovimento50");
+    obj.label452:setFontSize(15);
+    lfm_setPropAsString(obj.label452, "fontStyle",  "bold");
+    obj.label452:setFontColor("black");
+    obj.label452:setFontFamily("kalam");
+    obj.label452:setName("label452");
+
+    obj.label453 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label453:setParent(obj.Armadura50);
+    obj.label453:setLeft(336);
+    obj.label453:setTop(86.12);
+    obj.label453:setWidth(61.88);
+    obj.label453:setHeight(38.88);
+    obj.label453:setHorzTextAlign("center");
+    obj.label453:setField("PenalidadeDePercepcao50");
+    obj.label453:setFontSize(19);
+    lfm_setPropAsString(obj.label453, "fontStyle",  "bold");
+    obj.label453:setFontColor("black");
+    obj.label453:setFontFamily("kalam");
+    obj.label453:setName("label453");
+
+    obj.Armadura51 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.Armadura51:setParent(obj.scrollBox12);
+    obj.Armadura51:setName("Armadura51");
+    obj.Armadura51:setWidth(480);
+    obj.Armadura51:setHeight(174);
+    obj.Armadura51:setLeft(413);
+    obj.Armadura51:setTop(88);
+
+    obj.image217 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image217:setParent(obj.Armadura51);
+    obj.image217:setSRC("images/LojaparaArmaduras.png");
+    obj.image217:setLeft(0);
+    obj.image217:setTop(0);
+    obj.image217:setWidth(399);
+    obj.image217:setHeight(174);
+    obj.image217:setName("image217");
+
+    obj.label454 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label454:setParent(obj.Armadura51);
+    obj.label454:setLeft(22.25);
+    obj.label454:setTop(20.50);
+    obj.label454:setWidth(107.25);
+    obj.label454:setHeight(37.88);
+    obj.label454:setFontSize(22);
+    obj.label454:setHint("Preço da Arma");
+    obj.label454:setField("Preco51");
+    obj.label454:setHorzTextAlign("center");
+    lfm_setPropAsString(obj.label454, "fontStyle",  "bold");
+    obj.label454:setFontColor("yellow");
+    obj.label454:setFontFamily("kalam");
+    obj.label454:setCursor("handPoint");
+    obj.label454:setHitTest(true);
+    obj.label454:setName("label454");
+
+    obj.Arma51 = GUI.fromHandle(_obj_newObject("image"));
+    obj.Arma51:setParent(obj.Armadura51);
+    obj.Arma51:setLeft(41.38);
+    obj.Arma51:setTop(61.75);
+    obj.Arma51:setWidth(67.88);
+    obj.Arma51:setHeight(30);
+    obj.Arma51:setCursor("handPoint");
+    obj.Arma51:setHitTest(true);
+    obj.Arma51:setHint("Clique aqui para comprar");
+    obj.Arma51:setName("Arma51");
+
+    obj.image218 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image218:setParent(obj.Armadura51);
+    obj.image218:setLeft(2.56);
+    obj.image218:setTop(93.00);
+    obj.image218:setWidth(136.69);
+    obj.image218:setHeight(77.69);
+    obj.image218:setStyle("proportional");
+    obj.image218:setCenter(true);
+    obj.image218:setEditable(true);
+    obj.image218:setField("ImagemArma51");
+    obj.image218:setName("image218");
+
+    obj.label455 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label455:setParent(obj.Armadura51);
+    obj.label455:setLeft(197);
+    obj.label455:setTop(10);
+    obj.label455:setWidth(249.25);
+    obj.label455:setHeight(39);
+    obj.label455:setFontSize(22);
+    obj.label455:setField("ItemNome51");
+    lfm_setPropAsString(obj.label455, "fontStyle",  "bold");
+    obj.label455:setFontColor("black");
+    obj.label455:setFontFamily("kalam");
+    obj.label455:setName("label455");
+
+    obj.label456 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label456:setParent(obj.Armadura51);
+    obj.label456:setLeft(243.51);
+    obj.label456:setTop(47);
+    obj.label456:setWidth(149.25);
+    obj.label456:setHeight(38.63);
+    obj.label456:setHorzTextAlign("center");
+    obj.label456:setField("AbsorverAparar51");
+    obj.label456:setFontSize(19);
+    lfm_setPropAsString(obj.label456, "fontStyle",  "bold");
+    obj.label456:setFontColor("black");
+    obj.label456:setFontFamily("kalam");
+    obj.label456:setName("label456");
+
+    obj.label457 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label457:setParent(obj.Armadura51);
+    obj.label457:setLeft(182);
+    obj.label457:setTop(86.13);
+    obj.label457:setWidth(61.88);
+    obj.label457:setHeight(38.87);
+    obj.label457:setHorzTextAlign("center");
+    obj.label457:setField("CD51");
+    obj.label457:setFontSize(19);
+    lfm_setPropAsString(obj.label457, "fontStyle",  "bold");
+    obj.label457:setFontColor("black");
+    obj.label457:setFontFamily("kalam");
+    obj.label457:setName("label457");
+
+    obj.label458 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label458:setParent(obj.Armadura51);
+    obj.label458:setLeft(300);
+    obj.label458:setTop(127);
+    obj.label458:setWidth(61.88);
+    obj.label458:setHeight(38.88);
+    obj.label458:setHorzTextAlign("center");
+    obj.label458:setField("PenalidadedeMovimento51");
+    obj.label458:setFontSize(15);
+    lfm_setPropAsString(obj.label458, "fontStyle",  "bold");
+    obj.label458:setFontColor("black");
+    obj.label458:setFontFamily("kalam");
+    obj.label458:setName("label458");
+
+    obj.label459 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label459:setParent(obj.Armadura51);
+    obj.label459:setLeft(336);
+    obj.label459:setTop(86.12);
+    obj.label459:setWidth(61.88);
+    obj.label459:setHeight(38.88);
+    obj.label459:setHorzTextAlign("center");
+    obj.label459:setField("PenalidadeDePercepcao51");
+    obj.label459:setFontSize(19);
+    lfm_setPropAsString(obj.label459, "fontStyle",  "bold");
+    obj.label459:setFontColor("black");
+    obj.label459:setFontFamily("kalam");
+    obj.label459:setName("label459");
+
+    obj.Armadura52 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.Armadura52:setParent(obj.scrollBox12);
+    obj.Armadura52:setName("Armadura52");
+    obj.Armadura52:setWidth(480);
+    obj.Armadura52:setHeight(174);
+    obj.Armadura52:setLeft(413);
+    obj.Armadura52:setTop(270);
+
+    obj.image219 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image219:setParent(obj.Armadura52);
+    obj.image219:setSRC("images/LojaparaArmaduras.png");
+    obj.image219:setLeft(0);
+    obj.image219:setTop(0);
+    obj.image219:setWidth(399);
+    obj.image219:setHeight(174);
+    obj.image219:setName("image219");
+
+    obj.label460 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label460:setParent(obj.Armadura52);
+    obj.label460:setLeft(22.25);
+    obj.label460:setTop(20.50);
+    obj.label460:setWidth(107.25);
+    obj.label460:setHeight(37.88);
+    obj.label460:setFontSize(22);
+    obj.label460:setHint("Preço da Arma");
+    obj.label460:setField("Preco52");
+    obj.label460:setHorzTextAlign("center");
+    lfm_setPropAsString(obj.label460, "fontStyle",  "bold");
+    obj.label460:setFontColor("yellow");
+    obj.label460:setFontFamily("kalam");
+    obj.label460:setCursor("handPoint");
+    obj.label460:setHitTest(true);
+    obj.label460:setName("label460");
+
+    obj.Arma52 = GUI.fromHandle(_obj_newObject("image"));
+    obj.Arma52:setParent(obj.Armadura52);
+    obj.Arma52:setLeft(41.38);
+    obj.Arma52:setTop(61.75);
+    obj.Arma52:setWidth(67.88);
+    obj.Arma52:setHeight(30);
+    obj.Arma52:setCursor("handPoint");
+    obj.Arma52:setHitTest(true);
+    obj.Arma52:setHint("Clique aqui para comprar");
+    obj.Arma52:setName("Arma52");
+
+    obj.image220 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image220:setParent(obj.Armadura52);
+    obj.image220:setLeft(2.56);
+    obj.image220:setTop(93.00);
+    obj.image220:setWidth(136.69);
+    obj.image220:setHeight(77.69);
+    obj.image220:setStyle("proportional");
+    obj.image220:setCenter(true);
+    obj.image220:setEditable(true);
+    obj.image220:setField("ImagemArma52");
+    obj.image220:setName("image220");
+
+    obj.label461 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label461:setParent(obj.Armadura52);
+    obj.label461:setLeft(197);
+    obj.label461:setTop(10);
+    obj.label461:setWidth(249.25);
+    obj.label461:setHeight(39);
+    obj.label461:setFontSize(22);
+    obj.label461:setField("ItemNome52");
+    lfm_setPropAsString(obj.label461, "fontStyle",  "bold");
+    obj.label461:setFontColor("black");
+    obj.label461:setFontFamily("kalam");
+    obj.label461:setName("label461");
+
+    obj.label462 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label462:setParent(obj.Armadura52);
+    obj.label462:setLeft(243.51);
+    obj.label462:setTop(47);
+    obj.label462:setWidth(149.25);
+    obj.label462:setHeight(38.63);
+    obj.label462:setHorzTextAlign("center");
+    obj.label462:setField("AbsorverAparar52");
+    obj.label462:setFontSize(19);
+    lfm_setPropAsString(obj.label462, "fontStyle",  "bold");
+    obj.label462:setFontColor("black");
+    obj.label462:setFontFamily("kalam");
+    obj.label462:setName("label462");
+
+    obj.label463 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label463:setParent(obj.Armadura52);
+    obj.label463:setLeft(182);
+    obj.label463:setTop(86.13);
+    obj.label463:setWidth(61.88);
+    obj.label463:setHeight(38.87);
+    obj.label463:setHorzTextAlign("center");
+    obj.label463:setField("CD52");
+    obj.label463:setFontSize(19);
+    lfm_setPropAsString(obj.label463, "fontStyle",  "bold");
+    obj.label463:setFontColor("black");
+    obj.label463:setFontFamily("kalam");
+    obj.label463:setName("label463");
+
+    obj.label464 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label464:setParent(obj.Armadura52);
+    obj.label464:setLeft(300);
+    obj.label464:setTop(127);
+    obj.label464:setWidth(61.88);
+    obj.label464:setHeight(38.88);
+    obj.label464:setHorzTextAlign("center");
+    obj.label464:setField("PenalidadedeMovimento52");
+    obj.label464:setFontSize(15);
+    lfm_setPropAsString(obj.label464, "fontStyle",  "bold");
+    obj.label464:setFontColor("black");
+    obj.label464:setFontFamily("kalam");
+    obj.label464:setName("label464");
+
+    obj.label465 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label465:setParent(obj.Armadura52);
+    obj.label465:setLeft(336);
+    obj.label465:setTop(86.12);
+    obj.label465:setWidth(61.88);
+    obj.label465:setHeight(38.88);
+    obj.label465:setHorzTextAlign("center");
+    obj.label465:setField("PenalidadeDePercepcao52");
+    obj.label465:setFontSize(19);
+    lfm_setPropAsString(obj.label465, "fontStyle",  "bold");
+    obj.label465:setFontColor("black");
+    obj.label465:setFontFamily("kalam");
+    obj.label465:setName("label465");
+
+    obj.Armadura53 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.Armadura53:setParent(obj.scrollBox12);
+    obj.Armadura53:setName("Armadura53");
+    obj.Armadura53:setWidth(480);
+    obj.Armadura53:setHeight(174);
+    obj.Armadura53:setLeft(413);
+    obj.Armadura53:setTop(634);
+
+    obj.image221 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image221:setParent(obj.Armadura53);
+    obj.image221:setSRC("images/LojaparaArmaduras.png");
+    obj.image221:setLeft(0);
+    obj.image221:setTop(0);
+    obj.image221:setWidth(399);
+    obj.image221:setHeight(174);
+    obj.image221:setName("image221");
+
+    obj.label466 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label466:setParent(obj.Armadura53);
+    obj.label466:setLeft(22.25);
+    obj.label466:setTop(20.50);
+    obj.label466:setWidth(107.25);
+    obj.label466:setHeight(37.88);
+    obj.label466:setFontSize(22);
+    obj.label466:setHint("Preço da Arma");
+    obj.label466:setField("Preco53");
+    obj.label466:setHorzTextAlign("center");
+    lfm_setPropAsString(obj.label466, "fontStyle",  "bold");
+    obj.label466:setFontColor("yellow");
+    obj.label466:setFontFamily("kalam");
+    obj.label466:setCursor("handPoint");
+    obj.label466:setHitTest(true);
+    obj.label466:setName("label466");
+
+    obj.Arma53 = GUI.fromHandle(_obj_newObject("image"));
+    obj.Arma53:setParent(obj.Armadura53);
+    obj.Arma53:setLeft(41.38);
+    obj.Arma53:setTop(61.75);
+    obj.Arma53:setWidth(67.88);
+    obj.Arma53:setHeight(30);
+    obj.Arma53:setCursor("handPoint");
+    obj.Arma53:setHitTest(true);
+    obj.Arma53:setHint("Clique aqui para comprar");
+    obj.Arma53:setName("Arma53");
+
+    obj.image222 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image222:setParent(obj.Armadura53);
+    obj.image222:setLeft(2.56);
+    obj.image222:setTop(93.00);
+    obj.image222:setWidth(136.69);
+    obj.image222:setHeight(77.69);
+    obj.image222:setStyle("proportional");
+    obj.image222:setCenter(true);
+    obj.image222:setEditable(true);
+    obj.image222:setField("ImagemArma53");
+    obj.image222:setName("image222");
+
+    obj.label467 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label467:setParent(obj.Armadura53);
+    obj.label467:setLeft(197);
+    obj.label467:setTop(10);
+    obj.label467:setWidth(249.25);
+    obj.label467:setHeight(39);
+    obj.label467:setFontSize(22);
+    obj.label467:setField("ItemNome53");
+    lfm_setPropAsString(obj.label467, "fontStyle",  "bold");
+    obj.label467:setFontColor("black");
+    obj.label467:setFontFamily("kalam");
+    obj.label467:setName("label467");
+
+    obj.label468 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label468:setParent(obj.Armadura53);
+    obj.label468:setLeft(243.51);
+    obj.label468:setTop(47);
+    obj.label468:setWidth(149.25);
+    obj.label468:setHeight(38.63);
+    obj.label468:setHorzTextAlign("center");
+    obj.label468:setField("AbsorverAparar53");
+    obj.label468:setFontSize(19);
+    lfm_setPropAsString(obj.label468, "fontStyle",  "bold");
+    obj.label468:setFontColor("black");
+    obj.label468:setFontFamily("kalam");
+    obj.label468:setName("label468");
+
+    obj.label469 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label469:setParent(obj.Armadura53);
+    obj.label469:setLeft(182);
+    obj.label469:setTop(86.13);
+    obj.label469:setWidth(61.88);
+    obj.label469:setHeight(38.87);
+    obj.label469:setHorzTextAlign("center");
+    obj.label469:setField("CD53");
+    obj.label469:setFontSize(19);
+    lfm_setPropAsString(obj.label469, "fontStyle",  "bold");
+    obj.label469:setFontColor("black");
+    obj.label469:setFontFamily("kalam");
+    obj.label469:setName("label469");
+
+    obj.label470 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label470:setParent(obj.Armadura53);
+    obj.label470:setLeft(300);
+    obj.label470:setTop(127);
+    obj.label470:setWidth(61.88);
+    obj.label470:setHeight(38.88);
+    obj.label470:setHorzTextAlign("center");
+    obj.label470:setField("PenalidadedeMovimento53");
+    obj.label470:setFontSize(15);
+    lfm_setPropAsString(obj.label470, "fontStyle",  "bold");
+    obj.label470:setFontColor("black");
+    obj.label470:setFontFamily("kalam");
+    obj.label470:setName("label470");
+
+    obj.label471 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label471:setParent(obj.Armadura53);
+    obj.label471:setLeft(336);
+    obj.label471:setTop(86.12);
+    obj.label471:setWidth(61.88);
+    obj.label471:setHeight(38.88);
+    obj.label471:setHorzTextAlign("center");
+    obj.label471:setField("PenalidadeDePercepão53");
+    obj.label471:setFontSize(19);
+    lfm_setPropAsString(obj.label471, "fontStyle",  "bold");
+    obj.label471:setFontColor("black");
+    obj.label471:setFontFamily("kalam");
+    obj.label471:setName("label471");
+
+    obj.Armadura54 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.Armadura54:setParent(obj.scrollBox12);
+    obj.Armadura54:setName("Armadura54");
+    obj.Armadura54:setWidth(480);
+    obj.Armadura54:setHeight(174);
+    obj.Armadura54:setLeft(413);
+    obj.Armadura54:setTop(452);
+
+    obj.image223 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image223:setParent(obj.Armadura54);
+    obj.image223:setSRC("images/LojaparaArmaduras.png");
+    obj.image223:setLeft(0);
+    obj.image223:setTop(0);
+    obj.image223:setWidth(399);
+    obj.image223:setHeight(174);
+    obj.image223:setName("image223");
+
+    obj.label472 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label472:setParent(obj.Armadura54);
+    obj.label472:setLeft(22.25);
+    obj.label472:setTop(20.50);
+    obj.label472:setWidth(107.25);
+    obj.label472:setHeight(37.88);
+    obj.label472:setFontSize(22);
+    obj.label472:setHint("Preço da Arma");
+    obj.label472:setField("Preco54");
+    obj.label472:setHorzTextAlign("center");
+    lfm_setPropAsString(obj.label472, "fontStyle",  "bold");
+    obj.label472:setFontColor("yellow");
+    obj.label472:setFontFamily("kalam");
+    obj.label472:setCursor("handPoint");
+    obj.label472:setHitTest(true);
+    obj.label472:setName("label472");
+
+    obj.Arma54 = GUI.fromHandle(_obj_newObject("image"));
+    obj.Arma54:setParent(obj.Armadura54);
+    obj.Arma54:setLeft(41.38);
+    obj.Arma54:setTop(61.75);
+    obj.Arma54:setWidth(67.88);
+    obj.Arma54:setHeight(30);
+    obj.Arma54:setCursor("handPoint");
+    obj.Arma54:setHitTest(true);
+    obj.Arma54:setHint("Clique aqui para comprar");
+    obj.Arma54:setName("Arma54");
+
+    obj.image224 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image224:setParent(obj.Armadura54);
+    obj.image224:setLeft(2.56);
+    obj.image224:setTop(93.00);
+    obj.image224:setWidth(136.69);
+    obj.image224:setHeight(77.69);
+    obj.image224:setStyle("proportional");
+    obj.image224:setCenter(true);
+    obj.image224:setEditable(true);
+    obj.image224:setField("ImagemArma54");
+    obj.image224:setName("image224");
+
+    obj.label473 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label473:setParent(obj.Armadura54);
+    obj.label473:setLeft(197);
+    obj.label473:setTop(10);
+    obj.label473:setWidth(249.25);
+    obj.label473:setHeight(39);
+    obj.label473:setFontSize(22);
+    obj.label473:setField("ItemNome54");
+    lfm_setPropAsString(obj.label473, "fontStyle",  "bold");
+    obj.label473:setFontColor("black");
+    obj.label473:setFontFamily("kalam");
+    obj.label473:setName("label473");
+
+    obj.label474 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label474:setParent(obj.Armadura54);
+    obj.label474:setLeft(243.51);
+    obj.label474:setTop(47);
+    obj.label474:setWidth(149.25);
+    obj.label474:setHeight(38.63);
+    obj.label474:setHorzTextAlign("center");
+    obj.label474:setField("AbsorverAparar54");
+    obj.label474:setFontSize(19);
+    lfm_setPropAsString(obj.label474, "fontStyle",  "bold");
+    obj.label474:setFontColor("black");
+    obj.label474:setFontFamily("kalam");
+    obj.label474:setName("label474");
+
+    obj.label475 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label475:setParent(obj.Armadura54);
+    obj.label475:setLeft(182);
+    obj.label475:setTop(86.13);
+    obj.label475:setWidth(61.88);
+    obj.label475:setHeight(38.87);
+    obj.label475:setHorzTextAlign("center");
+    obj.label475:setField("CD54");
+    obj.label475:setFontSize(19);
+    lfm_setPropAsString(obj.label475, "fontStyle",  "bold");
+    obj.label475:setFontColor("black");
+    obj.label475:setFontFamily("kalam");
+    obj.label475:setName("label475");
+
+    obj.label476 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label476:setParent(obj.Armadura54);
+    obj.label476:setLeft(300);
+    obj.label476:setTop(127);
+    obj.label476:setWidth(61.88);
+    obj.label476:setHeight(38.88);
+    obj.label476:setHorzTextAlign("center");
+    obj.label476:setField("PenalidadedeMovimento54");
+    obj.label476:setFontSize(15);
+    lfm_setPropAsString(obj.label476, "fontStyle",  "bold");
+    obj.label476:setFontColor("black");
+    obj.label476:setFontFamily("kalam");
+    obj.label476:setName("label476");
+
+    obj.label477 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label477:setParent(obj.Armadura54);
+    obj.label477:setLeft(336);
+    obj.label477:setTop(86.12);
+    obj.label477:setWidth(61.88);
+    obj.label477:setHeight(38.88);
+    obj.label477:setHorzTextAlign("center");
+    obj.label477:setField("PenalidadeDePercepcao54");
+    obj.label477:setFontSize(19);
+    lfm_setPropAsString(obj.label477, "fontStyle",  "bold");
+    obj.label477:setFontColor("black");
+    obj.label477:setFontFamily("kalam");
+    obj.label477:setName("label477");
+
+    obj.Armadura55 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.Armadura55:setParent(obj.scrollBox12);
+    obj.Armadura55:setName("Armadura55");
+    obj.Armadura55:setWidth(480);
+    obj.Armadura55:setHeight(174);
+    obj.Armadura55:setLeft(413);
+    obj.Armadura55:setTop(816);
+
+    obj.image225 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image225:setParent(obj.Armadura55);
+    obj.image225:setSRC("images/LojaparaArmaduras.png");
+    obj.image225:setLeft(0);
+    obj.image225:setTop(0);
+    obj.image225:setWidth(399);
+    obj.image225:setHeight(174);
+    obj.image225:setName("image225");
+
+    obj.label478 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label478:setParent(obj.Armadura55);
+    obj.label478:setLeft(22.25);
+    obj.label478:setTop(20.50);
+    obj.label478:setWidth(107.25);
+    obj.label478:setHeight(37.88);
+    obj.label478:setFontSize(22);
+    obj.label478:setHint("Preço da Arma");
+    obj.label478:setField("Preco55");
+    obj.label478:setHorzTextAlign("center");
+    lfm_setPropAsString(obj.label478, "fontStyle",  "bold");
+    obj.label478:setFontColor("yellow");
+    obj.label478:setFontFamily("kalam");
+    obj.label478:setCursor("handPoint");
+    obj.label478:setHitTest(true);
+    obj.label478:setName("label478");
+
+    obj.Arma55 = GUI.fromHandle(_obj_newObject("image"));
+    obj.Arma55:setParent(obj.Armadura55);
+    obj.Arma55:setLeft(41.38);
+    obj.Arma55:setTop(61.75);
+    obj.Arma55:setWidth(67.88);
+    obj.Arma55:setHeight(30);
+    obj.Arma55:setCursor("handPoint");
+    obj.Arma55:setHitTest(true);
+    obj.Arma55:setHint("Clique aqui para comprar");
+    obj.Arma55:setName("Arma55");
+
+    obj.image226 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image226:setParent(obj.Armadura55);
+    obj.image226:setLeft(2.56);
+    obj.image226:setTop(93.00);
+    obj.image226:setWidth(136.69);
+    obj.image226:setHeight(77.69);
+    obj.image226:setStyle("proportional");
+    obj.image226:setCenter(true);
+    obj.image226:setEditable(true);
+    obj.image226:setField("ImagemArma55");
+    obj.image226:setName("image226");
+
+    obj.label479 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label479:setParent(obj.Armadura55);
+    obj.label479:setLeft(197);
+    obj.label479:setTop(10);
+    obj.label479:setWidth(249.25);
+    obj.label479:setHeight(39);
+    obj.label479:setFontSize(22);
+    obj.label479:setField("ItemNome55");
+    lfm_setPropAsString(obj.label479, "fontStyle",  "bold");
+    obj.label479:setFontColor("black");
+    obj.label479:setFontFamily("kalam");
+    obj.label479:setName("label479");
+
+    obj.label480 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label480:setParent(obj.Armadura55);
+    obj.label480:setLeft(243.51);
+    obj.label480:setTop(47);
+    obj.label480:setWidth(149.25);
+    obj.label480:setHeight(38.63);
+    obj.label480:setHorzTextAlign("center");
+    obj.label480:setField("AbsorverAparar55");
+    obj.label480:setFontSize(19);
+    lfm_setPropAsString(obj.label480, "fontStyle",  "bold");
+    obj.label480:setFontColor("black");
+    obj.label480:setFontFamily("kalam");
+    obj.label480:setName("label480");
+
+    obj.label481 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label481:setParent(obj.Armadura55);
+    obj.label481:setLeft(182);
+    obj.label481:setTop(86.13);
+    obj.label481:setWidth(61.88);
+    obj.label481:setHeight(38.87);
+    obj.label481:setHorzTextAlign("center");
+    obj.label481:setField("CD55");
+    obj.label481:setFontSize(19);
+    lfm_setPropAsString(obj.label481, "fontStyle",  "bold");
+    obj.label481:setFontColor("black");
+    obj.label481:setFontFamily("kalam");
+    obj.label481:setName("label481");
+
+    obj.label482 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label482:setParent(obj.Armadura55);
+    obj.label482:setLeft(300);
+    obj.label482:setTop(127);
+    obj.label482:setWidth(61.88);
+    obj.label482:setHeight(38.88);
+    obj.label482:setHorzTextAlign("center");
+    obj.label482:setField("PenalidadedeMovimento55");
+    obj.label482:setFontSize(15);
+    lfm_setPropAsString(obj.label482, "fontStyle",  "bold");
+    obj.label482:setFontColor("black");
+    obj.label482:setFontFamily("kalam");
+    obj.label482:setName("label482");
+
+    obj.label483 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label483:setParent(obj.Armadura55);
+    obj.label483:setLeft(336);
+    obj.label483:setTop(86.12);
+    obj.label483:setWidth(61.88);
+    obj.label483:setHeight(38.88);
+    obj.label483:setHorzTextAlign("center");
+    obj.label483:setField("PenalidadeDePercepcao55");
+    obj.label483:setFontSize(19);
+    lfm_setPropAsString(obj.label483, "fontStyle",  "bold");
+    obj.label483:setFontColor("black");
+    obj.label483:setFontFamily("kalam");
+    obj.label483:setName("label483");
+
+    obj.Armadura56 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.Armadura56:setParent(obj.scrollBox12);
+    obj.Armadura56:setName("Armadura56");
+    obj.Armadura56:setWidth(480);
+    obj.Armadura56:setHeight(174);
+    obj.Armadura56:setLeft(413);
+    obj.Armadura56:setTop(998);
+
+    obj.image227 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image227:setParent(obj.Armadura56);
+    obj.image227:setSRC("images/LojaparaArmaduras.png");
+    obj.image227:setLeft(0);
+    obj.image227:setTop(0);
+    obj.image227:setWidth(399);
+    obj.image227:setHeight(174);
+    obj.image227:setName("image227");
+
+    obj.label484 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label484:setParent(obj.Armadura56);
+    obj.label484:setLeft(22.25);
+    obj.label484:setTop(20.50);
+    obj.label484:setWidth(107.25);
+    obj.label484:setHeight(37.88);
+    obj.label484:setFontSize(22);
+    obj.label484:setHint("Preço da Arma");
+    obj.label484:setField("Preco56");
+    obj.label484:setHorzTextAlign("center");
+    lfm_setPropAsString(obj.label484, "fontStyle",  "bold");
+    obj.label484:setFontColor("yellow");
+    obj.label484:setFontFamily("kalam");
+    obj.label484:setCursor("handPoint");
+    obj.label484:setHitTest(true);
+    obj.label484:setName("label484");
+
+    obj.Arma56 = GUI.fromHandle(_obj_newObject("image"));
+    obj.Arma56:setParent(obj.Armadura56);
+    obj.Arma56:setLeft(41.38);
+    obj.Arma56:setTop(61.75);
+    obj.Arma56:setWidth(67.88);
+    obj.Arma56:setHeight(30);
+    obj.Arma56:setCursor("handPoint");
+    obj.Arma56:setHitTest(true);
+    obj.Arma56:setHint("Clique aqui para comprar");
+    obj.Arma56:setName("Arma56");
+
+    obj.image228 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image228:setParent(obj.Armadura56);
+    obj.image228:setLeft(2.56);
+    obj.image228:setTop(93.00);
+    obj.image228:setWidth(136.69);
+    obj.image228:setHeight(77.69);
+    obj.image228:setStyle("proportional");
+    obj.image228:setCenter(true);
+    obj.image228:setEditable(true);
+    obj.image228:setField("ImagemArma56");
+    obj.image228:setName("image228");
+
+    obj.label485 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label485:setParent(obj.Armadura56);
+    obj.label485:setLeft(197);
+    obj.label485:setTop(10);
+    obj.label485:setWidth(249.25);
+    obj.label485:setHeight(39);
+    obj.label485:setFontSize(22);
+    obj.label485:setField("ItemNome56");
+    lfm_setPropAsString(obj.label485, "fontStyle",  "bold");
+    obj.label485:setFontColor("black");
+    obj.label485:setFontFamily("kalam");
+    obj.label485:setName("label485");
+
+    obj.label486 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label486:setParent(obj.Armadura56);
+    obj.label486:setLeft(243.51);
+    obj.label486:setTop(47);
+    obj.label486:setWidth(149.25);
+    obj.label486:setHeight(38.63);
+    obj.label486:setHorzTextAlign("center");
+    obj.label486:setField("AbsorverAparar56");
+    obj.label486:setFontSize(19);
+    lfm_setPropAsString(obj.label486, "fontStyle",  "bold");
+    obj.label486:setFontColor("black");
+    obj.label486:setFontFamily("kalam");
+    obj.label486:setName("label486");
+
+    obj.label487 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label487:setParent(obj.Armadura56);
+    obj.label487:setLeft(182);
+    obj.label487:setTop(86.13);
+    obj.label487:setWidth(61.88);
+    obj.label487:setHeight(38.87);
+    obj.label487:setHorzTextAlign("center");
+    obj.label487:setField("CD56");
+    obj.label487:setFontSize(19);
+    lfm_setPropAsString(obj.label487, "fontStyle",  "bold");
+    obj.label487:setFontColor("black");
+    obj.label487:setFontFamily("kalam");
+    obj.label487:setName("label487");
+
+    obj.label488 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label488:setParent(obj.Armadura56);
+    obj.label488:setLeft(300);
+    obj.label488:setTop(127);
+    obj.label488:setWidth(61.88);
+    obj.label488:setHeight(38.88);
+    obj.label488:setHorzTextAlign("center");
+    obj.label488:setField("PenalidadedeMovimento56");
+    obj.label488:setFontSize(15);
+    lfm_setPropAsString(obj.label488, "fontStyle",  "bold");
+    obj.label488:setFontColor("black");
+    obj.label488:setFontFamily("kalam");
+    obj.label488:setName("label488");
+
+    obj.label489 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label489:setParent(obj.Armadura56);
+    obj.label489:setLeft(336);
+    obj.label489:setTop(86.12);
+    obj.label489:setWidth(61.88);
+    obj.label489:setHeight(38.88);
+    obj.label489:setHorzTextAlign("center");
+    obj.label489:setField("PenalidadeDePercepcao56");
+    obj.label489:setFontSize(19);
+    lfm_setPropAsString(obj.label489, "fontStyle",  "bold");
+    obj.label489:setFontColor("black");
+    obj.label489:setFontFamily("kalam");
+    obj.label489:setName("label489");
+
     obj.tab5 = GUI.fromHandle(_obj_newObject("tab"));
     obj.tab5:setParent(obj.tabControl1);
     obj.tab5:setTitle("Creditos");
@@ -15856,46 +17423,46 @@ local function constructNew_frmDZ_Ficha()
     obj.scrollBox13:setAlign("client");
     obj.scrollBox13:setName("scrollBox13");
 
-    obj.image202 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image202:setParent(obj.scrollBox13);
-    obj.image202:setLeft(0);
-    obj.image202:setTop(0);
-    obj.image202:setWidth(500);
-    obj.image202:setHeight(500);
-    obj.image202:setStyle("autoFit");
-    obj.image202:setSRC("logo_mesa");
-    obj.image202:setName("image202");
+    obj.image229 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image229:setParent(obj.scrollBox13);
+    obj.image229:setLeft(0);
+    obj.image229:setTop(0);
+    obj.image229:setWidth(500);
+    obj.image229:setHeight(500);
+    obj.image229:setStyle("autoFit");
+    obj.image229:setSRC("logo_mesa");
+    obj.image229:setName("image229");
 
-    obj.image203 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image203:setParent(obj.scrollBox13);
-    obj.image203:setLeft(480);
-    obj.image203:setTop(0);
-    obj.image203:setWidth(350);
-    obj.image203:setHeight(125);
-    obj.image203:setStyle("autoFit");
-    obj.image203:setSRC("https://i.imgur.com/HNK29eO.png?1");
-    obj.image203:setName("image203");
+    obj.image230 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image230:setParent(obj.scrollBox13);
+    obj.image230:setLeft(480);
+    obj.image230:setTop(0);
+    obj.image230:setWidth(350);
+    obj.image230:setHeight(125);
+    obj.image230:setStyle("autoFit");
+    obj.image230:setSRC("https://i.imgur.com/HNK29eO.png?1");
+    obj.image230:setName("image230");
 
-    obj.image204 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image204:setParent(obj.scrollBox13);
-    obj.image204:setLeft(500);
-    obj.image204:setTop(125);
-    obj.image204:setWidth(350);
-    obj.image204:setHeight(125);
-    obj.image204:setStyle("autoFit");
-    obj.image204:setSRC("https://i.imgur.com/Xp12RUs.png");
-    obj.image204:setName("image204");
+    obj.image231 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image231:setParent(obj.scrollBox13);
+    obj.image231:setLeft(500);
+    obj.image231:setTop(125);
+    obj.image231:setWidth(350);
+    obj.image231:setHeight(125);
+    obj.image231:setStyle("autoFit");
+    obj.image231:setSRC("https://i.imgur.com/Xp12RUs.png");
+    obj.image231:setName("image231");
 
-    obj.layout156 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout156:setParent(obj.scrollBox13);
-    obj.layout156:setLeft(460);
-    obj.layout156:setTop(290);
-    obj.layout156:setWidth(200);
-    obj.layout156:setHeight(160);
-    obj.layout156:setName("layout156");
+    obj.layout157 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout157:setParent(obj.scrollBox13);
+    obj.layout157:setLeft(460);
+    obj.layout157:setTop(290);
+    obj.layout157:setWidth(200);
+    obj.layout157:setHeight(160);
+    obj.layout157:setName("layout157");
 
     obj.rectangle28 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle28:setParent(obj.layout156);
+    obj.rectangle28:setParent(obj.layout157);
     obj.rectangle28:setAlign("client");
     obj.rectangle28:setColor("black");
     obj.rectangle28:setXradius(5);
@@ -15903,65 +17470,65 @@ local function constructNew_frmDZ_Ficha()
     obj.rectangle28:setCornerType("round");
     obj.rectangle28:setName("rectangle28");
 
-    obj.label418 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label418:setParent(obj.layout156);
-    obj.label418:setLeft(0);
-    obj.label418:setTop(10);
-    obj.label418:setWidth(200);
-    obj.label418:setHeight(20);
-    obj.label418:setText("Ficha criada por ");
-    obj.label418:setHorzTextAlign("center");
-    obj.label418:setName("label418");
+    obj.label490 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label490:setParent(obj.layout157);
+    obj.label490:setLeft(0);
+    obj.label490:setTop(10);
+    obj.label490:setWidth(200);
+    obj.label490:setHeight(20);
+    obj.label490:setText("Ficha criada por ");
+    obj.label490:setHorzTextAlign("center");
+    obj.label490:setName("label490");
 
-    obj.label419 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label419:setParent(obj.layout156);
-    obj.label419:setLeft(0);
-    obj.label419:setTop(35);
-    obj.label419:setWidth(200);
-    obj.label419:setHeight(20);
-    obj.label419:setText("Marcio F. (Samelfero)");
-    obj.label419:setHorzTextAlign("center");
-    obj.label419:setName("label419");
+    obj.label491 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label491:setParent(obj.layout157);
+    obj.label491:setLeft(0);
+    obj.label491:setTop(35);
+    obj.label491:setWidth(200);
+    obj.label491:setHeight(20);
+    obj.label491:setText("Marcio F. (Samelfero)");
+    obj.label491:setHorzTextAlign("center");
+    obj.label491:setName("label491");
 
-    obj.label420 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label420:setParent(obj.layout156);
-    obj.label420:setLeft(0);
-    obj.label420:setTop(60);
-    obj.label420:setWidth(200);
-    obj.label420:setHeight(20);
-    obj.label420:setText("para o sistema Dead Zone");
-    obj.label420:setHorzTextAlign("center");
-    obj.label420:setName("label420");
+    obj.label492 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label492:setParent(obj.layout157);
+    obj.label492:setLeft(0);
+    obj.label492:setTop(60);
+    obj.label492:setWidth(200);
+    obj.label492:setHeight(20);
+    obj.label492:setText("para o sistema Dead Zone");
+    obj.label492:setHorzTextAlign("center");
+    obj.label492:setName("label492");
 
-    obj.label421 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label421:setParent(obj.layout156);
-    obj.label421:setLeft(0);
-    obj.label421:setTop(85);
-    obj.label421:setWidth(200);
-    obj.label421:setHeight(20);
-    obj.label421:setText("escrito por");
-    obj.label421:setHorzTextAlign("center");
-    obj.label421:setName("label421");
+    obj.label493 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label493:setParent(obj.layout157);
+    obj.label493:setLeft(0);
+    obj.label493:setTop(85);
+    obj.label493:setWidth(200);
+    obj.label493:setHeight(20);
+    obj.label493:setText("escrito por");
+    obj.label493:setHorzTextAlign("center");
+    obj.label493:setName("label493");
 
-    obj.label422 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label422:setParent(obj.layout156);
-    obj.label422:setLeft(0);
-    obj.label422:setTop(105);
-    obj.label422:setWidth(200);
-    obj.label422:setHeight(20);
-    obj.label422:setText("Allan (allan_fns)");
-    obj.label422:setHorzTextAlign("center");
-    obj.label422:setName("label422");
+    obj.label494 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label494:setParent(obj.layout157);
+    obj.label494:setLeft(0);
+    obj.label494:setTop(105);
+    obj.label494:setWidth(200);
+    obj.label494:setHeight(20);
+    obj.label494:setText("Allan (allan_fns)");
+    obj.label494:setHorzTextAlign("center");
+    obj.label494:setName("label494");
 
-    obj.label423 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label423:setParent(obj.scrollBox13);
-    obj.label423:setLeft(560);
-    obj.label423:setTop(480);
-    obj.label423:setWidth(210);
-    obj.label423:setHeight(20);
-    obj.label423:setText("Sua Versão: 2.3.1");
-    obj.label423:setHorzTextAlign("center");
-    obj.label423:setName("label423");
+    obj.label495 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label495:setParent(obj.scrollBox13);
+    obj.label495:setLeft(560);
+    obj.label495:setTop(480);
+    obj.label495:setWidth(210);
+    obj.label495:setHeight(20);
+    obj.label495:setText("Sua Versão: 2.3.1");
+    obj.label495:setHorzTextAlign("center");
+    obj.label495:setName("label495");
 
     obj.button87 = GUI.fromHandle(_obj_newObject("button"));
     obj.button87:setParent(obj.scrollBox13);
@@ -15981,16 +17548,16 @@ local function constructNew_frmDZ_Ficha()
     obj.button88:setHint("Baixa a versão mais recente da ficha");
     obj.button88:setName("button88");
 
-    obj.layout157 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout157:setParent(obj.scrollBox13);
-    obj.layout157:setLeft(680);
-    obj.layout157:setTop(290);
-    obj.layout157:setWidth(200);
-    obj.layout157:setHeight(160);
-    obj.layout157:setName("layout157");
+    obj.layout158 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout158:setParent(obj.scrollBox13);
+    obj.layout158:setLeft(680);
+    obj.layout158:setTop(290);
+    obj.layout158:setWidth(200);
+    obj.layout158:setHeight(160);
+    obj.layout158:setName("layout158");
 
     obj.rectangle29 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle29:setParent(obj.layout157);
+    obj.rectangle29:setParent(obj.layout158);
     obj.rectangle29:setAlign("client");
     obj.rectangle29:setColor("black");
     obj.rectangle29:setXradius(5);
@@ -15998,29 +17565,29 @@ local function constructNew_frmDZ_Ficha()
     obj.rectangle29:setCornerType("round");
     obj.rectangle29:setName("rectangle29");
 
-    obj.label424 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label424:setParent(obj.layout157);
-    obj.label424:setLeft(0);
-    obj.label424:setTop(10);
-    obj.label424:setWidth(200);
-    obj.label424:setHeight(20);
-    obj.label424:setText("Mecânicas e implementações");
-    obj.label424:setHorzTextAlign("center");
-    obj.label424:setName("label424");
+    obj.label496 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label496:setParent(obj.layout158);
+    obj.label496:setLeft(0);
+    obj.label496:setTop(10);
+    obj.label496:setWidth(200);
+    obj.label496:setHeight(20);
+    obj.label496:setText("Mecânicas e implementações");
+    obj.label496:setHorzTextAlign("center");
+    obj.label496:setName("label496");
 
-    obj.label425 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label425:setParent(obj.layout157);
-    obj.label425:setLeft(0);
-    obj.label425:setTop(35);
-    obj.label425:setWidth(200);
-    obj.label425:setHeight(20);
-    obj.label425:setFontSize(11.5);
-    obj.label425:setText("Por MestreWill nick: (WillXOkumura)");
-    obj.label425:setHorzTextAlign("center");
-    obj.label425:setName("label425");
+    obj.label497 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label497:setParent(obj.layout158);
+    obj.label497:setLeft(0);
+    obj.label497:setTop(35);
+    obj.label497:setWidth(200);
+    obj.label497:setHeight(20);
+    obj.label497:setFontSize(11.5);
+    obj.label497:setText("Por MestreWill nick: (WillXOkumura)");
+    obj.label497:setHorzTextAlign("center");
+    obj.label497:setName("label497");
 
     obj.button89 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button89:setParent(obj.layout157);
+    obj.button89:setParent(obj.layout158);
     obj.button89:setLeft(50);
     obj.button89:setTop(60);
     obj.button89:setWidth(100);
@@ -16031,7 +17598,7 @@ local function constructNew_frmDZ_Ficha()
     obj.button89:setName("button89");
 
     obj.button90 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button90:setParent(obj.layout157);
+    obj.button90:setParent(obj.layout158);
     obj.button90:setLeft(50);
     obj.button90:setTop(90);
     obj.button90:setWidth(100);
@@ -16042,16 +17609,16 @@ local function constructNew_frmDZ_Ficha()
     obj.button90:setFontColor("red");
     obj.button90:setName("button90");
 
-    obj.label426 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label426:setParent(obj.layout157);
-    obj.label426:setLeft(0);
-    obj.label426:setTop(120);
-    obj.label426:setWidth(200);
-    obj.label426:setHeight(20);
-    obj.label426:setFontSize(15);
-    obj.label426:setText("Atualização provisória");
-    obj.label426:setHorzTextAlign("center");
-    obj.label426:setName("label426");
+    obj.label498 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label498:setParent(obj.layout158);
+    obj.label498:setLeft(0);
+    obj.label498:setTop(120);
+    obj.label498:setWidth(200);
+    obj.label498:setHeight(20);
+    obj.label498:setFontSize(15);
+    obj.label498:setText("Atualização provisória");
+    obj.label498:setHorzTextAlign("center");
+    obj.label498:setName("label498");
 
     obj._e_event0 = obj.dataLink1:addEventListener("onChange",
         function (_, field, oldValue, newValue)
@@ -17022,7 +18589,7 @@ local function constructNew_frmDZ_Ficha()
             
             sheet.ItemNome18 = 'Missil de Tanque'
             sheet.Iniciativa18 = '-4'
-            sheet.DanoItem18 = '+10/+10'
+            sheet.DanoItem18 = '+10-+10'
             sheet.Alcance18 = 'E'
             sheet.Cadencia18 = 'Único'
             sheet.Municao18 = '1'
@@ -17038,7 +18605,7 @@ local function constructNew_frmDZ_Ficha()
             
             sheet.ItemNome20 = 'Molotov'
             sheet.Iniciativa20 = '-1'
-            sheet.DanoItem20 = '+6/+6'
+            sheet.DanoItem20 = '+6+6'
             sheet.Alcance20 = 'C'
             sheet.Cadencia20 = 'Único'
             sheet.Municao20 = '1'
@@ -17052,27 +18619,28 @@ local function constructNew_frmDZ_Ficha()
             sheet.ClasseDeDureza21 = '3' 
             sheet.ItemNome22 = 'Mina, Anti-Veículo'
             sheet.Iniciativa22 = '???'
-            sheet.DanoItem22 = '+10/+10'
+            sheet.DanoItem22 = '+10-+10'
             sheet.Alcance22 = '5m'
             sheet.Cadencia22 = '???'
             sheet.Municao22 = '1'
             sheet.ClasseDeDureza22 = '5'
             sheet.ItemNome23 = 'Artilharia Leve'
             sheet.Iniciativa23 = '-4'
-            sheet.DanoItem23 = '+10/+10'
+            sheet.DanoItem23 = '+10-+10'
             sheet.Alcance23 = '1m'
             sheet.Cadencia23 = 'Longo'
             sheet.Municao23 = 'Cinto'
             sheet.ClasseDeDureza23 = '4'
             sheet.ItemNome24 = 'Artilharia Pesado'
             sheet.Iniciativa24 = '-6'
-            sheet.DanoItem24 = '+10/+10'
+            sheet.DanoItem24 = '+10+10'
             sheet.Alcance24 = '10m'
             sheet.Cadencia24 = 'Único'
             sheet.Municao24 = '???'
             sheet.ClasseDeDureza24 = '5'
             
-            sheet.ItemNome25 = 'Caneta/Lápis'
+            
+            sheet.ItemNome25 = 'Caneta-Lápis'
             sheet.Iniciativa25 = "+1"
             sheet.DanoItem25 = "???"
             sheet.Golpear25 = "???"
@@ -17086,7 +18654,7 @@ local function constructNew_frmDZ_Ficha()
             sheet.Aparar26 = "2"
             sheet.CD26 = "2"
             
-            sheet.ItemNome27 = 'Faca de cozinha/talhador'
+            sheet.ItemNome27 = 'Faca de cozinha-talhador'
             sheet.Iniciativa27 = "+2"
             sheet.DanoItem27 = "+2"
             sheet.Golpear27 = "2"
@@ -17117,7 +18685,7 @@ local function constructNew_frmDZ_Ficha()
             sheet.ItemNome31 = 'Espada'
             sheet.Iniciativa31 = "+5"
             sheet.DanoItem31 = "+5"
-            sheet.Golpear31 = "+1/+0"
+            sheet.Golpear31 = "+1-+0"
             sheet.Aparar31 = "2"
             sheet.CD31 = "2"
             
@@ -17149,7 +18717,7 @@ local function constructNew_frmDZ_Ficha()
             sheet.Aparar35 = "2"
             sheet.CD35 = "2"
             
-            sheet.ItemNome36 = 'Taco de Baseball c/ Espinhos'
+            sheet.ItemNome36 = 'Taco de Baseball c Espinhos'
             sheet.Iniciativa36 = "+2"
             sheet.DanoItem36 = "+2"
             sheet.Golpear36 = "1"
@@ -17180,14 +18748,14 @@ local function constructNew_frmDZ_Ficha()
             sheet.ItemNome40 = 'Lança'
             sheet.Iniciativa40 = "+3"
             sheet.DanoItem40 = "+4"
-            sheet.Golpear40 = "+1/+1"
+            sheet.Golpear40 = "+1+1"
             sheet.Aparar40 = "2"
             sheet.CD40 = "2"
             
             sheet.ItemNome41 = 'Soco Inglês'
             sheet.Iniciativa41 = "+2"
             sheet.DanoItem41 = "+2"
-            sheet.Golpear41 = "+1/+1"
+            sheet.Golpear41 = "+1+1"
             sheet.Aparar41 = "2"
             sheet.CD41 = "2"
             sheet.ItemNome42 = 'Motoserra'
@@ -17196,6 +18764,78 @@ local function constructNew_frmDZ_Ficha()
             sheet.Golpear42 = "+10"
             sheet.Aparar42 = "-1"
             sheet.CD42 = "-4"
+            sheet.ItemNome45 = 'Jaqueta de Couro - Anti-Perfurante'
+            sheet.AbsorverAparar45 = '+3/+3'
+            sheet.CD45 = '1'
+            sheet.PenalidadedeMovimento45 = '-1'
+            sheet.PenalidadeDePercepcao45 = '???'
+            
+            sheet.ItemNome46 = 'Armadura Esportiva'
+            sheet.AbsorverAparar46 = '+6/+6'
+            sheet.CD46 = '1'
+            sheet.PenalidadedeMovimento46 = '-1'
+            sheet.PenalidadeDePercepcao46 = '???'
+            
+            sheet.ItemNome47 = 'Armadura de Pneus'
+            sheet.AbsorverAparar47 = '+7/+7'
+            sheet.CD47 = '1'
+            sheet.PenalidadedeMovimento47 = '-2'
+            sheet.PenalidadeDePercepcao47 = '???'
+            
+            sheet.ItemNome48 = 'Armadura Acolchoada / Motim'
+            sheet.AbsorverAparar48 = '+7/+7'
+            sheet.CD48 = '2'
+            sheet.PenalidadedeMovimento48 = '-2'
+            sheet.PenalidadeDePercepcao48 = '???'
+            
+            sheet.ItemNome49 = 'Chapeamento de Aço Ruim'
+            sheet.AbsorverAparar49 = '+5/+5'
+            sheet.CD49 = '2'
+            sheet.PenalidadedeMovimento49 = '-2'
+            sheet.PenalidadeDePercepcao49 = '???'
+            
+            sheet.ItemNome50 = 'Bom Chapeamento de Aço'
+            sheet.AbsorverAparar50 = '+6/+6'
+            sheet.CD50 = '3'
+            sheet.PenalidadedeMovimento50 = '-3'
+            sheet.PenalidadeDePercepcao50 = '???'
+            
+            sheet.ItemNome51 = 'Armadura Balística Leve'
+            sheet.AbsorverAparar51 = '+5/+5'
+            sheet.CD51 = '2'
+            sheet.PenalidadedeMovimento51 = '-1'
+            sheet.PenalidadeDePercepcao51 = '???'
+            
+            sheet.ItemNome52 = 'Armadura Balística Média'
+            sheet.AbsorverAparar52 = '+7/+7'
+            sheet.CD52 = '2'
+            sheet.PenalidadedeMovimento52 = '-1'
+            sheet.PenalidadeDePercepcao52 = '???'
+            
+            sheet.ItemNome53 = 'Armadura Balística Pesada'
+            sheet.AbsorverAparar53 = '+6/+6'
+            sheet.CD53 = '3'
+            sheet.PenalidadedeMovimento53 = '-2'
+            sheet.PenalidadeDePercepcao53 = '???'
+            
+            sheet.ItemNome54 = 'Excelente Armadura Balística'
+            sheet.AbsorverAparar54 = '+7/+7'
+            sheet.CD54 = '3'
+            sheet.PenalidadedeMovimento54 = '-2'
+            sheet.PenalidadeDePercepcao54 = '???'
+            
+            sheet.ItemNome55 = 'Escudo Anti-Motim'
+            sheet.AbsorverAparar55 = '+5/+5ou+2/+2'
+            sheet.CD55 = '2'
+            sheet.PenalidadedeMovimento55 = '-2'
+            sheet.PenalidadeDePercepcao55 = '???'
+            
+            sheet.ItemNome56 = 'Escudo Balístico'
+            sheet.AbsorverAparar56 = '+6/+6ou+1/+1'
+            sheet.CD56 = '3'
+            sheet.PenalidadedeMovimento56 = '-2'
+            sheet.PenalidadeDePercepcao56 = '???'
+            
                             end;
         end, obj);
 
@@ -17219,6 +18859,7 @@ local function constructNew_frmDZ_Ficha()
     obj._e_event115 = obj.image83:addEventListener("onClick",
         function (_)
             self.ApresentaLoja.visible = false;
+                        self.LojaArmaduras.visible = true;
         end, obj);
 
     obj._e_event116 = obj.button83:addEventListener("onClick",
@@ -18955,27 +20596,360 @@ local function constructNew_frmDZ_Ficha()
               end;
         end, obj);
 
-    obj._e_event214 = obj.button87:addEventListener("onClick",
+    obj._e_event214 = obj.dataLink20:addEventListener("onChange",
+        function (_, field, oldValue, newValue)
+            function format_thousand(v)
+                        local s = string.format("%d", math.floor(v))
+                        local pos = string.len(s) % 3 
+                        if pos == 0 then pos = 3 end
+                        return string.sub(s, 1, pos)
+                            .. "" .. string.gsub(string.sub(s, pos+1), "(...)", ".%1") 
+                            .. "" .. string.sub(string.format("%.0f", v - math.floor(v)), 3) 
+                        
+                        end;
+                          self.labSoma5.text = '$' .. format_thousand(sheet.soma);
+        end, obj);
+
+    obj._e_event215 = obj.image203:addEventListener("onClick",
+        function (_)
+            if rrpg.getMesaDe(sheet).meuJogador.isMestre then
+                                        dialogs.inputQuery("Carteira", "Novo valor:", "",
+                                           function (valorPreenchido)
+                                                      sheet.Soma = (sheet.Soma or 0 ) + valorPreenchido; 
+                                        end);
+                                        end;
+        end, obj);
+
+    obj._e_event216 = obj.image204:addEventListener("onClick",
+        function (_)
+            self.LojaArmaduras.visible = false;
+                            self.ApresentaLoja.visible = true;
+        end, obj);
+
+    obj._e_event217 = obj.label418:addEventListener("onClick",
+        function (_)
+            if rrpg.getMesaDe(sheet).meuJogador.isMestre then
+                dialogs.inputQuery("Carteira", "Novo valor:", "",
+                   function (valorPreenchido)
+                        sheet.Preco45 = (sheet.Preco45 or 0 ) + valorPreenchido; 
+                end);
+                end;
+        end, obj);
+
+    obj._e_event218 = obj.Arma45:addEventListener("onClick",
+        function (_)
+            local Soma = (sheet.Soma or 0) -1200;
+                               if Soma >= 0 then
+            local minhaMesa = rrpg.getMesaDe(sheet); 
+                            local chat = minhaMesa.chat; 
+                            chat:enviarMensagem("/me [§K12][§B]Comprou uma arma. ");
+                     showMessage("Você acabou de comprar uma arma corpo a corpo, olhe na sua mochila");
+                         else
+                               showMessage("Você não mais dinheiro"); 	
+              end;
+        end, obj);
+
+    obj._e_event219 = obj.label424:addEventListener("onClick",
+        function (_)
+            if rrpg.getMesaDe(sheet).meuJogador.isMestre then
+                dialogs.inputQuery("Carteira", "Novo valor:", "",
+                   function (valorPreenchido)
+                        sheet.Preco46 = (sheet.Preco46 or 0 ) + valorPreenchido; 
+                end);
+                end;
+        end, obj);
+
+    obj._e_event220 = obj.Arma46:addEventListener("onClick",
+        function (_)
+            local Soma = (sheet.Soma or 0) -1200;
+                               if Soma >= 0 then
+            local minhaMesa = rrpg.getMesaDe(sheet); 
+                            local chat = minhaMesa.chat; 
+                            chat:enviarMensagem("/me [§K12][§B]Comprou uma arma. ");
+                     showMessage("Você acabou de comprar uma arma corpo a corpo, olhe na sua mochila");
+                         else
+                               showMessage("Você não mais dinheiro"); 	
+              end;
+        end, obj);
+
+    obj._e_event221 = obj.label430:addEventListener("onClick",
+        function (_)
+            if rrpg.getMesaDe(sheet).meuJogador.isMestre then
+                dialogs.inputQuery("Carteira", "Novo valor:", "",
+                   function (valorPreenchido)
+                        sheet.Preco47 = (sheet.Preco47 or 0 ) + valorPreenchido; 
+                end);
+                end;
+        end, obj);
+
+    obj._e_event222 = obj.Arma47:addEventListener("onClick",
+        function (_)
+            local Soma = (sheet.Soma or 0) -1200;
+                               if Soma >= 0 then
+            local minhaMesa = rrpg.getMesaDe(sheet); 
+                            local chat = minhaMesa.chat; 
+                            chat:enviarMensagem("/me [§K12][§B]Comprou uma arma. ");
+                     showMessage("Você acabou de comprar uma arma corpo a corpo, olhe na sua mochila");
+                         else
+                               showMessage("Você não mais dinheiro"); 	
+              end;
+        end, obj);
+
+    obj._e_event223 = obj.label436:addEventListener("onClick",
+        function (_)
+            if rrpg.getMesaDe(sheet).meuJogador.isMestre then
+                dialogs.inputQuery("Carteira", "Novo valor:", "",
+                   function (valorPreenchido)
+                        sheet.Preco48 = (sheet.Preco48 or 0 ) + valorPreenchido; 
+                end);
+                end;
+        end, obj);
+
+    obj._e_event224 = obj.Arma48:addEventListener("onClick",
+        function (_)
+            local Soma = (sheet.Soma or 0) -1200;
+                               if Soma >= 0 then
+            local minhaMesa = rrpg.getMesaDe(sheet); 
+                            local chat = minhaMesa.chat; 
+                            chat:enviarMensagem("/me [§K12][§B]Comprou uma arma. ");
+                     showMessage("Você acabou de comprar uma arma corpo a corpo, olhe na sua mochila");
+                         else
+                               showMessage("Você não mais dinheiro"); 	
+              end;
+        end, obj);
+
+    obj._e_event225 = obj.label442:addEventListener("onClick",
+        function (_)
+            if rrpg.getMesaDe(sheet).meuJogador.isMestre then
+                dialogs.inputQuery("Carteira", "Novo valor:", "",
+                   function (valorPreenchido)
+                        sheet.Preco49 = (sheet.Preco49 or 0 ) + valorPreenchido; 
+                end);
+                end;
+        end, obj);
+
+    obj._e_event226 = obj.Arma49:addEventListener("onClick",
+        function (_)
+            local Soma = (sheet.Soma or 0) -1200;
+                               if Soma >= 0 then
+            local minhaMesa = rrpg.getMesaDe(sheet); 
+                            local chat = minhaMesa.chat; 
+                            chat:enviarMensagem("/me [§K12][§B]Comprou uma arma. ");
+                     showMessage("Você acabou de comprar uma arma corpo a corpo, olhe na sua mochila");
+                         else
+                               showMessage("Você não mais dinheiro"); 	
+              end;
+        end, obj);
+
+    obj._e_event227 = obj.label448:addEventListener("onClick",
+        function (_)
+            if rrpg.getMesaDe(sheet).meuJogador.isMestre then
+                dialogs.inputQuery("Carteira", "Novo valor:", "",
+                   function (valorPreenchido)
+                        sheet.Preco50 = (sheet.Preco50 or 0 ) + valorPreenchido; 
+                end);
+                end;
+        end, obj);
+
+    obj._e_event228 = obj.Arma50:addEventListener("onClick",
+        function (_)
+            local Soma = (sheet.Soma or 0) -1200;
+                               if Soma >= 0 then
+            local minhaMesa = rrpg.getMesaDe(sheet); 
+                            local chat = minhaMesa.chat; 
+                            chat:enviarMensagem("/me [§K12][§B]Comprou uma arma. ");
+                     showMessage("Você acabou de comprar uma arma corpo a corpo, olhe na sua mochila");
+                         else
+                               showMessage("Você não mais dinheiro"); 	
+              end;
+        end, obj);
+
+    obj._e_event229 = obj.label454:addEventListener("onClick",
+        function (_)
+            if rrpg.getMesaDe(sheet).meuJogador.isMestre then
+                dialogs.inputQuery("Carteira", "Novo valor:", "",
+                   function (valorPreenchido)
+                        sheet.Preco51 = (sheet.Preco51 or 0 ) + valorPreenchido; 
+                end);
+                end;
+        end, obj);
+
+    obj._e_event230 = obj.Arma51:addEventListener("onClick",
+        function (_)
+            local Soma = (sheet.Soma or 0) -1200;
+                               if Soma >= 0 then
+            local minhaMesa = rrpg.getMesaDe(sheet); 
+                            local chat = minhaMesa.chat; 
+                            chat:enviarMensagem("/me [§K12][§B]Comprou uma arma. ");
+                     showMessage("Você acabou de comprar uma arma corpo a corpo, olhe na sua mochila");
+                         else
+                               showMessage("Você não mais dinheiro"); 	
+              end;
+        end, obj);
+
+    obj._e_event231 = obj.label460:addEventListener("onClick",
+        function (_)
+            if rrpg.getMesaDe(sheet).meuJogador.isMestre then
+                dialogs.inputQuery("Carteira", "Novo valor:", "",
+                   function (valorPreenchido)
+                        sheet.Preco52 = (sheet.Preco52 or 0 ) + valorPreenchido; 
+                end);
+                end;
+        end, obj);
+
+    obj._e_event232 = obj.Arma52:addEventListener("onClick",
+        function (_)
+            local Soma = (sheet.Soma or 0) -1200;
+                               if Soma >= 0 then
+            local minhaMesa = rrpg.getMesaDe(sheet); 
+                            local chat = minhaMesa.chat; 
+                            chat:enviarMensagem("/me [§K12][§B]Comprou uma arma. ");
+                     showMessage("Você acabou de comprar uma arma corpo a corpo, olhe na sua mochila");
+                         else
+                               showMessage("Você não mais dinheiro"); 	
+              end;
+        end, obj);
+
+    obj._e_event233 = obj.label466:addEventListener("onClick",
+        function (_)
+            if rrpg.getMesaDe(sheet).meuJogador.isMestre then
+                dialogs.inputQuery("Carteira", "Novo valor:", "",
+                   function (valorPreenchido)
+                        sheet.Preco53 = (sheet.Preco53 or 0 ) + valorPreenchido; 
+                end);
+                end;
+        end, obj);
+
+    obj._e_event234 = obj.Arma53:addEventListener("onClick",
+        function (_)
+            local Soma = (sheet.Soma or 0) -1200;
+                               if Soma >= 0 then
+            local minhaMesa = rrpg.getMesaDe(sheet); 
+                            local chat = minhaMesa.chat; 
+                            chat:enviarMensagem("/me [§K12][§B]Comprou uma arma. ");
+                     showMessage("Você acabou de comprar uma arma corpo a corpo, olhe na sua mochila");
+                         else
+                               showMessage("Você não mais dinheiro"); 	
+              end;
+        end, obj);
+
+    obj._e_event235 = obj.label472:addEventListener("onClick",
+        function (_)
+            if rrpg.getMesaDe(sheet).meuJogador.isMestre then
+                dialogs.inputQuery("Carteira", "Novo valor:", "",
+                   function (valorPreenchido)
+                        sheet.Preco54 = (sheet.Preco54 or 0 ) + valorPreenchido; 
+                end);
+                end;
+        end, obj);
+
+    obj._e_event236 = obj.Arma54:addEventListener("onClick",
+        function (_)
+            local Soma = (sheet.Soma or 0) -1200;
+                               if Soma >= 0 then
+            local minhaMesa = rrpg.getMesaDe(sheet); 
+                            local chat = minhaMesa.chat; 
+                            chat:enviarMensagem("/me [§K12][§B]Comprou uma arma. ");
+                     showMessage("Você acabou de comprar uma arma corpo a corpo, olhe na sua mochila");
+                         else
+                               showMessage("Você não mais dinheiro"); 	
+              end;
+        end, obj);
+
+    obj._e_event237 = obj.label478:addEventListener("onClick",
+        function (_)
+            if rrpg.getMesaDe(sheet).meuJogador.isMestre then
+                dialogs.inputQuery("Carteira", "Novo valor:", "",
+                   function (valorPreenchido)
+                        sheet.Preco55 = (sheet.Preco55 or 0 ) + valorPreenchido; 
+                end);
+                end;
+        end, obj);
+
+    obj._e_event238 = obj.Arma55:addEventListener("onClick",
+        function (_)
+            local Soma = (sheet.Soma or 0) -1200;
+                               if Soma >= 0 then
+            local minhaMesa = rrpg.getMesaDe(sheet); 
+                            local chat = minhaMesa.chat; 
+                            chat:enviarMensagem("/me [§K12][§B]Comprou uma arma. ");
+                     showMessage("Você acabou de comprar uma arma corpo a corpo, olhe na sua mochila");
+                         else
+                               showMessage("Você não mais dinheiro"); 	
+              end;
+        end, obj);
+
+    obj._e_event239 = obj.label484:addEventListener("onClick",
+        function (_)
+            if rrpg.getMesaDe(sheet).meuJogador.isMestre then
+                dialogs.inputQuery("Carteira", "Novo valor:", "",
+                   function (valorPreenchido)
+                        sheet.Preco56 = (sheet.Preco56 or 0 ) + valorPreenchido; 
+                end);
+                end;
+        end, obj);
+
+    obj._e_event240 = obj.Arma56:addEventListener("onClick",
+        function (_)
+            local Soma = (sheet.Soma or 0) -1200;
+                               if Soma >= 0 then
+            local minhaMesa = rrpg.getMesaDe(sheet); 
+                            local chat = minhaMesa.chat; 
+                            chat:enviarMensagem("/me [§K12][§B]Comprou uma arma. ");
+                     showMessage("Você acabou de comprar uma arma corpo a corpo, olhe na sua mochila");
+                         else
+                               showMessage("Você não mais dinheiro"); 	
+              end;
+        end, obj);
+
+    obj._e_event241 = obj.button87:addEventListener("onClick",
         function (_)
             GUI.openInBrowser('https://github.com/rrpgfirecast/firecast/blob/master/Plugins/Sheets/Dead%20Zone%202.0/README.md')
         end, obj);
 
-    obj._e_event215 = obj.button88:addEventListener("onClick",
+    obj._e_event242 = obj.button88:addEventListener("onClick",
         function (_)
             GUI.openInBrowser('https://github.com/ooicram/DeadZoneRPG/raw/master/Plugins/Sheets/Dead%20Zone%202.0/output/Dead%20Zone%202.0.rpk')
         end, obj);
 
-    obj._e_event216 = obj.button89:addEventListener("onClick",
+    obj._e_event243 = obj.button89:addEventListener("onClick",
         function (_)
             GUI.openInBrowser('https://dl.dropboxusercontent.com/s/znq35lnlfxt8c7k/Dead_Zone_3.0.rpk?dl=0')
         end, obj);
 
-    obj._e_event217 = obj.button90:addEventListener("onClick",
+    obj._e_event244 = obj.button90:addEventListener("onClick",
         function (_)
             GUI.openInBrowser('https://github.com/MestreWilll')
         end, obj);
 
     function obj:_releaseEvents()
+        __o_rrpgObjs.removeEventListenerById(self._e_event244);
+        __o_rrpgObjs.removeEventListenerById(self._e_event243);
+        __o_rrpgObjs.removeEventListenerById(self._e_event242);
+        __o_rrpgObjs.removeEventListenerById(self._e_event241);
+        __o_rrpgObjs.removeEventListenerById(self._e_event240);
+        __o_rrpgObjs.removeEventListenerById(self._e_event239);
+        __o_rrpgObjs.removeEventListenerById(self._e_event238);
+        __o_rrpgObjs.removeEventListenerById(self._e_event237);
+        __o_rrpgObjs.removeEventListenerById(self._e_event236);
+        __o_rrpgObjs.removeEventListenerById(self._e_event235);
+        __o_rrpgObjs.removeEventListenerById(self._e_event234);
+        __o_rrpgObjs.removeEventListenerById(self._e_event233);
+        __o_rrpgObjs.removeEventListenerById(self._e_event232);
+        __o_rrpgObjs.removeEventListenerById(self._e_event231);
+        __o_rrpgObjs.removeEventListenerById(self._e_event230);
+        __o_rrpgObjs.removeEventListenerById(self._e_event229);
+        __o_rrpgObjs.removeEventListenerById(self._e_event228);
+        __o_rrpgObjs.removeEventListenerById(self._e_event227);
+        __o_rrpgObjs.removeEventListenerById(self._e_event226);
+        __o_rrpgObjs.removeEventListenerById(self._e_event225);
+        __o_rrpgObjs.removeEventListenerById(self._e_event224);
+        __o_rrpgObjs.removeEventListenerById(self._e_event223);
+        __o_rrpgObjs.removeEventListenerById(self._e_event222);
+        __o_rrpgObjs.removeEventListenerById(self._e_event221);
+        __o_rrpgObjs.removeEventListenerById(self._e_event220);
+        __o_rrpgObjs.removeEventListenerById(self._e_event219);
+        __o_rrpgObjs.removeEventListenerById(self._e_event218);
         __o_rrpgObjs.removeEventListenerById(self._e_event217);
         __o_rrpgObjs.removeEventListenerById(self._e_event216);
         __o_rrpgObjs.removeEventListenerById(self._e_event215);
@@ -19207,9 +21181,11 @@ local function constructNew_frmDZ_Ficha()
 
         if self.button89 ~= nil then self.button89:destroy(); self.button89 = nil; end;
         if self.label329 ~= nil then self.label329:destroy(); self.label329 = nil; end;
+        if self.label454 ~= nil then self.label454:destroy(); self.label454 = nil; end;
         if self.layout83 ~= nil then self.layout83:destroy(); self.layout83 = nil; end;
         if self.label119 ~= nil then self.label119:destroy(); self.label119 = nil; end;
         if self.label327 ~= nil then self.label327:destroy(); self.label327 = nil; end;
+        if self.label468 ~= nil then self.label468:destroy(); self.label468 = nil; end;
         if self.button15 ~= nil then self.button15:destroy(); self.button15 = nil; end;
         if self.edit226 ~= nil then self.edit226:destroy(); self.edit226 = nil; end;
         if self.layout15 ~= nil then self.layout15:destroy(); self.layout15 = nil; end;
@@ -19229,7 +21205,9 @@ local function constructNew_frmDZ_Ficha()
         if self.image117 ~= nil then self.image117:destroy(); self.image117 = nil; end;
         if self.label45 ~= nil then self.label45:destroy(); self.label45 = nil; end;
         if self.label399 ~= nil then self.label399:destroy(); self.label399 = nil; end;
+        if self.label430 ~= nil then self.label430:destroy(); self.label430 = nil; end;
         if self.CorpoACorpo35 ~= nil then self.CorpoACorpo35:destroy(); self.CorpoACorpo35 = nil; end;
+        if self.label488 ~= nil then self.label488:destroy(); self.label488 = nil; end;
         if self.layout47 ~= nil then self.layout47:destroy(); self.layout47 = nil; end;
         if self.Arma22 ~= nil then self.Arma22:destroy(); self.Arma22 = nil; end;
         if self.label75 ~= nil then self.label75:destroy(); self.label75 = nil; end;
@@ -19244,10 +21222,13 @@ local function constructNew_frmDZ_Ficha()
         if self.label331 ~= nil then self.label331:destroy(); self.label331 = nil; end;
         if self.layout123 ~= nil then self.layout123:destroy(); self.layout123 = nil; end;
         if self.image157 ~= nil then self.image157:destroy(); self.image157 = nil; end;
+        if self.image229 ~= nil then self.image229:destroy(); self.image229 = nil; end;
         if self.edit82 ~= nil then self.edit82:destroy(); self.edit82 = nil; end;
         if self.label192 ~= nil then self.label192:destroy(); self.label192 = nil; end;
         if self.label164 ~= nil then self.label164:destroy(); self.label164 = nil; end;
         if self.label293 ~= nil then self.label293:destroy(); self.label293 = nil; end;
+        if self.image211 ~= nil then self.image211:destroy(); self.image211 = nil; end;
+        if self.label494 ~= nil then self.label494:destroy(); self.label494 = nil; end;
         if self.ItensComuns ~= nil then self.ItensComuns:destroy(); self.ItensComuns = nil; end;
         if self.CorpoACorpo40 ~= nil then self.CorpoACorpo40:destroy(); self.CorpoACorpo40 = nil; end;
         if self.button35 ~= nil then self.button35:destroy(); self.button35 = nil; end;
@@ -19265,6 +21246,7 @@ local function constructNew_frmDZ_Ficha()
         if self.rectangle17 ~= nil then self.rectangle17:destroy(); self.rectangle17 = nil; end;
         if self.frmAnimal ~= nil then self.frmAnimal:destroy(); self.frmAnimal = nil; end;
         if self.Nivel ~= nil then self.Nivel:destroy(); self.Nivel = nil; end;
+        if self.Arma56 ~= nil then self.Arma56:destroy(); self.Arma56 = nil; end;
         if self.layout32 ~= nil then self.layout32:destroy(); self.layout32 = nil; end;
         if self.label49 ~= nil then self.label49:destroy(); self.label49 = nil; end;
         if self.label163 ~= nil then self.label163:destroy(); self.label163 = nil; end;
@@ -19276,7 +21258,9 @@ local function constructNew_frmDZ_Ficha()
         if self.label417 ~= nil then self.label417:destroy(); self.label417 = nil; end;
         if self.image11 ~= nil then self.image11:destroy(); self.image11 = nil; end;
         if self.label162 ~= nil then self.label162:destroy(); self.label162 = nil; end;
+        if self.Arma45 ~= nil then self.Arma45:destroy(); self.Arma45 = nil; end;
         if self.label220 ~= nil then self.label220:destroy(); self.label220 = nil; end;
+        if self.image213 ~= nil then self.image213:destroy(); self.image213 = nil; end;
         if self.label52 ~= nil then self.label52:destroy(); self.label52 = nil; end;
         if self.button21 ~= nil then self.button21:destroy(); self.button21 = nil; end;
         if self.image56 ~= nil then self.image56:destroy(); self.image56 = nil; end;
@@ -19292,6 +21276,7 @@ local function constructNew_frmDZ_Ficha()
         if self.label258 ~= nil then self.label258:destroy(); self.label258 = nil; end;
         if self.textEditor4 ~= nil then self.textEditor4:destroy(); self.textEditor4 = nil; end;
         if self.edit159 ~= nil then self.edit159:destroy(); self.edit159 = nil; end;
+        if self.label465 ~= nil then self.label465:destroy(); self.label465 = nil; end;
         if self.layout106 ~= nil then self.layout106:destroy(); self.layout106 = nil; end;
         if self.label1 ~= nil then self.label1:destroy(); self.label1 = nil; end;
         if self.label307 ~= nil then self.label307:destroy(); self.label307 = nil; end;
@@ -19299,13 +21284,16 @@ local function constructNew_frmDZ_Ficha()
         if self.label340 ~= nil then self.label340:destroy(); self.label340 = nil; end;
         if self.image171 ~= nil then self.image171:destroy(); self.image171 = nil; end;
         if self.button66 ~= nil then self.button66:destroy(); self.button66 = nil; end;
+        if self.label455 ~= nil then self.label455:destroy(); self.label455 = nil; end;
         if self.button73 ~= nil then self.button73:destroy(); self.button73 = nil; end;
         if self.Arma44 ~= nil then self.Arma44:destroy(); self.Arma44 = nil; end;
         if self.layout126 ~= nil then self.layout126:destroy(); self.layout126 = nil; end;
         if self.naoVende ~= nil then self.naoVende:destroy(); self.naoVende = nil; end;
         if self.layout5 ~= nil then self.layout5:destroy(); self.layout5 = nil; end;
         if self.image107 ~= nil then self.image107:destroy(); self.image107 = nil; end;
+        if self.label459 ~= nil then self.label459:destroy(); self.label459 = nil; end;
         if self.layout55 ~= nil then self.layout55:destroy(); self.layout55 = nil; end;
+        if self.label444 ~= nil then self.label444:destroy(); self.label444 = nil; end;
         if self.edit129 ~= nil then self.edit129:destroy(); self.edit129 = nil; end;
         if self.dataLink3 ~= nil then self.dataLink3:destroy(); self.dataLink3 = nil; end;
         if self.edit142 ~= nil then self.edit142:destroy(); self.edit142 = nil; end;
@@ -19318,7 +21306,9 @@ local function constructNew_frmDZ_Ficha()
         if self.image95 ~= nil then self.image95:destroy(); self.image95 = nil; end;
         if self.label111 ~= nil then self.label111:destroy(); self.label111 = nil; end;
         if self.image198 ~= nil then self.image198:destroy(); self.image198 = nil; end;
+        if self.image206 ~= nil then self.image206:destroy(); self.image206 = nil; end;
         if self.Arma7 ~= nil then self.Arma7:destroy(); self.Arma7 = nil; end;
+        if self.label489 ~= nil then self.label489:destroy(); self.label489 = nil; end;
         if self.label381 ~= nil then self.label381:destroy(); self.label381 = nil; end;
         if self.image10 ~= nil then self.image10:destroy(); self.image10 = nil; end;
         if self.button45 ~= nil then self.button45:destroy(); self.button45 = nil; end;
@@ -19347,10 +21337,12 @@ local function constructNew_frmDZ_Ficha()
         if self.label263 ~= nil then self.label263:destroy(); self.label263 = nil; end;
         if self.label184 ~= nil then self.label184:destroy(); self.label184 = nil; end;
         if self.label2 ~= nil then self.label2:destroy(); self.label2 = nil; end;
+        if self.Arma50 ~= nil then self.Arma50:destroy(); self.Arma50 = nil; end;
         if self.label401 ~= nil then self.label401:destroy(); self.label401 = nil; end;
         if self.label375 ~= nil then self.label375:destroy(); self.label375 = nil; end;
         if self.label38 ~= nil then self.label38:destroy(); self.label38 = nil; end;
         if self.image63 ~= nil then self.image63:destroy(); self.image63 = nil; end;
+        if self.image210 ~= nil then self.image210:destroy(); self.image210 = nil; end;
         if self.dinheiro ~= nil then self.dinheiro:destroy(); self.dinheiro = nil; end;
         if self.layout14 ~= nil then self.layout14:destroy(); self.layout14 = nil; end;
         if self.edit27 ~= nil then self.edit27:destroy(); self.edit27 = nil; end;
@@ -19368,6 +21360,7 @@ local function constructNew_frmDZ_Ficha()
         if self.label185 ~= nil then self.label185:destroy(); self.label185 = nil; end;
         if self.label403 ~= nil then self.label403:destroy(); self.label403 = nil; end;
         if self.image123 ~= nil then self.image123:destroy(); self.image123 = nil; end;
+        if self.Armadura46 ~= nil then self.Armadura46:destroy(); self.Armadura46 = nil; end;
         if self.image34 ~= nil then self.image34:destroy(); self.image34 = nil; end;
         if self.edit134 ~= nil then self.edit134:destroy(); self.edit134 = nil; end;
         if self.layout146 ~= nil then self.layout146:destroy(); self.layout146 = nil; end;
@@ -19388,12 +21381,15 @@ local function constructNew_frmDZ_Ficha()
         if self.image64 ~= nil then self.image64:destroy(); self.image64 = nil; end;
         if self.DescCircunstancia7 ~= nil then self.DescCircunstancia7:destroy(); self.DescCircunstancia7 = nil; end;
         if self.layout30 ~= nil then self.layout30:destroy(); self.layout30 = nil; end;
+        if self.label440 ~= nil then self.label440:destroy(); self.label440 = nil; end;
+        if self.label484 ~= nil then self.label484:destroy(); self.label484 = nil; end;
         if self.layout135 ~= nil then self.layout135:destroy(); self.layout135 = nil; end;
         if self.scrollBox11 ~= nil then self.scrollBox11:destroy(); self.scrollBox11 = nil; end;
         if self.label73 ~= nil then self.label73:destroy(); self.label73 = nil; end;
         if self.layout59 ~= nil then self.layout59:destroy(); self.layout59 = nil; end;
         if self.image54 ~= nil then self.image54:destroy(); self.image54 = nil; end;
         if self.image133 ~= nil then self.image133:destroy(); self.image133 = nil; end;
+        if self.image231 ~= nil then self.image231:destroy(); self.image231 = nil; end;
         if self.label254 ~= nil then self.label254:destroy(); self.label254 = nil; end;
         if self.label235 ~= nil then self.label235:destroy(); self.label235 = nil; end;
         if self.edit92 ~= nil then self.edit92:destroy(); self.edit92 = nil; end;
@@ -19417,9 +21413,11 @@ local function constructNew_frmDZ_Ficha()
         if self.label325 ~= nil then self.label325:destroy(); self.label325 = nil; end;
         if self.label273 ~= nil then self.label273:destroy(); self.label273 = nil; end;
         if self.image183 ~= nil then self.image183:destroy(); self.image183 = nil; end;
+        if self.image217 ~= nil then self.image217:destroy(); self.image217 = nil; end;
         if self.dataLink8 ~= nil then self.dataLink8:destroy(); self.dataLink8 = nil; end;
         if self.edit4 ~= nil then self.edit4:destroy(); self.edit4 = nil; end;
         if self.layout25 ~= nil then self.layout25:destroy(); self.layout25 = nil; end;
+        if self.label482 ~= nil then self.label482:destroy(); self.label482 = nil; end;
         if self.label6 ~= nil then self.label6:destroy(); self.label6 = nil; end;
         if self.edit128 ~= nil then self.edit128:destroy(); self.edit128 = nil; end;
         if self.label361 ~= nil then self.label361:destroy(); self.label361 = nil; end;
@@ -19432,6 +21430,7 @@ local function constructNew_frmDZ_Ficha()
         if self.button74 ~= nil then self.button74:destroy(); self.button74 = nil; end;
         if self.edit127 ~= nil then self.edit127:destroy(); self.edit127 = nil; end;
         if self.edit218 ~= nil then self.edit218:destroy(); self.edit218 = nil; end;
+        if self.Arma55 ~= nil then self.Arma55:destroy(); self.Arma55 = nil; end;
         if self.edit165 ~= nil then self.edit165:destroy(); self.edit165 = nil; end;
         if self.edit208 ~= nil then self.edit208:destroy(); self.edit208 = nil; end;
         if self.labSoma ~= nil then self.labSoma:destroy(); self.labSoma = nil; end;
@@ -19441,10 +21440,12 @@ local function constructNew_frmDZ_Ficha()
         if self.label330 ~= nil then self.label330:destroy(); self.label330 = nil; end;
         if self.edit8 ~= nil then self.edit8:destroy(); self.edit8 = nil; end;
         if self.label196 ~= nil then self.label196:destroy(); self.label196 = nil; end;
+        if self.label448 ~= nil then self.label448:destroy(); self.label448 = nil; end;
         if self.label339 ~= nil then self.label339:destroy(); self.label339 = nil; end;
         if self.button32 ~= nil then self.button32:destroy(); self.button32 = nil; end;
         if self.edit145 ~= nil then self.edit145:destroy(); self.edit145 = nil; end;
         if self.label336 ~= nil then self.label336:destroy(); self.label336 = nil; end;
+        if self.Armadura50 ~= nil then self.Armadura50:destroy(); self.Armadura50 = nil; end;
         if self.image75 ~= nil then self.image75:destroy(); self.image75 = nil; end;
         if self.image144 ~= nil then self.image144:destroy(); self.image144 = nil; end;
         if self.label53 ~= nil then self.label53:destroy(); self.label53 = nil; end;
@@ -19460,10 +21461,12 @@ local function constructNew_frmDZ_Ficha()
         if self.Arma12 ~= nil then self.Arma12:destroy(); self.Arma12 = nil; end;
         if self.label42 ~= nil then self.label42:destroy(); self.label42 = nil; end;
         if self.Arma16 ~= nil then self.Arma16:destroy(); self.Arma16 = nil; end;
+        if self.label469 ~= nil then self.label469:destroy(); self.label469 = nil; end;
         if self.edit133 ~= nil then self.edit133:destroy(); self.edit133 = nil; end;
         if self.rectangle20 ~= nil then self.rectangle20:destroy(); self.rectangle20 = nil; end;
         if self.label333 ~= nil then self.label333:destroy(); self.label333 = nil; end;
         if self.DescVanDes1 ~= nil then self.DescVanDes1:destroy(); self.DescVanDes1 = nil; end;
+        if self.image209 ~= nil then self.image209:destroy(); self.image209 = nil; end;
         if self.edit13 ~= nil then self.edit13:destroy(); self.edit13 = nil; end;
         if self.edit225 ~= nil then self.edit225:destroy(); self.edit225 = nil; end;
         if self.DescVanDes6 ~= nil then self.DescVanDes6:destroy(); self.DescVanDes6 = nil; end;
@@ -19483,8 +21486,10 @@ local function constructNew_frmDZ_Ficha()
         if self.image179 ~= nil then self.image179:destroy(); self.image179 = nil; end;
         if self.label341 ~= nil then self.label341:destroy(); self.label341 = nil; end;
         if self.CorpoACorpo42 ~= nil then self.CorpoACorpo42:destroy(); self.CorpoACorpo42 = nil; end;
-        if self.button90 ~= nil then self.button90:destroy(); self.button90 = nil; end;
+        if self.image208 ~= nil then self.image208:destroy(); self.image208 = nil; end;
+        if self.label481 ~= nil then self.label481:destroy(); self.label481 = nil; end;
         if self.edit184 ~= nil then self.edit184:destroy(); self.edit184 = nil; end;
+        if self.button90 ~= nil then self.button90:destroy(); self.button90 = nil; end;
         if self.mercadoNegro ~= nil then self.mercadoNegro:destroy(); self.mercadoNegro = nil; end;
         if self.layout70 ~= nil then self.layout70:destroy(); self.layout70 = nil; end;
         if self.textEditor10 ~= nil then self.textEditor10:destroy(); self.textEditor10 = nil; end;
@@ -19510,6 +21515,8 @@ local function constructNew_frmDZ_Ficha()
         if self.edit211 ~= nil then self.edit211:destroy(); self.edit211 = nil; end;
         if self.labSoma4 ~= nil then self.labSoma4:destroy(); self.labSoma4 = nil; end;
         if self.label240 ~= nil then self.label240:destroy(); self.label240 = nil; end;
+        if self.label439 ~= nil then self.label439:destroy(); self.label439 = nil; end;
+        if self.image216 ~= nil then self.image216:destroy(); self.image216 = nil; end;
         if self.label357 ~= nil then self.label357:destroy(); self.label357 = nil; end;
         if self.label7 ~= nil then self.label7:destroy(); self.label7 = nil; end;
         if self.button18 ~= nil then self.button18:destroy(); self.button18 = nil; end;
@@ -19523,6 +21530,7 @@ local function constructNew_frmDZ_Ficha()
         if self.scrollBox4 ~= nil then self.scrollBox4:destroy(); self.scrollBox4 = nil; end;
         if self.layout22 ~= nil then self.layout22:destroy(); self.layout22 = nil; end;
         if self.button82 ~= nil then self.button82:destroy(); self.button82 = nil; end;
+        if self.label434 ~= nil then self.label434:destroy(); self.label434 = nil; end;
         if self.edit135 ~= nil then self.edit135:destroy(); self.edit135 = nil; end;
         if self.edit191 ~= nil then self.edit191:destroy(); self.edit191 = nil; end;
         if self.button71 ~= nil then self.button71:destroy(); self.button71 = nil; end;
@@ -19540,6 +21548,8 @@ local function constructNew_frmDZ_Ficha()
         if self.layout58 ~= nil then self.layout58:destroy(); self.layout58 = nil; end;
         if self.label151 ~= nil then self.label151:destroy(); self.label151 = nil; end;
         if self.label138 ~= nil then self.label138:destroy(); self.label138 = nil; end;
+        if self.Arma46 ~= nil then self.Arma46:destroy(); self.Arma46 = nil; end;
+        if self.Arma51 ~= nil then self.Arma51:destroy(); self.Arma51 = nil; end;
         if self.layout110 ~= nil then self.layout110:destroy(); self.layout110 = nil; end;
         if self.label40 ~= nil then self.label40:destroy(); self.label40 = nil; end;
         if self.image5 ~= nil then self.image5:destroy(); self.image5 = nil; end;
@@ -19548,10 +21558,14 @@ local function constructNew_frmDZ_Ficha()
         if self.layout114 ~= nil then self.layout114:destroy(); self.layout114 = nil; end;
         if self.label57 ~= nil then self.label57:destroy(); self.label57 = nil; end;
         if self.label188 ~= nil then self.label188:destroy(); self.label188 = nil; end;
+        if self.image205 ~= nil then self.image205:destroy(); self.image205 = nil; end;
+        if self.label458 ~= nil then self.label458:destroy(); self.label458 = nil; end;
         if self.label425 ~= nil then self.label425:destroy(); self.label425 = nil; end;
         if self.edit71 ~= nil then self.edit71:destroy(); self.edit71 = nil; end;
+        if self.label480 ~= nil then self.label480:destroy(); self.label480 = nil; end;
         if self.button47 ~= nil then self.button47:destroy(); self.button47 = nil; end;
         if self.label71 ~= nil then self.label71:destroy(); self.label71 = nil; end;
+        if self.label496 ~= nil then self.label496:destroy(); self.label496 = nil; end;
         if self.edit85 ~= nil then self.edit85:destroy(); self.edit85 = nil; end;
         if self.edit201 ~= nil then self.edit201:destroy(); self.edit201 = nil; end;
         if self.image120 ~= nil then self.image120:destroy(); self.image120 = nil; end;
@@ -19569,6 +21583,7 @@ local function constructNew_frmDZ_Ficha()
         if self.label27 ~= nil then self.label27:destroy(); self.label27 = nil; end;
         if self.button20 ~= nil then self.button20:destroy(); self.button20 = nil; end;
         if self.label68 ~= nil then self.label68:destroy(); self.label68 = nil; end;
+        if self.Armadura55 ~= nil then self.Armadura55:destroy(); self.Armadura55 = nil; end;
         if self.label67 ~= nil then self.label67:destroy(); self.label67 = nil; end;
         if self.layout68 ~= nil then self.layout68:destroy(); self.layout68 = nil; end;
         if self.edit169 ~= nil then self.edit169:destroy(); self.edit169 = nil; end;
@@ -19577,6 +21592,7 @@ local function constructNew_frmDZ_Ficha()
         if self.layout105 ~= nil then self.layout105:destroy(); self.layout105 = nil; end;
         if self.label362 ~= nil then self.label362:destroy(); self.label362 = nil; end;
         if self.label140 ~= nil then self.label140:destroy(); self.label140 = nil; end;
+        if self.label490 ~= nil then self.label490:destroy(); self.label490 = nil; end;
         if self.edit120 ~= nil then self.edit120:destroy(); self.edit120 = nil; end;
         if self.label69 ~= nil then self.label69:destroy(); self.label69 = nil; end;
         if self.image166 ~= nil then self.image166:destroy(); self.image166 = nil; end;
@@ -19588,6 +21604,7 @@ local function constructNew_frmDZ_Ficha()
         if self.edit5 ~= nil then self.edit5:destroy(); self.edit5 = nil; end;
         if self.edit204 ~= nil then self.edit204:destroy(); self.edit204 = nil; end;
         if self.label203 ~= nil then self.label203:destroy(); self.label203 = nil; end;
+        if self.label474 ~= nil then self.label474:destroy(); self.label474 = nil; end;
         if self.DescCircunstancia6 ~= nil then self.DescCircunstancia6:destroy(); self.DescCircunstancia6 = nil; end;
         if self.label301 ~= nil then self.label301:destroy(); self.label301 = nil; end;
         if self.frmCAR ~= nil then self.frmCAR:destroy(); self.frmCAR = nil; end;
@@ -19623,6 +21640,7 @@ local function constructNew_frmDZ_Ficha()
         if self.CorpoACorpo31 ~= nil then self.CorpoACorpo31:destroy(); self.CorpoACorpo31 = nil; end;
         if self.layout4 ~= nil then self.layout4:destroy(); self.layout4 = nil; end;
         if self.edit101 ~= nil then self.edit101:destroy(); self.edit101 = nil; end;
+        if self.image226 ~= nil then self.image226:destroy(); self.image226 = nil; end;
         if self.image28 ~= nil then self.image28:destroy(); self.image28 = nil; end;
         if self.edit164 ~= nil then self.edit164:destroy(); self.edit164 = nil; end;
         if self.label58 ~= nil then self.label58:destroy(); self.label58 = nil; end;
@@ -19645,9 +21663,11 @@ local function constructNew_frmDZ_Ficha()
         if self.label245 ~= nil then self.label245:destroy(); self.label245 = nil; end;
         if self.layout138 ~= nil then self.layout138:destroy(); self.layout138 = nil; end;
         if self.layout151 ~= nil then self.layout151:destroy(); self.layout151 = nil; end;
+        if self.Armadura45 ~= nil then self.Armadura45:destroy(); self.Armadura45 = nil; end;
         if self.edit86 ~= nil then self.edit86:destroy(); self.edit86 = nil; end;
         if self.image78 ~= nil then self.image78:destroy(); self.image78 = nil; end;
         if self.CorpoACorpo39 ~= nil then self.CorpoACorpo39:destroy(); self.CorpoACorpo39 = nil; end;
+        if self.Arma48 ~= nil then self.Arma48:destroy(); self.Arma48 = nil; end;
         if self.edit143 ~= nil then self.edit143:destroy(); self.edit143 = nil; end;
         if self.label396 ~= nil then self.label396:destroy(); self.label396 = nil; end;
         if self.layout129 ~= nil then self.layout129:destroy(); self.layout129 = nil; end;
@@ -19683,6 +21703,7 @@ local function constructNew_frmDZ_Ficha()
         if self.edit140 ~= nil then self.edit140:destroy(); self.edit140 = nil; end;
         if self.image122 ~= nil then self.image122:destroy(); self.image122 = nil; end;
         if self.scrollBox1 ~= nil then self.scrollBox1:destroy(); self.scrollBox1 = nil; end;
+        if self.label492 ~= nil then self.label492:destroy(); self.label492 = nil; end;
         if self.label33 ~= nil then self.label33:destroy(); self.label33 = nil; end;
         if self.rectangle11 ~= nil then self.rectangle11:destroy(); self.rectangle11 = nil; end;
         if self.image82 ~= nil then self.image82:destroy(); self.image82 = nil; end;
@@ -19698,14 +21719,18 @@ local function constructNew_frmDZ_Ficha()
         if self.boxDetalhesDoItem3 ~= nil then self.boxDetalhesDoItem3:destroy(); self.boxDetalhesDoItem3 = nil; end;
         if self.label83 ~= nil then self.label83:destroy(); self.label83 = nil; end;
         if self.label233 ~= nil then self.label233:destroy(); self.label233 = nil; end;
+        if self.label457 ~= nil then self.label457:destroy(); self.label457 = nil; end;
+        if self.image223 ~= nil then self.image223:destroy(); self.image223 = nil; end;
         if self.scrollBox8 ~= nil then self.scrollBox8:destroy(); self.scrollBox8 = nil; end;
         if self.label98 ~= nil then self.label98:destroy(); self.label98 = nil; end;
         if self.layout149 ~= nil then self.layout149:destroy(); self.layout149 = nil; end;
         if self.layout80 ~= nil then self.layout80:destroy(); self.layout80 = nil; end;
         if self.edit207 ~= nil then self.edit207:destroy(); self.edit207 = nil; end;
         if self.image139 ~= nil then self.image139:destroy(); self.image139 = nil; end;
+        if self.Arma49 ~= nil then self.Arma49:destroy(); self.Arma49 = nil; end;
         if self.layout82 ~= nil then self.layout82:destroy(); self.layout82 = nil; end;
         if self.image129 ~= nil then self.image129:destroy(); self.image129 = nil; end;
+        if self.image221 ~= nil then self.image221:destroy(); self.image221 = nil; end;
         if self.label55 ~= nil then self.label55:destroy(); self.label55 = nil; end;
         if self.edit12 ~= nil then self.edit12:destroy(); self.edit12 = nil; end;
         if self.edit80 ~= nil then self.edit80:destroy(); self.edit80 = nil; end;
@@ -19760,9 +21785,10 @@ local function constructNew_frmDZ_Ficha()
         if self.label384 ~= nil then self.label384:destroy(); self.label384 = nil; end;
         if self.image196 ~= nil then self.image196:destroy(); self.image196 = nil; end;
         if self.label412 ~= nil then self.label412:destroy(); self.label412 = nil; end;
-        if self.rectangle29 ~= nil then self.rectangle29:destroy(); self.rectangle29 = nil; end;
+        if self.label464 ~= nil then self.label464:destroy(); self.label464 = nil; end;
         if self.label290 ~= nil then self.label290:destroy(); self.label290 = nil; end;
         if self.label189 ~= nil then self.label189:destroy(); self.label189 = nil; end;
+        if self.rectangle29 ~= nil then self.rectangle29:destroy(); self.rectangle29 = nil; end;
         if self.label265 ~= nil then self.label265:destroy(); self.label265 = nil; end;
         if self.image66 ~= nil then self.image66:destroy(); self.image66 = nil; end;
         if self.image184 ~= nil then self.image184:destroy(); self.image184 = nil; end;
@@ -19798,6 +21824,7 @@ local function constructNew_frmDZ_Ficha()
         if self.label232 ~= nil then self.label232:destroy(); self.label232 = nil; end;
         if self.label314 ~= nil then self.label314:destroy(); self.label314 = nil; end;
         if self.edit43 ~= nil then self.edit43:destroy(); self.edit43 = nil; end;
+        if self.label450 ~= nil then self.label450:destroy(); self.label450 = nil; end;
         if self.NPC_DescATK ~= nil then self.NPC_DescATK:destroy(); self.NPC_DescATK = nil; end;
         if self.label100 ~= nil then self.label100:destroy(); self.label100 = nil; end;
         if self.image143 ~= nil then self.image143:destroy(); self.image143 = nil; end;
@@ -19817,6 +21844,7 @@ local function constructNew_frmDZ_Ficha()
         if self.rectangle3 ~= nil then self.rectangle3:destroy(); self.rectangle3 = nil; end;
         if self.Arma18 ~= nil then self.Arma18:destroy(); self.Arma18 = nil; end;
         if self.label291 ~= nil then self.label291:destroy(); self.label291 = nil; end;
+        if self.label447 ~= nil then self.label447:destroy(); self.label447 = nil; end;
         if self.Arma9 ~= nil then self.Arma9:destroy(); self.Arma9 = nil; end;
         if self.edit219 ~= nil then self.edit219:destroy(); self.edit219 = nil; end;
         if self.edit51 ~= nil then self.edit51:destroy(); self.edit51 = nil; end;
@@ -19826,10 +21854,12 @@ local function constructNew_frmDZ_Ficha()
         if self.edit190 ~= nil then self.edit190:destroy(); self.edit190 = nil; end;
         if self.label322 ~= nil then self.label322:destroy(); self.label322 = nil; end;
         if self.scrollBox6 ~= nil then self.scrollBox6:destroy(); self.scrollBox6 = nil; end;
+        if self.label427 ~= nil then self.label427:destroy(); self.label427 = nil; end;
         if self.textEditor14 ~= nil then self.textEditor14:destroy(); self.textEditor14 = nil; end;
         if self.image104 ~= nil then self.image104:destroy(); self.image104 = nil; end;
         if self.layout121 ~= nil then self.layout121:destroy(); self.layout121 = nil; end;
         if self.Arma19 ~= nil then self.Arma19:destroy(); self.Arma19 = nil; end;
+        if self.label475 ~= nil then self.label475:destroy(); self.label475 = nil; end;
         if self.label153 ~= nil then self.label153:destroy(); self.label153 = nil; end;
         if self.DescVanDes8 ~= nil then self.DescVanDes8:destroy(); self.DescVanDes8 = nil; end;
         if self.label404 ~= nil then self.label404:destroy(); self.label404 = nil; end;
@@ -19839,6 +21869,7 @@ local function constructNew_frmDZ_Ficha()
         if self.image113 ~= nil then self.image113:destroy(); self.image113 = nil; end;
         if self.button61 ~= nil then self.button61:destroy(); self.button61 = nil; end;
         if self.image112 ~= nil then self.image112:destroy(); self.image112 = nil; end;
+        if self.label497 ~= nil then self.label497:destroy(); self.label497 = nil; end;
         if self.edit202 ~= nil then self.edit202:destroy(); self.edit202 = nil; end;
         if self.layout157 ~= nil then self.layout157:destroy(); self.layout157 = nil; end;
         if self.edit70 ~= nil then self.edit70:destroy(); self.edit70 = nil; end;
@@ -19875,8 +21906,11 @@ local function constructNew_frmDZ_Ficha()
         if self.label43 ~= nil then self.label43:destroy(); self.label43 = nil; end;
         if self.label422 ~= nil then self.label422:destroy(); self.label422 = nil; end;
         if self.edit33 ~= nil then self.edit33:destroy(); self.edit33 = nil; end;
+        if self.label466 ~= nil then self.label466:destroy(); self.label466 = nil; end;
         if self.edit29 ~= nil then self.edit29:destroy(); self.edit29 = nil; end;
+        if self.Armadura52 ~= nil then self.Armadura52:destroy(); self.Armadura52 = nil; end;
         if self.label350 ~= nil then self.label350:destroy(); self.label350 = nil; end;
+        if self.label498 ~= nil then self.label498:destroy(); self.label498 = nil; end;
         if self.layout94 ~= nil then self.layout94:destroy(); self.layout94 = nil; end;
         if self.image142 ~= nil then self.image142:destroy(); self.image142 = nil; end;
         if self.label96 ~= nil then self.label96:destroy(); self.label96 = nil; end;
@@ -19888,6 +21922,8 @@ local function constructNew_frmDZ_Ficha()
         if self.image180 ~= nil then self.image180:destroy(); self.image180 = nil; end;
         if self.label63 ~= nil then self.label63:destroy(); self.label63 = nil; end;
         if self.dataLink18 ~= nil then self.dataLink18:destroy(); self.dataLink18 = nil; end;
+        if self.label456 ~= nil then self.label456:destroy(); self.label456 = nil; end;
+        if self.Armadura49 ~= nil then self.Armadura49:destroy(); self.Armadura49 = nil; end;
         if self.image155 ~= nil then self.image155:destroy(); self.image155 = nil; end;
         if self.image126 ~= nil then self.image126:destroy(); self.image126 = nil; end;
         if self.layout23 ~= nil then self.layout23:destroy(); self.layout23 = nil; end;
@@ -19900,18 +21936,23 @@ local function constructNew_frmDZ_Ficha()
         if self.image110 ~= nil then self.image110:destroy(); self.image110 = nil; end;
         if self.layout125 ~= nil then self.layout125:destroy(); self.layout125 = nil; end;
         if self.image151 ~= nil then self.image151:destroy(); self.image151 = nil; end;
+        if self.image214 ~= nil then self.image214:destroy(); self.image214 = nil; end;
         if self.Arma29 ~= nil then self.Arma29:destroy(); self.Arma29 = nil; end;
         if self.label146 ~= nil then self.label146:destroy(); self.label146 = nil; end;
         if self.image101 ~= nil then self.image101:destroy(); self.image101 = nil; end;
         if self.image175 ~= nil then self.image175:destroy(); self.image175 = nil; end;
+        if self.label428 ~= nil then self.label428:destroy(); self.label428 = nil; end;
         if self.layout9 ~= nil then self.layout9:destroy(); self.layout9 = nil; end;
         if self.layout140 ~= nil then self.layout140:destroy(); self.layout140 = nil; end;
         if self.NPC_Circunstancia ~= nil then self.NPC_Circunstancia:destroy(); self.NPC_Circunstancia = nil; end;
         if self.button40 ~= nil then self.button40:destroy(); self.button40 = nil; end;
         if self.image85 ~= nil then self.image85:destroy(); self.image85 = nil; end;
+        if self.label462 ~= nil then self.label462:destroy(); self.label462 = nil; end;
         if self.layout71 ~= nil then self.layout71:destroy(); self.layout71 = nil; end;
         if self.edit183 ~= nil then self.edit183:destroy(); self.edit183 = nil; end;
+        if self.image225 ~= nil then self.image225:destroy(); self.image225 = nil; end;
         if self.label319 ~= nil then self.label319:destroy(); self.label319 = nil; end;
+        if self.label478 ~= nil then self.label478:destroy(); self.label478 = nil; end;
         if self.dataLink9 ~= nil then self.dataLink9:destroy(); self.dataLink9 = nil; end;
         if self.label15 ~= nil then self.label15:destroy(); self.label15 = nil; end;
         if self.scrollBox9 ~= nil then self.scrollBox9:destroy(); self.scrollBox9 = nil; end;
@@ -19941,6 +21982,7 @@ local function constructNew_frmDZ_Ficha()
         if self.layout141 ~= nil then self.layout141:destroy(); self.layout141 = nil; end;
         if self.edit228 ~= nil then self.edit228:destroy(); self.edit228 = nil; end;
         if self.label288 ~= nil then self.label288:destroy(); self.label288 = nil; end;
+        if self.label446 ~= nil then self.label446:destroy(); self.label446 = nil; end;
         if self.label302 ~= nil then self.label302:destroy(); self.label302 = nil; end;
         if self.edit16 ~= nil then self.edit16:destroy(); self.edit16 = nil; end;
         if self.label47 ~= nil then self.label47:destroy(); self.label47 = nil; end;
@@ -19964,6 +22006,8 @@ local function constructNew_frmDZ_Ficha()
         if self.label176 ~= nil then self.label176:destroy(); self.label176 = nil; end;
         if self.label242 ~= nil then self.label242:destroy(); self.label242 = nil; end;
         if self.image118 ~= nil then self.image118:destroy(); self.image118 = nil; end;
+        if self.label445 ~= nil then self.label445:destroy(); self.label445 = nil; end;
+        if self.Arma54 ~= nil then self.Arma54:destroy(); self.Arma54 = nil; end;
         if self.button7 ~= nil then self.button7:destroy(); self.button7 = nil; end;
         if self.layout42 ~= nil then self.layout42:destroy(); self.layout42 = nil; end;
         if self.image45 ~= nil then self.image45:destroy(); self.image45 = nil; end;
@@ -19978,11 +22022,19 @@ local function constructNew_frmDZ_Ficha()
         if self.image177 ~= nil then self.image177:destroy(); self.image177 = nil; end;
         if self.image195 ~= nil then self.image195:destroy(); self.image195 = nil; end;
         if self.image197 ~= nil then self.image197:destroy(); self.image197 = nil; end;
+        if self.dataLink20 ~= nil then self.dataLink20:destroy(); self.dataLink20 = nil; end;
+        if self.image207 ~= nil then self.image207:destroy(); self.image207 = nil; end;
         if self.label94 ~= nil then self.label94:destroy(); self.label94 = nil; end;
         if self.label212 ~= nil then self.label212:destroy(); self.label212 = nil; end;
+        if self.label437 ~= nil then self.label437:destroy(); self.label437 = nil; end;
+        if self.Armadura54 ~= nil then self.Armadura54:destroy(); self.Armadura54 = nil; end;
+        if self.Armadura56 ~= nil then self.Armadura56:destroy(); self.Armadura56 = nil; end;
+        if self.image228 ~= nil then self.image228:destroy(); self.image228 = nil; end;
         if self.label366 ~= nil then self.label366:destroy(); self.label366 = nil; end;
         if self.label29 ~= nil then self.label29:destroy(); self.label29 = nil; end;
         if self.layout137 ~= nil then self.layout137:destroy(); self.layout137 = nil; end;
+        if self.label486 ~= nil then self.label486:destroy(); self.label486 = nil; end;
+        if self.layout158 ~= nil then self.layout158:destroy(); self.layout158 = nil; end;
         if self.rectangle23 ~= nil then self.rectangle23:destroy(); self.rectangle23 = nil; end;
         if self.label91 ~= nil then self.label91:destroy(); self.label91 = nil; end;
         if self.dataLink6 ~= nil then self.dataLink6:destroy(); self.dataLink6 = nil; end;
@@ -19993,14 +22045,17 @@ local function constructNew_frmDZ_Ficha()
         if self.edit99 ~= nil then self.edit99:destroy(); self.edit99 = nil; end;
         if self.Arma37 ~= nil then self.Arma37:destroy(); self.Arma37 = nil; end;
         if self.CorpoACorpo38 ~= nil then self.CorpoACorpo38:destroy(); self.CorpoACorpo38 = nil; end;
+        if self.label433 ~= nil then self.label433:destroy(); self.label433 = nil; end;
         if self.label268 ~= nil then self.label268:destroy(); self.label268 = nil; end;
         if self.button43 ~= nil then self.button43:destroy(); self.button43 = nil; end;
+        if self.label435 ~= nil then self.label435:destroy(); self.label435 = nil; end;
         if self.label409 ~= nil then self.label409:destroy(); self.label409 = nil; end;
         if self.layout11 ~= nil then self.layout11:destroy(); self.layout11 = nil; end;
         if self.DescVanDes3 ~= nil then self.DescVanDes3:destroy(); self.DescVanDes3 = nil; end;
         if self.label225 ~= nil then self.label225:destroy(); self.label225 = nil; end;
         if self.label376 ~= nil then self.label376:destroy(); self.label376 = nil; end;
         if self.layout108 ~= nil then self.layout108:destroy(); self.layout108 = nil; end;
+        if self.label495 ~= nil then self.label495:destroy(); self.label495 = nil; end;
         if self.rectangle18 ~= nil then self.rectangle18:destroy(); self.rectangle18 = nil; end;
         if self.rectangle14 ~= nil then self.rectangle14:destroy(); self.rectangle14 = nil; end;
         if self.image92 ~= nil then self.image92:destroy(); self.image92 = nil; end;
@@ -20010,6 +22065,7 @@ local function constructNew_frmDZ_Ficha()
         if self.label228 ~= nil then self.label228:destroy(); self.label228 = nil; end;
         if self.CorpoACorpo43 ~= nil then self.CorpoACorpo43:destroy(); self.CorpoACorpo43 = nil; end;
         if self.edit157 ~= nil then self.edit157:destroy(); self.edit157 = nil; end;
+        if self.label491 ~= nil then self.label491:destroy(); self.label491 = nil; end;
         if self.image153 ~= nil then self.image153:destroy(); self.image153 = nil; end;
         if self.label89 ~= nil then self.label89:destroy(); self.label89 = nil; end;
         if self.button33 ~= nil then self.button33:destroy(); self.button33 = nil; end;
@@ -20097,7 +22153,10 @@ local function constructNew_frmDZ_Ficha()
         if self.label411 ~= nil then self.label411:destroy(); self.label411 = nil; end;
         if self.image108 ~= nil then self.image108:destroy(); self.image108 = nil; end;
         if self.textEditor11 ~= nil then self.textEditor11:destroy(); self.textEditor11 = nil; end;
+        if self.image215 ~= nil then self.image215:destroy(); self.image215 = nil; end;
+        if self.image220 ~= nil then self.image220:destroy(); self.image220 = nil; end;
         if self.edit200 ~= nil then self.edit200:destroy(); self.edit200 = nil; end;
+        if self.label477 ~= nil then self.label477:destroy(); self.label477 = nil; end;
         if self.image89 ~= nil then self.image89:destroy(); self.image89 = nil; end;
         if self.textEditor2 ~= nil then self.textEditor2:destroy(); self.textEditor2 = nil; end;
         if self.layout107 ~= nil then self.layout107:destroy(); self.layout107 = nil; end;
@@ -20124,9 +22183,11 @@ local function constructNew_frmDZ_Ficha()
         if self.image59 ~= nil then self.image59:destroy(); self.image59 = nil; end;
         if self.image134 ~= nil then self.image134:destroy(); self.image134 = nil; end;
         if self.label360 ~= nil then self.label360:destroy(); self.label360 = nil; end;
+        if self.image219 ~= nil then self.image219:destroy(); self.image219 = nil; end;
         if self.edit109 ~= nil then self.edit109:destroy(); self.edit109 = nil; end;
         if self.layout148 ~= nil then self.layout148:destroy(); self.layout148 = nil; end;
         if self.Arma1 ~= nil then self.Arma1:destroy(); self.Arma1 = nil; end;
+        if self.label493 ~= nil then self.label493:destroy(); self.label493 = nil; end;
         if self.label424 ~= nil then self.label424:destroy(); self.label424 = nil; end;
         if self.Arma41 ~= nil then self.Arma41:destroy(); self.Arma41 = nil; end;
         if self.button3 ~= nil then self.button3:destroy(); self.button3 = nil; end;
@@ -20135,6 +22196,7 @@ local function constructNew_frmDZ_Ficha()
         if self.layout76 ~= nil then self.layout76:destroy(); self.layout76 = nil; end;
         if self.edit174 ~= nil then self.edit174:destroy(); self.edit174 = nil; end;
         if self.image189 ~= nil then self.image189:destroy(); self.image189 = nil; end;
+        if self.label471 ~= nil then self.label471:destroy(); self.label471 = nil; end;
         if self.edit152 ~= nil then self.edit152:destroy(); self.edit152 = nil; end;
         if self.image168 ~= nil then self.image168:destroy(); self.image168 = nil; end;
         if self.image26 ~= nil then self.image26:destroy(); self.image26 = nil; end;
@@ -20145,6 +22207,7 @@ local function constructNew_frmDZ_Ficha()
         if self.label102 ~= nil then self.label102:destroy(); self.label102 = nil; end;
         if self.label132 ~= nil then self.label132:destroy(); self.label132 = nil; end;
         if self.label342 ~= nil then self.label342:destroy(); self.label342 = nil; end;
+        if self.label479 ~= nil then self.label479:destroy(); self.label479 = nil; end;
         if self.layout128 ~= nil then self.layout128:destroy(); self.layout128 = nil; end;
         if self.edit177 ~= nil then self.edit177:destroy(); self.edit177 = nil; end;
         if self.button11 ~= nil then self.button11:destroy(); self.button11 = nil; end;
@@ -20154,6 +22217,7 @@ local function constructNew_frmDZ_Ficha()
         if self.layout97 ~= nil then self.layout97:destroy(); self.layout97 = nil; end;
         if self.button78 ~= nil then self.button78:destroy(); self.button78 = nil; end;
         if self.label371 ~= nil then self.label371:destroy(); self.label371 = nil; end;
+        if self.label467 ~= nil then self.label467:destroy(); self.label467 = nil; end;
         if self.button5 ~= nil then self.button5:destroy(); self.button5 = nil; end;
         if self.edit37 ~= nil then self.edit37:destroy(); self.edit37 = nil; end;
         if self.FichaPrincipal ~= nil then self.FichaPrincipal:destroy(); self.FichaPrincipal = nil; end;
@@ -20168,12 +22232,16 @@ local function constructNew_frmDZ_Ficha()
         if self.edit162 ~= nil then self.edit162:destroy(); self.edit162 = nil; end;
         if self.edit194 ~= nil then self.edit194:destroy(); self.edit194 = nil; end;
         if self.label39 ~= nil then self.label39:destroy(); self.label39 = nil; end;
+        if self.Armadura48 ~= nil then self.Armadura48:destroy(); self.Armadura48 = nil; end;
         if self.image72 ~= nil then self.image72:destroy(); self.image72 = nil; end;
+        if self.label485 ~= nil then self.label485:destroy(); self.label485 = nil; end;
         if self.label3 ~= nil then self.label3:destroy(); self.label3 = nil; end;
         if self.layout113 ~= nil then self.layout113:destroy(); self.layout113 = nil; end;
         if self.label309 ~= nil then self.label309:destroy(); self.label309 = nil; end;
         if self.label285 ~= nil then self.label285:destroy(); self.label285 = nil; end;
         if self.image71 ~= nil then self.image71:destroy(); self.image71 = nil; end;
+        if self.label436 ~= nil then self.label436:destroy(); self.label436 = nil; end;
+        if self.label449 ~= nil then self.label449:destroy(); self.label449 = nil; end;
         if self.label108 ~= nil then self.label108:destroy(); self.label108 = nil; end;
         if self.edit138 ~= nil then self.edit138:destroy(); self.edit138 = nil; end;
         if self.button31 ~= nil then self.button31:destroy(); self.button31 = nil; end;
@@ -20209,8 +22277,11 @@ local function constructNew_frmDZ_Ficha()
         if self.label312 ~= nil then self.label312:destroy(); self.label312 = nil; end;
         if self.edit216 ~= nil then self.edit216:destroy(); self.edit216 = nil; end;
         if self.label391 ~= nil then self.label391:destroy(); self.label391 = nil; end;
+        if self.labSoma5 ~= nil then self.labSoma5:destroy(); self.labSoma5 = nil; end;
+        if self.label442 ~= nil then self.label442:destroy(); self.label442 = nil; end;
         if self.dataLink12 ~= nil then self.dataLink12:destroy(); self.dataLink12 = nil; end;
         if self.label415 ~= nil then self.label415:destroy(); self.label415 = nil; end;
+        if self.label461 ~= nil then self.label461:destroy(); self.label461 = nil; end;
         if self.label394 ~= nil then self.label394:destroy(); self.label394 = nil; end;
         if self.layout134 ~= nil then self.layout134:destroy(); self.layout134 = nil; end;
         if self.label326 ~= nil then self.label326:destroy(); self.label326 = nil; end;
@@ -20224,8 +22295,10 @@ local function constructNew_frmDZ_Ficha()
         if self.layout63 ~= nil then self.layout63:destroy(); self.layout63 = nil; end;
         if self.button64 ~= nil then self.button64:destroy(); self.button64 = nil; end;
         if self.edit111 ~= nil then self.edit111:destroy(); self.edit111 = nil; end;
+        if self.label432 ~= nil then self.label432:destroy(); self.label432 = nil; end;
         if self.image98 ~= nil then self.image98:destroy(); self.image98 = nil; end;
         if self.label343 ~= nil then self.label343:destroy(); self.label343 = nil; end;
+        if self.image227 ~= nil then self.image227:destroy(); self.image227 = nil; end;
         if self.scrollBox13 ~= nil then self.scrollBox13:destroy(); self.scrollBox13 = nil; end;
         if self.layout41 ~= nil then self.layout41:destroy(); self.layout41 = nil; end;
         if self.image20 ~= nil then self.image20:destroy(); self.image20 = nil; end;
@@ -20233,6 +22306,7 @@ local function constructNew_frmDZ_Ficha()
         if self.label193 ~= nil then self.label193:destroy(); self.label193 = nil; end;
         if self.button2 ~= nil then self.button2:destroy(); self.button2 = nil; end;
         if self.label22 ~= nil then self.label22:destroy(); self.label22 = nil; end;
+        if self.Armadura47 ~= nil then self.Armadura47:destroy(); self.Armadura47 = nil; end;
         if self.label13 ~= nil then self.label13:destroy(); self.label13 = nil; end;
         if self.image156 ~= nil then self.image156:destroy(); self.image156 = nil; end;
         if self.edit153 ~= nil then self.edit153:destroy(); self.edit153 = nil; end;
@@ -20288,12 +22362,14 @@ local function constructNew_frmDZ_Ficha()
         if self.DescVanDes9 ~= nil then self.DescVanDes9:destroy(); self.DescVanDes9 = nil; end;
         if self.label426 ~= nil then self.label426:destroy(); self.label426 = nil; end;
         if self.rclAtaque ~= nil then self.rclAtaque:destroy(); self.rclAtaque = nil; end;
+        if self.Arma53 ~= nil then self.Arma53:destroy(); self.Arma53 = nil; end;
         if self.DescCircunstancia2 ~= nil then self.DescCircunstancia2:destroy(); self.DescCircunstancia2 = nil; end;
         if self.rectangle26 ~= nil then self.rectangle26:destroy(); self.rectangle26 = nil; end;
         if self.label78 ~= nil then self.label78:destroy(); self.label78 = nil; end;
         if self.dataLink16 ~= nil then self.dataLink16:destroy(); self.dataLink16 = nil; end;
         if self.CorpoACorpo29 ~= nil then self.CorpoACorpo29:destroy(); self.CorpoACorpo29 = nil; end;
         if self.label211 ~= nil then self.label211:destroy(); self.label211 = nil; end;
+        if self.label452 ~= nil then self.label452:destroy(); self.label452 = nil; end;
         if self.edit175 ~= nil then self.edit175:destroy(); self.edit175 = nil; end;
         if self.button59 ~= nil then self.button59:destroy(); self.button59 = nil; end;
         if self.button80 ~= nil then self.button80:destroy(); self.button80 = nil; end;
@@ -20339,17 +22415,23 @@ local function constructNew_frmDZ_Ficha()
         if self.image160 ~= nil then self.image160:destroy(); self.image160 = nil; end;
         if self.label398 ~= nil then self.label398:destroy(); self.label398 = nil; end;
         if self.scrollBox3 ~= nil then self.scrollBox3:destroy(); self.scrollBox3 = nil; end;
-        if self.button87 ~= nil then self.button87:destroy(); self.button87 = nil; end;
+        if self.label438 ~= nil then self.label438:destroy(); self.label438 = nil; end;
+        if self.label460 ~= nil then self.label460:destroy(); self.label460 = nil; end;
         if self.label369 ~= nil then self.label369:destroy(); self.label369 = nil; end;
         if self.textEditor1 ~= nil then self.textEditor1:destroy(); self.textEditor1 = nil; end;
         if self.edit137 ~= nil then self.edit137:destroy(); self.edit137 = nil; end;
         if self.edit146 ~= nil then self.edit146:destroy(); self.edit146 = nil; end;
+        if self.Armadura53 ~= nil then self.Armadura53:destroy(); self.Armadura53 = nil; end;
         if self.button83 ~= nil then self.button83:destroy(); self.button83 = nil; end;
         if self.button9 ~= nil then self.button9:destroy(); self.button9 = nil; end;
         if self.label152 ~= nil then self.label152:destroy(); self.label152 = nil; end;
         if self.label182 ~= nil then self.label182:destroy(); self.label182 = nil; end;
+        if self.image224 ~= nil then self.image224:destroy(); self.image224 = nil; end;
         if self.edit6 ~= nil then self.edit6:destroy(); self.edit6 = nil; end;
         if self.textEditor21 ~= nil then self.textEditor21:destroy(); self.textEditor21 = nil; end;
+        if self.image230 ~= nil then self.image230:destroy(); self.image230 = nil; end;
+        if self.button87 ~= nil then self.button87:destroy(); self.button87 = nil; end;
+        if self.label473 ~= nil then self.label473:destroy(); self.label473 = nil; end;
         if self.label395 ~= nil then self.label395:destroy(); self.label395 = nil; end;
         if self.CorpoACorpo26 ~= nil then self.CorpoACorpo26:destroy(); self.CorpoACorpo26 = nil; end;
         if self.edit49 ~= nil then self.edit49:destroy(); self.edit49 = nil; end;
@@ -20358,6 +22440,7 @@ local function constructNew_frmDZ_Ficha()
         if self.label238 ~= nil then self.label238:destroy(); self.label238 = nil; end;
         if self.label337 ~= nil then self.label337:destroy(); self.label337 = nil; end;
         if self.label416 ~= nil then self.label416:destroy(); self.label416 = nil; end;
+        if self.label453 ~= nil then self.label453:destroy(); self.label453 = nil; end;
         if self.layout16 ~= nil then self.layout16:destroy(); self.layout16 = nil; end;
         if self.layout102 ~= nil then self.layout102:destroy(); self.layout102 = nil; end;
         if self.image18 ~= nil then self.image18:destroy(); self.image18 = nil; end;
@@ -20370,6 +22453,7 @@ local function constructNew_frmDZ_Ficha()
         if self.edit94 ~= nil then self.edit94:destroy(); self.edit94 = nil; end;
         if self.edit167 ~= nil then self.edit167:destroy(); self.edit167 = nil; end;
         if self.label171 ~= nil then self.label171:destroy(); self.label171 = nil; end;
+        if self.image212 ~= nil then self.image212:destroy(); self.image212 = nil; end;
         if self.label123 ~= nil then self.label123:destroy(); self.label123 = nil; end;
         if self.label178 ~= nil then self.label178:destroy(); self.label178 = nil; end;
         if self.button62 ~= nil then self.button62:destroy(); self.button62 = nil; end;
@@ -20413,9 +22497,13 @@ local function constructNew_frmDZ_Ficha()
         if self.rectangle1 ~= nil then self.rectangle1:destroy(); self.rectangle1 = nil; end;
         if self.edit50 ~= nil then self.edit50:destroy(); self.edit50 = nil; end;
         if self.layout45 ~= nil then self.layout45:destroy(); self.layout45 = nil; end;
+        if self.Arma47 ~= nil then self.Arma47:destroy(); self.Arma47 = nil; end;
         if self.label64 ~= nil then self.label64:destroy(); self.label64 = nil; end;
+        if self.label463 ~= nil then self.label463:destroy(); self.label463 = nil; end;
+        if self.image222 ~= nil then self.image222:destroy(); self.image222 = nil; end;
         if self.layout150 ~= nil then self.layout150:destroy(); self.layout150 = nil; end;
         if self.image202 ~= nil then self.image202:destroy(); self.image202 = nil; end;
+        if self.label487 ~= nil then self.label487:destroy(); self.label487 = nil; end;
         if self.label311 ~= nil then self.label311:destroy(); self.label311 = nil; end;
         if self.layout46 ~= nil then self.layout46:destroy(); self.layout46 = nil; end;
         if self.label173 ~= nil then self.label173:destroy(); self.label173 = nil; end;
@@ -20429,7 +22517,9 @@ local function constructNew_frmDZ_Ficha()
         if self.label136 ~= nil then self.label136:destroy(); self.label136 = nil; end;
         if self.image39 ~= nil then self.image39:destroy(); self.image39 = nil; end;
         if self.PopExp ~= nil then self.PopExp:destroy(); self.PopExp = nil; end;
+        if self.label441 ~= nil then self.label441:destroy(); self.label441 = nil; end;
         if self.rectangle25 ~= nil then self.rectangle25:destroy(); self.rectangle25 = nil; end;
+        if self.label476 ~= nil then self.label476:destroy(); self.label476 = nil; end;
         if self.label74 ~= nil then self.label74:destroy(); self.label74 = nil; end;
         if self.image24 ~= nil then self.image24:destroy(); self.image24 = nil; end;
         if self.label149 ~= nil then self.label149:destroy(); self.label149 = nil; end;
@@ -20476,6 +22566,7 @@ local function constructNew_frmDZ_Ficha()
         if self.label421 ~= nil then self.label421:destroy(); self.label421 = nil; end;
         if self.Arma10 ~= nil then self.Arma10:destroy(); self.Arma10 = nil; end;
         if self.label168 ~= nil then self.label168:destroy(); self.label168 = nil; end;
+        if self.label443 ~= nil then self.label443:destroy(); self.label443 = nil; end;
         if self.label204 ~= nil then self.label204:destroy(); self.label204 = nil; end;
         if self.layout131 ~= nil then self.layout131:destroy(); self.layout131 = nil; end;
         if self.Inventario ~= nil then self.Inventario:destroy(); self.Inventario = nil; end;
@@ -20492,6 +22583,7 @@ local function constructNew_frmDZ_Ficha()
         if self.label294 ~= nil then self.label294:destroy(); self.label294 = nil; end;
         if self.edit132 ~= nil then self.edit132:destroy(); self.edit132 = nil; end;
         if self.label388 ~= nil then self.label388:destroy(); self.label388 = nil; end;
+        if self.label451 ~= nil then self.label451:destroy(); self.label451 = nil; end;
         if self.edit188 ~= nil then self.edit188:destroy(); self.edit188 = nil; end;
         if self.layout155 ~= nil then self.layout155:destroy(); self.layout155 = nil; end;
         if self.image186 ~= nil then self.image186:destroy(); self.image186 = nil; end;
@@ -20503,6 +22595,7 @@ local function constructNew_frmDZ_Ficha()
         if self.edit168 ~= nil then self.edit168:destroy(); self.edit168 = nil; end;
         if self.Conducao_Equipamentos ~= nil then self.Conducao_Equipamentos:destroy(); self.Conducao_Equipamentos = nil; end;
         if self.label183 ~= nil then self.label183:destroy(); self.label183 = nil; end;
+        if self.label431 ~= nil then self.label431:destroy(); self.label431 = nil; end;
         if self.button81 ~= nil then self.button81:destroy(); self.button81 = nil; end;
         if self.layout84 ~= nil then self.layout84:destroy(); self.layout84 = nil; end;
         if self.edit78 ~= nil then self.edit78:destroy(); self.edit78 = nil; end;
@@ -20517,16 +22610,23 @@ local function constructNew_frmDZ_Ficha()
         if self.label25 ~= nil then self.label25:destroy(); self.label25 = nil; end;
         if self.label397 ~= nil then self.label397:destroy(); self.label397 = nil; end;
         if self.label406 ~= nil then self.label406:destroy(); self.label406 = nil; end;
+        if self.label429 ~= nil then self.label429:destroy(); self.label429 = nil; end;
+        if self.label470 ~= nil then self.label470:destroy(); self.label470 = nil; end;
         if self.button46 ~= nil then self.button46:destroy(); self.button46 = nil; end;
         if self.edit22 ~= nil then self.edit22:destroy(); self.edit22 = nil; end;
         if self.label5 ~= nil then self.label5:destroy(); self.label5 = nil; end;
         if self.layout6 ~= nil then self.layout6:destroy(); self.layout6 = nil; end;
+        if self.image218 ~= nil then self.image218:destroy(); self.image218 = nil; end;
         if self.rectangle13 ~= nil then self.rectangle13:destroy(); self.rectangle13 = nil; end;
         if self.label296 ~= nil then self.label296:destroy(); self.label296 = nil; end;
         if self.label141 ~= nil then self.label141:destroy(); self.label141 = nil; end;
+        if self.Armadura51 ~= nil then self.Armadura51:destroy(); self.Armadura51 = nil; end;
         if self.label277 ~= nil then self.label277:destroy(); self.label277 = nil; end;
+        if self.label483 ~= nil then self.label483:destroy(); self.label483 = nil; end;
         if self.button19 ~= nil then self.button19:destroy(); self.button19 = nil; end;
         if self.label423 ~= nil then self.label423:destroy(); self.label423 = nil; end;
+        if self.Arma52 ~= nil then self.Arma52:destroy(); self.Arma52 = nil; end;
+        if self.label472 ~= nil then self.label472:destroy(); self.label472 = nil; end;
         if self.layout86 ~= nil then self.layout86:destroy(); self.layout86 = nil; end;
         if self.image43 ~= nil then self.image43:destroy(); self.image43 = nil; end;
         if self.layout85 ~= nil then self.layout85:destroy(); self.layout85 = nil; end;

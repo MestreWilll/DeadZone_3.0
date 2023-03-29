@@ -6773,6 +6773,1573 @@ local function constructNew_frmLoja_svg()
     obj.scrollBox3:setAlign("client");
     obj.scrollBox3:setName("scrollBox3");
 
+    obj.layout3 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout3:setParent(obj.scrollBox3);
+    obj.layout3:setAlign("client");
+    obj.layout3:setName("layout3");
+
+    obj.image123 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image123:setParent(obj.layout3);
+    obj.image123:setSRC("images/dinheiroArma.png");
+    obj.image123:setLeft(0);
+    obj.image123:setTop(5);
+    obj.image123:setWidth(180.37);
+    obj.image123:setHeight(80.25);
+    obj.image123:setName("image123");
+
+    obj.labSoma5 = GUI.fromHandle(_obj_newObject("label"));
+    obj.labSoma5:setParent(obj.layout3);
+    obj.labSoma5:setLeft(26);
+    obj.labSoma5:setTop(30);
+    lfm_setPropAsString(obj.labSoma5, "fontStyle",  "bold");
+    obj.labSoma5:setFontColor("white");
+    obj.labSoma5:setFontSize(36);
+    obj.labSoma5:setAutoSize(true);
+    obj.labSoma5:setWordWrap(false);
+    obj.labSoma5:setName("labSoma5");
+    obj.labSoma5:setCursor("handPoint");
+    obj.labSoma5:setHitTest(true);
+
+    obj.dataLink3 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink3:setParent(obj.labSoma5);
+    obj.dataLink3:setField("Soma");
+    obj.dataLink3:setName("dataLink3");
+
+    obj.image124 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image124:setParent(obj.scrollBox3);
+    obj.image124:setLeft(0);
+    obj.image124:setTop(0);
+    obj.image124:setWidth(130.37);
+    obj.image124:setHeight(62.25);
+    obj.image124:setHint("Seu dinheiro");
+    obj.image124:setCursor("handPoint");
+    obj.image124:setHitTest(true);
+    obj.image124:setName("image124");
+
+    obj.image125 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image125:setParent(obj.scrollBox3);
+    obj.image125:setSRC("images/botaoVoltar.png");
+    obj.image125:setLeft(200);
+    obj.image125:setTop(29);
+    obj.image125:setWidth(50);
+    obj.image125:setHeight(50);
+    obj.image125:setCursor("handPoint");
+    obj.image125:setHint("Clique aqui para voltar");
+    obj.image125:setHitTest(true);
+    obj.image125:setName("image125");
+
+    obj.Armadura45 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.Armadura45:setParent(obj.scrollBox3);
+    obj.Armadura45:setName("Armadura45");
+    obj.Armadura45:setWidth(480);
+    obj.Armadura45:setHeight(174);
+    obj.Armadura45:setLeft(0);
+    obj.Armadura45:setTop(88);
+
+    obj.image126 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image126:setParent(obj.Armadura45);
+    obj.image126:setSRC("images/LojaparaArmaduras.png");
+    obj.image126:setLeft(0);
+    obj.image126:setTop(0);
+    obj.image126:setWidth(399);
+    obj.image126:setHeight(174);
+    obj.image126:setName("image126");
+
+    obj.label334 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label334:setParent(obj.Armadura45);
+    obj.label334:setLeft(22.25);
+    obj.label334:setTop(20.50);
+    obj.label334:setWidth(107.25);
+    obj.label334:setHeight(37.88);
+    obj.label334:setFontSize(22);
+    obj.label334:setHint("Preço da Arma");
+    obj.label334:setField("Preco45");
+    obj.label334:setHorzTextAlign("center");
+    lfm_setPropAsString(obj.label334, "fontStyle",  "bold");
+    obj.label334:setFontColor("yellow");
+    obj.label334:setFontFamily("kalam");
+    obj.label334:setCursor("handPoint");
+    obj.label334:setHitTest(true);
+    obj.label334:setName("label334");
+
+    obj.Arma45 = GUI.fromHandle(_obj_newObject("image"));
+    obj.Arma45:setParent(obj.Armadura45);
+    obj.Arma45:setLeft(41.38);
+    obj.Arma45:setTop(61.75);
+    obj.Arma45:setWidth(67.88);
+    obj.Arma45:setHeight(30);
+    obj.Arma45:setCursor("handPoint");
+    obj.Arma45:setHitTest(true);
+    obj.Arma45:setHint("Clique aqui para comprar");
+    obj.Arma45:setName("Arma45");
+
+    obj.image127 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image127:setParent(obj.Armadura45);
+    obj.image127:setLeft(2.56);
+    obj.image127:setTop(93.00);
+    obj.image127:setWidth(136.69);
+    obj.image127:setHeight(77.69);
+    obj.image127:setStyle("proportional");
+    obj.image127:setCenter(true);
+    obj.image127:setEditable(true);
+    obj.image127:setField("ImagemArma45");
+    obj.image127:setName("image127");
+
+    obj.label335 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label335:setParent(obj.Armadura45);
+    obj.label335:setLeft(197);
+    obj.label335:setTop(10);
+    obj.label335:setWidth(249.25);
+    obj.label335:setHeight(39);
+    obj.label335:setFontSize(22);
+    obj.label335:setField("ItemNome45");
+    lfm_setPropAsString(obj.label335, "fontStyle",  "bold");
+    obj.label335:setFontColor("black");
+    obj.label335:setFontFamily("kalam");
+    obj.label335:setName("label335");
+
+    obj.label336 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label336:setParent(obj.Armadura45);
+    obj.label336:setLeft(243.50);
+    obj.label336:setTop(46);
+    obj.label336:setWidth(149.25);
+    obj.label336:setHeight(38.63);
+    obj.label336:setHorzTextAlign("center");
+    obj.label336:setField("AbsorverAparar45");
+    obj.label336:setFontSize(19);
+    lfm_setPropAsString(obj.label336, "fontStyle",  "bold");
+    obj.label336:setFontColor("black");
+    obj.label336:setFontFamily("kalam");
+    obj.label336:setName("label336");
+
+    obj.label337 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label337:setParent(obj.Armadura45);
+    obj.label337:setLeft(182);
+    obj.label337:setTop(86.13);
+    obj.label337:setWidth(61.88);
+    obj.label337:setHeight(38.87);
+    obj.label337:setHorzTextAlign("center");
+    obj.label337:setField("CD45");
+    obj.label337:setFontSize(19);
+    lfm_setPropAsString(obj.label337, "fontStyle",  "bold");
+    obj.label337:setFontColor("black");
+    obj.label337:setFontFamily("kalam");
+    obj.label337:setName("label337");
+
+    obj.label338 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label338:setParent(obj.Armadura45);
+    obj.label338:setLeft(300);
+    obj.label338:setTop(127);
+    obj.label338:setWidth(61.88);
+    obj.label338:setHeight(38.88);
+    obj.label338:setHorzTextAlign("center");
+    obj.label338:setField("PenalidadedeMovimento45");
+    obj.label338:setFontSize(15);
+    lfm_setPropAsString(obj.label338, "fontStyle",  "bold");
+    obj.label338:setFontColor("black");
+    obj.label338:setFontFamily("kalam");
+    obj.label338:setName("label338");
+
+    obj.label339 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label339:setParent(obj.Armadura45);
+    obj.label339:setLeft(336);
+    obj.label339:setTop(86.12);
+    obj.label339:setWidth(61.88);
+    obj.label339:setHeight(38.88);
+    obj.label339:setHorzTextAlign("center");
+    obj.label339:setField("PenalidadeDePercepcao45");
+    obj.label339:setFontSize(19);
+    lfm_setPropAsString(obj.label339, "fontStyle",  "bold");
+    obj.label339:setFontColor("black");
+    obj.label339:setFontFamily("kalam");
+    obj.label339:setName("label339");
+
+    obj.Armadura46 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.Armadura46:setParent(obj.scrollBox3);
+    obj.Armadura46:setName("Armadura46");
+    obj.Armadura46:setWidth(480);
+    obj.Armadura46:setHeight(174);
+    obj.Armadura46:setLeft(0);
+    obj.Armadura46:setTop(270);
+
+    obj.image128 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image128:setParent(obj.Armadura46);
+    obj.image128:setSRC("images/LojaparaArmaduras.png");
+    obj.image128:setLeft(0);
+    obj.image128:setTop(0);
+    obj.image128:setWidth(399);
+    obj.image128:setHeight(174);
+    obj.image128:setName("image128");
+
+    obj.label340 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label340:setParent(obj.Armadura46);
+    obj.label340:setLeft(22.25);
+    obj.label340:setTop(20.50);
+    obj.label340:setWidth(107.25);
+    obj.label340:setHeight(37.88);
+    obj.label340:setFontSize(22);
+    obj.label340:setHint("Preço da Arma");
+    obj.label340:setField("Preco46");
+    obj.label340:setHorzTextAlign("center");
+    lfm_setPropAsString(obj.label340, "fontStyle",  "bold");
+    obj.label340:setFontColor("yellow");
+    obj.label340:setFontFamily("kalam");
+    obj.label340:setCursor("handPoint");
+    obj.label340:setHitTest(true);
+    obj.label340:setName("label340");
+
+    obj.Arma46 = GUI.fromHandle(_obj_newObject("image"));
+    obj.Arma46:setParent(obj.Armadura46);
+    obj.Arma46:setLeft(41.38);
+    obj.Arma46:setTop(61.75);
+    obj.Arma46:setWidth(67.88);
+    obj.Arma46:setHeight(30);
+    obj.Arma46:setCursor("handPoint");
+    obj.Arma46:setHitTest(true);
+    obj.Arma46:setHint("Clique aqui para comprar");
+    obj.Arma46:setName("Arma46");
+
+    obj.image129 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image129:setParent(obj.Armadura46);
+    obj.image129:setLeft(2.56);
+    obj.image129:setTop(93.00);
+    obj.image129:setWidth(136.69);
+    obj.image129:setHeight(77.69);
+    obj.image129:setStyle("proportional");
+    obj.image129:setCenter(true);
+    obj.image129:setEditable(true);
+    obj.image129:setField("ImagemArma46");
+    obj.image129:setName("image129");
+
+    obj.label341 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label341:setParent(obj.Armadura46);
+    obj.label341:setLeft(197);
+    obj.label341:setTop(10);
+    obj.label341:setWidth(249.25);
+    obj.label341:setHeight(39);
+    obj.label341:setFontSize(22);
+    obj.label341:setField("ItemNome46");
+    lfm_setPropAsString(obj.label341, "fontStyle",  "bold");
+    obj.label341:setFontColor("black");
+    obj.label341:setFontFamily("kalam");
+    obj.label341:setName("label341");
+
+    obj.label342 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label342:setParent(obj.Armadura46);
+    obj.label342:setLeft(243.50);
+    obj.label342:setTop(46);
+    obj.label342:setWidth(149.25);
+    obj.label342:setHeight(38.63);
+    obj.label342:setHorzTextAlign("center");
+    obj.label342:setField("AbsorverAparar46");
+    obj.label342:setFontSize(19);
+    lfm_setPropAsString(obj.label342, "fontStyle",  "bold");
+    obj.label342:setFontColor("black");
+    obj.label342:setFontFamily("kalam");
+    obj.label342:setName("label342");
+
+    obj.label343 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label343:setParent(obj.Armadura46);
+    obj.label343:setLeft(182);
+    obj.label343:setTop(86.13);
+    obj.label343:setWidth(61.88);
+    obj.label343:setHeight(38.87);
+    obj.label343:setHorzTextAlign("center");
+    obj.label343:setField("CD46");
+    obj.label343:setFontSize(19);
+    lfm_setPropAsString(obj.label343, "fontStyle",  "bold");
+    obj.label343:setFontColor("black");
+    obj.label343:setFontFamily("kalam");
+    obj.label343:setName("label343");
+
+    obj.label344 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label344:setParent(obj.Armadura46);
+    obj.label344:setLeft(300);
+    obj.label344:setTop(127);
+    obj.label344:setWidth(61.88);
+    obj.label344:setHeight(38.88);
+    obj.label344:setHorzTextAlign("center");
+    obj.label344:setField("PenalidadedeMovimento46");
+    obj.label344:setFontSize(15);
+    lfm_setPropAsString(obj.label344, "fontStyle",  "bold");
+    obj.label344:setFontColor("black");
+    obj.label344:setFontFamily("kalam");
+    obj.label344:setName("label344");
+
+    obj.label345 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label345:setParent(obj.Armadura46);
+    obj.label345:setLeft(336);
+    obj.label345:setTop(86.12);
+    obj.label345:setWidth(61.88);
+    obj.label345:setHeight(38.88);
+    obj.label345:setHorzTextAlign("center");
+    obj.label345:setField("PenalidadeDePercepcao46");
+    obj.label345:setFontSize(19);
+    lfm_setPropAsString(obj.label345, "fontStyle",  "bold");
+    obj.label345:setFontColor("black");
+    obj.label345:setFontFamily("kalam");
+    obj.label345:setName("label345");
+
+    obj.Armadura47 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.Armadura47:setParent(obj.scrollBox3);
+    obj.Armadura47:setName("Armadura47");
+    obj.Armadura47:setWidth(480);
+    obj.Armadura47:setHeight(174);
+    obj.Armadura47:setLeft(0);
+    obj.Armadura47:setTop(452);
+
+    obj.image130 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image130:setParent(obj.Armadura47);
+    obj.image130:setSRC("images/LojaparaArmaduras.png");
+    obj.image130:setLeft(0);
+    obj.image130:setTop(0);
+    obj.image130:setWidth(399);
+    obj.image130:setHeight(174);
+    obj.image130:setName("image130");
+
+    obj.label346 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label346:setParent(obj.Armadura47);
+    obj.label346:setLeft(22.25);
+    obj.label346:setTop(20.50);
+    obj.label346:setWidth(107.25);
+    obj.label346:setHeight(37.88);
+    obj.label346:setFontSize(22);
+    obj.label346:setHint("Preço da Arma");
+    obj.label346:setField("Preco47");
+    obj.label346:setHorzTextAlign("center");
+    lfm_setPropAsString(obj.label346, "fontStyle",  "bold");
+    obj.label346:setFontColor("yellow");
+    obj.label346:setFontFamily("kalam");
+    obj.label346:setCursor("handPoint");
+    obj.label346:setHitTest(true);
+    obj.label346:setName("label346");
+
+    obj.Arma47 = GUI.fromHandle(_obj_newObject("image"));
+    obj.Arma47:setParent(obj.Armadura47);
+    obj.Arma47:setLeft(41.38);
+    obj.Arma47:setTop(61.75);
+    obj.Arma47:setWidth(67.88);
+    obj.Arma47:setHeight(30);
+    obj.Arma47:setCursor("handPoint");
+    obj.Arma47:setHitTest(true);
+    obj.Arma47:setHint("Clique aqui para comprar");
+    obj.Arma47:setName("Arma47");
+
+    obj.image131 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image131:setParent(obj.Armadura47);
+    obj.image131:setLeft(2.56);
+    obj.image131:setTop(93.00);
+    obj.image131:setWidth(136.69);
+    obj.image131:setHeight(77.69);
+    obj.image131:setStyle("proportional");
+    obj.image131:setCenter(true);
+    obj.image131:setEditable(true);
+    obj.image131:setField("ImagemArma47");
+    obj.image131:setName("image131");
+
+    obj.label347 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label347:setParent(obj.Armadura47);
+    obj.label347:setLeft(197);
+    obj.label347:setTop(10);
+    obj.label347:setWidth(249.25);
+    obj.label347:setHeight(39);
+    obj.label347:setFontSize(22);
+    obj.label347:setField("ItemNome47");
+    lfm_setPropAsString(obj.label347, "fontStyle",  "bold");
+    obj.label347:setFontColor("black");
+    obj.label347:setFontFamily("kalam");
+    obj.label347:setName("label347");
+
+    obj.label348 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label348:setParent(obj.Armadura47);
+    obj.label348:setLeft(243.50);
+    obj.label348:setTop(46);
+    obj.label348:setWidth(149.25);
+    obj.label348:setHeight(38.63);
+    obj.label348:setHorzTextAlign("center");
+    obj.label348:setField("AbsorverAparar47");
+    obj.label348:setFontSize(19);
+    lfm_setPropAsString(obj.label348, "fontStyle",  "bold");
+    obj.label348:setFontColor("black");
+    obj.label348:setFontFamily("kalam");
+    obj.label348:setName("label348");
+
+    obj.label349 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label349:setParent(obj.Armadura47);
+    obj.label349:setLeft(182);
+    obj.label349:setTop(86.13);
+    obj.label349:setWidth(61.88);
+    obj.label349:setHeight(38.87);
+    obj.label349:setHorzTextAlign("center");
+    obj.label349:setField("CD47");
+    obj.label349:setFontSize(19);
+    lfm_setPropAsString(obj.label349, "fontStyle",  "bold");
+    obj.label349:setFontColor("black");
+    obj.label349:setFontFamily("kalam");
+    obj.label349:setName("label349");
+
+    obj.label350 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label350:setParent(obj.Armadura47);
+    obj.label350:setLeft(300);
+    obj.label350:setTop(127);
+    obj.label350:setWidth(61.88);
+    obj.label350:setHeight(38.88);
+    obj.label350:setHorzTextAlign("center");
+    obj.label350:setField("PenalidadedeMovimento47");
+    obj.label350:setFontSize(15);
+    lfm_setPropAsString(obj.label350, "fontStyle",  "bold");
+    obj.label350:setFontColor("black");
+    obj.label350:setFontFamily("kalam");
+    obj.label350:setName("label350");
+
+    obj.label351 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label351:setParent(obj.Armadura47);
+    obj.label351:setLeft(336);
+    obj.label351:setTop(86.12);
+    obj.label351:setWidth(61.88);
+    obj.label351:setHeight(38.88);
+    obj.label351:setHorzTextAlign("center");
+    obj.label351:setField("PenalidadeDePercepcao47");
+    obj.label351:setFontSize(19);
+    lfm_setPropAsString(obj.label351, "fontStyle",  "bold");
+    obj.label351:setFontColor("black");
+    obj.label351:setFontFamily("kalam");
+    obj.label351:setName("label351");
+
+    obj.Armadura48 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.Armadura48:setParent(obj.scrollBox3);
+    obj.Armadura48:setName("Armadura48");
+    obj.Armadura48:setWidth(480);
+    obj.Armadura48:setHeight(174);
+    obj.Armadura48:setLeft(0);
+    obj.Armadura48:setTop(634);
+
+    obj.image132 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image132:setParent(obj.Armadura48);
+    obj.image132:setSRC("images/LojaparaArmaduras.png");
+    obj.image132:setLeft(0);
+    obj.image132:setTop(0);
+    obj.image132:setWidth(399);
+    obj.image132:setHeight(174);
+    obj.image132:setName("image132");
+
+    obj.label352 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label352:setParent(obj.Armadura48);
+    obj.label352:setLeft(22.25);
+    obj.label352:setTop(20.50);
+    obj.label352:setWidth(107.25);
+    obj.label352:setHeight(37.88);
+    obj.label352:setFontSize(22);
+    obj.label352:setHint("Preço da Arma");
+    obj.label352:setField("Preco48");
+    obj.label352:setHorzTextAlign("center");
+    lfm_setPropAsString(obj.label352, "fontStyle",  "bold");
+    obj.label352:setFontColor("yellow");
+    obj.label352:setFontFamily("kalam");
+    obj.label352:setCursor("handPoint");
+    obj.label352:setHitTest(true);
+    obj.label352:setName("label352");
+
+    obj.Arma48 = GUI.fromHandle(_obj_newObject("image"));
+    obj.Arma48:setParent(obj.Armadura48);
+    obj.Arma48:setLeft(41.38);
+    obj.Arma48:setTop(61.75);
+    obj.Arma48:setWidth(67.88);
+    obj.Arma48:setHeight(30);
+    obj.Arma48:setCursor("handPoint");
+    obj.Arma48:setHitTest(true);
+    obj.Arma48:setHint("Clique aqui para comprar");
+    obj.Arma48:setName("Arma48");
+
+    obj.image133 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image133:setParent(obj.Armadura48);
+    obj.image133:setLeft(2.56);
+    obj.image133:setTop(93.00);
+    obj.image133:setWidth(136.69);
+    obj.image133:setHeight(77.69);
+    obj.image133:setStyle("proportional");
+    obj.image133:setCenter(true);
+    obj.image133:setEditable(true);
+    obj.image133:setField("ImagemArma48");
+    obj.image133:setName("image133");
+
+    obj.label353 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label353:setParent(obj.Armadura48);
+    obj.label353:setLeft(197);
+    obj.label353:setTop(10);
+    obj.label353:setWidth(249.25);
+    obj.label353:setHeight(39);
+    obj.label353:setFontSize(22);
+    obj.label353:setField("ItemNome48");
+    lfm_setPropAsString(obj.label353, "fontStyle",  "bold");
+    obj.label353:setFontColor("black");
+    obj.label353:setFontFamily("kalam");
+    obj.label353:setName("label353");
+
+    obj.label354 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label354:setParent(obj.Armadura48);
+    obj.label354:setLeft(243.50);
+    obj.label354:setTop(47);
+    obj.label354:setWidth(149.25);
+    obj.label354:setHeight(38.63);
+    obj.label354:setHorzTextAlign("center");
+    obj.label354:setField("AbsorverAparar48");
+    obj.label354:setFontSize(19);
+    lfm_setPropAsString(obj.label354, "fontStyle",  "bold");
+    obj.label354:setFontColor("black");
+    obj.label354:setFontFamily("kalam");
+    obj.label354:setName("label354");
+
+    obj.label355 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label355:setParent(obj.Armadura48);
+    obj.label355:setLeft(182);
+    obj.label355:setTop(86.13);
+    obj.label355:setWidth(61.88);
+    obj.label355:setHeight(38.87);
+    obj.label355:setHorzTextAlign("center");
+    obj.label355:setField("CD48");
+    obj.label355:setFontSize(19);
+    lfm_setPropAsString(obj.label355, "fontStyle",  "bold");
+    obj.label355:setFontColor("black");
+    obj.label355:setFontFamily("kalam");
+    obj.label355:setName("label355");
+
+    obj.label356 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label356:setParent(obj.Armadura48);
+    obj.label356:setLeft(300);
+    obj.label356:setTop(127);
+    obj.label356:setWidth(61.88);
+    obj.label356:setHeight(38.88);
+    obj.label356:setHorzTextAlign("center");
+    obj.label356:setField("PenalidadedeMovimento48");
+    obj.label356:setFontSize(15);
+    lfm_setPropAsString(obj.label356, "fontStyle",  "bold");
+    obj.label356:setFontColor("black");
+    obj.label356:setFontFamily("kalam");
+    obj.label356:setName("label356");
+
+    obj.label357 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label357:setParent(obj.Armadura48);
+    obj.label357:setLeft(336);
+    obj.label357:setTop(86.12);
+    obj.label357:setWidth(61.88);
+    obj.label357:setHeight(38.88);
+    obj.label357:setHorzTextAlign("center");
+    obj.label357:setField("PenalidadeDePercepcao48");
+    obj.label357:setFontSize(19);
+    lfm_setPropAsString(obj.label357, "fontStyle",  "bold");
+    obj.label357:setFontColor("black");
+    obj.label357:setFontFamily("kalam");
+    obj.label357:setName("label357");
+
+    obj.Armadura49 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.Armadura49:setParent(obj.scrollBox3);
+    obj.Armadura49:setName("Armadura49");
+    obj.Armadura49:setWidth(480);
+    obj.Armadura49:setHeight(174);
+    obj.Armadura49:setLeft(0);
+    obj.Armadura49:setTop(816);
+
+    obj.image134 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image134:setParent(obj.Armadura49);
+    obj.image134:setSRC("images/LojaparaArmaduras.png");
+    obj.image134:setLeft(0);
+    obj.image134:setTop(0);
+    obj.image134:setWidth(399);
+    obj.image134:setHeight(174);
+    obj.image134:setName("image134");
+
+    obj.label358 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label358:setParent(obj.Armadura49);
+    obj.label358:setLeft(22.25);
+    obj.label358:setTop(20.50);
+    obj.label358:setWidth(107.25);
+    obj.label358:setHeight(37.88);
+    obj.label358:setFontSize(22);
+    obj.label358:setHint("Preço da Arma");
+    obj.label358:setField("Preco49");
+    obj.label358:setHorzTextAlign("center");
+    lfm_setPropAsString(obj.label358, "fontStyle",  "bold");
+    obj.label358:setFontColor("yellow");
+    obj.label358:setFontFamily("kalam");
+    obj.label358:setCursor("handPoint");
+    obj.label358:setHitTest(true);
+    obj.label358:setName("label358");
+
+    obj.Arma49 = GUI.fromHandle(_obj_newObject("image"));
+    obj.Arma49:setParent(obj.Armadura49);
+    obj.Arma49:setLeft(41.38);
+    obj.Arma49:setTop(61.75);
+    obj.Arma49:setWidth(67.88);
+    obj.Arma49:setHeight(30);
+    obj.Arma49:setCursor("handPoint");
+    obj.Arma49:setHitTest(true);
+    obj.Arma49:setHint("Clique aqui para comprar");
+    obj.Arma49:setName("Arma49");
+
+    obj.image135 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image135:setParent(obj.Armadura49);
+    obj.image135:setLeft(2.56);
+    obj.image135:setTop(93.00);
+    obj.image135:setWidth(136.69);
+    obj.image135:setHeight(77.69);
+    obj.image135:setStyle("proportional");
+    obj.image135:setCenter(true);
+    obj.image135:setEditable(true);
+    obj.image135:setField("ImagemArma49");
+    obj.image135:setName("image135");
+
+    obj.label359 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label359:setParent(obj.Armadura49);
+    obj.label359:setLeft(197);
+    obj.label359:setTop(10);
+    obj.label359:setWidth(249.25);
+    obj.label359:setHeight(39);
+    obj.label359:setFontSize(22);
+    obj.label359:setField("ItemNome49");
+    lfm_setPropAsString(obj.label359, "fontStyle",  "bold");
+    obj.label359:setFontColor("black");
+    obj.label359:setFontFamily("kalam");
+    obj.label359:setName("label359");
+
+    obj.label360 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label360:setParent(obj.Armadura49);
+    obj.label360:setLeft(243.50);
+    obj.label360:setTop(47);
+    obj.label360:setWidth(149.25);
+    obj.label360:setHeight(38.63);
+    obj.label360:setHorzTextAlign("center");
+    obj.label360:setField("AbsorverAparar49");
+    obj.label360:setFontSize(19);
+    lfm_setPropAsString(obj.label360, "fontStyle",  "bold");
+    obj.label360:setFontColor("black");
+    obj.label360:setFontFamily("kalam");
+    obj.label360:setName("label360");
+
+    obj.label361 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label361:setParent(obj.Armadura49);
+    obj.label361:setLeft(182);
+    obj.label361:setTop(86.13);
+    obj.label361:setWidth(61.88);
+    obj.label361:setHeight(38.87);
+    obj.label361:setHorzTextAlign("center");
+    obj.label361:setField("CD49");
+    obj.label361:setFontSize(19);
+    lfm_setPropAsString(obj.label361, "fontStyle",  "bold");
+    obj.label361:setFontColor("black");
+    obj.label361:setFontFamily("kalam");
+    obj.label361:setName("label361");
+
+    obj.label362 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label362:setParent(obj.Armadura49);
+    obj.label362:setLeft(300);
+    obj.label362:setTop(127);
+    obj.label362:setWidth(61.88);
+    obj.label362:setHeight(38.88);
+    obj.label362:setHorzTextAlign("center");
+    obj.label362:setField("PenalidadedeMovimento49");
+    obj.label362:setFontSize(15);
+    lfm_setPropAsString(obj.label362, "fontStyle",  "bold");
+    obj.label362:setFontColor("black");
+    obj.label362:setFontFamily("kalam");
+    obj.label362:setName("label362");
+
+    obj.label363 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label363:setParent(obj.Armadura49);
+    obj.label363:setLeft(336);
+    obj.label363:setTop(86.12);
+    obj.label363:setWidth(61.88);
+    obj.label363:setHeight(38.88);
+    obj.label363:setHorzTextAlign("center");
+    obj.label363:setField("PenalidadeDePercepcao49");
+    obj.label363:setFontSize(19);
+    lfm_setPropAsString(obj.label363, "fontStyle",  "bold");
+    obj.label363:setFontColor("black");
+    obj.label363:setFontFamily("kalam");
+    obj.label363:setName("label363");
+
+    obj.Armadura50 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.Armadura50:setParent(obj.scrollBox3);
+    obj.Armadura50:setName("Armadura50");
+    obj.Armadura50:setWidth(480);
+    obj.Armadura50:setHeight(174);
+    obj.Armadura50:setLeft(0);
+    obj.Armadura50:setTop(998);
+
+    obj.image136 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image136:setParent(obj.Armadura50);
+    obj.image136:setSRC("images/LojaparaArmaduras.png");
+    obj.image136:setLeft(0);
+    obj.image136:setTop(0);
+    obj.image136:setWidth(399);
+    obj.image136:setHeight(174);
+    obj.image136:setName("image136");
+
+    obj.label364 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label364:setParent(obj.Armadura50);
+    obj.label364:setLeft(22.25);
+    obj.label364:setTop(20.50);
+    obj.label364:setWidth(107.25);
+    obj.label364:setHeight(37.88);
+    obj.label364:setFontSize(22);
+    obj.label364:setHint("Preço da Arma");
+    obj.label364:setField("Preco50");
+    obj.label364:setHorzTextAlign("center");
+    lfm_setPropAsString(obj.label364, "fontStyle",  "bold");
+    obj.label364:setFontColor("yellow");
+    obj.label364:setFontFamily("kalam");
+    obj.label364:setCursor("handPoint");
+    obj.label364:setHitTest(true);
+    obj.label364:setName("label364");
+
+    obj.Arma50 = GUI.fromHandle(_obj_newObject("image"));
+    obj.Arma50:setParent(obj.Armadura50);
+    obj.Arma50:setLeft(41.38);
+    obj.Arma50:setTop(61.75);
+    obj.Arma50:setWidth(67.88);
+    obj.Arma50:setHeight(30);
+    obj.Arma50:setCursor("handPoint");
+    obj.Arma50:setHitTest(true);
+    obj.Arma50:setHint("Clique aqui para comprar");
+    obj.Arma50:setName("Arma50");
+
+    obj.image137 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image137:setParent(obj.Armadura50);
+    obj.image137:setLeft(2.56);
+    obj.image137:setTop(93.00);
+    obj.image137:setWidth(136.69);
+    obj.image137:setHeight(77.69);
+    obj.image137:setStyle("proportional");
+    obj.image137:setCenter(true);
+    obj.image137:setEditable(true);
+    obj.image137:setField("ImagemArma50");
+    obj.image137:setName("image137");
+
+    obj.label365 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label365:setParent(obj.Armadura50);
+    obj.label365:setLeft(197);
+    obj.label365:setTop(10);
+    obj.label365:setWidth(249.25);
+    obj.label365:setHeight(39);
+    obj.label365:setFontSize(22);
+    obj.label365:setField("ItemNome50");
+    lfm_setPropAsString(obj.label365, "fontStyle",  "bold");
+    obj.label365:setFontColor("black");
+    obj.label365:setFontFamily("kalam");
+    obj.label365:setName("label365");
+
+    obj.label366 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label366:setParent(obj.Armadura50);
+    obj.label366:setLeft(243.50);
+    obj.label366:setTop(47);
+    obj.label366:setWidth(149.25);
+    obj.label366:setHeight(38.63);
+    obj.label366:setHorzTextAlign("center");
+    obj.label366:setField("AbsorverAparar50");
+    obj.label366:setFontSize(19);
+    lfm_setPropAsString(obj.label366, "fontStyle",  "bold");
+    obj.label366:setFontColor("black");
+    obj.label366:setFontFamily("kalam");
+    obj.label366:setName("label366");
+
+    obj.label367 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label367:setParent(obj.Armadura50);
+    obj.label367:setLeft(182);
+    obj.label367:setTop(86.13);
+    obj.label367:setWidth(61.88);
+    obj.label367:setHeight(38.87);
+    obj.label367:setHorzTextAlign("center");
+    obj.label367:setField("CD50");
+    obj.label367:setFontSize(19);
+    lfm_setPropAsString(obj.label367, "fontStyle",  "bold");
+    obj.label367:setFontColor("black");
+    obj.label367:setFontFamily("kalam");
+    obj.label367:setName("label367");
+
+    obj.label368 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label368:setParent(obj.Armadura50);
+    obj.label368:setLeft(300);
+    obj.label368:setTop(127);
+    obj.label368:setWidth(61.88);
+    obj.label368:setHeight(38.88);
+    obj.label368:setHorzTextAlign("center");
+    obj.label368:setField("PenalidadedeMovimento50");
+    obj.label368:setFontSize(15);
+    lfm_setPropAsString(obj.label368, "fontStyle",  "bold");
+    obj.label368:setFontColor("black");
+    obj.label368:setFontFamily("kalam");
+    obj.label368:setName("label368");
+
+    obj.label369 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label369:setParent(obj.Armadura50);
+    obj.label369:setLeft(336);
+    obj.label369:setTop(86.12);
+    obj.label369:setWidth(61.88);
+    obj.label369:setHeight(38.88);
+    obj.label369:setHorzTextAlign("center");
+    obj.label369:setField("PenalidadeDePercepcao50");
+    obj.label369:setFontSize(19);
+    lfm_setPropAsString(obj.label369, "fontStyle",  "bold");
+    obj.label369:setFontColor("black");
+    obj.label369:setFontFamily("kalam");
+    obj.label369:setName("label369");
+
+    obj.Armadura51 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.Armadura51:setParent(obj.scrollBox3);
+    obj.Armadura51:setName("Armadura51");
+    obj.Armadura51:setWidth(480);
+    obj.Armadura51:setHeight(174);
+    obj.Armadura51:setLeft(413);
+    obj.Armadura51:setTop(88);
+
+    obj.image138 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image138:setParent(obj.Armadura51);
+    obj.image138:setSRC("images/LojaparaArmaduras.png");
+    obj.image138:setLeft(0);
+    obj.image138:setTop(0);
+    obj.image138:setWidth(399);
+    obj.image138:setHeight(174);
+    obj.image138:setName("image138");
+
+    obj.label370 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label370:setParent(obj.Armadura51);
+    obj.label370:setLeft(22.25);
+    obj.label370:setTop(20.50);
+    obj.label370:setWidth(107.25);
+    obj.label370:setHeight(37.88);
+    obj.label370:setFontSize(22);
+    obj.label370:setHint("Preço da Arma");
+    obj.label370:setField("Preco51");
+    obj.label370:setHorzTextAlign("center");
+    lfm_setPropAsString(obj.label370, "fontStyle",  "bold");
+    obj.label370:setFontColor("yellow");
+    obj.label370:setFontFamily("kalam");
+    obj.label370:setCursor("handPoint");
+    obj.label370:setHitTest(true);
+    obj.label370:setName("label370");
+
+    obj.Arma51 = GUI.fromHandle(_obj_newObject("image"));
+    obj.Arma51:setParent(obj.Armadura51);
+    obj.Arma51:setLeft(41.38);
+    obj.Arma51:setTop(61.75);
+    obj.Arma51:setWidth(67.88);
+    obj.Arma51:setHeight(30);
+    obj.Arma51:setCursor("handPoint");
+    obj.Arma51:setHitTest(true);
+    obj.Arma51:setHint("Clique aqui para comprar");
+    obj.Arma51:setName("Arma51");
+
+    obj.image139 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image139:setParent(obj.Armadura51);
+    obj.image139:setLeft(2.56);
+    obj.image139:setTop(93.00);
+    obj.image139:setWidth(136.69);
+    obj.image139:setHeight(77.69);
+    obj.image139:setStyle("proportional");
+    obj.image139:setCenter(true);
+    obj.image139:setEditable(true);
+    obj.image139:setField("ImagemArma51");
+    obj.image139:setName("image139");
+
+    obj.label371 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label371:setParent(obj.Armadura51);
+    obj.label371:setLeft(197);
+    obj.label371:setTop(10);
+    obj.label371:setWidth(249.25);
+    obj.label371:setHeight(39);
+    obj.label371:setFontSize(22);
+    obj.label371:setField("ItemNome51");
+    lfm_setPropAsString(obj.label371, "fontStyle",  "bold");
+    obj.label371:setFontColor("black");
+    obj.label371:setFontFamily("kalam");
+    obj.label371:setName("label371");
+
+    obj.label372 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label372:setParent(obj.Armadura51);
+    obj.label372:setLeft(243.51);
+    obj.label372:setTop(47);
+    obj.label372:setWidth(149.25);
+    obj.label372:setHeight(38.63);
+    obj.label372:setHorzTextAlign("center");
+    obj.label372:setField("AbsorverAparar51");
+    obj.label372:setFontSize(19);
+    lfm_setPropAsString(obj.label372, "fontStyle",  "bold");
+    obj.label372:setFontColor("black");
+    obj.label372:setFontFamily("kalam");
+    obj.label372:setName("label372");
+
+    obj.label373 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label373:setParent(obj.Armadura51);
+    obj.label373:setLeft(182);
+    obj.label373:setTop(86.13);
+    obj.label373:setWidth(61.88);
+    obj.label373:setHeight(38.87);
+    obj.label373:setHorzTextAlign("center");
+    obj.label373:setField("CD51");
+    obj.label373:setFontSize(19);
+    lfm_setPropAsString(obj.label373, "fontStyle",  "bold");
+    obj.label373:setFontColor("black");
+    obj.label373:setFontFamily("kalam");
+    obj.label373:setName("label373");
+
+    obj.label374 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label374:setParent(obj.Armadura51);
+    obj.label374:setLeft(300);
+    obj.label374:setTop(127);
+    obj.label374:setWidth(61.88);
+    obj.label374:setHeight(38.88);
+    obj.label374:setHorzTextAlign("center");
+    obj.label374:setField("PenalidadedeMovimento51");
+    obj.label374:setFontSize(15);
+    lfm_setPropAsString(obj.label374, "fontStyle",  "bold");
+    obj.label374:setFontColor("black");
+    obj.label374:setFontFamily("kalam");
+    obj.label374:setName("label374");
+
+    obj.label375 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label375:setParent(obj.Armadura51);
+    obj.label375:setLeft(336);
+    obj.label375:setTop(86.12);
+    obj.label375:setWidth(61.88);
+    obj.label375:setHeight(38.88);
+    obj.label375:setHorzTextAlign("center");
+    obj.label375:setField("PenalidadeDePercepcao51");
+    obj.label375:setFontSize(19);
+    lfm_setPropAsString(obj.label375, "fontStyle",  "bold");
+    obj.label375:setFontColor("black");
+    obj.label375:setFontFamily("kalam");
+    obj.label375:setName("label375");
+
+    obj.Armadura52 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.Armadura52:setParent(obj.scrollBox3);
+    obj.Armadura52:setName("Armadura52");
+    obj.Armadura52:setWidth(480);
+    obj.Armadura52:setHeight(174);
+    obj.Armadura52:setLeft(413);
+    obj.Armadura52:setTop(270);
+
+    obj.image140 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image140:setParent(obj.Armadura52);
+    obj.image140:setSRC("images/LojaparaArmaduras.png");
+    obj.image140:setLeft(0);
+    obj.image140:setTop(0);
+    obj.image140:setWidth(399);
+    obj.image140:setHeight(174);
+    obj.image140:setName("image140");
+
+    obj.label376 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label376:setParent(obj.Armadura52);
+    obj.label376:setLeft(22.25);
+    obj.label376:setTop(20.50);
+    obj.label376:setWidth(107.25);
+    obj.label376:setHeight(37.88);
+    obj.label376:setFontSize(22);
+    obj.label376:setHint("Preço da Arma");
+    obj.label376:setField("Preco52");
+    obj.label376:setHorzTextAlign("center");
+    lfm_setPropAsString(obj.label376, "fontStyle",  "bold");
+    obj.label376:setFontColor("yellow");
+    obj.label376:setFontFamily("kalam");
+    obj.label376:setCursor("handPoint");
+    obj.label376:setHitTest(true);
+    obj.label376:setName("label376");
+
+    obj.Arma52 = GUI.fromHandle(_obj_newObject("image"));
+    obj.Arma52:setParent(obj.Armadura52);
+    obj.Arma52:setLeft(41.38);
+    obj.Arma52:setTop(61.75);
+    obj.Arma52:setWidth(67.88);
+    obj.Arma52:setHeight(30);
+    obj.Arma52:setCursor("handPoint");
+    obj.Arma52:setHitTest(true);
+    obj.Arma52:setHint("Clique aqui para comprar");
+    obj.Arma52:setName("Arma52");
+
+    obj.image141 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image141:setParent(obj.Armadura52);
+    obj.image141:setLeft(2.56);
+    obj.image141:setTop(93.00);
+    obj.image141:setWidth(136.69);
+    obj.image141:setHeight(77.69);
+    obj.image141:setStyle("proportional");
+    obj.image141:setCenter(true);
+    obj.image141:setEditable(true);
+    obj.image141:setField("ImagemArma52");
+    obj.image141:setName("image141");
+
+    obj.label377 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label377:setParent(obj.Armadura52);
+    obj.label377:setLeft(197);
+    obj.label377:setTop(10);
+    obj.label377:setWidth(249.25);
+    obj.label377:setHeight(39);
+    obj.label377:setFontSize(22);
+    obj.label377:setField("ItemNome52");
+    lfm_setPropAsString(obj.label377, "fontStyle",  "bold");
+    obj.label377:setFontColor("black");
+    obj.label377:setFontFamily("kalam");
+    obj.label377:setName("label377");
+
+    obj.label378 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label378:setParent(obj.Armadura52);
+    obj.label378:setLeft(243.51);
+    obj.label378:setTop(47);
+    obj.label378:setWidth(149.25);
+    obj.label378:setHeight(38.63);
+    obj.label378:setHorzTextAlign("center");
+    obj.label378:setField("AbsorverAparar52");
+    obj.label378:setFontSize(19);
+    lfm_setPropAsString(obj.label378, "fontStyle",  "bold");
+    obj.label378:setFontColor("black");
+    obj.label378:setFontFamily("kalam");
+    obj.label378:setName("label378");
+
+    obj.label379 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label379:setParent(obj.Armadura52);
+    obj.label379:setLeft(182);
+    obj.label379:setTop(86.13);
+    obj.label379:setWidth(61.88);
+    obj.label379:setHeight(38.87);
+    obj.label379:setHorzTextAlign("center");
+    obj.label379:setField("CD52");
+    obj.label379:setFontSize(19);
+    lfm_setPropAsString(obj.label379, "fontStyle",  "bold");
+    obj.label379:setFontColor("black");
+    obj.label379:setFontFamily("kalam");
+    obj.label379:setName("label379");
+
+    obj.label380 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label380:setParent(obj.Armadura52);
+    obj.label380:setLeft(300);
+    obj.label380:setTop(127);
+    obj.label380:setWidth(61.88);
+    obj.label380:setHeight(38.88);
+    obj.label380:setHorzTextAlign("center");
+    obj.label380:setField("PenalidadedeMovimento52");
+    obj.label380:setFontSize(15);
+    lfm_setPropAsString(obj.label380, "fontStyle",  "bold");
+    obj.label380:setFontColor("black");
+    obj.label380:setFontFamily("kalam");
+    obj.label380:setName("label380");
+
+    obj.label381 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label381:setParent(obj.Armadura52);
+    obj.label381:setLeft(336);
+    obj.label381:setTop(86.12);
+    obj.label381:setWidth(61.88);
+    obj.label381:setHeight(38.88);
+    obj.label381:setHorzTextAlign("center");
+    obj.label381:setField("PenalidadeDePercepcao52");
+    obj.label381:setFontSize(19);
+    lfm_setPropAsString(obj.label381, "fontStyle",  "bold");
+    obj.label381:setFontColor("black");
+    obj.label381:setFontFamily("kalam");
+    obj.label381:setName("label381");
+
+    obj.Armadura53 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.Armadura53:setParent(obj.scrollBox3);
+    obj.Armadura53:setName("Armadura53");
+    obj.Armadura53:setWidth(480);
+    obj.Armadura53:setHeight(174);
+    obj.Armadura53:setLeft(413);
+    obj.Armadura53:setTop(634);
+
+    obj.image142 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image142:setParent(obj.Armadura53);
+    obj.image142:setSRC("images/LojaparaArmaduras.png");
+    obj.image142:setLeft(0);
+    obj.image142:setTop(0);
+    obj.image142:setWidth(399);
+    obj.image142:setHeight(174);
+    obj.image142:setName("image142");
+
+    obj.label382 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label382:setParent(obj.Armadura53);
+    obj.label382:setLeft(22.25);
+    obj.label382:setTop(20.50);
+    obj.label382:setWidth(107.25);
+    obj.label382:setHeight(37.88);
+    obj.label382:setFontSize(22);
+    obj.label382:setHint("Preço da Arma");
+    obj.label382:setField("Preco53");
+    obj.label382:setHorzTextAlign("center");
+    lfm_setPropAsString(obj.label382, "fontStyle",  "bold");
+    obj.label382:setFontColor("yellow");
+    obj.label382:setFontFamily("kalam");
+    obj.label382:setCursor("handPoint");
+    obj.label382:setHitTest(true);
+    obj.label382:setName("label382");
+
+    obj.Arma53 = GUI.fromHandle(_obj_newObject("image"));
+    obj.Arma53:setParent(obj.Armadura53);
+    obj.Arma53:setLeft(41.38);
+    obj.Arma53:setTop(61.75);
+    obj.Arma53:setWidth(67.88);
+    obj.Arma53:setHeight(30);
+    obj.Arma53:setCursor("handPoint");
+    obj.Arma53:setHitTest(true);
+    obj.Arma53:setHint("Clique aqui para comprar");
+    obj.Arma53:setName("Arma53");
+
+    obj.image143 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image143:setParent(obj.Armadura53);
+    obj.image143:setLeft(2.56);
+    obj.image143:setTop(93.00);
+    obj.image143:setWidth(136.69);
+    obj.image143:setHeight(77.69);
+    obj.image143:setStyle("proportional");
+    obj.image143:setCenter(true);
+    obj.image143:setEditable(true);
+    obj.image143:setField("ImagemArma53");
+    obj.image143:setName("image143");
+
+    obj.label383 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label383:setParent(obj.Armadura53);
+    obj.label383:setLeft(197);
+    obj.label383:setTop(10);
+    obj.label383:setWidth(249.25);
+    obj.label383:setHeight(39);
+    obj.label383:setFontSize(22);
+    obj.label383:setField("ItemNome53");
+    lfm_setPropAsString(obj.label383, "fontStyle",  "bold");
+    obj.label383:setFontColor("black");
+    obj.label383:setFontFamily("kalam");
+    obj.label383:setName("label383");
+
+    obj.label384 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label384:setParent(obj.Armadura53);
+    obj.label384:setLeft(243.51);
+    obj.label384:setTop(47);
+    obj.label384:setWidth(149.25);
+    obj.label384:setHeight(38.63);
+    obj.label384:setHorzTextAlign("center");
+    obj.label384:setField("AbsorverAparar53");
+    obj.label384:setFontSize(19);
+    lfm_setPropAsString(obj.label384, "fontStyle",  "bold");
+    obj.label384:setFontColor("black");
+    obj.label384:setFontFamily("kalam");
+    obj.label384:setName("label384");
+
+    obj.label385 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label385:setParent(obj.Armadura53);
+    obj.label385:setLeft(182);
+    obj.label385:setTop(86.13);
+    obj.label385:setWidth(61.88);
+    obj.label385:setHeight(38.87);
+    obj.label385:setHorzTextAlign("center");
+    obj.label385:setField("CD53");
+    obj.label385:setFontSize(19);
+    lfm_setPropAsString(obj.label385, "fontStyle",  "bold");
+    obj.label385:setFontColor("black");
+    obj.label385:setFontFamily("kalam");
+    obj.label385:setName("label385");
+
+    obj.label386 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label386:setParent(obj.Armadura53);
+    obj.label386:setLeft(300);
+    obj.label386:setTop(127);
+    obj.label386:setWidth(61.88);
+    obj.label386:setHeight(38.88);
+    obj.label386:setHorzTextAlign("center");
+    obj.label386:setField("PenalidadedeMovimento53");
+    obj.label386:setFontSize(15);
+    lfm_setPropAsString(obj.label386, "fontStyle",  "bold");
+    obj.label386:setFontColor("black");
+    obj.label386:setFontFamily("kalam");
+    obj.label386:setName("label386");
+
+    obj.label387 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label387:setParent(obj.Armadura53);
+    obj.label387:setLeft(336);
+    obj.label387:setTop(86.12);
+    obj.label387:setWidth(61.88);
+    obj.label387:setHeight(38.88);
+    obj.label387:setHorzTextAlign("center");
+    obj.label387:setField("PenalidadeDePercepão53");
+    obj.label387:setFontSize(19);
+    lfm_setPropAsString(obj.label387, "fontStyle",  "bold");
+    obj.label387:setFontColor("black");
+    obj.label387:setFontFamily("kalam");
+    obj.label387:setName("label387");
+
+    obj.Armadura54 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.Armadura54:setParent(obj.scrollBox3);
+    obj.Armadura54:setName("Armadura54");
+    obj.Armadura54:setWidth(480);
+    obj.Armadura54:setHeight(174);
+    obj.Armadura54:setLeft(413);
+    obj.Armadura54:setTop(452);
+
+    obj.image144 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image144:setParent(obj.Armadura54);
+    obj.image144:setSRC("images/LojaparaArmaduras.png");
+    obj.image144:setLeft(0);
+    obj.image144:setTop(0);
+    obj.image144:setWidth(399);
+    obj.image144:setHeight(174);
+    obj.image144:setName("image144");
+
+    obj.label388 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label388:setParent(obj.Armadura54);
+    obj.label388:setLeft(22.25);
+    obj.label388:setTop(20.50);
+    obj.label388:setWidth(107.25);
+    obj.label388:setHeight(37.88);
+    obj.label388:setFontSize(22);
+    obj.label388:setHint("Preço da Arma");
+    obj.label388:setField("Preco54");
+    obj.label388:setHorzTextAlign("center");
+    lfm_setPropAsString(obj.label388, "fontStyle",  "bold");
+    obj.label388:setFontColor("yellow");
+    obj.label388:setFontFamily("kalam");
+    obj.label388:setCursor("handPoint");
+    obj.label388:setHitTest(true);
+    obj.label388:setName("label388");
+
+    obj.Arma54 = GUI.fromHandle(_obj_newObject("image"));
+    obj.Arma54:setParent(obj.Armadura54);
+    obj.Arma54:setLeft(41.38);
+    obj.Arma54:setTop(61.75);
+    obj.Arma54:setWidth(67.88);
+    obj.Arma54:setHeight(30);
+    obj.Arma54:setCursor("handPoint");
+    obj.Arma54:setHitTest(true);
+    obj.Arma54:setHint("Clique aqui para comprar");
+    obj.Arma54:setName("Arma54");
+
+    obj.image145 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image145:setParent(obj.Armadura54);
+    obj.image145:setLeft(2.56);
+    obj.image145:setTop(93.00);
+    obj.image145:setWidth(136.69);
+    obj.image145:setHeight(77.69);
+    obj.image145:setStyle("proportional");
+    obj.image145:setCenter(true);
+    obj.image145:setEditable(true);
+    obj.image145:setField("ImagemArma54");
+    obj.image145:setName("image145");
+
+    obj.label389 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label389:setParent(obj.Armadura54);
+    obj.label389:setLeft(197);
+    obj.label389:setTop(10);
+    obj.label389:setWidth(249.25);
+    obj.label389:setHeight(39);
+    obj.label389:setFontSize(22);
+    obj.label389:setField("ItemNome54");
+    lfm_setPropAsString(obj.label389, "fontStyle",  "bold");
+    obj.label389:setFontColor("black");
+    obj.label389:setFontFamily("kalam");
+    obj.label389:setName("label389");
+
+    obj.label390 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label390:setParent(obj.Armadura54);
+    obj.label390:setLeft(243.51);
+    obj.label390:setTop(47);
+    obj.label390:setWidth(149.25);
+    obj.label390:setHeight(38.63);
+    obj.label390:setHorzTextAlign("center");
+    obj.label390:setField("AbsorverAparar54");
+    obj.label390:setFontSize(19);
+    lfm_setPropAsString(obj.label390, "fontStyle",  "bold");
+    obj.label390:setFontColor("black");
+    obj.label390:setFontFamily("kalam");
+    obj.label390:setName("label390");
+
+    obj.label391 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label391:setParent(obj.Armadura54);
+    obj.label391:setLeft(182);
+    obj.label391:setTop(86.13);
+    obj.label391:setWidth(61.88);
+    obj.label391:setHeight(38.87);
+    obj.label391:setHorzTextAlign("center");
+    obj.label391:setField("CD54");
+    obj.label391:setFontSize(19);
+    lfm_setPropAsString(obj.label391, "fontStyle",  "bold");
+    obj.label391:setFontColor("black");
+    obj.label391:setFontFamily("kalam");
+    obj.label391:setName("label391");
+
+    obj.label392 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label392:setParent(obj.Armadura54);
+    obj.label392:setLeft(300);
+    obj.label392:setTop(127);
+    obj.label392:setWidth(61.88);
+    obj.label392:setHeight(38.88);
+    obj.label392:setHorzTextAlign("center");
+    obj.label392:setField("PenalidadedeMovimento54");
+    obj.label392:setFontSize(15);
+    lfm_setPropAsString(obj.label392, "fontStyle",  "bold");
+    obj.label392:setFontColor("black");
+    obj.label392:setFontFamily("kalam");
+    obj.label392:setName("label392");
+
+    obj.label393 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label393:setParent(obj.Armadura54);
+    obj.label393:setLeft(336);
+    obj.label393:setTop(86.12);
+    obj.label393:setWidth(61.88);
+    obj.label393:setHeight(38.88);
+    obj.label393:setHorzTextAlign("center");
+    obj.label393:setField("PenalidadeDePercepcao54");
+    obj.label393:setFontSize(19);
+    lfm_setPropAsString(obj.label393, "fontStyle",  "bold");
+    obj.label393:setFontColor("black");
+    obj.label393:setFontFamily("kalam");
+    obj.label393:setName("label393");
+
+    obj.Armadura55 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.Armadura55:setParent(obj.scrollBox3);
+    obj.Armadura55:setName("Armadura55");
+    obj.Armadura55:setWidth(480);
+    obj.Armadura55:setHeight(174);
+    obj.Armadura55:setLeft(413);
+    obj.Armadura55:setTop(816);
+
+    obj.image146 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image146:setParent(obj.Armadura55);
+    obj.image146:setSRC("images/LojaparaArmaduras.png");
+    obj.image146:setLeft(0);
+    obj.image146:setTop(0);
+    obj.image146:setWidth(399);
+    obj.image146:setHeight(174);
+    obj.image146:setName("image146");
+
+    obj.label394 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label394:setParent(obj.Armadura55);
+    obj.label394:setLeft(22.25);
+    obj.label394:setTop(20.50);
+    obj.label394:setWidth(107.25);
+    obj.label394:setHeight(37.88);
+    obj.label394:setFontSize(22);
+    obj.label394:setHint("Preço da Arma");
+    obj.label394:setField("Preco55");
+    obj.label394:setHorzTextAlign("center");
+    lfm_setPropAsString(obj.label394, "fontStyle",  "bold");
+    obj.label394:setFontColor("yellow");
+    obj.label394:setFontFamily("kalam");
+    obj.label394:setCursor("handPoint");
+    obj.label394:setHitTest(true);
+    obj.label394:setName("label394");
+
+    obj.Arma55 = GUI.fromHandle(_obj_newObject("image"));
+    obj.Arma55:setParent(obj.Armadura55);
+    obj.Arma55:setLeft(41.38);
+    obj.Arma55:setTop(61.75);
+    obj.Arma55:setWidth(67.88);
+    obj.Arma55:setHeight(30);
+    obj.Arma55:setCursor("handPoint");
+    obj.Arma55:setHitTest(true);
+    obj.Arma55:setHint("Clique aqui para comprar");
+    obj.Arma55:setName("Arma55");
+
+    obj.image147 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image147:setParent(obj.Armadura55);
+    obj.image147:setLeft(2.56);
+    obj.image147:setTop(93.00);
+    obj.image147:setWidth(136.69);
+    obj.image147:setHeight(77.69);
+    obj.image147:setStyle("proportional");
+    obj.image147:setCenter(true);
+    obj.image147:setEditable(true);
+    obj.image147:setField("ImagemArma55");
+    obj.image147:setName("image147");
+
+    obj.label395 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label395:setParent(obj.Armadura55);
+    obj.label395:setLeft(197);
+    obj.label395:setTop(10);
+    obj.label395:setWidth(249.25);
+    obj.label395:setHeight(39);
+    obj.label395:setFontSize(22);
+    obj.label395:setField("ItemNome55");
+    lfm_setPropAsString(obj.label395, "fontStyle",  "bold");
+    obj.label395:setFontColor("black");
+    obj.label395:setFontFamily("kalam");
+    obj.label395:setName("label395");
+
+    obj.label396 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label396:setParent(obj.Armadura55);
+    obj.label396:setLeft(243.51);
+    obj.label396:setTop(47);
+    obj.label396:setWidth(149.25);
+    obj.label396:setHeight(38.63);
+    obj.label396:setHorzTextAlign("center");
+    obj.label396:setField("AbsorverAparar55");
+    obj.label396:setFontSize(19);
+    lfm_setPropAsString(obj.label396, "fontStyle",  "bold");
+    obj.label396:setFontColor("black");
+    obj.label396:setFontFamily("kalam");
+    obj.label396:setName("label396");
+
+    obj.label397 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label397:setParent(obj.Armadura55);
+    obj.label397:setLeft(182);
+    obj.label397:setTop(86.13);
+    obj.label397:setWidth(61.88);
+    obj.label397:setHeight(38.87);
+    obj.label397:setHorzTextAlign("center");
+    obj.label397:setField("CD55");
+    obj.label397:setFontSize(19);
+    lfm_setPropAsString(obj.label397, "fontStyle",  "bold");
+    obj.label397:setFontColor("black");
+    obj.label397:setFontFamily("kalam");
+    obj.label397:setName("label397");
+
+    obj.label398 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label398:setParent(obj.Armadura55);
+    obj.label398:setLeft(300);
+    obj.label398:setTop(127);
+    obj.label398:setWidth(61.88);
+    obj.label398:setHeight(38.88);
+    obj.label398:setHorzTextAlign("center");
+    obj.label398:setField("PenalidadedeMovimento55");
+    obj.label398:setFontSize(15);
+    lfm_setPropAsString(obj.label398, "fontStyle",  "bold");
+    obj.label398:setFontColor("black");
+    obj.label398:setFontFamily("kalam");
+    obj.label398:setName("label398");
+
+    obj.label399 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label399:setParent(obj.Armadura55);
+    obj.label399:setLeft(336);
+    obj.label399:setTop(86.12);
+    obj.label399:setWidth(61.88);
+    obj.label399:setHeight(38.88);
+    obj.label399:setHorzTextAlign("center");
+    obj.label399:setField("PenalidadeDePercepcao55");
+    obj.label399:setFontSize(19);
+    lfm_setPropAsString(obj.label399, "fontStyle",  "bold");
+    obj.label399:setFontColor("black");
+    obj.label399:setFontFamily("kalam");
+    obj.label399:setName("label399");
+
+    obj.Armadura56 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.Armadura56:setParent(obj.scrollBox3);
+    obj.Armadura56:setName("Armadura56");
+    obj.Armadura56:setWidth(480);
+    obj.Armadura56:setHeight(174);
+    obj.Armadura56:setLeft(413);
+    obj.Armadura56:setTop(998);
+
+    obj.image148 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image148:setParent(obj.Armadura56);
+    obj.image148:setSRC("images/LojaparaArmaduras.png");
+    obj.image148:setLeft(0);
+    obj.image148:setTop(0);
+    obj.image148:setWidth(399);
+    obj.image148:setHeight(174);
+    obj.image148:setName("image148");
+
+    obj.label400 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label400:setParent(obj.Armadura56);
+    obj.label400:setLeft(22.25);
+    obj.label400:setTop(20.50);
+    obj.label400:setWidth(107.25);
+    obj.label400:setHeight(37.88);
+    obj.label400:setFontSize(22);
+    obj.label400:setHint("Preço da Arma");
+    obj.label400:setField("Preco56");
+    obj.label400:setHorzTextAlign("center");
+    lfm_setPropAsString(obj.label400, "fontStyle",  "bold");
+    obj.label400:setFontColor("yellow");
+    obj.label400:setFontFamily("kalam");
+    obj.label400:setCursor("handPoint");
+    obj.label400:setHitTest(true);
+    obj.label400:setName("label400");
+
+    obj.Arma56 = GUI.fromHandle(_obj_newObject("image"));
+    obj.Arma56:setParent(obj.Armadura56);
+    obj.Arma56:setLeft(41.38);
+    obj.Arma56:setTop(61.75);
+    obj.Arma56:setWidth(67.88);
+    obj.Arma56:setHeight(30);
+    obj.Arma56:setCursor("handPoint");
+    obj.Arma56:setHitTest(true);
+    obj.Arma56:setHint("Clique aqui para comprar");
+    obj.Arma56:setName("Arma56");
+
+    obj.image149 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image149:setParent(obj.Armadura56);
+    obj.image149:setLeft(2.56);
+    obj.image149:setTop(93.00);
+    obj.image149:setWidth(136.69);
+    obj.image149:setHeight(77.69);
+    obj.image149:setStyle("proportional");
+    obj.image149:setCenter(true);
+    obj.image149:setEditable(true);
+    obj.image149:setField("ImagemArma56");
+    obj.image149:setName("image149");
+
+    obj.label401 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label401:setParent(obj.Armadura56);
+    obj.label401:setLeft(197);
+    obj.label401:setTop(10);
+    obj.label401:setWidth(249.25);
+    obj.label401:setHeight(39);
+    obj.label401:setFontSize(22);
+    obj.label401:setField("ItemNome56");
+    lfm_setPropAsString(obj.label401, "fontStyle",  "bold");
+    obj.label401:setFontColor("black");
+    obj.label401:setFontFamily("kalam");
+    obj.label401:setName("label401");
+
+    obj.label402 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label402:setParent(obj.Armadura56);
+    obj.label402:setLeft(243.51);
+    obj.label402:setTop(47);
+    obj.label402:setWidth(149.25);
+    obj.label402:setHeight(38.63);
+    obj.label402:setHorzTextAlign("center");
+    obj.label402:setField("AbsorverAparar56");
+    obj.label402:setFontSize(19);
+    lfm_setPropAsString(obj.label402, "fontStyle",  "bold");
+    obj.label402:setFontColor("black");
+    obj.label402:setFontFamily("kalam");
+    obj.label402:setName("label402");
+
+    obj.label403 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label403:setParent(obj.Armadura56);
+    obj.label403:setLeft(182);
+    obj.label403:setTop(86.13);
+    obj.label403:setWidth(61.88);
+    obj.label403:setHeight(38.87);
+    obj.label403:setHorzTextAlign("center");
+    obj.label403:setField("CD56");
+    obj.label403:setFontSize(19);
+    lfm_setPropAsString(obj.label403, "fontStyle",  "bold");
+    obj.label403:setFontColor("black");
+    obj.label403:setFontFamily("kalam");
+    obj.label403:setName("label403");
+
+    obj.label404 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label404:setParent(obj.Armadura56);
+    obj.label404:setLeft(300);
+    obj.label404:setTop(127);
+    obj.label404:setWidth(61.88);
+    obj.label404:setHeight(38.88);
+    obj.label404:setHorzTextAlign("center");
+    obj.label404:setField("PenalidadedeMovimento56");
+    obj.label404:setFontSize(15);
+    lfm_setPropAsString(obj.label404, "fontStyle",  "bold");
+    obj.label404:setFontColor("black");
+    obj.label404:setFontFamily("kalam");
+    obj.label404:setName("label404");
+
+    obj.label405 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label405:setParent(obj.Armadura56);
+    obj.label405:setLeft(336);
+    obj.label405:setTop(86.12);
+    obj.label405:setWidth(61.88);
+    obj.label405:setHeight(38.88);
+    obj.label405:setHorzTextAlign("center");
+    obj.label405:setField("PenalidadeDePercepcao56");
+    obj.label405:setFontSize(19);
+    lfm_setPropAsString(obj.label405, "fontStyle",  "bold");
+    obj.label405:setFontColor("black");
+    obj.label405:setFontFamily("kalam");
+    obj.label405:setName("label405");
+
     obj._e_event0 = obj.image2:addEventListener("onClick",
         function (_)
             self.ApresentaLoja.visible = false;
@@ -6788,6 +8355,7 @@ local function constructNew_frmLoja_svg()
     obj._e_event2 = obj.image4:addEventListener("onClick",
         function (_)
             self.ApresentaLoja.visible = false;
+                        self.LojaArmaduras.visible = true;
         end, obj);
 
     obj._e_event3 = obj.button1:addEventListener("onClick",
@@ -8524,7 +10092,340 @@ local function constructNew_frmLoja_svg()
               end;
         end, obj);
 
+    obj._e_event101 = obj.dataLink3:addEventListener("onChange",
+        function (_, field, oldValue, newValue)
+            function format_thousand(v)
+                        local s = string.format("%d", math.floor(v))
+                        local pos = string.len(s) % 3 
+                        if pos == 0 then pos = 3 end
+                        return string.sub(s, 1, pos)
+                            .. "" .. string.gsub(string.sub(s, pos+1), "(...)", ".%1") 
+                            .. "" .. string.sub(string.format("%.0f", v - math.floor(v)), 3) 
+                        
+                        end;
+                          self.labSoma5.text = '$' .. format_thousand(sheet.soma);
+        end, obj);
+
+    obj._e_event102 = obj.image124:addEventListener("onClick",
+        function (_)
+            if rrpg.getMesaDe(sheet).meuJogador.isMestre then
+                                        dialogs.inputQuery("Carteira", "Novo valor:", "",
+                                           function (valorPreenchido)
+                                                      sheet.Soma = (sheet.Soma or 0 ) + valorPreenchido; 
+                                        end);
+                                        end;
+        end, obj);
+
+    obj._e_event103 = obj.image125:addEventListener("onClick",
+        function (_)
+            self.LojaArmaduras.visible = false;
+                            self.ApresentaLoja.visible = true;
+        end, obj);
+
+    obj._e_event104 = obj.label334:addEventListener("onClick",
+        function (_)
+            if rrpg.getMesaDe(sheet).meuJogador.isMestre then
+                dialogs.inputQuery("Carteira", "Novo valor:", "",
+                   function (valorPreenchido)
+                        sheet.Preco45 = (sheet.Preco45 or 0 ) + valorPreenchido; 
+                end);
+                end;
+        end, obj);
+
+    obj._e_event105 = obj.Arma45:addEventListener("onClick",
+        function (_)
+            local Soma = (sheet.Soma or 0) -1200;
+                               if Soma >= 0 then
+            local minhaMesa = rrpg.getMesaDe(sheet); 
+                            local chat = minhaMesa.chat; 
+                            chat:enviarMensagem("/me [§K12][§B]Comprou uma arma. ");
+                     showMessage("Você acabou de comprar uma arma corpo a corpo, olhe na sua mochila");
+                         else
+                               showMessage("Você não mais dinheiro"); 	
+              end;
+        end, obj);
+
+    obj._e_event106 = obj.label340:addEventListener("onClick",
+        function (_)
+            if rrpg.getMesaDe(sheet).meuJogador.isMestre then
+                dialogs.inputQuery("Carteira", "Novo valor:", "",
+                   function (valorPreenchido)
+                        sheet.Preco46 = (sheet.Preco46 or 0 ) + valorPreenchido; 
+                end);
+                end;
+        end, obj);
+
+    obj._e_event107 = obj.Arma46:addEventListener("onClick",
+        function (_)
+            local Soma = (sheet.Soma or 0) -1200;
+                               if Soma >= 0 then
+            local minhaMesa = rrpg.getMesaDe(sheet); 
+                            local chat = minhaMesa.chat; 
+                            chat:enviarMensagem("/me [§K12][§B]Comprou uma arma. ");
+                     showMessage("Você acabou de comprar uma arma corpo a corpo, olhe na sua mochila");
+                         else
+                               showMessage("Você não mais dinheiro"); 	
+              end;
+        end, obj);
+
+    obj._e_event108 = obj.label346:addEventListener("onClick",
+        function (_)
+            if rrpg.getMesaDe(sheet).meuJogador.isMestre then
+                dialogs.inputQuery("Carteira", "Novo valor:", "",
+                   function (valorPreenchido)
+                        sheet.Preco47 = (sheet.Preco47 or 0 ) + valorPreenchido; 
+                end);
+                end;
+        end, obj);
+
+    obj._e_event109 = obj.Arma47:addEventListener("onClick",
+        function (_)
+            local Soma = (sheet.Soma or 0) -1200;
+                               if Soma >= 0 then
+            local minhaMesa = rrpg.getMesaDe(sheet); 
+                            local chat = minhaMesa.chat; 
+                            chat:enviarMensagem("/me [§K12][§B]Comprou uma arma. ");
+                     showMessage("Você acabou de comprar uma arma corpo a corpo, olhe na sua mochila");
+                         else
+                               showMessage("Você não mais dinheiro"); 	
+              end;
+        end, obj);
+
+    obj._e_event110 = obj.label352:addEventListener("onClick",
+        function (_)
+            if rrpg.getMesaDe(sheet).meuJogador.isMestre then
+                dialogs.inputQuery("Carteira", "Novo valor:", "",
+                   function (valorPreenchido)
+                        sheet.Preco48 = (sheet.Preco48 or 0 ) + valorPreenchido; 
+                end);
+                end;
+        end, obj);
+
+    obj._e_event111 = obj.Arma48:addEventListener("onClick",
+        function (_)
+            local Soma = (sheet.Soma or 0) -1200;
+                               if Soma >= 0 then
+            local minhaMesa = rrpg.getMesaDe(sheet); 
+                            local chat = minhaMesa.chat; 
+                            chat:enviarMensagem("/me [§K12][§B]Comprou uma arma. ");
+                     showMessage("Você acabou de comprar uma arma corpo a corpo, olhe na sua mochila");
+                         else
+                               showMessage("Você não mais dinheiro"); 	
+              end;
+        end, obj);
+
+    obj._e_event112 = obj.label358:addEventListener("onClick",
+        function (_)
+            if rrpg.getMesaDe(sheet).meuJogador.isMestre then
+                dialogs.inputQuery("Carteira", "Novo valor:", "",
+                   function (valorPreenchido)
+                        sheet.Preco49 = (sheet.Preco49 or 0 ) + valorPreenchido; 
+                end);
+                end;
+        end, obj);
+
+    obj._e_event113 = obj.Arma49:addEventListener("onClick",
+        function (_)
+            local Soma = (sheet.Soma or 0) -1200;
+                               if Soma >= 0 then
+            local minhaMesa = rrpg.getMesaDe(sheet); 
+                            local chat = minhaMesa.chat; 
+                            chat:enviarMensagem("/me [§K12][§B]Comprou uma arma. ");
+                     showMessage("Você acabou de comprar uma arma corpo a corpo, olhe na sua mochila");
+                         else
+                               showMessage("Você não mais dinheiro"); 	
+              end;
+        end, obj);
+
+    obj._e_event114 = obj.label364:addEventListener("onClick",
+        function (_)
+            if rrpg.getMesaDe(sheet).meuJogador.isMestre then
+                dialogs.inputQuery("Carteira", "Novo valor:", "",
+                   function (valorPreenchido)
+                        sheet.Preco50 = (sheet.Preco50 or 0 ) + valorPreenchido; 
+                end);
+                end;
+        end, obj);
+
+    obj._e_event115 = obj.Arma50:addEventListener("onClick",
+        function (_)
+            local Soma = (sheet.Soma or 0) -1200;
+                               if Soma >= 0 then
+            local minhaMesa = rrpg.getMesaDe(sheet); 
+                            local chat = minhaMesa.chat; 
+                            chat:enviarMensagem("/me [§K12][§B]Comprou uma arma. ");
+                     showMessage("Você acabou de comprar uma arma corpo a corpo, olhe na sua mochila");
+                         else
+                               showMessage("Você não mais dinheiro"); 	
+              end;
+        end, obj);
+
+    obj._e_event116 = obj.label370:addEventListener("onClick",
+        function (_)
+            if rrpg.getMesaDe(sheet).meuJogador.isMestre then
+                dialogs.inputQuery("Carteira", "Novo valor:", "",
+                   function (valorPreenchido)
+                        sheet.Preco51 = (sheet.Preco51 or 0 ) + valorPreenchido; 
+                end);
+                end;
+        end, obj);
+
+    obj._e_event117 = obj.Arma51:addEventListener("onClick",
+        function (_)
+            local Soma = (sheet.Soma or 0) -1200;
+                               if Soma >= 0 then
+            local minhaMesa = rrpg.getMesaDe(sheet); 
+                            local chat = minhaMesa.chat; 
+                            chat:enviarMensagem("/me [§K12][§B]Comprou uma arma. ");
+                     showMessage("Você acabou de comprar uma arma corpo a corpo, olhe na sua mochila");
+                         else
+                               showMessage("Você não mais dinheiro"); 	
+              end;
+        end, obj);
+
+    obj._e_event118 = obj.label376:addEventListener("onClick",
+        function (_)
+            if rrpg.getMesaDe(sheet).meuJogador.isMestre then
+                dialogs.inputQuery("Carteira", "Novo valor:", "",
+                   function (valorPreenchido)
+                        sheet.Preco52 = (sheet.Preco52 or 0 ) + valorPreenchido; 
+                end);
+                end;
+        end, obj);
+
+    obj._e_event119 = obj.Arma52:addEventListener("onClick",
+        function (_)
+            local Soma = (sheet.Soma or 0) -1200;
+                               if Soma >= 0 then
+            local minhaMesa = rrpg.getMesaDe(sheet); 
+                            local chat = minhaMesa.chat; 
+                            chat:enviarMensagem("/me [§K12][§B]Comprou uma arma. ");
+                     showMessage("Você acabou de comprar uma arma corpo a corpo, olhe na sua mochila");
+                         else
+                               showMessage("Você não mais dinheiro"); 	
+              end;
+        end, obj);
+
+    obj._e_event120 = obj.label382:addEventListener("onClick",
+        function (_)
+            if rrpg.getMesaDe(sheet).meuJogador.isMestre then
+                dialogs.inputQuery("Carteira", "Novo valor:", "",
+                   function (valorPreenchido)
+                        sheet.Preco53 = (sheet.Preco53 or 0 ) + valorPreenchido; 
+                end);
+                end;
+        end, obj);
+
+    obj._e_event121 = obj.Arma53:addEventListener("onClick",
+        function (_)
+            local Soma = (sheet.Soma or 0) -1200;
+                               if Soma >= 0 then
+            local minhaMesa = rrpg.getMesaDe(sheet); 
+                            local chat = minhaMesa.chat; 
+                            chat:enviarMensagem("/me [§K12][§B]Comprou uma arma. ");
+                     showMessage("Você acabou de comprar uma arma corpo a corpo, olhe na sua mochila");
+                         else
+                               showMessage("Você não mais dinheiro"); 	
+              end;
+        end, obj);
+
+    obj._e_event122 = obj.label388:addEventListener("onClick",
+        function (_)
+            if rrpg.getMesaDe(sheet).meuJogador.isMestre then
+                dialogs.inputQuery("Carteira", "Novo valor:", "",
+                   function (valorPreenchido)
+                        sheet.Preco54 = (sheet.Preco54 or 0 ) + valorPreenchido; 
+                end);
+                end;
+        end, obj);
+
+    obj._e_event123 = obj.Arma54:addEventListener("onClick",
+        function (_)
+            local Soma = (sheet.Soma or 0) -1200;
+                               if Soma >= 0 then
+            local minhaMesa = rrpg.getMesaDe(sheet); 
+                            local chat = minhaMesa.chat; 
+                            chat:enviarMensagem("/me [§K12][§B]Comprou uma arma. ");
+                     showMessage("Você acabou de comprar uma arma corpo a corpo, olhe na sua mochila");
+                         else
+                               showMessage("Você não mais dinheiro"); 	
+              end;
+        end, obj);
+
+    obj._e_event124 = obj.label394:addEventListener("onClick",
+        function (_)
+            if rrpg.getMesaDe(sheet).meuJogador.isMestre then
+                dialogs.inputQuery("Carteira", "Novo valor:", "",
+                   function (valorPreenchido)
+                        sheet.Preco55 = (sheet.Preco55 or 0 ) + valorPreenchido; 
+                end);
+                end;
+        end, obj);
+
+    obj._e_event125 = obj.Arma55:addEventListener("onClick",
+        function (_)
+            local Soma = (sheet.Soma or 0) -1200;
+                               if Soma >= 0 then
+            local minhaMesa = rrpg.getMesaDe(sheet); 
+                            local chat = minhaMesa.chat; 
+                            chat:enviarMensagem("/me [§K12][§B]Comprou uma arma. ");
+                     showMessage("Você acabou de comprar uma arma corpo a corpo, olhe na sua mochila");
+                         else
+                               showMessage("Você não mais dinheiro"); 	
+              end;
+        end, obj);
+
+    obj._e_event126 = obj.label400:addEventListener("onClick",
+        function (_)
+            if rrpg.getMesaDe(sheet).meuJogador.isMestre then
+                dialogs.inputQuery("Carteira", "Novo valor:", "",
+                   function (valorPreenchido)
+                        sheet.Preco56 = (sheet.Preco56 or 0 ) + valorPreenchido; 
+                end);
+                end;
+        end, obj);
+
+    obj._e_event127 = obj.Arma56:addEventListener("onClick",
+        function (_)
+            local Soma = (sheet.Soma or 0) -1200;
+                               if Soma >= 0 then
+            local minhaMesa = rrpg.getMesaDe(sheet); 
+                            local chat = minhaMesa.chat; 
+                            chat:enviarMensagem("/me [§K12][§B]Comprou uma arma. ");
+                     showMessage("Você acabou de comprar uma arma corpo a corpo, olhe na sua mochila");
+                         else
+                               showMessage("Você não mais dinheiro"); 	
+              end;
+        end, obj);
+
     function obj:_releaseEvents()
+        __o_rrpgObjs.removeEventListenerById(self._e_event127);
+        __o_rrpgObjs.removeEventListenerById(self._e_event126);
+        __o_rrpgObjs.removeEventListenerById(self._e_event125);
+        __o_rrpgObjs.removeEventListenerById(self._e_event124);
+        __o_rrpgObjs.removeEventListenerById(self._e_event123);
+        __o_rrpgObjs.removeEventListenerById(self._e_event122);
+        __o_rrpgObjs.removeEventListenerById(self._e_event121);
+        __o_rrpgObjs.removeEventListenerById(self._e_event120);
+        __o_rrpgObjs.removeEventListenerById(self._e_event119);
+        __o_rrpgObjs.removeEventListenerById(self._e_event118);
+        __o_rrpgObjs.removeEventListenerById(self._e_event117);
+        __o_rrpgObjs.removeEventListenerById(self._e_event116);
+        __o_rrpgObjs.removeEventListenerById(self._e_event115);
+        __o_rrpgObjs.removeEventListenerById(self._e_event114);
+        __o_rrpgObjs.removeEventListenerById(self._e_event113);
+        __o_rrpgObjs.removeEventListenerById(self._e_event112);
+        __o_rrpgObjs.removeEventListenerById(self._e_event111);
+        __o_rrpgObjs.removeEventListenerById(self._e_event110);
+        __o_rrpgObjs.removeEventListenerById(self._e_event109);
+        __o_rrpgObjs.removeEventListenerById(self._e_event108);
+        __o_rrpgObjs.removeEventListenerById(self._e_event107);
+        __o_rrpgObjs.removeEventListenerById(self._e_event106);
+        __o_rrpgObjs.removeEventListenerById(self._e_event105);
+        __o_rrpgObjs.removeEventListenerById(self._e_event104);
+        __o_rrpgObjs.removeEventListenerById(self._e_event103);
+        __o_rrpgObjs.removeEventListenerById(self._e_event102);
+        __o_rrpgObjs.removeEventListenerById(self._e_event101);
         __o_rrpgObjs.removeEventListenerById(self._e_event100);
         __o_rrpgObjs.removeEventListenerById(self._e_event99);
         __o_rrpgObjs.removeEventListenerById(self._e_event98);
@@ -8638,12 +10539,14 @@ local function constructNew_frmLoja_svg()
         end;
 
         if self.label329 ~= nil then self.label329:destroy(); self.label329 = nil; end;
+        if self.image148 ~= nil then self.image148:destroy(); self.image148 = nil; end;
         if self.label14 ~= nil then self.label14:destroy(); self.label14 = nil; end;
         if self.image74 ~= nil then self.image74:destroy(); self.image74 = nil; end;
         if self.label119 ~= nil then self.label119:destroy(); self.label119 = nil; end;
         if self.label256 ~= nil then self.label256:destroy(); self.label256 = nil; end;
         if self.label327 ~= nil then self.label327:destroy(); self.label327 = nil; end;
         if self.Arma34 ~= nil then self.Arma34:destroy(); self.Arma34 = nil; end;
+        if self.label338 ~= nil then self.label338:destroy(); self.label338 = nil; end;
         if self.label299 ~= nil then self.label299:destroy(); self.label299 = nil; end;
         if self.label43 ~= nil then self.label43:destroy(); self.label43 = nil; end;
         if self.label97 ~= nil then self.label97:destroy(); self.label97 = nil; end;
@@ -8653,10 +10556,14 @@ local function constructNew_frmLoja_svg()
         if self.LojaDeArmas ~= nil then self.LojaDeArmas:destroy(); self.LojaDeArmas = nil; end;
         if self.label128 ~= nil then self.label128:destroy(); self.label128 = nil; end;
         if self.image117 ~= nil then self.image117:destroy(); self.image117 = nil; end;
+        if self.label350 ~= nil then self.label350:destroy(); self.label350 = nil; end;
         if self.label45 ~= nil then self.label45:destroy(); self.label45 = nil; end;
         if self.label96 ~= nil then self.label96:destroy(); self.label96 = nil; end;
         if self.label92 ~= nil then self.label92:destroy(); self.label92 = nil; end;
         if self.CorpoACorpo35 ~= nil then self.CorpoACorpo35:destroy(); self.CorpoACorpo35 = nil; end;
+        if self.Armadura52 ~= nil then self.Armadura52:destroy(); self.Armadura52 = nil; end;
+        if self.image142 ~= nil then self.image142:destroy(); self.image142 = nil; end;
+        if self.label399 ~= nil then self.label399:destroy(); self.label399 = nil; end;
         if self.Arma22 ~= nil then self.Arma22:destroy(); self.Arma22 = nil; end;
         if self.label148 ~= nil then self.label148:destroy(); self.label148 = nil; end;
         if self.label75 ~= nil then self.label75:destroy(); self.label75 = nil; end;
@@ -8665,16 +10572,21 @@ local function constructNew_frmLoja_svg()
         if self.label63 ~= nil then self.label63:destroy(); self.label63 = nil; end;
         if self.Arma35 ~= nil then self.Arma35:destroy(); self.Arma35 = nil; end;
         if self.label70 ~= nil then self.label70:destroy(); self.label70 = nil; end;
+        if self.Armadura49 ~= nil then self.Armadura49:destroy(); self.Armadura49 = nil; end;
+        if self.image135 ~= nil then self.image135:destroy(); self.image135 = nil; end;
         if self.label143 ~= nil then self.label143:destroy(); self.label143 = nil; end;
         if self.label35 ~= nil then self.label35:destroy(); self.label35 = nil; end;
         if self.label331 ~= nil then self.label331:destroy(); self.label331 = nil; end;
+        if self.image126 ~= nil then self.image126:destroy(); self.image126 = nil; end;
         if self.label192 ~= nil then self.label192:destroy(); self.label192 = nil; end;
         if self.label293 ~= nil then self.label293:destroy(); self.label293 = nil; end;
         if self.label164 ~= nil then self.label164:destroy(); self.label164 = nil; end;
         if self.label122 ~= nil then self.label122:destroy(); self.label122 = nil; end;
         if self.label328 ~= nil then self.label328:destroy(); self.label328 = nil; end;
+        if self.label351 ~= nil then self.label351:destroy(); self.label351 = nil; end;
         if self.CorpoACorpo40 ~= nil then self.CorpoACorpo40:destroy(); self.CorpoACorpo40 = nil; end;
         if self.image110 ~= nil then self.image110:destroy(); self.image110 = nil; end;
+        if self.image136 ~= nil then self.image136:destroy(); self.image136 = nil; end;
         if self.label186 ~= nil then self.label186:destroy(); self.label186 = nil; end;
         if self.Arma29 ~= nil then self.Arma29:destroy(); self.Arma29 = nil; end;
         if self.label8 ~= nil then self.label8:destroy(); self.label8 = nil; end;
@@ -8684,8 +10596,10 @@ local function constructNew_frmLoja_svg()
         if self.image101 ~= nil then self.image101:destroy(); self.image101 = nil; end;
         if self.image85 ~= nil then self.image85:destroy(); self.image85 = nil; end;
         if self.image1 ~= nil then self.image1:destroy(); self.image1 = nil; end;
+        if self.label367 ~= nil then self.label367:destroy(); self.label367 = nil; end;
         if self.label319 ~= nil then self.label319:destroy(); self.label319 = nil; end;
         if self.label15 ~= nil then self.label15:destroy(); self.label15 = nil; end;
+        if self.label359 ~= nil then self.label359:destroy(); self.label359 = nil; end;
         if self.label99 ~= nil then self.label99:destroy(); self.label99 = nil; end;
         if self.label107 ~= nil then self.label107:destroy(); self.label107 = nil; end;
         if self.image60 ~= nil then self.image60:destroy(); self.image60 = nil; end;
@@ -8693,12 +10607,17 @@ local function constructNew_frmLoja_svg()
         if self.label49 ~= nil then self.label49:destroy(); self.label49 = nil; end;
         if self.label163 ~= nil then self.label163:destroy(); self.label163 = nil; end;
         if self.Arma33 ~= nil then self.Arma33:destroy(); self.Arma33 = nil; end;
+        if self.Arma56 ~= nil then self.Arma56:destroy(); self.Arma56 = nil; end;
+        if self.label364 ~= nil then self.label364:destroy(); self.label364 = nil; end;
         if self.label195 ~= nil then self.label195:destroy(); self.label195 = nil; end;
+        if self.label393 ~= nil then self.label393:destroy(); self.label393 = nil; end;
         if self.label82 ~= nil then self.label82:destroy(); self.label82 = nil; end;
         if self.image11 ~= nil then self.image11:destroy(); self.image11 = nil; end;
         if self.label162 ~= nil then self.label162:destroy(); self.label162 = nil; end;
+        if self.Arma45 ~= nil then self.Arma45:destroy(); self.Arma45 = nil; end;
         if self.label220 ~= nil then self.label220:destroy(); self.label220 = nil; end;
         if self.label227 ~= nil then self.label227:destroy(); self.label227 = nil; end;
+        if self.label348 ~= nil then self.label348:destroy(); self.label348 = nil; end;
         if self.label52 ~= nil then self.label52:destroy(); self.label52 = nil; end;
         if self.label287 ~= nil then self.label287:destroy(); self.label287 = nil; end;
         if self.image56 ~= nil then self.image56:destroy(); self.image56 = nil; end;
@@ -8707,7 +10626,10 @@ local function constructNew_frmLoja_svg()
         if self.label236 ~= nil then self.label236:destroy(); self.label236 = nil; end;
         if self.label47 ~= nil then self.label47:destroy(); self.label47 = nil; end;
         if self.Arma36 ~= nil then self.Arma36:destroy(); self.Arma36 = nil; end;
+        if self.Armadura56 ~= nil then self.Armadura56:destroy(); self.Armadura56 = nil; end;
         if self.label48 ~= nil then self.label48:destroy(); self.label48 = nil; end;
+        if self.image124 ~= nil then self.image124:destroy(); self.image124 = nil; end;
+        if self.label386 ~= nil then self.label386:destroy(); self.label386 = nil; end;
         if self.label76 ~= nil then self.label76:destroy(); self.label76 = nil; end;
         if self.label230 ~= nil then self.label230:destroy(); self.label230 = nil; end;
         if self.image79 ~= nil then self.image79:destroy(); self.image79 = nil; end;
@@ -8716,12 +10638,15 @@ local function constructNew_frmLoja_svg()
         if self.label242 ~= nil then self.label242:destroy(); self.label242 = nil; end;
         if self.CorpoACorpo34 ~= nil then self.CorpoACorpo34:destroy(); self.CorpoACorpo34 = nil; end;
         if self.label258 ~= nil then self.label258:destroy(); self.label258 = nil; end;
+        if self.Arma54 ~= nil then self.Arma54:destroy(); self.Arma54 = nil; end;
         if self.label1 ~= nil then self.label1:destroy(); self.label1 = nil; end;
         if self.label176 ~= nil then self.label176:destroy(); self.label176 = nil; end;
         if self.label307 ~= nil then self.label307:destroy(); self.label307 = nil; end;
         if self.image9 ~= nil then self.image9:destroy(); self.image9 = nil; end;
         if self.image118 ~= nil then self.image118:destroy(); self.image118 = nil; end;
         if self.image45 ~= nil then self.image45:destroy(); self.image45 = nil; end;
+        if self.label340 ~= nil then self.label340:destroy(); self.label340 = nil; end;
+        if self.Armadura54 ~= nil then self.Armadura54:destroy(); self.Armadura54 = nil; end;
         if self.label109 ~= nil then self.label109:destroy(); self.label109 = nil; end;
         if self.label106 ~= nil then self.label106:destroy(); self.label106 = nil; end;
         if self.label103 ~= nil then self.label103:destroy(); self.label103 = nil; end;
@@ -8731,8 +10656,12 @@ local function constructNew_frmLoja_svg()
         if self.image107 ~= nil then self.image107:destroy(); self.image107 = nil; end;
         if self.label94 ~= nil then self.label94:destroy(); self.label94 = nil; end;
         if self.label212 ~= nil then self.label212:destroy(); self.label212 = nil; end;
+        if self.dataLink3 ~= nil then self.dataLink3:destroy(); self.dataLink3 = nil; end;
+        if self.label366 ~= nil then self.label366:destroy(); self.label366 = nil; end;
         if self.label29 ~= nil then self.label29:destroy(); self.label29 = nil; end;
+        if self.label372 ~= nil then self.label372:destroy(); self.label372 = nil; end;
         if self.label261 ~= nil then self.label261:destroy(); self.label261 = nil; end;
+        if self.label378 ~= nil then self.label378:destroy(); self.label378 = nil; end;
         if self.rectangle2 ~= nil then self.rectangle2:destroy(); self.rectangle2 = nil; end;
         if self.image95 ~= nil then self.image95:destroy(); self.image95 = nil; end;
         if self.label111 ~= nil then self.label111:destroy(); self.label111 = nil; end;
@@ -8746,6 +10675,7 @@ local function constructNew_frmLoja_svg()
         if self.label19 ~= nil then self.label19:destroy(); self.label19 = nil; end;
         if self.label284 ~= nil then self.label284:destroy(); self.label284 = nil; end;
         if self.CorpoACorpo38 ~= nil then self.CorpoACorpo38:destroy(); self.CorpoACorpo38 = nil; end;
+        if self.label381 ~= nil then self.label381:destroy(); self.label381 = nil; end;
         if self.label116 ~= nil then self.label116:destroy(); self.label116 = nil; end;
         if self.label268 ~= nil then self.label268:destroy(); self.label268 = nil; end;
         if self.image37 ~= nil then self.image37:destroy(); self.image37 = nil; end;
@@ -8754,9 +10684,11 @@ local function constructNew_frmLoja_svg()
         if self.label324 ~= nil then self.label324:destroy(); self.label324 = nil; end;
         if self.image91 ~= nil then self.image91:destroy(); self.image91 = nil; end;
         if self.label332 ~= nil then self.label332:destroy(); self.label332 = nil; end;
+        if self.label376 ~= nil then self.label376:destroy(); self.label376 = nil; end;
         if self.image52 ~= nil then self.image52:destroy(); self.image52 = nil; end;
         if self.label225 ~= nil then self.label225:destroy(); self.label225 = nil; end;
         if self.label278 ~= nil then self.label278:destroy(); self.label278 = nil; end;
+        if self.label334 ~= nil then self.label334:destroy(); self.label334 = nil; end;
         if self.label147 ~= nil then self.label147:destroy(); self.label147 = nil; end;
         if self.image92 ~= nil then self.image92:destroy(); self.image92 = nil; end;
         if self.label269 ~= nil then self.label269:destroy(); self.label269 = nil; end;
@@ -8765,15 +10697,22 @@ local function constructNew_frmLoja_svg()
         if self.label184 ~= nil then self.label184:destroy(); self.label184 = nil; end;
         if self.label2 ~= nil then self.label2:destroy(); self.label2 = nil; end;
         if self.label263 ~= nil then self.label263:destroy(); self.label263 = nil; end;
+        if self.label335 ~= nil then self.label335:destroy(); self.label335 = nil; end;
+        if self.Arma50 ~= nil then self.Arma50:destroy(); self.Arma50 = nil; end;
         if self.label89 ~= nil then self.label89:destroy(); self.label89 = nil; end;
+        if self.label375 ~= nil then self.label375:destroy(); self.label375 = nil; end;
         if self.label38 ~= nil then self.label38:destroy(); self.label38 = nil; end;
         if self.image63 ~= nil then self.image63:destroy(); self.image63 = nil; end;
+        if self.label401 ~= nil then self.label401:destroy(); self.label401 = nil; end;
         if self.label115 ~= nil then self.label115:destroy(); self.label115 = nil; end;
         if self.Arma20 ~= nil then self.Arma20:destroy(); self.Arma20 = nil; end;
         if self.label271 ~= nil then self.label271:destroy(); self.label271 = nil; end;
         if self.label159 ~= nil then self.label159:destroy(); self.label159 = nil; end;
         if self.image103 ~= nil then self.image103:destroy(); self.image103 = nil; end;
         if self.label323 ~= nil then self.label323:destroy(); self.label323 = nil; end;
+        if self.image140 ~= nil then self.image140:destroy(); self.image140 = nil; end;
+        if self.label382 ~= nil then self.label382:destroy(); self.label382 = nil; end;
+        if self.label377 ~= nil then self.label377:destroy(); self.label377 = nil; end;
         if self.label305 ~= nil then self.label305:destroy(); self.label305 = nil; end;
         if self.image58 ~= nil then self.image58:destroy(); self.image58 = nil; end;
         if self.label185 ~= nil then self.label185:destroy(); self.label185 = nil; end;
@@ -8785,26 +10724,34 @@ local function constructNew_frmLoja_svg()
         if self.Arma28 ~= nil then self.Arma28:destroy(); self.Arma28 = nil; end;
         if self.label142 ~= nil then self.label142:destroy(); self.label142 = nil; end;
         if self.label315 ~= nil then self.label315:destroy(); self.label315 = nil; end;
+        if self.image123 ~= nil then self.image123:destroy(); self.image123 = nil; end;
         if self.Arma2 ~= nil then self.Arma2:destroy(); self.Arma2 = nil; end;
         if self.label200 ~= nil then self.label200:destroy(); self.label200 = nil; end;
         if self.label246 ~= nil then self.label246:destroy(); self.label246 = nil; end;
         if self.CorpoACorpo41 ~= nil then self.CorpoACorpo41:destroy(); self.CorpoACorpo41 = nil; end;
+        if self.Armadura46 ~= nil then self.Armadura46:destroy(); self.Armadura46 = nil; end;
         if self.CorpoACorpo27 ~= nil then self.CorpoACorpo27:destroy(); self.CorpoACorpo27 = nil; end;
         if self.label306 ~= nil then self.label306:destroy(); self.label306 = nil; end;
         if self.image97 ~= nil then self.image97:destroy(); self.image97 = nil; end;
         if self.image32 ~= nil then self.image32:destroy(); self.image32 = nil; end;
+        if self.label403 ~= nil then self.label403:destroy(); self.label403 = nil; end;
         if self.CorpoACorpo32 ~= nil then self.CorpoACorpo32:destroy(); self.CorpoACorpo32 = nil; end;
+        if self.label347 ~= nil then self.label347:destroy(); self.label347 = nil; end;
         if self.Arma43 ~= nil then self.Arma43:destroy(); self.Arma43 = nil; end;
         if self.label198 ~= nil then self.label198:destroy(); self.label198 = nil; end;
         if self.image64 ~= nil then self.image64:destroy(); self.image64 = nil; end;
         if self.label313 ~= nil then self.label313:destroy(); self.label313 = nil; end;
+        if self.image125 ~= nil then self.image125:destroy(); self.image125 = nil; end;
         if self.image96 ~= nil then self.image96:destroy(); self.image96 = nil; end;
         if self.label73 ~= nil then self.label73:destroy(); self.label73 = nil; end;
         if self.image54 ~= nil then self.image54:destroy(); self.image54 = nil; end;
+        if self.image133 ~= nil then self.image133:destroy(); self.image133 = nil; end;
+        if self.label358 ~= nil then self.label358:destroy(); self.label358 = nil; end;
         if self.Arma17 ~= nil then self.Arma17:destroy(); self.Arma17 = nil; end;
         if self.image38 ~= nil then self.image38:destroy(); self.image38 = nil; end;
         if self.label235 ~= nil then self.label235:destroy(); self.label235 = nil; end;
         if self.label254 ~= nil then self.label254:destroy(); self.label254 = nil; end;
+        if self.label355 ~= nil then self.label355:destroy(); self.label355 = nil; end;
         if self.label224 ~= nil then self.label224:destroy(); self.label224 = nil; end;
         if self.label23 ~= nil then self.label23:destroy(); self.label23 = nil; end;
         if self.label32 ~= nil then self.label32:destroy(); self.label32 = nil; end;
@@ -8821,6 +10768,9 @@ local function constructNew_frmLoja_svg()
         if self.CorpoACorpo28 ~= nil then self.CorpoACorpo28:destroy(); self.CorpoACorpo28 = nil; end;
         if self.label248 ~= nil then self.label248:destroy(); self.label248 = nil; end;
         if self.label93 ~= nil then self.label93:destroy(); self.label93 = nil; end;
+        if self.image132 ~= nil then self.image132:destroy(); self.image132 = nil; end;
+        if self.label390 ~= nil then self.label390:destroy(); self.label390 = nil; end;
+        if self.image146 ~= nil then self.image146:destroy(); self.image146 = nil; end;
         if self.Arma23 ~= nil then self.Arma23:destroy(); self.Arma23 = nil; end;
         if self.label325 ~= nil then self.label325:destroy(); self.label325 = nil; end;
         if self.label273 ~= nil then self.label273:destroy(); self.label273 = nil; end;
@@ -8828,23 +10778,34 @@ local function constructNew_frmLoja_svg()
         if self.label295 ~= nil then self.label295:destroy(); self.label295 = nil; end;
         if self.image108 ~= nil then self.image108:destroy(); self.image108 = nil; end;
         if self.label6 ~= nil then self.label6:destroy(); self.label6 = nil; end;
+        if self.label361 ~= nil then self.label361:destroy(); self.label361 = nil; end;
         if self.image35 ~= nil then self.image35:destroy(); self.image35 = nil; end;
         if self.label129 ~= nil then self.label129:destroy(); self.label129 = nil; end;
+        if self.image145 ~= nil then self.image145:destroy(); self.image145 = nil; end;
         if self.image89 ~= nil then self.image89:destroy(); self.image89 = nil; end;
         if self.image12 ~= nil then self.image12:destroy(); self.image12 = nil; end;
         if self.LojaArmaduras ~= nil then self.LojaArmaduras:destroy(); self.LojaArmaduras = nil; end;
+        if self.label389 ~= nil then self.label389:destroy(); self.label389 = nil; end;
         if self.label37 ~= nil then self.label37:destroy(); self.label37 = nil; end;
         if self.image93 ~= nil then self.image93:destroy(); self.image93 = nil; end;
+        if self.Arma55 ~= nil then self.Arma55:destroy(); self.Arma55 = nil; end;
         if self.image90 ~= nil then self.image90:destroy(); self.image90 = nil; end;
         if self.label214 ~= nil then self.label214:destroy(); self.label214 = nil; end;
+        if self.label380 ~= nil then self.label380:destroy(); self.label380 = nil; end;
         if self.label215 ~= nil then self.label215:destroy(); self.label215 = nil; end;
         if self.Arma30 ~= nil then self.Arma30:destroy(); self.Arma30 = nil; end;
         if self.label196 ~= nil then self.label196:destroy(); self.label196 = nil; end;
         if self.label330 ~= nil then self.label330:destroy(); self.label330 = nil; end;
+        if self.label339 ~= nil then self.label339:destroy(); self.label339 = nil; end;
+        if self.Armadura50 ~= nil then self.Armadura50:destroy(); self.Armadura50 = nil; end;
+        if self.label336 ~= nil then self.label336:destroy(); self.label336 = nil; end;
         if self.label86 ~= nil then self.label86:destroy(); self.label86 = nil; end;
+        if self.label360 ~= nil then self.label360:destroy(); self.label360 = nil; end;
         if self.image59 ~= nil then self.image59:destroy(); self.image59 = nil; end;
         if self.image75 ~= nil then self.image75:destroy(); self.image75 = nil; end;
         if self.label53 ~= nil then self.label53:destroy(); self.label53 = nil; end;
+        if self.image134 ~= nil then self.image134:destroy(); self.image134 = nil; end;
+        if self.image144 ~= nil then self.image144:destroy(); self.image144 = nil; end;
         if self.Arma1 ~= nil then self.Arma1:destroy(); self.Arma1 = nil; end;
         if self.label317 ~= nil then self.label317:destroy(); self.label317 = nil; end;
         if self.label133 ~= nil then self.label133:destroy(); self.label133 = nil; end;
@@ -8856,10 +10817,12 @@ local function constructNew_frmLoja_svg()
         if self.image121 ~= nil then self.image121:destroy(); self.image121 = nil; end;
         if self.label42 ~= nil then self.label42:destroy(); self.label42 = nil; end;
         if self.Arma16 ~= nil then self.Arma16:destroy(); self.Arma16 = nil; end;
+        if self.label402 ~= nil then self.label402:destroy(); self.label402 = nil; end;
         if self.label333 ~= nil then self.label333:destroy(); self.label333 = nil; end;
         if self.image26 ~= nil then self.image26:destroy(); self.image26 = nil; end;
         if self.image73 ~= nil then self.image73:destroy(); self.image73 = nil; end;
         if self.label102 ~= nil then self.label102:destroy(); self.label102 = nil; end;
+        if self.label342 ~= nil then self.label342:destroy(); self.label342 = nil; end;
         if self.label132 ~= nil then self.label132:destroy(); self.label132 = nil; end;
         if self.label181 ~= nil then self.label181:destroy(); self.label181 = nil; end;
         if self.image76 ~= nil then self.image76:destroy(); self.image76 = nil; end;
@@ -8867,14 +10830,18 @@ local function constructNew_frmLoja_svg()
         if self.label166 ~= nil then self.label166:destroy(); self.label166 = nil; end;
         if self.image100 ~= nil then self.image100:destroy(); self.image100 = nil; end;
         if self.CorpoACorpo42 ~= nil then self.CorpoACorpo42:destroy(); self.CorpoACorpo42 = nil; end;
+        if self.label371 ~= nil then self.label371:destroy(); self.label371 = nil; end;
         if self.label199 ~= nil then self.label199:destroy(); self.label199 = nil; end;
+        if self.label341 ~= nil then self.label341:destroy(); self.label341 = nil; end;
         if self.Arma5 ~= nil then self.Arma5:destroy(); self.Arma5 = nil; end;
         if self.label10 ~= nil then self.label10:destroy(); self.label10 = nil; end;
         if self.label175 ~= nil then self.label175:destroy(); self.label175 = nil; end;
         if self.layout2 ~= nil then self.layout2:destroy(); self.layout2 = nil; end;
         if self.image50 ~= nil then self.image50:destroy(); self.image50 = nil; end;
         if self.label304 ~= nil then self.label304:destroy(); self.label304 = nil; end;
+        if self.image149 ~= nil then self.image149:destroy(); self.image149 = nil; end;
         if self.label39 ~= nil then self.label39:destroy(); self.label39 = nil; end;
+        if self.Armadura48 ~= nil then self.Armadura48:destroy(); self.Armadura48 = nil; end;
         if self.image72 ~= nil then self.image72:destroy(); self.image72 = nil; end;
         if self.label79 ~= nil then self.label79:destroy(); self.label79 = nil; end;
         if self.label280 ~= nil then self.label280:destroy(); self.label280 = nil; end;
@@ -8887,6 +10854,7 @@ local function constructNew_frmLoja_svg()
         if self.label240 ~= nil then self.label240:destroy(); self.label240 = nil; end;
         if self.label309 ~= nil then self.label309:destroy(); self.label309 = nil; end;
         if self.label108 ~= nil then self.label108:destroy(); self.label108 = nil; end;
+        if self.label357 ~= nil then self.label357:destroy(); self.label357 = nil; end;
         if self.label292 ~= nil then self.label292:destroy(); self.label292 = nil; end;
         if self.label7 ~= nil then self.label7:destroy(); self.label7 = nil; end;
         if self.label50 ~= nil then self.label50:destroy(); self.label50 = nil; end;
@@ -8897,6 +10865,7 @@ local function constructNew_frmLoja_svg()
         if self.LojaCorpoACorpo ~= nil then self.LojaCorpoACorpo:destroy(); self.LojaCorpoACorpo = nil; end;
         if self.label310 ~= nil then self.label310:destroy(); self.label310 = nil; end;
         if self.label312 ~= nil then self.label312:destroy(); self.label312 = nil; end;
+        if self.label365 ~= nil then self.label365:destroy(); self.label365 = nil; end;
         if self.label297 ~= nil then self.label297:destroy(); self.label297 = nil; end;
         if self.label124 ~= nil then self.label124:destroy(); self.label124 = nil; end;
         if self.image4 ~= nil then self.image4:destroy(); self.image4 = nil; end;
@@ -8906,9 +10875,12 @@ local function constructNew_frmLoja_svg()
         if self.image13 ~= nil then self.image13:destroy(); self.image13 = nil; end;
         if self.image44 ~= nil then self.image44:destroy(); self.image44 = nil; end;
         if self.label207 ~= nil then self.label207:destroy(); self.label207 = nil; end;
+        if self.labSoma5 ~= nil then self.labSoma5:destroy(); self.labSoma5 = nil; end;
+        if self.label391 ~= nil then self.label391:destroy(); self.label391 = nil; end;
         if self.label209 ~= nil then self.label209:destroy(); self.label209 = nil; end;
         if self.label262 ~= nil then self.label262:destroy(); self.label262 = nil; end;
         if self.image53 ~= nil then self.image53:destroy(); self.image53 = nil; end;
+        if self.label394 ~= nil then self.label394:destroy(); self.label394 = nil; end;
         if self.label110 ~= nil then self.label110:destroy(); self.label110 = nil; end;
         if self.CorpoACorpo33 ~= nil then self.CorpoACorpo33:destroy(); self.CorpoACorpo33 = nil; end;
         if self.label326 ~= nil then self.label326:destroy(); self.label326 = nil; end;
@@ -8916,22 +10888,27 @@ local function constructNew_frmLoja_svg()
         if self.label151 ~= nil then self.label151:destroy(); self.label151 = nil; end;
         if self.image30 ~= nil then self.image30:destroy(); self.image30 = nil; end;
         if self.label138 ~= nil then self.label138:destroy(); self.label138 = nil; end;
+        if self.Arma46 ~= nil then self.Arma46:destroy(); self.Arma46 = nil; end;
         if self.image111 ~= nil then self.image111:destroy(); self.image111 = nil; end;
         if self.label40 ~= nil then self.label40:destroy(); self.label40 = nil; end;
+        if self.Arma51 ~= nil then self.Arma51:destroy(); self.Arma51 = nil; end;
         if self.image5 ~= nil then self.image5:destroy(); self.image5 = nil; end;
         if self.image7 ~= nil then self.image7:destroy(); self.image7 = nil; end;
         if self.label57 ~= nil then self.label57:destroy(); self.label57 = nil; end;
         if self.label188 ~= nil then self.label188:destroy(); self.label188 = nil; end;
         if self.image98 ~= nil then self.image98:destroy(); self.image98 = nil; end;
+        if self.label343 ~= nil then self.label343:destroy(); self.label343 = nil; end;
         if self.label71 ~= nil then self.label71:destroy(); self.label71 = nil; end;
         if self.image20 ~= nil then self.image20:destroy(); self.image20 = nil; end;
         if self.Arma39 ~= nil then self.Arma39:destroy(); self.Arma39 = nil; end;
         if self.image120 ~= nil then self.image120:destroy(); self.image120 = nil; end;
         if self.label160 ~= nil then self.label160:destroy(); self.label160 = nil; end;
         if self.label193 ~= nil then self.label193:destroy(); self.label193 = nil; end;
+        if self.image137 ~= nil then self.image137:destroy(); self.image137 = nil; end;
         if self.button2 ~= nil then self.button2:destroy(); self.button2 = nil; end;
         if self.label22 ~= nil then self.label22:destroy(); self.label22 = nil; end;
         if self.label177 ~= nil then self.label177:destroy(); self.label177 = nil; end;
+        if self.Armadura47 ~= nil then self.Armadura47:destroy(); self.Armadura47 = nil; end;
         if self.label144 ~= nil then self.label144:destroy(); self.label144 = nil; end;
         if self.label13 ~= nil then self.label13:destroy(); self.label13 = nil; end;
         if self.label27 ~= nil then self.label27:destroy(); self.label27 = nil; end;
@@ -8939,14 +10916,18 @@ local function constructNew_frmLoja_svg()
         if self.label68 ~= nil then self.label68:destroy(); self.label68 = nil; end;
         if self.CorpoACorpo37 ~= nil then self.CorpoACorpo37:destroy(); self.CorpoACorpo37 = nil; end;
         if self.ApresentaLoja ~= nil then self.ApresentaLoja:destroy(); self.ApresentaLoja = nil; end;
+        if self.Armadura55 ~= nil then self.Armadura55:destroy(); self.Armadura55 = nil; end;
         if self.label67 ~= nil then self.label67:destroy(); self.label67 = nil; end;
         if self.label270 ~= nil then self.label270:destroy(); self.label270 = nil; end;
         if self.label247 ~= nil then self.label247:destroy(); self.label247 = nil; end;
         if self.label275 ~= nil then self.label275:destroy(); self.label275 = nil; end;
+        if self.label362 ~= nil then self.label362:destroy(); self.label362 = nil; end;
         if self.button1 ~= nil then self.button1:destroy(); self.button1 = nil; end;
         if self.label140 ~= nil then self.label140:destroy(); self.label140 = nil; end;
         if self.label257 ~= nil then self.label257:destroy(); self.label257 = nil; end;
+        if self.image138 ~= nil then self.image138:destroy(); self.image138 = nil; end;
         if self.label69 ~= nil then self.label69:destroy(); self.label69 = nil; end;
+        if self.label352 ~= nil then self.label352:destroy(); self.label352 = nil; end;
         if self.label31 ~= nil then self.label31:destroy(); self.label31 = nil; end;
         if self.label105 ~= nil then self.label105:destroy(); self.label105 = nil; end;
         if self.label154 ~= nil then self.label154:destroy(); self.label154 = nil; end;
@@ -8954,6 +10935,7 @@ local function constructNew_frmLoja_svg()
         if self.label203 ~= nil then self.label203:destroy(); self.label203 = nil; end;
         if self.label126 ~= nil then self.label126:destroy(); self.label126 = nil; end;
         if self.label234 ~= nil then self.label234:destroy(); self.label234 = nil; end;
+        if self.image141 ~= nil then self.image141:destroy(); self.image141 = nil; end;
         if self.label301 ~= nil then self.label301:destroy(); self.label301 = nil; end;
         if self.label41 ~= nil then self.label41:destroy(); self.label41 = nil; end;
         if self.labSoma2 ~= nil then self.labSoma2:destroy(); self.labSoma2 = nil; end;
@@ -8974,6 +10956,7 @@ local function constructNew_frmLoja_svg()
         if self.label253 ~= nil then self.label253:destroy(); self.label253 = nil; end;
         if self.image67 ~= nil then self.image67:destroy(); self.image67 = nil; end;
         if self.image29 ~= nil then self.image29:destroy(); self.image29 = nil; end;
+        if self.Arma53 ~= nil then self.Arma53:destroy(); self.Arma53 = nil; end;
         if self.label289 ~= nil then self.label289:destroy(); self.label289 = nil; end;
         if self.label78 ~= nil then self.label78:destroy(); self.label78 = nil; end;
         if self.label222 ~= nil then self.label222:destroy(); self.label222 = nil; end;
@@ -8983,6 +10966,7 @@ local function constructNew_frmLoja_svg()
         if self.label211 ~= nil then self.label211:destroy(); self.label211 = nil; end;
         if self.CorpoACorpo29 ~= nil then self.CorpoACorpo29:destroy(); self.CorpoACorpo29 = nil; end;
         if self.CorpoACorpo31 ~= nil then self.CorpoACorpo31:destroy(); self.CorpoACorpo31 = nil; end;
+        if self.label387 ~= nil then self.label387:destroy(); self.label387 = nil; end;
         if self.label167 ~= nil then self.label167:destroy(); self.label167 = nil; end;
         if self.image3 ~= nil then self.image3:destroy(); self.image3 = nil; end;
         if self.image28 ~= nil then self.image28:destroy(); self.image28 = nil; end;
@@ -8992,6 +10976,7 @@ local function constructNew_frmLoja_svg()
         if self.label114 ~= nil then self.label114:destroy(); self.label114 = nil; end;
         if self.label197 ~= nil then self.label197:destroy(); self.label197 = nil; end;
         if self.label259 ~= nil then self.label259:destroy(); self.label259 = nil; end;
+        if self.label379 ~= nil then self.label379:destroy(); self.label379 = nil; end;
         if self.label135 ~= nil then self.label135:destroy(); self.label135 = nil; end;
         if self.label155 ~= nil then self.label155:destroy(); self.label155 = nil; end;
         if self.label221 ~= nil then self.label221:destroy(); self.label221 = nil; end;
@@ -9003,16 +10988,25 @@ local function constructNew_frmLoja_svg()
         if self.image114 ~= nil then self.image114:destroy(); self.image114 = nil; end;
         if self.label21 ~= nil then self.label21:destroy(); self.label21 = nil; end;
         if self.label120 ~= nil then self.label120:destroy(); self.label120 = nil; end;
+        if self.label349 ~= nil then self.label349:destroy(); self.label349 = nil; end;
         if self.image47 ~= nil then self.image47:destroy(); self.image47 = nil; end;
         if self.label245 ~= nil then self.label245:destroy(); self.label245 = nil; end;
         if self.dataLink2 ~= nil then self.dataLink2:destroy(); self.dataLink2 = nil; end;
+        if self.Armadura45 ~= nil then self.Armadura45:destroy(); self.Armadura45 = nil; end;
+        if self.label370 ~= nil then self.label370:destroy(); self.label370 = nil; end;
         if self.image78 ~= nil then self.image78:destroy(); self.image78 = nil; end;
         if self.CorpoACorpo39 ~= nil then self.CorpoACorpo39:destroy(); self.CorpoACorpo39 = nil; end;
+        if self.Arma48 ~= nil then self.Arma48:destroy(); self.Arma48 = nil; end;
         if self.label130 ~= nil then self.label130:destroy(); self.label130 = nil; end;
+        if self.label396 ~= nil then self.label396:destroy(); self.label396 = nil; end;
         if self.image22 ~= nil then self.image22:destroy(); self.image22 = nil; end;
+        if self.label398 ~= nil then self.label398:destroy(); self.label398 = nil; end;
         if self.label54 ~= nil then self.label54:destroy(); self.label54 = nil; end;
         if self.label191 ~= nil then self.label191:destroy(); self.label191 = nil; end;
+        if self.Armadura53 ~= nil then self.Armadura53:destroy(); self.Armadura53 = nil; end;
         if self.scrollBox3 ~= nil then self.scrollBox3:destroy(); self.scrollBox3 = nil; end;
+        if self.label369 ~= nil then self.label369:destroy(); self.label369 = nil; end;
+        if self.label345 ~= nil then self.label345:destroy(); self.label345 = nil; end;
         if self.label152 ~= nil then self.label152:destroy(); self.label152 = nil; end;
         if self.Arma21 ~= nil then self.Arma21:destroy(); self.Arma21 = nil; end;
         if self.label182 ~= nil then self.label182:destroy(); self.label182 = nil; end;
@@ -9024,9 +11018,11 @@ local function constructNew_frmLoja_svg()
         if self.Arma25 ~= nil then self.Arma25:destroy(); self.Arma25 = nil; end;
         if self.label18 ~= nil then self.label18:destroy(); self.label18 = nil; end;
         if self.label255 ~= nil then self.label255:destroy(); self.label255 = nil; end;
+        if self.label395 ~= nil then self.label395:destroy(); self.label395 = nil; end;
         if self.label252 ~= nil then self.label252:destroy(); self.label252 = nil; end;
         if self.CorpoACorpo26 ~= nil then self.CorpoACorpo26:destroy(); self.CorpoACorpo26 = nil; end;
         if self.label62 ~= nil then self.label62:destroy(); self.label62 = nil; end;
+        if self.label337 ~= nil then self.label337:destroy(); self.label337 = nil; end;
         if self.label117 ~= nil then self.label117:destroy(); self.label117 = nil; end;
         if self.label238 ~= nil then self.label238:destroy(); self.label238 = nil; end;
         if self.label303 ~= nil then self.label303:destroy(); self.label303 = nil; end;
@@ -9037,6 +11033,7 @@ local function constructNew_frmLoja_svg()
         if self.image122 ~= nil then self.image122:destroy(); self.image122 = nil; end;
         if self.Arma42 ~= nil then self.Arma42:destroy(); self.Arma42 = nil; end;
         if self.scrollBox1 ~= nil then self.scrollBox1:destroy(); self.scrollBox1 = nil; end;
+        if self.label346 ~= nil then self.label346:destroy(); self.label346 = nil; end;
         if self.label171 ~= nil then self.label171:destroy(); self.label171 = nil; end;
         if self.label33 ~= nil then self.label33:destroy(); self.label33 = nil; end;
         if self.image82 ~= nil then self.image82:destroy(); self.image82 = nil; end;
@@ -9052,16 +11049,25 @@ local function constructNew_frmLoja_svg()
         if self.label316 ~= nil then self.label316:destroy(); self.label316 = nil; end;
         if self.label233 ~= nil then self.label233:destroy(); self.label233 = nil; end;
         if self.label83 ~= nil then self.label83:destroy(); self.label83 = nil; end;
+        if self.image128 ~= nil then self.image128:destroy(); self.image128 = nil; end;
+        if self.label344 ~= nil then self.label344:destroy(); self.label344 = nil; end;
         if self.label165 ~= nil then self.label165:destroy(); self.label165 = nil; end;
         if self.label174 ~= nil then self.label174:destroy(); self.label174 = nil; end;
+        if self.label354 ~= nil then self.label354:destroy(); self.label354 = nil; end;
+        if self.label374 ~= nil then self.label374:destroy(); self.label374 = nil; end;
         if self.label98 ~= nil then self.label98:destroy(); self.label98 = nil; end;
         if self.Arma4 ~= nil then self.Arma4:destroy(); self.Arma4 = nil; end;
         if self.label113 ~= nil then self.label113:destroy(); self.label113 = nil; end;
         if self.label274 ~= nil then self.label274:destroy(); self.label274 = nil; end;
+        if self.Arma49 ~= nil then self.Arma49:destroy(); self.Arma49 = nil; end;
+        if self.image139 ~= nil then self.image139:destroy(); self.image139 = nil; end;
+        if self.image129 ~= nil then self.image129:destroy(); self.image129 = nil; end;
         if self.label55 ~= nil then self.label55:destroy(); self.label55 = nil; end;
         if self.label66 ~= nil then self.label66:destroy(); self.label66 = nil; end;
+        if self.image147 ~= nil then self.image147:destroy(); self.image147 = nil; end;
         if self.label26 ~= nil then self.label26:destroy(); self.label26 = nil; end;
         if self.image14 ~= nil then self.image14:destroy(); self.image14 = nil; end;
+        if self.label353 ~= nil then self.label353:destroy(); self.label353 = nil; end;
         if self.label112 ~= nil then self.label112:destroy(); self.label112 = nil; end;
         if self.image33 ~= nil then self.image33:destroy(); self.image33 = nil; end;
         if self.image2 ~= nil then self.image2:destroy(); self.image2 = nil; end;
@@ -9080,7 +11086,12 @@ local function constructNew_frmLoja_svg()
         if self.label60 ~= nil then self.label60:destroy(); self.label60 = nil; end;
         if self.label64 ~= nil then self.label64:destroy(); self.label64 = nil; end;
         if self.label286 ~= nil then self.label286:destroy(); self.label286 = nil; end;
+        if self.layout3 ~= nil then self.layout3:destroy(); self.layout3 = nil; end;
+        if self.image127 ~= nil then self.image127:destroy(); self.image127 = nil; end;
+        if self.Arma47 ~= nil then self.Arma47:destroy(); self.Arma47 = nil; end;
+        if self.label384 ~= nil then self.label384:destroy(); self.label384 = nil; end;
         if self.label311 ~= nil then self.label311:destroy(); self.label311 = nil; end;
+        if self.label405 ~= nil then self.label405:destroy(); self.label405 = nil; end;
         if self.label150 ~= nil then self.label150:destroy(); self.label150 = nil; end;
         if self.label173 ~= nil then self.label173:destroy(); self.label173 = nil; end;
         if self.Arma31 ~= nil then self.Arma31:destroy(); self.Arma31 = nil; end;
@@ -9094,6 +11105,8 @@ local function constructNew_frmLoja_svg()
         if self.label320 ~= nil then self.label320:destroy(); self.label320 = nil; end;
         if self.label136 ~= nil then self.label136:destroy(); self.label136 = nil; end;
         if self.image39 ~= nil then self.image39:destroy(); self.image39 = nil; end;
+        if self.label356 ~= nil then self.label356:destroy(); self.label356 = nil; end;
+        if self.label383 ~= nil then self.label383:destroy(); self.label383 = nil; end;
         if self.label290 ~= nil then self.label290:destroy(); self.label290 = nil; end;
         if self.label74 ~= nil then self.label74:destroy(); self.label74 = nil; end;
         if self.label189 ~= nil then self.label189:destroy(); self.label189 = nil; end;
@@ -9111,6 +11124,7 @@ local function constructNew_frmLoja_svg()
         if self.label249 ~= nil then self.label249:destroy(); self.label249 = nil; end;
         if self.Arma14 ~= nil then self.Arma14:destroy(); self.Arma14 = nil; end;
         if self.image84 ~= nil then self.image84:destroy(); self.image84 = nil; end;
+        if self.label400 ~= nil then self.label400:destroy(); self.label400 = nil; end;
         if self.Arma27 ~= nil then self.Arma27:destroy(); self.Arma27 = nil; end;
         if self.image16 ~= nil then self.image16:destroy(); self.image16 = nil; end;
         if self.label9 ~= nil then self.label9:destroy(); self.label9 = nil; end;
@@ -9123,6 +11137,8 @@ local function constructNew_frmLoja_svg()
         if self.label308 ~= nil then self.label308:destroy(); self.label308 = nil; end;
         if self.label137 ~= nil then self.label137:destroy(); self.label137 = nil; end;
         if self.label80 ~= nil then self.label80:destroy(); self.label80 = nil; end;
+        if self.label385 ~= nil then self.label385:destroy(); self.label385 = nil; end;
+        if self.label392 ~= nil then self.label392:destroy(); self.label392 = nil; end;
         if self.label232 ~= nil then self.label232:destroy(); self.label232 = nil; end;
         if self.label314 ~= nil then self.label314:destroy(); self.label314 = nil; end;
         if self.label118 ~= nil then self.label118:destroy(); self.label118 = nil; end;
@@ -9130,7 +11146,10 @@ local function constructNew_frmLoja_svg()
         if self.label100 ~= nil then self.label100:destroy(); self.label100 = nil; end;
         if self.label156 ~= nil then self.label156:destroy(); self.label156 = nil; end;
         if self.label250 ~= nil then self.label250:destroy(); self.label250 = nil; end;
+        if self.image131 ~= nil then self.image131:destroy(); self.image131 = nil; end;
+        if self.image143 ~= nil then self.image143:destroy(); self.image143 = nil; end;
         if self.Arma6 ~= nil then self.Arma6:destroy(); self.Arma6 = nil; end;
+        if self.image130 ~= nil then self.image130:destroy(); self.image130 = nil; end;
         if self.Arma10 ~= nil then self.Arma10:destroy(); self.Arma10 = nil; end;
         if self.label168 ~= nil then self.label168:destroy(); self.label168 = nil; end;
         if self.dataLink1 ~= nil then self.dataLink1:destroy(); self.dataLink1 = nil; end;
@@ -9140,12 +11159,14 @@ local function constructNew_frmLoja_svg()
         if self.image116 ~= nil then self.image116:destroy(); self.image116 = nil; end;
         if self.label187 ~= nil then self.label187:destroy(); self.label187 = nil; end;
         if self.label241 ~= nil then self.label241:destroy(); self.label241 = nil; end;
+        if self.label373 ~= nil then self.label373:destroy(); self.label373 = nil; end;
         if self.label36 ~= nil then self.label36:destroy(); self.label36 = nil; end;
         if self.rectangle3 ~= nil then self.rectangle3:destroy(); self.rectangle3 = nil; end;
         if self.image17 ~= nil then self.image17:destroy(); self.image17 = nil; end;
         if self.Arma18 ~= nil then self.Arma18:destroy(); self.Arma18 = nil; end;
         if self.label291 ~= nil then self.label291:destroy(); self.label291 = nil; end;
         if self.label294 ~= nil then self.label294:destroy(); self.label294 = nil; end;
+        if self.label388 ~= nil then self.label388:destroy(); self.label388 = nil; end;
         if self.Arma9 ~= nil then self.Arma9:destroy(); self.Arma9 = nil; end;
         if self.label226 ~= nil then self.label226:destroy(); self.label226 = nil; end;
         if self.label218 ~= nil then self.label218:destroy(); self.label218 = nil; end;
@@ -9156,24 +11177,30 @@ local function constructNew_frmLoja_svg()
         if self.label183 ~= nil then self.label183:destroy(); self.label183 = nil; end;
         if self.Arma19 ~= nil then self.Arma19:destroy(); self.Arma19 = nil; end;
         if self.label153 ~= nil then self.label153:destroy(); self.label153 = nil; end;
+        if self.label404 ~= nil then self.label404:destroy(); self.label404 = nil; end;
         if self.label87 ~= nil then self.label87:destroy(); self.label87 = nil; end;
         if self.label104 ~= nil then self.label104:destroy(); self.label104 = nil; end;
         if self.Arma32 ~= nil then self.Arma32:destroy(); self.Arma32 = nil; end;
         if self.image112 ~= nil then self.image112:destroy(); self.image112 = nil; end;
         if self.Arma13 ~= nil then self.Arma13:destroy(); self.Arma13 = nil; end;
         if self.image113 ~= nil then self.image113:destroy(); self.image113 = nil; end;
+        if self.label363 ~= nil then self.label363:destroy(); self.label363 = nil; end;
+        if self.label397 ~= nil then self.label397:destroy(); self.label397 = nil; end;
         if self.label25 ~= nil then self.label25:destroy(); self.label25 = nil; end;
         if self.image23 ~= nil then self.image23:destroy(); self.image23 = nil; end;
         if self.image31 ~= nil then self.image31:destroy(); self.image31 = nil; end;
         if self.label5 ~= nil then self.label5:destroy(); self.label5 = nil; end;
         if self.label296 ~= nil then self.label296:destroy(); self.label296 = nil; end;
         if self.label141 ~= nil then self.label141:destroy(); self.label141 = nil; end;
+        if self.Armadura51 ~= nil then self.Armadura51:destroy(); self.Armadura51 = nil; end;
         if self.label277 ~= nil then self.label277:destroy(); self.label277 = nil; end;
+        if self.Arma52 ~= nil then self.Arma52:destroy(); self.Arma52 = nil; end;
         if self.image43 ~= nil then self.image43:destroy(); self.image43 = nil; end;
         if self.label134 ~= nil then self.label134:destroy(); self.label134 = nil; end;
         if self.label243 ~= nil then self.label243:destroy(); self.label243 = nil; end;
         if self.label260 ~= nil then self.label260:destroy(); self.label260 = nil; end;
         if self.label276 ~= nil then self.label276:destroy(); self.label276 = nil; end;
+        if self.label368 ~= nil then self.label368:destroy(); self.label368 = nil; end;
         if self.image21 ~= nil then self.image21:destroy(); self.image21 = nil; end;
         if self.image102 ~= nil then self.image102:destroy(); self.image102 = nil; end;
         self:_oldLFMDestroy();

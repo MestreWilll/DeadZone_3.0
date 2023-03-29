@@ -1948,31 +1948,31 @@ end;
 	
 </form>
 =================CORPO A CORPO=======================================================
-Altere esse comentario para <!-- 2 imagem --> <!-- 44 imagem -->
-Eu quero que altere todos os field para 44, exemplo field="ItemNome2" para field="ItemNome44" faça isso com todas field
-Exemplo: field="Preco2" para field="44" e faça isso todos os field="Exemplo44" 44 na frente do nome dentro da field 
-Outro exemplo: field="Preco2" pra field="Preco44" E as mudanças são feitas apenas dentro das field e name="Aqui dentro"
-Acrescente também o: name="Arma2" para 44 
-mude apenas um comentario que é o 1 imagem para 44 o restante dos comentarios troque por "//"
+Altere esse comentario para <!-- 44 imagem --> <!-- 45 imagem -->
+Eu quero que altere todos os field para 45, exemplo field="ItemNome44" para field="ItemNome45" faça isso com todas field
+Exemplo: field="Preco44" para field="45" e faça isso todos os field="Exemplo45" 45 na frente do nome dentro da field 
+Outro exemplo: field="Preco44" pra field="Preco45" E as mudanças são feitas apenas dentro das field e name="Aqui dentro"
+Acrescente também o: name="Arma44" para 45 
+mude apenas um comentario que é o 44 imagem para 45 o restante dos comentarios troque por "//"
 ALTERE SOMENTE AS field e name, vc está alterando coisas que não deve alterar como a tag hint ou dentro de da tag <event>
 Altere somente se tiver sheet.exemplo ou name="exemplo" ou field="exemplo"
-Não se esqueça de alterar os comentarios para // antes, exemplo // Preço da arma so mantenha o primeiro comentario <!-- 44 imagem --> o restante é // antes
-        <!-- 2 imagem -->
-<layout name="CorpoACorpo2" width="480" height="174" left="413" top="88">
+Não se esqueça de alterar os comentarios para // antes, exemplo // Preço da arma so mantenha o primeiro comentario <!-- 45 imagem --> o restante é // antes
+<!-- 45 imagem -->
+<layout name="CorpoACorpo45" width="480" height="174" left="0" top="88">
   <image src="images/LojaCorpoACorpo.png" left="0" top="0" width="399" height="174"/>
   // Preço da arma
-  <label left="22.25" top="20.50" width="107.25" height="37.88" fontSize="22" hint="Preço da Arma" field="Preco2" horzTextAlign="center" fontStyle="bold" fontColor="yellow" fontFamily="kalam" cursor="handPoint" hitTest="true">
+  <label left="22.25" top="20.50" width="107.25" height="37.88" fontSize="22" hint="Preço da Arma" field="Preco45" horzTextAlign="center" fontStyle="bold" fontColor="yellow" fontFamily="kalam" cursor="handPoint" hitTest="true">
           <event name="onClick">
     if rrpg.getMesaDe(sheet).meuJogador.isMestre then
     dialogs.inputQuery("Carteira", "Novo valor:", "",
        function (valorPreenchido)
-            sheet.Preco2 = (sheet.Preco2 or 0 ) + valorPreenchido; 
+            sheet.Preco45 = (sheet.Preco45 or 0 ) + valorPreenchido; 
     end);
     end;
       </event>
   </label>
   // Comprar
-  <image left="41.38" top="61.75" width="67.88" height="30" cursor="handPoint" hitTest="true" hint="Clique aqui para comprar" name="Arma2">
+  <image left="41.38" top="61.75" width="67.88" height="30" cursor="handPoint" hitTest="true" hint="Clique aqui para comprar" name="Arma45">
       <event name="onClick">
                        local Soma = (sheet.Soma or 0) -1200;
                    if Soma >= 0 then
@@ -1985,22 +1985,21 @@ local minhaMesa = rrpg.getMesaDe(sheet);
   end;
       </event>
   </image>
-         -- imagem da arma
-         <image left="2.56" top="93.00" width="136.69" height="77.69" style="proportional" center="true" editable="true" field="ImagemArma2"/>
-          -- Nome do Item
-          <label left="197" top="10" width="249.25" height="39" fontSize="22" field="ItemNome2" fontStyle="bold" fontColor="black" fontFamily="kalam"/>
-          -- Iniciativa
-          <label left="207.88" top="51" width="49.88" height="31.38" horzTextAlign="center" field="Iniciativa2" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/>  
-          -- dano 
-          <label left="182.88" top="90" width="50.88" height="31.38" horzTextAlign="center" field="DanoItem2" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
-          -- Golpear
-          <label left="195.88" top="128" width="50.88" height="32" horzTextAlign="center" field="Golpear2" fontSize="15" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
-          -- Aparar
-          <label left="317.88" top="49" width="68.88" height="32" horzTextAlign="center" field="Aparar2" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
-          -- CD
-          <label left="317.88" top="89" width="68.88" height="32" horzTextAlign="center" field="CD2" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+         // imagem da arma
+         <image left="2.56" top="93.00" width="136.69" height="77.69" style="proportional" center="true" editable="true" field="ImagemArma45"/>
+          // Nome do Item
+          <label left="197" top="10" width="249.25" height="39" fontSize="22" field="ItemNome45" fontStyle="bold" fontColor="black" fontFamily="kalam"/>
+          // Absorver_Aparar
+          <label left="243.50" top="46" width="149.25" height="38.63" horzTextAlign="center" field="AbsorverAparar45" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/>  
+          // CD 
+          <label left="182" top="86.13" width="61.88" height="38.87" horzTextAlign="center" field="CD45" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+          // Penalidade_de_Movimento
+          <label left="300" top="127" width="61.88" height="38.88" horzTextAlign="center" field="PenalidadedeMovimento45" fontSize="15" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+          // Penalidade_de_Percepção
+          <label left="336" top="86.12" width="61.88" height="38.88" horzTextAlign="center" field="PenalidadeDePercepção45" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
       </layout>
-Caneta/Lápis 
+	  
+	  Caneta/Lápis 
 +1
 ???
 ???
@@ -2385,3 +2384,83 @@ sheet.Iniciativa42 = ''
 sheet.Golpear42 = ''
 sheet.Aparar42 = ''
 sheet.CD42 = ''
+
+Comece a colocar as informações da lista abaixo dentro do 'AQUI DENTRO' e enumerando seguidos apartir de 45
+sheet.ItemNome45 = ''
+sheet.AbsorverAparar45 = ''
+sheet.CD45
+sheet.PenalidadedeMovimento45 = ''
+sheet.PenalidadeDePercepcao45 = ''
+
+
+Jaqueta de Couro - Anti-Perfurante
++3/+3
+1
+???
+???
+
+Armadura Esportiva
++6/+6
+1
+-1
+???
+
+Armadura de Pneus 
++7/+7
+1
+-2
+???
+
+Armadura Acolchoada / Motim 
++7/+7
+2
+-2
+???
+
+Chapeamento de A ço Ruim
++5/+5 
+2
+-2
+???
+
+Bom Chapeamento de Aço
++6/+6
+3
+-3
+???
+
+Armadura Balística Leve 
++5/+5 
+2
+???
+???
+
+Armadura Balística Média 
++7/+7 
+2
+-1
+???
+
+Armadura Balística Pesada
++6/+6
+3
+-2
+???
+
+Excelente A rmadura Balística
++7/+7
+3
+-2
+???
+
+
+Escudo Anti-Motim
++5/+5ou+2/+2
+2
+???
+???
+
+Escudo B alístico
++6/+6ou+1/+1
+3
+-2

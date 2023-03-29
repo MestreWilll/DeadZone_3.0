@@ -27,7 +27,7 @@
         <image left="431.25" top="96.38" width="123.25" height="45.75" cursor="handPoint" hitTest="true">
             <event name="onClick">
             self.ApresentaLoja.visible = false;
-           
+            self.LojaArmaduras.visible = true;
             </event>
         </image>
     </layout>   

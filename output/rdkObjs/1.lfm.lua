@@ -9763,7 +9763,7 @@ local function constructNew_frmDZ_Ficha1_svg()
             
             sheet.ItemNome18 = 'Missil de Tanque'
             sheet.Iniciativa18 = '-4'
-            sheet.DanoItem18 = '+10/+10'
+            sheet.DanoItem18 = '+10-+10'
             sheet.Alcance18 = 'E'
             sheet.Cadencia18 = 'Único'
             sheet.Municao18 = '1'
@@ -9779,7 +9779,7 @@ local function constructNew_frmDZ_Ficha1_svg()
             
             sheet.ItemNome20 = 'Molotov'
             sheet.Iniciativa20 = '-1'
-            sheet.DanoItem20 = '+6/+6'
+            sheet.DanoItem20 = '+6+6'
             sheet.Alcance20 = 'C'
             sheet.Cadencia20 = 'Único'
             sheet.Municao20 = '1'
@@ -9793,27 +9793,28 @@ local function constructNew_frmDZ_Ficha1_svg()
             sheet.ClasseDeDureza21 = '3' 
             sheet.ItemNome22 = 'Mina, Anti-Veículo'
             sheet.Iniciativa22 = '???'
-            sheet.DanoItem22 = '+10/+10'
+            sheet.DanoItem22 = '+10-+10'
             sheet.Alcance22 = '5m'
             sheet.Cadencia22 = '???'
             sheet.Municao22 = '1'
             sheet.ClasseDeDureza22 = '5'
             sheet.ItemNome23 = 'Artilharia Leve'
             sheet.Iniciativa23 = '-4'
-            sheet.DanoItem23 = '+10/+10'
+            sheet.DanoItem23 = '+10-+10'
             sheet.Alcance23 = '1m'
             sheet.Cadencia23 = 'Longo'
             sheet.Municao23 = 'Cinto'
             sheet.ClasseDeDureza23 = '4'
             sheet.ItemNome24 = 'Artilharia Pesado'
             sheet.Iniciativa24 = '-6'
-            sheet.DanoItem24 = '+10/+10'
+            sheet.DanoItem24 = '+10+10'
             sheet.Alcance24 = '10m'
             sheet.Cadencia24 = 'Único'
             sheet.Municao24 = '???'
             sheet.ClasseDeDureza24 = '5'
             
-            sheet.ItemNome25 = 'Caneta/Lápis'
+            
+            sheet.ItemNome25 = 'Caneta-Lápis'
             sheet.Iniciativa25 = "+1"
             sheet.DanoItem25 = "???"
             sheet.Golpear25 = "???"
@@ -9827,7 +9828,7 @@ local function constructNew_frmDZ_Ficha1_svg()
             sheet.Aparar26 = "2"
             sheet.CD26 = "2"
             
-            sheet.ItemNome27 = 'Faca de cozinha/talhador'
+            sheet.ItemNome27 = 'Faca de cozinha-talhador'
             sheet.Iniciativa27 = "+2"
             sheet.DanoItem27 = "+2"
             sheet.Golpear27 = "2"
@@ -9858,7 +9859,7 @@ local function constructNew_frmDZ_Ficha1_svg()
             sheet.ItemNome31 = 'Espada'
             sheet.Iniciativa31 = "+5"
             sheet.DanoItem31 = "+5"
-            sheet.Golpear31 = "+1/+0"
+            sheet.Golpear31 = "+1-+0"
             sheet.Aparar31 = "2"
             sheet.CD31 = "2"
             
@@ -9890,7 +9891,7 @@ local function constructNew_frmDZ_Ficha1_svg()
             sheet.Aparar35 = "2"
             sheet.CD35 = "2"
             
-            sheet.ItemNome36 = 'Taco de Baseball c/ Espinhos'
+            sheet.ItemNome36 = 'Taco de Baseball c Espinhos'
             sheet.Iniciativa36 = "+2"
             sheet.DanoItem36 = "+2"
             sheet.Golpear36 = "1"
@@ -9921,14 +9922,14 @@ local function constructNew_frmDZ_Ficha1_svg()
             sheet.ItemNome40 = 'Lança'
             sheet.Iniciativa40 = "+3"
             sheet.DanoItem40 = "+4"
-            sheet.Golpear40 = "+1/+1"
+            sheet.Golpear40 = "+1+1"
             sheet.Aparar40 = "2"
             sheet.CD40 = "2"
             
             sheet.ItemNome41 = 'Soco Inglês'
             sheet.Iniciativa41 = "+2"
             sheet.DanoItem41 = "+2"
-            sheet.Golpear41 = "+1/+1"
+            sheet.Golpear41 = "+1+1"
             sheet.Aparar41 = "2"
             sheet.CD41 = "2"
             sheet.ItemNome42 = 'Motoserra'
@@ -9937,6 +9938,78 @@ local function constructNew_frmDZ_Ficha1_svg()
             sheet.Golpear42 = "+10"
             sheet.Aparar42 = "-1"
             sheet.CD42 = "-4"
+            sheet.ItemNome45 = 'Jaqueta de Couro - Anti-Perfurante'
+            sheet.AbsorverAparar45 = '+3/+3'
+            sheet.CD45 = '1'
+            sheet.PenalidadedeMovimento45 = '-1'
+            sheet.PenalidadeDePercepcao45 = '???'
+            
+            sheet.ItemNome46 = 'Armadura Esportiva'
+            sheet.AbsorverAparar46 = '+6/+6'
+            sheet.CD46 = '1'
+            sheet.PenalidadedeMovimento46 = '-1'
+            sheet.PenalidadeDePercepcao46 = '???'
+            
+            sheet.ItemNome47 = 'Armadura de Pneus'
+            sheet.AbsorverAparar47 = '+7/+7'
+            sheet.CD47 = '1'
+            sheet.PenalidadedeMovimento47 = '-2'
+            sheet.PenalidadeDePercepcao47 = '???'
+            
+            sheet.ItemNome48 = 'Armadura Acolchoada / Motim'
+            sheet.AbsorverAparar48 = '+7/+7'
+            sheet.CD48 = '2'
+            sheet.PenalidadedeMovimento48 = '-2'
+            sheet.PenalidadeDePercepcao48 = '???'
+            
+            sheet.ItemNome49 = 'Chapeamento de Aço Ruim'
+            sheet.AbsorverAparar49 = '+5/+5'
+            sheet.CD49 = '2'
+            sheet.PenalidadedeMovimento49 = '-2'
+            sheet.PenalidadeDePercepcao49 = '???'
+            
+            sheet.ItemNome50 = 'Bom Chapeamento de Aço'
+            sheet.AbsorverAparar50 = '+6/+6'
+            sheet.CD50 = '3'
+            sheet.PenalidadedeMovimento50 = '-3'
+            sheet.PenalidadeDePercepcao50 = '???'
+            
+            sheet.ItemNome51 = 'Armadura Balística Leve'
+            sheet.AbsorverAparar51 = '+5/+5'
+            sheet.CD51 = '2'
+            sheet.PenalidadedeMovimento51 = '-1'
+            sheet.PenalidadeDePercepcao51 = '???'
+            
+            sheet.ItemNome52 = 'Armadura Balística Média'
+            sheet.AbsorverAparar52 = '+7/+7'
+            sheet.CD52 = '2'
+            sheet.PenalidadedeMovimento52 = '-1'
+            sheet.PenalidadeDePercepcao52 = '???'
+            
+            sheet.ItemNome53 = 'Armadura Balística Pesada'
+            sheet.AbsorverAparar53 = '+6/+6'
+            sheet.CD53 = '3'
+            sheet.PenalidadedeMovimento53 = '-2'
+            sheet.PenalidadeDePercepcao53 = '???'
+            
+            sheet.ItemNome54 = 'Excelente Armadura Balística'
+            sheet.AbsorverAparar54 = '+7/+7'
+            sheet.CD54 = '3'
+            sheet.PenalidadedeMovimento54 = '-2'
+            sheet.PenalidadeDePercepcao54 = '???'
+            
+            sheet.ItemNome55 = 'Escudo Anti-Motim'
+            sheet.AbsorverAparar55 = '+5/+5ou+2/+2'
+            sheet.CD55 = '2'
+            sheet.PenalidadedeMovimento55 = '-2'
+            sheet.PenalidadeDePercepcao55 = '???'
+            
+            sheet.ItemNome56 = 'Escudo Balístico'
+            sheet.AbsorverAparar56 = '+6/+6ou+1/+1'
+            sheet.CD56 = '3'
+            sheet.PenalidadedeMovimento56 = '-2'
+            sheet.PenalidadeDePercepcao56 = '???'
+            
                             end;
         end, obj);
 

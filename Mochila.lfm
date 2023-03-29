@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form name="frmMochila" theme="dark" align="client" >
+    <style>#frmDZ_Ficha1_svg path {color: black; strokeColor: black; mode: stretch;}  
+#frmDZ_Ficha1_svg label {fontColor: black; textTrimming: none; wordWrap: false; autoSize: true; fontFamily: kalam;;}</style>
+<layout name="Inventario" align="client" visible="false">
+<scrollBox align="client">
+      <rectangle left="0" top="0" width="600" height="600" color="gray"
+         xradius="25" yradius="25" cornerType="round" >
+        <label fontSize="28" fontColor="lime" fontStyle="bold"  
+                   left="346" top="0" width="205" height="45" name="labSoma">
+        <dataLink field="Soma">
+            <event name="onChange">
+function format_thousand(v)
+	local s = string.format("%d", math.floor(v))
+	local pos = string.len(s) % 3 
+	if pos == 0 then pos = 3 end
+    return string.sub(s, 1, pos)
+	    .. "" .. string.gsub(string.sub(s, pos+1), "(...)", ".%1") 
+		.. "" .. string.sub(string.format("%.0f", v - math.floor(v)), 3) 
+
+end;
+	  self.labSoma.text = '$' .. format_thousand(sheet.soma);
+            </event>
+	    </dataLink>
+      </label>
+        <image src="Imagens/layoutDinheiro.png" hitTest="true" cursor="handPoint" left="280" top="-2" width="213" height="56">
+                <event name="onClick">
+                        if rrpg.getMesaDe(sheet).meuJogador.isMestre then
+                        dialogs.inputQuery("Carteira do jogador", "Colocar dinheiro para jogador:", "",
+                           function (valorPreenchido)
+                           sheet.Soma = (sheet.Soma or 0 ) + valorPreenchido; 
+                    end);
+                        end;
+
+                </event>
+        </image>
+
+    <image hitTest="true" cursor="handPoint" left="537" top="-2" width="63" height="60" name="troca" visible="false" src="Imagens/vender_on.png">
+        <event name="onMouseEnter">   
+                              self.troca.src = "/Imagens/vender_off.png"
+		</event>
+		<event name="OnMouseLeave">
+	                          self.troca.src = "/Imagens/vender_on.png"
+		</event>
+        <event name="onClick">
+             self.fichaPrincipal.visible = true
+             self.Inventario.visible = false;
+		</event>
+		 </image>         
+
+        <layout left="0" top="0" width="600" height="600" frameStyle="frames/frame2.xml" 
+               margins="{left=10, top=10, right=10, bottom=10}">        
+        <layout align="client" frameStyle="frames/frame1.xml" 		
+               margins="{left=10, top=10, right=10, bottom=10}">				   
+			   
+        </layout>
+		
+				   
+        <!-- Botão de inserir novo item à lista -->
+        <layout align="top" height="30" margins="{bottom=4}">
+                <button text="Criar Novo Item" width="150" align="left" fontStyle="bold">
+                        <event name="onClick">
+                                -- Usuário clicou no botão de criar novo item.
+                                -- Vamos inserir um novo item no nosso recordList                              
+                                self.rclEquip:append();
+                        </event>
+                </button>
+        </layout>  
+               <image src="images/botaoVoltar.png" left="533" top="0" width="50" height="50" cursor="handPoint" hitTest="true">
+                <event name="onClick">
+               self.FichaPrincipal.visible = true
+               self.Inventario.visible = false
+                </event>
+                 </image>
+   
+
+        <!-- recordList, representando a lista -->
+        <recordList name="rclEquip" field="nome" templateForm="frmEquip"
+                                align="client" selectable="true">                              
+
+                <event name="onSelect">
+                  local node = self.rclEquip.selectedNode;  
+                         self.boxDetalhesDoItem.node = node;      
+						 
+                  -- a caixa de detalhe só ficará visível se houver item selecionado
+                          self.boxDetalhesDoItem.visible = (node ~= nil);
+                </event>
+                
+        </recordList>       
+        <!-- dataScopeBox representando a nossa caixa de detalhes -->  
+      
+        <dataScopeBox name="boxDetalhesDoItem" visible="false" align="right" 
+                     width="400" margins="{left=4, right=4}">
+                <!-- Abaixo as tretas. Para vende com imagem   --> 
+
+ // teste 
+
+ <button name="testeee" text="debugDin" hint="Caso o dinheiro bug, clique aqui, ele vai resetar" left="200" top="300"> 
+        <event name="onClick">
+        self.boxDetalhesDoItem.node.custo = (sheet.custo or 0) + 0;
+        self.boxDetalhesDoItem.node.nivelItem = 0;
+        </event>
+ </button>
+      //Aqui fica o edit da venda, e imagem de venda com handPoint
+      //Aqui também vai ficar as coisas do MLN e Nvenda
+
+ // aq fica os codigos  ###TESTE -- - TIRANDO TESTE, BEM SUCEDIDO! 
+//Aqui fazendo as funções de *Gambiarras 
+<image name="Venda" src="Imagens/vendaItens.png" 
+ left="222" top="165" width="134" height="106" visible="true"/>
+
+<image name="naoVende" src="Imagens/impossivelVende.png" 
+ left="222" top="165" width="134" height="106" visible="false"/>
+
+ <image name="mercadoNegro" src="Imagens/mercadoNegro.png" 
+ left="222" top="165" width="134" height="106" visible="false"/>
+
+
+ <label name="dinheiro" left="246" top="183" width="82" height="26" fontSize="20"
+ fontColor="black" fontStyle="bold"
+ field="custo"/>
+
+<image src="Imagens/nivelDoitem.png" 
+left="180" top="364" width="205" height="30" visible="true"/>
+
+ <label field="nivelItem" hitTest="true"
+ fontSize="23" fontColor="red" fontStyle="bold" left="375" top="367">
+        <event name="onClick">
+	    if rrpg.getMesaDe(sheet).meuJogador.isMestre then
+		dialogs.inputQuery("Nivel do item", "Level:", "",
+		   function (valorPreenchido)
+		      self.boxDetalhesDoItem.node.nivelItem = (sheet.nivelItem or 0) + valorPreenchido; 
+	    end);
+		end;   
+        </event>
+         </label> 
+               
+        <dataLink field="nivelItem">
+                <event name="onChange">
+   if self.boxDetalhesDoItem.node.nivelItem == 0 then
+    self.Venda.visible = false;
+    self.botaoDeVenda.visible = false;
+    self.colocarDinheiro.visible = false;
+    self.naoVende.visible = true;
+    self.dinheiro.visible = false;
+   end;
+  if self.boxDetalhesDoItem.node.nivelItem == 1 then
+  self.mercadoNegro.visible = false;
+  self.naoVende.visible = false;
+      self.botaoDeVenda.visible = true;
+    self.Venda.visible = true;
+    self.botaoDeVenda.visible = true;
+    self.colocarDinheiro.visible = true;
+    self.dinheiro.visible = true;
+ end;
+  if self.boxDetalhesDoItem.node.nivelItem == 2 then
+  self.mercadoNegro.visible = false;
+  self.naoVende.visible = false;
+      self.botaoDeVenda.visible = true;
+    self.Venda.visible = true;
+    self.botaoDeVenda.visible = true;
+    self.colocarDinheiro.visible = true;
+    self.dinheiro.visible = true;
+ end;
+  if self.boxDetalhesDoItem.node.nivelItem == 3 then
+  self.mercadoNegro.visible = true;
+      self.botaoDeVenda.visible = false;
+    self.Venda.visible = false;
+    self.botaoDeVenda.visible = false;
+    self.colocarDinheiro.visible = false;
+    self.dinheiro.visible = false;
+
+  end;
+   </event> 
+    </dataLink>      
+
+ <button text="$" name="colocarDinheiro"  fontColor="red" fontStyle="bold"
+ fontSize="25" left="215" top="182" width="27" height="25">
+       <event name="onClick">
+	    if rrpg.getMesaDe(sheet).meuJogador.isMestre then
+		dialogs.inputQuery("Caixa", "Quantidades:", "",
+		   function (valorPreenchido)
+		      self.boxDetalhesDoItem.node.custo = (sheet.custo or 0) + valorPreenchido; 
+	    end);
+		end;   
+        </event>
+         </button>    
+
+   <image name="botaoDeVenda" visible="false" src="Imagens/vendeItem2.png" 
+     left="237" top="209" width="96" opacity="1"
+      height="21" hitTest="true" cursor="handPoint">
+
+     <event name="onClick"> 
+    local custo = tonumber(sheet.custo) or 0;
+    local Soma = tonumber(sheet.Soma) or 0;
+    sheet.Soma = Soma + self.boxDetalhesDoItem.node.custo; 
+    custo = ndb.deleteNode(self.boxDetalhesDoItem.node);
+    </event>
+    </image>                 
+                        <layout align="top" height="30" margins="{bottom=0}">
+                                <label align="left" text="Nome do Item:" autoSize="true" fontFamily="kalam" fontColor="red" fontStyle="bold" fontSize="17"/>
+                                <edit align="client" field="nome"/>
+                        </layout>                       
+
+           <!-- coisas da imagem -->
+                         <label text="Clique aqui para colocar imagem"  
+                            left="8" top="68" autoSize="true" horzTextAlign="center" wordWrap="true"/>
+
+
+                    <image src="Imagens/quadradoImagem.png" left="0.5" top="33" width="134" height="138" />
+                    
+                        <layout align="top" height="131.5">              
+                                <image align="left" editable="true" field="campoURLImagem" width="130" height="130" margins="{top=-20}" >
+                                      </image>     
+
+
+                                <layout align="client" margins="{left=2}">
+                                        <edit align="top" field="campoSubTitulo" height="30"/>
+                                        <textEditor align="top" field="campoTextoGrande" height="100"/>
+                                </layout>                      
+                        </layout>
+             </dataScopeBox>
+           </layout>	
+         </rectangle>
+        </scrollBox>
+       </layout>
+
+     
+
+
+
+   
+
+
+
+		
+ 
+</form>

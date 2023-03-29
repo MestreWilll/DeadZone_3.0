@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module sdkVersion="3.5" compilationDate="23032023081344" sdkApiVersion="86" originalPluginFileName="Dead_Zone_2.0_1.rpk" compilationDigest="2a709dd6ba98b5ec34dbca45000fbeffc5227ae9">
+    <id>DeadZoneRPG_2.0</id>
+    <version>2.4</version>
+    <name>Dead Zone 3.0</name>
+    <description>Plugin para o rpg Dead Zone.</description>
+    <author>Allan,Samelfero e Will</author>
+    <site/>
+    <contact>Discord: (CoM4nDanT3)#9025, samelfero#5996 e MestreWill#3924 </contact>
+    <dataTypes>
+        <dataType title="Ficha 3.0 Dead Zone" name="frmDZ_Ficha" lfmFile="DZ_Ficha2.0/DZ_Ficha.lfm">DeadZoneRPG3.0</dataType>
+        <dataType title="Ficha 3.0 Dead Zone" name="frmDZ_Ficha" lfmFile="DZ_Ficha2.0/DZ_Ficha.lfm">DeadZoneRPG3.0</dataType>
+        <dataType title="Ficha 3.0 Dead Zone" name="frmDZ_Ficha" lfmFile="DZ_Ficha2.0/DZ_Ficha.lfm">DeadZoneRPG3.0</dataType>
+    </dataTypes>
+</module>

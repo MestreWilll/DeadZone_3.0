@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form name="frmLoja_svg" align="client" margins="{top=1}" theme="light">
+    <style>#frmDZ_Ficha1_svg path {color: black; strokeColor: black; mode: stretch;}  
+#frmDZ_Ficha1_svg label {fontColor: black; textTrimming: none; wordWrap: false; autoSize: true; fontFamily: kalam;;}</style>
+================================================================================================================
+===========# apresentação da loja #=============================================================================
+    <layout name="ApresentaLoja" align="client" visible="true">
+        <image src="images/BoasVindas.png" left="0" top="0" width="652" height="230" />
+-- Armas de fogo
+        <image left="90.25" top="96.38" width="155.25" height="45.75" cursor="handPoint" hitTest="true">
+            <event name="onClick">
+            self.ApresentaLoja.visible = false;
+            self.LojaDeArmas.visible = true;
+            </event>
+        </image>
+
+    -- Armas brancas
+    <image left="267.25" top="96.38" width="141" height="45.75" cursor="handPoint" hitTest="true">
+        <event name="onClick">
+            self.LojaCorpoACorpo.visible = true
+            self.ApresentaLoja.visible = false;
+
+        </event>
+    </image>
+
+-- Armaduras
+        <image left="431.25" top="96.38" width="123.25" height="45.75" cursor="handPoint" hitTest="true">
+            <event name="onClick">
+            self.ApresentaLoja.visible = false;
+           
+            </event>
+        </image>
+    </layout>   
+==========================================================================================================
+===========# Começo da loja #=============================================================================
+<import file="Loja1ArmasDeFogo.xml"/>
+<import file="Loja2CorpoACorpo.xml"/>
+<import file="Loja3Armaduras.xml"/>
+
+
+
+
+</form>

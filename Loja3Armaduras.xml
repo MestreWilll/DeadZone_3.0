@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group>
+    <layout name="LojaArmaduras" align="client" visible="false">
+        <rectangle align="client" color="white"> 
+      <scrollBox align="client">
+
+        
+    </scrollBox>
+</rectangle>
+</layout>  
+
+</group>

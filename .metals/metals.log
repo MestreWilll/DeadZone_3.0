@@ -1,0 +1,486 @@
+2023.03.24 18:53:09 INFO  Started: Metals version 0.11.11 in workspace 'C:\Projetos\Dead_Zone_2.0_1' for client Visual Studio Code 1.76.2.
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/C:/Users/WillX/AppData/Local/Coursier/cache/v1/https/repo1.maven.org/maven2/com/outr/scribe-slf4j_2.13/3.11.0/scribe-slf4j_2.13-3.11.0.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+2023.03.24 18:53:10 INFO  time: initialize in 0.63s
+mar 24, 2023 6:53:10 PM org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer fireError
+GRAVE: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+	at com.google.gson.Gson.fromJson(Gson.java:1238)
+	at com.google.gson.Gson.fromJson(Gson.java:1186)
+	at org.eclipse.lsp4j.jsonrpc.json.MessageJsonHandler.parseMessage(MessageJsonHandler.java:119)
+	at org.eclipse.lsp4j.jsonrpc.json.MessageJsonHandler.parseMessage(MessageJsonHandler.java:114)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:193)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+	at com.google.gson.stream.JsonReader.beginObject(JsonReader.java:393)
+	at org.eclipse.lsp4j.jsonrpc.json.adapters.MessageTypeAdapter.read(MessageTypeAdapter.java:92)
+	at org.eclipse.lsp4j.jsonrpc.json.adapters.MessageTypeAdapter.read(MessageTypeAdapter.java:55)
+	at com.google.gson.Gson.fromJson(Gson.java:1227)
+	... 11 more
+
+mar 24, 2023 6:53:21 PM org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer fireError
+GRAVE: Missing header Content-Length in input ""id":"1","result":null}{"jsonrpc":"2.0","id":"2","result":[{"serverVersion":"0.11.11","serverProperties":["-Xmx1G"],"coursierMirror":"","ammoniteJvmProperties":[],"excludedPackages":[],"showInferredType":false,"showImplicitArguments":false,"showImplicitConversionsAndClasses":false,"javaHome":"","sbtScript":"","millScript":"","mavenScript":"","gradleScript":"","scalafmtConfigPath":"","scalafixConfigPath":"","scalafixRulesDependencies":[],"bloopVersion":"","bloopJvmProperties":[],"bloopSbtAlreadyInstalled":false,"customRepositories":[],"superMethodLensesEnabled":true,"enableStripMarginOnTypeFormatting":true,"enableIndentOnPaste":false,"enableSemanticHighlighting":false,"testUserInterface":"Test Explorer","fallbackScalaVersion":"automatic","javaFormat":{"eclipseConfigPath":"","eclipseProfile":""},"scalaCliLauncher":"","suggestLatestUpgrade":false}]}Content-Length: 89
+
+"
+java.lang.IllegalStateException: Missing header Content-Length in input ""id":"1","result":null}{"jsonrpc":"2.0","id":"2","result":[{"serverVersion":"0.11.11","serverProperties":["-Xmx1G"],"coursierMirror":"","ammoniteJvmProperties":[],"excludedPackages":[],"showInferredType":false,"showImplicitArguments":false,"showImplicitConversionsAndClasses":false,"javaHome":"","sbtScript":"","millScript":"","mavenScript":"","gradleScript":"","scalafmtConfigPath":"","scalafixConfigPath":"","scalafixRulesDependencies":[],"bloopVersion":"","bloopJvmProperties":[],"bloopSbtAlreadyInstalled":false,"customRepositories":[],"superMethodLensesEnabled":true,"enableStripMarginOnTypeFormatting":true,"enableIndentOnPaste":false,"enableSemanticHighlighting":false,"testUserInterface":"Test Explorer","fallbackScalaVersion":"automatic","javaFormat":{"eclipseConfigPath":"","eclipseProfile":""},"scalaCliLauncher":"","suggestLatestUpgrade":false}]}Content-Length: 89
+
+"
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:91)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+mar 24, 2023 6:53:36 PM org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer fireError
+GRAVE: Missing header Content-Length in input "{"jsonrpc":"2.0","method":"metals/didFocusTextDocument","params":["untitled:Untitled-1"]}Content-Length: 89
+
+"
+java.lang.IllegalStateException: Missing header Content-Length in input "{"jsonrpc":"2.0","method":"metals/didFocusTextDocument","params":["untitled:Untitled-1"]}Content-Length: 89
+
+"
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:91)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+mar 24, 2023 6:55:27 PM org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer fireError
+GRAVE: Missing header Content-Length in input "{"jsonrpc":"2.0","method":"metals/didFocusTextDocument","params":["untitled:Untitled-1"]}Content-Length: 89
+
+"
+java.lang.IllegalStateException: Missing header Content-Length in input "{"jsonrpc":"2.0","method":"metals/didFocusTextDocument","params":["untitled:Untitled-1"]}Content-Length: 89
+
+"
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:91)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+mar 24, 2023 6:55:49 PM org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer fireError
+GRAVE: Missing header Content-Length in input "{"jsonrpc":"2.0","method":"metals/didFocusTextDocument","params":["untitled:Untitled-1"]}Content-Length: 83
+
+"
+java.lang.IllegalStateException: Missing header Content-Length in input "{"jsonrpc":"2.0","method":"metals/didFocusTextDocument","params":["untitled:Untitled-1"]}Content-Length: 83
+
+"
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:91)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+mar 24, 2023 6:56:00 PM org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer fireError
+GRAVE: Missing header Content-Length in input "{"jsonrpc":"2.0","method":"metals/windowStateDidChange","params":{"focused":false}}Content-Length: 82
+
+"
+java.lang.IllegalStateException: Missing header Content-Length in input "{"jsonrpc":"2.0","method":"metals/windowStateDidChange","params":{"focused":false}}Content-Length: 82
+
+"
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:91)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+mar 24, 2023 6:59:34 PM org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer fireError
+GRAVE: Missing header Content-Length in input "{"jsonrpc":"2.0","method":"metals/windowStateDidChange","params":{"focused":true}}Content-Length: 83
+
+"
+java.lang.IllegalStateException: Missing header Content-Length in input "{"jsonrpc":"2.0","method":"metals/windowStateDidChange","params":{"focused":true}}Content-Length: 83
+
+"
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:91)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+mar 24, 2023 6:59:51 PM org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer fireError
+GRAVE: Missing header Content-Length in input "{"jsonrpc":"2.0","method":"metals/windowStateDidChange","params":{"focused":false}}Content-Length: 82
+
+"
+java.lang.IllegalStateException: Missing header Content-Length in input "{"jsonrpc":"2.0","method":"metals/windowStateDidChange","params":{"focused":false}}Content-Length: 82
+
+"
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:91)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+mar 24, 2023 7:00:32 PM org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer fireError
+GRAVE: Missing header Content-Length in input "{"jsonrpc":"2.0","method":"metals/windowStateDidChange","params":{"focused":true}}Content-Length: 83
+
+"
+java.lang.IllegalStateException: Missing header Content-Length in input "{"jsonrpc":"2.0","method":"metals/windowStateDidChange","params":{"focused":true}}Content-Length: 83
+
+"
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:91)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+mar 24, 2023 7:04:35 PM org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer fireError
+GRAVE: Missing header Content-Length in input "{"jsonrpc":"2.0","method":"metals/windowStateDidChange","params":{"focused":false}}Content-Length: 82
+
+"
+java.lang.IllegalStateException: Missing header Content-Length in input "{"jsonrpc":"2.0","method":"metals/windowStateDidChange","params":{"focused":false}}Content-Length: 82
+
+"
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:91)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+mar 24, 2023 7:08:22 PM org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer fireError
+GRAVE: Missing header Content-Length in input "{"jsonrpc":"2.0","method":"metals/windowStateDidChange","params":{"focused":true}}Content-Length: 83
+
+"
+java.lang.IllegalStateException: Missing header Content-Length in input "{"jsonrpc":"2.0","method":"metals/windowStateDidChange","params":{"focused":true}}Content-Length: 83
+
+"
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:91)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+mar 24, 2023 7:08:27 PM org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer fireError
+GRAVE: Missing header Content-Length in input "{"jsonrpc":"2.0","method":"metals/windowStateDidChange","params":{"focused":false}}Content-Length: 82
+
+"
+java.lang.IllegalStateException: Missing header Content-Length in input "{"jsonrpc":"2.0","method":"metals/windowStateDidChange","params":{"focused":false}}Content-Length: 82
+
+"
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:91)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+mar 24, 2023 7:18:26 PM org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer fireError
+GRAVE: Missing header Content-Length in input "{"jsonrpc":"2.0","method":"metals/windowStateDidChange","params":{"focused":true}}Content-Length: 83
+
+"
+java.lang.IllegalStateException: Missing header Content-Length in input "{"jsonrpc":"2.0","method":"metals/windowStateDidChange","params":{"focused":true}}Content-Length: 83
+
+"
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:91)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+mar 24, 2023 7:18:32 PM org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer fireError
+GRAVE: Missing header Content-Length in input "{"jsonrpc":"2.0","method":"metals/windowStateDidChange","params":{"focused":false}}Content-Length: 82
+
+"
+java.lang.IllegalStateException: Missing header Content-Length in input "{"jsonrpc":"2.0","method":"metals/windowStateDidChange","params":{"focused":false}}Content-Length: 82
+
+"
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:91)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+mar 24, 2023 7:19:25 PM org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer fireError
+GRAVE: Missing header Content-Length in input "{"jsonrpc":"2.0","method":"metals/windowStateDidChange","params":{"focused":true}}Content-Length: 83
+
+"
+java.lang.IllegalStateException: Missing header Content-Length in input "{"jsonrpc":"2.0","method":"metals/windowStateDidChange","params":{"focused":true}}Content-Length: 83
+
+"
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:91)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+mar 24, 2023 7:19:46 PM org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer fireError
+GRAVE: Missing header Content-Length in input "{"jsonrpc":"2.0","method":"metals/windowStateDidChange","params":{"focused":false}}Content-Length: 82
+
+"
+java.lang.IllegalStateException: Missing header Content-Length in input "{"jsonrpc":"2.0","method":"metals/windowStateDidChange","params":{"focused":false}}Content-Length: 82
+
+"
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:91)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+2023.03.24 19:21:42 INFO  Started: Metals version 0.11.11 in workspace 'C:\Projetos\Dead_Zone_2.0_1' for client Visual Studio Code 1.76.2.
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/C:/Users/WillX/AppData/Local/Coursier/cache/v1/https/repo1.maven.org/maven2/com/outr/scribe-slf4j_2.13/3.11.0/scribe-slf4j_2.13-3.11.0.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+2023.03.24 19:21:47 INFO  time: initialize in 4.62s
+mar 24, 2023 7:21:47 PM org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer fireError
+GRAVE: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+	at com.google.gson.Gson.fromJson(Gson.java:1238)
+	at com.google.gson.Gson.fromJson(Gson.java:1186)
+	at org.eclipse.lsp4j.jsonrpc.json.MessageJsonHandler.parseMessage(MessageJsonHandler.java:119)
+	at org.eclipse.lsp4j.jsonrpc.json.MessageJsonHandler.parseMessage(MessageJsonHandler.java:114)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:193)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+	at com.google.gson.stream.JsonReader.beginObject(JsonReader.java:393)
+	at org.eclipse.lsp4j.jsonrpc.json.adapters.MessageTypeAdapter.read(MessageTypeAdapter.java:92)
+	at org.eclipse.lsp4j.jsonrpc.json.adapters.MessageTypeAdapter.read(MessageTypeAdapter.java:55)
+	at com.google.gson.Gson.fromJson(Gson.java:1227)
+	... 11 more
+
+mar 24, 2023 7:47:21 PM org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer fireError
+GRAVE: Missing header Content-Length in input ""id":"1","result":null}{"jsonrpc":"2.0","id":"2","result":[{"serverVersion":"0.11.11","serverProperties":["-Xmx1G"],"coursierMirror":"","ammoniteJvmProperties":[],"excludedPackages":[],"showInferredType":false,"showImplicitArguments":false,"showImplicitConversionsAndClasses":false,"javaHome":"","sbtScript":"","millScript":"","mavenScript":"","gradleScript":"","scalafmtConfigPath":"","scalafixConfigPath":"","scalafixRulesDependencies":[],"bloopVersion":"","bloopJvmProperties":[],"bloopSbtAlreadyInstalled":false,"customRepositories":[],"superMethodLensesEnabled":true,"enableStripMarginOnTypeFormatting":true,"enableIndentOnPaste":false,"enableSemanticHighlighting":false,"testUserInterface":"Test Explorer","fallbackScalaVersion":"automatic","javaFormat":{"eclipseConfigPath":"","eclipseProfile":""},"scalaCliLauncher":"","suggestLatestUpgrade":false}]}Content-Length: 82
+
+"
+java.lang.IllegalStateException: Missing header Content-Length in input ""id":"1","result":null}{"jsonrpc":"2.0","id":"2","result":[{"serverVersion":"0.11.11","serverProperties":["-Xmx1G"],"coursierMirror":"","ammoniteJvmProperties":[],"excludedPackages":[],"showInferredType":false,"showImplicitArguments":false,"showImplicitConversionsAndClasses":false,"javaHome":"","sbtScript":"","millScript":"","mavenScript":"","gradleScript":"","scalafmtConfigPath":"","scalafixConfigPath":"","scalafixRulesDependencies":[],"bloopVersion":"","bloopJvmProperties":[],"bloopSbtAlreadyInstalled":false,"customRepositories":[],"superMethodLensesEnabled":true,"enableStripMarginOnTypeFormatting":true,"enableIndentOnPaste":false,"enableSemanticHighlighting":false,"testUserInterface":"Test Explorer","fallbackScalaVersion":"automatic","javaFormat":{"eclipseConfigPath":"","eclipseProfile":""},"scalaCliLauncher":"","suggestLatestUpgrade":false}]}Content-Length: 82
+
+"
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:91)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+mar 24, 2023 7:48:09 PM org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer fireError
+GRAVE: Missing header Content-Length in input "{"jsonrpc":"2.0","method":"metals/windowStateDidChange","params":{"focused":true}}Content-Length: 83
+
+"
+java.lang.IllegalStateException: Missing header Content-Length in input "{"jsonrpc":"2.0","method":"metals/windowStateDidChange","params":{"focused":true}}Content-Length: 83
+
+"
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:91)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+mar 24, 2023 7:48:22 PM org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer fireError
+GRAVE: Missing header Content-Length in input "{"jsonrpc":"2.0","method":"metals/windowStateDidChange","params":{"focused":false}}Content-Length: 82
+
+"
+java.lang.IllegalStateException: Missing header Content-Length in input "{"jsonrpc":"2.0","method":"metals/windowStateDidChange","params":{"focused":false}}Content-Length: 82
+
+"
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:91)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+mar 24, 2023 7:49:18 PM org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer fireError
+GRAVE: Missing header Content-Length in input "{"jsonrpc":"2.0","method":"metals/windowStateDidChange","params":{"focused":true}}Content-Length: 83
+
+"
+java.lang.IllegalStateException: Missing header Content-Length in input "{"jsonrpc":"2.0","method":"metals/windowStateDidChange","params":{"focused":true}}Content-Length: 83
+
+"
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:91)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+mar 24, 2023 7:50:27 PM org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer fireError
+GRAVE: Missing header Content-Length in input "{"jsonrpc":"2.0","method":"metals/windowStateDidChange","params":{"focused":false}}Content-Length: 82
+
+"
+java.lang.IllegalStateException: Missing header Content-Length in input "{"jsonrpc":"2.0","method":"metals/windowStateDidChange","params":{"focused":false}}Content-Length: 82
+
+"
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:91)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+mar 24, 2023 7:51:07 PM org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer fireError
+GRAVE: Missing header Content-Length in input "{"jsonrpc":"2.0","method":"metals/windowStateDidChange","params":{"focused":true}}Content-Length: 83
+
+"
+java.lang.IllegalStateException: Missing header Content-Length in input "{"jsonrpc":"2.0","method":"metals/windowStateDidChange","params":{"focused":true}}Content-Length: 83
+
+"
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:91)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+mar 24, 2023 7:51:42 PM org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer fireError
+GRAVE: Missing header Content-Length in input "{"jsonrpc":"2.0","method":"metals/windowStateDidChange","params":{"focused":false}}Content-Length: 82
+
+"
+java.lang.IllegalStateException: Missing header Content-Length in input "{"jsonrpc":"2.0","method":"metals/windowStateDidChange","params":{"focused":false}}Content-Length: 82
+
+"
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:91)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+mar 24, 2023 7:52:50 PM org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer fireError
+GRAVE: Missing header Content-Length in input "{"jsonrpc":"2.0","method":"metals/windowStateDidChange","params":{"focused":true}}Content-Length: 83
+
+"
+java.lang.IllegalStateException: Missing header Content-Length in input "{"jsonrpc":"2.0","method":"metals/windowStateDidChange","params":{"focused":true}}Content-Length: 83
+
+"
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:91)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+mar 24, 2023 7:53:02 PM org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer fireError
+GRAVE: Missing header Content-Length in input "{"jsonrpc":"2.0","method":"metals/windowStateDidChange","params":{"focused":false}}Content-Length: 82
+
+"
+java.lang.IllegalStateException: Missing header Content-Length in input "{"jsonrpc":"2.0","method":"metals/windowStateDidChange","params":{"focused":false}}Content-Length: 82
+
+"
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:91)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+mar 24, 2023 7:53:20 PM org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer fireError
+GRAVE: Missing header Content-Length in input "{"jsonrpc":"2.0","method":"metals/windowStateDidChange","params":{"focused":true}}Content-Length: 64
+
+"
+java.lang.IllegalStateException: Missing header Content-Length in input "{"jsonrpc":"2.0","method":"metals/windowStateDidChange","params":{"focused":true}}Content-Length: 64
+
+"
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:91)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+mar 24, 2023 7:53:20 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint logIssues
+ADVERTÊNCIA: Issue found in NotificationMessage: Message could not be parsed.
+com.google.gson.stream.MalformedJsonException: Use JsonReader.setLenient(true) to accept malformed JSON at line 1 column 66 path $
+	at com.google.gson.stream.JsonReader.syntaxError(JsonReader.java:1659)
+	at com.google.gson.stream.JsonReader.checkLenient(JsonReader.java:1465)
+	at com.google.gson.stream.JsonReader.doPeek(JsonReader.java:551)
+	at com.google.gson.stream.JsonReader.peek(JsonReader.java:433)
+	at org.eclipse.lsp4j.jsonrpc.json.MessageJsonHandler.parseMessage(MessageJsonHandler.java:124)
+	at org.eclipse.lsp4j.jsonrpc.json.MessageJsonHandler.parseMessage(MessageJsonHandler.java:114)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:193)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+mar 24, 2023 7:53:20 PM org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer fireError
+GRAVE: Missing header Content-Length in input "Command","params":{"command":"discover-tests","arguments":[{}]}}Content-Length: 64
+
+"
+java.lang.IllegalStateException: Missing header Content-Length in input "Command","params":{"command":"discover-tests","arguments":[{}]}}Content-Length: 64
+
+"
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:91)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+mar 24, 2023 7:53:20 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint logIssues
+ADVERTÊNCIA: Issue found in NotificationMessage: Message could not be parsed.
+com.google.gson.stream.MalformedJsonException: Use JsonReader.setLenient(true) to accept malformed JSON at line 1 column 66 path $
+	at com.google.gson.stream.JsonReader.syntaxError(JsonReader.java:1659)
+	at com.google.gson.stream.JsonReader.checkLenient(JsonReader.java:1465)
+	at com.google.gson.stream.JsonReader.doPeek(JsonReader.java:551)
+	at com.google.gson.stream.JsonReader.peek(JsonReader.java:433)
+	at org.eclipse.lsp4j.jsonrpc.json.MessageJsonHandler.parseMessage(MessageJsonHandler.java:124)
+	at org.eclipse.lsp4j.jsonrpc.json.MessageJsonHandler.parseMessage(MessageJsonHandler.java:114)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:193)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+

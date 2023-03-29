@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group>
+    
+    <label name="Nivel" field="Nivel" left="1130" top="90" fontSize="26" fontStyle="bold" fontColor="yellow">
+        <dataLink field="Nivel">
+            <event name="onChange">
+if sheet.Nivel >= 1 then
+sheet.ItemNome = 'Arco'
+sheet.Iniciativa = '-2'
+sheet.DanoItem = '+4'
+sheet.Alcance = 'C'
+sheet.Cadencia = 'Único'
+sheet.Municao = '1'
+sheet.ClasseDeDureza = '2'
+sheet.Preco = '1200'
+
+sheet.ItemNome2 = 'Besta (Crossbow)'
+sheet.Iniciativa2 = '+2'
+sheet.DanoItem2 = '+6'
+sheet.Alcance2 = 'C'
+sheet.Cadencia2 = 'Único'
+sheet.Municao2 = '1'
+sheet.ClasseDeDureza2 = '3'
+
+sheet.ItemNome3 = 'Pistola Leve'
+sheet.Iniciativa3 = '+3'
+sheet.DanoItem3 = '+2'
+sheet.Alcance3 = 'C'
+sheet.Cadencia3 = 'Curto'
+sheet.Municao3 = '18'
+sheet.ClasseDeDureza3 = '2'
+
+sheet.ItemNome4 = 'Revolver Pesado'
+sheet.Iniciativa4 = '+2'
+sheet.DanoItem4 = '+4'
+sheet.Alcance4 = 'C'
+sheet.Cadencia4 = 'Curto'
+sheet.Municao4 = '6'
+sheet.ClasseDeDureza4 = '2'
+
+sheet.ItemNome5 = 'Submetralhadora'
+sheet.Iniciativa5 = '+2'
+sheet.DanoItem5 = '+4'
+sheet.Alcance5 = 'M'
+sheet.Cadencia5 = 'Totalmente automático'
+sheet.Municao5 = '30'
+sheet.ClasseDeDureza5 = '2'
+
+sheet.ItemNome6 = 'Metralhadora Leve'
+sheet.Iniciativa6 = '+2'
+sheet.DanoItem6 = '+3'
+sheet.Alcance6 = 'C'
+sheet.Cadencia6 = 'Totalmente automático'
+sheet.Municao6 = '30'
+sheet.ClasseDeDureza6 = '2'
+
+sheet.ItemNome7 = 'Rifle de Assalto Leve'
+sheet.Iniciativa7 = '+1'
+sheet.DanoItem7 = '+6'
+sheet.Alcance7 = 'L'
+sheet.Cadencia7 = 'Totalmente automático'
+sheet.Municao7 = '30'
+sheet.ClasseDeDureza7 = '3'
+
+sheet.ItemNome8 = 'Rifle de Assalto Pesado'
+sheet.Iniciativa8 = '???'
+sheet.DanoItem8 = '+7'
+sheet.Alcance8 = 'E'
+sheet.Cadencia8 = 'Totalmente automático'
+sheet.Municao8 = '30'
+sheet.ClasseDeDureza8 = '3'
+
+sheet.ItemNome9 = 'Espingarda Leve'
+sheet.Iniciativa9 = '+1'
+sheet.DanoItem9 = '+3'
+sheet.Alcance9 = 'C'
+sheet.Cadencia9 = 'Único'
+sheet.Municao9 = '5'
+sheet.ClasseDeDureza9 = '2'
+
+sheet.ItemNome10 = 'Rifle de Caça'
+sheet.Iniciativa10 = '???'
+sheet.DanoItem10 = '+7'
+sheet.Alcance10 = 'E'
+sheet.Cadencia10 = 'Único'
+sheet.Municao10 = '5'
+sheet.ClasseDeDureza10 = '3'
+
+sheet.ItemNome11 = 'Rifle de Precisão'
+sheet.Iniciativa11 = '???'
+sheet.DanoItem11 = '+8'
+sheet.Alcance11 = 'E'
+sheet.Cadencia11 = 'Único'
+sheet.Municao11 = '10'
+sheet.ClasseDeDureza11 = '3'
+
+sheet.ItemNome12 = 'Rifle de Precisão, pesado'
+sheet.Iniciativa12 = '-1'
+sheet.DanoItem12 = '+10'
+sheet.Alcance12 = 'E'
+sheet.Cadencia12 = 'Único'
+sheet.Municao12 = '5'
+sheet.ClasseDeDureza12 = '4'
+
+sheet.ItemNome13 = 'Shotgun'
+sheet.Iniciativa13 = '+1'
+sheet.DanoItem13 = '+8'
+sheet.Alcance13 = 'C'
+sheet.Cadencia13 = 'Curto'
+sheet.Municao13 = '???'
+sheet.ClasseDeDureza13 = '???'
+
+sheet.ItemNome14 = 'Espingarda de cano duplo'
+sheet.Iniciativa14 = '???'
+sheet.DanoItem14 = '+5'
+sheet.Alcance14 = 'C'
+sheet.Cadencia14 = 'Curto'
+sheet.Municao14 = '2'
+sheet.ClasseDeDureza14 = '2'
+
+sheet.ItemNome15 = 'Metralhadora Pequena'
+sheet.Iniciativa15 = '???'
+sheet.DanoItem15 = '+7'
+sheet.Alcance15 = 'L'
+sheet.Cadencia15 = 'Correia Automática Completa'
+sheet.Municao15 = '???'
+sheet.ClasseDeDureza15 = '3'
+
+sheet.ItemNome16 = 'Metralhadora Pesada'
+sheet.Iniciativa16 = '-1'
+sheet.DanoItem16 = '+10'
+sheet.Alcance16 = 'E'
+sheet.Cadencia16 = 'Automática Completa'
+sheet.Municao16 = '???'
+sheet.ClasseDeDureza16 = '4'
+
+sheet.ItemNome17 = 'Lançador de Míssil'
+sheet.Iniciativa17 = '-2'
+sheet.DanoItem17 = '+10'
+sheet.Alcance17 = 'L'
+sheet.Cadencia17 = 'Único'
+sheet.Municao17 = '1'
+sheet.ClasseDeDureza17 = '4'
+
+sheet.ItemNome18 = 'Missil de Tanque'
+sheet.Iniciativa18 = '-4'
+sheet.DanoItem18 = '+10/+10'
+sheet.Alcance18 = 'E'
+sheet.Cadencia18 = 'Único'
+sheet.Municao18 = '1'
+sheet.ClasseDeDureza18 = '5'
+
+sheet.ItemNome19 = 'Granada de Mão'
+sheet.Iniciativa19 = '???'
+sheet.DanoItem19 = '+10'
+sheet.Alcance19 = '5m'
+sheet.Cadencia19 = '???'
+sheet.Municao19 = '1'
+sheet.ClasseDeDureza19 = '4'
+
+sheet.ItemNome20 = 'Molotov'
+sheet.Iniciativa20 = '-1'
+sheet.DanoItem20 = '+6/+6'
+sheet.Alcance20 = 'C'
+sheet.Cadencia20 = 'Único'
+sheet.Municao20 = '1'
+sheet.ClasseDeDureza20 = '2'
+sheet.ItemNome21 = 'Mina, Antipessoal'
+sheet.Iniciativa21 = '???'
+sheet.DanoItem21 = '+8'
+sheet.Alcance21 = '5m'
+sheet.Cadencia21 = '???'
+sheet.Municao21 = '1'
+sheet.ClasseDeDureza21 = '3' 
+sheet.ItemNome22 = 'Mina, Anti-Veículo'
+sheet.Iniciativa22 = '???'
+sheet.DanoItem22 = '+10/+10'
+sheet.Alcance22 = '5m'
+sheet.Cadencia22 = '???'
+sheet.Municao22 = '1'
+sheet.ClasseDeDureza22 = '5'
+sheet.ItemNome23 = 'Artilharia Leve'
+sheet.Iniciativa23 = '-4'
+sheet.DanoItem23 = '+10/+10'
+sheet.Alcance23 = '1m'
+sheet.Cadencia23 = 'Longo'
+sheet.Municao23 = 'Cinto'
+sheet.ClasseDeDureza23 = '4'
+sheet.ItemNome24 = 'Artilharia Pesado'
+sheet.Iniciativa24 = '-6'
+sheet.DanoItem24 = '+10/+10'
+sheet.Alcance24 = '10m'
+sheet.Cadencia24 = 'Único'
+sheet.Municao24 = '???'
+sheet.ClasseDeDureza24 = '5'
+
+sheet.ItemNome25 = 'Caneta/Lápis'
+sheet.Iniciativa25 = "+1"
+sheet.DanoItem25 = "???"
+sheet.Golpear25 = "???"
+sheet.Aparar25 = "???"
+sheet.CD25 = "???"
+
+sheet.ItemNome26 = 'Faca'
+sheet.Iniciativa26 = "+1"
+sheet.DanoItem26 = "+1"
+sheet.Golpear26 = "2"
+sheet.Aparar26 = "2"
+sheet.CD26 = "2"
+
+sheet.ItemNome27 = 'Faca de cozinha/talhador'
+sheet.Iniciativa27 = "+2"
+sheet.DanoItem27 = "+2"
+sheet.Golpear27 = "2"
+sheet.Aparar27 = "2"
+sheet.CD27 = "2"
+
+sheet.ItemNome28 = 'Faca de combate'
+sheet.Iniciativa28 = "+2"
+sheet.DanoItem28 = "+2"
+sheet.Golpear28 = "2"
+sheet.Aparar28 = "2"
+sheet.CD28 = "2"
+
+sheet.ItemNome29 = 'Soqueiras'
+sheet.Iniciativa29 = "+1"
+sheet.DanoItem29 = "+1"
+sheet.Golpear29 = "1"
+sheet.Aparar29 = "1"
+sheet.CD29 = "2"
+
+sheet.ItemNome30 = 'Garrafa Quebrado'
+sheet.Iniciativa30 = "+1"
+sheet.DanoItem30 = "+1"
+sheet.Golpear30 = "-1"
+sheet.Aparar30 = "2"
+sheet.CD30 = "2"
+
+sheet.ItemNome31 = 'Espada'
+sheet.Iniciativa31 = "+5"
+sheet.DanoItem31 = "+5"
+sheet.Golpear31 = "+1/+0"
+sheet.Aparar31 = "2"
+sheet.CD31 = "2"
+
+sheet.ItemNome32 = 'Machado'
+sheet.Iniciativa32 = "-2"
+sheet.DanoItem32 = "+8"
+sheet.Golpear32 = "-2"
+sheet.Aparar32 = "2"
+sheet.CD32 = "2"
+
+sheet.ItemNome33 = 'Implementos de jardim'
+sheet.Iniciativa33 = "-3"
+sheet.DanoItem33 = "+3"
+sheet.Golpear33 = "-1"
+sheet.Aparar33 = "-2"
+sheet.CD33 = "2"
+
+sheet.ItemNome34 = 'Martelo'
+sheet.Iniciativa34 = "-1"
+sheet.DanoItem34 = "+1"
+sheet.Golpear34 = "1"
+sheet.Aparar34 = "1"
+sheet.CD34 = "1"
+
+sheet.ItemNome35 = 'Malho de combate'
+sheet.Iniciativa35 = "-3"
+sheet.DanoItem35 = "+9"
+sheet.Golpear35 = "-3"
+sheet.Aparar35 = "2"
+sheet.CD35 = "2"
+
+sheet.ItemNome36 = 'Taco de Baseball c/ Espinhos'
+sheet.Iniciativa36 = "+2"
+sheet.DanoItem36 = "+2"
+sheet.Golpear36 = "1"
+sheet.Aparar36 = "1"
+sheet.CD36 = "1"
+
+sheet.ItemNome37 = 'Pé de Cabra'
+sheet.Iniciativa37 = "-1"
+sheet.DanoItem37 = "+2"
+sheet.Golpear37 = "1"
+sheet.Aparar37 = "1"
+sheet.CD37 = "1"
+
+sheet.ItemNome38 = 'Bastão Longo'
+sheet.Iniciativa38 = "-1"
+sheet.DanoItem38 = "+5"
+sheet.Golpear38 = "-1"
+sheet.Aparar38 = "1"
+sheet.CD38 = "1"
+
+sheet.ItemNome39 = 'Lançador'
+sheet.Iniciativa39 = "+3"
+sheet.DanoItem39 = "+4"
+sheet.Golpear39 = "-1"
+sheet.Aparar39 = "1"
+sheet.CD39 = "1"
+
+sheet.ItemNome40 = 'Lança'
+sheet.Iniciativa40 = "+3"
+sheet.DanoItem40 = "+4"
+sheet.Golpear40 = "+1/+1"
+sheet.Aparar40 = "2"
+sheet.CD40 = "2"
+
+sheet.ItemNome41 = 'Soco Inglês'
+sheet.Iniciativa41 = "+2"
+sheet.DanoItem41 = "+2"
+sheet.Golpear41 = "+1/+1"
+sheet.Aparar41 = "2"
+sheet.CD41 = "2"
+sheet.ItemNome42 = 'Motoserra'
+sheet.DanoItem42 = '+10'
+sheet.Iniciativa42 = "-4"
+sheet.Golpear42 = "+10"
+sheet.Aparar42 = "-1"
+sheet.CD42 = "-4"
+                end;
+</event>
+        </dataLink>
+    </label>
+</group>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form name="frmAnotacao" align="client" margins="{top=1}" theme="light"> 
+    <scrollBox align="client">
+        <rectangle width="1340" height="1500" color="white"> 
+		
+			<rectangle left="250" top="10" width="800" height="650" color="white" >
+				<label text="DIÁRIO" height="30" width="770" horzTextAlign="center" fontFamily="DK Umbilical Noose" fontColor="black" fontSize="30" />
+				<layout left="5" top="30" width="800" height="580">
+				<image left="0" top="0" width="770" height="550" src="images/diario2.png" style="proportional" optimize="true" align="left"/>
+				<textEditor fontFamily="kalam" width="320" height="500" left="50" top="20" fontSize="15" fontColor="black" field="Anotacao1bloco02" transparent="true" />
+				<textEditor fontFamily="kalam" width="320" height="500" left="390" top="20" fontSize="15" fontColor="black" field="Anotacao1bloco01" transparent="true" />		
+				</layout>
+			</rectangle>
+
+			<rectangle left="1" top="680" width="1340" height="800" cornerType="round" strokeColor="black" color="white" strokeSize="2" xradius="5" yradius="5">
+				<label text="ANOTAÇÃO" height="30" width="1340" horzTextAlign="center" fontFamily="DK Umbilical Noose" fontColor="black" fontSize="30" />
+				<button left="2" top="2" height="25" text="Nova" width="80" fontFamily="kalam" hint="Adicionar nova linha de anotação." onClick="self.rclNote:append();"/>
+				<rectangle left="0" top="99" width="401" height="501" cornerType="round" strokeColor="black" color="white" strokeSize="2" xradius="5" yradius="5"/>
+				<recordList name="rclNote" field="NoteL" templateForm="frmListaNote" left="1" top="100" width="398" height="500"/>
+				
+				<rectangle left="449" top="99" width="401" height="501" cornerType="round" strokeColor="black" color="white" strokeSize="2" xradius="5" yradius="5"/>
+				<textEditor fontFamily="kalam" width="400" height="500" left="450" top="100" fontSize="15" fontColor="black" field="Anotacao22" transparent="true" />	
+				
+				<rectangle left="900" top="99" width="401" height="501" cornerType="round" strokeColor="black" color="white" strokeSize="2" xradius="5" yradius="5"/>
+				<textEditor fontFamily="kalam" width="400" height="500" left="900" top="100" fontSize="15" fontColor="black" field="Anotacao33" transparent="true" />	
+			</rectangle>
+			
+			
+		</rectangle>
+    </scrollBox >
+</form>

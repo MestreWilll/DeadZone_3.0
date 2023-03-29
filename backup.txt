@@ -1,0 +1,2387 @@
+
+
+	 				<import file="itensPag2.lfm"/>
+
+if sheet.Nivel >= 1 then
+sheet.ItemNome = 'Arco'
+sheet.Iniciativa = '-2'
+sheet.DanoItem = '+4'
+if sheet.Nivel >= 1 then
+sheet.ItemNome2 = 'Besta (Crossbow)'
+end;
+end;
+
+Exemplo de como vai ficar todos
+if sheet.Nivel >= 1 then
+sheet.ItemNome = 'Arco'
+sheet.Iniciativa = '-2'
+Siga essa lista abaixo e inumere o proximo de sheet.ItemNome2 até o 24
+Arco 
+Iniciativa = -2
+DanoItem = +4
+Alcance = C
+Cadencia = ùnico
+Municao = 1
+ClasseDeDureza = 2
+
+Besta (Crossbow) 
++2  
++6
+C
+Único
+1
+3
+
+Pistola Leve 
++3
++2
+C
+Curto
+18
+2
+
+Revolver Pesado 
++2
++4
+C
+Curto
+6
+2
+
+Submetralhadora 
++2
++4
+M
+Totalmente automático
+30
+2
+
+Metralhadora Leve 
++2
++3
+C
+Totalmente automático
+30
+2
+
+Rifle de Assalto Leve
++1 
++6
+L
+Totalmente automático
+30
+3
+
+Rifle de Assalto Pesado 
+???
++7
+E
+Totalmente automático
+30
+3
+
+Espingarda Leve 
++1
++3
+C
+Único
+5
+2
+
+Rifle de Caça 
+???
++7
+E
+Único 
+5
+3
+
+Rifle de Precisão  
+???
++8
+E
+Único
+10
+3
+
+Rifle de Precisão, pesado
+-1
++10
+E
+Único
+5
+4
+
+Shotgun 
++1
++8
+C
+Curto
+
+Espingarda de cano duplo
+???
++5
+C
+Curto
+2
+2
+
+Metralhadora Pequena 
+???
++7
+L
+Correia Automática Completa
+???
+3
+
+Metralhadora Pesada 
+-1
++10
+E
+Automática Completa 
+???
+4
+
+Lançador de Míss 
+-2 
++10
+L
+Único
+1
+4
+Missil de Tanque
+-4
++10/+10
+E
+Único
+1
+5
+
+Granada de Mão
+???
++10
+Explosão de 5m
+???
+1
+4
+
+Molotov 
+-1
++6/+6
+C
+Único
+1
+2
+
+Mina, Antipessoal 
+???
++8
+Explosão de 5m 
+???
+1
+3
+
+Mina, Anti-Veículo 
+???
++10/+10
+Explosão de 5m
+???
+1
+5
+
+Artilharia Leve 
+-4
++10/+10
+Explosão de 1m
+Longo
+Cinto
+4
+
+Artilharia Pesado 
+-6
++10/+10
+Explosão de 10m
+Único
+???
+5
+
+if sheet.Nivel >= 1 then
+sheet.ItemNome19 = 'Granada de Mão'
+sheet.Iniciativa19 = '???'
+sheet.DanoItem19 = '+10'
+sheet.Alcance19 = 'Explosão de 5m'
+sheet.Cadencia19 = '???'
+sheet.Municao19 = '1'
+sheet.ClasseDeDureza19 = '4'
+Continue até o 24
+A ordem da lista é essa
+Granada de Mão
+???
++10
+Explosão de 5m
+???
+1
+4
+
+Molotov 
+-1
++6/+6
+C
+Único
+1
+2
+
+Mina, Antipessoal 
+???
++8
+Explosão de 5m 
+???
+1
+3
+
+Mina, Anti-Veículo 
+???
++10/+10
+Explosão de 5m
+???
+1
+5
+
+Artilharia Leve 
+-4
++10/+10
+Explosão de 1m
+Longo
+Cinto
+4
+
+Artilharia Pesado 
+-6
++10/+10
+Explosão de 10m
+Único
+???
+5
+
+
+
+Quero que pegue
+Equipamento Velho Normal Novo
+Faca 5s 50s 100s
+Espada 150s 500s 900s
+Machado 30s 80s 200s
+Arco/crossbow — | 200s 5005 1200s
+Pistola 300s 600s 900s
+Rifle 5005 2000s 4000s
+Sniper Rifle 2000s 50005 20,000s
+Submetralhadora | 400s 1800 35005
+Rifle de Assalto — | 800s 4000s 8000s
+Munição 1s 5s 10s
+
+(Bala ou 1 Cartucho)
+
+Munição 50s 1000s 5000s
+(artilharia/Missel)
+
+Metralhadora 4000s 8000s 15,000s
+Morteiro 10000s — | 20,000s 50,000s
+Drone 800s 2000s 4000s
+Lançador de Míssel| 500s 50,000s 5,000,000s
+Artilharia 50,000s —|500,000s —|10,000,000s
+Mina/Claymore — | 5,000s 10,000s 30,000s
+Explosivo C4 10,000s — | 15,000s 50,000s
+
+Bomba de Massa | 5,000,000s | 15,000,000s [ 50,000,000s
+
+-- Classe de Dureza
+<label left="317.88" top="125" width="48.12" height="32" horzTextAlign="center" field="ClasseDeDureza" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+-- Classe de Dureza
+<label left="317.88" top="125" width="48.12" height="32" horzTextAlign="center" field="ClasseDeDureza2" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+-- Classe de Dureza
+<label left="317.88" top="125" width="48.12" height="32" horzTextAlign="center" field="ClasseDeDureza3" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+-- Classe de Dureza
+<label left="317.88" top="125" width="48.12" height="32" horzTextAlign="center" field="ClasseDeDureza4" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+-- Classe de Dureza
+<label left="317.88" top="125" width="48.12" height="32" horzTextAlign="center" field="ClasseDeDureza5" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+-- Classe de Dureza
+<label left="317.88" top="125" width="48.12" height="32" horzTextAlign="center" field="ClasseDeDureza6" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+-- Classe de Dureza
+<label left="317.88" top="125" width="48.12" height="32" horzTextAlign="center" field="ClasseDeDureza7" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+-- Classe de Dureza
+<label left="317.88" top="125" width="48.12" height="32" horzTextAlign="center" field="ClasseDeDureza8" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+-- Classe de Dureza
+<label left="317.88" top="125" width="48.12" height="32" horzTextAlign="center" field="ClasseDeDureza9" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+-- Classe de Dureza
+<label left="317.88" top="125" width="48.12" height="32" horzTextAlign="center" field="ClasseDeDureza10" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+-- Classe de Dureza
+<label left="317.88" top="125" width="48.12" height="32" horzTextAlign="center" field="ClasseDeDureza11" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+-- Classe de Dureza
+<label left="317.88" top="125" width="48.12" height="32" horzTextAlign="center" field="ClasseDeDureza12" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+-- Classe de Dureza
+<label left="317.88" top="125" width="48.12" height="32" horzTextAlign="center" field="ClasseDeDureza13" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+-- Classe de Dureza
+<label left="317.88" top="125" width="48.12" height="32" horzTextAlign="center" field="ClasseDeDureza14" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+-- Classe de Dureza
+<label left="317.88" top="125" width="48.12" height="32" horzTextAlign="center" field="ClasseDeDureza15" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+-- Classe de Dureza
+<label left="317.88" top="125" width="48.12" height="32" horzTextAlign="center" field="ClasseDeDureza16" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+-- Classe de Dureza
+<label left="317.88" top="125" width="48.12" height="32" horzTextAlign="center" field="ClasseDeDureza17" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+-- Classe de Dureza
+<label left="317.88" top="125" width="48.12" height="32" horzTextAlign="center" field="ClasseDeDureza18" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+-- Classe de Dureza
+<label left="317.88" top="125" width="48.12" height="32" horzTextAlign="center" field="ClasseDeDureza19" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+-- Classe de Dureza
+<label left="317.88" top="125" width="48.12" height="32" horzTextAlign="center" field="ClasseDeDureza20" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+-- Classe de Dureza
+<label left="317.88" top="125" width="48.12" height="32" horzTextAlign="center" field="ClasseDeDureza21" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+-- Classe de Dureza
+<label left="317.88" top="125" width="48.12" height="32" horzTextAlign="center" field="ClasseDeDureza22" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+-- Classe de Dureza
+<label left="317.88" top="125" width="48.12" height="32" horzTextAlign="center" field="ClasseDeDureza23" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+-- Classe de Dureza
+<label left="317.88" top="125" width="48.12" height="32" horzTextAlign="center" field="ClasseDeDureza24" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/>
+
+<?xml version="1.0" encoding="UTF-8"?>
+<form name="frmDZ_1_svg" align="client" theme="light" margins="{top=1}">
+    <style>#frmDZ_Ficha1_svg path {color: black; strokeColor: black; mode: stretch;}  
+#frmDZ_Ficha1_svg label {fontColor: black; textTrimming: none; wordWrap: false; autoSize: true; fontFamily: kalam;;}</style>
+	 				<import file="itensPag2.lfm"/>
+		
+
+## ------------ #### ------------ #### ------------ #### ------------ #### ------------ #### ------------ #### ------------ #### ------------ #### ------------ #### ------------ ####
+## ------------ #### ------------ #### ------------ #### ------------ #### ------------ #### ------------ #### ------------ #### ------------ #### ------------ #### ------------ ####
+######Style#####
+	<style>.padraoCaract{ fontColor: #C0504D; fontSize: 20; horzTextAlign: center; vertTextAlign: center; fontStyle:bold; fontFamily: kalam; }</style>
+	<style>.padraocabeca{ fontColor: #C0504D; fontSize: 20; horzTextAlign: center; vertTextAlign: center; fontFamily: kalam; } </style> 
+	<style>.padraoAtributos{ fontColor: #C0504D; fontSize: 18; horzTextAlign: center; vertTextAlign: center; fontStyle:bold; fontFamily: kalam; transparent: true; } </style>
+	<style>.padraocondicao{ fontSize: 25; horzTextAlign: center; vertTextAlign: center; fontFamily: kalam; transparent: true; type: float;  } </style>
+	<style>.padraocondicao2{ fontSize: 25; horzTextAlign: center; vertTextAlign: center; fontFamily: kalam; } </style>
+	<style>.padraoTXTPericia{ fontColor: #C0504D; fontSize: 18; horzTextAlign: center; vertTextAlign: center; fontStyle:bold; fontFamily: kalam; transparent: true;} </style>
+	<style>.TXT_PCV{ fontColor: #C0504D; fontSize: 15; horzTextAlign: leading; vertTextAlign: center; fontFamily: kalam; transparent: true;} </style>
+	<style>.padraoPopC{ fontColor: #C0504D; fontSize: 15; horzTextAlign: leading; fontFamily: kalam; transparent: true; align: client; } </style>
+	<style>.NUMEROS{ fontColor: #C0504D; fontSize: 18; horzTextAlign: center; vertTextAlign: center; fontStyle:bold; fontFamily: kalam; type: number; transparent: true; }</style>
+	<style>.NUMEROS2{ fontColor: #C0504D; fontSize: 18; horzTextAlign: center; vertTextAlign: center; fontStyle:bold; fontFamily: kalam; transparent: true; }</style>
+	<style>.padrao2{ fontColor: #000000; fontSize: 15; horzTextAlign: center; vertTextAlign: center; fontFamily: kalam;}</style>
+	<style>.PopUpExp{ fontColor: #C0504D; fontSize: 25; horzTextAlign: leading; vertTextAlign: center; fontFamily: kalam;}</style>
+	<style>.Ar{ width:40; height:30; cornerType:round; color:#00000000; strokeColor:black;	strokeSize:2; xradius:8; yradius:8; }</style>
+	<style>.Ar2{ fontColor: #C0504D; fontSize: 20; horzTextAlign: center; vertTextAlign: leading; fontStyle:bold; fontFamily: kalam; transparent: true; }</style>
+	<style>.Ar3{ width:40; height:30; cornerType:round; color:#00000000; strokeColor:red; strokeSize:2; xradius:8; yradius:8; }</style>
+	<style>.NPC_Rp{ fontColor: #C0504D; fontSize: 15; horzTextAlign: center; vertTextAlign: center; fontStyle:bold; fontFamily: kalam; transparent: true;}</style>
+	<style>.NPC_Rp33{ fontColor: black; fontSize: 15; horzTextAlign: center; vertTextAlign: center; fontStyle:bold; fontFamily: kalam; transparent: true;}</style>
+				<!-- Script para uso dos dados rolados aleatorios -->
+
+ 
+## ------------ #### ------------ #### ------------ #### ------------ #### ------------ #### ------------ #### ------------ #### ------------ #### ------------ #### ------------ ####
+## ------------ #### ------------ #### ------------ #### ------------ #### ------------ #### ------------ #### ------------ #### ------------ #### ------------ #### ------------ ####
+
+
+<layout name="FichaPrincipal" align="client" visible="true">
+
+	<scrollBox align="client">
+
+        <rectangle width="1340" height="1188" color="white"> 
+            <image left="0" top="0" width="918" height="1188" src="images/Pg1.png" style="stretch" optimize="true" compilerOrder="0"/>
+## Cabeçalho ##
+            <layout left="649" top="52" width="250" height="50" >
+			
+                <edit transparent="true" class="padraocabeca"  width="250" height="30" field="Disposicao" fontStyle="bold"/>
+            </layout> 
+            <layout left="0" top="55" width="200" height="50">
+                <edit transparent="true" class="padraocabeca"  width="205" height="30" field="Nick_Personagem" fontStyle="bold"/>
+            </layout> 
+            <layout left="210" top="55" width="78" height="50" >
+                <edit transparent="true" fontSize="15" class="padraocabeca"  width="78" height="30" field="Nick_Pessoa"/>
+            </layout> 
+            <layout left="649" top="110" width="254" height="50" >
+                <edit transparent="true" class="padraocabeca"  width="254" height="30" field="Nick_Cap" fontStyle="bold"/>
+            </layout> 
+            <layout left="30" top="110" width="210" height="50" >
+                <edit transparent="true" class="padraocabeca"  width="210" height="30" field="Nick_Refugio" fontStyle="bold"/>
+            </layout> 
+## ------------ #### ------------ #### ------------ #### ------------ #### ------------ #### ------------ #### ------------ #### ------------ #### ------------ #### ------------ ####
+## ATRIBUTOS ##
+			<layout left="194" top="270" width="71" height="30"> <edit class="NUMEROS" width="71" height="30" field="FOR"/> </layout>
+			<button left="273" top="273" width="14" height="14" text="R" hint="Desc...">
+				<event name="onClick">
+					local rolagem = Firecast.interpretarRolagem(sheet.FOR); 
+					if not rolagem.possuiAlgumDado then rolagem = Firecast.interpretarRolagem("1d10"):concatenar(rolagem); end; 
+					local mesaDoPersonagem = Firecast.getMesaDe(sheet);
+					if mesaDoPersonagem ~= nil then mesaDoPersonagem.chat:rolarDados(rolagem,"[§B][§K10][ Atributo ] [§K14]Força de "..sheet.Nick_Personagem); end;										
+				</event>
+			</button>
+			<image width="17" height="17" left="272" top="273" style="proportional" center="true" src="images/Dado.jpg"/>
+			
+            <layout left="194" top="306" width="71" height="30"> <edit class="NUMEROS" width="71" height="30" field="DES"/> </layout>
+			<button left="273" top="309" width="14" height="14" text="R" hint="Desc...">
+				<event name="onClick">
+					local rolagem = Firecast.interpretarRolagem(sheet.DES); 
+					if not rolagem.possuiAlgumDado then rolagem = Firecast.interpretarRolagem("1d10"):concatenar(rolagem); end; 
+					local mesaDoPersonagem = Firecast.getMesaDe(sheet);
+					if mesaDoPersonagem ~= nil then mesaDoPersonagem.chat:rolarDados(rolagem,"[§B][§K10][ Atributo ] [§K14]Destreza de "..sheet.Nick_Personagem); end;										
+				</event>
+			</button>
+			<image width="17" height="17" left="272" top="309" style="proportional" center="true" src="images/Dado.jpg"/>
+			
+            <layout left="194" top="342" width="71" height="30"> <edit class="NUMEROS" width="71" height="30" field="PRE"/> </layout> 
+			<button left="273" top="345" width="14" height="14" text="R" hint="Desc...">
+				<event name="onClick">
+					local rolagem = Firecast.interpretarRolagem(sheet.PRE); 
+					if not rolagem.possuiAlgumDado then rolagem = Firecast.interpretarRolagem("1d10"):concatenar(rolagem); end; 
+					local mesaDoPersonagem = Firecast.getMesaDe(sheet);
+					if mesaDoPersonagem ~= nil then mesaDoPersonagem.chat:rolarDados(rolagem,"[§B][§K10][ Atributo ] [§K14]Presença de "..sheet.Nick_Personagem); end;										
+				</event>
+			</button>
+			<image width="17" height="17" left="272" top="345" style="proportional" center="true" src="images/Dado.jpg"/>
+			
+            <layout left="194" top="378" width="71" height="30"> <edit class="NUMEROS" width="71" height="30" field="TAT"/> </layout> 
+			<button left="273" top="381" width="14" height="14" text="R" hint="Desc...">
+				<event name="onClick">
+					local rolagem = Firecast.interpretarRolagem(sheet.TAT); 
+					if not rolagem.possuiAlgumDado then rolagem = Firecast.interpretarRolagem("1d10"):concatenar(rolagem); end; 
+					local mesaDoPersonagem = Firecast.getMesaDe(sheet);
+					if mesaDoPersonagem ~= nil then mesaDoPersonagem.chat:rolarDados(rolagem,"[§B][§K10][ Atributo ] [§K14]Tato de "..sheet.Nick_Personagem); end;										
+				</event>
+			</button>
+			<image width="17" height="17" left="272" top="381" style="proportional" center="true" src="images/Dado.jpg"/>
+			
+            <layout left="194" top="413" width="71" height="30"> <edit class="NUMEROS" width="71" height="30" field="PER"/> </layout> 
+			<button left="273" top="416" width="14" height="14" text="R" hint="Desc...">
+				<event name="onClick">
+					local rolagem = Firecast.interpretarRolagem(sheet.PER); 
+					if not rolagem.possuiAlgumDado then rolagem = Firecast.interpretarRolagem("1d10"):concatenar(rolagem); end; 
+					local mesaDoPersonagem = Firecast.getMesaDe(sheet);
+					if mesaDoPersonagem ~= nil then mesaDoPersonagem.chat:rolarDados(rolagem,"[§B][§K10][ Atributo ] [§K14]Percepção de "..sheet.Nick_Personagem); end;										
+				</event>
+			</button>
+			<image width="17" height="17" left="272" top="416" style="proportional" center="true" src="images/Dado.jpg"/>
+			
+            <layout left="194" top="449" width="71" height="30"> <edit class="NUMEROS" width="71" height="30" field="INT"/> </layout>
+				<button left="273" top="452" width="14" height="14" text="R" hint="Desc...">
+				<event name="onClick">
+					local rolagem = Firecast.interpretarRolagem(sheet.INT); 
+					if not rolagem.possuiAlgumDado then rolagem = Firecast.interpretarRolagem("1d10"):concatenar(rolagem); end; 
+					local mesaDoPersonagem = Firecast.getMesaDe(sheet);
+					if mesaDoPersonagem ~= nil then mesaDoPersonagem.chat:rolarDados(rolagem,"[§B][§K10][ Atributo ] [§K14]Inteligencia de "..sheet.Nick_Personagem); end;										
+				</event>
+			</button>
+			<image width="17" height="17" left="272" top="452" style="proportional" center="true" src="images/Dado.jpg"/>
+			
+            <layout left="178" top="500" width="80" height="30"> <edit class="NUMEROS" width="40" height="30" field="DET"/> </layout>
+				<button left="274" top="505" width="16" height="16" text="R" hint="Desc...">
+				<event name="onClick">
+					local rolagem = Firecast.interpretarRolagem(sheet.DET); 
+					if not rolagem.possuiAlgumDado then rolagem = Firecast.interpretarRolagem("1d10"):concatenar(rolagem); end; 
+					local mesaDoPersonagem = Firecast.getMesaDe(sheet);
+					if mesaDoPersonagem ~= nil then mesaDoPersonagem.chat:rolarDados(rolagem,"[§B][§K10][ Atributo ] [§K14]Determinação de "..sheet.Nick_Personagem); end;									
+				</event>
+			</button>
+			<image width="19" height="19" left="272" top="505" style="proportional" center="true" src="images/Dado.jpg"/>
+			
+            <layout left="178" top="536" width="80" height="30"> <edit class="NUMEROS" width="40" height="30" field="SOR"/> </layout>
+				<button left="274" top="541" width="16" height="16" text="R" hint="Desc...">
+				<event name="onClick">
+					local rolagem = Firecast.interpretarRolagem(sheet.SOR); 
+					if not rolagem.possuiAlgumDado then rolagem = Firecast.interpretarRolagem("1d10"):concatenar(rolagem); end; 
+					local mesaDoPersonagem = Firecast.getMesaDe(sheet);
+					if mesaDoPersonagem ~= nil then mesaDoPersonagem.chat:rolarDados(rolagem,"[§B][§K10][ Atributo ] [§K14]Sorte de "..sheet.Nick_Personagem); end;							
+				</event>
+			</button>
+			<image width="19" height="19" left="272" top="541" style="proportional" center="true" src="images/Dado.jpg"/>
+			
+            <layout left="240" top="499" width="80" height="30">
+                <edit transparent="true" fontSize="18" fontColor="#C0504D" fontFamily="kalam" vertTextAlign="center" horzTextAlign="center" width="45" height="30" field="DETtemp"/> </layout> 
+            <layout left="240" top="536" width="80" height="30">
+                <edit transparent="true" fontSize="18" fontColor="#C0504D" fontFamily="kalam" vertTextAlign="center" horzTextAlign="center" width="45" height="30" field="SORtemp"/> </layout> 	
+				
+## ------------ #### ------------ #### ------------ #### ------------ #### ------------ #### ------------ #### ------------ #### ------------ #### ------------ #### ------------ ####
+## INICIATIVA ##
+            <layout left="182" top="590" width="100" height="27"> <label align="client" field="Iniciativa" fontColor="#00000" class="padraoCaract"/> </layout> 
+			<dataLink fields="{'DES', 'PER'}">
+					<event name="onChange"> sheet.Iniciativa = (tonumber(sheet.DES) or 0) + (tonumber(sheet.PER) or 0); </event>
+			</dataLink>
+
+			<button left="284" top="591" width="14" height="14" text="R" hint="Desc... ">
+				<event name="onClick">
+					local mesaDoPersonagem = Firecast.getMesaDe(sheet);
+					local rolagem = Firecast.interpretarRolagem(sheet.Iniciativa); 
+					if not rolagem.possuiAlgumDado then rolagem = Firecast.interpretarRolagem("1d10"):concatenar(rolagem); end; 
+					if mesaDoPersonagem ~= nil then mesaDoPersonagem.chat:rolarDados(rolagem,"[§B][§K14]Iniciativa de "..sheet.Nick_Personagem); end;										
+				</event>
+			</button>
+			<image width="17" height="17" left="283" top="591" style="proportional" center="true" src="images/Dado.jpg"/>
+## VITAIS ##
+	## Moralidade ##
+			<comboBox left="182" top="655" width="100" height="25" field="StatusMoralidade"  items="{'Selvagem', 'Egoísta', 'Moralista', 'Honroso', 'Santo'}" values="{'Selvagem', 'Egoísta', 'Moralista', 'Honroso', Santo}"
+			class="TXT_PCV" fontSize="18"/>
+
+            <layout left="180" top="695" width="100" height="30"> <edit fontColor="#00000" class="NUMEROS" width="100" height="30" field="Moralidade"/> </layout> 
+
+			<button left="285" top="701" width="14" height="14" text="R" hint="Desc... ">
+				<event name="onClick">
+					local mesaDoPersonagem = Firecast.getMesaDe(sheet);
+					local rolagem = Firecast.interpretarRolagem(sheet.Moralidade); 
+					if not rolagem.possuiAlgumDado then rolagem = Firecast.interpretarRolagem("1d10"):concatenar(rolagem); end; 
+					if mesaDoPersonagem ~= nil then mesaDoPersonagem.chat:rolarDados(rolagem,"[§B][§K14][ Moralidade ] [§T][§T][§B][§K6]"..sheet.StatusMoralidade.. "[§B][§K14] " ..sheet.Nick_Personagem); end;										
+				</event>
+			</button>
+			<image width="17" height="17" left="284" top="701" style="proportional" center="true" src="images/Dado.jpg"/>
+
+	## SaudeBASE ##
+            <layout left="68" top="770" width="60" height="23">
+                <label align="client" field="Saude_Base" fontSize="20" fontColor="#00000" horzTextAlign="center" vertTextAlign="center"/> </layout> 
+			<dataLink fields="{'FOR', 'SOR'}">
+					<event name="onChange">                
+						   sheet.Saude_Base = (tonumber(sheet.FOR) or 0) + (tonumber(sheet.SOR) or 0);
+					</event>
+			</dataLink>
+	## SaudeEXTRA ##
+            <layout left="65" top="815" width="60" height="30"> <edit fontSize="18" fontColor="#E10000" class="NUMEROS" width="60" height="30" field="Saude_Extra"/> </layout> 
+	## SaudeTOTAL ##
+            <layout left="165" top="750" width="110" height="120" compilerOrder="53">
+                <label align="client" field="Saude_Total" fontSize="30" horzTextAlign="center" fontStyle="bold" /> </layout> 
+			<dataLink fields="{'Saude_Extra', 'Saude_Base'}">
+					<event name="onChange">                
+						   sheet.Saude_Total = (tonumber(sheet.Saude_Base) or 0) + (tonumber(sheet.Saude_Extra) or 0);
+					</event>
+			</dataLink>
+## CONDIÇÕES ##
+           <layout left="80" top="973" width="80" height="40" >
+                <edit class="padraocondicao" fontColor="#000000" fontStyle="bold" width="80" height="40" fontFamily="kalam" field="Lesionado"/> </layout>
+            <layout left="183" top="973" width="80" height="40" >
+                <edit class="padraocondicao" fontColor="#C0504D" width="80" height="40" fontFamily="kalam" field="Lesionado_A" /> </layout>
+           <layout left="80" top="900" width="80" height="40" >
+                <edit class="padraocondicao" fontColor="#000000" fontStyle="bold" width="80" height="40" fontFamily="kalam" field="Machucado"/> </layout>
+            <layout left="183" top="900" width="80" height="40" >
+                <edit class="padraocondicao" fontColor="#C0504D"  width="80" height="40" fontFamily="kalam" field="Machucado_A" /> </layout>
+           <layout left="80" top="1046" width="80" height="40" >
+                <edit class="padraocondicao" fontColor="#000000" fontStyle="bold"  width="80" height="40" fontFamily="kalam" field="Ferido"/> </layout>
+            <layout left="183" top="1046" width="80" height="40" >
+                <edit class="padraocondicao" fontColor="#C0504D"  width="80" height="40" field="Ferido_A" /> </layout>
+				
+			<dataLink fields="{'Saude_Total'}">
+					<event name="onChange">                
+						sheet.Lesionado = (tonumber(sheet.Saude_Total) or 0) / 3;
+						sheet.Machucado = (tonumber(sheet.Saude_Total) or 0) / 3;
+						sheet.Ferido = (tonumber(sheet.Saude_Total) or 0) / 3;					   
+					</event>
+			</dataLink>
+
+## RESISTENCIA ##
+            <layout left="80" top="1126" width="50" height="30"> <edit class="NUMEROS" width="50" height="30" fontSize="16" field="Resistencia"/> </layout>
+			<dataLink fields="{'FOR'}">
+					<event name="onChange">                
+						   sheet.Resistencia = ((tonumber(sheet.FOR) or 0)*(-1));
+					</event>
+			</dataLink>
+## ------------ #### ------------ #### ------------ #### ------------ #### ------------ #### ------------ #### ------------ #### ------------ #### ------------ #### ------------ ####
+## PERICIAS ##
+		## LINHAS ##
+            <layout left="377" top="357" width="85" height="30"> <edit class="TXT_PCV" width="88" height="29" field="Construcao" /></layout> 
+            <layout left="396" top="608" width="65" height="27"> <edit  text="Geral" class="TXT_PCV" width="65" height="28" field="Conhecimento" /> </layout> 
+            <layout left="356" top="637" width="100" height="27"> <edit  class="TXT_PCV" width="88" height="29" field="Idiomas" /> </layout> 
+            <layout left="386" top="794" width="72" height="30"> <edit  class="TXT_PCV" width="88" height="29" field="Performance" /> </layout> 
+            <layout left="372" top="827" width="88" height="28"> <edit  class="TXT_PCV" width="88" height="29" field="Pilotagem" /> </layout> 
+            <layout left="368" top="856" width="90" height="28"> <edit class="TXT_PCV" width="90" height="29" field="Conducao" /> </layout> 
+            <layout left="310" top="1077" width="148" height="28"> <edit class="TXT_PCV" width="148" height="29" field="Coringa1" /> </layout> 
+            <layout left="309" top="1109" width="148" height="28"> <edit class="TXT_PCV" width="148" height="29" field="Coringa2" /> </layout> 
+            <layout left="310" top="1141" width="148" height="28"> <edit class="TXT_PCV" width="148" height="29" field="Coringa3" /> </layout>
+		## ROLL ##
+			<button left="553" top="268" width="14" height="14" text="R" hint="Desc... ">
+				<event name="onClick">
+					local mesaDoPersonagem = Firecast.getMesaDe(sheet);
+					local rolagem = Firecast.interpretarRolagem(sheet.Peri01); 
+					if not rolagem.possuiAlgumDado then rolagem = Firecast.interpretarRolagem("1d10"):concatenar(rolagem); end; 
+					if mesaDoPersonagem ~= nil then mesaDoPersonagem.chat:rolarDados(rolagem,"[§B][§K8][ Pericia ] [§K14]Manusear Animais de "..sheet.Nick_Personagem); end;										
+				</event>
+			</button>
+			<image width="17" height="17" left="552" top="268" style="proportional" center="true" src="images/Dado.jpg"/>
+			
+			<button left="553" top="300" width="14" height="14" text="R" hint="Desc... ">
+				<event name="onClick">
+					local mesaDoPersonagem = Firecast.getMesaDe(sheet);
+					local rolagem = Firecast.interpretarRolagem(sheet.Peri02); 
+					if not rolagem.possuiAlgumDado then rolagem = Firecast.interpretarRolagem("1d10"):concatenar(rolagem); end; 
+					if mesaDoPersonagem ~= nil then mesaDoPersonagem.chat:rolarDados(rolagem,"[§B][§K8][ Pericia ] [§K14]Atletismo de "..sheet.Nick_Personagem); end;										
+				</event>
+			</button>
+			<image width="17" height="17" left="552" top="300" style="proportional" center="true" src="images/Dado.jpg"/>
+			
+			<button left="553" top="332" width="14" height="14" text="R" hint="Desc... ">
+				<event name="onClick">
+					local mesaDoPersonagem = Firecast.getMesaDe(sheet);				
+					local rolagem = Firecast.interpretarRolagem(sheet.Peri03); 
+					if not rolagem.possuiAlgumDado then rolagem = Firecast.interpretarRolagem("1d10"):concatenar(rolagem); end; 
+					if mesaDoPersonagem ~= nil then mesaDoPersonagem.chat:rolarDados(rolagem,"[§B][§K8][ Pericia ] [§K14]Liderança de "..sheet.Nick_Personagem); end;										
+				</event>
+			</button>
+			<image width="17" height="17" left="553" top="332" style="proportional" center="true" src="images/Dado.jpg"/>
+			
+			<button left="553" top="364" width="14" height="14" text="R" hint="Desc... ">
+				<event name="onClick">
+					local mesaDoPersonagem = Firecast.getMesaDe(sheet);				
+					local mesaDoPersonagem = Firecast.getMesaDe(sheet);				
+					local rolagem = Firecast.interpretarRolagem(sheet.Peri04); 
+					if not rolagem.possuiAlgumDado then rolagem = Firecast.interpretarRolagem("1d10"):concatenar(rolagem); end; 
+					if mesaDoPersonagem ~= nil then mesaDoPersonagem.chat:rolarDados(rolagem,"[§B][§K8][ Pericia ] [§K14]Construção "..sheet.Construcao.." "..sheet.Nick_Personagem); end;										
+				</event>
+			</button>
+			<image width="17" height="17" left="552" top="364" style="proportional" center="true" src="images/Dado.jpg"/>
+			
+			<button left="553" top="394" width="14" height="14" text="R" hint="Desc... ">
+				<event name="onClick">
+					local mesaDoPersonagem = Firecast.getMesaDe(sheet);				
+					local rolagem = Firecast.interpretarRolagem(sheet.Peri05); 
+					if not rolagem.possuiAlgumDado then rolagem = Firecast.interpretarRolagem("1d10"):concatenar(rolagem); end; 
+					if mesaDoPersonagem ~= nil then mesaDoPersonagem.chat:rolarDados(rolagem,"[§B][§K8][ Pericia ] [§K14]Enganar de "..sheet.Nick_Personagem); end;										
+				</event>
+			</button>
+			<image width="17" height="17" left="552" top="394" style="proportional" center="true" src="images/Dado.jpg"/>
+			
+			<button left="553" top="425" width="14" height="14" text="R" hint="Desc... ">
+				<event name="onClick">
+					local mesaDoPersonagem = Firecast.getMesaDe(sheet);
+					local rolagem = Firecast.interpretarRolagem(sheet.Peri06); 
+					if not rolagem.possuiAlgumDado then rolagem = Firecast.interpretarRolagem("1d10"):concatenar(rolagem); end; 
+					if mesaDoPersonagem ~= nil then mesaDoPersonagem.chat:rolarDados(rolagem,"[§B][§K8][ Pericia ] [§K14]Dedução de "..sheet.Nick_Personagem); end;										
+				</event>
+			</button>
+			<image width="17" height="17" left="552" top="425" style="proportional" center="true" src="images/Dado.jpg"/>
+			
+			<button left="553" top="456" width="14" height="14" text="R" hint="Desc... ">
+				<event name="onClick">
+					local mesaDoPersonagem = Firecast.getMesaDe(sheet);				
+					local rolagem = Firecast.interpretarRolagem(sheet.Peri07); 
+					if not rolagem.possuiAlgumDado then rolagem = Firecast.interpretarRolagem("1d10"):concatenar(rolagem); end; 
+					if mesaDoPersonagem ~= nil then mesaDoPersonagem.chat:rolarDados(rolagem,"[§B][§K8][ Pericia ] [§K14]Diplomacia de "..sheet.Nick_Personagem); end;										
+				</event>
+			</button>
+			<image width="17" height="17" left="552" top="456" style="proportional" center="true" src="images/Dado.jpg"/>
+			
+			<button left="553" top="487" width="14" height="14" text="R" hint="Desc... ">
+				<event name="onClick">
+					local mesaDoPersonagem = Firecast.getMesaDe(sheet);			
+					local rolagem = Firecast.interpretarRolagem(sheet.Peri08); 
+					if not rolagem.possuiAlgumDado then rolagem = Firecast.interpretarRolagem("1d10"):concatenar(rolagem); end; 
+					if mesaDoPersonagem ~= nil then mesaDoPersonagem.chat:rolarDados(rolagem,"[§B][§K8][ Pericia ] [§K14]Esquiva de "..sheet.Nick_Personagem); end;										
+				</event>
+			</button>
+			<image width="17" height="17" left="552" top="487" style="proportional" center="true" src="images/Dado.jpg"/>
+			
+			<button left="553" top="518" width="14" height="14" text="R" hint="Desc... ">
+				<event name="onClick">
+					local mesaDoPersonagem = Firecast.getMesaDe(sheet);				
+					local rolagem = Firecast.interpretarRolagem(sheet.Peri09); 
+					if not rolagem.possuiAlgumDado then rolagem = Firecast.interpretarRolagem("1d10"):concatenar(rolagem); end; 
+					if mesaDoPersonagem ~= nil then mesaDoPersonagem.chat:rolarDados(rolagem,"[§B][§K8][ Pericia ] [§K14]Doméstico de "..sheet.Nick_Personagem); end;										
+				</event>
+			</button>
+			<image width="17" height="17" left="552" top="518" style="proportional" center="true" src="images/Dado.jpg"/>
+			
+			<button left="553" top="550" width="14" height="14" text="R" hint="Desc... ">
+				<event name="onClick">
+					local mesaDoPersonagem = Firecast.getMesaDe(sheet);				
+					local rolagem = Firecast.interpretarRolagem(sheet.Peri10); 
+					if not rolagem.possuiAlgumDado then rolagem = Firecast.interpretarRolagem("1d10"):concatenar(rolagem); end; 
+					if mesaDoPersonagem ~= nil then mesaDoPersonagem.chat:rolarDados(rolagem,"[§B][§K8][ Pericia ] [§K14]Briga de "..sheet.Nick_Personagem); end;										
+				</event>
+			</button>
+			<image width="17" height="17" left="552" top="550" style="proportional" center="true" src="images/Dado.jpg"/>
+			
+			<button left="553" top="581" width="14" height="14" text="R" hint="Desc... ">
+				<event name="onClick">
+					local mesaDoPersonagem = Firecast.getMesaDe(sheet);
+					local rolagem = Firecast.interpretarRolagem(sheet.Peri11); 
+					if not rolagem.possuiAlgumDado then rolagem = Firecast.interpretarRolagem("1d10"):concatenar(rolagem); end; 
+					if mesaDoPersonagem ~= nil then mesaDoPersonagem.chat:rolarDados(rolagem,"[§B][§K8][ Pericia ] [§K14]Intimidação de "..sheet.Nick_Personagem); end;										
+				</event>
+			</button>
+			<image width="17" height="17" left="552" top="581" style="proportional" center="true" src="images/Dado.jpg"/>
+			
+			<button left="553" top="611" width="14" height="14" text="R" hint="Desc... ">
+				<event name="onClick">
+					local mesaDoPersonagem = Firecast.getMesaDe(sheet);				
+					local rolagem = Firecast.interpretarRolagem(sheet.Peri12); 
+					if not rolagem.possuiAlgumDado then rolagem = Firecast.interpretarRolagem("1d10"):concatenar(rolagem); end; 
+					if mesaDoPersonagem ~= nil then mesaDoPersonagem.chat:rolarDados(rolagem,"[§B][§K8][ Pericia ] [§K14]Conhecimento Geral de "..sheet.Nick_Personagem); end;										
+				</event>
+			</button>
+			<image width="17" height="17" left="552" top="611" style="proportional" center="true" src="images/Dado.jpg"/>
+			
+			<button left="553" top="644" width="14" height="14" text="R" hint="Desc... ">
+				<event name="onClick">
+					local mesaDoPersonagem = Firecast.getMesaDe(sheet);			
+					local rolagem = Firecast.interpretarRolagem(sheet.Peri13); 
+					if not rolagem.possuiAlgumDado then rolagem = Firecast.interpretarRolagem("1d10"):concatenar(rolagem); end; 
+					if mesaDoPersonagem ~= nil then mesaDoPersonagem.chat:rolarDados(rolagem,"[§B][§K8][ Pericia ] [§K14]Idioma "..sheet.Idiomas.." de "..sheet.Nick_Personagem); end;										
+				</event>
+			</button>
+			<image width="17" height="17" left="552" top="644" style="proportional" center="true" src="images/Dado.jpg"/>
+			
+			<button left="553" top="675" width="14" height="14" text="R" hint="Desc... ">
+				<event name="onClick">
+					local mesaDoPersonagem = Firecast.getMesaDe(sheet);				
+					local rolagem = Firecast.interpretarRolagem(sheet.Peri14); 
+					if not rolagem.possuiAlgumDado then rolagem = Firecast.interpretarRolagem("1d10"):concatenar(rolagem); end; 
+					if mesaDoPersonagem ~= nil then mesaDoPersonagem.chat:rolarDados(rolagem,"[§B][§K8][ Pericia ] [§K14]Arma branca de "..sheet.Nick_Personagem); end;										
+				</event>
+			</button>
+			<image width="17" height="17" left="552" top="675" style="proportional" center="true" src="images/Dado.jpg"/>
+			
+			<button left="553" top="706" width="14" height="14" text="R" hint="Desc... ">
+				<event name="onClick">
+					local mesaDoPersonagem = Firecast.getMesaDe(sheet);				
+					local rolagem = Firecast.interpretarRolagem(sheet.Peri15); 
+					if not rolagem.possuiAlgumDado then rolagem = Firecast.interpretarRolagem("1d10"):concatenar(rolagem); end; 
+					if mesaDoPersonagem ~= nil then mesaDoPersonagem.chat:rolarDados(rolagem,"[§B][§K8][ Pericia ] [§K14]Arma de fogo de "..sheet.Nick_Personagem); end;										
+				</event>
+			</button>
+			<image width="17" height="17" left="552" top="706" style="proportional" center="true" src="images/Dado.jpg"/>
+			
+			<button left="553" top="737" width="14" height="14" text="R" hint="Desc... ">
+				<event name="onClick">
+					local mesaDoPersonagem = Firecast.getMesaDe(sheet);				
+					local rolagem = Firecast.interpretarRolagem(sheet.Peri16); 
+					if not rolagem.possuiAlgumDado then rolagem = Firecast.interpretarRolagem("1d10"):concatenar(rolagem); end; 
+					if mesaDoPersonagem ~= nil then mesaDoPersonagem.chat:rolarDados(rolagem,"[§B][§K8][ Pericia ] [§K14]Estratégia militar de "..sheet.Nick_Personagem); end;										
+				</event>
+			</button>
+			<image width="17" height="17" left="552" top="737" style="proportional" center="true" src="images/Dado.jpg"/>
+			
+			<button left="553" top="769" width="14" height="14" text="R" hint="Desc... ">
+				<event name="onClick">
+					local mesaDoPersonagem = Firecast.getMesaDe(sheet);				
+					local rolagem = Firecast.interpretarRolagem(sheet.Peri17); 
+					if not rolagem.possuiAlgumDado then rolagem = Firecast.interpretarRolagem("1d10"):concatenar(rolagem); end; 
+					if mesaDoPersonagem ~= nil then mesaDoPersonagem.chat:rolarDados(rolagem,"[§B][§K8][ Pericia ] [§K14]Observar de "..sheet.Nick_Personagem); end;										
+				</event>
+			</button>
+			<image width="17" height="17" left="552" top="769" style="proportional" center="true" src="images/Dado.jpg"/>
+			
+			<button left="553" top="801" width="14" height="14" text="R" hint="Desc... ">
+				<event name="onClick">
+					local mesaDoPersonagem = Firecast.getMesaDe(sheet);				
+					local rolagem = Firecast.interpretarRolagem(sheet.Peri18); 
+					if not rolagem.possuiAlgumDado then rolagem = Firecast.interpretarRolagem("1d10"):concatenar(rolagem); end; 
+					if mesaDoPersonagem ~= nil then mesaDoPersonagem.chat:rolarDados(rolagem,"[§B][§K8][ Pericia ] [§K14]Performance de "..sheet.Performance.." de " ..sheet.Nick_Personagem); end;										
+				</event>
+			</button>
+			<image width="17" height="17" left="552" top="801" style="proportional" center="true" src="images/Dado.jpg"/>
+			
+			<button left="553" top="832" width="14" height="14" text="R" hint="Desc... ">
+				<event name="onClick">
+					local mesaDoPersonagem = Firecast.getMesaDe(sheet);				
+					local rolagem = Firecast.interpretarRolagem(sheet.Peri19); 
+					if not rolagem.possuiAlgumDado then rolagem = Firecast.interpretarRolagem("1d10"):concatenar(rolagem); end; 
+					if mesaDoPersonagem ~= nil then mesaDoPersonagem.chat:rolarDados(rolagem,"[§B][§K8][ Pericia ] [§K14]Pilotagem de "..sheet.Pilotagem.." de " ..sheet.Nick_Personagem); end;										
+				</event>
+			</button>
+			<image width="17" height="17" left="552" top="832" style="proportional" center="true" src="images/Dado.jpg"/>
+			
+			<button left="553" top="863" width="14" height="14" text="R" hint="Desc... ">
+				<event name="onClick">
+					local mesaDoPersonagem = Firecast.getMesaDe(sheet);				
+					local rolagem = Firecast.interpretarRolagem(sheet.Peri20); 
+					if not rolagem.possuiAlgumDado then rolagem = Firecast.interpretarRolagem("1d10"):concatenar(rolagem); end; 
+					if mesaDoPersonagem ~= nil then mesaDoPersonagem.chat:rolarDados(rolagem,"[§B][§K8][ Pericia ] [§K14]Condução de "..sheet.Conducao.." de " ..sheet.Nick_Personagem); end;										
+				</event>
+			</button>
+			<image width="17" height="17" left="552" top="863" style="proportional" center="true" src="images/Dado.jpg"/>
+			
+			<button left="553" top="894" width="14" height="14" text="R" hint="Desc... ">
+				<event name="onClick">
+					local mesaDoPersonagem = Firecast.getMesaDe(sheet);				
+					local rolagem = Firecast.interpretarRolagem(sheet.Peri21); 
+					if not rolagem.possuiAlgumDado then rolagem = Firecast.interpretarRolagem("1d10"):concatenar(rolagem); end; 
+					if mesaDoPersonagem ~= nil then mesaDoPersonagem.chat:rolarDados(rolagem,"[§B][§K8][ Pericia ] [§K14]Manha de "..sheet.Nick_Personagem); end;										
+				</event>
+			</button>
+			<image width="17" height="17" left="552" top="894" style="proportional" center="true" src="images/Dado.jpg"/>
+			
+			<button left="553" top="926" width="14" height="14" text="R" hint="Desc... ">
+				<event name="onClick">
+					local mesaDoPersonagem = Firecast.getMesaDe(sheet);				
+					local rolagem = Firecast.interpretarRolagem(sheet.Peri22); 
+					if not rolagem.possuiAlgumDado then rolagem = Firecast.interpretarRolagem("1d10"):concatenar(rolagem); end; 
+					if mesaDoPersonagem ~= nil then mesaDoPersonagem.chat:rolarDados(rolagem,"[§B][§K8][ Pericia ] [§K14]Furtar de "..sheet.Nick_Personagem); end;										
+				</event>
+			</button>
+			<image width="17" height="17" left="552" top="926" style="proportional" center="true" src="images/Dado.jpg"/>
+			
+			<button left="553" top="956" width="14" height="14" text="R" hint="Desc... ">
+				<event name="onClick">
+					local mesaDoPersonagem = Firecast.getMesaDe(sheet);				
+					local rolagem = Firecast.interpretarRolagem(sheet.Peri23); 
+					if not rolagem.possuiAlgumDado then rolagem = Firecast.interpretarRolagem("1d10"):concatenar(rolagem); end; 
+					if mesaDoPersonagem ~= nil then mesaDoPersonagem.chat:rolarDados(rolagem,"[§B][§K8][ Pericia ] [§K14]Furtividade de "..sheet.Nick_Personagem); end;										
+				</event>
+			</button>
+			<image width="17" height="17" left="552" top="956" style="proportional" center="true" src="images/Dado.jpg"/>
+			
+			<button left="553" top="989" width="14" height="14" text="R" hint="Desc... ">
+				<event name="onClick">
+					local mesaDoPersonagem = Firecast.getMesaDe(sheet);				
+					local rolagem = Firecast.interpretarRolagem(sheet.Peri24); 
+					if not rolagem.possuiAlgumDado then rolagem = Firecast.interpretarRolagem("1d10"):concatenar(rolagem); end; 
+					if mesaDoPersonagem ~= nil then mesaDoPersonagem.chat:rolarDados(rolagem,"[§B][§K8][ Pericia ] [§K14]Sobrevivencia de "..sheet.Nick_Personagem); end;										
+				</event>
+			</button>
+			<image width="17" height="17" left="552" top="989" style="proportional" center="true" src="images/Dado.jpg"/>
+			
+			<button left="555" top="1020" width="14" height="14" text="R" hint="Desc... ">
+				<event name="onClick">
+					local mesaDoPersonagem = Firecast.getMesaDe(sheet);
+					local rolagem = Firecast.interpretarRolagem(sheet.Peri25); 
+					if not rolagem.possuiAlgumDado then rolagem = Firecast.interpretarRolagem("1d10"):concatenar(rolagem); end; 
+					if mesaDoPersonagem ~= nil then mesaDoPersonagem.chat:rolarDados(rolagem,"[§B][§K8][ Pericia ] [§K14]Medicina de "..sheet.Nick_Personagem); end;										
+				</event>
+			</button>
+			<image width="17" height="17" left="552" top="1020" style="proportional" center="true" src="images/Dado.jpg"/>
+			
+			<button left="555" top="1052" width="14" height="14" text="R" hint="Desc... ">
+				<event name="onClick">
+					local mesaDoPersonagem = Firecast.getMesaDe(sheet);
+					local rolagem = Firecast.interpretarRolagem(sheet.Peri26); 
+					if not rolagem.possuiAlgumDado then rolagem = Firecast.interpretarRolagem("1d10"):concatenar(rolagem); end; 
+					if mesaDoPersonagem ~= nil then mesaDoPersonagem.chat:rolarDados(rolagem,"[§B][§K8][ Pericia ] [§K14]Cavalgar de "..sheet.Nick_Personagem); end;										
+				</event>
+			</button>
+			<image width="17" height="17" left="552" top="1052" style="proportional" center="true" src="images/Dado.jpg"/>
+
+			<button left="556" top="1084" width="14" height="14" text="R" hint="Desc... ">
+				<event name="onClick">
+					local mesaDoPersonagem = Firecast.getMesaDe(sheet);
+					local rolagem = Firecast.interpretarRolagem(sheet.Peri27); 
+					if not rolagem.possuiAlgumDado then rolagem = Firecast.interpretarRolagem("1d10"):concatenar(rolagem); end; 
+					if mesaDoPersonagem ~= nil then mesaDoPersonagem.chat:rolarDados(rolagem,"[§B][§K8][ Pericia ] [§K14]"..sheet.Coringa1); end;										
+				</event>
+			</button>
+			<image width="17" height="17" left="555" top="1084" style="proportional" center="true" src="images/Dado.jpg"/>
+			
+			<button left="556" top="1114" width="14" height="14" text="R" hint="Desc... ">
+				<event name="onClick">
+					local mesaDoPersonagem = Firecast.getMesaDe(sheet);
+					local rolagem = Firecast.interpretarRolagem(sheet.Peri28); 
+					if not rolagem.possuiAlgumDado then rolagem = Firecast.interpretarRolagem("1d10"):concatenar(rolagem); end; 
+					if mesaDoPersonagem ~= nil then mesaDoPersonagem.chat:rolarDados(rolagem,"[§B][§K8][ Pericia ] [§K14]"..sheet.Coringa2); end;										
+				</event>
+			</button>
+			<image width="17" height="17" left="555" top="1114" style="proportional" center="true" src="images/Dado.jpg"/>
+			
+			<button left="557" top="1148" width="14" height="14" text="R" hint="Desc... ">
+				<event name="onClick">
+					local mesaDoPersonagem = Firecast.getMesaDe(sheet);
+					local rolagem = Firecast.interpretarRolagem(sheet.Peri29); 
+					if not rolagem.possuiAlgumDado then rolagem = Firecast.interpretarRolagem("1d10"):concatenar(rolagem); end; 
+					if mesaDoPersonagem ~= nil then mesaDoPersonagem.chat:rolarDados(rolagem,"[§B][§K8][ Pericia ] [§K14]"..sheet.Coringa3); end;										
+				</event>
+			</button>
+			<image width="17" height="17" left="556" top="1148" style="proportional" center="true" src="images/Dado.jpg"/>
+
+		## NUMEROS ##
+            <layout left="472" top="261" width="74" height="26"> <edit field="Peri01" class="NUMEROS" width="74" height="27" /> </layout> 
+            <layout left="473" top="293" width="71" height="25"> <edit field="Peri02" class="NUMEROS" width="71" height="26" /> </layout> 
+            <layout left="474" top="325" width="72" height="25"> <edit field="Peri03" class="NUMEROS" width="72" height="26" /> </layout> 
+            <layout left="474" top="357" width="70" height="25"> <edit field="Peri04" class="NUMEROS" width="70" height="26" /> </layout>
+            <layout left="473" top="387" width="72" height="25"> <edit field="Peri05" class="NUMEROS" width="72" height="26" /> </layout> 
+            <layout left="474" top="418" width="71" height="26"> <edit field="Peri06" class="NUMEROS" width="71" height="27" /> </layout> 
+            <layout left="473" top="449" width="74" height="26"> <edit field="Peri07" class="NUMEROS" width="74" height="27" /> </layout> 
+            <layout left="474" top="480" width="74" height="26"> <edit field="Peri08" class="NUMEROS" width="74" height="27" /> </layout> 
+            <layout left="472" top="511" width="74" height="26"> <edit field="Peri09" class="NUMEROS" width="74" height="27" /> </layout> 
+            <layout left="471" top="543" width="77" height="26"> <edit field="Peri10" class="NUMEROS" width="77" height="27" /> </layout> 
+            <layout left="471" top="574" width="76" height="26" > <edit field="Peri11" class="NUMEROS" width="76" height="27" /> </layout> 
+            <layout left="472" top="604" width="76" height="26" > <edit field="Peri12" class="NUMEROS" width="76" height="27" /> </layout> 
+            <layout left="471" top="637" width="75" height="26"> <edit field="Peri13" class="NUMEROS"  width="75" height="27" /> </layout> 
+            <layout left="469" top="668" width="76" height="26"> <edit field="Peri14" class="NUMEROS" width="76" height="27" /> </layout> 
+            <layout left="470" top="699" width="74" height="26"> <edit field="Peri15" class="NUMEROS" width="74" height="27" /> </layout>
+            <layout left="471" top="730" width="74" height="27"> <edit field="Peri16" class="NUMEROS" width="74" height="28" /> </layout> 
+            <layout left="473" top="762" width="73" height="26"> <edit field="Peri17" class="NUMEROS" width="73" height="27" /> </layout> 
+            <layout left="472" top="794" width="74" height="26"> <edit field="Peri18" class="NUMEROS" width="74" height="27" /> </layout> 
+            <layout left="472" top="825" width="74" height="26"> <edit field="Peri19" class="NUMEROS" width="74" height="27" /> </layout> 
+            <layout left="474" top="856" width="70" height="25"> <edit field="Peri20" class="NUMEROS" width="70" height="26" /> </layout> 
+            <layout left="471" top="887" width="75" height="26"> <edit field="Peri21" class="NUMEROS" width="75" height="27" /> </layout> 
+            <layout left="472" top="919" width="74" height="26"> <edit field="Peri22" class="NUMEROS" width="74" height="27" /> </layout> 
+            <layout left="471" top="949" width="73" height="26"> <edit field="Peri23" class="NUMEROS" width="73" height="27" /> </layout> 
+            <layout left="472" top="982" width="74" height="27"> <edit field="Peri24" class="NUMEROS" width="74" height="28" /> </layout> 
+            <layout left="473" top="1013" width="73" height="25"> <edit field="Peri25" class="NUMEROS" width="73" height="26" /> </layout> 
+            <layout left="473" top="1045" width="73" height="25"> <edit field="Peri26" class="NUMEROS" width="73" height="26" /> </layout> 
+            <layout left="473" top="1077" width="73" height="25"> <edit field="Peri27" class="NUMEROS" width="73" height="26" /> </layout> 
+            <layout left="474" top="1107" width="73" height="25"> <edit field="Peri28" class="NUMEROS" width="73" height="26" /> </layout> 
+            <layout left="474" top="1141" width="73" height="25"> <edit field="Peri29" class="NUMEROS" width="73" height="26" /> </layout> 
+## ------------ #### ------------ #### ------------ #### ------------ #### ------------ #### ------------ #### ------------ #### ------------ #### ------------ #### ------------ ####
+## CIRCUNSTANCIAS ##
+	<popup name="DescCircunstancia1" width="300" height="300" backOpacity="0.5"> <textEditor field="DCir1" class="padraoPopC"/> </popup> 
+	<popup name="DescCircunstancia2" width="300" height="300" backOpacity="0.5"> <textEditor field="DCir2" class="padraoPopC"/> </popup>
+	<popup name="DescCircunstancia3" width="300" height="300" backOpacity="0.5"> <textEditor field="DCir3" class="padraoPopC"/> </popup> 
+	<popup name="DescCircunstancia4" width="300" height="300" backOpacity="0.5"> <textEditor field="DCir4" class="padraoPopC"/> </popup> 
+	<popup name="DescCircunstancia5" width="300" height="300" backOpacity="0.5"> <textEditor field="DCir5" class="padraoPopC"/> </popup> 
+	<popup name="DescCircunstancia6" width="300" height="300" backOpacity="0.5"> <textEditor field="DCir6" class="padraoPopC"/> </popup> 
+	<popup name="DescCircunstancia7" width="300" height="300" backOpacity="0.5"> <textEditor field="DCir7" class="padraoPopC"/> </popup> 
+	<popup name="DescCircunstancia8" width="300" height="300" backOpacity="0.5"> <textEditor field="DCir8" class="padraoPopC"/> </popup> 
+	<popup name="DescCircunstancia9" width="300" height="300" backOpacity="0.5"> <textEditor field="DCir9" class="padraoPopC"/> </popup> 
+	<popup name="DescCircunstancia10" width="300" height="300" backOpacity="0.5"> <textEditor field="10" class="padraoPopC"/> </popup>
+			### 01/10 ###
+            <layout left="578" top="264" width="191" height="35"> <edit class="TXT_PCV" width="191" height="30" field="CircField_1" /> </layout> 
+            <layout left="788" top="270" width="67" height="29"> <edit transparent="true" class="NUMEROS" left="0" top="0" width="67" height="30" field="CircXP_1"/> </layout> 
+			<button text="i" width="20" left="867" top="273" height="20" onClick="self.DescCircunstancia1:show('bottom', self.labNome);"/>
+			<button left="887" top="273" width="14" height="14" text="R" hint="Desc... ">
+				<event name="onClick">
+					local mesaDoPersonagem = Firecast.getMesaDe(sheet);
+					local rolagem = Firecast.interpretarRolagem(sheet.CircXP_1); 
+					if not rolagem.possuiAlgumDado then rolagem = Firecast.interpretarRolagem("1d10"):concatenar(rolagem); end; 
+					if mesaDoPersonagem ~= nil then mesaDoPersonagem.chat:rolarDados(rolagem,"[§B][§K1][ Circunstancia ][§B][§K14] de "..sheet.Nick_Personagem); end;										
+				</event>
+			</button>
+			<image width="17" height="17" left="886" top="273" style="proportional" center="true" src="images/Dado.jpg"/>
+			
+			### 02/10 ###
+            <layout left="578" top="300" width="191" height="30"> <edit class="TXT_PCV" width="191" height="30" field="CircField_2" /> </layout>
+            <layout left="788" top="303" width="67" height="30"> <edit transparent="true" class="NUMEROS" left="0" top="0" width="67" height="31" field="CircXP_2"/> </layout>
+			<button text="i" width="20" left="867" top="306" height="20" onClick="self.DescCircunstancia2:show('bottom', self.labNome);"/>
+			<button left="887" top="306" width="14" height="14" text="R" hint="Desc... ">
+				<event name="onClick">
+					local mesaDoPersonagem = Firecast.getMesaDe(sheet);
+					local rolagem = Firecast.interpretarRolagem(sheet.CircXP_2); 
+					if not rolagem.possuiAlgumDado then rolagem = Firecast.interpretarRolagem("1d10"):concatenar(rolagem); end; 
+					if mesaDoPersonagem ~= nil then mesaDoPersonagem.chat:rolarDados(rolagem,"[§B][§K1][ Circunstancia ][§B][§K14] de "..sheet.Nick_Personagem); end;										
+				</event>
+			</button>
+			<image width="17" height="17" left="886" top="306" style="proportional" center="true" src="images/Dado.jpg"/>
+			
+			### 03/10 ###
+            <layout left="578" top="335" width="191" height="30"> <edit class="TXT_PCV" width="191" height="30" field="CircField_3" /> </layout>  
+            <layout left="788" top="338" width="67" height="29"> <edit transparent="true" class="NUMEROS" left="0" top="0" width="67" height="30" field="CircXP_3"/> </layout>
+			<button text="i" width="20" left="867" top="341" height="20" onClick="self.DescCircunstancia3:show('bottom', self.labNome);"/>
+			<button left="887" top="341" width="14" height="14" text="R" hint="Desc... ">
+				<event name="onClick">
+					local mesaDoPersonagem = Firecast.getMesaDe(sheet);
+					local rolagem = Firecast.interpretarRolagem(sheet.CircXP_3); 
+					if not rolagem.possuiAlgumDado then rolagem = Firecast.interpretarRolagem("1d10"):concatenar(rolagem); end; 
+					if mesaDoPersonagem ~= nil then mesaDoPersonagem.chat:rolarDados(rolagem,"[§B][§K1][ Circunstancia ][§B][§K14] de "..sheet.Nick_Personagem); end;										
+				</event>
+			</button>
+			<image width="17" height="17" left="886" top="341" style="proportional" center="true" src="images/Dado.jpg"/>
+			
+			### 04/10 ###
+            <layout left="578" top="370" width="191" height="30"> <edit class="TXT_PCV" width="191" height="30" field="CircField_4" /> </layout> 
+            <layout left="788" top="372" width="67" height="29"> <edit transparent="true" class="NUMEROS" left="0" top="0" width="67" height="30" field="CircXP_4"/> </layout>
+			<button text="i" width="20" left="867" top="375" height="20" onClick="self.DescCircunstancia4:show('bottom', self.labNome);"/>
+			<button left="887" top="376" width="14" height="14" text="R" hint="Desc... ">
+				<event name="onClick">
+					local mesaDoPersonagem = Firecast.getMesaDe(sheet);
+					local rolagem = Firecast.interpretarRolagem(sheet.CircXP_4); 
+					if not rolagem.possuiAlgumDado then rolagem = Firecast.interpretarRolagem("1d10"):concatenar(rolagem); end; 
+					if mesaDoPersonagem ~= nil then mesaDoPersonagem.chat:rolarDados(rolagem,"[§B][§K1][ Circunstancia ][§B][§K14] de"..sheet.Nick_Personagem); end;										
+				</event>
+			</button>
+			<image width="17" height="17" left="886" top="376" style="proportional" center="true" src="images/Dado.jpg"/>
+			
+			### 05/10 ###
+            <layout left="578" top="403" width="191" height="30"> <edit class="TXT_PCV" width="191" height="30" field="CircField_5" /> </layout> 
+            <layout left="788" top="406" width="67" height="29"> <edit transparent="true" class="NUMEROS" left="0" top="0" width="67" height="30" field="CircXP_5" /></layout>
+			<button text="i" width="20" left="867" top="409" height="20" onClick="self.DescCircunstancia5:show('bottom', self.labNome);"/>
+			<button left="887" top="409" width="14" height="14" text="R" hint="Desc... ">
+				<event name="onClick">
+					local mesaDoPersonagem = Firecast.getMesaDe(sheet);
+					local rolagem = Firecast.interpretarRolagem(sheet.CircXP_5); 
+					if not rolagem.possuiAlgumDado then rolagem = Firecast.interpretarRolagem("1d10"):concatenar(rolagem); end; 
+					if mesaDoPersonagem ~= nil then mesaDoPersonagem.chat:rolarDados(rolagem,"[§B][§K1][ Circunstancia ][§B][§K14] de "..sheet.Nick_Personagem); end;										
+				</event>
+			</button>
+			<image width="17" height="17" left="886" top="409" style="proportional" center="true" src="images/Dado.jpg"/>
+			
+			### 06/10 ###
+            <layout left="578" top="437" width="191" height="30"> <edit class="TXT_PCV" width="191" height="30" field="CircField_6" /> </layout> 
+            <layout left="788" top="440" width="67" height="29"> <edit transparent="true" class="NUMEROS" left="0" top="0" width="67" height="30" field="CircXP_6"/> </layout>
+			<button text="i" width="20" left="867" top="443" height="20" onClick="self.DescCircunstancia6:show('bottom', self.labNome);"/>
+			<button left="887" top="443" width="14" height="14" text="R" hint="Desc... ">
+				<event name="onClick">
+					local mesaDoPersonagem = Firecast.getMesaDe(sheet);
+					local rolagem = Firecast.interpretarRolagem(sheet.CircXP_6); 
+					if not rolagem.possuiAlgumDado then rolagem = Firecast.interpretarRolagem("1d10"):concatenar(rolagem); end; 
+					if mesaDoPersonagem ~= nil then mesaDoPersonagem.chat:rolarDados(rolagem,"[§B][§K1][ Circunstancia ][§B][§K14] de "..sheet.Nick_Personagem); end;										
+				</event>
+			</button>
+			<image width="17" height="17" left="886" top="443" style="proportional" center="true" src="images/Dado.jpg"/>
+			
+			### 07/10 ###
+            <layout left="578" top="470" width="191" height="30"> <edit class="TXT_PCV" width="191" height="30" field="CircField_7" /> </layout> 
+            <layout left="788" top="474" width="67" height="29"> <edit transparent="true" class="NUMEROS" left="0" top="0" width="67" height="30" field="CircXP_7"/> </layout> 
+			<button text="i" width="20" left="867" top="477" height="20" onClick="self.DescCircunstancia7:show('bottom', self.labNome);"/>
+			<button left="887" top="476" width="14" height="14" text="R" hint="Desc... ">
+				<event name="onClick">
+					local mesaDoPersonagem = Firecast.getMesaDe(sheet);
+					local rolagem = Firecast.interpretarRolagem(sheet.CircXP_7); 
+					if not rolagem.possuiAlgumDado then rolagem = Firecast.interpretarRolagem("1d10"):concatenar(rolagem); end; 
+					if mesaDoPersonagem ~= nil then mesaDoPersonagem.chat:rolarDados(rolagem,"[§B][§K1][ Circunstancia ][§B][§K14] de "..sheet.Nick_Personagem); end;										
+				</event>
+			</button>
+			<image width="17" height="17" left="886" top="476" style="proportional" center="true" src="images/Dado.jpg"/>
+			
+			### 08/10 ###
+            <layout left="578" top="504" width="191" height="30"> <edit class="TXT_PCV" width="191" height="30" field="CircField_8" /> </layout> 
+            <layout left="788" top="508" width="67" height="29"> <edit transparent="true" class="NUMEROS" left="0" top="0" width="67" height="30" field="CircXP_8"/> </layout> 
+			<button text="i" width="20" left="867" top="511" height="20" onClick="self.DescCircunstancia8:show('bottom', self.labNome);"/>
+			<button left="887" top="510" width="14" height="14" text="R" hint="Desc... ">
+				<event name="onClick">
+					local mesaDoPersonagem = Firecast.getMesaDe(sheet);
+					local rolagem = Firecast.interpretarRolagem(sheet.CircXP_8); 
+					if not rolagem.possuiAlgumDado then rolagem = Firecast.interpretarRolagem("1d10"):concatenar(rolagem); end; 
+					if mesaDoPersonagem ~= nil then mesaDoPersonagem.chat:rolarDados(rolagem,"[§B][§K1][ Circunstancia ][§B][§K14] de "..sheet.Nick_Personagem); end;										
+				</event>
+			</button>
+			<image width="17" height="17" left="886" top="510" style="proportional" center="true" src="images/Dado.jpg"/>
+			
+			### 09/10 ###
+            <layout left="577" top="538" width="191" height="30"> <edit class="TXT_PCV" width="191" height="30" field="CircField_9" /> </layout>
+            <layout left="788" top="542" width="67" height="29"> <edit transparent="true" class="NUMEROS" left="0" top="0" width="67" height="30" field="CircXP_9"/> </layout> 
+			<button text="i" width="20" left="867" top="545" height="20" onClick="self.DescCircunstancia9:show('bottom', self.labNome);"/>
+			<button left="887" top="544" width="14" height="14" text="R" hint="Desc... ">
+				<event name="onClick">
+					local mesaDoPersonagem = Firecast.getMesaDe(sheet);
+					local rolagem = Firecast.interpretarRolagem(sheet.CircXP_9); 
+					if not rolagem.possuiAlgumDado then rolagem = Firecast.interpretarRolagem("1d10"):concatenar(rolagem); end; 
+					if mesaDoPersonagem ~= nil then mesaDoPersonagem.chat:rolarDados(rolagem,"[§B][§K1][ Circunstancia ][§B][§K14] de "..sheet.Nick_Personagem); end;										
+				</event>
+			</button>
+			<image width="17" height="17" left="886" top="544" style="proportional" center="true" src="images/Dado.jpg"/>
+			
+			### 10/10 ###
+            <layout left="577" top="572" width="191" height="30"> <edit transparent="true" class="TXT_PCV" width="191" height="30" field="CircField_1o" /> </layout> 
+            <layout left="788" top="576" width="67" height="29"> <edit transparent="true" class="NUMEROS" left="0" top="0" width="67" height="30" field="CircXP_10"/> </layout>
+			<button text="i" width="20" left="867" top="579" height="20" onClick="self.DescCircunstancia10:show('bottom', self.labNome);"/>
+			<button left="887" top="578" width="14" height="14" text="R" hint="Desc... ">
+				<event name="onClick">
+					local mesaDoPersonagem = Firecast.getMesaDe(sheet);
+					local rolagem = Firecast.interpretarRolagem(sheet.CircXP_10); 
+					if not rolagem.possuiAlgumDado then rolagem = Firecast.interpretarRolagem("1d10"):concatenar(rolagem); end; 
+					if mesaDoPersonagem ~= nil then mesaDoPersonagem.chat:rolarDados(rolagem,"[§B][§K1][ Circunstancia ][§B][§K14] de "..sheet.Nick_Personagem); end;										
+				</event>
+			</button>
+			<image width="17" height="17" left="886" top="578" style="proportional" center="true" src="images/Dado.jpg"/>
+## ------------ #### ------------ #### ------------ #### ------------ #### ------------ #### ------------ #### ------------ #### ------------ #### ------------ #### ------------ ####
+## VANTAGENS E DESVANTAGENS ##
+	<popup name="DescVanDes1" width="300" height="300" backOpacity="0.5"> <textEditor field="DVanDes1" class="padraoPopC"/> </popup> 
+	<popup name="DescVanDes2" width="300" height="300" backOpacity="0.5"> <textEditor field="DVanDes2" class="padraoPopC"/> </popup>
+	<popup name="DescVanDes3" width="300" height="300" backOpacity="0.5"> <textEditor field="DVanDes3" class="padraoPopC"/> </popup> 
+	<popup name="DescVanDes4" width="300" height="300" backOpacity="0.5"> <textEditor field="DVanDes4" class="padraoPopC"/> </popup> 
+	<popup name="DescVanDes5" width="300" height="300" backOpacity="0.5"> <textEditor field="DVanDes5" class="padraoPopC"/> </popup> 
+	<popup name="DescVanDes6" width="300" height="300" backOpacity="0.5"> <textEditor field="DVanDes6" class="padraoPopC"/> </popup> 
+	<popup name="DescVanDes7" width="300" height="300" backOpacity="0.5"> <textEditor field="DVanDes7" class="padraoPopC"/> </popup> 
+	<popup name="DescVanDes8" width="300" height="300" backOpacity="0.5"> <textEditor field="DVanDes8" class="padraoPopC"/> </popup> 
+	<popup name="DescVanDes9" width="300" height="300" backOpacity="0.5"> <textEditor field="DVanDes9" class="padraoPopC"/> </popup> 
+			### 01/09 ###
+            <layout left="576" top="672" width="193" height="30"> <edit class="TXT_PCV" width="193" height="31" field="VeD_Txt_1" /></layout> 
+            <layout left="783" top="679" width="72" height="30"> <edit transparent="true" class="NUMEROS" width="72" height="30" field="VeD_01"/> </layout>
+			<button text="i" width="20" left="864" top="682" height="20" onClick="self.DescVanDes1:show('bottom', self.labNome);"/>
+			### 02/09 ###
+            <layout left="576" top="707" width="193" height="30"> <edit class="TXT_PCV" width="193" height="31" field="VeD_Txt_2" /></layout> 
+            <layout left="783" top="713" width="72" height="30"> <edit transparent="true" class="NUMEROS" width="72" height="30" field="VeD_02"/></layout> 
+			<button text="i" width="20" left="864" top="716" height="20" onClick="self.DescVanDes2:show('bottom', self.labNome);"/>
+			### 03/09 ###
+            <layout left="576" top="742" width="193" height="30"> <edit class="TXT_PCV" width="193" height="31" field="VeD_Txt_3" /></layout> 
+            <layout left="784" top="748" width="72" height="30"> <edit transparent="true" class="NUMEROS" width="72" height="30" field="VeD_03"/> </layout> 
+			<button text="i" width="20" left="864" top="751" height="20" onClick="self.DescVanDes3:show('bottom', self.labNome);"/>
+			### 04/09 ###
+            <layout left="576" top="776" width="193" height="30"> <edit class="TXT_PCV" width="193" height="31" field="VeD_Txt_4" /> </layout> 	
+            <layout left="783" top="782" width="72" height="30"> <edit transparent="true" class="NUMEROS" width="72" height="30" field="VeD_04"/> </layout> 
+			<button text="i" width="20" left="864" top="785" height="20" onClick="self.DescVanDes4:show('bottom', self.labNome);"/>
+			### 05/09 ###
+            <layout left="576" top="810" width="193" height="30"> <edit class="TXT_PCV" width="193" height="31" field="VeD_Txt_5" /> </layout> 
+            <layout left="783" top="815" width="72" height="30"> <edit transparent="true" class="NUMEROS" width="72" height="30" field="VeD_05"/> </layout>
+			<button text="i" width="20" left="864" top="818" height="20" onClick="self.DescVanDes5:show('bottom', self.labNome);"/>	
+			### 06/09 ###
+            <layout left="576" top="844" width="193" height="30"> <edit class="TXT_PCV" width="193" height="31" field="VeD_Txt_6" /> </layout> 
+            <layout left="785" top="849" width="72" height="30"> <edit transparent="true" class="NUMEROS" width="72" height="30" field="VeD_06"/> </layout> 
+			<button text="i" width="20" left="864" top="852" height="20" onClick="self.DescVanDes6:show('bottom', self.labNome);"/>
+			### 07/09 ###
+            <layout left="576" top="879" width="193" height="30"> <edit class="TXT_PCV" width="193" height="31" field="VeD_Txt_7"/> </layout> 
+            <layout left="784" top="884" width="72" height="30"> <edit transparent="true" class="NUMEROS" width="72" height="30" field="VeD_07"/> </layout> 
+			<button text="i" width="20" left="864" top="887" height="20" onClick="self.DescVanDes7:show('bottom', self.labNome);"/>
+			### 08/09 ###
+            <layout left="578" top="913" width="191" height="30"> <edit class="TXT_PCV" width="191" height="31" field="VeD_Txt_8" /> </layout> 
+            <layout left="784" top="917" width="72" height="30"> <edit transparent="true" class="NUMEROS" width="72" height="30" field="VeD_08"/> </layout> 
+			<button text="i" width="20" left="864" top="920" height="20" onClick="self.DescVanDes8:show('bottom', self.labNome);"/>
+			### 09/09 ###
+            <layout left="575" top="949" width="194" height="30"> <edit class="TXT_PCV" width="194" height="31" field="VeD_Txt_9" /> </layout> 	
+            <layout left="785" top="951" width="72" height="30"> <edit transparent="true" class="NUMEROS" width="72" height="30" field="VeD_09"/> </layout> 
+			<button text="i" width="20" left="864" top="954" height="20" onClick="self.DescVanDes9:show('bottom', self.labNome);"/>
+## ------------ #### ------------ #### ------------ #### ------------ #### ------------ #### ------------ #### ------------ #### ------------ #### ------------ #### ------------ ####
+## EXPERIENCIA ##
+            <layout left="739" top="1082" width="112" height="50">
+                <label fontSize="30" fontColor="#000000" fontStyle="bold" horzTextAlign="center" vertTextAlign="center" left="30" top="15" width="112" height="50" field="XP_t"/>
+            </layout> 
+			
+            <layout left="592" top="1084" width="114" height="61">
+                <label fontSize="30" fontColor="#000000" fontStyle="bold" horzTextAlign="center" vertTextAlign="center" left="30" top="15" width="114" height="62" field="Exp_nUtil"/>
+            </layout>
+			<dataLink fields="{'XP_t', 'XP_t_gasta'}">
+					<event name="onChange">                
+						   sheet.Exp_nUtil = (tonumber(sheet.XP_t) or 0) - (tonumber(sheet.XP_t_gasta) or 0);
+					</event>
+			</dataLink>
+			
+		## POP-UP EXPERIENCIA ##
+		<template name="TePopUpExp">
+                <layout align="top" height="20">
+                        <label text="$(titulo):" align="left" width="50" horzTextAlign="trailing" />
+                        <label field="$(conteudo)" align="right" horzTextAlign="trailing" width="50" fontColor="#000000"/>
+                </layout>
+		</template>
+		
+		<template name="TePopUpExp1">
+                <layout align="top" height="20">
+                        <label text="$(titulo):" align="left" width="50" horzTextAlign="trailing" fontColor="#696969" />
+                        <label field="$(conteudo)" align="right" horzTextAlign="trailing" width="50" fontColor="#696969" />
+                </layout>
+		</template>
+		
+		<template name="TePopUpExp2">
+                <layout align="top" height="20">
+                        <label text="$(titulo):" align="left" width="50" horzTextAlign="trailing" fontColor="#696969" />
+                        <edit field="$(valor)" align="right" horzTextAlign="trailing" width="300" transparent="true" fontColor="#696969" />
+                </layout>
+		</template>
+		<template name="TePopUpExp2B">
+                <layout align="top" height="20">
+                        <label text="$(titulo):" align="left" width="50" horzTextAlign="trailing" fontColor="#000000" />
+                        <edit field="$(valor)" align="right" horzTextAlign="trailing" width="300" transparent="true" fontColor="#000000" />
+                </layout>
+		</template>
+		<template name="TePopUpExp3">
+                <layout align="top" height="20">
+                        <label text="$(titulo)" align="right" width="50" horzTextAlign="trailing" fontColor="#C0504D" />
+                        <edit field="$(valor)" align="right" horzTextAlign="trailing" width="50" transparent="true" fontColor="#C0504D" />
+                </layout>
+		</template>
+			<dataLink fields="{'Satts', 'Sper', 'Scir', 'Svan', 'Saude_Extra', 'XP_Gasto_Adicional', 'ExpMoralidadeG' }">
+					<event name="onChange">                
+						   sheet.XP_t_gasta = (tonumber(sheet.Satts) or 0) + (tonumber(sheet.Sper) or 0) + (tonumber(sheet.Scir) or 0) + (tonumber(sheet.XP_Gasto_Adicional) or 0) + (tonumber(sheet.Svan) or 0) + (tonumber(sheet.ExpMoralidadeG) or 0) + ((tonumber(sheet.Saude_Extra) or 0)*2);
+					</event>
+			</dataLink>
+			<dataLink fields="{'Saude_Extra'}">
+					<event name="onChange">                
+						   sheet.ExpSaudeExtra = ((tonumber(sheet.Saude_Extra) or 0)*2);
+					</event>
+			</dataLink>
+
+			<dataLink fields="{'XPInicial', 'XPS1', 'XPS2', 'XPS3', 'XPS4', 'XPS5', 'XPS6', 'XPS7', 'XPS8', 'XPS9', 'XPS10', 'ExpExtraGanha'}">
+					<event name="onChange">                
+						   sheet.XP_t = (tonumber(sheet.XPInicial) or 0) + (tonumber(sheet.XPS1) or 0) + (tonumber(sheet.XPS2) or 0) + (tonumber(sheet.XPS3) or 0) + (tonumber(sheet.XPS4) or 0) + (tonumber(sheet.XPS5) or 0) + (tonumber(sheet.XPS6) or 0) + (tonumber(sheet.XPS7) or 0) + (tonumber(sheet.XPS8) or 0) + (tonumber(sheet.XPS9) or 0) + (tonumber(sheet.XPS10) or 0) + (tonumber(sheet.ExpExtraGanha) or 0);
+					</event>
+			</dataLink>
+			
+		<button text="i" width="20" left="762" top="1035" height="20" onClick="self.PopExp:show('bottom', self.labNome);"/>
+		<popup name="PopExp" width="360" height="600" backOpacity="0.5">
+			<scrollBox align="client">
+				<TePopUpExp titulo="Exp Atributo" conteudo="Satts"/>
+				<TePopUpExp1 titulo="Exp Pericia" conteudo="Sper"/>
+				<TePopUpExp titulo="Exp Circunstancia" conteudo="Scir"/>
+				<TePopUpExp1 titulo="Exp Van e Des" conteudo="Svan"/>
+				<TePopUpExp titulo="Exp Saúde Extra" conteudo="ExpSaudeExtra"/>		
+				<TePopUpExp2 titulo="Exp Moralidade" valor="ExpMoralidadeG"/>
+				<TePopUpExp2 titulo="Exp Extra" valor="ExpExtraGanha"/>
+				<TePopUpExp3 titulo="...Exp Gasta" valor="XP_t_gasta" />
+				<TePopUpExp2B titulo="Exp Inicial" valor="XPInicial" />
+				<TePopUpExp2 titulo="Exp 1° Sessão" valor="XPS1" />
+				<TePopUpExp2B titulo="Exp 2° Sessão" valor="XPS2" />
+				<TePopUpExp2 titulo="Exp 3° Sessão" valor="XPS3" />
+				<TePopUpExp2B titulo="Exp 4° Sessão" valor="XPS4" />
+				<TePopUpExp2 titulo="Exp 5° Sessão" valor="XPS5" />
+				<TePopUpExp2B titulo="Exp 6° Sessão" valor="XPS6" />
+				<TePopUpExp2 titulo="Exp 7° Sessão" valor="XPS7" />
+				<TePopUpExp2B titulo="Exp 8° Sessão" valor="XPS8" />
+				<TePopUpExp2 titulo="Exp 9° Sessão" valor="XPS9" />
+				<TePopUpExp2B titulo="Exp 10° Sessão" valor="XPS10" />	
+				<TePopUpExp3 titulo="...Exp Adquirida" valor="XP_t" />
+			</scrollBox>
+		</popup>
+## ------------ #### ------------ #### ------------ #### ------------ #### ------------ #### ------------ #### ------------ #### ------------ #### ------------ #### ------------ ####
+## SOMATORIOS ##
+		##PERs##
+            <layout left="414" top="225" width="38" height="17" compilerOrder="107">
+                <label fontSize="12" fontColor="#E52237" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="38" height="18" field="Sper" compilerOrder="108"/>
+            </layout>
+			<dataLink fields="{'Peri01', 'Peri02', 'Peri03', 'Peri04', 'Peri05', 'Peri06', 'Peri07', 'Peri08', 'Peri09', 'Peri10', 'Peri11', 'Peri12', 'Peri13', 'Peri14', 'Peri15', 'Peri16', 'Peri17', 'Peri18', 'Peri19', 'Peri20', 'Peri21', 'Peri22', 'Peri23', 'Peri24', 'Peri25', 'Peri26', 'Peri27', 'Peri28', 'Peri29'}">
+					<event name="onChange">                
+						   sheet.Sper = (tonumber(sheet.Peri01) or 0) + (tonumber(sheet.Peri02) or 0) + (tonumber(sheet.Peri03) or 0) + (tonumber(sheet.Peri04) or 0) + (tonumber(sheet.Peri05) or 0) + (tonumber(sheet.Peri06) or 0) + (tonumber(sheet.Peri07) or 0) + (tonumber(sheet.Peri08) or 0) + (tonumber(sheet.Peri09) or 0) + (tonumber(sheet.Peri10) or 0) + (tonumber(sheet.Peri11) or 0) + (tonumber(sheet.Peri12) or 0) + (tonumber(sheet.Peri13) or 0) + (tonumber(sheet.Peri14) or 0) + (tonumber(sheet.Peri15) or 0) + (tonumber(sheet.Peri16) or 0) + (tonumber(sheet.Peri17) or 0) + (tonumber(sheet.Peri18) or 0) + (tonumber(sheet.Peri19) or 0) + (tonumber(sheet.Peri20) or 0) + (tonumber(sheet.Peri21) or 0) + (tonumber(sheet.Peri22) or 0) + (tonumber(sheet.Peri23) or 0) + (tonumber(sheet.Peri24) or 0) + (tonumber(sheet.Peri25) or 0) + (tonumber(sheet.Peri26) or 0) + (tonumber(sheet.Peri27) or 0) + (tonumber(sheet.Peri28) or 0) + (tonumber(sheet.Peri29) or 0);
+					</event>
+			</dataLink>
+		##CIRs##
+            <layout left="652" top="225" width="38" height="17" compilerOrder="109">
+                <label fontSize="12" fontColor="#E52237" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="38" height="18" field="Scir" compilerOrder="110"/>
+            </layout>
+			<dataLink fields="{'CircXP_1', 'CircXP_2', 'CircXP_3', 'CircXP_4', 'CircXP_5', 'CircXP_6', 'CircXP_7 ', 'CircXP_8', 'CircXP_9', 'CircXP_10'}">
+					<event name="onChange">                
+						   sheet.Scir = ((tonumber(sheet.CircXP_1) or 0) + (tonumber(sheet.CircXP_2) or 0) + (tonumber(sheet.CircXP_3) or 0) + (tonumber(sheet.CircXP_4) or 0) + (tonumber(sheet.CircXP_5) or 0) + (tonumber(sheet.CircXP_6) or 0) + (tonumber(sheet.CircXP_7) or 0) + (tonumber(sheet.CircXP_8) or 0) + (tonumber(sheet.CircXP_9) or 0) + (tonumber(sheet.CircXP_10) or 0))*2;
+					</event>
+			</dataLink>
+		##VANs##
+            <layout left="716" top="978" width="23" height="18" compilerOrder="199">
+                <label fontSize="12" fontColor="#000000" vertTextAlign="center" left="0" top="0" width="23" height="19" text="Exp:"/>
+            </layout> 
+            <layout left="740" top="977" width="23" height="19" compilerOrder="111">
+                <label fontSize="12" fontColor="#E52237" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="23" height="20" field="Svan" compilerOrder="112"/>
+            </layout>
+			<dataLink fields="{'VeD_01', 'VeD_02', 'VeD_03', 'VeD_04', 'VeD_05', 'VeD_06', 'VeD_07', 'VeD_08', 'VeD_09'}">
+					<event name="onChange">                
+						   sheet.Svan = (tonumber(sheet.VeD_01) or 0) + (tonumber(sheet.VeD_02) or 0) +(tonumber(sheet.VeD_03) or 0) +(tonumber(sheet.VeD_04) or 0) +(tonumber(sheet.VeD_05) or 0) +(tonumber(sheet.VeD_06) or 0) +(tonumber(sheet.VeD_07) or 0) +(tonumber(sheet.VeD_08) or 0) +(tonumber(sheet.VeD_09) or 0);
+					</event>
+			</dataLink>
+		##ATTs##
+            <layout left="121" top="227" width="34" height="17" compilerOrder="105">
+                <label fontSize="12" fontColor="#E52237" horzTextAlign="leading" vertTextAlign="center" left="0" top="0" width="34" height="18" field="Satts"/>
+            </layout> 
+			<dataLink fields="{'FOR', 'DES', 'PRE', 'TAT', 'PER', 'INT', 'DET', 'SOR'}">
+					<event name="onChange">                
+						   sheet.Satts = ((tonumber(sheet.FOR) or 0) + (tonumber(sheet.DES) or 0) + (tonumber(sheet.PRE) or 0) + (tonumber(sheet.TAT) or 0) + (tonumber(sheet.PER) or 0) + (tonumber(sheet.INT) or 0) + (tonumber(sheet.DET) or 0) + (tonumber(sheet.SOR) or 0)) * 4 ;
+					</event>
+			</dataLink>
+## ------------ #### ------------ #### ------------ #### ------------ #### ------------ #### ------------ #### ------------ #### ------------ #### ------------ #### ------------ ####
+## ATAQUES ##      
+		 <layout top="200" left="920" width="250" height="700" >
+				<scrollBox align="client">
+					<button height="25" fontFamily="kalam" text="+" top="5" width="25" left="35" hint="Adiciona um novo ataque." onClick="self.rclAtaque:append(); "/>
+					<label fontSize="25" fontColor="#000000" horzTextAlign="leading" vertTextAlign="trailing" left="60" top="0" width="170" height="30" text="ATAQUES" fontFamily="DK Umbilical Noose" />
+					<recordList name="rclAtaque" field="Ataque" templateForm="Ataque" top="50" width="230" height="600" autoHeight="true" />
+				</scrollBox>
+            </layout> 
+## ------------ #### ------------ #### ------------ #### ------------ #### ------------ #### ------------ #### ------------ #### ------------ #### ------------ #### ------------ ####
+## ARMADURA ##
+			<rectangle width="200" height="300" top="950" left="950" color="#00000000">
+					<label fontSize="25" fontColor="#000000" horzTextAlign="center" vertTextAlign="center" width="200" height="30" left="30" text="ARMADURA" fontFamily="DK Umbilical Noose" />
+
+					<rectangle top="32" left="1" width="200" height="30" sides="bottom" color="#00000000" strokeColor="black" strokeSize="1"> </rectangle>
+					<edit width="200" field="ARMADURA_nick" height="40" class="Ar2" top="32" left="1" /> 
+					
+					<label text="Torso" width="50" height="30" top="80" left="1" class="padrao2" />
+
+					<rectangle top="80" width="100" left="60" class="Ar"> 
+						<edit field="ARMADURA_TorsoA" width="45"  height="30" class="NUMEROS2"/>
+						<label text="/" width="10" height="30" top="3" left="46" class="padrao2" />
+						<edit field="ARMADURA_TorsoB" width="45"  height="30" left="46" class="NUMEROS2"/>
+					</rectangle>
+					
+					<label text="CD" width="50" height="30" top="65" left="165" class="padrao2" fontSize="10" />
+					<rectangle top="80" left="150" class="Ar"> <edit field="ARMADURA_TorsoCD" width="40"  height="30" class="NUMEROS" /> 
+					</rectangle>
+					<button left="190" top="85" width="14" height="14" text="R" hint="Desc... ">
+							<event name="onClick">
+								local mesaDoPersonagem = Firecast.getMesaDe(sheet);
+								local rolagem = Firecast.interpretarRolagem(sheet.ARMADURA_TorsoA + sheet.FOR); 
+								if not rolagem.possuiAlgumDado then rolagem = Firecast.interpretarRolagem("1d10"):concatenar(rolagem); end; 
+								if mesaDoPersonagem ~= nil then mesaDoPersonagem.chat:rolarDados(rolagem,"[§B][§K10][ Atributo ] [§K14]Força[§K9] [§K14]+ [§K9][ Armadura ][§K14] " ..sheet.ARMADURA_nick.. " de " ..sheet.Nick_Personagem); end;
+								local rolagem = Firecast.interpretarRolagem(sheet.ARMADURA_TorsoB + sheet.SOR); 
+								if not rolagem.possuiAlgumDado then rolagem = Firecast.interpretarRolagem("1d10"):concatenar(rolagem); end; 
+								if mesaDoPersonagem ~= nil then mesaDoPersonagem.chat:rolarDados(rolagem,"[§B][§K10][ Atributo ] [§K14]Sorte[§K9] [§K14]+ [§K9][ Armadura ][§K14] " ..sheet.ARMADURA_nick.. " de " ..sheet.Nick_Personagem); end;
+							</event>
+					</button>
+					<image width="17" height="17" left="189" top="85" style="proportional" center="true" src="images/Dado.jpg"/>
+
+					
+					<label text="Cabeça" width="50" height="30" top="120" left="1" class="padrao2" />
+					<rectangle top="120" left="60" width="100" class="Ar"> 
+					<edit field="ARMADURA_CabecaA" width="45"  height="30" class="NUMEROS2" /> 
+					<label text="/" width="10" height="30" top="3" left="46" class="padrao2" />
+					<edit field="ARMADURA_CabecaB" width="45" left="46" height="30" class="NUMEROS2" /> 
+					</rectangle>
+					<label text="CD" width="50" height="30" top="108" fontSize="10" left="165" class="padrao2" />
+					<rectangle top="120" left="150" class="Ar"> <edit field="ARMADURA_CabecaCD" width="40"  height="30" class="NUMEROS" /> </rectangle>
+					
+					<button left="190" top="125" width="14" height="14" text="R" hint="Desc... ">
+							<event name="onClick">
+								local mesaDoPersonagem = Firecast.getMesaDe(sheet);
+								local rolagem = Firecast.interpretarRolagem(sheet.ARMADURA_CabecaA + sheet.FOR); 
+								if not rolagem.possuiAlgumDado then rolagem = Firecast.interpretarRolagem("1d10"):concatenar(rolagem); end; 
+								if mesaDoPersonagem ~= nil then mesaDoPersonagem.chat:rolarDados(rolagem,"[§B][§K10][ Atributo ] [§K14]Força[§K9] [§K14]+ [§K9][ Armadura ][§K14] " ..sheet.ARMADURA_nick.. " de " ..sheet.Nick_Personagem); end;
+								local rolagem = Firecast.interpretarRolagem(sheet.ARMADURA_CabecaB + sheet.SOR); 
+								if not rolagem.possuiAlgumDado then rolagem = Firecast.interpretarRolagem("1d10"):concatenar(rolagem); end; 
+								if mesaDoPersonagem ~= nil then mesaDoPersonagem.chat:rolarDados(rolagem,"[§B][§K10][ Atributo ] [§K14]Sorte[§K9] [§K14]+ [§K9][ Armadura ][§K14] " ..sheet.ARMADURA_nick.. " de " ..sheet.Nick_Personagem); end;
+							</event>
+					</button>
+					<image width="17" height="17" left="189" top="125" style="proportional" center="true" src="images/Dado.jpg"/>
+					
+					<edit text="Outro" width="50" height="30" top="160" left="1" class="padrao2" transparent="true"/>
+					<rectangle top="160" left="60" width="100" class="Ar"> 
+					<edit field="ARMADURA_OutroA" width="45"  height="30" class="NUMEROS2" /> 
+					<label text="/" width="10" height="30" top="3" left="46" class="padrao2" />
+					<edit field="ARMADURA_OutroB" width="45" left="46" height="30" class="NUMEROS2" /> 
+					</rectangle>
+					<label text="CD" width="50" height="30" top="148" left="165" class="padrao2" fontSize="10" />
+					<rectangle top="160" left="150" class="Ar"> <edit field="ARMADURA_OutroCD" width="40"  height="30" class="NUMEROS" /> </rectangle>
+					<button left="190" top="165" width="14" height="14" text="R" hint="Desc... ">
+							<event name="onClick">
+								local mesaDoPersonagem = Firecast.getMesaDe(sheet);
+								local rolagem = Firecast.interpretarRolagem(sheet.ARMADURA_OutroA + sheet.FOR); 
+								if not rolagem.possuiAlgumDado then rolagem = Firecast.interpretarRolagem("1d10"):concatenar(rolagem); end; 
+								if mesaDoPersonagem ~= nil then mesaDoPersonagem.chat:rolarDados(rolagem,"[§B][§K10][ Atributo ] [§K14]Força[§K9] [§K14]+ [§K9][ Armadura ][§K14] " ..sheet.ARMADURA_nick.. " de " ..sheet.Nick_Personagem); end;
+								local rolagem = Firecast.interpretarRolagem(sheet.ARMADURA_OutroB + sheet.SOR); 
+								if not rolagem.possuiAlgumDado then rolagem = Firecast.interpretarRolagem("1d10"):concatenar(rolagem); end; 
+								if mesaDoPersonagem ~= nil then mesaDoPersonagem.chat:rolarDados(rolagem,"[§B][§K10][ Atributo ] [§K14]Sorte[§K9] [§K14]+ [§K9][ Armadura ][§K14] " ..sheet.ARMADURA_nick.. " de " ..sheet.Nick_Personagem); end;
+							</event>
+					</button>
+					<image width="17" height="17" left="189" top="165" style="proportional" center="true" src="images/Dado.jpg"/>
+					
+					<label text="Movimento" width="50" height="30" top="200" left="5" class="padrao2" fontSize="15" />
+					<rectangle top="200" left="80" class="Ar3"> <edit field="PenalidadeMovimento" width="40"  height="30" class="NUMEROS" /> </rectangle>
+					
+					<label text="Percepção" width="50" height="30" top="200" left="130" class="padrao2" fontSize="15" />
+					<rectangle top="200" left="200" class="Ar3"> <edit field="PenalidadedePercepcao" width="40"  height="30" class="NUMEROS" /> </rectangle>
+
+			</rectangle>
+## ------------ #### ------------ #### ------------ #### ------------ #### ------------ #### ------------ #### ------------ #### ------------ #### ------------ #### ------------ #### 
+## Inventario ##
+
+<!-- Descontinuado			 -->
+## ------------ #### ------------ #### ------------ #### ------------ #### ------------ #### ------------ #### ------------ #### ------------ #### ------------ #### ------------ ###
+## Car ##
+			<label text="Transporte" width="100" height="30" top="570" left="1200" class="padrao2" fontSize="15" />
+			<button width="100" height="100" left="1200" top="590" onClick="self.PopCar:show('bottom', self.labNome);"/>
+			<image width="100" height="100" left="1200" top="590" style="proportional" center="true" src="images/Carro.png"/>
+				
+			<popup name="PopCar" width="1010" height="650" backOpacity="0.5"> <import file="CAR.lfm"/> </popup>
+##------------ #### ------------ #### ------------ #### ------------ #### ------------ #### ------------ #### ------------ #### ------------ #### ------------ #### ------------ #### 
+## Animal ##
+			<label text="Animal" width="50" height="30" top="438" left="1225" class="padrao2" fontSize="15" />
+			<button width="100" height="100" left="1200" top="460" onClick="self.PopAnimal:show('bottom', self.labNome);" />
+			<image width="100" height="100" left="1200" top="460" style="proportional" center="true" src="images/Horse.png"/>
+			
+			<popup name="PopAnimal" width="1200" height="800" backOpacity="0.5"> <import file="Animal.lfm"/> </popup>
+##------------ #### ------------ #### ------------ #### ------------ #### ------------ #### ------------ #### ------------ #### ------------ #### ------------ #### ------------ #### 
+## NPC ##	
+			<label text="NPC's" width="50" height="30" top="310" left="1236" class="padrao2" fontSize="15" />
+			<button width="100" height="100" left="1200" top="330" onClick="self.PopNPCfrente:show('bottom', self.labNome);" />
+			<image width="100" height="100" left="1200" top="330" style="proportional" center="true" src="images/NPC.png"/>
+			
+			<popup name="PopNPCfrente" width="1340" height="620" backOpacity="0.5"> <scrollBox align="client"> <import file="NPC.lfm"/> </scrollBox> </popup>
+		</rectangle>
+##------------ #### ------------ #### ------------ #### ------------ #### ------------ #### ------------ #### ------------ #### ------------ #### ------------ #### ------------ ####
+##------------ #### ------------ #### ------------ #### ------------ #### ------------ #### ------------ #### ------------ #### ------------ #### ------------ #### ------------ ####
+##------------ #### ------------ #### ------------ #### ------------ #### ------------ #### ------------ #### ------------ #### ------------ #### ------------ #### ------------ #### 
+## Mecanicas ##	
+##------------ #### ------------ #### ------------ #### ------------ #### ------------ #### ------------ #### ------------ #### ------------ #### ------------ #### ------------ ####
+##------------ #### ------------ #### ------------ #### ------------ #### ------------ #### ------------ #### ------------ #### ------------ #### ------------ #### ------------ ####
+##------------ #### ------------ #### ------------ #### ------------ #### ------------ #### ------------ #### ------------ #### ------------ #### ------------ #### ------------ ####
+## Codigos de Will ##
+				<script>
+					function rolarDado(sheet)
+					  local minhaMesa = Firecast.getRoomOf(sheet)
+					  if minhaMesa == nil then
+						-- A sheet não está associada a uma sala no Firecast, então não podemos rolar dados
+						return
+					  end
+					
+					  local chat = minhaMesa.chat
+					
+					  -- Definir tabela de mapeamento de resultados
+					  local mapeamento = {
+						[1] = "Boneco de Ação, Balança de Precisão",
+						[2] = "Livro de Endereços, Roupa de Couro, Carteira de cigarros 2d10",
+						[3] = "Ataduras Adesivas, Tecido, Caixa de munição Fuzil",
+						[4] = "Compressor De Ar, Barbeador Elétrico, Câmera Tecpix",
+						[7] = "Purificador de ar. Óleo Lubrificante Anal",
+						[8] = "Secretária Eletrônica, Camisinhas, Cabeça de Manequim",
+						[9] = "Antissépticos, Frascos, Pólvora, Lata de Tinta",
+						[10] = "CD de Áudio, Radio de Pilha, 1d10 Comida enlatada. Como rações.",  
+						[12] = "Mamadeira, Leite em Pó, Caneta, Tanque de hidrogênio explosivo, d10 de dano em um raio de 5m",
+						[13] = "Monitor e Receptor de Bebê, Filtro para Máscara de Gás",
+						[14] = "Assadeira, Bolsa com Artigos Esportivos",
+						[15] = "Bandagem Grande, Material Esterilizante",
+						[16] = "Bola de Beisebol, Colete a Prova de Balas", 
+						[17] = "Luva de Beisebol, Máscara de Beisebol, Pacote de Cocaína",
+						[18] = "Bola de Basquete, Tênis Adidas, Poster Cristiano Ronaldo",  
+						[19] = "Balança de Banheiro, Silver Tape, Tanque de hélio, o suficiente para encher 30 balões. Quando inalado, bônus de +2 em testes de disfarçar a voz de criança por 1 minuto.",
+						[20] = "Bateria, Playboy, Vibrador, Munição d10",
+						[21] = "Carregador de Bateria, Fone de Ouvido",
+						[22] = "Arma de Brinquedo, Bola de Futebol, Rifle Destruído",
+						[23] = "Munição de Pistola, Televisão Portátil",
+						[24] = "Lençol, Pinto de Borracha, Contador de Radiação",
+						[25] = "Sino, Caixinha Bailarina, 1d10 barras de proteína.",
+						[26] = "Bicicleta de Criança e Esportiva, Ácido Corrosivo", 
+						[27] = "Carrinho de Supermercado, Controle de Vídeo Game",
+						[28] = "Sino de Bicicleta, Roupa de Ciclista, Machado de Incêndio",
+						[29] = "Capacete de Bicicleta, Óculos de sol Importado",
+						[30] = "Binóculos, Bilhete com Senha de Cofre",
+						[31] = "Manguito de Pressão Arterial, Estetoscópio",
+						[32] = "Jogo de Tabuleiro, Cartas Eróticas, Mochila Velha",
+						[33] = "Livro, Tablet da Apple, Coleira de Cachorro",
+						[34] = "Bola de Boliche, Televisão, Chopeira",
+						[35] = "Pino de Boliche, Esmaltes de Unhas",
+						[36] = "Míni Serra, Martelo, Graxa, Garrafas de Vinho",
+						[37] = "Caixa à Prova de Fogo e Água, com Chave",
+						[38] = "Luvas de Boxe, Saco de Luta, Oculos Escuro Aviador",
+						[39] = "Kit de Maquiagem, Máscara de Gás, Motoserra", 
+						[40] = "Exterminador de Insetos, Isqueiro",
+						[41] = "Alicate de Corte de Cabo, Saco de Cimento 50 Kg",
+						[42] = "Abraçadeiras Saco com 100, Máscara de Gás", 
+						[43] = "Calculadora, Painel Solar, 1d10 Baterias",
+						[44] = "Computador, Kit de Unha, Saca Rolhas",
+						[45] = "Câmera infravermelho, Micro-ondas, Kit Primeiro Socorros",
+						[46] = "Barraca de Acampamento, 8 pessoas",
+						[47] = "Cigarros 2d10, Mapa e Bilhete, Lanterna sem Pilhas",
+						[48] = "Abridor de Latas, Caixinha de Fosforo.",
+						[49] = "Vela, Sapatos Femininos, Roupas Femininas",
+						[50] = "Canos hidráulicos, Jogo de Panelas, Lata de Gasolina",
+						[51] = "Reservatório de Água Potável, Soco Inglês",
+						[52] = "Revolver Velho, Cantil, Luvas Esportivas",
+						[53] = "Controle de Garagem, Pilhas, Caixa de Metal", 
+						[54] = "Kit de Primeiro Socorros, Papel Higiênico,",
+						[55] = "Enlatados, Wisky, Bola de Futebol,",
+						[56] = "Espada do Conan, Cinto, Cabeça Empalada",
+						[57] = "Secador, Compressor, Violão, Cigarros 2d10",
+						[58] = "Capa de Chuva, Kit de Solda",
+						[59] = "Distintivo Policial, Pistola, Espelho",
+						[60] = "Livro de Receitas, Baú Metal Com Dinheiro",
+						[61] = "Barril de Chope Metal, Cilindro para Fermentação",
+						[62] = "Material para Peixes e Anfíbios, Vara de Pesca",
+						[63] = "Roupa de Guarda de Transito, Par de Algemas",
+						[64] = "Absorvente, Pilulas Anticoncepcionais, Remédio Abortivo",
+						[65] = "Cilindro de Gás Letal, Cilindro de Oxigênio, Motor", 
+						[66] = "Central Radio Comunicador, Granadas, Lâmpadas",
+						[67] = "Microscópio, Iodo, Fogão Portátil, Bomba não detonada. Qualquer impacto forte fará com que ele exploda. D10 de dano em um raio de 5m. Pesado, pode ser largado ou catapultado, mas não arremessado com os braços.",
+						[68] = "Corda de Alpinismo, Cabide, Linha de Pesca, Iscas",
+						[69] = "Impressora, Álbum Completo Michael Jackson",
+						[70] = "Laser Verde, Cadeado Resistente com Chaves",
+						[71] = "Disquete Velho, Roupa do Super Homem, Homem Aranha",
+						[72] = "Moto Guardada, Chaves Reservas, Caixa Fechada - Surpresa",
+						[73] = "Ração de Cachorro, Gato Animal Com Filhotes, Vídeo Game",
+						[74] = "Canoa Esportiva, Nadadeiras, Mala de Senha Fechado",
+						[75] = "Extintor de Incêndio, Galão de Gasolina",
+						[76] = "Velas de Rituais, Cadeira de Massagem, Esteira",
+						[77] = "Crucifixo, Bandeira Americana Velha, Roupa de Padre",
+						[78] = "DVD de Sexo Gay, Paraquedas, Botas Militar",
+						[79] = "Carro de Controle Remoto, Remédios",
+						[80] = "Cabo de Chupeta, Cortador de Grama",
+						[81] = "Colar Cervical, Bateria de Carro, Ventilador Industrial",
+						[82] = "Armadura Medieval, Moto Serra, Caixa de Reparo",
+						[83] = "Armadilha Bomba Caseira, Caixa Aberta de Metal Resistente",
+						[84] = "Carrinho Improvisado de Combustível",
+						[85] = "Aparelho GPS, Chaves de uma Embarcação",
+						[86] = "Cinto de Acessórios, Guarda Chuva, Kit Odontológico",
+						[87] = "Cesto de Carregar Animal, Isqueiro Velho",
+						[88] = "Armadilha de Urso, Caixa de Pregos",
+						[89] = "Mochila de Hidratação, Revolver Enferrujado",
+						[90] = "Caixa de Coca Cola, Um saco de fertilizante de 50 kg.",
+						[91] = "Relógio de Pulso, Pá Militar, Comprimidos. Cure 1d3 de saúde. Chance de salvar contra veneno ou usar para perder 2 pontos de um valor aleatório em Atributo.",
+						[92] = "Pé de Cabra, Pesos Para Academia",
+						[93] = "Serra Manual de Construção",
+						[94] = "Arma de Paintball, Corda, Algema",
+						[95] = "Guitarra, Alarme Despertador",
+						[96] = "Filtro para Aquário, Desentupidor de Borracha",
+						[97] = "Sino de Vento Sonoro com Pequenos Metais Brilhantes",
+						[98] = "Sensor de Presença Sonoro",
+						[99] = "Chocalho, Megafone, Cordas de Violão",
+						[100] = "Sensor de Estacionamento Wifi",
+						[101] = "Uma bateria de carro descarregada. Contém ácido sulfúrico: veneno (1d10).",
+						[102] = "Uniforme Do Exercito Alemão",
+						[103] = "Alicate Cortador de Cerca, Bússola",
+						[104] = "Coldre, Lâmpadas, Liquidificador",
+						[105] = "Bastão de Luz Química Laranja",
+						[106] = "Máscara de gás - 1 Filtro, Isqueiro",
+						[107] = "Cigarro (1- 20), Bola de Tênis",
+						[108] = "Mapa, Atlas Marcado Com Estradas",
+						[109] = "Rádio Comunicador Simples",
+						[110] = "Apito para Cachorro, Bíblia Sagrada",
+						[111] = "Microscópio, Frascos Cilíndricos de Vidro, Frascos Quimicos",
+						[112] = "Chaves de um Helicóptero, Quepe Policial",
+						[113] = "Cela de Cavalo para Montaria",
+						[114] = "Armadilha Improvisada Escopeta",
+						[115] = "Peruca, Seios de Silicone, Lanterna Velha",
+						[116] = "Corda (9 Metros), Boneco UFC",
+						[117] = "Saco com Drogas, Centrifuga, Produtos Químicos", 
+						[118] = "Gerador de Energia, Ração para Aves 50 kg",
+						[119] = "Correntes de Metal 5 Metros",
+						[120] = "Moto de Trilha, Triciclo, Não Possui Chaves",
+						[121] = "Maquininha de Tatuagem, Kit Instrumentais Cirúrgicos",
+						[122] = "Detector de Monóxido de Carbono",
+						[123] = "Carrinho de Bebê, Chá Calmante",
+						[124] = "Caixa de Metal com Dinheiro - Possui Chave",
+						[125] = "Fita Isolante, Boné de Personagem",
+						[126] = "Braçadeira, Medidor de Barulho Sonoro",
+						[127] = "Telefone Celular, Serra Circular",
+						[128] = "Tigela de Cerâmica, Arame Farpado",
+						[129] = "Fato Químico Encapsulado",
+						[130] = "Cinzel, Lamparina, Cadeira Dobrável",
+						[131] = "Frascos de Vacina Animal",
+						[132] = "Martelo de Garra, Luvas, Apito de Segurança",
+						[133] = "Lâmpada, Tridente, Roupa de Jardinagem",
+						[134] = "Relógio Digital + Rádio, Livro de Jardinagem",
+						[135] = "Ferro de Passar Roupas Elétrico",
+						[136] = "Cafeteira Elétrica, Pacote de Rosquinha",
+						[137] = "Pinto de Borracha, Camisinhas, Peruca",
+						[138] = "Revista em Quadrinhos, Berrante, Botas de Boiadeiro de Couro",
+						[139] = "Mouse de Computador, com fio, HD Externo",
+						[140] = "Mouse de Computador, sem fio, Autoclave, Laringoscópio (Para Ventilação)",
+						[141] = "Alto-Falantes de Computador, Cinto de Granada",
+						[142] = "Controle de Videogame, Fone de Ouvido",
+						[143] = "Refrigerador, Pendulo Para Carnes Bovinas",
+						[144] = "Lápis de Cor 15 Cores, Mochila, Pistola de Cola Quente",
+						[145] = "Chave inglesa 74, Coo-ler com Rodinhas",
+						[146] = "Ferramenta de Crimpagem, Solda, Materiais de Construção Civil",
+						[147] = "Pé-De-Cabra, Materiais de Construção Civil, Britadeira",
+						[148] = "Muleta de Alumínio, Galão de Gasolina",
+						[149] = "Relógio Cuco, Quarto Completo, Posteres de Ídolos",
+						[150] = "Forma de Bolo, Copos em Metal, Laptop velho e pesado. Teste de Sorte para que ainda funcione. Qual poderia ser a senha?",
+						[151] = "Lâmpada de Mesa, Estoque de Bebidas Alcoólicas",
+						[152] = "Grampeador de Mesa, Lanche Rápido - Batata - Bolacha",
+						[153] = "Reprodutor de Música Digital (8 GB Com Cabo)",
+						[154] = "Termômetro Digital, Cozinha Completa",
+						[155] = "Tigela de Cachorro, Livro Religioso",
+						[156] = "Náilon, Ferramentas de Construção, Arame Farpado",
+						[157] = "Coleira de Cão com Espinhos, Panela de Pressão",
+						[158] = "Granada de Fumaça, Pneus Veicular",
+						[158] = "Torradeira Elétrica, Caixa de Temperos para as Refeições", 
+						[159] = "Manivela, Caixa De Sementes",
+						[160] = "Silver Tape, Toca Disco, Bumerangue",
+						[161] = "Pá de Lixo, Bombinhas de São João",
+						[162] = "DVD virgem, Bastão de Beisebol",
+						[163] = "Filme O Poderoso Chefão, Xuxa",
+						[164] = "Chaleira Elétrica, Lanche Rápido - Doritos",
+						[165] = "Lixadeira Elétrica, Fita Isolante, Chave de Roda",
+						[166] = "Cabo de Extensão Elétrico, 10 Metros",
+						[168] = "Silver Tape, Espada de Bambu, Chapéu",
+						[169] = "Cabo Eletrônico 5 metros, Água Mineral, Entalado Sardinha",
+						[170] = "Quadro de Pintura para Desenho",
+						[171] = "Ventilador, Televisão Fina, Óculos de Grau",
+						[172] = "Furadeira, Coquetel Molotov",
+						[173] = "Álcool, Alarme Antigo, Pedaços de Pano",
+						[174] = "Fogos de Artifício Bombinhas, Rojão",
+						[175] = "Antena de Comunicação, Walkie Tock do BEN-10",
+						[176] = "Partes de Circuito, Fios Elétricos Simples",
+						[178] = "Componentes Para Armas de Fogo, Molas, Lubrificantes",
+						[179] = "CDs de Música e DvD Infantis, Panela Elétrica",
+						[180] = "Vídeo Cassete, Camiseta Assinado Pela Madona",
+						[181] = "Notebook, Spray de Tinta, Caixa de Fosforo (D10)",
+						[182] = "Caixa de Munição, Detector de Fumaça",
+						[183] = "Ursinho de Pelúcia, Bichinho que aperta e faz Barulho",
+						[184] = "Artefato Explosivo, Dinamite",
+						[185] = "Caixa de Produtos Químicos Perigosos, Microfone",
+						[186] = "Agrotóxico, Borrifador Mecânico",
+						[187] = "Kit Médico Cirúrgico (Instrumentais)",
+						[188] = "Peças Mecânicas Automotivas, Colete", 
+						[189] = "Kit de Itens Esportivos, Taco de Sinuca, Bolas de Bilhar",
+						[190] = "Botijão de Gás, Chapinha de Cabelo",
+						[191] = "Placa de Energia Solar, Mini Vaso Químico Portátil",
+						[192] = "Vara de Pesca, Flechas, Bebedouro Desativado",
+						[193] = "Fação, Espada de Samurai",
+						[194] = "Alvo Para Tiro, Bandana de Rock",
+						[195] = "Aquecedor Elétrico, Esqueleto de Manequim",
+						[196] = "Material Higiênico, Alternador de Eletricidade",
+						[196] = "Aparelhagem de Raio-x, Instrumentos Odontológicos",
+						[197] = "Granada, Revista Playboy",
+						[198] = "Otorrinolaringologia, Bico de Pato (Genecologia)",
+						[199] = "Anotações Importantes, Cadeira de Rodas",
+						[200] = "Pistola Sinalizadora Laranja, Colete Salva-Vivas",
+						[201] = "Flecha Com Ponta Explosiva, Botas Militares",
+						[202] = "Claymore, Colete Militar, Poster do Rambo",
+						[203] = "Dinamites - Instáveis Vazando Óleo",
+						[204] = "Cela de Montaria, Ração Animal",
+						[205] = "2 pneus de trator velho, óculos de aros de metal quebrados",
+						[206] = "Serra de madeira sem corte",
+						[207] = "Pés de pranchas 2x4punhado de pregos enferrujados",
+						[208] = "Pote de cola de madeira, enxada de jardim",
+						[209] = "Olho de vidro, Cadeira de massagem com Circuitos",
+						[210] = "Cutelo de açougueiro enferrujado, Cama de Massagem com Circuitos",
+						[211] = "Carrinho de compras, Walkie Talkie, Foto de Crianças",
+						[212] = "Kit de costura pessoal, Sino de mão, Câmera Roll D8 [1-6: Quebrado; 7-8: Contém Filme]",
+						[213] = "Agulha de Tricô, Rolo D20 Enfeites de Natal, Proteção Torso + Capacete",
+						[214] = "Caneca de Café, Urso Teddy, Caneta Tinteira, Fogão Portátil, Torso de Manequim",
+						[215] = "Foto Emoldurada de Político do Velho Mundo, Mapa Topográfico Subaquático",
+						[216] = "Cardápio do Restaurante, Carro de Brinquedo Eletrico",
+						[217] = "Rolos de cabelo, Espátula de jardinagem, Frasco Anéstésico 1d10",
+						[218] = "Macarrão Seco, Maconha Prensada, Livro Intacto, Cofre",
+						[219] = "Lanterna de Helicóptero, Crânio Humano Carbonizado, Carcaça de Helicóptero",
+						[220] = "Botas de Alpinismo, Placa de Carro, Caça-Níquel de Alavanca, Agulha Hipodérmica",
+						[221] = "Garrafa de Café Vazia - Moedas Antigas, Garrafa de Uísque",
+						[222] = "Caixas com D30 Vidro Ornamentais, Boneca Falante Pilhas no Final",
+						[223] = "Bolso Cheio de Moedas, Revista de Mulheres Peladas",
+						[224] = "Volante, Triciclo de Criança, Bule Para Chá, Roupa do Papai Noel",
+						[225] = "Espelho de Mão, iPod, Panela de Arroz Elétrica",
+						[226] = "Pequena Célula de Energia, Rádio Comunicador",
+						[227] = "Guarda-Chuva, Sutiã de Mulher, Sinta Liga",
+						[228] = "Perfume, Cloro, Desinfetante, Máscara para Mergulho com Canudo",
+						[229] = "Rodinha de Academia Abdominal, Barra de Metal para Parede (Exercícios)",
+						[230] = "Peixe - Taxidermia, Manequim de Poliuretano Para Empalhamento.",
+						[231] = "Disco de Vinil (D10) mochila (role 3 vezes (AQUI NA LISTA) para ver o conteúdo)",
+						[232] = "Jarra Cheia de Areia, Rolo de caixa de chumbo 1d10 x Rolo 1d10 x 16",
+						[233] = "Rolo D10 Blocos de Brinquedo de Madeira, Caixa de Fósforos",
+						[234] = "Saco de Mármores Role 2d12 Mármores, Livro de Contos Infantis",
+						[235] = "Capa de Bolo de Casamento, Vela de Parafina, Secador de Cabelo",
+						[236] = "Meia Usada, Pedra de Amolar, Revista de Publicação para Adultos (Gay - Zoofilia)",
+						[237] = "Enlatados, Celular Rosa, Manequim de Ferro, Aquecedor Elétrico de Água",
+						[238] = "Engrenagens Mecânicas, Drone sem Controle e Bateria",
+						[239] = "Caixa de Música, Role D4 (1-2 Defeitos / 3-4 Funcionando)",
+						[240] = "Caixão, Tamanho Infantil, Formol, Corpos Dissecados",
+						[241] = "Rádio Portátil, Pato de Borracha, Toalha de chá, Esqueleto de Brinquedo",
+						[242] = "Traje Quimico. Protege contra radiação e veneno transportado pelo ar. Sem valor de armadura, mas ocupa espaço de armadura. Perde a utilidade quando danificado.243 - Barco de Remo, Roupa de Ski, Equipamento de Escalada",
+						[244] = "Cofre Antigo Velho, Anão de Jardim, Carrinho do Papai Noel",
+						[245] = "Maquina de Refrigerante e Salgadinhos Antigo, Almofada Macia Com Plumas",
+						[246] = "Cadeira de Balanço, Concha de Praia, Ração de Comida Canina",
+						[247] = "Cinto de Couro, Caneta, Lâmpada Com Sensor de Presença",
+						[248] = "Caixa de Lâmpadas, Roll D30 Intactas",
+						[249] = "Saco de Cimento (Usado), Tinta Vermelha para Parede",
+						[250] = "Prótese Dentaria, Caneta Motor de Dentista, Remédios Anti-inflamatórios",
+						[251] = "Espelho, Pente, Kit Higiênico, Esmalte de Unha, Peruca Loira",
+						[252] = "Cabo de Bateria, Aparelho Medidor de Radiação",
+						[253] = "Jarra Contendo Dentes D12, Feto em Conserva, Instrumentos de Parto",
+						[254] = "Faca, Diagrama de Chip de Água Carbonizada",
+						[255] = "Medidor de Velocidade, Medidor de Temperatura Corporal", 
+					  }
+					
+					  -- Inicializar gerador de números aleatórios
+					  math.randomseed(os.time())
+					  math.random() -- descarta o primeiro número gerado
+					
+					  -- Rolar dado e obter resultado
+					  local resultado = math.random(1, 255)
+					
+					  -- Enviar mensagem com o resultado nomeado
+					  if resultado ~= nil then
+						local mensagem = "[§B][§K11] Você Encontrou: [§K5][§B]" .. mapeamento[resultado]
+						chat:enviarMensagem(mensagem)
+					  end
+					end
+					</script>
+
+
+@########## ---- inventario; Modificando todo o inventario ---- ###########@
+
+			<label text="Mochila" width="50" height="30" top="180" left="1225" class="padrao2" fontSize="15"/>
+			<button width="100" height="100" left="1200" top="200">
+			 <event name="onClick">
+			 self.Pag2.visible = true;
+			 self.FichaPrincipal.visible = false
+			 </event>
+			  </button>
+
+			<image width="100" height="100" left="1200" top="200" style="proportional" center="true" src="images/Mochila.png"/>
+
+
+@########## ---- Area de rolagem de itens aleatorias - - SCRIPTS acima ---- ###########@
+
+		   <!-- Aqui dentro fica todo o layout dos itens que serão rolados -->
+				  <!-- Botao para click -->
+				 <layout name="Botao" left="1193" top="703" width="200" height="200" >
+				 <image src="images/olho.png" left="10" top="0" width="115" height="115" />
+				 <image src="images/Botao.png" cursor="handPoint" hitTest="true" name="ItensComuns" left="0" top="100" width="130" height="30" >
+				   <event name="onClick">
+					 local PontosDeBusca = (sheet.PontosDeBusca or 0) -1;
+					 if PontosDeBusca >= 0 then
+					sheet.PontosDeBusca = PontosDeBusca; rolarDado(sheet)
+								  else 
+						 showMessage("Não há mais nada aqui")    
+					  end;			  
+			 
+					 
+				   </event>  
+				 </image>
+		   
+			   <!-- Atributo de busca -->
+			   <label text="Você tem___de Busca" autoSize="true" width="200" fontColor="black" fontStyle="bold" fontFamily="kalam"> </label>
+			   <label  field="PontosDeBusca" left="60" fontColor="red" hitTest="true"  cursor="handPoint" fontStyle="bold">
+				 <event name="onClick">
+				   if Firecast.getMesaDe(sheet).meuJogador.isMestre then
+				   dialogs.inputQuery("Pontos", "Insira a quantidade de pontos:", "",
+					   function (valorPreenchido)
+						   if valorPreenchido then
+							   sheet.PontosDeBusca = (sheet.PontosDeBusca or 0) + tonumber(valorPreenchido)
+						   end
+					   end
+				   )
+			   end
+			</event>
+		</label>
+	</layout>
+		
+@########## ---- Area para dinheiro ---- ###########@
+<!-- Imagem com clique para adicionar dinheiro -->
+ <image src="images/Seudinheiro.png" left="924" top="0" width="174" height="174" cursor="handPoint" hitTest="true" >
+  <event name="onClick">
+	if rrpg.getMesaDe(sheet).meuJogador.isMestre then
+	dialogs.inputQuery("Carteira do jogador", "Colocar dinheiro para jogador:", "",
+	   function (valorPreenchido)
+	   sheet.Soma = (sheet.Soma or 0 ) + valorPreenchido; 
+end);
+	end;
+ </event>
+</image>
+
+<!-- Detalhes dinheiro e onde fica a raiz da variavel -->
+<label fontSize="35" fontColor="lime" fontStyle="bold" left="945" top="76" width="205" height="45" name="labSoma3">
+	<dataLink field="Soma">
+	   <event name="onChange">
+function format_thousand(v)
+local s = string.format("%d", math.floor(v))
+local pos = string.len(s) % 3 
+if pos == 0 then pos = 3 end
+return string.sub(s, 1, pos)
+.. "" .. string.gsub(string.sub(s, pos+1), "(...)", ".%1") 
+.. "" .. string.sub(string.format("%.0f", v - math.floor(v)), 3) 
+
+end;
+self.labSoma3.text = '$' .. format_thousand(sheet.soma);
+
+ </event>
+	</dataLink>
+ </label>
+ @########## ---- Area de nivel ---- ###########@
+<layout align="client">
+    <image src="images/NivelDoPlayer.png" left="1097" top="42.5" width="90" height="90" cursor="handPoint" hitTest="true">
+        <event name="onClick">
+            if rrpg.getMesaDe(sheet).meuJogador.isMestre then
+            dialogs.inputQuery("Carteira", "Novo valor:", "",
+                function (valorPreenchido)
+                    sheet.Nivel = (sheet.Nivel or 0 ) + valorPreenchido; 
+                end);
+            end;        
+        </event>
+    </image>
+    <label name="Nivel" field="Nivel" left="1130" top="90" fontSize="26" fontStyle="bold" fontColor="yellow">
+        <dataLink field="Nivel">
+            <event name="onChange">
+				if sheet.Nivel >= 1 then
+				sheet.ItemNome = 'Arco'
+				sheet.Iniciativa = '-2'
+				sheet.DanoItem = '+4'
+				sheet.Alcance = 'C'
+				sheet.Cadencia = 'Único'
+				sheet.Municao = '1'
+				sheet.ClasseDeDureza = '2'
+				sheet.ImagemArma = 'http://blob.firecast.com.br/blobs/PBNIHBCS_287618.png'
+				sheet.Preco2 = '1200'
+			
+				sheet.ItemNome2 = 'Besta (Crossbow)'
+				sheet.Iniciativa2 = '+2'
+				sheet.DanoItem2 = '+6'
+				sheet.Alcance2 = 'C'
+				sheet.Cadencia2 = 'Único'
+				sheet.Municao2 = '1'
+				sheet.ClasseDeDureza2 = '3'
+				
+				sheet.ItemNome3 = 'Pistola Leve'
+				sheet.Iniciativa3 = '+3'
+				sheet.DanoItem3 = '+2'
+				sheet.Alcance3 = 'C'
+				sheet.Cadencia3 = 'Curto'
+				sheet.Municao3 = '18'
+				sheet.ClasseDeDureza3 = '2'
+				
+				sheet.ItemNome4 = 'Revolver Pesado'
+				sheet.Iniciativa4 = '+2'
+				sheet.DanoItem4 = '+4'
+				sheet.Alcance4 = 'C'
+				sheet.Cadencia4 = 'Curto'
+				sheet.Municao4 = '6'
+				sheet.ClasseDeDureza4 = '2'
+				
+				sheet.ItemNome5 = 'Submetralhadora'
+				sheet.Iniciativa5 = '+2'
+				sheet.DanoItem5 = '+4'
+				sheet.Alcance5 = 'M'
+				sheet.Cadencia5 = 'Totalmente automático'
+				sheet.Municao5 = '30'
+				sheet.ClasseDeDureza5 = '2'
+				
+				sheet.ItemNome6 = 'Metralhadora Leve'
+				sheet.Iniciativa6 = '+2'
+				sheet.DanoItem6 = '+3'
+				sheet.Alcance6 = 'C'
+				sheet.Cadencia6 = 'Totalmente automático'
+				sheet.Municao6 = '30'
+				sheet.ClasseDeDureza6 = '2'
+				
+				sheet.ItemNome7 = 'Rifle de Assalto Leve'
+				sheet.Iniciativa7 = '+1'
+				sheet.DanoItem7 = '+6'
+				sheet.Alcance7 = 'L'
+				sheet.Cadencia7 = 'Totalmente automático'
+				sheet.Municao7 = '30'
+				sheet.ClasseDeDureza7 = '3'
+				
+				sheet.ItemNome8 = 'Rifle de Assalto Pesado'
+				sheet.Iniciativa8 = '???'
+				sheet.DanoItem8 = '+7'
+				sheet.Alcance8 = 'E'
+				sheet.Cadencia8 = 'Totalmente automático'
+				sheet.Municao8 = '30'
+				sheet.ClasseDeDureza8 = '3'
+				
+				sheet.ItemNome9 = 'Espingarda Leve'
+				sheet.Iniciativa9 = '+1'
+				sheet.DanoItem9 = '+3'
+				sheet.Alcance9 = 'C'
+				sheet.Cadencia9 = 'Único'
+				sheet.Municao9 = '5'
+				sheet.ClasseDeDureza9 = '2'
+				
+				sheet.ItemNome10 = 'Rifle de Caça'
+				sheet.Iniciativa10 = '???'
+				sheet.DanoItem10 = '+7'
+				sheet.Alcance10 = 'E'
+				sheet.Cadencia10 = 'Único'
+				sheet.Municao10 = '5'
+				sheet.ClasseDeDureza10 = '3'
+				
+				sheet.ItemNome11 = 'Rifle de Precisão'
+				sheet.Iniciativa11 = '???'
+				sheet.DanoItem11 = '+8'
+				sheet.Alcance11 = 'E'
+				sheet.Cadencia11 = 'Único'
+				sheet.Municao11 = '10'
+				sheet.ClasseDeDureza11 = '3'
+				
+				sheet.ItemNome12 = 'Rifle de Precisão, pesado'
+				sheet.Iniciativa12 = '-1'
+				sheet.DanoItem12 = '+10'
+				sheet.Alcance12 = 'E'
+				sheet.Cadencia12 = 'Único'
+				sheet.Municao12 = '5'
+				sheet.ClasseDeDureza12 = '4'
+				
+				sheet.ItemNome13 = 'Shotgun'
+				sheet.Iniciativa13 = '+1'
+				sheet.DanoItem13 = '+8'
+				sheet.Alcance13 = 'C'
+				sheet.Cadencia13 = 'Curto'
+				sheet.Municao13 = '???'
+				sheet.ClasseDeDureza13 = '???'
+				
+				sheet.ItemNome14 = 'Espingarda de cano duplo'
+				sheet.Iniciativa14 = '???'
+				sheet.DanoItem14 = '+5'
+				sheet.Alcance14 = 'C'
+				sheet.Cadencia14 = 'Curto'
+				sheet.Municao14 = '2'
+				sheet.ClasseDeDureza14 = '2'
+				
+				sheet.ItemNome15 = 'Metralhadora Pequena'
+				sheet.Iniciativa15 = '???'
+				sheet.DanoItem15 = '+7'
+				sheet.Alcance15 = 'L'
+				sheet.Cadencia15 = 'Correia Automática Completa'
+				sheet.Municao15 = '???'
+				sheet.ClasseDeDureza15 = '3'
+				
+				sheet.ItemNome16 = 'Metralhadora Pesada'
+				sheet.Iniciativa16 = '-1'
+				sheet.DanoItem16 = '+10'
+				sheet.Alcance16 = 'E'
+				sheet.Cadencia16 = 'Automática Completa'
+				sheet.Municao16 = '???'
+				sheet.ClasseDeDureza16 = '4'
+				
+				sheet.ItemNome17 = 'Lançador de Míssil'
+				sheet.Iniciativa17 = '-2'
+				sheet.DanoItem17 = '+10'
+				sheet.Alcance17 = 'L'
+				sheet.Cadencia17 = 'Único'
+				sheet.Municao17 = '1'
+				sheet.ClasseDeDureza17 = '4'
+				
+				sheet.ItemNome18 = 'Missil de Tanque'
+				sheet.Iniciativa18 = '-4'
+				sheet.DanoItem18 = '+10/+10'
+				sheet.Alcance18 = 'E'
+				sheet.Cadencia18 = 'Único'
+				sheet.Municao18 = '1'
+				sheet.ClasseDeDureza18 = '5'
+				
+				sheet.ItemNome19 = 'Granada de Mão'
+				sheet.Iniciativa19 = '???'
+				sheet.DanoItem19 = '+10'
+				sheet.Alcance19 = 'Explosão de 5m'
+				sheet.Cadencia19 = '???'
+				sheet.Municao19 = '1'
+				sheet.ClasseDeDureza19 = '4'
+				
+				sheet.ItemNome20 = 'Molotov'
+				sheet.Iniciativa20 = '-1'
+				sheet.DanoItem20 = '+6/+6'
+				sheet.Alcance20 = 'C'
+				sheet.Cadencia20 = 'Único'
+				sheet.Municao20 = '1'
+				sheet.ClasseDeDureza20 = '2'
+				
+				sheet.ItemNome21 = 'Mina, Antipessoal'
+				sheet.Iniciativa21 = '???'
+				sheet.DanoItem21 = '+8'
+				sheet.Alcance21 = 'Explosão de 5m'
+				sheet.Cadencia21 = '???'
+				sheet.Municao21 = '1'
+				sheet.ClasseDeDureza21 = '3' 
+				 sheet.ItemNome22 = 'Mina, Anti-Veículo'
+  sheet.Iniciativa22 = '???'
+  sheet.DanoItem22 = '+10/+10'
+  sheet.Alcance22 = 'Explosão de 5m'
+  sheet.Cadencia22 = '???'
+  sheet.Municao22 = '1'
+  sheet.ClasseDeDureza22 = '5'
+  sheet.ItemNome23 = 'Artilharia Leve'
+  sheet.Iniciativa23 = '-4'
+  sheet.DanoItem23 = '+10/+10'
+  sheet.Alcance23 = 'Explosão de 1m'
+  sheet.Cadencia23 = 'Longo'
+  sheet.Municao23 = 'Cinto'
+  sheet.ClasseDeDureza23 = '4'
+  sheet.ItemNome24 = 'Artilharia Pesado'
+  sheet.Iniciativa24 = '-6'
+  sheet.DanoItem24 = '+10/+10'
+  sheet.Alcance24 = 'Explosão de 10m'
+  sheet.Cadencia24 = 'Único'
+  sheet.Municao24 = '???'
+  sheet.ClasseDeDureza24 = '5'
+end;
+            </event>
+        </dataLink>
+    </label>
+</layout>
+
+
+
+
+
+###### FINISH MECANICAS ########
+
+</scrollBox>
+
+</layout>
+	
+</form>
+=================CORPO A CORPO=======================================================
+Altere esse comentario para <!-- 2 imagem --> <!-- 44 imagem -->
+Eu quero que altere todos os field para 44, exemplo field="ItemNome2" para field="ItemNome44" faça isso com todas field
+Exemplo: field="Preco2" para field="44" e faça isso todos os field="Exemplo44" 44 na frente do nome dentro da field 
+Outro exemplo: field="Preco2" pra field="Preco44" E as mudanças são feitas apenas dentro das field e name="Aqui dentro"
+Acrescente também o: name="Arma2" para 44 
+mude apenas um comentario que é o 1 imagem para 44 o restante dos comentarios troque por "//"
+ALTERE SOMENTE AS field e name, vc está alterando coisas que não deve alterar como a tag hint ou dentro de da tag <event>
+Altere somente se tiver sheet.exemplo ou name="exemplo" ou field="exemplo"
+Não se esqueça de alterar os comentarios para // antes, exemplo // Preço da arma so mantenha o primeiro comentario <!-- 44 imagem --> o restante é // antes
+        <!-- 2 imagem -->
+<layout name="CorpoACorpo2" width="480" height="174" left="413" top="88">
+  <image src="images/LojaCorpoACorpo.png" left="0" top="0" width="399" height="174"/>
+  // Preço da arma
+  <label left="22.25" top="20.50" width="107.25" height="37.88" fontSize="22" hint="Preço da Arma" field="Preco2" horzTextAlign="center" fontStyle="bold" fontColor="yellow" fontFamily="kalam" cursor="handPoint" hitTest="true">
+          <event name="onClick">
+    if rrpg.getMesaDe(sheet).meuJogador.isMestre then
+    dialogs.inputQuery("Carteira", "Novo valor:", "",
+       function (valorPreenchido)
+            sheet.Preco2 = (sheet.Preco2 or 0 ) + valorPreenchido; 
+    end);
+    end;
+      </event>
+  </label>
+  // Comprar
+  <image left="41.38" top="61.75" width="67.88" height="30" cursor="handPoint" hitTest="true" hint="Clique aqui para comprar" name="Arma2">
+      <event name="onClick">
+                       local Soma = (sheet.Soma or 0) -1200;
+                   if Soma >= 0 then
+local minhaMesa = rrpg.getMesaDe(sheet); 
+                local chat = minhaMesa.chat; 
+                chat:enviarMensagem("/me [§K12][§B]Comprou uma arma. ");
+         showMessage("Você acabou de comprar uma arma corpo a corpo, olhe na sua mochila");
+             else
+                   showMessage("Você não mais dinheiro"); 	
+  end;
+      </event>
+  </image>
+         -- imagem da arma
+         <image left="2.56" top="93.00" width="136.69" height="77.69" style="proportional" center="true" editable="true" field="ImagemArma2"/>
+          -- Nome do Item
+          <label left="197" top="10" width="249.25" height="39" fontSize="22" field="ItemNome2" fontStyle="bold" fontColor="black" fontFamily="kalam"/>
+          -- Iniciativa
+          <label left="207.88" top="51" width="49.88" height="31.38" horzTextAlign="center" field="Iniciativa2" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/>  
+          -- dano 
+          <label left="182.88" top="90" width="50.88" height="31.38" horzTextAlign="center" field="DanoItem2" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+          -- Golpear
+          <label left="195.88" top="128" width="50.88" height="32" horzTextAlign="center" field="Golpear2" fontSize="15" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+          -- Aparar
+          <label left="317.88" top="49" width="68.88" height="32" horzTextAlign="center" field="Aparar2" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+          -- CD
+          <label left="317.88" top="89" width="68.88" height="32" horzTextAlign="center" field="CD2" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+      </layout>
+Caneta/Lápis 
++1
+???
+???
+???
+1
+Quero que faça o seguinte com essa lista abaixo: 
+sheet.ItemNome26 = 'Primeiro item aqui'
+sheet.Iniciativa26 = "Segundo item aqui'
+sheet.DanoItem26 = 'Terceiro item aqui'
+sheet.Golpear26 = "Quarto item aqui'
+sheet.Aparar26 = "Quinto item aqui'
+sheet.CD26 = "Sexto item aqui'
+E assim vai seguindo com os que estão abaixo enumerando eles por ordem como está.
+Faca
++1
++1
+???
+???
+2
+
+Faca de cozinha/talhador
+???
++2
+???
+???
+2
+
+Faca de combate
++2
++2
+???
+???
+2
+
+Soqueiras
+???
++1
+???
+???
+1
+
+Garrafa Quebrado
+???
++1
+???
+-1
+2
+
+Espada
+???
++5
+???
++1/+0
+2
+
+Machado
+-2
++8
+???
+-2
+2
+
+Implementos de jardim
+-3
++3
+-1
+-2
+2
+
+Martelo
+-1 
++1
+???
+???
+1
+
+Malho de combate
+-3
++9
+???
+-3
+2
+
+Taco de Baseball c/ Espinhos
+???
++2
+???
+???
+1
+
+Pé de Cabra
+-1
++2
+???
+???
+1
+
+Bastão Longo
+-1
++5
+???
+-1
+1
+
+Lançador
++3
++4
+???
+-1
+1
+
+Lança
++3
++4
+???
++1/+1
+2
+
+Soco Inglês
++2
++2
+???
++1/+1
+2
+
+Motoserra
+-4
++10
+-1
+-4
+2
+Quero que todos sejam eliminados as informações, apagados exemplo abaixo:
+sheet.ItemNome25 = ''
+
+sheet.ItemNome25 = 'Caneta/Lápis'
+sheet.Iniciativa25 = "+1"
+sheet.DanoItem25 = "???"
+sheet.Golpear25 = "???"
+sheet.Aparar25 = "???"
+sheet.CD25 = "???"
+
+sheet.ItemNome26 = 'Faca'
+sheet.Iniciativa26 = "+1"
+sheet.DanoItem26 = "+1"
+sheet.Golpear26 = "2"
+sheet.Aparar26 = "2"
+sheet.CD26 = "2"
+
+sheet.ItemNome27 = 'Faca de cozinha/talhador'
+sheet.Iniciativa27 = "+2"
+sheet.DanoItem27 = "+2"
+sheet.Golpear27 = "2"
+sheet.Aparar27 = "2"
+sheet.CD27 = "2"
+
+sheet.ItemNome28 = 'Faca de combate'
+sheet.Iniciativa28 = "+2"
+sheet.DanoItem28 = "+2"
+sheet.Golpear28 = "2"
+sheet.Aparar28 = "2"
+sheet.CD28 = "2"
+
+sheet.ItemNome29 = 'Soqueiras'
+sheet.Iniciativa29 = "+1"
+sheet.DanoItem29 = "+1"
+sheet.Golpear29 = "1"
+sheet.Aparar29 = "1"
+sheet.CD29 = "2"
+
+sheet.ItemNome30 = 'Garrafa Quebrado'
+sheet.Iniciativa30 = "+1"
+sheet.DanoItem30 = "+1"
+sheet.Golpear30 = "-1"
+sheet.Aparar30 = "2"
+sheet.CD30 = "2"
+
+sheet.ItemNome31 = 'Espada'
+sheet.Iniciativa31 = "+5"
+sheet.DanoItem31 = "+5"
+sheet.Golpear31 = "+1/+0"
+sheet.Aparar31 = "2"
+sheet.CD31 = "2"
+
+sheet.ItemNome32 = 'Machado'
+sheet.Iniciativa32 = "-2"
+sheet.DanoItem32 = "+8"
+sheet.Golpear32 = "-2"
+sheet.Aparar32 = "2"
+sheet.CD32 = "2"
+
+sheet.ItemNome33 = 'Implementos de jardim'
+sheet.Iniciativa33 = "-3"
+sheet.DanoItem33 = "+3"
+sheet.Golpear33 = "-1"
+sheet.Aparar33 = "-2"
+sheet.CD33 = "2"
+
+sheet.ItemNome34 = 'Martelo'
+sheet.Iniciativa34 = "-1"
+sheet.DanoItem34 = "+1"
+sheet.Golpear34 = "1"
+sheet.Aparar34 = "1"
+sheet.CD34 = "1"
+
+sheet.ItemNome35 = 'Malho de combate'
+sheet.Iniciativa35 = "-3"
+sheet.DanoItem35 = "+9"
+sheet.Golpear35 = "-3"
+sheet.Aparar35 = "2"
+sheet.CD35 = "2"
+
+sheet.ItemNome36 = 'Taco de Baseball c/ Espinhos'
+sheet.Iniciativa36 = "+2"
+sheet.DanoItem36 = "+2"
+sheet.Golpear36 = "1"
+sheet.Aparar36 = "1"
+sheet.CD36 = "1"
+
+sheet.ItemNome37 = 'Pé de Cabra'
+sheet.Iniciativa37 = "-1"
+sheet.DanoItem37 = "+2"
+sheet.Golpear37 = "1"
+sheet.Aparar37 = "1"
+sheet.CD37 = "1"
+
+sheet.ItemNome38 = 'Bastão Longo'
+sheet.Iniciativa38 = "-1"
+sheet.DanoItem38 = "+5"
+sheet.Golpear38 = "-1"
+sheet.Aparar38 = "1"
+sheet.CD38 = "1"
+
+sheet.ItemNome39 = 'Lançador'
+sheet.Iniciativa39 = "+3"
+sheet.DanoItem39 = "+4"
+sheet.Golpear39 = "-1"
+sheet.Aparar39 = "1"
+sheet.CD39 = "1"
+
+sheet.ItemNome40 = 'Lança'
+sheet.Iniciativa40 = "+3"
+sheet.DanoItem40 = "+4"
+sheet.Golpear40 = "+1/+1"
+sheet.Aparar40 = "2"
+sheet.CD40 = "2"
+
+sheet.ItemNome41 = 'Soco Inglês'
+sheet.Iniciativa41 = "+2"
+sheet.DanoItem41 = "+2"
+sheet.Golpear41 = "+1/+1"
+sheet.Aparar41 = "2"
+sheet.CD41 = "2"
+
+sheet.ItemNome42 = 'Motoserra'
+sheet.DanoItem42 = '+10'
+sheet.Iniciativa42 = "-4"
+sheet.Golpear42 = "+10"
+sheet.Aparar42 = "-1"
+sheet.CD42 = "-4"
+sheet.ItemNome25 = ''
+sheet.Iniciativa25 = ''
+sheet.DanoItem25 = ''
+sheet.Golpear25 = ''
+sheet.Aparar25 = ''
+sheet.CD25 = ''
+
+sheet.ItemNome26 = ''
+sheet.Iniciativa26 = ''
+sheet.DanoItem26 = ''
+sheet.Golpear26 = ''
+sheet.Aparar26 = ''
+sheet.CD26 = ''
+
+sheet.ItemNome27 = ''
+sheet.Iniciativa27 = ''
+sheet.DanoItem27 = ''
+sheet.Golpear27 = ''
+sheet.Aparar27 = ''
+sheet.CD27 = ''
+
+sheet.ItemNome28 = ''
+sheet.Iniciativa28 = ''
+sheet.DanoItem28 = ''
+sheet.Golpear28 = ''
+sheet.Aparar28 = ''
+sheet.CD28 = ''
+
+sheet.ItemNome29 = ''
+sheet.Iniciativa29 = ''
+sheet.DanoItem29 = ''
+sheet.Golpear29 = ''
+sheet.Aparar29 = ''
+sheet.CD29 = ''
+
+sheet.ItemNome30 = ''
+sheet.Iniciativa30 = ''
+sheet.DanoItem30 = ''
+sheet.Golpear30 = ''
+sheet.Aparar30 = ''
+sheet.CD30 = ''
+
+sheet.ItemNome31 = ''
+sheet.Iniciativa31 = ''
+sheet.DanoItem31 = ''
+sheet.Golpear31 = ''
+sheet.Aparar31 = ''
+sheet.CD31 = ''
+
+sheet.ItemNome32 = ''
+sheet.Iniciativa32 = ''
+sheet.DanoItem32 = ''
+sheet.Golpear32 = ''
+sheet.Aparar32 = ''
+sheet.CD32 = ''
+
+sheet.ItemNome33 = ''
+sheet.Iniciativa33 = ''
+sheet.DanoItem33 = ''
+sheet.Golpear33 = ''
+sheet.Aparar33 = ''
+sheet.CD33 = ''
+
+sheet.ItemNome34 = ''
+sheet.Iniciativa34 = ''
+sheet.DanoItem34 = ''
+sheet.Golpear34 = ''
+sheet.Aparar34 = ''
+sheet.CD34 = ''
+
+sheet.ItemNome35 = ''
+sheet.Iniciativa35 = ''
+sheet.DanoItem35 = ''
+sheet.Golpear35 = ''
+sheet.Aparar35 = ''
+sheet.CD35 = ''
+
+sheet.ItemNome36 = ''
+sheet.Iniciativa36 = ''
+sheet.DanoItem36 = ''
+sheet.Golpear36 = ''
+sheet.Aparar36 = ''
+sheet.CD36 = ''
+
+sheet.ItemNome37 = ''
+sheet.Iniciativa37 = ''
+sheet.DanoItem37 = ''
+sheet.Golpear37 = ''
+sheet.Aparar37 = ''
+sheet.CD37 = ''
+
+sheet.ItemNome38 = ''
+sheet.Iniciativa38 = ''
+sheet.DanoItem38 = ''
+sheet.Golpear38 = ''
+sheet.Aparar38 = ''
+sheet.CD38 = ''
+
+sheet.ItemNome39 = ''
+sheet.Iniciativa39 = ''
+sheet.DanoItem39 = ''
+sheet.Golpear39 = ''
+sheet.Aparar39 = ''
+sheet.CD39 = ''
+
+sheet.ItemNome40 = ''
+sheet.Iniciativa40 = ''
+sheet.DanoItem40 = ''
+sheet.Golpear40 = ''
+sheet.Aparar40 = ''
+sheet.CD40 = ''
+
+sheet.ItemNome41 = ''
+sheet.Iniciativa41 = ''
+sheet.DanoItem41 = ''
+sheet.Golpear41 = ''
+sheet.Aparar41 = ''
+sheet.CD41 = ''
+
+sheet.ItemNome42 = ''
+sheet.DanoItem42 = ''
+sheet.Iniciativa42 = ''
+sheet.Golpear42 = ''
+sheet.Aparar42 = ''
+sheet.CD42 = ''

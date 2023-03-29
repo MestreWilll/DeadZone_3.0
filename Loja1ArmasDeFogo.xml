@@ -1,0 +1,1682 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group>
+  <layout name="LojaDeArmas" align="client" visible="false">
+       <rectangle align="client" color="white"> 
+     <scrollBox align="client">
+
+==================================================================================================
+===========# testes #=============================================================================
+     -- reset 
+     <button text="reset" left="303">
+      <event name="onClick">
+        sheet.Preco = ''
+        sheet.ItemNome = ''
+        sheet.Iniciativa = ''
+        sheet.DanoItem = ''
+        sheet.Alcance = ''
+        sheet.Cadencia = ''
+        sheet.Municao = ''
+        sheet.ClasseDeDureza = ''
+        sheet.ImagemArma = ''     
+        sheet.Preco2 = ''
+        sheet.ItemNome2 = ''
+        sheet.Iniciativa2 = ''
+        sheet.DanoItem2 = ''
+        sheet.Alcance2 = ''
+        sheet.Cadencia2 = ''
+        sheet.Municao2 = ''
+        sheet.ClasseDeDureza2 = ''
+        sheet.ImagemArma2 = ''
+        sheet.Preco3 = ''
+        sheet.ItemNome3 = ''
+        sheet.Iniciativa3 = ''
+        sheet.DanoItem3 = ''
+        sheet.Alcance3 = ''
+        sheet.Cadencia3 = ''
+        sheet.Municao3 = ''
+        sheet.ClasseDeDureza3 = ''
+        sheet.ImagemArma3 = ''   
+        sheet.Preco4 = ''
+sheet.ItemNome4 = ''
+sheet.Iniciativa4 = ''
+sheet.DanoItem4 = ''
+sheet.Alcance4 = ''
+sheet.Cadencia4 = ''
+sheet.Municao4 = ''
+sheet.ClasseDeDureza4 = ''
+sheet.ImagemArma4 = ''
+
+sheet.Preco5 = ''
+sheet.ItemNome5 = ''
+sheet.Iniciativa5 = ''
+sheet.DanoItem5 = ''
+sheet.Alcance5 = ''
+sheet.Cadencia5 = ''
+sheet.Municao5 = ''
+sheet.ClasseDeDureza5 = ''
+sheet.ImagemArma5 = ''
+
+sheet.Preco6 = ''
+sheet.ItemNome6 = ''
+sheet.Iniciativa6 = ''
+sheet.DanoItem6 = ''
+sheet.Alcance6 = ''
+sheet.Cadencia6 = ''
+sheet.Municao6 = ''
+sheet.ClasseDeDureza6 = ''
+sheet.ImagemArma6 = ''
+
+sheet.Preco7 = ''
+sheet.ItemNome7 = ''
+sheet.Iniciativa7 = ''
+sheet.DanoItem7 = ''
+sheet.Alcance7 = ''
+sheet.Cadencia7 = ''
+sheet.Municao7 = ''
+sheet.ClasseDeDureza7 = ''
+sheet.ImagemArma7 = ''
+
+sheet.Preco8 = ''
+sheet.ItemNome8 = ''
+sheet.Iniciativa8 = ''
+sheet.DanoItem8 = ''
+sheet.Alcance8 = ''
+sheet.Cadencia8 = ''
+sheet.Municao8 = ''
+sheet.ClasseDeDureza8 = ''
+sheet.ImagemArma8 = ''
+
+sheet.Preco9 = ''
+sheet.ItemNome9 = ''
+sheet.Iniciativa9 = ''
+sheet.DanoItem9 = ''
+sheet.Alcance9 = ''
+sheet.Cadencia9 = ''
+sheet.Municao9 = ''
+sheet.ClasseDeDureza9 = ''
+sheet.ImagemArma9 = ''
+
+sheet.Preco10 = ''
+sheet.ItemNome10 = ''
+sheet.Iniciativa10 = ''
+sheet.DanoItem10 = ''
+sheet.Alcance10 = ''
+sheet.Cadencia10 = ''
+sheet.Municao10 = ''
+sheet.ClasseDeDureza10 = ''
+sheet.ImagemArma10 = ''
+
+sheet.Preco11 = ''
+sheet.ItemNome11 = ''
+sheet.Iniciativa11 = ''
+sheet.DanoItem11 = ''
+sheet.Alcance11 = ''
+sheet.Cadencia11 = ''
+sheet.Municao11 = ''
+sheet.ClasseDeDureza11 = ''
+sheet.ImagemArma11 = ''
+
+sheet.Preco12 = ''
+sheet.ItemNome12 = ''
+sheet.Iniciativa12 = ''
+sheet.DanoItem12 = ''
+sheet.Alcance12 = ''
+sheet.Cadencia12 = ''
+sheet.Municao12 = ''
+sheet.ClasseDeDureza12 = ''
+sheet.ImagemArma12 = ''
+sheet.Preco13 = ''
+sheet.ItemNome13 = ''
+sheet.Iniciativa13 = ''
+sheet.DanoItem13 = ''
+sheet.Alcance13 = ''
+sheet.Cadencia13 = ''
+sheet.Municao13 = ''
+sheet.ClasseDeDureza13 = ''
+sheet.ImagemArma13 = ''
+sheet.Preco14 = ''
+sheet.ItemNome14 = ''
+sheet.Iniciativa14 = ''
+sheet.DanoItem14 = ''
+sheet.Alcance14 = ''
+sheet.Cadencia14 = ''
+sheet.Municao14 = ''
+sheet.ClasseDeDureza14 = ''
+sheet.ImagemArma14 = ''
+sheet.Preco15 = ''
+sheet.ItemNome15 = ''
+sheet.Iniciativa15 = ''
+sheet.DanoItem15 = ''
+sheet.Alcance15 = ''
+sheet.Cadencia15 = ''
+sheet.Municao15 = ''
+sheet.ClasseDeDureza15 = ''
+sheet.ImagemArma15 = ''
+sheet.Preco16 = ''
+sheet.ItemNome16 = ''
+sheet.Iniciativa16 = ''
+sheet.DanoItem16 = ''
+sheet.Alcance16 = ''
+sheet.Cadencia16 = ''
+sheet.Municao16 = ''
+sheet.ClasseDeDureza16 = ''
+sheet.ImagemArma16 = ''
+sheet.Preco17 = ''
+sheet.ItemNome17 = ''
+sheet.Iniciativa17 = ''
+sheet.DanoItem17 = ''
+sheet.Alcance17 = ''
+sheet.Cadencia17 = ''
+sheet.Municao17 = ''
+sheet.ClasseDeDureza17 = ''
+sheet.ImagemArma17 = ''
+sheet.Preco18 = ''
+sheet.ItemNome18 = ''
+sheet.Iniciativa18 = ''
+sheet.DanoItem18 = ''
+sheet.Alcance18 = ''
+sheet.Cadencia18 = ''
+sheet.Municao18 = ''
+sheet.ClasseDeDureza18 = ''
+sheet.ImagemArma18 = ''
+sheet.Preco19 = ''
+sheet.ItemNome19 = ''
+sheet.Iniciativa19 = ''
+sheet.DanoItem19 = ''
+sheet.Alcance19 = ''
+sheet.Cadencia19 = ''
+sheet.Municao19 = ''
+sheet.ClasseDeDureza19 = ''
+sheet.ImagemArma19 = ''
+sheet.Preco20 = ''
+sheet.ItemNome20 = ''
+sheet.Iniciativa20 = ''
+sheet.DanoItem20 = ''
+sheet.Alcance20 = ''
+sheet.Cadencia20 = ''
+sheet.Municao20 = ''
+sheet.ClasseDeDureza20 = ''
+sheet.ImagemArma20 = ''
+sheet.Preco21 = ''
+sheet.ItemNome21 = ''
+sheet.Iniciativa21 = ''
+sheet.DanoItem21 = ''
+sheet.Alcance21 = ''
+sheet.Cadencia21 = ''
+sheet.Municao21 = ''
+sheet.ClasseDeDureza21 = ''
+sheet.ImagemArma21 = ''
+sheet.Preco22 = ''
+sheet.ItemNome22 = ''
+sheet.Iniciativa22 = ''
+sheet.DanoItem22 = ''
+sheet.Alcance22 = ''
+sheet.Cadencia22 = ''
+sheet.Municao22 = ''
+sheet.ClasseDeDureza22 = ''
+sheet.ImagemArma22 = ''
+sheet.Preco23 = ''
+sheet.ItemNome23 = ''
+sheet.Iniciativa23 = ''
+sheet.DanoItem23 = ''
+sheet.Alcance23 = ''
+sheet.Cadencia23 = ''
+sheet.Municao23 = ''
+sheet.ClasseDeDureza23 = ''
+sheet.ImagemArma23 = ''
+sheet.Preco24 = ''
+sheet.ItemNome24 = ''
+sheet.Iniciativa24 = ''
+sheet.DanoItem24 = ''
+sheet.Alcance24 = ''
+sheet.Cadencia24 = ''
+sheet.Municao24 = ''
+sheet.ClasseDeDureza24 = ''
+sheet.ImagemArma24 = ''
+</event>
+ </button>
+
+     <button text="ADD" left="303" top="20">
+      <event name="onClick">
+       sheet.Preco = '1200'
+Iniciativa = '-2'
+sheet.DanoItem = '+4'
+sheet.Alcance = 'C'
+sheet.Cadencia = 'Único'
+sheet.Municao = '1'
+sheet.ClasseDeDureza = '2'
+sheet.ImagemArma = 'http://blob.firecast.com.br/blobs/PBNIHBCS_287618.png'
+sheet.Preco2 = '1200'
+
+sheet.Iniciativa2 = '-2'
+sheet.DanoItem2 = '+4'
+sheet.Alcance2 = 'C'
+sheet.Cadencia2 = 'Único'
+sheet.Municao2 = '1'
+sheet.ClasseDeDureza2 = '2'
+sheet.ImagemArma2 = 'http://blob.firecast.com.br/blobs/PBNIHBCS_287618.png'
+sheet.Preco3 = '1200'
+
+sheet.Iniciativa3 = '-2'
+sheet.DanoItem3 = '+4'
+sheet.Alcance3 = 'C'
+sheet.Cadencia3 = 'Único'
+sheet.Municao3 = '1'
+sheet.ClasseDeDureza3 = '2'
+sheet.ImagemArma3 = 'http://blob.firecast.com.br/blobs/PBNIHBCS_287618.png'
+sheet.Preco4 = '1200'
+
+sheet.Iniciativa4 = '-2'
+sheet.DanoItem4 = '+4'
+sheet.Alcance4 = 'C'
+sheet.Cadencia4 = 'Único'
+sheet.Municao4 = '1'
+sheet.ClasseDeDureza4 = '2'
+sheet.ImagemArma4 = 'http://blob.firecast.com.br/blobs/PBNIHBCS_287618.png'
+sheet.Preco5 = '1200'
+
+sheet.Iniciativa5 = '-2'
+sheet.DanoItem5 = '+4'
+sheet.Alcance5 = 'C'
+sheet.Cadencia5 = 'Único'
+sheet.Municao5 = '1'
+sheet.ClasseDeDureza5 = '2'
+sheet.ImagemArma5 = 'http://blob.firecast.com.br/blobs/PBNIHBCS_287618.png'
+
+sheet.Preco6 = '1200'
+
+sheet.Iniciativa6 = '-2'
+sheet.DanoItem6 = '+4'
+sheet.Alcance6 = 'C'
+sheet.Cadencia6 = 'Único'
+sheet.Municao6 = '1'
+sheet.ClasseDeDureza6 = '2'
+sheet.ImagemArma6 = 'http://blob.firecast.com.br/blobs/PBNIHBCS_287618.png'
+
+sheet.Preco7 = '1200'
+
+sheet.Iniciativa7 = '-2'
+sheet.DanoItem7 = '+4'
+sheet.Alcance7 = 'C'
+sheet.Cadencia7 = 'Único'
+sheet.Municao7 = '1'
+sheet.ClasseDeDureza7 = '2'
+sheet.ImagemArma7 = 'http://blob.firecast.com.br/blobs/PBNIHBCS_287618.png'
+
+sheet.Preco8 = '1200'
+
+sheet.Iniciativa8 = '-2'
+sheet.DanoItem8 = '+4'
+sheet.Alcance8 = 'C'
+sheet.Cadencia8 = 'Único'
+sheet.Municao8 = '1'
+sheet.ClasseDeDureza8 = '2'
+sheet.ImagemArma8 = 'http://blob.firecast.com.br/blobs/PBNIHBCS_287618.png'
+
+sheet.Preco9 = '1200'
+
+sheet.Iniciativa9 = '-2'
+sheet.DanoItem9 = '+4'
+sheet.Alcance9 = 'C'
+sheet.Cadencia9 = 'Único'
+sheet.Municao9 = '1'
+sheet.ClasseDeDureza9 = '2'
+sheet.ImagemArma9 = 'http://blob.firecast.com.br/blobs/PBNIHBCS_287618.png'
+
+sheet.Preco10 = '1200'
+
+sheet.Iniciativa10 = '-2'
+sheet.DanoItem10 = '+4'
+sheet.Alcance10 = 'C'
+sheet.Cadencia10 = 'Único'
+sheet.Municao10 = '1'
+sheet.ClasseDeDureza10 = '2'
+sheet.ImagemArma10 = 'http://blob.firecast.com.br/blobs/PBNIHBCS_287618.png'
+
+sheet.Preco11 = '1200'
+
+sheet.Iniciativa11 = '-2'
+sheet.DanoItem11 = '+4'
+sheet.Alcance11 = 'C'
+sheet.Cadencia11 = 'Único'
+sheet.Municao11 = '1'
+sheet.ClasseDeDureza11 = '2'
+sheet.ImagemArma11 = 'http://blob.firecast.com.br/blobs/PBNIHBCS_287618.png'
+
+sheet.Preco12 = '1200'
+
+sheet.Iniciativa12 = '-2'
+sheet.DanoItem12 = '+4'
+sheet.Alcance12 = 'C'
+sheet.Cadencia12 = 'Único'
+sheet.Municao12 = '1'
+sheet.ClasseDeDureza12 = '2'
+sheet.ImagemArma12 = 'http://blob.firecast.com.br/blobs/PBNIHBCS_287618.png'
+sheet.Preco13 = '1200'
+
+sheet.Iniciativa13 = '-2'
+sheet.DanoItem13 = '+4'
+sheet.Alcance13 = 'C'
+sheet.Cadencia13 = 'Único'
+sheet.Municao13 = '1'
+sheet.ClasseDeDureza13 = '2'
+sheet.ImagemArma13 = 'http://blob.firecast.com.br/blobs/PBNIHBCS_287618.png'
+
+sheet.Preco14 = '1200'
+
+sheet.Iniciativa14 = '-2'
+sheet.DanoItem14 = '+4'
+sheet.Alcance14 = 'C'
+sheet.Cadencia14 = 'Único'
+sheet.Municao14 = '1'
+sheet.ClasseDeDureza14 = '2'
+sheet.ImagemArma14 = 'http://blob.firecast.com.br/blobs/PBNIHBCS_287618.png'
+
+sheet.Preco15 = '1200'
+
+sheet.Iniciativa15 = '-2'
+sheet.DanoItem15 = '+4'
+sheet.Alcance15 = 'C'
+sheet.Cadencia15 = 'Único'
+sheet.Municao15 = '1'
+sheet.ClasseDeDureza15 = '2'
+sheet.ImagemArma15 = 'http://blob.firecast.com.br/blobs/PBNIHBCS_287618.png'
+
+sheet.Preco16 = '1200'
+
+sheet.Iniciativa16 = '-2'
+sheet.DanoItem16 = '+4'
+sheet.Alcance16 = 'C'
+sheet.Cadencia16 = 'Único'
+sheet.Municao16 = '1'
+sheet.ClasseDeDureza16 = '2'
+sheet.ImagemArma16 = 'http://blob.firecast.com.br/blobs/PBNIHBCS_287618.png'
+
+sheet.Preco17 = '1200'
+
+sheet.Iniciativa17 = '-2'
+sheet.DanoItem17 = '+4'
+sheet.Alcance17 = 'C'
+sheet.Cadencia17 = 'Único'
+sheet.Municao17 = '1'
+sheet.ClasseDeDureza17 = '2'
+sheet.ImagemArma17 = 'http://blob.firecast.com.br/blobs/PBNIHBCS_287618.png'
+
+sheet.Preco18 = '1200'
+
+sheet.Iniciativa18 = '-2'
+sheet.DanoItem18 = '+4'
+sheet.Alcance18 = 'C'
+sheet.Cadencia18 = 'Único'
+sheet.Municao18 = '1'
+sheet.ClasseDeDureza18 = '2'
+sheet.ImagemArma18 = 'http://blob.firecast.com.br/blobs/PBNIHBCS_287618.png'
+
+sheet.Preco19 = '1200'
+
+sheet.Iniciativa19 = '-2'
+sheet.DanoItem19 = '+4'
+sheet.Alcance19 = 'C'
+sheet.Cadencia19 = 'Único'
+sheet.Municao19 = '1'
+sheet.ClasseDeDureza19 = '2'
+sheet.ImagemArma19 = 'http://blob.firecast.com.br/blobs/PBNIHBCS_287618.png'
+
+sheet.Preco20 = '1200'
+
+sheet.Iniciativa20 = '-2'
+sheet.DanoItem20 = '+4'
+sheet.Alcance20 = 'C'
+sheet.Cadencia20 = 'Único'
+sheet.Municao20 = '1'
+sheet.ClasseDeDureza20 = '2'
+sheet.ImagemArma20 = 'http://blob.firecast.com.br/blobs/PBNIHBCS_287618.png'
+
+sheet.Preco21 = '1200'
+
+sheet.Iniciativa21 = '-2'
+sheet.DanoItem21 = '+4'
+sheet.Alcance21 = 'C'
+sheet.Cadencia21 = 'Único'
+sheet.Municao21 = '1'
+sheet.ClasseDeDureza21 = '2'
+sheet.ImagemArma21 = 'http://blob.firecast.com.br/blobs/PBNIHBCS_287618.png'
+
+sheet.Preco22 = '1200'
+
+sheet.Iniciativa22 = '-2'
+sheet.DanoItem22 = '+4'
+sheet.Alcance22 = 'C'
+sheet.Cadencia22 = 'Único'
+sheet.Municao22 = '1'
+sheet.ClasseDeDureza22 = '2'
+sheet.ImagemArma22 = 'http://blob.firecast.com.br/blobs/PBNIHBCS_287618.png'
+
+sheet.Preco23 = '1200'
+
+sheet.Iniciativa23 = '-2'
+sheet.DanoItem23 = '+4'
+sheet.Alcance23 = 'C'
+sheet.Cadencia23 = 'Único'
+sheet.Municao23 = '1'
+sheet.ClasseDeDureza23 = '2'
+sheet.ImagemArma23 = 'http://blob.firecast.com.br/blobs/PBNIHBCS_287618.png'
+
+sheet.Preco24 = '1200'
+
+sheet.Iniciativa24 = '-2'
+sheet.DanoItem24 = '+4'
+sheet.Alcance24 = 'C'
+sheet.Cadencia24 = 'Único'
+sheet.Municao24 = '1'
+sheet.ClasseDeDureza24 = '2'
+sheet.ImagemArma24 = 'http://blob.firecast.com.br/blobs/PBNIHBCS_287618.png'
+sheet.ItemNome = 'Arco'
+sheet.ItemNome2 = 'Artilharia Leve'
+sheet.ItemNome3 = 'Artilharia Pesado'
+sheet.ItemNome4 = 'Besta'
+sheet.ItemNome5 = 'Espingarda de Cano Duplo'
+sheet.ItemNome6 = 'Espingarda Leve'
+sheet.ItemNome7 = 'Granada de Mão'
+sheet.ItemNome8 = 'Lançador de Míssel'
+sheet.ItemNome9 = 'Metralhadora'
+sheet.ItemNome10 = 'Metralhadora Pequena'
+sheet.ItemNome11 = 'Metralhadora Pesada'
+sheet.ItemNome12 = 'Mina, Anti-Veículo'
+sheet.ItemNome13 = 'Mina, Antipessoal'
+sheet.ItemNome14 = 'Missil de Tanque'
+sheet.ItemNome15 = 'Molotov'
+sheet.ItemNome16 = 'Pistola Leve'
+sheet.ItemNome17 = 'Revolver Pesado'
+sheet.ItemNome18 = 'Rifle de Assalto Leve 7'
+sheet.ItemNome19 = 'Rifle de Assalto Pesado'
+sheet.ItemNome20 = 'Rifle de Caça'
+sheet.ItemNome21 = 'Rifle de Precisão'
+sheet.ItemNome22 = 'Shotgun'
+sheet.ItemNome23 = 'Submetralhadora'
+
+
+</event>
+ </button>
+
+================================================================================================================================
+===========# Por fora do layout da lista de armas; Especificamente por cima #=============================================================================
+
+    -- Dinheiro do player
+    <layout align="client">
+
+        -- Imagem do dinheiro retangulo
+        <image src="images/dinheiroArma.png" left="0" top="5" width="180.37" height="80.25"/>
+       
+        <label left="26" top="30" fontStyle="bold" fontColor="white" fontSize="35" autoSize="true" wordWrap="false" name="labSoma2" cursor="handPoint" hitTest="true">
+            <dataLink field="Soma">
+                <event name="onChange">
+        function format_thousand(v)
+        local s = string.format("%d", math.floor(v))
+        local pos = string.len(s) % 3 
+        if pos == 0 then pos = 3 end
+        return string.sub(s, 1, pos)
+            .. "" .. string.gsub(string.sub(s, pos+1), "(...)", ".%1") 
+            .. "" .. string.sub(string.format("%.0f", v - math.floor(v)), 3) 
+        
+        end;
+          self.labSoma2.text = '$' .. format_thousand(sheet.soma);
+
+            </event>
+        </dataLink>
+    </label>
+</layout>
+    <image left="0" top="0" width="130.37" height="62.25" hint="Seu dinheiro" cursor="handPoint" hitTest="true">
+        <event name="onClick">
+            if rrpg.getMesaDe(sheet).meuJogador.isMestre then
+            dialogs.inputQuery("Carteira", "Novo valor:", "",
+               function (valorPreenchido)
+                          sheet.Soma = (sheet.Soma or 0 ) + valorPreenchido; 
+            end);
+            end;
+        </event>
+    </image>
+
+    -- Comeco do layout
+    <image src="images/botaoVoltar.png" left="200" top="29" width="50" height="50" cursor="handPoint" hint="Clique aqui para voltar" hitTest="true">
+        <event name="onClick">
+            self.LojaDeArmas.visible = false;
+            self.ApresentaLoja.visible = true;
+        </event>
+    </image>
+================================================================================================================================
+===========# Todas as listas da loja #==========================================================================================
+        <!-- 1 imagem -->
+    <layout name="Arma1" width="480" height="174" left="0" top="88">
+    <image src="images/Loja.png" left="0" top="0" width="399" height="174"/>
+    -- Preço da arma
+    <label left="22.25" top="20.50" width="107.25" height="37.88" fontSize="22" hint="Preço da Arma" field="Preco" horzTextAlign="center" fontStyle="bold" fontColor="yellow" fontFamily="kalam" cursor="handPoint" hitTest="true">
+            <event name="onClick">
+			if rrpg.getMesaDe(sheet).meuJogador.isMestre then
+			dialogs.inputQuery("Carteira", "Novo valor:", "",
+			   function (valorPreenchido)
+						  sheet.Preco = (sheet.Preco or 0 ) + valorPreenchido; 
+			end);
+			end;
+        </event>
+    </label>
+    -- Comprar
+    <image left="41.38" top="61.75" width="67.88" height="30" cursor="handPoint" hitTest="true" hint="Clique aqui para comprar">
+        <event name="onClick">
+                         local Soma = (sheet.Soma or 0) -1200;
+						         if Soma >= 0 then
+                                
+								    local minhaMesa = rrpg.getMesaDe(sheet); 
+									local chat = minhaMesa.chat; 
+									chat:enviarMensagem("/me [§K12][§B]Comprou uma arma. ");
+                                    showMessage("Você acabou de comprar uma arma, olhe no seu inventario");
+                            else
+                     showMessage("Você não mais dinheiro"); 	
+		end;
+        </event>
+    </image>
+   -- imagem da arma
+   <image left="2.56" top="93.00" width="136.69" height="77.69" style="proportional" center="true" editable="true" field="ImagemArma"/>
+    -- Nome do Item
+    <label left="197" top="10" width="249.25" height="39" fontSize="22" field="ItemNome" fontStyle="bold" fontColor="black" fontFamily="kalam"/>
+    -- Iniciativa
+    <label left="207.88" top="51" width="49.88" height="31.38" horzTextAlign="center" field="Iniciativa" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/>  
+    -- dano 
+    <label left="182.88" top="90" width="50.88" height="31.38" horzTextAlign="center" field="DanoItem" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+    -- Alcance
+    <label left="195.88" top="128" width="50.88" height="32" horzTextAlign="center" field="Alcance" fontSize="15" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+    -- Cadencia
+    <label left="317.88" top="49" width="68.88" height="32" horzTextAlign="center" field="Cadencia" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+    -- Municao
+    <label left="317.88" top="89" width="68.88" height="32" horzTextAlign="center" field="Municao" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+    -- ClasseDeDureza
+    <label left="317.88" top="125" width="48.12" height="32" horzTextAlign="center" field="ClasseDeDureza" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+</layout>
+<!-- 2 imagem -->
+<layout name="Arma2" width="480" height="174" left="0" top="270">
+    <image src="images/Loja.png" left="0" top="0" width="399" height="174"/>
+    -- Preço da arma
+    <label left="22.25" top="20.50" width="107.25" height="37.88" fontSize="22" hint="Preço da Arma" field="Preco2" horzTextAlign="center" fontStyle="bold" fontColor="yellow" fontFamily="kalam" cursor="handPoint" hitTest="true">
+            <event name="onClick">
+			if rrpg.getMesaDe(sheet).meuJogador.isMestre then
+			dialogs.inputQuery("Carteira", "Novo valor:", "",
+			   function (valorPreenchido)
+						  sheet.Preco2 = (sheet.Preco2 or 0 ) + valorPreenchido; 
+			end);
+			end;
+        </event>
+    </label>
+    -- Comprar
+    <image left="41.38" top="61.75" width="67.88" height="30" cursor="handPoint" hitTest="true" hint="Clique aqui para comprar">
+        <event name="onClick">
+                         local Soma = (sheet.Soma or 0) -1200;
+						         if Soma >= 0 then
+                                
+								 sheet.Soma = Soma; sheet.quantidade = (sheet.quantidade or 0) +1; local minhaMesa = rrpg.getMesaDe(sheet); 
+									local chat = minhaMesa.chat; 
+									chat:enviarMensagem("/me [§K12][§B]Comprou uma arma. ");
+                                    showMessage("Você acabou de comprar uma arma, olhe no seu inventario"); self.boxDetalhesDoItem.node.nome = sheet.ItemNome2
+                            else
+                     showMessage("Você não moedas para gastar"); 	
+		end;
+        </event>
+    </image>
+   -- imagem da arma
+   <image left="2.56" top="93.00" width="136.69" height="77.69" style="proportional" center="true" editable="true" field="ImagemArma2"/>
+    -- Nome do Item
+    <label left="197" top="10" width="249.25" height="39" fontSize="22" field="ItemNome2" fontStyle="bold" fontColor="black" fontFamily="kalam"/>
+    -- Iniciativa
+    <label left="207.88" top="51" width="49.88" height="31.38" horzTextAlign="center" field="Iniciativa2" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/>  
+    -- dano 
+    <label left="182.88" top="90" width="50.88" height="31.38" horzTextAlign="center" field="DanoItem2" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+    -- Alcance
+    <label left="195.88" top="128" width="50.88" height="32" horzTextAlign="center" field="Alcance2" fontSize="15" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+    -- Cadencia
+    <label left="317.88" top="49" width="68.88" height="32" horzTextAlign="center" field="Cadencia2" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+    -- Municao
+    <label left="317.88" top="89" width="68.88" height="32" horzTextAlign="center" field="Municao2" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+    -- Classe de Dureza
+    <label left="317.88" top="125" width="48.12" height="32" horzTextAlign="center" field="ClasseDeDureza2" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+
+</layout>
+<!-- 3 imagem -->
+<layout name="Arma3" width="480" height="174" left="0" top="452">
+    <image src="images/Loja.png" left="0" top="0" width="399" height="174"/>
+    -- Preço da arma
+    <label left="22.25" top="20.50" width="107.25" height="37.88" fontSize="22" hint="Preço da Arma" field="Preco3" horzTextAlign="center" fontStyle="bold" fontColor="yellow" fontFamily="kalam" cursor="handPoint" hitTest="true">
+            <event name="onClick">
+			if rrpg.getMesaDe(sheet).meuJogador.isMestre then
+			dialogs.inputQuery("Carteira", "Novo valor:", "",
+			   function (valorPreenchido)
+						  sheet.Preco3 = (sheet.Preco3 or 0 ) + valorPreenchido; 
+			end);
+			end;
+        </event>
+    </label>
+    -- Comprar
+    <image left="41.38" top="61.75" width="67.88" height="30" cursor="handPoint" hitTest="true" hint="Clique aqui para comprar">
+        <event name="onClick">
+                         local Soma = (sheet.Soma or 0) -1200;
+						         if Soma >= 0 then
+                                
+								 sheet.Soma = Soma; sheet.quantidade = (sheet.quantidade or 0) +1; local minhaMesa = rrpg.getMesaDe(sheet); 
+									local chat = minhaMesa.chat; 
+									chat:enviarMensagem("/me [§K12][§B]Comprou uma arma. ");
+                                    showMessage("Você acabou de comprar uma arma, olhe no seu inventario"); self.boxDetalhesDoItem.node.nome = sheet.ItemNome3
+                            else
+                     showMessage("Você não moedas para gastar"); 	
+		end;
+        </event>
+    </image>
+   -- imagem da arma
+   <image left="2.56" top="93.00" width="136.69" height="77.69" style="proportional" center="true" editable="true" field="ImagemArma3"/>
+    -- Nome do Item
+    <label left="197" top="10" width="249.25" height="39" fontSize="22" field="ItemNome3" fontStyle="bold" fontColor="black" fontFamily="kalam"/>
+    -- Iniciativa
+    <label left="207.88" top="51" width="49.88" height="31.38" horzTextAlign="center" field="Iniciativa3" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/>  
+    -- dano 
+    <label left="182.88" top="90" width="50.88" height="31.38" horzTextAlign="center" field="DanoItem3" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+    -- Alcance
+    <label left="195.88" top="128" width="50.88" height="32" horzTextAlign="center" field="Alcance3" fontSize="15" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+    -- Cadencia
+    <label left="317.88" top="49" width="68.88" height="32" horzTextAlign="center" field="Cadencia3" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+    -- Municao
+    <label left="317.88" top="89" width="68.88" height="32" horzTextAlign="center" field="Municao3" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+    -- Classe de Dureza
+    <label left="317.88" top="125" width="48.12" height="32" horzTextAlign="center" field="ClasseDeDureza3" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+    
+</layout>
+ <!-- 4 Imagem -->
+ <layout name="Arma4" width="480" height="174" left="0" top="634">
+    <image src="images/Loja.png" left="0" top="0" width="399" height="174"/>
+    -- Preço da arma
+    <label left="22.25" top="20.50" width="107.25" height="37.88" fontSize="22" hint="Preço da Arma" field="Preco4" horzTextAlign="center" fontStyle="bold" fontColor="yellow" fontFamily="kalam" cursor="handPoint" hitTest="true">
+            <event name="onClick">
+			if rrpg.getMesaDe(sheet).meuJogador.isMestre then
+			dialogs.inputQuery("Carteira", "Novo valor:", "",
+			   function (valorPreenchido)
+						  sheet.Preco4 = (sheet.Preco4 or 0 ) + valorPreenchido; 
+			end);
+			end;
+        </event>
+    </label>
+    -- Comprar
+    <image left="41.38" top="61.75" width="67.88" height="30" cursor="handPoint" hitTest="true" hint="Clique aqui para comprar">
+        <event name="onClick">
+                         local Soma = (sheet.Soma or 0) -1200;
+						         if Soma >= 0 then
+                                
+								 sheet.Soma = Soma; sheet.quantidade = (sheet.quantidade or 0) +1; local minhaMesa = rrpg.getMesaDe(sheet); 
+									local chat = minhaMesa.chat; 
+									chat:enviarMensagem("/me [§K12][§B]Comprou uma arma. ");
+                                    showMessage("Você acabou de comprar uma arma, olhe no seu inventario"); self.boxDetalhesDoItem.node.nome = sheet.ItemNome4
+                            else
+                     showMessage("Você não moedas para gastar"); 	
+		end;
+        </event>
+    </image>
+   -- imagem da arma
+   <image left="2.56" top="93.00" width="136.69" height="77.69" style="proportional" center="true" editable="true" field="ImagemArma4"/>
+    -- Nome do Item
+    <label left="197" top="10" width="249.25" height="39" fontSize="22" field="ItemNome4" fontStyle="bold" fontColor="black" fontFamily="kalam"/>
+    -- Iniciativa
+    <label left="207.88" top="51" width="49.88" height="31.38" horzTextAlign="center" field="Iniciativa4" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/>  
+    -- dano 
+    <label left="182.88" top="90" width="50.88" height="31.38" horzTextAlign="center" field="DanoItem4" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+    -- Alcance
+    <label left="195.88" top="128" width="50.88" height="32" horzTextAlign="center" field="Alcance4" fontSize="15" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+    -- Cadencia
+    <label left="317.88" top="49" width="68.88" height="32" horzTextAlign="center" field="Cadencia4" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+    -- Municao
+    <label left="317.88" top="89" width="68.88" height="32" horzTextAlign="center" field="Municao4" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+    -- Classe de Dureza
+    <label left="317.88" top="125" width="48.12" height="32" horzTextAlign="center" field="ClasseDeDureza4" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+    
+</layout>
+<!-- 5 Imagem -->
+<layout name="Arma5" width="480" height="174" left="0" top="816">
+    <image src="images/Loja.png" left="0" top="0" width="399" height="174"/>
+    -- Preço da arma
+    <label left="22.25" top="20.50" width="107.25" height="37.88" fontSize="22" hint="Preço da Arma" field="Preco5" horzTextAlign="center" fontStyle="bold" fontColor="yellow" fontFamily="kalam" cursor="handPoint" hitTest="true">
+            <event name="onClick">
+			if rrpg.getMesaDe(sheet).meuJogador.isMestre then
+			dialogs.inputQuery("Carteira", "Novo valor:", "",
+			   function (valorPreenchido)
+						  sheet.Preco5 = (sheet.Preco5 or 0 ) + valorPreenchido; 
+			end);
+			end;
+        </event>
+    </label>
+    -- Comprar
+    <image left="41.38" top="61.75" width="67.88" height="30" cursor="handPoint" hitTest="true" hint="Clique aqui para comprar">
+        <event name="onClick">
+                         local Soma = (sheet.Soma or 0) -1200;
+						         if Soma >= 0 then
+                                
+								 sheet.Soma = Soma; sheet.quantidade = (sheet.quantidade or 0) +1; local minhaMesa = rrpg.getMesaDe(sheet); 
+									local chat = minhaMesa.chat; 
+									chat:enviarMensagem("/me [§K12][§B]Comprou uma arma. ");
+                                    showMessage("Você acabou de comprar uma arma, olhe no seu inventario"); self.boxDetalhesDoItem.node.nome = sheet.ItemNome5
+                            else
+                     showMessage("Você não moedas para gastar"); 	
+		end;
+        </event>
+    </image>
+   -- imagem da arma
+   <image left="2.56" top="93.00" width="136.69" height="77.69" style="proportional" center="true" editable="true" field="ImagemArma5"/>
+    -- Nome do Item
+    <label left="197" top="10" width="249.25" height="39" fontSize="22" field="ItemNome5" fontStyle="bold" fontColor="black" fontFamily="kalam"/>
+    -- Iniciativa
+    <label left="207.88" top="51" width="49.88" height="31.38" horzTextAlign="center" field="Iniciativa5" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/>  
+    -- dano 
+    <label left="182.88" top="90" width="50.88" height="31.38" horzTextAlign="center" field="DanoItem5" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+    -- Alcance
+    <label left="195.88" top="128" width="50.88" height="32" horzTextAlign="center" field="Alcance5" fontSize="15" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+    -- Cadencia
+    <label left="317.88" top="49" width="68.88" height="32" horzTextAlign="center" field="Cadencia5" fontSize="10" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+    -- Municao
+    <label left="317.88" top="89" width="68.88" height="32" horzTextAlign="center" field="Municao5" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+    -- Classe de Dureza
+    <label left="317.88" top="125" width="48.12" height="32" horzTextAlign="center" field="ClasseDeDureza5" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+    
+</layout>
+<!-- 6 Imagem -->
+<layout name="Arma6" width="480" height="174" left="0" top="998">
+    <image src="images/Loja.png" left="0" top="0" width="399" height="174"/>
+    -- Preço da arma
+    <label left="22.25" top="20.50" width="107.25" height="37.88" fontSize="22" hint="Preço da Arma" field="Preco6" horzTextAlign="center" fontStyle="bold" fontColor="yellow" fontFamily="kalam" cursor="handPoint" hitTest="true">
+            <event name="onClick">
+			if rrpg.getMesaDe(sheet).meuJogador.isMestre then
+			dialogs.inputQuery("Carteira", "Novo valor:", "",
+			   function (valorPreenchido)
+						  sheet.Preco6 = (sheet.Preco6 or 0 ) + valorPreenchido; 
+			end);
+			end;
+        </event>
+    </label>
+    -- Comprar
+    <image left="41.38" top="61.75" width="67.88" height="30" cursor="handPoint" hitTest="true" hint="Clique aqui para comprar">
+        <event name="onClick">
+                         local Soma = (sheet.Soma or 0) -1200;
+						         if Soma >= 0 then
+                                
+								 sheet.Soma = Soma; sheet.quantidade = (sheet.quantidade or 0) +1; local minhaMesa = rrpg.getMesaDe(sheet); 
+									local chat = minhaMesa.chat; 
+									chat:enviarMensagem("/me [§K12][§B]Comprou uma arma. ");
+                                    showMessage("Você acabou de comprar uma arma, olhe no seu inventario"); self.boxDetalhesDoItem.node.nome = sheet.ItemNome6
+                            else
+                     showMessage("Você não moedas para gastar"); 	
+		end;
+        </event>
+    </image>
+   -- imagem da arma
+   <image left="2.56" top="93.00" width="136.69" height="77.69" style="proportional" center="true" editable="true" field="ImagemArma6"/>
+    -- Nome do Item
+    <label left="197" top="10" width="249.25" height="39" fontSize="22" field="ItemNome6" fontStyle="bold" fontColor="black" fontFamily="kalam"/>
+    -- Iniciativa
+    <label left="207.88" top="51" width="49.88" height="31.38" horzTextAlign="center" field="Iniciativa6" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/>  
+    -- dano 
+    <label left="182.88" top="90" width="50.88" height="31.38" horzTextAlign="center" field="DanoItem6" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+    -- Alcance
+    <label left="195.88" top="128" width="50.88" height="32" horzTextAlign="center" field="Alcance6" fontSize="15" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+    -- Cadencia
+    <label left="317.88" top="49" width="68.88" height="32" horzTextAlign="center" field="Cadencia6" fontSize="10" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+    -- Municao
+    <label left="317.88" top="89" width="68.88" height="32" horzTextAlign="center" field="Municao6" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+    -- Classe de Dureza
+    <label left="317.88" top="125" width="48.12" height="32" horzTextAlign="center" field="ClasseDeDureza6" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+    
+</layout>
+<!-- 7 Imagem -->
+<layout name="Arma7" width="480" height="174" left="0" top="1180">
+    <image src="images/Loja.png" left="0" top="0" width="399" height="174"/>
+    -- Preço da arma
+    <label left="22.25" top="20.50" width="107.25" height="37.88" fontSize="22" hint="Preço da Arma" field="Preco7" horzTextAlign="center" fontStyle="bold" fontColor="yellow" fontFamily="kalam" cursor="handPoint" hitTest="true">
+            <event name="onClick">
+			if rrpg.getMesaDe(sheet).meuJogador.isMestre then
+			dialogs.inputQuery("Carteira", "Novo valor:", "",
+			   function (valorPreenchido)
+						  sheet.Preco7 = (sheet.Preco7 or 0 ) + valorPreenchido; 
+			end);
+			end;
+        </event>
+    </label>
+    -- Comprar
+    <image left="41.38" top="61.75" width="67.88" height="30" cursor="handPoint" hitTest="true" hint="Clique aqui para comprar">
+        <event name="onClick">
+                         local Soma = (sheet.Soma or 0) -1200;
+						         if Soma >= 0 then
+                                
+								 sheet.Soma = Soma; sheet.quantidade = (sheet.quantidade or 0) +1; local minhaMesa = rrpg.getMesaDe(sheet); 
+									local chat = minhaMesa.chat; 
+									chat:enviarMensagem("/me [§K12][§B]Comprou uma arma. ");
+                                    showMessage("Você acabou de comprar uma arma, olhe no seu inventario"); self.boxDetalhesDoItem.node.nome = sheet.ItemNome7
+                            else
+                     showMessage("Você não moedas para gastar"); 	
+		end;
+        </event>
+    </image>
+   -- imagem da arma
+   <image left="2.56" top="93.00" width="136.69" height="77.69" style="proportional" center="true" editable="true" field="ImagemArma7"/>
+    -- Nome do Item
+    <label left="197" top="10" width="249.25" height="39" fontSize="18" field="ItemNome7" fontStyle="bold" fontColor="black" fontFamily="kalam"/>
+    -- Iniciativa
+    <label left="207.88" top="51" width="49.88" height="31.38" horzTextAlign="center" field="Iniciativa7" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/>  
+    -- dano 
+    <label left="182.88" top="90" width="50.88" height="31.38" horzTextAlign="center" field="DanoItem7" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+    -- Alcance
+    <label left="195.88" top="128" width="50.88" height="32" horzTextAlign="center" field="Alcance7" fontSize="15" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+    -- Cadencia
+    <label left="317.88" top="49" width="68.88" height="32" horzTextAlign="center" field="Cadencia7" fontSize="10" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+    -- Municao
+    <label left="317.88" top="89" width="68.88" height="32" horzTextAlign="center" field="Municao7" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+    -- Classe de Dureza
+    <label left="317.88" top="125" width="48.12" height="32" horzTextAlign="center" field="ClasseDeDureza7" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+    
+</layout>
+<!-- 8 Imagem -->
+<layout name="Arma8" width="480" height="174" left="0" top="1362">
+    <image src="images/Loja.png" left="0" top="0" width="399" height="174"/>
+    -- Preço da arma
+    <label left="22.25" top="20.50" width="107.25" height="37.88" fontSize="22" hint="Preço da Arma" field="Preco8" horzTextAlign="center" fontStyle="bold" fontColor="yellow" fontFamily="kalam" cursor="handPoint" hitTest="true">
+            <event name="onClick">
+			if rrpg.getMesaDe(sheet).meuJogador.isMestre then
+			dialogs.inputQuery("Carteira", "Novo valor:", "",
+			   function (valorPreenchido)
+						  sheet.Preco8 = (sheet.Preco8 or 0 ) + valorPreenchido; 
+			end);
+			end;
+        </event>
+    </label>
+    -- Comprar
+    <image left="41.38" top="61.75" width="67.88" height="30" cursor="handPoint" hitTest="true" hint="Clique aqui para comprar">
+        <event name="onClick">
+                         local Soma = (sheet.Soma or 0) -1200;
+						         if Soma >= 0 then
+                                
+								 sheet.Soma = Soma; sheet.quantidade = (sheet.quantidade or 0) +1; local minhaMesa = rrpg.getMesaDe(sheet); 
+									local chat = minhaMesa.chat; 
+									chat:enviarMensagem("/me [§K12][§B]Comprou uma arma. ");
+                                    showMessage("Você acabou de comprar uma arma, olhe no seu inventario"); self.boxDetalhesDoItem.node.nome = sheet.ItemNome8
+                            else
+                     showMessage("Você não moedas para gastar"); 	
+		end;
+        </event>
+    </image>
+   -- imagem da arma
+   <image left="2.56" top="93.00" width="136.69" height="77.69" style="proportional" center="true" editable="true" field="ImagemArma8"/>
+    -- Nome do Item
+    <label left="197" top="10" width="249.25" height="39" fontSize="18" field="ItemNome8" fontStyle="bold" fontColor="black" fontFamily="kalam"/>
+    -- Iniciativa
+    <label left="207.88" top="51" width="49.88" height="31.38" horzTextAlign="center" field="Iniciativa8" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/>  
+    -- dano 
+    <label left="182.88" top="90" width="50.88" height="31.38" horzTextAlign="center" field="DanoItem8" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+    -- Alcance
+    <label left="195.88" top="128" width="50.88" height="32" horzTextAlign="center" field="Alcance8" fontSize="15" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+    -- Cadencia
+    <label left="317.88" top="49" width="68.88" height="32" horzTextAlign="center" field="Cadencia8" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+    -- Municao
+    <label left="317.88" top="89" width="68.88" height="32" horzTextAlign="center" field="Municao8" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/>
+    -- Classe de Dureza
+    <label left="317.88" top="125" width="48.12" height="32" horzTextAlign="center" field="ClasseDeDureza8" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+     
+</layout>
+<!-- 9 Imagem -->
+<layout name="Arma9" width="480" height="174" left="0" top="1544">
+    <image src="images/Loja.png" left="0" top="0" width="399" height="174"/>
+    -- Preço da arma
+    <label left="22.25" top="20.50" width="107.25" height="37.88" fontSize="22" hint="Preço da Arma" field="Preco9" horzTextAlign="center" fontStyle="bold" fontColor="yellow" fontFamily="kalam" cursor="handPoint" hitTest="true">
+            <event name="onClick">
+			if rrpg.getMesaDe(sheet).meuJogador.isMestre then
+			dialogs.inputQuery("Carteira", "Novo valor:", "",
+			   function (valorPreenchido)
+						  sheet.Preco9 = (sheet.Preco9 or 0 ) + valorPreenchido; 
+			end);
+			end;
+        </event>
+    </label>
+    -- Comprar
+    <image left="41.38" top="61.75" width="67.88" height="30" cursor="handPoint" hitTest="true" hint="Clique aqui para comprar">
+        <event name="onClick">
+                         local Soma = (sheet.Soma or 0) -1200;
+						         if Soma >= 0 then
+                                
+								 sheet.Soma = Soma; sheet.quantidade = (sheet.quantidade or 0) +1; local minhaMesa = rrpg.getMesaDe(sheet); 
+									local chat = minhaMesa.chat; 
+									chat:enviarMensagem("/me [§K12][§B]Comprou uma arma. ");
+                                    showMessage("Você acabou de comprar uma arma, olhe no seu inventario"); self.boxDetalhesDoItem.node.nome = sheet.ItemNome9
+                            else
+                     showMessage("Você não moedas para gastar"); 	
+		end;
+        </event>
+    </image>
+   -- imagem da arma
+   <image left="2.56" top="93.00" width="136.69" height="77.69" style="proportional" center="true" editable="true" field="ImagemArma9"/>
+    -- Nome do Item
+    <label left="197" top="10" width="249.25" height="39" fontSize="22" field="ItemNome9" fontStyle="bold" fontColor="black" fontFamily="kalam"/>
+    -- Iniciativa
+    <label left="207.88" top="51" width="49.88" height="31.38" horzTextAlign="center" field="Iniciativa9" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/>  
+    -- dano 
+    <label left="182.88" top="90" width="50.88" height="31.38" horzTextAlign="center" field="DanoItem9" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+    -- Alcance
+    <label left="195.88" top="128" width="50.88" height="32" horzTextAlign="center" field="Alcance9" fontSize="15" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+    -- Cadencia
+    <label left="317.88" top="49" width="68.88" height="32" horzTextAlign="center" field="Cadencia9" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+    -- Municao
+    <label left="317.88" top="89" width="68.88" height="32" horzTextAlign="center" field="Municao9" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+    -- Classe de Dureza
+    <label left="317.88" top="125" width="48.12" height="32" horzTextAlign="center" field="ClasseDeDureza9" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+    
+</layout>
+<!-- 10 Imagem -->
+<layout name="Arma10" width="480" height="174" left="0" top="1726">
+    <image src="images/Loja.png" left="0" top="0" width="399" height="174"/>
+    -- Preço da arma
+    <label left="22.25" top="20.50" width="107.25" height="37.88" fontSize="22" hint="Preço da Arma" field="Preco10" horzTextAlign="center" fontStyle="bold" fontColor="yellow" fontFamily="kalam" cursor="handPoint" hitTest="true">
+            <event name="onClick">
+			if rrpg.getMesaDe(sheet).meuJogador.isMestre then
+			dialogs.inputQuery("Carteira", "Novo valor:", "",
+			   function (valorPreenchido)
+						  sheet.Preco10 = (sheet.Preco10 or 0 ) + valorPreenchido; 
+			end);
+			end;
+        </event>
+    </label>
+    -- Comprar
+    <image left="41.38" top="61.75" width="67.88" height="30" cursor="handPoint" hitTest="true" hint="Clique aqui para comprar">
+        <event name="onClick">
+                         local Soma = (sheet.Soma or 0) -1200;
+						         if Soma >= 0 then
+                                
+								 sheet.Soma = Soma; sheet.quantidade = (sheet.quantidade or 0) +1; local minhaMesa = rrpg.getMesaDe(sheet); 
+									local chat = minhaMesa.chat; 
+									chat:enviarMensagem("/me [§K12][§B]Comprou uma arma. ");
+                                    showMessage("Você acabou de comprar uma arma, olhe no seu inventario"); self.boxDetalhesDoItem.node.nome = sheet.ItemNome10
+                            else
+                     showMessage("Você não moedas para gastar"); 	
+		end;
+        </event>
+    </image>
+   -- imagem da arma
+   <image left="2.56" top="93.00" width="136.69" height="77.69" style="proportional" center="true" editable="true" field="ImagemArma10"/>
+    -- Nome do Item
+    <label left="197" top="10" width="249.25" height="39" fontSize="22" field="ItemNome10" fontStyle="bold" fontColor="black" fontFamily="kalam"/>
+    -- Iniciativa
+    <label left="207.88" top="51" width="49.88" height="31.38" horzTextAlign="center" field="Iniciativa10" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/>  
+    -- dano 
+    <label left="182.88" top="90" width="50.88" height="31.38" horzTextAlign="center" field="DanoItem10" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+    -- Alcance
+    <label left="195.88" top="128" width="50.88" height="32" horzTextAlign="center" field="Alcance10" fontSize="15" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+    -- Cadencia
+    <label left="317.88" top="49" width="68.88" height="32" horzTextAlign="center" field="Cadencia10" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+    -- Municao
+    <label left="317.88" top="89" width="68.88" height="32" horzTextAlign="center" field="Municao10" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+    -- Peso
+    <label left="317.88" top="128" width="68.88" height="32" horzTextAlign="center" field="Peso10" fontSize="15" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+    -- Classe de Dureza
+    <label left="317.88" top="125" width="48.12" height="32" horzTextAlign="center" field="ClasseDeDureza10" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+    
+</layout>
+<!-- 11 Imagem -->
+<layout name="Arma11" width="480" height="174" left="0" top="1908">
+    <image src="images/Loja.png" left="0" top="0" width="399" height="174"/>
+    -- Preço da arma
+    <label left="22.25" top="20.50" width="107.25" height="37.88" fontSize="22" hint="Preço da Arma" field="Preco11" horzTextAlign="center" fontStyle="bold" fontColor="yellow" fontFamily="kalam" cursor="handPoint" hitTest="true">
+            <event name="onClick">
+			if rrpg.getMesaDe(sheet).meuJogador.isMestre then
+			dialogs.inputQuery("Carteira", "Novo valor:", "",
+			   function (valorPreenchido)
+						  sheet.Preco11 = (sheet.Preco11 or 0 ) + valorPreenchido; 
+			end);
+			end;
+        </event>
+    </label>
+    -- Comprar
+    <image left="41.38" top="61.75" width="67.88" height="30" cursor="handPoint" hitTest="true" hint="Clique aqui para comprar">
+        <event name="onClick">
+                         local Soma = (sheet.Soma or 0) -1200;
+						         if Soma >= 0 then
+                                
+								 sheet.Soma = Soma; sheet.quantidade = (sheet.quantidade or 0) +1; local minhaMesa = rrpg.getMesaDe(sheet); 
+									local chat = minhaMesa.chat; 
+									chat:enviarMensagem("/me [§K12][§B]Comprou uma arma. ");
+                                    showMessage("Você acabou de comprar uma arma, olhe no seu inventario"); self.boxDetalhesDoItem.node.nome = sheet.ItemNome11
+                            else
+                     showMessage("Você não moedas para gastar"); 	
+		end;
+        </event>
+    </image>
+   -- imagem da arma
+   <image left="2.56" top="93.00" width="136.69" height="77.69" style="proportional" center="true" editable="true" field="ImagemArma11"/>
+    -- Nome do Item
+    <label left="197" top="10" width="249.25" height="39" fontSize="22" field="ItemNome11" fontStyle="bold" fontColor="black" fontFamily="kalam"/>
+    -- Iniciativa
+    <label left="207.88" top="51" width="49.88" height="31.38" horzTextAlign="center" field="Iniciativa11" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/>  
+    -- dano 
+    <label left="182.88" top="90" width="50.88" height="31.38" horzTextAlign="center" field="DanoItem11" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+    -- Alcance
+    <label left="195.88" top="128" width="50.88" height="32" horzTextAlign="center" field="Alcance11" fontSize="15" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+    -- Cadencia
+    <label left="317.88" top="49" width="68.88" height="32" horzTextAlign="center" field="Cadencia11" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+    -- Municao
+    <label left="317.88" top="89" width="68.88" height="32" horzTextAlign="center" field="Municao11" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/>
+    -- Classe de Dureza
+    <label left="317.88" top="125" width="48.12" height="32" horzTextAlign="center" field="ClasseDeDureza11" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+     
+</layout>
+<!-- 12 Imagem -->
+<layout name="Arma12" width="480" height="174" left="0" top="2090">
+    <image src="images/Loja.png" left="0" top="0" width="399" height="174"/>
+    -- Preço da arma
+    <label left="22.25" top="20.50" width="107.25" height="37.88" fontSize="22" hint="Preço da Arma" field="Preco12" horzTextAlign="center" fontStyle="bold" fontColor="yellow" fontFamily="kalam" cursor="handPoint" hitTest="true">
+            <event name="onClick">
+			if rrpg.getMesaDe(sheet).meuJogador.isMestre then
+			dialogs.inputQuery("Carteira", "Novo valor:", "",
+			   function (valorPreenchido)
+						  sheet.Preco12 = (sheet.Preco12 or 0 ) + valorPreenchido; 
+			end);
+			end;
+        </event>
+    </label>
+    -- Comprar
+    <image left="41.38" top="61.75" width="67.88" height="30" cursor="handPoint" hitTest="true" hint="Clique aqui para comprar">
+        <event name="onClick">
+                         local Soma = (sheet.Soma or 0) -1200;
+						         if Soma >= 0 then
+                                
+								 sheet.Soma = Soma; sheet.quantidade = (sheet.quantidade or 0) +1; local minhaMesa = rrpg.getMesaDe(sheet); 
+									local chat = minhaMesa.chat; 
+									chat:enviarMensagem("/me [§K12][§B]Comprou uma arma. ");
+                                    showMessage("Você acabou de comprar uma arma, olhe no seu inventario"); self.boxDetalhesDoItem.node.nome = sheet.ItemNome12
+                            else
+                     showMessage("Você não moedas para gastar"); 	
+		end;
+        </event>
+    </image>
+   -- imagem da arma
+   <image left="2.56" top="93.00" width="136.69" height="77.69" style="proportional" center="true" editable="true" field="ImagemArma12"/>
+    -- Nome do Item
+    <label left="197" top="10" width="249.25" height="39" fontSize="16" field="ItemNome12" fontStyle="bold" fontColor="black" fontFamily="kalam"/>
+    -- Iniciativa
+    <label left="207.88" top="51" width="49.88" height="31.38" horzTextAlign="center" field="Iniciativa12" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/>  
+    -- dano 
+    <label left="182.88" top="90" width="50.88" height="31.38" horzTextAlign="center" field="DanoItem12" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+    -- Alcance
+    <label left="195.88" top="128" width="50.88" height="32" horzTextAlign="center" field="Alcance12" fontSize="15" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+    -- Cadencia
+    <label left="317.88" top="49" width="68.88" height="32" horzTextAlign="center" field="Cadencia12" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+    -- Municao
+    <label left="317.88" top="89" width="68.88" height="32" horzTextAlign="center" field="Municao12" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+    -- Classe de Dureza
+    <label left="317.88" top="125" width="48.12" height="32" horzTextAlign="center" field="ClasseDeDureza12" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+    
+</layout>
+<!-- 13 Imagem -->
+<layout name="Arma13" width="480" height="174" left="413" top="88">
+    <image src="images/Loja.png" left="0" top="0" width="399" height="174"/>
+    -- Preço da arma
+    <label left="22.25" top="20.50" width="107.25" height="37.88" fontSize="22" hint="Preço da Arma" field="Preco13" horzTextAlign="center" fontStyle="bold" fontColor="yellow" fontFamily="kalam" cursor="handPoint" hitTest="true">
+            <event name="onClick">
+			if rrpg.getMesaDe(sheet).meuJogador.isMestre then
+			dialogs.inputQuery("Carteira", "Novo valor:", "",
+			   function (valorPreenchido)
+						  sheet.Preco13 = (sheet.Preco13 or 0 ) + valorPreenchido; 
+			end);
+			end;
+        </event>
+    </label>
+    -- Comprar
+    <image left="41.38" top="61.75" width="67.88" height="30" cursor="handPoint" hitTest="true" hint="Clique aqui para comprar">
+        <event name="onClick">
+                         local Soma = (sheet.Soma or 0) -1200;
+						         if Soma >= 0 then
+                                
+								 sheet.Soma = Soma; sheet.quantidade = (sheet.quantidade or 0) +1; local minhaMesa = rrpg.getMesaDe(sheet); 
+									local chat = minhaMesa.chat; 
+									chat:enviarMensagem("/me [§K12][§B]Comprou uma arma. ");
+                                    showMessage("Você acabou de comprar uma arma, olhe no seu inventario"); self.boxDetalhesDoItem.node.nome = sheet.ItemNome13
+                            else
+                     showMessage("Você não moedas para gastar"); 	
+		end;
+        </event>
+    </image>
+   -- imagem da arma
+   <image left="2.56" top="93.00" width="136.69" height="77.69" style="proportional" center="true" editable="true" field="ImagemArma13"/>
+    -- Nome do Item
+    <label left="197" top="10" width="249.25" height="39" fontSize="22" field="ItemNome13" fontStyle="bold" fontColor="black" fontFamily="kalam"/>
+    -- Iniciativa
+    <label left="207.88" top="51" width="49.88" height="31.38" horzTextAlign="center" field="Iniciativa13" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/>  
+    -- dano 
+    <label left="182.88" top="90" width="50.88" height="31.38" horzTextAlign="center" field="DanoItem13" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+    -- Alcance
+    <label left="195.88" top="128" width="50.88" height="32" horzTextAlign="center" field="Alcance13" fontSize="15" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+    -- Cadencia
+    <label left="317.88" top="49" width="68.88" height="32" horzTextAlign="center" field="Cadencia13" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+    -- Municao
+    <label left="317.88" top="89" width="68.88" height="32" horzTextAlign="center" field="Municao13" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/>
+    -- Classe de Dureza
+    <label left="317.88" top="125" width="48.12" height="32" horzTextAlign="center" field="ClasseDeDureza13" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+     
+</layout>
+<!-- 14 Imagem -->
+<layout name="Arma14" width="480" height="174" left="413" top="270">
+    <image src="images/Loja.png" left="0" top="0" width="399" height="174"/>
+    -- Preço da arma
+    <label left="22.25" top="20.50" width="107.25" height="37.88" fontSize="22" hint="Preço da Arma" field="Preco14" horzTextAlign="center" fontStyle="bold" fontColor="yellow" fontFamily="kalam" cursor="handPoint" hitTest="true">
+            <event name="onClick">
+			if rrpg.getMesaDe(sheet).meuJogador.isMestre then
+			dialogs.inputQuery("Carteira", "Novo valor:", "",
+			   function (valorPreenchido)
+						  sheet.Preco14 = (sheet.Preco14 or 0 ) + valorPreenchido; 
+			end);
+			end;
+        </event>
+    </label>
+    -- Comprar
+    <image left="41.38" top="61.75" width="67.88" height="30" cursor="handPoint" hitTest="true" hint="Clique aqui para comprar">
+        <event name="onClick">
+                         local Soma = (sheet.Soma or 0) -1200;
+						         if Soma >= 0 then
+                                
+								 sheet.Soma = Soma; sheet.quantidade = (sheet.quantidade or 0) +1; local minhaMesa = rrpg.getMesaDe(sheet); 
+									local chat = minhaMesa.chat; 
+									chat:enviarMensagem("/me [§K12][§B]Comprou uma arma. ");
+                                    showMessage("Você acabou de comprar uma arma, olhe no seu inventario"); self.boxDetalhesDoItem.node.nome = sheet.ItemNome14
+                            else
+                     showMessage("Você não moedas para gastar"); 	
+		end;
+        </event>
+    </image>
+   -- imagem da arma
+   <image left="2.56" top="93.00" width="136.69" height="77.69" style="proportional" center="true" editable="true" field="ImagemArma14"/>
+    -- Nome do Item
+    <label left="197" top="10" width="249.25" height="39" fontSize="16" field="ItemNome14" fontStyle="bold" fontColor="black" fontFamily="kalam"/>
+    -- Iniciativa
+    <label left="207.88" top="51" width="49.88" height="31.38" horzTextAlign="center" field="Iniciativa14" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/>  
+    -- dano 
+    <label left="182.88" top="90" width="50.88" height="31.38" horzTextAlign="center" field="DanoItem14" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+    -- Alcance
+    <label left="195.88" top="128" width="50.88" height="32" horzTextAlign="center" field="Alcance14" fontSize="15" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+    -- Cadencia
+    <label left="317.88" top="49" width="68.88" height="32" horzTextAlign="center" field="Cadencia14" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+    -- Municao
+    <label left="317.88" top="89" width="68.88" height="32" horzTextAlign="center" field="Municao14" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+    -- Classe de Dureza
+    <label left="317.88" top="125" width="48.12" height="32" horzTextAlign="center" field="ClasseDeDureza14" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+    
+</layout>
+<!-- 15 Imagem -->
+<layout name="Arma15" width="480" height="174" left="413" top="452">
+    <image src="images/Loja.png" left="0" top="0" width="399" height="174"/>
+    -- Preço da arma
+    <label left="22.25" top="20.50" width="107.25" height="37.88" fontSize="22" hint="Preço da Arma" field="Preco15" horzTextAlign="center" fontStyle="bold" fontColor="yellow" fontFamily="kalam" cursor="handPoint" hitTest="true">
+            <event name="onClick">
+			if rrpg.getMesaDe(sheet).meuJogador.isMestre then
+			dialogs.inputQuery("Carteira", "Novo valor:", "",
+			   function (valorPreenchido)
+						  sheet.Preco15 = (sheet.Preco15 or 0 ) + valorPreenchido; 
+			end);
+			end;
+        </event>
+    </label>
+    -- Comprar
+    <image left="41.38" top="61.75" width="67.88" height="30" cursor="handPoint" hitTest="true" hint="Clique aqui para comprar">
+        <event name="onClick">
+                         local Soma = (sheet.Soma or 0) -1200;
+						         if Soma >= 0 then
+                                
+								 sheet.Soma = Soma; sheet.quantidade = (sheet.quantidade or 0) +1; local minhaMesa = rrpg.getMesaDe(sheet); 
+									local chat = minhaMesa.chat; 
+									chat:enviarMensagem("/me [§K12][§B]Comprou uma arma. ");
+                                    showMessage("Você acabou de comprar uma arma, olhe no seu inventario"); self.boxDetalhesDoItem.node.nome = sheet.ItemNome15
+                            else
+                     showMessage("Você não moedas para gastar"); 	
+		end;
+        </event>
+    </image>
+   -- imagem da arma
+   <image left="2.56" top="93.00" width="136.69" height="77.69" style="proportional" center="true" editable="true" field="ImagemArma15"/>
+    -- Nome do Item
+    <label left="197" top="10" width="249.25" height="39" fontSize="18" field="ItemNome15" fontStyle="bold" fontColor="black" fontFamily="kalam"/>
+    -- Iniciativa
+    <label left="207.88" top="51" width="49.88" height="31.38" horzTextAlign="center" field="Iniciativa15" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/>  
+    -- dano 
+    <label left="182.88" top="90" width="50.88" height="31.38" horzTextAlign="center" field="DanoItem15" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+    -- Alcance
+    <label left="195.88" top="128" width="50.88" height="32" horzTextAlign="center" field="Alcance15" fontSize="15" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+    -- Cadencia
+    <label left="317.88" top="49" width="68.88" height="32" horzTextAlign="center" field="Cadencia15" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+    -- Municao
+    <label left="317.88" top="89" width="68.88" height="32" horzTextAlign="center" field="Municao15" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/>
+    -- Classe de Dureza
+    <label left="317.88" top="125" width="48.12" height="32" horzTextAlign="center" field="ClasseDeDureza15" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+     
+</layout>
+<!-- 16 Imagem -->
+<layout name="Arma16" width="480" height="174" left="413" top="634">
+    <image src="images/Loja.png" left="0" top="0" width="399" height="174"/>
+    -- Preço da arma
+    <label left="22.25" top="20.50" width="107.25" height="37.88" fontSize="22" hint="Preço da Arma" field="Preco16" horzTextAlign="center" fontStyle="bold" fontColor="yellow" fontFamily="kalam" cursor="handPoint" hitTest="true">
+            <event name="onClick">
+			if rrpg.getMesaDe(sheet).meuJogador.isMestre then
+			dialogs.inputQuery("Carteira", "Novo valor:", "",
+			   function (valorPreenchido)
+						  sheet.Preco16 = (sheet.Preco16 or 0 ) + valorPreenchido; 
+			end);
+			end;
+        </event>
+    </label>
+    -- Comprar
+    <image left="41.38" top="61.75" width="67.88" height="30" cursor="handPoint" hitTest="true" hint="Clique aqui para comprar">
+        <event name="onClick">
+                         local Soma = (sheet.Soma or 0) -1200;
+						         if Soma >= 0 then
+                                
+								 sheet.Soma = Soma; sheet.quantidade = (sheet.quantidade or 0) +1; local minhaMesa = rrpg.getMesaDe(sheet); 
+									local chat = minhaMesa.chat; 
+									chat:enviarMensagem("/me [§K12][§B]Comprou uma arma. ");
+                                    showMessage("Você acabou de comprar uma arma, olhe no seu inventario"); self.boxDetalhesDoItem.node.nome = sheet.ItemNome16
+                            else
+                     showMessage("Você não moedas para gastar"); 	
+		end;
+        </event>
+    </image>
+   -- imagem da arma
+   <image left="2.56" top="93.00" width="136.69" height="77.69" style="proportional" center="true" editable="true" field="ImagemArma16"/>
+    -- Nome do Item
+    <label left="197" top="10" width="249.25" height="39" fontSize="19" field="ItemNome16" fontStyle="bold" fontColor="black" fontFamily="kalam"/>
+    -- Iniciativa
+    <label left="207.88" top="51" width="49.88" height="31.38" horzTextAlign="center" field="Iniciativa16" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/>  
+    -- dano 
+    <label left="182.88" top="90" width="50.88" height="31.38" horzTextAlign="center" field="DanoItem16" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+    -- Alcance
+    <label left="195.88" top="128" width="50.88" height="32" horzTextAlign="center" field="Alcance16" fontSize="15" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+    -- Cadencia
+    <label left="317.88" top="49" width="68.88" height="32" horzTextAlign="center" field="Cadencia16" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+    -- Municao
+    <label left="317.88" top="89" width="68.88" height="32" horzTextAlign="center" field="Municao16" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+    -- Classe de Dureza
+    <label left="317.88" top="125" width="48.12" height="32" horzTextAlign="center" field="ClasseDeDureza16" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+    
+</layout>
+<!-- 17 Imagem -->
+<layout name="Arma17" width="480" height="174" left="413" top="816">
+    <image src="images/Loja.png" left="0" top="0" width="399" height="174"/>
+    -- Preço da arma
+    <label left="22.25" top="20.50" width="107.25" height="37.88" fontSize="22" hint="Preço da Arma" field="Preco17" horzTextAlign="center" fontStyle="bold" fontColor="yellow" fontFamily="kalam" cursor="handPoint" hitTest="true">
+            <event name="onClick">
+			if rrpg.getMesaDe(sheet).meuJogador.isMestre then
+			dialogs.inputQuery("Carteira", "Novo valor:", "",
+			   function (valorPreenchido)
+						  sheet.Preco17 = (sheet.Preco17 or 0 ) + valorPreenchido; 
+			end);
+			end;
+        </event>
+    </label>
+    -- Comprar
+    <image left="41.38" top="61.75" width="67.88" height="30" cursor="handPoint" hitTest="true" hint="Clique aqui para comprar">
+        <event name="onClick">
+                         local Soma = (sheet.Soma or 0) -1200;
+						         if Soma >= 0 then
+                                
+								 sheet.Soma = Soma; sheet.quantidade = (sheet.quantidade or 0) +1; local minhaMesa = rrpg.getMesaDe(sheet); 
+									local chat = minhaMesa.chat; 
+									chat:enviarMensagem("/me [§K12][§B]Comprou uma arma. ");
+                                    showMessage("Você acabou de comprar uma arma, olhe no seu inventario"); self.boxDetalhesDoItem.node.nome = sheet.ItemNome17
+                            else
+                     showMessage("Você não moedas para gastar"); 	
+		end;
+        </event>
+    </image>
+   -- imagem da arma
+   <image left="2.56" top="93.00" width="136.69" height="77.69" style="proportional" center="true" editable="true" field="ImagemArma17"/>
+    -- Nome do Item
+    <label left="197" top="10" width="249.25" height="39" fontSize="22" field="ItemNome17" fontStyle="bold" fontColor="black" fontFamily="kalam"/>
+    -- Iniciativa
+    <label left="207.88" top="51" width="49.88" height="31.38" horzTextAlign="center" field="Iniciativa17" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/>  
+    -- dano 
+    <label left="182.88" top="90" width="50.88" height="31.38" horzTextAlign="center" field="DanoItem17" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+    -- Alcance
+    <label left="195.88" top="128" width="50.88" height="32" horzTextAlign="center" field="Alcance17" fontSize="15" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+    -- Cadencia
+    <label left="317.88" top="49" width="68.88" height="32" horzTextAlign="center" field="Cadencia17" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+    -- Municao
+    <label left="317.88" top="89" width="68.88" height="32" horzTextAlign="center" field="Municao17" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+    -- Classe de Dureza
+    <label left="317.88" top="125" width="48.12" height="32" horzTextAlign="center" field="ClasseDeDureza17" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+    
+</layout>
+<!-- 18 Imagem -->
+<layout name="Arma18" width="480" height="174" left="413" top="998">
+    <image src="images/Loja.png" left="0" top="0" width="399" height="174"/>
+    -- Preço da arma
+    <label left="22.25" top="20.50" width="107.25" height="37.88" fontSize="22" hint="Preço da Arma" field="Preco18" horzTextAlign="center" fontStyle="bold" fontColor="yellow" fontFamily="kalam" cursor="handPoint" hitTest="true">
+            <event name="onClick">
+			if rrpg.getMesaDe(sheet).meuJogador.isMestre then
+			dialogs.inputQuery("Carteira", "Novo valor:", "",
+			   function (valorPreenchido)
+						  sheet.Preco18 = (sheet.Preco18 or 0 ) + valorPreenchido; 
+			end);
+			end;
+        </event>
+    </label>
+    -- Comprar
+    <image left="41.38" top="61.75" width="67.88" height="30" cursor="handPoint" hitTest="true" hint="Clique aqui para comprar">
+        <event name="onClick">
+                         local Soma = (sheet.Soma or 0) -1200;
+						         if Soma >= 0 then
+                                
+								 sheet.Soma = Soma; sheet.quantidade = (sheet.quantidade or 0) +1; local minhaMesa = rrpg.getMesaDe(sheet); 
+									local chat = minhaMesa.chat; 
+									chat:enviarMensagem("/me [§K12][§B]Comprou uma arma. ");
+                                    showMessage("Você acabou de comprar uma arma, olhe no seu inventario"); self.boxDetalhesDoItem.node.nome = sheet.ItemNome18
+                            else
+                     showMessage("Você não moedas para gastar"); 	
+		end;
+        </event>
+    </image>
+   -- imagem da arma
+   <image left="2.56" top="93.00" width="136.69" height="77.69" style="proportional" center="true" editable="true" field="ImagemArma18"/>
+    -- Nome do Item
+    <label left="197" top="10" width="249.25" height="39" fontSize="22" field="ItemNome18" fontStyle="bold" fontColor="black" fontFamily="kalam"/>
+    -- Iniciativa
+    <label left="207.88" top="51" width="49.88" height="31.38" horzTextAlign="center" field="Iniciativa18" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/>  
+    -- dano 
+    <label left="182.88" top="90" width="50.88" height="31.38" horzTextAlign="center" field="DanoItem18" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+    -- Alcance
+    <label left="195.88" top="128" width="50.88" height="32" horzTextAlign="center" field="Alcance18" fontSize="15" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+    -- Cadencia
+    <label left="317.88" top="49" width="68.88" height="32" horzTextAlign="center" field="Cadencia18" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+    -- Municao
+    <label left="317.88" top="89" width="68.88" height="32" horzTextAlign="center" field="Municao18" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/>
+    -- Classe de Dureza
+    <label left="317.88" top="125" width="48.12" height="32" horzTextAlign="center" field="ClasseDeDureza18" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+    
+</layout>
+<!-- 19 Imagem -->
+<layout name="Arma19" width="480" height="174" left="413" top="1180">
+    <image src="images/Loja.png" left="0" top="0" width="399" height="174"/>
+    -- Preço da arma
+    <label left="22.25" top="20.50" width="107.25" height="37.88" fontSize="22" hint="Preço da Arma" field="Preco19" horzTextAlign="center" fontStyle="bold" fontColor="yellow" fontFamily="kalam" cursor="handPoint" hitTest="true">
+            <event name="onClick">
+			if rrpg.getMesaDe(sheet).meuJogador.isMestre then
+			dialogs.inputQuery("Carteira", "Novo valor:", "",
+			   function (valorPreenchido)
+						  sheet.Preco19 = (sheet.Preco19 or 0 ) + valorPreenchido; 
+			end);
+			end;
+        </event>
+    </label>
+    -- Comprar
+    <image left="41.38" top="61.75" width="67.88" height="30" cursor="handPoint" hitTest="true" hint="Clique aqui para comprar">
+        <event name="onClick">
+                         local Soma = (sheet.Soma or 0) -1200;
+						         if Soma >= 0 then
+                                
+								 sheet.Soma = Soma; sheet.quantidade = (sheet.quantidade or 0) +1; local minhaMesa = rrpg.getMesaDe(sheet); 
+									local chat = minhaMesa.chat; 
+									chat:enviarMensagem("/me [§K12][§B]Comprou uma arma. ");
+                                    showMessage("Você acabou de comprar uma arma, olhe no seu inventario"); self.boxDetalhesDoItem.node.nome = sheet.ItemNome19
+                            else
+                     showMessage("Você não moedas para gastar"); 	
+		end;
+        </event>
+    </image>
+   -- imagem da arma
+   <image left="2.56" top="93.00" width="136.69" height="77.69" style="proportional" center="true" editable="true" field="ImagemArma19"/>
+    -- Nome do Item
+    <label left="197" top="10" width="249.25" height="39" fontSize="22" field="ItemNome19" fontStyle="bold" fontColor="black" fontFamily="kalam"/>
+    -- Iniciativa
+    <label left="207.88" top="51" width="49.88" height="31.38" horzTextAlign="center" field="Iniciativa19" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/>  
+    -- dano 
+    <label left="182.88" top="90" width="50.88" height="31.38" horzTextAlign="center" field="DanoItem19" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+    -- Alcance
+    <label left="195.88" top="128" width="50.88" height="32" horzTextAlign="center" field="Alcance19" fontSize="15" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+    -- Cadencia
+    <label left="317.88" top="49" width="68.88" height="32" horzTextAlign="center" field="Cadencia19" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+    -- Municao
+    <label left="317.88" top="89" width="68.88" height="32" horzTextAlign="center" field="Municao19" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+    -- Classe de Dureza
+    <label left="317.88" top="125" width="48.12" height="32" horzTextAlign="center" field="ClasseDeDureza19" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+    
+</layout>
+<!-- 20 Imagem -->
+<layout name="Arma20" width="480" height="174" left="413" top="1362">
+    <image src="images/Loja.png" left="0" top="0" width="399" height="174"/>
+    -- Preço da arma
+    <label left="22.25" top="20.50" width="107.25" height="37.88" fontSize="22" hint="Preço da Arma" field="Preco20" horzTextAlign="center" fontStyle="bold" fontColor="yellow" fontFamily="kalam" cursor="handPoint" hitTest="true">
+            <event name="onClick">
+			if rrpg.getMesaDe(sheet).meuJogador.isMestre then
+			dialogs.inputQuery("Carteira", "Novo valor:", "",
+			   function (valorPreenchido)
+						  sheet.Preco20 = (sheet.Preco20 or 0 ) + valorPreenchido; 
+			end);
+			end;
+        </event>
+    </label>
+    -- Comprar
+    <image left="41.38" top="61.75" width="67.88" height="30" cursor="handPoint" hitTest="true" hint="Clique aqui para comprar">
+        <event name="onClick">
+                         local Soma = (sheet.Soma or 0) -1200;
+						         if Soma >= 0 then
+                                
+								 sheet.Soma = Soma; sheet.quantidade = (sheet.quantidade or 0) +1; local minhaMesa = rrpg.getMesaDe(sheet); 
+									local chat = minhaMesa.chat; 
+									chat:enviarMensagem("/me [§K12][§B]Comprou uma arma. ");
+                                    showMessage("Você acabou de comprar uma arma, olhe no seu inventario"); self.boxDetalhesDoItem.node.nome = sheet.ItemNome20
+                            else
+                     showMessage("Você não moedas para gastar"); 	
+		end;
+        </event>
+    </image>
+   -- imagem da arma
+   <image left="2.56" top="93.00" width="136.69" height="77.69" style="proportional" center="true" editable="true" field="ImagemArma20"/>
+    -- Nome do Item
+    <label left="197" top="10" width="249.25" height="39" fontSize="22" field="ItemNome20" fontStyle="bold" fontColor="black" fontFamily="kalam"/>
+    -- Iniciativa
+    <label left="207.88" top="51" width="49.88" height="31.38" horzTextAlign="center" field="Iniciativa20" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/>  
+    -- dano 
+    <label left="182.88" top="90" width="50.88" height="31.38" horzTextAlign="center" field="DanoItem20" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+    -- Alcance
+    <label left="195.88" top="128" width="50.88" height="32" horzTextAlign="center" field="Alcance20" fontSize="15" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+    -- Cadencia
+    <label left="317.88" top="49" width="68.88" height="32" horzTextAlign="center" field="Cadencia20" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+    -- Municao
+    <label left="317.88" top="89" width="68.88" height="32" horzTextAlign="center" field="Municao20" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+    -- Classe de Dureza
+    <label left="317.88" top="125" width="48.12" height="32" horzTextAlign="center" field="ClasseDeDureza20" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+    
+</layout>
+<!-- 21 Imagem -->
+<layout name="Arma21" width="480" height="174" left="413" top="1544">
+    <image src="images/Loja.png" left="0" top="0" width="399" height="174"/>
+    -- Preço da arma
+    <label left="22.25" top="20.50" width="107.25" height="37.88" fontSize="22" hint="Preço da Arma" field="Preco21" horzTextAlign="center" fontStyle="bold" fontColor="yellow" fontFamily="kalam" cursor="handPoint" hitTest="true">
+            <event name="onClick">
+			if rrpg.getMesaDe(sheet).meuJogador.isMestre then
+			dialogs.inputQuery("Carteira", "Novo valor:", "",
+			   function (valorPreenchido)
+						  sheet.Preco21 = (sheet.Preco21 or 0 ) + valorPreenchido; 
+			end);
+			end;
+        </event>
+    </label>
+    -- Comprar
+    <image left="41.38" top="61.75" width="67.88" height="30" cursor="handPoint" hitTest="true" hint="Clique aqui para comprar">
+        <event name="onClick">
+                         local Soma = (sheet.Soma or 0) -1200;
+						         if Soma >= 0 then
+                                
+								 sheet.Soma = Soma; sheet.quantidade = (sheet.quantidade or 0) +1; local minhaMesa = rrpg.getMesaDe(sheet); 
+									local chat = minhaMesa.chat; 
+									chat:enviarMensagem("/me [§K12][§B]Comprou uma arma. ");
+                                    showMessage("Você acabou de comprar uma arma, olhe no seu inventario"); self.boxDetalhesDoItem.node.nome = sheet.ItemNome21
+                            else
+                     showMessage("Você não moedas para gastar"); 	
+		end;
+        </event>
+    </image>
+   -- imagem da arma
+   <image left="2.56" top="93.00" width="136.69" height="77.69" style="proportional" center="true" editable="true" field="ImagemArma21"/>
+    -- Nome do Item
+    <label left="197" top="10" width="249.25" height="39" fontSize="22" field="ItemNome21" fontStyle="bold" fontColor="black" fontFamily="kalam"/>
+    -- Iniciativa
+    <label left="207.88" top="51" width="49.88" height="31.38" horzTextAlign="center" field="Iniciativa21" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/>  
+    -- dano 
+    <label left="182.88" top="90" width="50.88" height="31.38" horzTextAlign="center" field="DanoItem21" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+    -- Alcance
+    <label left="195.88" top="128" width="50.88" height="32" horzTextAlign="center" field="Alcance21" fontSize="15" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+    -- Cadencia
+    <label left="317.88" top="49" width="68.88" height="32" horzTextAlign="center" field="Cadencia21" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+    -- Municao
+    <label left="317.88" top="89" width="68.88" height="32" horzTextAlign="center" field="Municao21" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/>
+    -- Classe de Dureza
+    <label left="317.88" top="125" width="48.12" height="32" horzTextAlign="center" field="ClasseDeDureza21" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+     
+</layout>
+<!-- 22 Imagem -->
+<layout name="Arma22" width="480" height="174" left="413" top="1726">
+    <image src="images/Loja.png" left="0" top="0" width="399" height="174"/>
+    -- Preço da arma
+    <label left="22.25" top="20.50" width="107.25" height="37.88" fontSize="22" hint="Preço da Arma" field="Preco22" horzTextAlign="center" fontStyle="bold" fontColor="yellow" fontFamily="kalam" cursor="handPoint" hitTest="true">
+            <event name="onClick">
+			if rrpg.getMesaDe(sheet).meuJogador.isMestre then
+			dialogs.inputQuery("Carteira", "Novo valor:", "",
+			   function (valorPreenchido)
+						  sheet.Preco22 = (sheet.Preco22 or 0 ) + valorPreenchido; 
+			end);
+			end;
+        </event>
+    </label>
+    -- Comprar
+    <image left="41.38" top="61.75" width="67.88" height="30" cursor="handPoint" hitTest="true" hint="Clique aqui para comprar">
+        <event name="onClick">
+                         local Soma = (sheet.Soma or 0) -1200;
+						         if Soma >= 0 then
+                                
+								 sheet.Soma = Soma; sheet.quantidade = (sheet.quantidade or 0) +1; local minhaMesa = rrpg.getMesaDe(sheet); 
+									local chat = minhaMesa.chat; 
+									chat:enviarMensagem("/me [§K12][§B]Comprou uma arma. ");
+                                    showMessage("Você acabou de comprar uma arma, olhe no seu inventario"); self.boxDetalhesDoItem.node.nome = sheet.ItemNome22
+                            else
+                     showMessage("Você não moedas para gastar"); 	
+		end;
+        </event>
+    </image>
+   -- imagem da arma
+   <image left="2.56" top="93.00" width="136.69" height="77.69" style="proportional" center="true" editable="true" field="ImagemArma22"/>
+    -- Nome do Item
+    <label left="197" top="10" width="249.25" height="39" fontSize="22" field="ItemNome22" fontStyle="bold" fontColor="black" fontFamily="kalam"/>
+    -- Iniciativa
+    <label left="207.88" top="51" width="49.88" height="31.38" horzTextAlign="center" field="Iniciativa22" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/>  
+    -- dano 
+    <label left="182.88" top="90" width="50.88" height="31.38" horzTextAlign="center" field="DanoItem22" fontSize="12" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+    -- Alcance
+    <label left="195.88" top="128" width="50.88" height="32" horzTextAlign="center" field="Alcance22" fontSize="15" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+    -- Cadencia
+    <label left="317.88" top="49" width="68.88" height="32" horzTextAlign="center" field="Cadencia22" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+    -- Municao
+    <label left="317.88" top="89" width="68.88" height="32" horzTextAlign="center" field="Municao22" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+    -- Classe de Dureza
+    <label left="317.88" top="125" width="48.12" height="32" horzTextAlign="center" field="ClasseDeDureza22" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+    
+</layout>
+<!-- 23 Imagem -->
+<layout name="Arma23" width="480" height="174" left="413" top="1908">
+    <image src="images/Loja.png" left="0" top="0" width="399" height="174"/>
+    -- Preço da arma
+    <label left="22.25" top="20.50" width="107.25" height="37.88" fontSize="22" hint="Preço da Arma" field="Preco23" horzTextAlign="center" fontStyle="bold" fontColor="yellow" fontFamily="kalam" cursor="handPoint" hitTest="true">
+            <event name="onClick">
+			if rrpg.getMesaDe(sheet).meuJogador.isMestre then
+			dialogs.inputQuery("Carteira", "Novo valor:", "",
+			   function (valorPreenchido)
+						  sheet.Preco23 = (sheet.Preco23 or 0 ) + valorPreenchido; 
+			end);
+			end;
+        </event>
+    </label>
+    -- Comprar
+    <image left="41.38" top="61.75" width="67.88" height="30" cursor="handPoint" hitTest="true" hint="Clique aqui para comprar">
+        <event name="onClick">
+                         local Soma = (sheet.Soma or 0) -1200;
+						         if Soma >= 0 then
+                                
+								 sheet.Soma = Soma; sheet.quantidade = (sheet.quantidade or 0) +1; local minhaMesa = rrpg.getMesaDe(sheet); 
+									local chat = minhaMesa.chat; 
+									chat:enviarMensagem("/me [§K12][§B]Comprou uma arma. ");
+                                    showMessage("Você acabou de comprar uma arma, olhe no seu inventario"); self.boxDetalhesDoItem.node.nome = sheet.ItemNome23
+                            else
+                     showMessage("Você não moedas para gastar"); 	
+		end;
+        </event>
+    </image>
+   -- imagem da arma
+   <image left="2.56" top="93.00" width="136.69" height="77.69" style="proportional" center="true" editable="true" field="ImagemArma23"/>
+    -- Nome do Item
+    <label left="197" top="10" width="249.25" height="39" fontSize="22" field="ItemNome23" fontStyle="bold" fontColor="black" fontFamily="kalam"/>
+    -- Iniciativa
+    <label left="207.88" top="51" width="49.88" height="31.38" horzTextAlign="center" field="Iniciativa23" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/>  
+    -- dano 
+    <label left="182.88" top="90" width="50.88" height="31.38" horzTextAlign="center" field="DanoItem23" fontSize="12" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+    -- Alcance
+    <label left="195.88" top="128" width="50.88" height="32" horzTextAlign="center" field="Alcance23" fontSize="15" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+    -- Cadencia
+    <label left="317.88" top="49" width="68.88" height="32" horzTextAlign="center" field="Cadencia23" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+    -- Municao
+    <label left="317.88" top="89" width="68.88" height="32" horzTextAlign="center" field="Municao23" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/>
+    -- Classe de Dureza
+    <label left="317.88" top="125" width="48.12" height="32" horzTextAlign="center" field="ClasseDeDureza23" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+     
+</layout>
+<!-- 24 Imagem -->
+<layout name="Arma24" width="480" height="174" left="413" top="2090">
+    <image src="images/Loja.png" left="0" top="0" width="399" height="174"/>
+    -- Preço da arma
+    <label left="22.25" top="20.50" width="107.25" height="37.88" fontSize="22" hint="Preço da Arma" field="Preco24" horzTextAlign="center" fontStyle="bold" fontColor="yellow" fontFamily="kalam" cursor="handPoint" hitTest="true">
+            <event name="onClick">
+			if rrpg.getMesaDe(sheet).meuJogador.isMestre then
+			dialogs.inputQuery("Carteira", "Novo valor:", "",
+			   function (valorPreenchido)
+						  sheet.Preco24 = (sheet.Preco24 or 0 ) + valorPreenchido; 
+			end);
+			end;
+        </event>
+    </label>
+    -- Comprar
+    <image left="41.38" top="61.75" width="67.88" height="30" cursor="handPoint" hitTest="true" hint="Clique aqui para comprar">
+        <event name="onClick">
+                         local Soma = (sheet.Soma or 0) -1200;
+						         if Soma >= 0 then
+                                
+								 sheet.Soma = Soma; sheet.quantidade = (sheet.quantidade or 0) +1; local minhaMesa = rrpg.getMesaDe(sheet); 
+									local chat = minhaMesa.chat; 
+									chat:enviarMensagem("/me [§K12][§B]Comprou uma arma. ");
+                                    showMessage("Você acabou de comprar uma arma, olhe no seu inventario"); self.boxDetalhesDoItem.node.nome = sheet.ItemNome24
+                            else
+                     showMessage("Você não moedas para gastar"); 	
+		end;
+        </event>
+    </image>
+   -- imagem da arma
+   <image left="2.56" top="93.00" width="136.69" height="77.69" style="proportional" center="true" editable="true" field="ImagemArma24"/>
+    -- Nome do Item
+    <label left="197" top="10" width="249.25" height="39" fontSize="22" field="ItemNome24" fontStyle="bold" fontColor="black" fontFamily="kalam"/>
+    -- Iniciativa
+    <label left="207.88" top="51" width="49.88" height="31.38" horzTextAlign="center" field="Iniciativa24" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/>  
+    -- dano 
+    <label left="182.88" top="90" width="50.88" height="31.38" horzTextAlign="center" field="DanoItem24" fontSize="12" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+    -- Alcance
+    <label left="195.88" top="128" width="50.88" height="32" horzTextAlign="center" field="Alcance24" fontSize="15" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+    -- Cadencia
+    <label left="317.88" top="49" width="68.88" height="32" horzTextAlign="center" field="Cadencia24" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+    -- Municao
+    <label left="317.88" top="89" width="68.88" height="32" horzTextAlign="center" field="Municao24" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/>
+    -- Classe de Dureza
+    <label left="317.88" top="125" width="48.12" height="32" horzTextAlign="center" field="ClasseDeDureza24" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+     
+</layout>
+</scrollBox>
+</rectangle>   
+</layout>
+
+</group>

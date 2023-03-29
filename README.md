@@ -1,5 +1,6 @@
 # Ficha Dead Zone
 Ficha criada para o sistema Dead Zone. 
+----------------------------------------------
 29 Março de 2023
 Versão 3.0
 - Implementações de mecânica 

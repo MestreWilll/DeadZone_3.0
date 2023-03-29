@@ -1,5 +1,14 @@
 # Ficha Dead Zone
 Ficha criada para o sistema Dead Zone. 
+----------------------------------------------
+29 Março de 2023
+Versão 3.0
+- Implementações de mecânica 
+- Sistema de nível
+- Sistema de Dinheiro
+- Novo Inventario
+- Loja automatizada
+- Sistema de rolagem automatizado de busca de itens
 
 23 de Maio de 2022
 Versão 2.3

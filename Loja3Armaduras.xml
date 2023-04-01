@@ -87,7 +87,7 @@ local minhaMesa = rrpg.getMesaDe(sheet);
           // Penalidade_de_Movimento
           <label left="300" top="127" width="61.88" height="38.88" horzTextAlign="center" field="PenalidadedeMovimento45" fontSize="15" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
           // Penalidade_de_Percepção
-          <label left="336" top="86.12" width="61.88" height="38.88" horzTextAlign="center" field="PenalidadeDePercepccão45" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+          <label left="336" top="86.12" width="61.88" height="38.88" horzTextAlign="center" field="PenalidadeDePercepcao45" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
       </layout>
 <!-- 46 imagem -->
 <layout name="Armadura46" width="480" height="174" left="0" top="270">
@@ -128,7 +128,7 @@ local minhaMesa = rrpg.getMesaDe(sheet);
           // Penalidade_de_Movimento
           <label left="300" top="127" width="61.88" height="38.88" horzTextAlign="center" field="PenalidadedeMovimento46" fontSize="15" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
           // Penalidade_de_Percepção
-          <label left="336" top="86.12" width="61.88" height="38.88" horzTextAlign="center" field="PenalidadeDePercepccão46" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+          <label left="336" top="86.12" width="61.88" height="38.88" horzTextAlign="center" field="PenalidadeDePercepcao46" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
       </layout>
 <!-- 47 imagem -->
 <layout name="Armadura47" width="480" height="174" left="0" top="452">
@@ -169,7 +169,7 @@ local minhaMesa = rrpg.getMesaDe(sheet);
           // Penalidade_de_Movimento
           <label left="300" top="127" width="61.88" height="38.88" horzTextAlign="center" field="PenalidadedeMovimento47" fontSize="15" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
           // Penalidade_de_Percepção
-          <label left="336" top="86.12" width="61.88" height="38.88" horzTextAlign="center" field="PenalidadeDePercepccão47" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+          <label left="336" top="86.12" width="61.88" height="38.88" horzTextAlign="center" field="PenalidadeDePercepcao47" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
       </layout>
 <!-- 48 imagem -->
 <layout name="Armadura48" width="480" height="174" left="0" top="634">
@@ -210,7 +210,7 @@ local minhaMesa = rrpg.getMesaDe(sheet);
           // Penalidade_de_Movimento
           <label left="300" top="127" width="61.88" height="38.88" horzTextAlign="center" field="PenalidadedeMovimento48" fontSize="15" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
           // Penalidade_de_Percepção
-          <label left="336" top="86.12" width="61.88" height="38.88" horzTextAlign="center" field="PenalidadeDePercepccão48" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+          <label left="336" top="86.12" width="61.88" height="38.88" horzTextAlign="center" field="PenalidadeDePercepcao48" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
       </layout>
 <!-- 49 imagem -->
 <layout name="Armadura49" width="480" height="174" left="0" top="816">
@@ -251,7 +251,7 @@ local minhaMesa = rrpg.getMesaDe(sheet);
           // Penalidade_de_Movimento
           <label left="300" top="127" width="61.88" height="38.88" horzTextAlign="center" field="PenalidadedeMovimento49" fontSize="15" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
           // Penalidade_de_Percepção
-          <label left="336" top="86.12" width="61.88" height="38.88" horzTextAlign="center" field="PenalidadeDePercepccão49" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+          <label left="336" top="86.12" width="61.88" height="38.88" horzTextAlign="center" field="PenalidadeDePercepcao49" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
       </layout>
 <!-- 50 imagem -->
 <layout name="Armadura50" width="480" height="174" left="0" top="998">
@@ -292,7 +292,7 @@ local minhaMesa = rrpg.getMesaDe(sheet);
           // Penalidade_de_Movimento
           <label left="300" top="127" width="61.88" height="38.88" horzTextAlign="center" field="PenalidadedeMovimento50" fontSize="15" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
           // Penalidade_de_Percepção
-          <label left="336" top="86.12" width="61.88" height="38.88" horzTextAlign="center" field="PenalidadeDePercepccão50" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+          <label left="336" top="86.12" width="61.88" height="38.88" horzTextAlign="center" field="PenalidadeDePercepcao50" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
       </layout>
 <!-- 51 imagem -->
 <layout name="Armadura51" width="480" height="174" left="413" top="88">
@@ -333,7 +333,7 @@ local minhaMesa = rrpg.getMesaDe(sheet);
           // Penalidade_de_Movimento
           <label left="300" top="127" width="61.88" height="38.88" horzTextAlign="center" field="PenalidadedeMovimento51" fontSize="15" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
           // Penalidade_de_Percepção
-          <label left="336" top="86.12" width="61.88" height="38.88" horzTextAlign="center" field="PenalidadeDePercepccão51" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+          <label left="336" top="86.12" width="61.88" height="38.88" horzTextAlign="center" field="PenalidadeDePercepcao51" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
       </layout>
 <!-- 52 imagem -->
 <layout name="Armadura52" width="480" height="174" left="413" top="270">
@@ -374,7 +374,7 @@ local minhaMesa = rrpg.getMesaDe(sheet);
           // Penalidade_de_Movimento
           <label left="300" top="127" width="61.88" height="38.88" horzTextAlign="center" field="PenalidadedeMovimento52" fontSize="15" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
           // Penalidade_de_Percepção
-          <label left="336" top="86.12" width="61.88" height="38.88" horzTextAlign="center" field="PenalidadeDePercepccão52" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+          <label left="336" top="86.12" width="61.88" height="38.88" horzTextAlign="center" field="PenalidadeDePercepcao52" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
       </layout>
 <!-- 53 imagem -->
 <layout name="Armadura53" width="480" height="174" left="413" top="634">
@@ -456,7 +456,7 @@ local minhaMesa = rrpg.getMesaDe(sheet);
           // Penalidade_de_Movimento
           <label left="300" top="127" width="61.88" height="38.88" horzTextAlign="center" field="PenalidadedeMovimento54" fontSize="15" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
           // Penalidade_de_Percepção
-          <label left="336" top="86.12" width="61.88" height="38.88" horzTextAlign="center" field="PenalidadeDePercepccão54" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+          <label left="336" top="86.12" width="61.88" height="38.88" horzTextAlign="center" field="PenalidadeDePercepcao54" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
       </layout>
 <!-- 55 imagem -->
 <layout name="Armadura55" width="480" height="174" left="413" top="816">
@@ -497,7 +497,7 @@ local minhaMesa = rrpg.getMesaDe(sheet);
           // Penalidade_de_Movimento
           <label left="300" top="127" width="61.88" height="38.88" horzTextAlign="center" field="PenalidadedeMovimento55" fontSize="15" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
           // Penalidade_de_Percepção
-          <label left="336" top="86.12" width="61.88" height="38.88" horzTextAlign="center" field="PenalidadeDePercepccão55" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+          <label left="336" top="86.12" width="61.88" height="38.88" horzTextAlign="center" field="PenalidadeDePercepcao55" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
       </layout>
 <!-- 56 imagem -->
 <layout name="Armadura56" width="480" height="174" left="413" top="998">
@@ -538,7 +538,7 @@ local minhaMesa = rrpg.getMesaDe(sheet);
           // Penalidade_de_Movimento
           <label left="300" top="127" width="61.88" height="38.88" horzTextAlign="center" field="PenalidadedeMovimento56" fontSize="15" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
           // Penalidade_de_Percepção
-          <label left="336" top="86.12" width="61.88" height="38.88" horzTextAlign="center" field="PenalidadeDePercepccão56" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+          <label left="336" top="86.12" width="61.88" height="38.88" horzTextAlign="center" field="PenalidadeDePercepcao56" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
       </layout>
     </scrollBox>
 </rectangle>

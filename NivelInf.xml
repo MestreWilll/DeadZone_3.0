@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <group>
     
-    <label name="Nivel" field="Nivel" left="1130" top="90" fontSize="26" fontStyle="bold" fontColor="yellow">
+    <label name="Nivel" field="Nivel" left="1120" top="85" fontSize="26" fontFamily="arial" fontStyle="bold" fontColor="yellow">
         <dataLink field="Nivel">
             <event name="onChange">
 if sheet.Nivel >= 1 then
@@ -319,78 +319,77 @@ sheet.Iniciativa42 = "-4"
 sheet.Golpear42 = "+10"
 sheet.Aparar42 = "-1"
 sheet.CD42 = "-4"
-sheet.ItemNome45 = 'Jaqueta de Couro/Anti-Perfurante'
+sheet.ItemNome45 = 'Jaqueta de Couro - Anti-Perfurante'
 sheet.AbsorverAparar45 = '+3/+3'
-sheet.CD45 = '1'
-sheet.PenalidadedeMovimento45 = '-1'
+sheet.CD45 = 1
+sheet.PenalidadedeMovimento45 = '???'
 sheet.PenalidadeDePercepcao45 = '???'
 
 sheet.ItemNome46 = 'Armadura Esportiva'
 sheet.AbsorverAparar46 = '+6/+6'
-sheet.CD46 = '1'
+sheet.CD46 = 1
 sheet.PenalidadedeMovimento46 = '-1'
 sheet.PenalidadeDePercepcao46 = '???'
 
 sheet.ItemNome47 = 'Armadura de Pneus'
 sheet.AbsorverAparar47 = '+7/+7'
-sheet.CD47 = '1'
+sheet.CD47 = 1
 sheet.PenalidadedeMovimento47 = '-2'
 sheet.PenalidadeDePercepcao47 = '???'
 
-sheet.ItemNome48 = 'Armadura Acolchoada/Motim'
+sheet.ItemNome48 = 'Armadura Acolchoada / Motim'
 sheet.AbsorverAparar48 = '+7/+7'
-sheet.CD48 = '2'
+sheet.CD48 = 2
 sheet.PenalidadedeMovimento48 = '-2'
 sheet.PenalidadeDePercepcao48 = '???'
 
 sheet.ItemNome49 = 'Chapeamento de Aço Ruim'
 sheet.AbsorverAparar49 = '+5/+5'
-sheet.CD49 = '2'
+sheet.CD49 = 2
 sheet.PenalidadedeMovimento49 = '-2'
 sheet.PenalidadeDePercepcao49 = '???'
 
 sheet.ItemNome50 = 'Bom Chapeamento de Aço'
 sheet.AbsorverAparar50 = '+6/+6'
-sheet.CD50 = '3'
+sheet.CD50 = 3
 sheet.PenalidadedeMovimento50 = '-3'
 sheet.PenalidadeDePercepcao50 = '???'
 
 sheet.ItemNome51 = 'Armadura Balística Leve'
 sheet.AbsorverAparar51 = '+5/+5'
-sheet.CD51 = '2'
-sheet.PenalidadedeMovimento51 = '-1'
+sheet.CD51 = 2
+sheet.PenalidadedeMovimento51 = '???'
 sheet.PenalidadeDePercepcao51 = '???'
 
 sheet.ItemNome52 = 'Armadura Balística Média'
 sheet.AbsorverAparar52 = '+7/+7'
-sheet.CD52 = '2'
+sheet.CD52 = 2
 sheet.PenalidadedeMovimento52 = '-1'
 sheet.PenalidadeDePercepcao52 = '???'
 
 sheet.ItemNome53 = 'Armadura Balística Pesada'
 sheet.AbsorverAparar53 = '+6/+6'
-sheet.CD53 = '3'
+sheet.CD53 = 3
 sheet.PenalidadedeMovimento53 = '-2'
 sheet.PenalidadeDePercepcao53 = '???'
 
 sheet.ItemNome54 = 'Excelente Armadura Balística'
 sheet.AbsorverAparar54 = '+7/+7'
-sheet.CD54 = '3'
+sheet.CD54 = 3
 sheet.PenalidadedeMovimento54 = '-2'
 sheet.PenalidadeDePercepcao54 = '???'
 
 sheet.ItemNome55 = 'Escudo Anti-Motim'
 sheet.AbsorverAparar55 = '+5/+5ou+2/+2'
-sheet.CD55 = '2'
-sheet.PenalidadedeMovimento55 = '-2'
+sheet.CD55 = 2
+sheet.PenalidadedeMovimento55 = '???'
 sheet.PenalidadeDePercepcao55 = '???'
 
 sheet.ItemNome56 = 'Escudo Balístico'
 sheet.AbsorverAparar56 = '+6/+6ou+1/+1'
-sheet.CD56 = '3'
-sheet.PenalidadedeMovimento56 = '-2'
-sheet.PenalidadeDePercepcao56 = '???'
-
+sheet.CD56 = 3
+sheet.PenalidadedeMovimento56 = '-1'
+sheet.PenalidadeDePercepcao56 = '-2'
                 end;
             </event>
         </dataLink>

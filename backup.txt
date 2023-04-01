@@ -2460,7 +2460,8 @@ Escudo Anti-Motim
 ???
 ???
 
-Escudo B alístico
+Escudo Balístico
 +6/+6ou+1/+1
 3
+-1
 -2

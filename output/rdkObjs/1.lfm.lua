@@ -8770,26 +8770,52 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.image77:setParent(obj.layout151);
     obj.image77:setSRC("images/NivelDoPlayer.png");
     obj.image77:setLeft(1097);
-    obj.image77:setTop(42.5);
-    obj.image77:setWidth(90);
-    obj.image77:setHeight(90);
+    obj.image77:setTop(55);
+    obj.image77:setWidth(70);
+    obj.image77:setHeight(70);
     obj.image77:setCursor("handPoint");
     obj.image77:setHitTest(true);
     obj.image77:setName("image77");
+
+    obj.niveldoPlayer = GUI.fromHandle(_obj_newObject("button"));
+    obj.niveldoPlayer:setParent(obj.layout151);
+    obj.niveldoPlayer:setName("niveldoPlayer");
+    obj.niveldoPlayer:setText("+/-");
+    obj.niveldoPlayer:setFontFamily("kalam");
+    obj.niveldoPlayer:setLeft(1163);
+    obj.niveldoPlayer:setTop(84);
+    obj.niveldoPlayer:setWidth(30);
+    obj.niveldoPlayer:setHeight(30);
+    obj.niveldoPlayer:setFontColor("black");
+    lfm_setPropAsString(obj.niveldoPlayer, "fontStyle",  "bold");
+    obj.niveldoPlayer:setFontSize(15);
+
+    obj.nivelresetPlayer = GUI.fromHandle(_obj_newObject("button"));
+    obj.nivelresetPlayer:setParent(obj.layout151);
+    obj.nivelresetPlayer:setName("nivelresetPlayer");
+    obj.nivelresetPlayer:setText("R");
+    obj.nivelresetPlayer:setFontFamily("kalam");
+    obj.nivelresetPlayer:setLeft(1195);
+    obj.nivelresetPlayer:setTop(84);
+    obj.nivelresetPlayer:setWidth(30);
+    obj.nivelresetPlayer:setHeight(30);
+    obj.nivelresetPlayer:setFontColor("black");
+    lfm_setPropAsString(obj.nivelresetPlayer, "fontStyle",  "bold");
+    obj.nivelresetPlayer:setFontSize(15);
 
     obj.Nivel = GUI.fromHandle(_obj_newObject("label"));
     obj.Nivel:setParent(obj.layout151);
     obj.Nivel:setName("Nivel");
     obj.Nivel:setField("Nivel");
-    obj.Nivel:setLeft(1130);
-    obj.Nivel:setTop(90);
+    obj.Nivel:setLeft(1120);
+    obj.Nivel:setTop(85);
     obj.Nivel:setFontSize(26);
+    obj.Nivel:setFontFamily("arial");
     lfm_setPropAsString(obj.Nivel, "fontStyle",  "bold");
     obj.Nivel:setFontColor("yellow");
     obj.Nivel:setTextTrimming("none");
     obj.Nivel:setWordWrap(false);
     obj.Nivel:setAutoSize(true);
-    obj.Nivel:setFontFamily("kalam");
 
     obj.dataLink17 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink17:setParent(obj.Nivel);
@@ -9647,7 +9673,40 @@ local function constructNew_frmDZ_Ficha1_svg()
                         end;
         end, obj);
 
-    obj._e_event113 = obj.dataLink17:addEventListener("onChange",
+    obj._e_event113 = obj.niveldoPlayer:addEventListener("onClick",
+        function (_)
+            if Firecast.getMesaDe(sheet).meuJogador.isMestre then
+                                        local Nivel = (sheet.Nivel or 0) +1;
+                                        if Nivel >= 0 then
+                                        sheet.Nivel = Nivel;
+                                                     else 
+                                            showMessage("OPA! Não pode passar de 0");   
+                                         end;		
+                                         end;
+        end, obj);
+
+    obj._e_event114 = obj.niveldoPlayer:addEventListener("onMenu",
+        function (_, x, y)
+            if Firecast.getMesaDe(sheet).meuJogador.isMestre then
+                                        local Nivel = (sheet.Nivel or 0) -1;
+                                        if Nivel >= 0 then
+                                        sheet.Nivel = Nivel;
+                                                     else 
+                                            showMessage("OPA! Não pode passar de 0");   
+                                         end;		
+                                         end;
+        end, obj);
+
+    obj._e_event115 = obj.nivelresetPlayer:addEventListener("onDblClick",
+        function (_)
+            if Firecast.getMesaDe(sheet).meuJogador.isMestre then
+                                        sheet.Nivel = 1
+                                        else
+                                        showMessage("OPA! Você não tem permissões aqui");
+                                        end;
+        end, obj);
+
+    obj._e_event116 = obj.dataLink17:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet.Nivel >= 1 then
             sheet.ItemNome = 'Arco'
@@ -9964,82 +10023,84 @@ local function constructNew_frmDZ_Ficha1_svg()
             sheet.Golpear42 = "+10"
             sheet.Aparar42 = "-1"
             sheet.CD42 = "-4"
-            sheet.ItemNome45 = 'Jaqueta de Couro/Anti-Perfurante'
+            sheet.ItemNome45 = 'Jaqueta de Couro - Anti-Perfurante'
             sheet.AbsorverAparar45 = '+3/+3'
-            sheet.CD45 = '1'
-            sheet.PenalidadedeMovimento45 = '-1'
+            sheet.CD45 = 1
+            sheet.PenalidadedeMovimento45 = '???'
             sheet.PenalidadeDePercepcao45 = '???'
             
             sheet.ItemNome46 = 'Armadura Esportiva'
             sheet.AbsorverAparar46 = '+6/+6'
-            sheet.CD46 = '1'
+            sheet.CD46 = 1
             sheet.PenalidadedeMovimento46 = '-1'
             sheet.PenalidadeDePercepcao46 = '???'
             
             sheet.ItemNome47 = 'Armadura de Pneus'
             sheet.AbsorverAparar47 = '+7/+7'
-            sheet.CD47 = '1'
+            sheet.CD47 = 1
             sheet.PenalidadedeMovimento47 = '-2'
             sheet.PenalidadeDePercepcao47 = '???'
             
-            sheet.ItemNome48 = 'Armadura Acolchoada/Motim'
+            sheet.ItemNome48 = 'Armadura Acolchoada / Motim'
             sheet.AbsorverAparar48 = '+7/+7'
-            sheet.CD48 = '2'
+            sheet.CD48 = 2
             sheet.PenalidadedeMovimento48 = '-2'
             sheet.PenalidadeDePercepcao48 = '???'
             
             sheet.ItemNome49 = 'Chapeamento de Aço Ruim'
             sheet.AbsorverAparar49 = '+5/+5'
-            sheet.CD49 = '2'
+            sheet.CD49 = 2
             sheet.PenalidadedeMovimento49 = '-2'
             sheet.PenalidadeDePercepcao49 = '???'
             
             sheet.ItemNome50 = 'Bom Chapeamento de Aço'
             sheet.AbsorverAparar50 = '+6/+6'
-            sheet.CD50 = '3'
+            sheet.CD50 = 3
             sheet.PenalidadedeMovimento50 = '-3'
             sheet.PenalidadeDePercepcao50 = '???'
             
             sheet.ItemNome51 = 'Armadura Balística Leve'
             sheet.AbsorverAparar51 = '+5/+5'
-            sheet.CD51 = '2'
-            sheet.PenalidadedeMovimento51 = '-1'
+            sheet.CD51 = 2
+            sheet.PenalidadedeMovimento51 = '???'
             sheet.PenalidadeDePercepcao51 = '???'
             
             sheet.ItemNome52 = 'Armadura Balística Média'
             sheet.AbsorverAparar52 = '+7/+7'
-            sheet.CD52 = '2'
+            sheet.CD52 = 2
             sheet.PenalidadedeMovimento52 = '-1'
             sheet.PenalidadeDePercepcao52 = '???'
             
             sheet.ItemNome53 = 'Armadura Balística Pesada'
             sheet.AbsorverAparar53 = '+6/+6'
-            sheet.CD53 = '3'
+            sheet.CD53 = 3
             sheet.PenalidadedeMovimento53 = '-2'
             sheet.PenalidadeDePercepcao53 = '???'
             
             sheet.ItemNome54 = 'Excelente Armadura Balística'
             sheet.AbsorverAparar54 = '+7/+7'
-            sheet.CD54 = '3'
+            sheet.CD54 = 3
             sheet.PenalidadedeMovimento54 = '-2'
             sheet.PenalidadeDePercepcao54 = '???'
             
             sheet.ItemNome55 = 'Escudo Anti-Motim'
             sheet.AbsorverAparar55 = '+5/+5ou+2/+2'
-            sheet.CD55 = '2'
-            sheet.PenalidadedeMovimento55 = '-2'
+            sheet.CD55 = 2
+            sheet.PenalidadedeMovimento55 = '???'
             sheet.PenalidadeDePercepcao55 = '???'
             
             sheet.ItemNome56 = 'Escudo Balístico'
             sheet.AbsorverAparar56 = '+6/+6ou+1/+1'
-            sheet.CD56 = '3'
-            sheet.PenalidadedeMovimento56 = '-2'
-            sheet.PenalidadeDePercepcao56 = '???'
-            
+            sheet.CD56 = 3
+            sheet.PenalidadedeMovimento56 = '-1'
+            sheet.PenalidadeDePercepcao56 = '-2'
                             end;
         end, obj);
 
     function obj:_releaseEvents()
+        __o_rrpgObjs.removeEventListenerById(self._e_event116);
+        __o_rrpgObjs.removeEventListenerById(self._e_event115);
+        __o_rrpgObjs.removeEventListenerById(self._e_event114);
         __o_rrpgObjs.removeEventListenerById(self._e_event113);
         __o_rrpgObjs.removeEventListenerById(self._e_event112);
         __o_rrpgObjs.removeEventListenerById(self._e_event111);
@@ -10190,6 +10251,7 @@ local function constructNew_frmDZ_Ficha1_svg()
         if self.layout17 ~= nil then self.layout17:destroy(); self.layout17 = nil; end;
         if self.layout94 ~= nil then self.layout94:destroy(); self.layout94 = nil; end;
         if self.label45 ~= nil then self.label45:destroy(); self.label45 = nil; end;
+        if self.nivelresetPlayer ~= nil then self.nivelresetPlayer:destroy(); self.nivelresetPlayer = nil; end;
         if self.layout47 ~= nil then self.layout47:destroy(); self.layout47 = nil; end;
         if self.rectangle16 ~= nil then self.rectangle16:destroy(); self.rectangle16 = nil; end;
         if self.button16 ~= nil then self.button16:destroy(); self.button16 = nil; end;
@@ -10689,6 +10751,7 @@ local function constructNew_frmDZ_Ficha1_svg()
         if self.label54 ~= nil then self.label54:destroy(); self.label54 = nil; end;
         if self.edit206 ~= nil then self.edit206:destroy(); self.edit206 = nil; end;
         if self.scrollBox3 ~= nil then self.scrollBox3:destroy(); self.scrollBox3 = nil; end;
+        if self.niveldoPlayer ~= nil then self.niveldoPlayer:destroy(); self.niveldoPlayer = nil; end;
         if self.textEditor1 ~= nil then self.textEditor1:destroy(); self.textEditor1 = nil; end;
         if self.edit137 ~= nil then self.edit137:destroy(); self.edit137 = nil; end;
         if self.edit146 ~= nil then self.edit146:destroy(); self.edit146 = nil; end;

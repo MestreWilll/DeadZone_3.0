@@ -1640,7 +1640,7 @@ self.labSoma3.text = '$' .. format_thousand(sheet.soma);
                 </label>
  @########## ---- Area de nivel ---- ###########@
                 <layout align="client">
-                    <image src="images/NivelDoPlayer.png" left="1097" top="42.5" width="90" height="90" cursor="handPoint" hitTest="true">
+                    <image src="images/NivelDoPlayer.png" left="1097" top="55" width="70" height="70" cursor="handPoint" hitTest="true">
                         <event name="onClick">
             if rrpg.getMesaDe(sheet).meuJogador.isMestre then
             dialogs.inputQuery("Carteira", "Novo valor:", "",
@@ -1650,6 +1650,37 @@ self.labSoma3.text = '$' .. format_thousand(sheet.soma);
             end;        
         </event>
                     </image>
+                    <button name="niveldoPlayer" text="+/-" fontFamily="kalam" left="1163" top="84" width="30" height="30" fontColor="black" fontStyle="bold" fontSize="15">
+                        <event name="onClick">
+                            if Firecast.getMesaDe(sheet).meuJogador.isMestre then
+                            local Nivel = (sheet.Nivel or 0) +1;
+                            if Nivel >= 0 then
+                            sheet.Nivel = Nivel;
+                                         else 
+                                showMessage("OPA! Não pode passar de 0");   
+                             end;		
+                             end;
+                        </event>
+                        <event name="onMenu">
+                            if Firecast.getMesaDe(sheet).meuJogador.isMestre then
+                            local Nivel = (sheet.Nivel or 0) -1;
+                            if Nivel >= 0 then
+                            sheet.Nivel = Nivel;
+                                         else 
+                                showMessage("OPA! Não pode passar de 0");   
+                             end;		
+                             end;
+                        </event>
+                    </button> 
+                    <button name="nivelresetPlayer" text="R" fontFamily="kalam" left="1195" top="84" width="30" height="30" fontColor="black" fontStyle="bold" fontSize="15">
+                        <event name="onDblClick">
+                            if Firecast.getMesaDe(sheet).meuJogador.isMestre then
+                            sheet.Nivel = 1
+                            else
+                            showMessage("OPA! Você não tem permissões aqui");
+                            end;
+                        </event>
+                    </button> 
                     <import file="NivelInf.xml"/>
                    
                 </layout>

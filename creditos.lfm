@@ -15,19 +15,18 @@
 			<label left="0" top="105" width="200" height="20" text="Allan (allan_fns)" horzTextAlign="center"/>
 		</layout>
 		
-		<label left="560" top="480" width="210" height="20" text="Sua Versão: 2.3.1" horzTextAlign="center" />
+		<label left="560" top="480" width="210" height="20" text="Sua Versão: 3.0" horzTextAlign="center" />
 			
-		<button left="555" top="500" width="100" text="Change Log" hint="Abre as notas de atualização da ficha" onClick="GUI.openInBrowser('https://github.com/rrpgfirecast/firecast/blob/master/Plugins/Sheets/Dead%20Zone%202.0/README.md')" />
-		<button left="667" top="500" width="100" text="Atualizar" hint="Baixa a versão mais recente da ficha" onClick="GUI.openInBrowser('https://github.com/ooicram/DeadZoneRPG/raw/master/Plugins/Sheets/Dead%20Zone%202.0/output/Dead%20Zone%202.0.rpk')" />
+		<button left="555" top="500" width="100" text="Change Log" hint="Abre as notas de atualização da ficha" onClick="GUI.openInBrowser('https://github.com/MestreWilll/DeadZone_3.0#readme')" />
+		<button left="667" top="500" width="100" text="Atualizar" hint="Baixa a versão mais recente da ficha" onClick="GUI.openInBrowser('https://raw.githack.com/MestreWilll/DeadZone_3.0/master/output/Dead_Zone_3.0.rpk')" />
            
 		<!-- Creditos implementações de MestreWill -->
 		<layout left="680" top="290" width="200" height="160">
 			<rectangle align="client" color="black" xradius="5" yradius="15" cornerType="round"/>
 			<label left="0" top="10" width="200" height="20" text="Mecânicas e implementações" horzTextAlign="center"/>
 			<label left="0" top="35" width="200" height="20" fontSize="11.5" text="Por MestreWill nick: (WillXOkumura)" horzTextAlign="center"/>
-			<button left="50" top="60" width="100" height="20" text="Atualizar" hint="Baixa a versão com mecânicas" fontColor="yellow" onClick="GUI.openInBrowser('https://dl.dropboxusercontent.com/s/znq35lnlfxt8c7k/Dead_Zone_3.0.rpk?dl=0')" />
+			<button left="50" top="60" width="100" height="20" text="Att abaixo" hint="Baixa a versão com mecânicas" fontColor="yellow" />
 			<button left="50" top="90" width="100" height="20" text="Meu GitHub" hint="Baixa a versão com mecânicas" fontStyle="bold" fontColor="red" onClick="GUI.openInBrowser('https://github.com/MestreWilll')" />
-			<label left="0" top="120" width="200" height="20" fontSize="15" text="Atualização provisória" horzTextAlign="center"/>
 		</layout> 
 	    	
 	</scrollBox>

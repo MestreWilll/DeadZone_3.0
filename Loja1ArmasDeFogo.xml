@@ -560,21 +560,38 @@ sheet.ItemNome23 = 'Submetralhadora'
 			end;
         </event>
     </label>
-    -- Comprar
-    <image left="41.38" top="61.75" width="67.88" height="30" cursor="handPoint" hitTest="true" hint="Clique aqui para comprar">
-        <event name="onClick">
-                         local Soma = (sheet.Soma or 0) -1200;
-						         if Soma >= 0 then
-                                
-								    local minhaMesa = rrpg.getMesaDe(sheet); 
-									local chat = minhaMesa.chat; 
-									chat:enviarMensagem("/me [§K12][§B]Comprou uma arma. ");
-                                    showMessage("Você acabou de comprar uma arma, olhe no seu inventario");
-                            else
-                     showMessage("Você não mais dinheiro"); 	
-		end;
-        </event>
-    </image>
+    <script>
+        function addItemToInventory(itemName)
+            -- Crie um novo node com as informações do item
+            local newNode = NDB.newChild(sheet, "nome")
+            newNode.nome = itemName
+    
+            -- Adicione o novo node à RecordList
+            self.rclEquip:append(newNode)
+    
+            -- Atualize a seleção e a visibilidade da caixa de detalhes
+            self.rclEquip.selectedNode = newNode
+            self.boxDetalhesDoItem.node = newNode
+            self.boxDetalhesDoItem.visible = true
+        end
+    </script>
+    
+<!-- Comprar -->
+<image left="41.38" top="61.75" width="67.88" height="30" cursor="handPoint" hitTest="true" hint="Clique aqui para comprar">
+    <event name="onClick">
+        local Soma = (sheet.Soma or 0) - 1200
+        if Soma >= 0 then
+            sheet.nome = self.boxDetalhesDoItem.node.nome
+            local minhaMesa = rrpg.getMesaDe(sheet)
+            addItemToInventory(sheet.nome) -- Adicione esta linha para adicionar o item ao inventário
+            showMessage("Você acabou de comprar uma arma, olhe no seu inventario")
+        else
+            showMessage("Você não mais dinheiro")
+        end
+    </event>
+</image>
+
+    
    -- imagem da arma
    <image left="2.56" top="93.00" width="136.69" height="77.69" style="proportional" center="true" editable="true" field="ImagemArma"/>
     -- Nome do Item

@@ -77,7 +77,6 @@ end;
         <!-- recordList, representando a lista -->
         <recordList name="rclEquip" field="nome" templateForm="frmEquip"
                                 align="client" selectable="true">                              
-
                 <event name="onSelect">
                   local node = self.rclEquip.selectedNode;  
                          self.boxDetalhesDoItem.node = node;      

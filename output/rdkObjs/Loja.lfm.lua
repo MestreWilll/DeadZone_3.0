@@ -195,6 +195,23 @@ local function constructNew_frmLoja_svg()
     obj.label1:setHitTest(true);
     obj.label1:setName("label1");
 
+
+        function addItemToInventory(itemName)
+            -- Crie um novo node com as informações do item
+            local newNode = NDB.newChild(sheet, "nome")
+            newNode.nome = itemName
+    
+            -- Adicione o novo node à RecordList
+            self.rclEquip:append(newNode)
+    
+            -- Atualize a seleção e a visibilidade da caixa de detalhes
+            self.rclEquip.selectedNode = newNode
+            self.boxDetalhesDoItem.node = newNode
+            self.boxDetalhesDoItem.visible = true
+        end
+    
+
+
     obj.image9 = GUI.fromHandle(_obj_newObject("image"));
     obj.image9:setParent(obj.Arma1);
     obj.image9:setLeft(41.38);
@@ -8608,16 +8625,15 @@ local function constructNew_frmLoja_svg()
 
     obj._e_event9 = obj.image9:addEventListener("onClick",
         function (_)
-            local Soma = (sheet.Soma or 0) -1200;
-            						         if Soma >= 0 then
-                                            
-            								    local minhaMesa = rrpg.getMesaDe(sheet); 
-            									local chat = minhaMesa.chat; 
-            									chat:enviarMensagem("/me [§K12][§B]Comprou uma arma. ");
-                                                showMessage("Você acabou de comprar uma arma, olhe no seu inventario");
-                                        else
-                                 showMessage("Você não mais dinheiro"); 	
-            		end;
+            local Soma = (sheet.Soma or 0) - 1200
+                    if Soma >= 0 then
+                        sheet.nome = self.boxDetalhesDoItem.node.nome
+                        local minhaMesa = rrpg.getMesaDe(sheet)
+                        addItemToInventory(sheet.nome) -- Adicione esta linha para adicionar o item ao inventário
+                        showMessage("Você acabou de comprar uma arma, olhe no seu inventario")
+                    else
+                        showMessage("Você não mais dinheiro")
+                    end
         end, obj);
 
     obj._e_event10 = obj.label9:addEventListener("onClick",

@@ -9291,6 +9291,23 @@ local function constructNew_frmDZ_Ficha()
     obj.label85:setHitTest(true);
     obj.label85:setName("label85");
 
+
+        function addItemToInventory(itemName)
+            -- Crie um novo node com as informações do item
+            local newNode = NDB.newChild(sheet, "nome")
+            newNode.nome = itemName
+    
+            -- Adicione o novo node à RecordList
+            self.rclEquip:append(newNode)
+    
+            -- Atualize a seleção e a visibilidade da caixa de detalhes
+            self.rclEquip.selectedNode = newNode
+            self.boxDetalhesDoItem.node = newNode
+            self.boxDetalhesDoItem.visible = true
+        end
+    
+
+
     obj.image88 = GUI.fromHandle(_obj_newObject("image"));
     obj.image88:setParent(obj.Arma1);
     obj.image88:setLeft(41.38);
@@ -17274,7 +17291,7 @@ local function constructNew_frmDZ_Ficha()
     obj.label481:setTop(480);
     obj.label481:setWidth(210);
     obj.label481:setHeight(20);
-    obj.label481:setText("Sua Versão: 2.3.1");
+    obj.label481:setText("Sua Versão: 3.0");
     obj.label481:setHorzTextAlign("center");
     obj.label481:setName("label481");
 
@@ -17340,7 +17357,7 @@ local function constructNew_frmDZ_Ficha()
     obj.button89:setTop(60);
     obj.button89:setWidth(100);
     obj.button89:setHeight(20);
-    obj.button89:setText("Atualizar");
+    obj.button89:setText("Att abaixo");
     obj.button89:setHint("Baixa a versão com mecânicas");
     obj.button89:setFontColor("yellow");
     obj.button89:setName("button89");
@@ -17356,17 +17373,6 @@ local function constructNew_frmDZ_Ficha()
     lfm_setPropAsString(obj.button90, "fontStyle",  "bold");
     obj.button90:setFontColor("red");
     obj.button90:setName("button90");
-
-    obj.label484 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label484:setParent(obj.layout158);
-    obj.label484:setLeft(0);
-    obj.label484:setTop(120);
-    obj.label484:setWidth(200);
-    obj.label484:setHeight(20);
-    obj.label484:setFontSize(15);
-    obj.label484:setText("Atualização provisória");
-    obj.label484:setHorzTextAlign("center");
-    obj.label484:setName("label484");
 
     obj._e_event0 = obj.dataLink1:addEventListener("onChange",
         function (_, field, oldValue, newValue)
@@ -19196,16 +19202,15 @@ local function constructNew_frmDZ_Ficha()
 
     obj._e_event127 = obj.image88:addEventListener("onClick",
         function (_)
-            local Soma = (sheet.Soma or 0) -1200;
-            						         if Soma >= 0 then
-                                            
-            								    local minhaMesa = rrpg.getMesaDe(sheet); 
-            									local chat = minhaMesa.chat; 
-            									chat:enviarMensagem("/me [§K12][§B]Comprou uma arma. ");
-                                                showMessage("Você acabou de comprar uma arma, olhe no seu inventario");
-                                        else
-                                 showMessage("Você não mais dinheiro"); 	
-            		end;
+            local Soma = (sheet.Soma or 0) - 1200
+                    if Soma >= 0 then
+                        sheet.nome = self.boxDetalhesDoItem.node.nome
+                        local minhaMesa = rrpg.getMesaDe(sheet)
+                        addItemToInventory(sheet.nome) -- Adicione esta linha para adicionar o item ao inventário
+                        showMessage("Você acabou de comprar uma arma, olhe no seu inventario")
+                    else
+                        showMessage("Você não mais dinheiro")
+                    end
         end, obj);
 
     obj._e_event128 = obj.label93:addEventListener("onClick",
@@ -20662,26 +20667,20 @@ local function constructNew_frmDZ_Ficha()
 
     obj._e_event242 = obj.button87:addEventListener("onClick",
         function (_)
-            GUI.openInBrowser('https://github.com/rrpgfirecast/firecast/blob/master/Plugins/Sheets/Dead%20Zone%202.0/README.md')
+            GUI.openInBrowser('https://github.com/MestreWilll/DeadZone_3.0#readme')
         end, obj);
 
     obj._e_event243 = obj.button88:addEventListener("onClick",
         function (_)
-            GUI.openInBrowser('https://github.com/ooicram/DeadZoneRPG/raw/master/Plugins/Sheets/Dead%20Zone%202.0/output/Dead%20Zone%202.0.rpk')
+            GUI.openInBrowser('https://raw.githack.com/MestreWilll/DeadZone_3.0/master/output/Dead_Zone_3.0.rpk')
         end, obj);
 
-    obj._e_event244 = obj.button89:addEventListener("onClick",
-        function (_)
-            GUI.openInBrowser('https://dl.dropboxusercontent.com/s/znq35lnlfxt8c7k/Dead_Zone_3.0.rpk?dl=0')
-        end, obj);
-
-    obj._e_event245 = obj.button90:addEventListener("onClick",
+    obj._e_event244 = obj.button90:addEventListener("onClick",
         function (_)
             GUI.openInBrowser('https://github.com/MestreWilll')
         end, obj);
 
     function obj:_releaseEvents()
-        __o_rrpgObjs.removeEventListenerById(self._e_event245);
         __o_rrpgObjs.removeEventListenerById(self._e_event244);
         __o_rrpgObjs.removeEventListenerById(self._e_event243);
         __o_rrpgObjs.removeEventListenerById(self._e_event242);
@@ -21136,7 +21135,6 @@ local function constructNew_frmDZ_Ficha()
         if self.DescCircunstancia7 ~= nil then self.DescCircunstancia7:destroy(); self.DescCircunstancia7 = nil; end;
         if self.layout30 ~= nil then self.layout30:destroy(); self.layout30 = nil; end;
         if self.label440 ~= nil then self.label440:destroy(); self.label440 = nil; end;
-        if self.label484 ~= nil then self.label484:destroy(); self.label484 = nil; end;
         if self.layout135 ~= nil then self.layout135:destroy(); self.layout135 = nil; end;
         if self.scrollBox11 ~= nil then self.scrollBox11:destroy(); self.scrollBox11 = nil; end;
         if self.label73 ~= nil then self.label73:destroy(); self.label73 = nil; end;

@@ -137,7 +137,7 @@ local function constructNew_frmFichaCreditos()
     obj.label6:setTop(480);
     obj.label6:setWidth(210);
     obj.label6:setHeight(20);
-    obj.label6:setText("Sua Versão: 2.3.1");
+    obj.label6:setText("Sua Versão: 3.0");
     obj.label6:setHorzTextAlign("center");
     obj.label6:setName("label6");
 
@@ -203,7 +203,7 @@ local function constructNew_frmFichaCreditos()
     obj.button3:setTop(60);
     obj.button3:setWidth(100);
     obj.button3:setHeight(20);
-    obj.button3:setText("Atualizar");
+    obj.button3:setText("Att abaixo");
     obj.button3:setHint("Baixa a versão com mecânicas");
     obj.button3:setFontColor("yellow");
     obj.button3:setName("button3");
@@ -220,39 +220,22 @@ local function constructNew_frmFichaCreditos()
     obj.button4:setFontColor("red");
     obj.button4:setName("button4");
 
-    obj.label9 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label9:setParent(obj.layout2);
-    obj.label9:setLeft(0);
-    obj.label9:setTop(120);
-    obj.label9:setWidth(200);
-    obj.label9:setHeight(20);
-    obj.label9:setFontSize(15);
-    obj.label9:setText("Atualização provisória");
-    obj.label9:setHorzTextAlign("center");
-    obj.label9:setName("label9");
-
     obj._e_event0 = obj.button1:addEventListener("onClick",
         function (_)
-            GUI.openInBrowser('https://github.com/rrpgfirecast/firecast/blob/master/Plugins/Sheets/Dead%20Zone%202.0/README.md')
+            GUI.openInBrowser('https://github.com/MestreWilll/DeadZone_3.0#readme')
         end, obj);
 
     obj._e_event1 = obj.button2:addEventListener("onClick",
         function (_)
-            GUI.openInBrowser('https://github.com/ooicram/DeadZoneRPG/raw/master/Plugins/Sheets/Dead%20Zone%202.0/output/Dead%20Zone%202.0.rpk')
+            GUI.openInBrowser('https://raw.githack.com/MestreWilll/DeadZone_3.0/master/output/Dead_Zone_3.0.rpk')
         end, obj);
 
-    obj._e_event2 = obj.button3:addEventListener("onClick",
-        function (_)
-            GUI.openInBrowser('https://dl.dropboxusercontent.com/s/znq35lnlfxt8c7k/Dead_Zone_3.0.rpk?dl=0')
-        end, obj);
-
-    obj._e_event3 = obj.button4:addEventListener("onClick",
+    obj._e_event2 = obj.button4:addEventListener("onClick",
         function (_)
             GUI.openInBrowser('https://github.com/MestreWilll')
         end, obj);
 
     function obj:_releaseEvents()
-        __o_rrpgObjs.removeEventListenerById(self._e_event3);
         __o_rrpgObjs.removeEventListenerById(self._e_event2);
         __o_rrpgObjs.removeEventListenerById(self._e_event1);
         __o_rrpgObjs.removeEventListenerById(self._e_event0);
@@ -281,7 +264,6 @@ local function constructNew_frmFichaCreditos()
         if self.image2 ~= nil then self.image2:destroy(); self.image2 = nil; end;
         if self.image3 ~= nil then self.image3:destroy(); self.image3 = nil; end;
         if self.button2 ~= nil then self.button2:destroy(); self.button2 = nil; end;
-        if self.label9 ~= nil then self.label9:destroy(); self.label9 = nil; end;
         if self.layout1 ~= nil then self.layout1:destroy(); self.layout1 = nil; end;
         if self.scrollBox1 ~= nil then self.scrollBox1:destroy(); self.scrollBox1 = nil; end;
         if self.rectangle1 ~= nil then self.rectangle1:destroy(); self.rectangle1 = nil; end;

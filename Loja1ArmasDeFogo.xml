@@ -506,7 +506,7 @@ sheet.ItemNome23 = 'Submetralhadora'
     <layout align="client">
 
         -- Imagem do dinheiro retangulo
-        <image src="images/dinheiroArma.png" left="0" top="5" width="180.37" height="80.25"/>
+        <image src="images/Seudinheiro.png" left="0" top="5" width="180.37" height="80.25"/>
        
         <label left="26" top="30" fontStyle="bold" fontColor="white" fontSize="35" autoSize="true" wordWrap="false" name="labSoma2" cursor="handPoint" hitTest="true">
             <dataLink field="Soma">
@@ -1262,7 +1262,7 @@ sheet.ItemNome23 = 'Submetralhadora'
     -- Alcance
     <label left="195.88" top="128" width="50.88" height="32" horzTextAlign="center" field="Alcance15" fontSize="15" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
     -- Cadencia
-    <label left="317.88" top="49" width="68.88" height="32" horzTextAlign="center" field="Cadencia15" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+    <label left="317.88" top="49" width="68.88" height="32" horzTextAlign="center" field="Cadencia15" fontSize="8" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
     -- Municao
     <label left="317.88" top="89" width="68.88" height="32" horzTextAlign="center" field="Municao15" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/>
     -- Classe de Dureza
@@ -1309,7 +1309,7 @@ sheet.ItemNome23 = 'Submetralhadora'
     -- Alcance
     <label left="195.88" top="128" width="50.88" height="32" horzTextAlign="center" field="Alcance16" fontSize="15" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
     -- Cadencia
-    <label left="317.88" top="49" width="68.88" height="32" horzTextAlign="center" field="Cadencia16" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
+    <label left="317.88" top="49" width="68.88" height="32" horzTextAlign="center" field="Cadencia16" fontSize="10" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
     -- Municao
     <label left="317.88" top="89" width="68.88" height="32" horzTextAlign="center" field="Municao16" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
     -- Classe de Dureza

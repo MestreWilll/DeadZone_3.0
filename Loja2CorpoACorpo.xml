@@ -165,7 +165,7 @@
 <layout align="client">
         
     -- Imagem do dinheiro retangulo
-    <image src="images/dinheiroArma.png" left="0" top="5" width="180.37" height="80.25" /><label left="26" top="30" fontStyle="bold" fontColor="white" fontSize="36" autoSize="true" wordWrap="false" name="labSoma4" cursor="handPoint" hitTest="true"><dataLink field="Soma"><event name="onChange">
+    <image src="images/Seudinheiro.png" left="0" top="5" width="180.37" height="80.25" /><label left="26" top="30" fontStyle="bold" fontColor="white" fontSize="36" autoSize="true" wordWrap="false" name="labSoma4" cursor="handPoint" hitTest="true"><dataLink field="Soma"><event name="onChange">
     function format_thousand(v)
     local s = string.format("%d", math.floor(v))
     local pos = string.len(s) % 3 

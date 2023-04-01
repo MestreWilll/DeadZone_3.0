@@ -113,7 +113,7 @@ local function constructNew_frmLoja_svg()
 
     obj.image5 = GUI.fromHandle(_obj_newObject("image"));
     obj.image5:setParent(obj.layout1);
-    obj.image5:setSRC("images/dinheiroArma.png");
+    obj.image5:setSRC("images/Seudinheiro.png");
     obj.image5:setLeft(0);
     obj.image5:setTop(5);
     obj.image5:setWidth(180.37);
@@ -2468,7 +2468,7 @@ local function constructNew_frmLoja_svg()
     obj.label119:setHeight(32);
     obj.label119:setHorzTextAlign("center");
     obj.label119:setField("Cadencia15");
-    obj.label119:setFontSize(19);
+    obj.label119:setFontSize(8);
     lfm_setPropAsString(obj.label119, "fontStyle",  "bold");
     obj.label119:setFontColor("black");
     obj.label119:setFontFamily("kalam");
@@ -2622,7 +2622,7 @@ local function constructNew_frmLoja_svg()
     obj.label127:setHeight(32);
     obj.label127:setHorzTextAlign("center");
     obj.label127:setField("Cadencia16");
-    obj.label127:setFontSize(19);
+    obj.label127:setFontSize(10);
     lfm_setPropAsString(obj.label127, "fontStyle",  "bold");
     obj.label127:setFontColor("black");
     obj.label127:setFontFamily("kalam");
@@ -3925,7 +3925,7 @@ local function constructNew_frmLoja_svg()
 
     obj.image80 = GUI.fromHandle(_obj_newObject("image"));
     obj.image80:setParent(obj.layout2);
-    obj.image80:setSRC("images/dinheiroArma.png");
+    obj.image80:setSRC("images/Seudinheiro.png");
     obj.image80:setLeft(0);
     obj.image80:setTop(5);
     obj.image80:setWidth(180.37);
@@ -6517,7 +6517,7 @@ local function constructNew_frmLoja_svg()
 
     obj.image119 = GUI.fromHandle(_obj_newObject("image"));
     obj.image119:setParent(obj.layout3);
-    obj.image119:setSRC("images/dinheiroArma.png");
+    obj.image119:setSRC("images/Seudinheiro.png");
     obj.image119:setLeft(0);
     obj.image119:setTop(5);
     obj.image119:setWidth(180.37);

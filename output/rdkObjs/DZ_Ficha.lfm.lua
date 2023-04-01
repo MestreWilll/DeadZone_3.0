@@ -8753,7 +8753,7 @@ local function constructNew_frmDZ_Ficha()
     obj.image76:setParent(obj.rectangle2);
     obj.image76:setSRC("images/Seudinheiro.png");
     obj.image76:setLeft(924);
-    obj.image76:setTop(0);
+    obj.image76:setTop(3);
     obj.image76:setWidth(174);
     obj.image76:setHeight(174);
     obj.image76:setCursor("handPoint");
@@ -8780,37 +8780,8 @@ local function constructNew_frmDZ_Ficha()
     obj.dataLink16:setField("Soma");
     obj.dataLink16:setName("dataLink16");
 
-    obj.layout151 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout151:setParent(obj.rectangle2);
-    obj.layout151:setAlign("client");
-    obj.layout151:setName("layout151");
-
-    obj.image77 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image77:setParent(obj.layout151);
-    obj.image77:setSRC("images/NivelDoPlayer.png");
-    obj.image77:setLeft(1097);
-    obj.image77:setTop(55);
-    obj.image77:setWidth(70);
-    obj.image77:setHeight(70);
-    obj.image77:setCursor("handPoint");
-    obj.image77:setHitTest(true);
-    obj.image77:setName("image77");
-
-    obj.niveldoPlayer = GUI.fromHandle(_obj_newObject("button"));
-    obj.niveldoPlayer:setParent(obj.layout151);
-    obj.niveldoPlayer:setName("niveldoPlayer");
-    obj.niveldoPlayer:setText("+/-");
-    obj.niveldoPlayer:setFontFamily("kalam");
-    obj.niveldoPlayer:setLeft(1163);
-    obj.niveldoPlayer:setTop(84);
-    obj.niveldoPlayer:setWidth(30);
-    obj.niveldoPlayer:setHeight(30);
-    obj.niveldoPlayer:setFontColor("black");
-    lfm_setPropAsString(obj.niveldoPlayer, "fontStyle",  "bold");
-    obj.niveldoPlayer:setFontSize(15);
-
     obj.nivelresetPlayer = GUI.fromHandle(_obj_newObject("button"));
-    obj.nivelresetPlayer:setParent(obj.layout151);
+    obj.nivelresetPlayer:setParent(obj.rectangle2);
     obj.nivelresetPlayer:setName("nivelresetPlayer");
     obj.nivelresetPlayer:setText("R");
     obj.nivelresetPlayer:setFontFamily("kalam");
@@ -8823,10 +8794,11 @@ local function constructNew_frmDZ_Ficha()
     obj.nivelresetPlayer:setFontSize(15);
 
     obj.Nivel = GUI.fromHandle(_obj_newObject("label"));
-    obj.Nivel:setParent(obj.layout151);
+    obj.Nivel:setParent(obj.rectangle2);
     obj.Nivel:setName("Nivel");
     obj.Nivel:setField("Nivel");
     obj.Nivel:setLeft(1120);
+    obj.Nivel:setOpacity(0);
     obj.Nivel:setTop(85);
     obj.Nivel:setFontSize(26);
     obj.Nivel:setFontFamily("arial");
@@ -8885,28 +8857,28 @@ local function constructNew_frmDZ_Ficha()
     obj.label82:setFontSize(30);
     obj.label82:setName("label82");
 
-    obj.layout152 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout152:setParent(obj.rectangle19);
-    obj.layout152:setLeft(5);
-    obj.layout152:setTop(30);
-    obj.layout152:setWidth(800);
-    obj.layout152:setHeight(580);
-    obj.layout152:setName("layout152");
+    obj.layout151 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout151:setParent(obj.rectangle19);
+    obj.layout151:setLeft(5);
+    obj.layout151:setTop(30);
+    obj.layout151:setWidth(800);
+    obj.layout151:setHeight(580);
+    obj.layout151:setName("layout151");
 
-    obj.image78 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image78:setParent(obj.layout152);
-    obj.image78:setLeft(0);
-    obj.image78:setTop(0);
-    obj.image78:setWidth(770);
-    obj.image78:setHeight(550);
-    obj.image78:setSRC("images/diario2.png");
-    obj.image78:setStyle("proportional");
-    obj.image78:setOptimize(true);
-    obj.image78:setAlign("left");
-    obj.image78:setName("image78");
+    obj.image77 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image77:setParent(obj.layout151);
+    obj.image77:setLeft(0);
+    obj.image77:setTop(0);
+    obj.image77:setWidth(770);
+    obj.image77:setHeight(550);
+    obj.image77:setSRC("images/diario2.png");
+    obj.image77:setStyle("proportional");
+    obj.image77:setOptimize(true);
+    obj.image77:setAlign("left");
+    obj.image77:setName("image77");
 
     obj.textEditor22 = GUI.fromHandle(_obj_newObject("textEditor"));
-    obj.textEditor22:setParent(obj.layout152);
+    obj.textEditor22:setParent(obj.layout151);
     obj.textEditor22:setFontFamily("kalam");
     obj.textEditor22:setWidth(320);
     obj.textEditor22:setHeight(500);
@@ -8919,7 +8891,7 @@ local function constructNew_frmDZ_Ficha()
     obj.textEditor22:setName("textEditor22");
 
     obj.textEditor23 = GUI.fromHandle(_obj_newObject("textEditor"));
-    obj.textEditor23:setParent(obj.layout152);
+    obj.textEditor23:setParent(obj.layout151);
     obj.textEditor23:setFontFamily("kalam");
     obj.textEditor23:setWidth(320);
     obj.textEditor23:setHeight(500);
@@ -9083,31 +9055,31 @@ local function constructNew_frmDZ_Ficha()
     obj.label84:setFontFamily("DK Umbilical Noose");
     obj.label84:setName("label84");
 
-    obj.image79 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image79:setParent(obj.rectangle24);
-    obj.image79:setLeft(1);
-    obj.image79:setTop(100);
-    obj.image79:setWidth(300);
-    obj.image79:setHeight(500);
-    obj.image79:setStyle("proportional");
-    obj.image79:setHint("Imagem da Personagem");
-    obj.image79:setCenter(true);
-    obj.image79:setEditable(true);
-    obj.image79:setShowProgress(true);
-    obj.image79:setField("PlayerII");
-    obj.image79:setSRC("silhueta.png");
-    obj.image79:setName("image79");
+    obj.image78 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image78:setParent(obj.rectangle24);
+    obj.image78:setLeft(1);
+    obj.image78:setTop(100);
+    obj.image78:setWidth(300);
+    obj.image78:setHeight(500);
+    obj.image78:setStyle("proportional");
+    obj.image78:setHint("Imagem da Personagem");
+    obj.image78:setCenter(true);
+    obj.image78:setEditable(true);
+    obj.image78:setShowProgress(true);
+    obj.image78:setField("PlayerII");
+    obj.image78:setSRC("silhueta.png");
+    obj.image78:setName("image78");
 
-    obj.layout153 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout153:setParent(obj.rectangle24);
-    obj.layout153:setLeft(313);
-    obj.layout153:setTop(100);
-    obj.layout153:setWidth(1000);
-    obj.layout153:setHeight(2500);
-    obj.layout153:setName("layout153");
+    obj.layout152 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout152:setParent(obj.rectangle24);
+    obj.layout152:setLeft(313);
+    obj.layout152:setTop(100);
+    obj.layout152:setWidth(1000);
+    obj.layout152:setHeight(2500);
+    obj.layout152:setName("layout152");
 
     obj.richEdit1 = GUI.fromHandle(_obj_newObject("richEdit"));
-    obj.richEdit1:setParent(obj.layout153);
+    obj.richEdit1:setParent(obj.layout152);
     obj.richEdit1:setAlign("client");
     lfm_setPropAsString(obj.richEdit1, "backgroundColor",  "#00000000");
     lfm_setPropAsString(obj.richEdit1, "defaultFontColor",  "black");
@@ -9133,20 +9105,30 @@ local function constructNew_frmDZ_Ficha()
     obj.ApresentaLoja:setAlign("client");
     obj.ApresentaLoja:setVisible(true);
 
+    obj.image79 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image79:setParent(obj.ApresentaLoja);
+    obj.image79:setSRC("images/BoasVindas.png");
+    obj.image79:setLeft(0);
+    obj.image79:setTop(0);
+    obj.image79:setWidth(652);
+    obj.image79:setHeight(230);
+    obj.image79:setName("image79");
+
     obj.image80 = GUI.fromHandle(_obj_newObject("image"));
     obj.image80:setParent(obj.ApresentaLoja);
-    obj.image80:setSRC("images/BoasVindas.png");
-    obj.image80:setLeft(0);
-    obj.image80:setTop(0);
-    obj.image80:setWidth(652);
-    obj.image80:setHeight(230);
+    obj.image80:setLeft(90.25);
+    obj.image80:setTop(96.38);
+    obj.image80:setWidth(155.25);
+    obj.image80:setHeight(45.75);
+    obj.image80:setCursor("handPoint");
+    obj.image80:setHitTest(true);
     obj.image80:setName("image80");
 
     obj.image81 = GUI.fromHandle(_obj_newObject("image"));
     obj.image81:setParent(obj.ApresentaLoja);
-    obj.image81:setLeft(90.25);
+    obj.image81:setLeft(267.25);
     obj.image81:setTop(96.38);
-    obj.image81:setWidth(155.25);
+    obj.image81:setWidth(141);
     obj.image81:setHeight(45.75);
     obj.image81:setCursor("handPoint");
     obj.image81:setHitTest(true);
@@ -9154,23 +9136,13 @@ local function constructNew_frmDZ_Ficha()
 
     obj.image82 = GUI.fromHandle(_obj_newObject("image"));
     obj.image82:setParent(obj.ApresentaLoja);
-    obj.image82:setLeft(267.25);
+    obj.image82:setLeft(431.25);
     obj.image82:setTop(96.38);
-    obj.image82:setWidth(141);
+    obj.image82:setWidth(123.25);
     obj.image82:setHeight(45.75);
     obj.image82:setCursor("handPoint");
     obj.image82:setHitTest(true);
     obj.image82:setName("image82");
-
-    obj.image83 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image83:setParent(obj.ApresentaLoja);
-    obj.image83:setLeft(431.25);
-    obj.image83:setTop(96.38);
-    obj.image83:setWidth(123.25);
-    obj.image83:setHeight(45.75);
-    obj.image83:setCursor("handPoint");
-    obj.image83:setHitTest(true);
-    obj.image83:setName("image83");
 
     obj.LojaDeArmas = GUI.fromHandle(_obj_newObject("layout"));
     obj.LojaDeArmas:setParent(obj.frmLoja_svg);
@@ -9202,22 +9174,22 @@ local function constructNew_frmDZ_Ficha()
     obj.button84:setTop(20);
     obj.button84:setName("button84");
 
-    obj.layout154 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout154:setParent(obj.scrollBox10);
-    obj.layout154:setAlign("client");
-    obj.layout154:setName("layout154");
+    obj.layout153 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout153:setParent(obj.scrollBox10);
+    obj.layout153:setAlign("client");
+    obj.layout153:setName("layout153");
 
-    obj.image84 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image84:setParent(obj.layout154);
-    obj.image84:setSRC("images/dinheiroArma.png");
-    obj.image84:setLeft(0);
-    obj.image84:setTop(5);
-    obj.image84:setWidth(180.37);
-    obj.image84:setHeight(80.25);
-    obj.image84:setName("image84");
+    obj.image83 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image83:setParent(obj.layout153);
+    obj.image83:setSRC("images/Seudinheiro.png");
+    obj.image83:setLeft(0);
+    obj.image83:setTop(5);
+    obj.image83:setWidth(180.37);
+    obj.image83:setHeight(80.25);
+    obj.image83:setName("image83");
 
     obj.labSoma2 = GUI.fromHandle(_obj_newObject("label"));
-    obj.labSoma2:setParent(obj.layout154);
+    obj.labSoma2:setParent(obj.layout153);
     obj.labSoma2:setLeft(26);
     obj.labSoma2:setTop(30);
     lfm_setPropAsString(obj.labSoma2, "fontStyle",  "bold");
@@ -9234,28 +9206,28 @@ local function constructNew_frmDZ_Ficha()
     obj.dataLink18:setField("Soma");
     obj.dataLink18:setName("dataLink18");
 
+    obj.image84 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image84:setParent(obj.scrollBox10);
+    obj.image84:setLeft(0);
+    obj.image84:setTop(0);
+    obj.image84:setWidth(130.37);
+    obj.image84:setHeight(62.25);
+    obj.image84:setHint("Seu dinheiro");
+    obj.image84:setCursor("handPoint");
+    obj.image84:setHitTest(true);
+    obj.image84:setName("image84");
+
     obj.image85 = GUI.fromHandle(_obj_newObject("image"));
     obj.image85:setParent(obj.scrollBox10);
-    obj.image85:setLeft(0);
-    obj.image85:setTop(0);
-    obj.image85:setWidth(130.37);
-    obj.image85:setHeight(62.25);
-    obj.image85:setHint("Seu dinheiro");
+    obj.image85:setSRC("images/botaoVoltar.png");
+    obj.image85:setLeft(200);
+    obj.image85:setTop(29);
+    obj.image85:setWidth(50);
+    obj.image85:setHeight(50);
     obj.image85:setCursor("handPoint");
+    obj.image85:setHint("Clique aqui para voltar");
     obj.image85:setHitTest(true);
     obj.image85:setName("image85");
-
-    obj.image86 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image86:setParent(obj.scrollBox10);
-    obj.image86:setSRC("images/botaoVoltar.png");
-    obj.image86:setLeft(200);
-    obj.image86:setTop(29);
-    obj.image86:setWidth(50);
-    obj.image86:setHeight(50);
-    obj.image86:setCursor("handPoint");
-    obj.image86:setHint("Clique aqui para voltar");
-    obj.image86:setHitTest(true);
-    obj.image86:setName("image86");
 
     obj.Arma1 = GUI.fromHandle(_obj_newObject("layout"));
     obj.Arma1:setParent(obj.scrollBox10);
@@ -9265,14 +9237,14 @@ local function constructNew_frmDZ_Ficha()
     obj.Arma1:setLeft(0);
     obj.Arma1:setTop(88);
 
-    obj.image87 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image87:setParent(obj.Arma1);
-    obj.image87:setSRC("images/Loja.png");
-    obj.image87:setLeft(0);
-    obj.image87:setTop(0);
-    obj.image87:setWidth(399);
-    obj.image87:setHeight(174);
-    obj.image87:setName("image87");
+    obj.image86 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image86:setParent(obj.Arma1);
+    obj.image86:setSRC("images/Loja.png");
+    obj.image86:setLeft(0);
+    obj.image86:setTop(0);
+    obj.image86:setWidth(399);
+    obj.image86:setHeight(174);
+    obj.image86:setName("image86");
 
     obj.label85 = GUI.fromHandle(_obj_newObject("label"));
     obj.label85:setParent(obj.Arma1);
@@ -9308,28 +9280,28 @@ local function constructNew_frmDZ_Ficha()
     
 
 
+    obj.image87 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image87:setParent(obj.Arma1);
+    obj.image87:setLeft(41.38);
+    obj.image87:setTop(61.75);
+    obj.image87:setWidth(67.88);
+    obj.image87:setHeight(30);
+    obj.image87:setCursor("handPoint");
+    obj.image87:setHitTest(true);
+    obj.image87:setHint("Clique aqui para comprar");
+    obj.image87:setName("image87");
+
     obj.image88 = GUI.fromHandle(_obj_newObject("image"));
     obj.image88:setParent(obj.Arma1);
-    obj.image88:setLeft(41.38);
-    obj.image88:setTop(61.75);
-    obj.image88:setWidth(67.88);
-    obj.image88:setHeight(30);
-    obj.image88:setCursor("handPoint");
-    obj.image88:setHitTest(true);
-    obj.image88:setHint("Clique aqui para comprar");
+    obj.image88:setLeft(2.56);
+    obj.image88:setTop(93.00);
+    obj.image88:setWidth(136.69);
+    obj.image88:setHeight(77.69);
+    obj.image88:setStyle("proportional");
+    obj.image88:setCenter(true);
+    obj.image88:setEditable(true);
+    obj.image88:setField("ImagemArma");
     obj.image88:setName("image88");
-
-    obj.image89 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image89:setParent(obj.Arma1);
-    obj.image89:setLeft(2.56);
-    obj.image89:setTop(93.00);
-    obj.image89:setWidth(136.69);
-    obj.image89:setHeight(77.69);
-    obj.image89:setStyle("proportional");
-    obj.image89:setCenter(true);
-    obj.image89:setEditable(true);
-    obj.image89:setField("ImagemArma");
-    obj.image89:setName("image89");
 
     obj.label86 = GUI.fromHandle(_obj_newObject("label"));
     obj.label86:setParent(obj.Arma1);
@@ -9436,14 +9408,14 @@ local function constructNew_frmDZ_Ficha()
     obj.Arma2:setLeft(0);
     obj.Arma2:setTop(270);
 
-    obj.image90 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image90:setParent(obj.Arma2);
-    obj.image90:setSRC("images/Loja.png");
-    obj.image90:setLeft(0);
-    obj.image90:setTop(0);
-    obj.image90:setWidth(399);
-    obj.image90:setHeight(174);
-    obj.image90:setName("image90");
+    obj.image89 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image89:setParent(obj.Arma2);
+    obj.image89:setSRC("images/Loja.png");
+    obj.image89:setLeft(0);
+    obj.image89:setTop(0);
+    obj.image89:setWidth(399);
+    obj.image89:setHeight(174);
+    obj.image89:setName("image89");
 
     obj.label93 = GUI.fromHandle(_obj_newObject("label"));
     obj.label93:setParent(obj.Arma2);
@@ -9462,28 +9434,28 @@ local function constructNew_frmDZ_Ficha()
     obj.label93:setHitTest(true);
     obj.label93:setName("label93");
 
+    obj.image90 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image90:setParent(obj.Arma2);
+    obj.image90:setLeft(41.38);
+    obj.image90:setTop(61.75);
+    obj.image90:setWidth(67.88);
+    obj.image90:setHeight(30);
+    obj.image90:setCursor("handPoint");
+    obj.image90:setHitTest(true);
+    obj.image90:setHint("Clique aqui para comprar");
+    obj.image90:setName("image90");
+
     obj.image91 = GUI.fromHandle(_obj_newObject("image"));
     obj.image91:setParent(obj.Arma2);
-    obj.image91:setLeft(41.38);
-    obj.image91:setTop(61.75);
-    obj.image91:setWidth(67.88);
-    obj.image91:setHeight(30);
-    obj.image91:setCursor("handPoint");
-    obj.image91:setHitTest(true);
-    obj.image91:setHint("Clique aqui para comprar");
+    obj.image91:setLeft(2.56);
+    obj.image91:setTop(93.00);
+    obj.image91:setWidth(136.69);
+    obj.image91:setHeight(77.69);
+    obj.image91:setStyle("proportional");
+    obj.image91:setCenter(true);
+    obj.image91:setEditable(true);
+    obj.image91:setField("ImagemArma2");
     obj.image91:setName("image91");
-
-    obj.image92 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image92:setParent(obj.Arma2);
-    obj.image92:setLeft(2.56);
-    obj.image92:setTop(93.00);
-    obj.image92:setWidth(136.69);
-    obj.image92:setHeight(77.69);
-    obj.image92:setStyle("proportional");
-    obj.image92:setCenter(true);
-    obj.image92:setEditable(true);
-    obj.image92:setField("ImagemArma2");
-    obj.image92:setName("image92");
 
     obj.label94 = GUI.fromHandle(_obj_newObject("label"));
     obj.label94:setParent(obj.Arma2);
@@ -9590,14 +9562,14 @@ local function constructNew_frmDZ_Ficha()
     obj.Arma3:setLeft(0);
     obj.Arma3:setTop(452);
 
-    obj.image93 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image93:setParent(obj.Arma3);
-    obj.image93:setSRC("images/Loja.png");
-    obj.image93:setLeft(0);
-    obj.image93:setTop(0);
-    obj.image93:setWidth(399);
-    obj.image93:setHeight(174);
-    obj.image93:setName("image93");
+    obj.image92 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image92:setParent(obj.Arma3);
+    obj.image92:setSRC("images/Loja.png");
+    obj.image92:setLeft(0);
+    obj.image92:setTop(0);
+    obj.image92:setWidth(399);
+    obj.image92:setHeight(174);
+    obj.image92:setName("image92");
 
     obj.label101 = GUI.fromHandle(_obj_newObject("label"));
     obj.label101:setParent(obj.Arma3);
@@ -9616,28 +9588,28 @@ local function constructNew_frmDZ_Ficha()
     obj.label101:setHitTest(true);
     obj.label101:setName("label101");
 
+    obj.image93 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image93:setParent(obj.Arma3);
+    obj.image93:setLeft(41.38);
+    obj.image93:setTop(61.75);
+    obj.image93:setWidth(67.88);
+    obj.image93:setHeight(30);
+    obj.image93:setCursor("handPoint");
+    obj.image93:setHitTest(true);
+    obj.image93:setHint("Clique aqui para comprar");
+    obj.image93:setName("image93");
+
     obj.image94 = GUI.fromHandle(_obj_newObject("image"));
     obj.image94:setParent(obj.Arma3);
-    obj.image94:setLeft(41.38);
-    obj.image94:setTop(61.75);
-    obj.image94:setWidth(67.88);
-    obj.image94:setHeight(30);
-    obj.image94:setCursor("handPoint");
-    obj.image94:setHitTest(true);
-    obj.image94:setHint("Clique aqui para comprar");
+    obj.image94:setLeft(2.56);
+    obj.image94:setTop(93.00);
+    obj.image94:setWidth(136.69);
+    obj.image94:setHeight(77.69);
+    obj.image94:setStyle("proportional");
+    obj.image94:setCenter(true);
+    obj.image94:setEditable(true);
+    obj.image94:setField("ImagemArma3");
     obj.image94:setName("image94");
-
-    obj.image95 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image95:setParent(obj.Arma3);
-    obj.image95:setLeft(2.56);
-    obj.image95:setTop(93.00);
-    obj.image95:setWidth(136.69);
-    obj.image95:setHeight(77.69);
-    obj.image95:setStyle("proportional");
-    obj.image95:setCenter(true);
-    obj.image95:setEditable(true);
-    obj.image95:setField("ImagemArma3");
-    obj.image95:setName("image95");
 
     obj.label102 = GUI.fromHandle(_obj_newObject("label"));
     obj.label102:setParent(obj.Arma3);
@@ -9744,14 +9716,14 @@ local function constructNew_frmDZ_Ficha()
     obj.Arma4:setLeft(0);
     obj.Arma4:setTop(634);
 
-    obj.image96 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image96:setParent(obj.Arma4);
-    obj.image96:setSRC("images/Loja.png");
-    obj.image96:setLeft(0);
-    obj.image96:setTop(0);
-    obj.image96:setWidth(399);
-    obj.image96:setHeight(174);
-    obj.image96:setName("image96");
+    obj.image95 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image95:setParent(obj.Arma4);
+    obj.image95:setSRC("images/Loja.png");
+    obj.image95:setLeft(0);
+    obj.image95:setTop(0);
+    obj.image95:setWidth(399);
+    obj.image95:setHeight(174);
+    obj.image95:setName("image95");
 
     obj.label109 = GUI.fromHandle(_obj_newObject("label"));
     obj.label109:setParent(obj.Arma4);
@@ -9770,28 +9742,28 @@ local function constructNew_frmDZ_Ficha()
     obj.label109:setHitTest(true);
     obj.label109:setName("label109");
 
+    obj.image96 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image96:setParent(obj.Arma4);
+    obj.image96:setLeft(41.38);
+    obj.image96:setTop(61.75);
+    obj.image96:setWidth(67.88);
+    obj.image96:setHeight(30);
+    obj.image96:setCursor("handPoint");
+    obj.image96:setHitTest(true);
+    obj.image96:setHint("Clique aqui para comprar");
+    obj.image96:setName("image96");
+
     obj.image97 = GUI.fromHandle(_obj_newObject("image"));
     obj.image97:setParent(obj.Arma4);
-    obj.image97:setLeft(41.38);
-    obj.image97:setTop(61.75);
-    obj.image97:setWidth(67.88);
-    obj.image97:setHeight(30);
-    obj.image97:setCursor("handPoint");
-    obj.image97:setHitTest(true);
-    obj.image97:setHint("Clique aqui para comprar");
+    obj.image97:setLeft(2.56);
+    obj.image97:setTop(93.00);
+    obj.image97:setWidth(136.69);
+    obj.image97:setHeight(77.69);
+    obj.image97:setStyle("proportional");
+    obj.image97:setCenter(true);
+    obj.image97:setEditable(true);
+    obj.image97:setField("ImagemArma4");
     obj.image97:setName("image97");
-
-    obj.image98 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image98:setParent(obj.Arma4);
-    obj.image98:setLeft(2.56);
-    obj.image98:setTop(93.00);
-    obj.image98:setWidth(136.69);
-    obj.image98:setHeight(77.69);
-    obj.image98:setStyle("proportional");
-    obj.image98:setCenter(true);
-    obj.image98:setEditable(true);
-    obj.image98:setField("ImagemArma4");
-    obj.image98:setName("image98");
 
     obj.label110 = GUI.fromHandle(_obj_newObject("label"));
     obj.label110:setParent(obj.Arma4);
@@ -9898,14 +9870,14 @@ local function constructNew_frmDZ_Ficha()
     obj.Arma5:setLeft(0);
     obj.Arma5:setTop(816);
 
-    obj.image99 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image99:setParent(obj.Arma5);
-    obj.image99:setSRC("images/Loja.png");
-    obj.image99:setLeft(0);
-    obj.image99:setTop(0);
-    obj.image99:setWidth(399);
-    obj.image99:setHeight(174);
-    obj.image99:setName("image99");
+    obj.image98 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image98:setParent(obj.Arma5);
+    obj.image98:setSRC("images/Loja.png");
+    obj.image98:setLeft(0);
+    obj.image98:setTop(0);
+    obj.image98:setWidth(399);
+    obj.image98:setHeight(174);
+    obj.image98:setName("image98");
 
     obj.label117 = GUI.fromHandle(_obj_newObject("label"));
     obj.label117:setParent(obj.Arma5);
@@ -9924,28 +9896,28 @@ local function constructNew_frmDZ_Ficha()
     obj.label117:setHitTest(true);
     obj.label117:setName("label117");
 
+    obj.image99 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image99:setParent(obj.Arma5);
+    obj.image99:setLeft(41.38);
+    obj.image99:setTop(61.75);
+    obj.image99:setWidth(67.88);
+    obj.image99:setHeight(30);
+    obj.image99:setCursor("handPoint");
+    obj.image99:setHitTest(true);
+    obj.image99:setHint("Clique aqui para comprar");
+    obj.image99:setName("image99");
+
     obj.image100 = GUI.fromHandle(_obj_newObject("image"));
     obj.image100:setParent(obj.Arma5);
-    obj.image100:setLeft(41.38);
-    obj.image100:setTop(61.75);
-    obj.image100:setWidth(67.88);
-    obj.image100:setHeight(30);
-    obj.image100:setCursor("handPoint");
-    obj.image100:setHitTest(true);
-    obj.image100:setHint("Clique aqui para comprar");
+    obj.image100:setLeft(2.56);
+    obj.image100:setTop(93.00);
+    obj.image100:setWidth(136.69);
+    obj.image100:setHeight(77.69);
+    obj.image100:setStyle("proportional");
+    obj.image100:setCenter(true);
+    obj.image100:setEditable(true);
+    obj.image100:setField("ImagemArma5");
     obj.image100:setName("image100");
-
-    obj.image101 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image101:setParent(obj.Arma5);
-    obj.image101:setLeft(2.56);
-    obj.image101:setTop(93.00);
-    obj.image101:setWidth(136.69);
-    obj.image101:setHeight(77.69);
-    obj.image101:setStyle("proportional");
-    obj.image101:setCenter(true);
-    obj.image101:setEditable(true);
-    obj.image101:setField("ImagemArma5");
-    obj.image101:setName("image101");
 
     obj.label118 = GUI.fromHandle(_obj_newObject("label"));
     obj.label118:setParent(obj.Arma5);
@@ -10052,14 +10024,14 @@ local function constructNew_frmDZ_Ficha()
     obj.Arma6:setLeft(0);
     obj.Arma6:setTop(998);
 
-    obj.image102 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image102:setParent(obj.Arma6);
-    obj.image102:setSRC("images/Loja.png");
-    obj.image102:setLeft(0);
-    obj.image102:setTop(0);
-    obj.image102:setWidth(399);
-    obj.image102:setHeight(174);
-    obj.image102:setName("image102");
+    obj.image101 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image101:setParent(obj.Arma6);
+    obj.image101:setSRC("images/Loja.png");
+    obj.image101:setLeft(0);
+    obj.image101:setTop(0);
+    obj.image101:setWidth(399);
+    obj.image101:setHeight(174);
+    obj.image101:setName("image101");
 
     obj.label125 = GUI.fromHandle(_obj_newObject("label"));
     obj.label125:setParent(obj.Arma6);
@@ -10078,28 +10050,28 @@ local function constructNew_frmDZ_Ficha()
     obj.label125:setHitTest(true);
     obj.label125:setName("label125");
 
+    obj.image102 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image102:setParent(obj.Arma6);
+    obj.image102:setLeft(41.38);
+    obj.image102:setTop(61.75);
+    obj.image102:setWidth(67.88);
+    obj.image102:setHeight(30);
+    obj.image102:setCursor("handPoint");
+    obj.image102:setHitTest(true);
+    obj.image102:setHint("Clique aqui para comprar");
+    obj.image102:setName("image102");
+
     obj.image103 = GUI.fromHandle(_obj_newObject("image"));
     obj.image103:setParent(obj.Arma6);
-    obj.image103:setLeft(41.38);
-    obj.image103:setTop(61.75);
-    obj.image103:setWidth(67.88);
-    obj.image103:setHeight(30);
-    obj.image103:setCursor("handPoint");
-    obj.image103:setHitTest(true);
-    obj.image103:setHint("Clique aqui para comprar");
+    obj.image103:setLeft(2.56);
+    obj.image103:setTop(93.00);
+    obj.image103:setWidth(136.69);
+    obj.image103:setHeight(77.69);
+    obj.image103:setStyle("proportional");
+    obj.image103:setCenter(true);
+    obj.image103:setEditable(true);
+    obj.image103:setField("ImagemArma6");
     obj.image103:setName("image103");
-
-    obj.image104 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image104:setParent(obj.Arma6);
-    obj.image104:setLeft(2.56);
-    obj.image104:setTop(93.00);
-    obj.image104:setWidth(136.69);
-    obj.image104:setHeight(77.69);
-    obj.image104:setStyle("proportional");
-    obj.image104:setCenter(true);
-    obj.image104:setEditable(true);
-    obj.image104:setField("ImagemArma6");
-    obj.image104:setName("image104");
 
     obj.label126 = GUI.fromHandle(_obj_newObject("label"));
     obj.label126:setParent(obj.Arma6);
@@ -10206,14 +10178,14 @@ local function constructNew_frmDZ_Ficha()
     obj.Arma7:setLeft(0);
     obj.Arma7:setTop(1180);
 
-    obj.image105 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image105:setParent(obj.Arma7);
-    obj.image105:setSRC("images/Loja.png");
-    obj.image105:setLeft(0);
-    obj.image105:setTop(0);
-    obj.image105:setWidth(399);
-    obj.image105:setHeight(174);
-    obj.image105:setName("image105");
+    obj.image104 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image104:setParent(obj.Arma7);
+    obj.image104:setSRC("images/Loja.png");
+    obj.image104:setLeft(0);
+    obj.image104:setTop(0);
+    obj.image104:setWidth(399);
+    obj.image104:setHeight(174);
+    obj.image104:setName("image104");
 
     obj.label133 = GUI.fromHandle(_obj_newObject("label"));
     obj.label133:setParent(obj.Arma7);
@@ -10232,28 +10204,28 @@ local function constructNew_frmDZ_Ficha()
     obj.label133:setHitTest(true);
     obj.label133:setName("label133");
 
+    obj.image105 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image105:setParent(obj.Arma7);
+    obj.image105:setLeft(41.38);
+    obj.image105:setTop(61.75);
+    obj.image105:setWidth(67.88);
+    obj.image105:setHeight(30);
+    obj.image105:setCursor("handPoint");
+    obj.image105:setHitTest(true);
+    obj.image105:setHint("Clique aqui para comprar");
+    obj.image105:setName("image105");
+
     obj.image106 = GUI.fromHandle(_obj_newObject("image"));
     obj.image106:setParent(obj.Arma7);
-    obj.image106:setLeft(41.38);
-    obj.image106:setTop(61.75);
-    obj.image106:setWidth(67.88);
-    obj.image106:setHeight(30);
-    obj.image106:setCursor("handPoint");
-    obj.image106:setHitTest(true);
-    obj.image106:setHint("Clique aqui para comprar");
+    obj.image106:setLeft(2.56);
+    obj.image106:setTop(93.00);
+    obj.image106:setWidth(136.69);
+    obj.image106:setHeight(77.69);
+    obj.image106:setStyle("proportional");
+    obj.image106:setCenter(true);
+    obj.image106:setEditable(true);
+    obj.image106:setField("ImagemArma7");
     obj.image106:setName("image106");
-
-    obj.image107 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image107:setParent(obj.Arma7);
-    obj.image107:setLeft(2.56);
-    obj.image107:setTop(93.00);
-    obj.image107:setWidth(136.69);
-    obj.image107:setHeight(77.69);
-    obj.image107:setStyle("proportional");
-    obj.image107:setCenter(true);
-    obj.image107:setEditable(true);
-    obj.image107:setField("ImagemArma7");
-    obj.image107:setName("image107");
 
     obj.label134 = GUI.fromHandle(_obj_newObject("label"));
     obj.label134:setParent(obj.Arma7);
@@ -10360,14 +10332,14 @@ local function constructNew_frmDZ_Ficha()
     obj.Arma8:setLeft(0);
     obj.Arma8:setTop(1362);
 
-    obj.image108 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image108:setParent(obj.Arma8);
-    obj.image108:setSRC("images/Loja.png");
-    obj.image108:setLeft(0);
-    obj.image108:setTop(0);
-    obj.image108:setWidth(399);
-    obj.image108:setHeight(174);
-    obj.image108:setName("image108");
+    obj.image107 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image107:setParent(obj.Arma8);
+    obj.image107:setSRC("images/Loja.png");
+    obj.image107:setLeft(0);
+    obj.image107:setTop(0);
+    obj.image107:setWidth(399);
+    obj.image107:setHeight(174);
+    obj.image107:setName("image107");
 
     obj.label141 = GUI.fromHandle(_obj_newObject("label"));
     obj.label141:setParent(obj.Arma8);
@@ -10386,28 +10358,28 @@ local function constructNew_frmDZ_Ficha()
     obj.label141:setHitTest(true);
     obj.label141:setName("label141");
 
+    obj.image108 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image108:setParent(obj.Arma8);
+    obj.image108:setLeft(41.38);
+    obj.image108:setTop(61.75);
+    obj.image108:setWidth(67.88);
+    obj.image108:setHeight(30);
+    obj.image108:setCursor("handPoint");
+    obj.image108:setHitTest(true);
+    obj.image108:setHint("Clique aqui para comprar");
+    obj.image108:setName("image108");
+
     obj.image109 = GUI.fromHandle(_obj_newObject("image"));
     obj.image109:setParent(obj.Arma8);
-    obj.image109:setLeft(41.38);
-    obj.image109:setTop(61.75);
-    obj.image109:setWidth(67.88);
-    obj.image109:setHeight(30);
-    obj.image109:setCursor("handPoint");
-    obj.image109:setHitTest(true);
-    obj.image109:setHint("Clique aqui para comprar");
+    obj.image109:setLeft(2.56);
+    obj.image109:setTop(93.00);
+    obj.image109:setWidth(136.69);
+    obj.image109:setHeight(77.69);
+    obj.image109:setStyle("proportional");
+    obj.image109:setCenter(true);
+    obj.image109:setEditable(true);
+    obj.image109:setField("ImagemArma8");
     obj.image109:setName("image109");
-
-    obj.image110 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image110:setParent(obj.Arma8);
-    obj.image110:setLeft(2.56);
-    obj.image110:setTop(93.00);
-    obj.image110:setWidth(136.69);
-    obj.image110:setHeight(77.69);
-    obj.image110:setStyle("proportional");
-    obj.image110:setCenter(true);
-    obj.image110:setEditable(true);
-    obj.image110:setField("ImagemArma8");
-    obj.image110:setName("image110");
 
     obj.label142 = GUI.fromHandle(_obj_newObject("label"));
     obj.label142:setParent(obj.Arma8);
@@ -10514,14 +10486,14 @@ local function constructNew_frmDZ_Ficha()
     obj.Arma9:setLeft(0);
     obj.Arma9:setTop(1544);
 
-    obj.image111 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image111:setParent(obj.Arma9);
-    obj.image111:setSRC("images/Loja.png");
-    obj.image111:setLeft(0);
-    obj.image111:setTop(0);
-    obj.image111:setWidth(399);
-    obj.image111:setHeight(174);
-    obj.image111:setName("image111");
+    obj.image110 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image110:setParent(obj.Arma9);
+    obj.image110:setSRC("images/Loja.png");
+    obj.image110:setLeft(0);
+    obj.image110:setTop(0);
+    obj.image110:setWidth(399);
+    obj.image110:setHeight(174);
+    obj.image110:setName("image110");
 
     obj.label149 = GUI.fromHandle(_obj_newObject("label"));
     obj.label149:setParent(obj.Arma9);
@@ -10540,28 +10512,28 @@ local function constructNew_frmDZ_Ficha()
     obj.label149:setHitTest(true);
     obj.label149:setName("label149");
 
+    obj.image111 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image111:setParent(obj.Arma9);
+    obj.image111:setLeft(41.38);
+    obj.image111:setTop(61.75);
+    obj.image111:setWidth(67.88);
+    obj.image111:setHeight(30);
+    obj.image111:setCursor("handPoint");
+    obj.image111:setHitTest(true);
+    obj.image111:setHint("Clique aqui para comprar");
+    obj.image111:setName("image111");
+
     obj.image112 = GUI.fromHandle(_obj_newObject("image"));
     obj.image112:setParent(obj.Arma9);
-    obj.image112:setLeft(41.38);
-    obj.image112:setTop(61.75);
-    obj.image112:setWidth(67.88);
-    obj.image112:setHeight(30);
-    obj.image112:setCursor("handPoint");
-    obj.image112:setHitTest(true);
-    obj.image112:setHint("Clique aqui para comprar");
+    obj.image112:setLeft(2.56);
+    obj.image112:setTop(93.00);
+    obj.image112:setWidth(136.69);
+    obj.image112:setHeight(77.69);
+    obj.image112:setStyle("proportional");
+    obj.image112:setCenter(true);
+    obj.image112:setEditable(true);
+    obj.image112:setField("ImagemArma9");
     obj.image112:setName("image112");
-
-    obj.image113 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image113:setParent(obj.Arma9);
-    obj.image113:setLeft(2.56);
-    obj.image113:setTop(93.00);
-    obj.image113:setWidth(136.69);
-    obj.image113:setHeight(77.69);
-    obj.image113:setStyle("proportional");
-    obj.image113:setCenter(true);
-    obj.image113:setEditable(true);
-    obj.image113:setField("ImagemArma9");
-    obj.image113:setName("image113");
 
     obj.label150 = GUI.fromHandle(_obj_newObject("label"));
     obj.label150:setParent(obj.Arma9);
@@ -10668,14 +10640,14 @@ local function constructNew_frmDZ_Ficha()
     obj.Arma10:setLeft(0);
     obj.Arma10:setTop(1726);
 
-    obj.image114 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image114:setParent(obj.Arma10);
-    obj.image114:setSRC("images/Loja.png");
-    obj.image114:setLeft(0);
-    obj.image114:setTop(0);
-    obj.image114:setWidth(399);
-    obj.image114:setHeight(174);
-    obj.image114:setName("image114");
+    obj.image113 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image113:setParent(obj.Arma10);
+    obj.image113:setSRC("images/Loja.png");
+    obj.image113:setLeft(0);
+    obj.image113:setTop(0);
+    obj.image113:setWidth(399);
+    obj.image113:setHeight(174);
+    obj.image113:setName("image113");
 
     obj.label157 = GUI.fromHandle(_obj_newObject("label"));
     obj.label157:setParent(obj.Arma10);
@@ -10694,28 +10666,28 @@ local function constructNew_frmDZ_Ficha()
     obj.label157:setHitTest(true);
     obj.label157:setName("label157");
 
+    obj.image114 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image114:setParent(obj.Arma10);
+    obj.image114:setLeft(41.38);
+    obj.image114:setTop(61.75);
+    obj.image114:setWidth(67.88);
+    obj.image114:setHeight(30);
+    obj.image114:setCursor("handPoint");
+    obj.image114:setHitTest(true);
+    obj.image114:setHint("Clique aqui para comprar");
+    obj.image114:setName("image114");
+
     obj.image115 = GUI.fromHandle(_obj_newObject("image"));
     obj.image115:setParent(obj.Arma10);
-    obj.image115:setLeft(41.38);
-    obj.image115:setTop(61.75);
-    obj.image115:setWidth(67.88);
-    obj.image115:setHeight(30);
-    obj.image115:setCursor("handPoint");
-    obj.image115:setHitTest(true);
-    obj.image115:setHint("Clique aqui para comprar");
+    obj.image115:setLeft(2.56);
+    obj.image115:setTop(93.00);
+    obj.image115:setWidth(136.69);
+    obj.image115:setHeight(77.69);
+    obj.image115:setStyle("proportional");
+    obj.image115:setCenter(true);
+    obj.image115:setEditable(true);
+    obj.image115:setField("ImagemArma10");
     obj.image115:setName("image115");
-
-    obj.image116 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image116:setParent(obj.Arma10);
-    obj.image116:setLeft(2.56);
-    obj.image116:setTop(93.00);
-    obj.image116:setWidth(136.69);
-    obj.image116:setHeight(77.69);
-    obj.image116:setStyle("proportional");
-    obj.image116:setCenter(true);
-    obj.image116:setEditable(true);
-    obj.image116:setField("ImagemArma10");
-    obj.image116:setName("image116");
 
     obj.label158 = GUI.fromHandle(_obj_newObject("label"));
     obj.label158:setParent(obj.Arma10);
@@ -10836,14 +10808,14 @@ local function constructNew_frmDZ_Ficha()
     obj.Arma11:setLeft(0);
     obj.Arma11:setTop(1908);
 
-    obj.image117 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image117:setParent(obj.Arma11);
-    obj.image117:setSRC("images/Loja.png");
-    obj.image117:setLeft(0);
-    obj.image117:setTop(0);
-    obj.image117:setWidth(399);
-    obj.image117:setHeight(174);
-    obj.image117:setName("image117");
+    obj.image116 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image116:setParent(obj.Arma11);
+    obj.image116:setSRC("images/Loja.png");
+    obj.image116:setLeft(0);
+    obj.image116:setTop(0);
+    obj.image116:setWidth(399);
+    obj.image116:setHeight(174);
+    obj.image116:setName("image116");
 
     obj.label166 = GUI.fromHandle(_obj_newObject("label"));
     obj.label166:setParent(obj.Arma11);
@@ -10862,28 +10834,28 @@ local function constructNew_frmDZ_Ficha()
     obj.label166:setHitTest(true);
     obj.label166:setName("label166");
 
+    obj.image117 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image117:setParent(obj.Arma11);
+    obj.image117:setLeft(41.38);
+    obj.image117:setTop(61.75);
+    obj.image117:setWidth(67.88);
+    obj.image117:setHeight(30);
+    obj.image117:setCursor("handPoint");
+    obj.image117:setHitTest(true);
+    obj.image117:setHint("Clique aqui para comprar");
+    obj.image117:setName("image117");
+
     obj.image118 = GUI.fromHandle(_obj_newObject("image"));
     obj.image118:setParent(obj.Arma11);
-    obj.image118:setLeft(41.38);
-    obj.image118:setTop(61.75);
-    obj.image118:setWidth(67.88);
-    obj.image118:setHeight(30);
-    obj.image118:setCursor("handPoint");
-    obj.image118:setHitTest(true);
-    obj.image118:setHint("Clique aqui para comprar");
+    obj.image118:setLeft(2.56);
+    obj.image118:setTop(93.00);
+    obj.image118:setWidth(136.69);
+    obj.image118:setHeight(77.69);
+    obj.image118:setStyle("proportional");
+    obj.image118:setCenter(true);
+    obj.image118:setEditable(true);
+    obj.image118:setField("ImagemArma11");
     obj.image118:setName("image118");
-
-    obj.image119 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image119:setParent(obj.Arma11);
-    obj.image119:setLeft(2.56);
-    obj.image119:setTop(93.00);
-    obj.image119:setWidth(136.69);
-    obj.image119:setHeight(77.69);
-    obj.image119:setStyle("proportional");
-    obj.image119:setCenter(true);
-    obj.image119:setEditable(true);
-    obj.image119:setField("ImagemArma11");
-    obj.image119:setName("image119");
 
     obj.label167 = GUI.fromHandle(_obj_newObject("label"));
     obj.label167:setParent(obj.Arma11);
@@ -10990,14 +10962,14 @@ local function constructNew_frmDZ_Ficha()
     obj.Arma12:setLeft(0);
     obj.Arma12:setTop(2090);
 
-    obj.image120 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image120:setParent(obj.Arma12);
-    obj.image120:setSRC("images/Loja.png");
-    obj.image120:setLeft(0);
-    obj.image120:setTop(0);
-    obj.image120:setWidth(399);
-    obj.image120:setHeight(174);
-    obj.image120:setName("image120");
+    obj.image119 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image119:setParent(obj.Arma12);
+    obj.image119:setSRC("images/Loja.png");
+    obj.image119:setLeft(0);
+    obj.image119:setTop(0);
+    obj.image119:setWidth(399);
+    obj.image119:setHeight(174);
+    obj.image119:setName("image119");
 
     obj.label174 = GUI.fromHandle(_obj_newObject("label"));
     obj.label174:setParent(obj.Arma12);
@@ -11016,28 +10988,28 @@ local function constructNew_frmDZ_Ficha()
     obj.label174:setHitTest(true);
     obj.label174:setName("label174");
 
+    obj.image120 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image120:setParent(obj.Arma12);
+    obj.image120:setLeft(41.38);
+    obj.image120:setTop(61.75);
+    obj.image120:setWidth(67.88);
+    obj.image120:setHeight(30);
+    obj.image120:setCursor("handPoint");
+    obj.image120:setHitTest(true);
+    obj.image120:setHint("Clique aqui para comprar");
+    obj.image120:setName("image120");
+
     obj.image121 = GUI.fromHandle(_obj_newObject("image"));
     obj.image121:setParent(obj.Arma12);
-    obj.image121:setLeft(41.38);
-    obj.image121:setTop(61.75);
-    obj.image121:setWidth(67.88);
-    obj.image121:setHeight(30);
-    obj.image121:setCursor("handPoint");
-    obj.image121:setHitTest(true);
-    obj.image121:setHint("Clique aqui para comprar");
+    obj.image121:setLeft(2.56);
+    obj.image121:setTop(93.00);
+    obj.image121:setWidth(136.69);
+    obj.image121:setHeight(77.69);
+    obj.image121:setStyle("proportional");
+    obj.image121:setCenter(true);
+    obj.image121:setEditable(true);
+    obj.image121:setField("ImagemArma12");
     obj.image121:setName("image121");
-
-    obj.image122 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image122:setParent(obj.Arma12);
-    obj.image122:setLeft(2.56);
-    obj.image122:setTop(93.00);
-    obj.image122:setWidth(136.69);
-    obj.image122:setHeight(77.69);
-    obj.image122:setStyle("proportional");
-    obj.image122:setCenter(true);
-    obj.image122:setEditable(true);
-    obj.image122:setField("ImagemArma12");
-    obj.image122:setName("image122");
 
     obj.label175 = GUI.fromHandle(_obj_newObject("label"));
     obj.label175:setParent(obj.Arma12);
@@ -11144,14 +11116,14 @@ local function constructNew_frmDZ_Ficha()
     obj.Arma13:setLeft(413);
     obj.Arma13:setTop(88);
 
-    obj.image123 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image123:setParent(obj.Arma13);
-    obj.image123:setSRC("images/Loja.png");
-    obj.image123:setLeft(0);
-    obj.image123:setTop(0);
-    obj.image123:setWidth(399);
-    obj.image123:setHeight(174);
-    obj.image123:setName("image123");
+    obj.image122 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image122:setParent(obj.Arma13);
+    obj.image122:setSRC("images/Loja.png");
+    obj.image122:setLeft(0);
+    obj.image122:setTop(0);
+    obj.image122:setWidth(399);
+    obj.image122:setHeight(174);
+    obj.image122:setName("image122");
 
     obj.label182 = GUI.fromHandle(_obj_newObject("label"));
     obj.label182:setParent(obj.Arma13);
@@ -11170,28 +11142,28 @@ local function constructNew_frmDZ_Ficha()
     obj.label182:setHitTest(true);
     obj.label182:setName("label182");
 
+    obj.image123 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image123:setParent(obj.Arma13);
+    obj.image123:setLeft(41.38);
+    obj.image123:setTop(61.75);
+    obj.image123:setWidth(67.88);
+    obj.image123:setHeight(30);
+    obj.image123:setCursor("handPoint");
+    obj.image123:setHitTest(true);
+    obj.image123:setHint("Clique aqui para comprar");
+    obj.image123:setName("image123");
+
     obj.image124 = GUI.fromHandle(_obj_newObject("image"));
     obj.image124:setParent(obj.Arma13);
-    obj.image124:setLeft(41.38);
-    obj.image124:setTop(61.75);
-    obj.image124:setWidth(67.88);
-    obj.image124:setHeight(30);
-    obj.image124:setCursor("handPoint");
-    obj.image124:setHitTest(true);
-    obj.image124:setHint("Clique aqui para comprar");
+    obj.image124:setLeft(2.56);
+    obj.image124:setTop(93.00);
+    obj.image124:setWidth(136.69);
+    obj.image124:setHeight(77.69);
+    obj.image124:setStyle("proportional");
+    obj.image124:setCenter(true);
+    obj.image124:setEditable(true);
+    obj.image124:setField("ImagemArma13");
     obj.image124:setName("image124");
-
-    obj.image125 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image125:setParent(obj.Arma13);
-    obj.image125:setLeft(2.56);
-    obj.image125:setTop(93.00);
-    obj.image125:setWidth(136.69);
-    obj.image125:setHeight(77.69);
-    obj.image125:setStyle("proportional");
-    obj.image125:setCenter(true);
-    obj.image125:setEditable(true);
-    obj.image125:setField("ImagemArma13");
-    obj.image125:setName("image125");
 
     obj.label183 = GUI.fromHandle(_obj_newObject("label"));
     obj.label183:setParent(obj.Arma13);
@@ -11298,14 +11270,14 @@ local function constructNew_frmDZ_Ficha()
     obj.Arma14:setLeft(413);
     obj.Arma14:setTop(270);
 
-    obj.image126 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image126:setParent(obj.Arma14);
-    obj.image126:setSRC("images/Loja.png");
-    obj.image126:setLeft(0);
-    obj.image126:setTop(0);
-    obj.image126:setWidth(399);
-    obj.image126:setHeight(174);
-    obj.image126:setName("image126");
+    obj.image125 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image125:setParent(obj.Arma14);
+    obj.image125:setSRC("images/Loja.png");
+    obj.image125:setLeft(0);
+    obj.image125:setTop(0);
+    obj.image125:setWidth(399);
+    obj.image125:setHeight(174);
+    obj.image125:setName("image125");
 
     obj.label190 = GUI.fromHandle(_obj_newObject("label"));
     obj.label190:setParent(obj.Arma14);
@@ -11324,28 +11296,28 @@ local function constructNew_frmDZ_Ficha()
     obj.label190:setHitTest(true);
     obj.label190:setName("label190");
 
+    obj.image126 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image126:setParent(obj.Arma14);
+    obj.image126:setLeft(41.38);
+    obj.image126:setTop(61.75);
+    obj.image126:setWidth(67.88);
+    obj.image126:setHeight(30);
+    obj.image126:setCursor("handPoint");
+    obj.image126:setHitTest(true);
+    obj.image126:setHint("Clique aqui para comprar");
+    obj.image126:setName("image126");
+
     obj.image127 = GUI.fromHandle(_obj_newObject("image"));
     obj.image127:setParent(obj.Arma14);
-    obj.image127:setLeft(41.38);
-    obj.image127:setTop(61.75);
-    obj.image127:setWidth(67.88);
-    obj.image127:setHeight(30);
-    obj.image127:setCursor("handPoint");
-    obj.image127:setHitTest(true);
-    obj.image127:setHint("Clique aqui para comprar");
+    obj.image127:setLeft(2.56);
+    obj.image127:setTop(93.00);
+    obj.image127:setWidth(136.69);
+    obj.image127:setHeight(77.69);
+    obj.image127:setStyle("proportional");
+    obj.image127:setCenter(true);
+    obj.image127:setEditable(true);
+    obj.image127:setField("ImagemArma14");
     obj.image127:setName("image127");
-
-    obj.image128 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image128:setParent(obj.Arma14);
-    obj.image128:setLeft(2.56);
-    obj.image128:setTop(93.00);
-    obj.image128:setWidth(136.69);
-    obj.image128:setHeight(77.69);
-    obj.image128:setStyle("proportional");
-    obj.image128:setCenter(true);
-    obj.image128:setEditable(true);
-    obj.image128:setField("ImagemArma14");
-    obj.image128:setName("image128");
 
     obj.label191 = GUI.fromHandle(_obj_newObject("label"));
     obj.label191:setParent(obj.Arma14);
@@ -11452,14 +11424,14 @@ local function constructNew_frmDZ_Ficha()
     obj.Arma15:setLeft(413);
     obj.Arma15:setTop(452);
 
-    obj.image129 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image129:setParent(obj.Arma15);
-    obj.image129:setSRC("images/Loja.png");
-    obj.image129:setLeft(0);
-    obj.image129:setTop(0);
-    obj.image129:setWidth(399);
-    obj.image129:setHeight(174);
-    obj.image129:setName("image129");
+    obj.image128 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image128:setParent(obj.Arma15);
+    obj.image128:setSRC("images/Loja.png");
+    obj.image128:setLeft(0);
+    obj.image128:setTop(0);
+    obj.image128:setWidth(399);
+    obj.image128:setHeight(174);
+    obj.image128:setName("image128");
 
     obj.label198 = GUI.fromHandle(_obj_newObject("label"));
     obj.label198:setParent(obj.Arma15);
@@ -11478,28 +11450,28 @@ local function constructNew_frmDZ_Ficha()
     obj.label198:setHitTest(true);
     obj.label198:setName("label198");
 
+    obj.image129 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image129:setParent(obj.Arma15);
+    obj.image129:setLeft(41.38);
+    obj.image129:setTop(61.75);
+    obj.image129:setWidth(67.88);
+    obj.image129:setHeight(30);
+    obj.image129:setCursor("handPoint");
+    obj.image129:setHitTest(true);
+    obj.image129:setHint("Clique aqui para comprar");
+    obj.image129:setName("image129");
+
     obj.image130 = GUI.fromHandle(_obj_newObject("image"));
     obj.image130:setParent(obj.Arma15);
-    obj.image130:setLeft(41.38);
-    obj.image130:setTop(61.75);
-    obj.image130:setWidth(67.88);
-    obj.image130:setHeight(30);
-    obj.image130:setCursor("handPoint");
-    obj.image130:setHitTest(true);
-    obj.image130:setHint("Clique aqui para comprar");
+    obj.image130:setLeft(2.56);
+    obj.image130:setTop(93.00);
+    obj.image130:setWidth(136.69);
+    obj.image130:setHeight(77.69);
+    obj.image130:setStyle("proportional");
+    obj.image130:setCenter(true);
+    obj.image130:setEditable(true);
+    obj.image130:setField("ImagemArma15");
     obj.image130:setName("image130");
-
-    obj.image131 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image131:setParent(obj.Arma15);
-    obj.image131:setLeft(2.56);
-    obj.image131:setTop(93.00);
-    obj.image131:setWidth(136.69);
-    obj.image131:setHeight(77.69);
-    obj.image131:setStyle("proportional");
-    obj.image131:setCenter(true);
-    obj.image131:setEditable(true);
-    obj.image131:setField("ImagemArma15");
-    obj.image131:setName("image131");
 
     obj.label199 = GUI.fromHandle(_obj_newObject("label"));
     obj.label199:setParent(obj.Arma15);
@@ -11564,7 +11536,7 @@ local function constructNew_frmDZ_Ficha()
     obj.label203:setHeight(32);
     obj.label203:setHorzTextAlign("center");
     obj.label203:setField("Cadencia15");
-    obj.label203:setFontSize(19);
+    obj.label203:setFontSize(8);
     lfm_setPropAsString(obj.label203, "fontStyle",  "bold");
     obj.label203:setFontColor("black");
     obj.label203:setFontFamily("kalam");
@@ -11606,14 +11578,14 @@ local function constructNew_frmDZ_Ficha()
     obj.Arma16:setLeft(413);
     obj.Arma16:setTop(634);
 
-    obj.image132 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image132:setParent(obj.Arma16);
-    obj.image132:setSRC("images/Loja.png");
-    obj.image132:setLeft(0);
-    obj.image132:setTop(0);
-    obj.image132:setWidth(399);
-    obj.image132:setHeight(174);
-    obj.image132:setName("image132");
+    obj.image131 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image131:setParent(obj.Arma16);
+    obj.image131:setSRC("images/Loja.png");
+    obj.image131:setLeft(0);
+    obj.image131:setTop(0);
+    obj.image131:setWidth(399);
+    obj.image131:setHeight(174);
+    obj.image131:setName("image131");
 
     obj.label206 = GUI.fromHandle(_obj_newObject("label"));
     obj.label206:setParent(obj.Arma16);
@@ -11632,28 +11604,28 @@ local function constructNew_frmDZ_Ficha()
     obj.label206:setHitTest(true);
     obj.label206:setName("label206");
 
+    obj.image132 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image132:setParent(obj.Arma16);
+    obj.image132:setLeft(41.38);
+    obj.image132:setTop(61.75);
+    obj.image132:setWidth(67.88);
+    obj.image132:setHeight(30);
+    obj.image132:setCursor("handPoint");
+    obj.image132:setHitTest(true);
+    obj.image132:setHint("Clique aqui para comprar");
+    obj.image132:setName("image132");
+
     obj.image133 = GUI.fromHandle(_obj_newObject("image"));
     obj.image133:setParent(obj.Arma16);
-    obj.image133:setLeft(41.38);
-    obj.image133:setTop(61.75);
-    obj.image133:setWidth(67.88);
-    obj.image133:setHeight(30);
-    obj.image133:setCursor("handPoint");
-    obj.image133:setHitTest(true);
-    obj.image133:setHint("Clique aqui para comprar");
+    obj.image133:setLeft(2.56);
+    obj.image133:setTop(93.00);
+    obj.image133:setWidth(136.69);
+    obj.image133:setHeight(77.69);
+    obj.image133:setStyle("proportional");
+    obj.image133:setCenter(true);
+    obj.image133:setEditable(true);
+    obj.image133:setField("ImagemArma16");
     obj.image133:setName("image133");
-
-    obj.image134 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image134:setParent(obj.Arma16);
-    obj.image134:setLeft(2.56);
-    obj.image134:setTop(93.00);
-    obj.image134:setWidth(136.69);
-    obj.image134:setHeight(77.69);
-    obj.image134:setStyle("proportional");
-    obj.image134:setCenter(true);
-    obj.image134:setEditable(true);
-    obj.image134:setField("ImagemArma16");
-    obj.image134:setName("image134");
 
     obj.label207 = GUI.fromHandle(_obj_newObject("label"));
     obj.label207:setParent(obj.Arma16);
@@ -11718,7 +11690,7 @@ local function constructNew_frmDZ_Ficha()
     obj.label211:setHeight(32);
     obj.label211:setHorzTextAlign("center");
     obj.label211:setField("Cadencia16");
-    obj.label211:setFontSize(19);
+    obj.label211:setFontSize(10);
     lfm_setPropAsString(obj.label211, "fontStyle",  "bold");
     obj.label211:setFontColor("black");
     obj.label211:setFontFamily("kalam");
@@ -11760,14 +11732,14 @@ local function constructNew_frmDZ_Ficha()
     obj.Arma17:setLeft(413);
     obj.Arma17:setTop(816);
 
-    obj.image135 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image135:setParent(obj.Arma17);
-    obj.image135:setSRC("images/Loja.png");
-    obj.image135:setLeft(0);
-    obj.image135:setTop(0);
-    obj.image135:setWidth(399);
-    obj.image135:setHeight(174);
-    obj.image135:setName("image135");
+    obj.image134 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image134:setParent(obj.Arma17);
+    obj.image134:setSRC("images/Loja.png");
+    obj.image134:setLeft(0);
+    obj.image134:setTop(0);
+    obj.image134:setWidth(399);
+    obj.image134:setHeight(174);
+    obj.image134:setName("image134");
 
     obj.label214 = GUI.fromHandle(_obj_newObject("label"));
     obj.label214:setParent(obj.Arma17);
@@ -11786,28 +11758,28 @@ local function constructNew_frmDZ_Ficha()
     obj.label214:setHitTest(true);
     obj.label214:setName("label214");
 
+    obj.image135 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image135:setParent(obj.Arma17);
+    obj.image135:setLeft(41.38);
+    obj.image135:setTop(61.75);
+    obj.image135:setWidth(67.88);
+    obj.image135:setHeight(30);
+    obj.image135:setCursor("handPoint");
+    obj.image135:setHitTest(true);
+    obj.image135:setHint("Clique aqui para comprar");
+    obj.image135:setName("image135");
+
     obj.image136 = GUI.fromHandle(_obj_newObject("image"));
     obj.image136:setParent(obj.Arma17);
-    obj.image136:setLeft(41.38);
-    obj.image136:setTop(61.75);
-    obj.image136:setWidth(67.88);
-    obj.image136:setHeight(30);
-    obj.image136:setCursor("handPoint");
-    obj.image136:setHitTest(true);
-    obj.image136:setHint("Clique aqui para comprar");
+    obj.image136:setLeft(2.56);
+    obj.image136:setTop(93.00);
+    obj.image136:setWidth(136.69);
+    obj.image136:setHeight(77.69);
+    obj.image136:setStyle("proportional");
+    obj.image136:setCenter(true);
+    obj.image136:setEditable(true);
+    obj.image136:setField("ImagemArma17");
     obj.image136:setName("image136");
-
-    obj.image137 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image137:setParent(obj.Arma17);
-    obj.image137:setLeft(2.56);
-    obj.image137:setTop(93.00);
-    obj.image137:setWidth(136.69);
-    obj.image137:setHeight(77.69);
-    obj.image137:setStyle("proportional");
-    obj.image137:setCenter(true);
-    obj.image137:setEditable(true);
-    obj.image137:setField("ImagemArma17");
-    obj.image137:setName("image137");
 
     obj.label215 = GUI.fromHandle(_obj_newObject("label"));
     obj.label215:setParent(obj.Arma17);
@@ -11914,14 +11886,14 @@ local function constructNew_frmDZ_Ficha()
     obj.Arma18:setLeft(413);
     obj.Arma18:setTop(998);
 
-    obj.image138 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image138:setParent(obj.Arma18);
-    obj.image138:setSRC("images/Loja.png");
-    obj.image138:setLeft(0);
-    obj.image138:setTop(0);
-    obj.image138:setWidth(399);
-    obj.image138:setHeight(174);
-    obj.image138:setName("image138");
+    obj.image137 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image137:setParent(obj.Arma18);
+    obj.image137:setSRC("images/Loja.png");
+    obj.image137:setLeft(0);
+    obj.image137:setTop(0);
+    obj.image137:setWidth(399);
+    obj.image137:setHeight(174);
+    obj.image137:setName("image137");
 
     obj.label222 = GUI.fromHandle(_obj_newObject("label"));
     obj.label222:setParent(obj.Arma18);
@@ -11940,28 +11912,28 @@ local function constructNew_frmDZ_Ficha()
     obj.label222:setHitTest(true);
     obj.label222:setName("label222");
 
+    obj.image138 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image138:setParent(obj.Arma18);
+    obj.image138:setLeft(41.38);
+    obj.image138:setTop(61.75);
+    obj.image138:setWidth(67.88);
+    obj.image138:setHeight(30);
+    obj.image138:setCursor("handPoint");
+    obj.image138:setHitTest(true);
+    obj.image138:setHint("Clique aqui para comprar");
+    obj.image138:setName("image138");
+
     obj.image139 = GUI.fromHandle(_obj_newObject("image"));
     obj.image139:setParent(obj.Arma18);
-    obj.image139:setLeft(41.38);
-    obj.image139:setTop(61.75);
-    obj.image139:setWidth(67.88);
-    obj.image139:setHeight(30);
-    obj.image139:setCursor("handPoint");
-    obj.image139:setHitTest(true);
-    obj.image139:setHint("Clique aqui para comprar");
+    obj.image139:setLeft(2.56);
+    obj.image139:setTop(93.00);
+    obj.image139:setWidth(136.69);
+    obj.image139:setHeight(77.69);
+    obj.image139:setStyle("proportional");
+    obj.image139:setCenter(true);
+    obj.image139:setEditable(true);
+    obj.image139:setField("ImagemArma18");
     obj.image139:setName("image139");
-
-    obj.image140 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image140:setParent(obj.Arma18);
-    obj.image140:setLeft(2.56);
-    obj.image140:setTop(93.00);
-    obj.image140:setWidth(136.69);
-    obj.image140:setHeight(77.69);
-    obj.image140:setStyle("proportional");
-    obj.image140:setCenter(true);
-    obj.image140:setEditable(true);
-    obj.image140:setField("ImagemArma18");
-    obj.image140:setName("image140");
 
     obj.label223 = GUI.fromHandle(_obj_newObject("label"));
     obj.label223:setParent(obj.Arma18);
@@ -12068,14 +12040,14 @@ local function constructNew_frmDZ_Ficha()
     obj.Arma19:setLeft(413);
     obj.Arma19:setTop(1180);
 
-    obj.image141 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image141:setParent(obj.Arma19);
-    obj.image141:setSRC("images/Loja.png");
-    obj.image141:setLeft(0);
-    obj.image141:setTop(0);
-    obj.image141:setWidth(399);
-    obj.image141:setHeight(174);
-    obj.image141:setName("image141");
+    obj.image140 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image140:setParent(obj.Arma19);
+    obj.image140:setSRC("images/Loja.png");
+    obj.image140:setLeft(0);
+    obj.image140:setTop(0);
+    obj.image140:setWidth(399);
+    obj.image140:setHeight(174);
+    obj.image140:setName("image140");
 
     obj.label230 = GUI.fromHandle(_obj_newObject("label"));
     obj.label230:setParent(obj.Arma19);
@@ -12094,28 +12066,28 @@ local function constructNew_frmDZ_Ficha()
     obj.label230:setHitTest(true);
     obj.label230:setName("label230");
 
+    obj.image141 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image141:setParent(obj.Arma19);
+    obj.image141:setLeft(41.38);
+    obj.image141:setTop(61.75);
+    obj.image141:setWidth(67.88);
+    obj.image141:setHeight(30);
+    obj.image141:setCursor("handPoint");
+    obj.image141:setHitTest(true);
+    obj.image141:setHint("Clique aqui para comprar");
+    obj.image141:setName("image141");
+
     obj.image142 = GUI.fromHandle(_obj_newObject("image"));
     obj.image142:setParent(obj.Arma19);
-    obj.image142:setLeft(41.38);
-    obj.image142:setTop(61.75);
-    obj.image142:setWidth(67.88);
-    obj.image142:setHeight(30);
-    obj.image142:setCursor("handPoint");
-    obj.image142:setHitTest(true);
-    obj.image142:setHint("Clique aqui para comprar");
+    obj.image142:setLeft(2.56);
+    obj.image142:setTop(93.00);
+    obj.image142:setWidth(136.69);
+    obj.image142:setHeight(77.69);
+    obj.image142:setStyle("proportional");
+    obj.image142:setCenter(true);
+    obj.image142:setEditable(true);
+    obj.image142:setField("ImagemArma19");
     obj.image142:setName("image142");
-
-    obj.image143 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image143:setParent(obj.Arma19);
-    obj.image143:setLeft(2.56);
-    obj.image143:setTop(93.00);
-    obj.image143:setWidth(136.69);
-    obj.image143:setHeight(77.69);
-    obj.image143:setStyle("proportional");
-    obj.image143:setCenter(true);
-    obj.image143:setEditable(true);
-    obj.image143:setField("ImagemArma19");
-    obj.image143:setName("image143");
 
     obj.label231 = GUI.fromHandle(_obj_newObject("label"));
     obj.label231:setParent(obj.Arma19);
@@ -12222,14 +12194,14 @@ local function constructNew_frmDZ_Ficha()
     obj.Arma20:setLeft(413);
     obj.Arma20:setTop(1362);
 
-    obj.image144 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image144:setParent(obj.Arma20);
-    obj.image144:setSRC("images/Loja.png");
-    obj.image144:setLeft(0);
-    obj.image144:setTop(0);
-    obj.image144:setWidth(399);
-    obj.image144:setHeight(174);
-    obj.image144:setName("image144");
+    obj.image143 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image143:setParent(obj.Arma20);
+    obj.image143:setSRC("images/Loja.png");
+    obj.image143:setLeft(0);
+    obj.image143:setTop(0);
+    obj.image143:setWidth(399);
+    obj.image143:setHeight(174);
+    obj.image143:setName("image143");
 
     obj.label238 = GUI.fromHandle(_obj_newObject("label"));
     obj.label238:setParent(obj.Arma20);
@@ -12248,28 +12220,28 @@ local function constructNew_frmDZ_Ficha()
     obj.label238:setHitTest(true);
     obj.label238:setName("label238");
 
+    obj.image144 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image144:setParent(obj.Arma20);
+    obj.image144:setLeft(41.38);
+    obj.image144:setTop(61.75);
+    obj.image144:setWidth(67.88);
+    obj.image144:setHeight(30);
+    obj.image144:setCursor("handPoint");
+    obj.image144:setHitTest(true);
+    obj.image144:setHint("Clique aqui para comprar");
+    obj.image144:setName("image144");
+
     obj.image145 = GUI.fromHandle(_obj_newObject("image"));
     obj.image145:setParent(obj.Arma20);
-    obj.image145:setLeft(41.38);
-    obj.image145:setTop(61.75);
-    obj.image145:setWidth(67.88);
-    obj.image145:setHeight(30);
-    obj.image145:setCursor("handPoint");
-    obj.image145:setHitTest(true);
-    obj.image145:setHint("Clique aqui para comprar");
+    obj.image145:setLeft(2.56);
+    obj.image145:setTop(93.00);
+    obj.image145:setWidth(136.69);
+    obj.image145:setHeight(77.69);
+    obj.image145:setStyle("proportional");
+    obj.image145:setCenter(true);
+    obj.image145:setEditable(true);
+    obj.image145:setField("ImagemArma20");
     obj.image145:setName("image145");
-
-    obj.image146 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image146:setParent(obj.Arma20);
-    obj.image146:setLeft(2.56);
-    obj.image146:setTop(93.00);
-    obj.image146:setWidth(136.69);
-    obj.image146:setHeight(77.69);
-    obj.image146:setStyle("proportional");
-    obj.image146:setCenter(true);
-    obj.image146:setEditable(true);
-    obj.image146:setField("ImagemArma20");
-    obj.image146:setName("image146");
 
     obj.label239 = GUI.fromHandle(_obj_newObject("label"));
     obj.label239:setParent(obj.Arma20);
@@ -12376,14 +12348,14 @@ local function constructNew_frmDZ_Ficha()
     obj.Arma21:setLeft(413);
     obj.Arma21:setTop(1544);
 
-    obj.image147 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image147:setParent(obj.Arma21);
-    obj.image147:setSRC("images/Loja.png");
-    obj.image147:setLeft(0);
-    obj.image147:setTop(0);
-    obj.image147:setWidth(399);
-    obj.image147:setHeight(174);
-    obj.image147:setName("image147");
+    obj.image146 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image146:setParent(obj.Arma21);
+    obj.image146:setSRC("images/Loja.png");
+    obj.image146:setLeft(0);
+    obj.image146:setTop(0);
+    obj.image146:setWidth(399);
+    obj.image146:setHeight(174);
+    obj.image146:setName("image146");
 
     obj.label246 = GUI.fromHandle(_obj_newObject("label"));
     obj.label246:setParent(obj.Arma21);
@@ -12402,28 +12374,28 @@ local function constructNew_frmDZ_Ficha()
     obj.label246:setHitTest(true);
     obj.label246:setName("label246");
 
+    obj.image147 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image147:setParent(obj.Arma21);
+    obj.image147:setLeft(41.38);
+    obj.image147:setTop(61.75);
+    obj.image147:setWidth(67.88);
+    obj.image147:setHeight(30);
+    obj.image147:setCursor("handPoint");
+    obj.image147:setHitTest(true);
+    obj.image147:setHint("Clique aqui para comprar");
+    obj.image147:setName("image147");
+
     obj.image148 = GUI.fromHandle(_obj_newObject("image"));
     obj.image148:setParent(obj.Arma21);
-    obj.image148:setLeft(41.38);
-    obj.image148:setTop(61.75);
-    obj.image148:setWidth(67.88);
-    obj.image148:setHeight(30);
-    obj.image148:setCursor("handPoint");
-    obj.image148:setHitTest(true);
-    obj.image148:setHint("Clique aqui para comprar");
+    obj.image148:setLeft(2.56);
+    obj.image148:setTop(93.00);
+    obj.image148:setWidth(136.69);
+    obj.image148:setHeight(77.69);
+    obj.image148:setStyle("proportional");
+    obj.image148:setCenter(true);
+    obj.image148:setEditable(true);
+    obj.image148:setField("ImagemArma21");
     obj.image148:setName("image148");
-
-    obj.image149 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image149:setParent(obj.Arma21);
-    obj.image149:setLeft(2.56);
-    obj.image149:setTop(93.00);
-    obj.image149:setWidth(136.69);
-    obj.image149:setHeight(77.69);
-    obj.image149:setStyle("proportional");
-    obj.image149:setCenter(true);
-    obj.image149:setEditable(true);
-    obj.image149:setField("ImagemArma21");
-    obj.image149:setName("image149");
 
     obj.label247 = GUI.fromHandle(_obj_newObject("label"));
     obj.label247:setParent(obj.Arma21);
@@ -12530,14 +12502,14 @@ local function constructNew_frmDZ_Ficha()
     obj.Arma22:setLeft(413);
     obj.Arma22:setTop(1726);
 
-    obj.image150 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image150:setParent(obj.Arma22);
-    obj.image150:setSRC("images/Loja.png");
-    obj.image150:setLeft(0);
-    obj.image150:setTop(0);
-    obj.image150:setWidth(399);
-    obj.image150:setHeight(174);
-    obj.image150:setName("image150");
+    obj.image149 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image149:setParent(obj.Arma22);
+    obj.image149:setSRC("images/Loja.png");
+    obj.image149:setLeft(0);
+    obj.image149:setTop(0);
+    obj.image149:setWidth(399);
+    obj.image149:setHeight(174);
+    obj.image149:setName("image149");
 
     obj.label254 = GUI.fromHandle(_obj_newObject("label"));
     obj.label254:setParent(obj.Arma22);
@@ -12556,28 +12528,28 @@ local function constructNew_frmDZ_Ficha()
     obj.label254:setHitTest(true);
     obj.label254:setName("label254");
 
+    obj.image150 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image150:setParent(obj.Arma22);
+    obj.image150:setLeft(41.38);
+    obj.image150:setTop(61.75);
+    obj.image150:setWidth(67.88);
+    obj.image150:setHeight(30);
+    obj.image150:setCursor("handPoint");
+    obj.image150:setHitTest(true);
+    obj.image150:setHint("Clique aqui para comprar");
+    obj.image150:setName("image150");
+
     obj.image151 = GUI.fromHandle(_obj_newObject("image"));
     obj.image151:setParent(obj.Arma22);
-    obj.image151:setLeft(41.38);
-    obj.image151:setTop(61.75);
-    obj.image151:setWidth(67.88);
-    obj.image151:setHeight(30);
-    obj.image151:setCursor("handPoint");
-    obj.image151:setHitTest(true);
-    obj.image151:setHint("Clique aqui para comprar");
+    obj.image151:setLeft(2.56);
+    obj.image151:setTop(93.00);
+    obj.image151:setWidth(136.69);
+    obj.image151:setHeight(77.69);
+    obj.image151:setStyle("proportional");
+    obj.image151:setCenter(true);
+    obj.image151:setEditable(true);
+    obj.image151:setField("ImagemArma22");
     obj.image151:setName("image151");
-
-    obj.image152 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image152:setParent(obj.Arma22);
-    obj.image152:setLeft(2.56);
-    obj.image152:setTop(93.00);
-    obj.image152:setWidth(136.69);
-    obj.image152:setHeight(77.69);
-    obj.image152:setStyle("proportional");
-    obj.image152:setCenter(true);
-    obj.image152:setEditable(true);
-    obj.image152:setField("ImagemArma22");
-    obj.image152:setName("image152");
 
     obj.label255 = GUI.fromHandle(_obj_newObject("label"));
     obj.label255:setParent(obj.Arma22);
@@ -12684,14 +12656,14 @@ local function constructNew_frmDZ_Ficha()
     obj.Arma23:setLeft(413);
     obj.Arma23:setTop(1908);
 
-    obj.image153 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image153:setParent(obj.Arma23);
-    obj.image153:setSRC("images/Loja.png");
-    obj.image153:setLeft(0);
-    obj.image153:setTop(0);
-    obj.image153:setWidth(399);
-    obj.image153:setHeight(174);
-    obj.image153:setName("image153");
+    obj.image152 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image152:setParent(obj.Arma23);
+    obj.image152:setSRC("images/Loja.png");
+    obj.image152:setLeft(0);
+    obj.image152:setTop(0);
+    obj.image152:setWidth(399);
+    obj.image152:setHeight(174);
+    obj.image152:setName("image152");
 
     obj.label262 = GUI.fromHandle(_obj_newObject("label"));
     obj.label262:setParent(obj.Arma23);
@@ -12710,28 +12682,28 @@ local function constructNew_frmDZ_Ficha()
     obj.label262:setHitTest(true);
     obj.label262:setName("label262");
 
+    obj.image153 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image153:setParent(obj.Arma23);
+    obj.image153:setLeft(41.38);
+    obj.image153:setTop(61.75);
+    obj.image153:setWidth(67.88);
+    obj.image153:setHeight(30);
+    obj.image153:setCursor("handPoint");
+    obj.image153:setHitTest(true);
+    obj.image153:setHint("Clique aqui para comprar");
+    obj.image153:setName("image153");
+
     obj.image154 = GUI.fromHandle(_obj_newObject("image"));
     obj.image154:setParent(obj.Arma23);
-    obj.image154:setLeft(41.38);
-    obj.image154:setTop(61.75);
-    obj.image154:setWidth(67.88);
-    obj.image154:setHeight(30);
-    obj.image154:setCursor("handPoint");
-    obj.image154:setHitTest(true);
-    obj.image154:setHint("Clique aqui para comprar");
+    obj.image154:setLeft(2.56);
+    obj.image154:setTop(93.00);
+    obj.image154:setWidth(136.69);
+    obj.image154:setHeight(77.69);
+    obj.image154:setStyle("proportional");
+    obj.image154:setCenter(true);
+    obj.image154:setEditable(true);
+    obj.image154:setField("ImagemArma23");
     obj.image154:setName("image154");
-
-    obj.image155 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image155:setParent(obj.Arma23);
-    obj.image155:setLeft(2.56);
-    obj.image155:setTop(93.00);
-    obj.image155:setWidth(136.69);
-    obj.image155:setHeight(77.69);
-    obj.image155:setStyle("proportional");
-    obj.image155:setCenter(true);
-    obj.image155:setEditable(true);
-    obj.image155:setField("ImagemArma23");
-    obj.image155:setName("image155");
 
     obj.label263 = GUI.fromHandle(_obj_newObject("label"));
     obj.label263:setParent(obj.Arma23);
@@ -12838,14 +12810,14 @@ local function constructNew_frmDZ_Ficha()
     obj.Arma24:setLeft(413);
     obj.Arma24:setTop(2090);
 
-    obj.image156 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image156:setParent(obj.Arma24);
-    obj.image156:setSRC("images/Loja.png");
-    obj.image156:setLeft(0);
-    obj.image156:setTop(0);
-    obj.image156:setWidth(399);
-    obj.image156:setHeight(174);
-    obj.image156:setName("image156");
+    obj.image155 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image155:setParent(obj.Arma24);
+    obj.image155:setSRC("images/Loja.png");
+    obj.image155:setLeft(0);
+    obj.image155:setTop(0);
+    obj.image155:setWidth(399);
+    obj.image155:setHeight(174);
+    obj.image155:setName("image155");
 
     obj.label270 = GUI.fromHandle(_obj_newObject("label"));
     obj.label270:setParent(obj.Arma24);
@@ -12864,28 +12836,28 @@ local function constructNew_frmDZ_Ficha()
     obj.label270:setHitTest(true);
     obj.label270:setName("label270");
 
+    obj.image156 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image156:setParent(obj.Arma24);
+    obj.image156:setLeft(41.38);
+    obj.image156:setTop(61.75);
+    obj.image156:setWidth(67.88);
+    obj.image156:setHeight(30);
+    obj.image156:setCursor("handPoint");
+    obj.image156:setHitTest(true);
+    obj.image156:setHint("Clique aqui para comprar");
+    obj.image156:setName("image156");
+
     obj.image157 = GUI.fromHandle(_obj_newObject("image"));
     obj.image157:setParent(obj.Arma24);
-    obj.image157:setLeft(41.38);
-    obj.image157:setTop(61.75);
-    obj.image157:setWidth(67.88);
-    obj.image157:setHeight(30);
-    obj.image157:setCursor("handPoint");
-    obj.image157:setHitTest(true);
-    obj.image157:setHint("Clique aqui para comprar");
+    obj.image157:setLeft(2.56);
+    obj.image157:setTop(93.00);
+    obj.image157:setWidth(136.69);
+    obj.image157:setHeight(77.69);
+    obj.image157:setStyle("proportional");
+    obj.image157:setCenter(true);
+    obj.image157:setEditable(true);
+    obj.image157:setField("ImagemArma24");
     obj.image157:setName("image157");
-
-    obj.image158 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image158:setParent(obj.Arma24);
-    obj.image158:setLeft(2.56);
-    obj.image158:setTop(93.00);
-    obj.image158:setWidth(136.69);
-    obj.image158:setHeight(77.69);
-    obj.image158:setStyle("proportional");
-    obj.image158:setCenter(true);
-    obj.image158:setEditable(true);
-    obj.image158:setField("ImagemArma24");
-    obj.image158:setName("image158");
 
     obj.label271 = GUI.fromHandle(_obj_newObject("label"));
     obj.label271:setParent(obj.Arma24);
@@ -13014,22 +12986,22 @@ local function constructNew_frmDZ_Ficha()
     obj.button86:setTop(20);
     obj.button86:setName("button86");
 
-    obj.layout155 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout155:setParent(obj.scrollBox11);
-    obj.layout155:setAlign("client");
-    obj.layout155:setName("layout155");
+    obj.layout154 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout154:setParent(obj.scrollBox11);
+    obj.layout154:setAlign("client");
+    obj.layout154:setName("layout154");
 
-    obj.image159 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image159:setParent(obj.layout155);
-    obj.image159:setSRC("images/dinheiroArma.png");
-    obj.image159:setLeft(0);
-    obj.image159:setTop(5);
-    obj.image159:setWidth(180.37);
-    obj.image159:setHeight(80.25);
-    obj.image159:setName("image159");
+    obj.image158 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image158:setParent(obj.layout154);
+    obj.image158:setSRC("images/Seudinheiro.png");
+    obj.image158:setLeft(0);
+    obj.image158:setTop(5);
+    obj.image158:setWidth(180.37);
+    obj.image158:setHeight(80.25);
+    obj.image158:setName("image158");
 
     obj.labSoma4 = GUI.fromHandle(_obj_newObject("label"));
-    obj.labSoma4:setParent(obj.layout155);
+    obj.labSoma4:setParent(obj.layout154);
     obj.labSoma4:setLeft(26);
     obj.labSoma4:setTop(30);
     lfm_setPropAsString(obj.labSoma4, "fontStyle",  "bold");
@@ -13046,28 +13018,28 @@ local function constructNew_frmDZ_Ficha()
     obj.dataLink19:setField("Soma");
     obj.dataLink19:setName("dataLink19");
 
+    obj.image159 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image159:setParent(obj.scrollBox11);
+    obj.image159:setLeft(0);
+    obj.image159:setTop(0);
+    obj.image159:setWidth(130.37);
+    obj.image159:setHeight(62.25);
+    obj.image159:setHint("Seu dinheiro");
+    obj.image159:setCursor("handPoint");
+    obj.image159:setHitTest(true);
+    obj.image159:setName("image159");
+
     obj.image160 = GUI.fromHandle(_obj_newObject("image"));
     obj.image160:setParent(obj.scrollBox11);
-    obj.image160:setLeft(0);
-    obj.image160:setTop(0);
-    obj.image160:setWidth(130.37);
-    obj.image160:setHeight(62.25);
-    obj.image160:setHint("Seu dinheiro");
+    obj.image160:setSRC("images/botaoVoltar.png");
+    obj.image160:setLeft(200);
+    obj.image160:setTop(29);
+    obj.image160:setWidth(50);
+    obj.image160:setHeight(50);
     obj.image160:setCursor("handPoint");
+    obj.image160:setHint("Clique aqui para voltar");
     obj.image160:setHitTest(true);
     obj.image160:setName("image160");
-
-    obj.image161 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image161:setParent(obj.scrollBox11);
-    obj.image161:setSRC("images/botaoVoltar.png");
-    obj.image161:setLeft(200);
-    obj.image161:setTop(29);
-    obj.image161:setWidth(50);
-    obj.image161:setHeight(50);
-    obj.image161:setCursor("handPoint");
-    obj.image161:setHint("Clique aqui para voltar");
-    obj.image161:setHitTest(true);
-    obj.image161:setName("image161");
 
     obj.CorpoACorpo = GUI.fromHandle(_obj_newObject("layout"));
     obj.CorpoACorpo:setParent(obj.scrollBox11);
@@ -13077,14 +13049,14 @@ local function constructNew_frmDZ_Ficha()
     obj.CorpoACorpo:setLeft(0);
     obj.CorpoACorpo:setTop(88);
 
-    obj.image162 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image162:setParent(obj.CorpoACorpo);
-    obj.image162:setSRC("images/LojaCorpoACorpo.png");
-    obj.image162:setLeft(0);
-    obj.image162:setTop(0);
-    obj.image162:setWidth(399);
-    obj.image162:setHeight(174);
-    obj.image162:setName("image162");
+    obj.image161 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image161:setParent(obj.CorpoACorpo);
+    obj.image161:setSRC("images/LojaCorpoACorpo.png");
+    obj.image161:setLeft(0);
+    obj.image161:setTop(0);
+    obj.image161:setWidth(399);
+    obj.image161:setHeight(174);
+    obj.image161:setName("image161");
 
     obj.label278 = GUI.fromHandle(_obj_newObject("label"));
     obj.label278:setParent(obj.CorpoACorpo);
@@ -13114,17 +13086,17 @@ local function constructNew_frmDZ_Ficha()
     obj.Arma25:setHint("Clique aqui para comprar");
     obj.Arma25:setName("Arma25");
 
-    obj.image163 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image163:setParent(obj.CorpoACorpo);
-    obj.image163:setLeft(2.56);
-    obj.image163:setTop(93.00);
-    obj.image163:setWidth(136.69);
-    obj.image163:setHeight(77.69);
-    obj.image163:setStyle("proportional");
-    obj.image163:setCenter(true);
-    obj.image163:setEditable(true);
-    obj.image163:setField("ImagemArma25");
-    obj.image163:setName("image163");
+    obj.image162 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image162:setParent(obj.CorpoACorpo);
+    obj.image162:setLeft(2.56);
+    obj.image162:setTop(93.00);
+    obj.image162:setWidth(136.69);
+    obj.image162:setHeight(77.69);
+    obj.image162:setStyle("proportional");
+    obj.image162:setCenter(true);
+    obj.image162:setEditable(true);
+    obj.image162:setField("ImagemArma25");
+    obj.image162:setName("image162");
 
     obj.label279 = GUI.fromHandle(_obj_newObject("label"));
     obj.label279:setParent(obj.CorpoACorpo);
@@ -13217,14 +13189,14 @@ local function constructNew_frmDZ_Ficha()
     obj.CorpoACorpo26:setLeft(0);
     obj.CorpoACorpo26:setTop(270);
 
-    obj.image164 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image164:setParent(obj.CorpoACorpo26);
-    obj.image164:setSRC("images/LojaCorpoACorpo.png");
-    obj.image164:setLeft(0);
-    obj.image164:setTop(0);
-    obj.image164:setWidth(399);
-    obj.image164:setHeight(174);
-    obj.image164:setName("image164");
+    obj.image163 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image163:setParent(obj.CorpoACorpo26);
+    obj.image163:setSRC("images/LojaCorpoACorpo.png");
+    obj.image163:setLeft(0);
+    obj.image163:setTop(0);
+    obj.image163:setWidth(399);
+    obj.image163:setHeight(174);
+    obj.image163:setName("image163");
 
     obj.label285 = GUI.fromHandle(_obj_newObject("label"));
     obj.label285:setParent(obj.CorpoACorpo26);
@@ -13254,17 +13226,17 @@ local function constructNew_frmDZ_Ficha()
     obj.Arma26:setHint("Clique aqui para comprar");
     obj.Arma26:setName("Arma26");
 
-    obj.image165 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image165:setParent(obj.CorpoACorpo26);
-    obj.image165:setLeft(2.56);
-    obj.image165:setTop(93.00);
-    obj.image165:setWidth(136.69);
-    obj.image165:setHeight(77.69);
-    obj.image165:setStyle("proportional");
-    obj.image165:setCenter(true);
-    obj.image165:setEditable(true);
-    obj.image165:setField("ImagemArma26");
-    obj.image165:setName("image165");
+    obj.image164 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image164:setParent(obj.CorpoACorpo26);
+    obj.image164:setLeft(2.56);
+    obj.image164:setTop(93.00);
+    obj.image164:setWidth(136.69);
+    obj.image164:setHeight(77.69);
+    obj.image164:setStyle("proportional");
+    obj.image164:setCenter(true);
+    obj.image164:setEditable(true);
+    obj.image164:setField("ImagemArma26");
+    obj.image164:setName("image164");
 
     obj.label286 = GUI.fromHandle(_obj_newObject("label"));
     obj.label286:setParent(obj.CorpoACorpo26);
@@ -13357,14 +13329,14 @@ local function constructNew_frmDZ_Ficha()
     obj.CorpoACorpo27:setLeft(0);
     obj.CorpoACorpo27:setTop(452);
 
-    obj.image166 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image166:setParent(obj.CorpoACorpo27);
-    obj.image166:setSRC("images/LojaCorpoACorpo.png");
-    obj.image166:setLeft(0);
-    obj.image166:setTop(0);
-    obj.image166:setWidth(399);
-    obj.image166:setHeight(174);
-    obj.image166:setName("image166");
+    obj.image165 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image165:setParent(obj.CorpoACorpo27);
+    obj.image165:setSRC("images/LojaCorpoACorpo.png");
+    obj.image165:setLeft(0);
+    obj.image165:setTop(0);
+    obj.image165:setWidth(399);
+    obj.image165:setHeight(174);
+    obj.image165:setName("image165");
 
     obj.label292 = GUI.fromHandle(_obj_newObject("label"));
     obj.label292:setParent(obj.CorpoACorpo27);
@@ -13394,17 +13366,17 @@ local function constructNew_frmDZ_Ficha()
     obj.Arma27:setHint("Clique aqui para comprar");
     obj.Arma27:setName("Arma27");
 
-    obj.image167 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image167:setParent(obj.CorpoACorpo27);
-    obj.image167:setLeft(2.56);
-    obj.image167:setTop(93.00);
-    obj.image167:setWidth(136.69);
-    obj.image167:setHeight(77.69);
-    obj.image167:setStyle("proportional");
-    obj.image167:setCenter(true);
-    obj.image167:setEditable(true);
-    obj.image167:setField("ImagemArma27");
-    obj.image167:setName("image167");
+    obj.image166 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image166:setParent(obj.CorpoACorpo27);
+    obj.image166:setLeft(2.56);
+    obj.image166:setTop(93.00);
+    obj.image166:setWidth(136.69);
+    obj.image166:setHeight(77.69);
+    obj.image166:setStyle("proportional");
+    obj.image166:setCenter(true);
+    obj.image166:setEditable(true);
+    obj.image166:setField("ImagemArma27");
+    obj.image166:setName("image166");
 
     obj.label293 = GUI.fromHandle(_obj_newObject("label"));
     obj.label293:setParent(obj.CorpoACorpo27);
@@ -13497,14 +13469,14 @@ local function constructNew_frmDZ_Ficha()
     obj.CorpoACorpo28:setLeft(0);
     obj.CorpoACorpo28:setTop(634);
 
-    obj.image168 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image168:setParent(obj.CorpoACorpo28);
-    obj.image168:setSRC("images/LojaCorpoACorpo.png");
-    obj.image168:setLeft(0);
-    obj.image168:setTop(0);
-    obj.image168:setWidth(399);
-    obj.image168:setHeight(174);
-    obj.image168:setName("image168");
+    obj.image167 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image167:setParent(obj.CorpoACorpo28);
+    obj.image167:setSRC("images/LojaCorpoACorpo.png");
+    obj.image167:setLeft(0);
+    obj.image167:setTop(0);
+    obj.image167:setWidth(399);
+    obj.image167:setHeight(174);
+    obj.image167:setName("image167");
 
     obj.label299 = GUI.fromHandle(_obj_newObject("label"));
     obj.label299:setParent(obj.CorpoACorpo28);
@@ -13534,17 +13506,17 @@ local function constructNew_frmDZ_Ficha()
     obj.Arma28:setHint("Clique aqui para comprar");
     obj.Arma28:setName("Arma28");
 
-    obj.image169 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image169:setParent(obj.CorpoACorpo28);
-    obj.image169:setLeft(2.56);
-    obj.image169:setTop(93.00);
-    obj.image169:setWidth(136.69);
-    obj.image169:setHeight(77.69);
-    obj.image169:setStyle("proportional");
-    obj.image169:setCenter(true);
-    obj.image169:setEditable(true);
-    obj.image169:setField("ImagemArma28");
-    obj.image169:setName("image169");
+    obj.image168 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image168:setParent(obj.CorpoACorpo28);
+    obj.image168:setLeft(2.56);
+    obj.image168:setTop(93.00);
+    obj.image168:setWidth(136.69);
+    obj.image168:setHeight(77.69);
+    obj.image168:setStyle("proportional");
+    obj.image168:setCenter(true);
+    obj.image168:setEditable(true);
+    obj.image168:setField("ImagemArma28");
+    obj.image168:setName("image168");
 
     obj.label300 = GUI.fromHandle(_obj_newObject("label"));
     obj.label300:setParent(obj.CorpoACorpo28);
@@ -13637,14 +13609,14 @@ local function constructNew_frmDZ_Ficha()
     obj.CorpoACorpo29:setLeft(0);
     obj.CorpoACorpo29:setTop(816);
 
-    obj.image170 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image170:setParent(obj.CorpoACorpo29);
-    obj.image170:setSRC("images/LojaCorpoACorpo.png");
-    obj.image170:setLeft(0);
-    obj.image170:setTop(0);
-    obj.image170:setWidth(399);
-    obj.image170:setHeight(174);
-    obj.image170:setName("image170");
+    obj.image169 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image169:setParent(obj.CorpoACorpo29);
+    obj.image169:setSRC("images/LojaCorpoACorpo.png");
+    obj.image169:setLeft(0);
+    obj.image169:setTop(0);
+    obj.image169:setWidth(399);
+    obj.image169:setHeight(174);
+    obj.image169:setName("image169");
 
     obj.label306 = GUI.fromHandle(_obj_newObject("label"));
     obj.label306:setParent(obj.CorpoACorpo29);
@@ -13674,17 +13646,17 @@ local function constructNew_frmDZ_Ficha()
     obj.Arma29:setHint("Clique aqui para comprar");
     obj.Arma29:setName("Arma29");
 
-    obj.image171 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image171:setParent(obj.CorpoACorpo29);
-    obj.image171:setLeft(2.56);
-    obj.image171:setTop(93.00);
-    obj.image171:setWidth(136.69);
-    obj.image171:setHeight(77.69);
-    obj.image171:setStyle("proportional");
-    obj.image171:setCenter(true);
-    obj.image171:setEditable(true);
-    obj.image171:setField("ImagemArma29");
-    obj.image171:setName("image171");
+    obj.image170 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image170:setParent(obj.CorpoACorpo29);
+    obj.image170:setLeft(2.56);
+    obj.image170:setTop(93.00);
+    obj.image170:setWidth(136.69);
+    obj.image170:setHeight(77.69);
+    obj.image170:setStyle("proportional");
+    obj.image170:setCenter(true);
+    obj.image170:setEditable(true);
+    obj.image170:setField("ImagemArma29");
+    obj.image170:setName("image170");
 
     obj.label307 = GUI.fromHandle(_obj_newObject("label"));
     obj.label307:setParent(obj.CorpoACorpo29);
@@ -13777,14 +13749,14 @@ local function constructNew_frmDZ_Ficha()
     obj.CorpoACorpo30:setLeft(0);
     obj.CorpoACorpo30:setTop(998);
 
-    obj.image172 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image172:setParent(obj.CorpoACorpo30);
-    obj.image172:setSRC("images/LojaCorpoACorpo.png");
-    obj.image172:setLeft(0);
-    obj.image172:setTop(0);
-    obj.image172:setWidth(399);
-    obj.image172:setHeight(174);
-    obj.image172:setName("image172");
+    obj.image171 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image171:setParent(obj.CorpoACorpo30);
+    obj.image171:setSRC("images/LojaCorpoACorpo.png");
+    obj.image171:setLeft(0);
+    obj.image171:setTop(0);
+    obj.image171:setWidth(399);
+    obj.image171:setHeight(174);
+    obj.image171:setName("image171");
 
     obj.label313 = GUI.fromHandle(_obj_newObject("label"));
     obj.label313:setParent(obj.CorpoACorpo30);
@@ -13814,17 +13786,17 @@ local function constructNew_frmDZ_Ficha()
     obj.Arma30:setHint("Clique aqui para comprar");
     obj.Arma30:setName("Arma30");
 
-    obj.image173 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image173:setParent(obj.CorpoACorpo30);
-    obj.image173:setLeft(2.56);
-    obj.image173:setTop(93.00);
-    obj.image173:setWidth(136.69);
-    obj.image173:setHeight(77.69);
-    obj.image173:setStyle("proportional");
-    obj.image173:setCenter(true);
-    obj.image173:setEditable(true);
-    obj.image173:setField("ImagemArma30");
-    obj.image173:setName("image173");
+    obj.image172 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image172:setParent(obj.CorpoACorpo30);
+    obj.image172:setLeft(2.56);
+    obj.image172:setTop(93.00);
+    obj.image172:setWidth(136.69);
+    obj.image172:setHeight(77.69);
+    obj.image172:setStyle("proportional");
+    obj.image172:setCenter(true);
+    obj.image172:setEditable(true);
+    obj.image172:setField("ImagemArma30");
+    obj.image172:setName("image172");
 
     obj.label314 = GUI.fromHandle(_obj_newObject("label"));
     obj.label314:setParent(obj.CorpoACorpo30);
@@ -13917,14 +13889,14 @@ local function constructNew_frmDZ_Ficha()
     obj.CorpoACorpo31:setLeft(0);
     obj.CorpoACorpo31:setTop(1180);
 
-    obj.image174 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image174:setParent(obj.CorpoACorpo31);
-    obj.image174:setSRC("images/LojaCorpoACorpo.png");
-    obj.image174:setLeft(0);
-    obj.image174:setTop(0);
-    obj.image174:setWidth(399);
-    obj.image174:setHeight(174);
-    obj.image174:setName("image174");
+    obj.image173 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image173:setParent(obj.CorpoACorpo31);
+    obj.image173:setSRC("images/LojaCorpoACorpo.png");
+    obj.image173:setLeft(0);
+    obj.image173:setTop(0);
+    obj.image173:setWidth(399);
+    obj.image173:setHeight(174);
+    obj.image173:setName("image173");
 
     obj.label320 = GUI.fromHandle(_obj_newObject("label"));
     obj.label320:setParent(obj.CorpoACorpo31);
@@ -13954,17 +13926,17 @@ local function constructNew_frmDZ_Ficha()
     obj.Arma31:setHint("Clique aqui para comprar");
     obj.Arma31:setName("Arma31");
 
-    obj.image175 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image175:setParent(obj.CorpoACorpo31);
-    obj.image175:setLeft(2.56);
-    obj.image175:setTop(93.00);
-    obj.image175:setWidth(136.69);
-    obj.image175:setHeight(77.69);
-    obj.image175:setStyle("proportional");
-    obj.image175:setCenter(true);
-    obj.image175:setEditable(true);
-    obj.image175:setField("ImagemArma31");
-    obj.image175:setName("image175");
+    obj.image174 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image174:setParent(obj.CorpoACorpo31);
+    obj.image174:setLeft(2.56);
+    obj.image174:setTop(93.00);
+    obj.image174:setWidth(136.69);
+    obj.image174:setHeight(77.69);
+    obj.image174:setStyle("proportional");
+    obj.image174:setCenter(true);
+    obj.image174:setEditable(true);
+    obj.image174:setField("ImagemArma31");
+    obj.image174:setName("image174");
 
     obj.label321 = GUI.fromHandle(_obj_newObject("label"));
     obj.label321:setParent(obj.CorpoACorpo31);
@@ -14057,14 +14029,14 @@ local function constructNew_frmDZ_Ficha()
     obj.CorpoACorpo32:setLeft(0);
     obj.CorpoACorpo32:setTop(1362);
 
-    obj.image176 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image176:setParent(obj.CorpoACorpo32);
-    obj.image176:setSRC("images/LojaCorpoACorpo.png");
-    obj.image176:setLeft(0);
-    obj.image176:setTop(0);
-    obj.image176:setWidth(399);
-    obj.image176:setHeight(174);
-    obj.image176:setName("image176");
+    obj.image175 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image175:setParent(obj.CorpoACorpo32);
+    obj.image175:setSRC("images/LojaCorpoACorpo.png");
+    obj.image175:setLeft(0);
+    obj.image175:setTop(0);
+    obj.image175:setWidth(399);
+    obj.image175:setHeight(174);
+    obj.image175:setName("image175");
 
     obj.label327 = GUI.fromHandle(_obj_newObject("label"));
     obj.label327:setParent(obj.CorpoACorpo32);
@@ -14094,17 +14066,17 @@ local function constructNew_frmDZ_Ficha()
     obj.Arma32:setHint("Clique aqui para comprar");
     obj.Arma32:setName("Arma32");
 
-    obj.image177 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image177:setParent(obj.CorpoACorpo32);
-    obj.image177:setLeft(2.56);
-    obj.image177:setTop(93.00);
-    obj.image177:setWidth(136.69);
-    obj.image177:setHeight(77.69);
-    obj.image177:setStyle("proportional");
-    obj.image177:setCenter(true);
-    obj.image177:setEditable(true);
-    obj.image177:setField("ImagemArma32");
-    obj.image177:setName("image177");
+    obj.image176 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image176:setParent(obj.CorpoACorpo32);
+    obj.image176:setLeft(2.56);
+    obj.image176:setTop(93.00);
+    obj.image176:setWidth(136.69);
+    obj.image176:setHeight(77.69);
+    obj.image176:setStyle("proportional");
+    obj.image176:setCenter(true);
+    obj.image176:setEditable(true);
+    obj.image176:setField("ImagemArma32");
+    obj.image176:setName("image176");
 
     obj.label328 = GUI.fromHandle(_obj_newObject("label"));
     obj.label328:setParent(obj.CorpoACorpo32);
@@ -14197,14 +14169,14 @@ local function constructNew_frmDZ_Ficha()
     obj.CorpoACorpo33:setLeft(0);
     obj.CorpoACorpo33:setTop(1544);
 
-    obj.image178 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image178:setParent(obj.CorpoACorpo33);
-    obj.image178:setSRC("images/LojaCorpoACorpo.png");
-    obj.image178:setLeft(0);
-    obj.image178:setTop(0);
-    obj.image178:setWidth(399);
-    obj.image178:setHeight(174);
-    obj.image178:setName("image178");
+    obj.image177 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image177:setParent(obj.CorpoACorpo33);
+    obj.image177:setSRC("images/LojaCorpoACorpo.png");
+    obj.image177:setLeft(0);
+    obj.image177:setTop(0);
+    obj.image177:setWidth(399);
+    obj.image177:setHeight(174);
+    obj.image177:setName("image177");
 
     obj.label334 = GUI.fromHandle(_obj_newObject("label"));
     obj.label334:setParent(obj.CorpoACorpo33);
@@ -14234,17 +14206,17 @@ local function constructNew_frmDZ_Ficha()
     obj.Arma33:setHint("Clique aqui para comprar");
     obj.Arma33:setName("Arma33");
 
-    obj.image179 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image179:setParent(obj.CorpoACorpo33);
-    obj.image179:setLeft(2.56);
-    obj.image179:setTop(93.00);
-    obj.image179:setWidth(136.69);
-    obj.image179:setHeight(77.69);
-    obj.image179:setStyle("proportional");
-    obj.image179:setCenter(true);
-    obj.image179:setEditable(true);
-    obj.image179:setField("ImagemArma33");
-    obj.image179:setName("image179");
+    obj.image178 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image178:setParent(obj.CorpoACorpo33);
+    obj.image178:setLeft(2.56);
+    obj.image178:setTop(93.00);
+    obj.image178:setWidth(136.69);
+    obj.image178:setHeight(77.69);
+    obj.image178:setStyle("proportional");
+    obj.image178:setCenter(true);
+    obj.image178:setEditable(true);
+    obj.image178:setField("ImagemArma33");
+    obj.image178:setName("image178");
 
     obj.label335 = GUI.fromHandle(_obj_newObject("label"));
     obj.label335:setParent(obj.CorpoACorpo33);
@@ -14337,14 +14309,14 @@ local function constructNew_frmDZ_Ficha()
     obj.CorpoACorpo34:setLeft(413);
     obj.CorpoACorpo34:setTop(1544);
 
-    obj.image180 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image180:setParent(obj.CorpoACorpo34);
-    obj.image180:setSRC("images/LojaCorpoACorpo.png");
-    obj.image180:setLeft(0);
-    obj.image180:setTop(0);
-    obj.image180:setWidth(399);
-    obj.image180:setHeight(174);
-    obj.image180:setName("image180");
+    obj.image179 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image179:setParent(obj.CorpoACorpo34);
+    obj.image179:setSRC("images/LojaCorpoACorpo.png");
+    obj.image179:setLeft(0);
+    obj.image179:setTop(0);
+    obj.image179:setWidth(399);
+    obj.image179:setHeight(174);
+    obj.image179:setName("image179");
 
     obj.label341 = GUI.fromHandle(_obj_newObject("label"));
     obj.label341:setParent(obj.CorpoACorpo34);
@@ -14374,17 +14346,17 @@ local function constructNew_frmDZ_Ficha()
     obj.Arma34:setHint("Clique aqui para comprar");
     obj.Arma34:setName("Arma34");
 
-    obj.image181 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image181:setParent(obj.CorpoACorpo34);
-    obj.image181:setLeft(2.56);
-    obj.image181:setTop(93.00);
-    obj.image181:setWidth(136.69);
-    obj.image181:setHeight(77.69);
-    obj.image181:setStyle("proportional");
-    obj.image181:setCenter(true);
-    obj.image181:setEditable(true);
-    obj.image181:setField("ImagemArma34");
-    obj.image181:setName("image181");
+    obj.image180 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image180:setParent(obj.CorpoACorpo34);
+    obj.image180:setLeft(2.56);
+    obj.image180:setTop(93.00);
+    obj.image180:setWidth(136.69);
+    obj.image180:setHeight(77.69);
+    obj.image180:setStyle("proportional");
+    obj.image180:setCenter(true);
+    obj.image180:setEditable(true);
+    obj.image180:setField("ImagemArma34");
+    obj.image180:setName("image180");
 
     obj.label342 = GUI.fromHandle(_obj_newObject("label"));
     obj.label342:setParent(obj.CorpoACorpo34);
@@ -14477,14 +14449,14 @@ local function constructNew_frmDZ_Ficha()
     obj.CorpoACorpo35:setLeft(413);
     obj.CorpoACorpo35:setTop(88);
 
-    obj.image182 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image182:setParent(obj.CorpoACorpo35);
-    obj.image182:setSRC("images/LojaCorpoACorpo.png");
-    obj.image182:setLeft(0);
-    obj.image182:setTop(0);
-    obj.image182:setWidth(399);
-    obj.image182:setHeight(174);
-    obj.image182:setName("image182");
+    obj.image181 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image181:setParent(obj.CorpoACorpo35);
+    obj.image181:setSRC("images/LojaCorpoACorpo.png");
+    obj.image181:setLeft(0);
+    obj.image181:setTop(0);
+    obj.image181:setWidth(399);
+    obj.image181:setHeight(174);
+    obj.image181:setName("image181");
 
     obj.label348 = GUI.fromHandle(_obj_newObject("label"));
     obj.label348:setParent(obj.CorpoACorpo35);
@@ -14514,17 +14486,17 @@ local function constructNew_frmDZ_Ficha()
     obj.Arma35:setHint("Clique aqui para comprar");
     obj.Arma35:setName("Arma35");
 
-    obj.image183 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image183:setParent(obj.CorpoACorpo35);
-    obj.image183:setLeft(2.56);
-    obj.image183:setTop(93.00);
-    obj.image183:setWidth(136.69);
-    obj.image183:setHeight(77.69);
-    obj.image183:setStyle("proportional");
-    obj.image183:setCenter(true);
-    obj.image183:setEditable(true);
-    obj.image183:setField("ImagemArma35");
-    obj.image183:setName("image183");
+    obj.image182 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image182:setParent(obj.CorpoACorpo35);
+    obj.image182:setLeft(2.56);
+    obj.image182:setTop(93.00);
+    obj.image182:setWidth(136.69);
+    obj.image182:setHeight(77.69);
+    obj.image182:setStyle("proportional");
+    obj.image182:setCenter(true);
+    obj.image182:setEditable(true);
+    obj.image182:setField("ImagemArma35");
+    obj.image182:setName("image182");
 
     obj.label349 = GUI.fromHandle(_obj_newObject("label"));
     obj.label349:setParent(obj.CorpoACorpo35);
@@ -14617,14 +14589,14 @@ local function constructNew_frmDZ_Ficha()
     obj.CorpoACorpo36:setLeft(413);
     obj.CorpoACorpo36:setTop(270);
 
-    obj.image184 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image184:setParent(obj.CorpoACorpo36);
-    obj.image184:setSRC("images/LojaCorpoACorpo.png");
-    obj.image184:setLeft(0);
-    obj.image184:setTop(0);
-    obj.image184:setWidth(399);
-    obj.image184:setHeight(174);
-    obj.image184:setName("image184");
+    obj.image183 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image183:setParent(obj.CorpoACorpo36);
+    obj.image183:setSRC("images/LojaCorpoACorpo.png");
+    obj.image183:setLeft(0);
+    obj.image183:setTop(0);
+    obj.image183:setWidth(399);
+    obj.image183:setHeight(174);
+    obj.image183:setName("image183");
 
     obj.label355 = GUI.fromHandle(_obj_newObject("label"));
     obj.label355:setParent(obj.CorpoACorpo36);
@@ -14654,17 +14626,17 @@ local function constructNew_frmDZ_Ficha()
     obj.Arma36:setHint("Clique aqui para comprar");
     obj.Arma36:setName("Arma36");
 
-    obj.image185 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image185:setParent(obj.CorpoACorpo36);
-    obj.image185:setLeft(2.56);
-    obj.image185:setTop(93.00);
-    obj.image185:setWidth(136.69);
-    obj.image185:setHeight(77.69);
-    obj.image185:setStyle("proportional");
-    obj.image185:setCenter(true);
-    obj.image185:setEditable(true);
-    obj.image185:setField("ImagemArma36");
-    obj.image185:setName("image185");
+    obj.image184 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image184:setParent(obj.CorpoACorpo36);
+    obj.image184:setLeft(2.56);
+    obj.image184:setTop(93.00);
+    obj.image184:setWidth(136.69);
+    obj.image184:setHeight(77.69);
+    obj.image184:setStyle("proportional");
+    obj.image184:setCenter(true);
+    obj.image184:setEditable(true);
+    obj.image184:setField("ImagemArma36");
+    obj.image184:setName("image184");
 
     obj.label356 = GUI.fromHandle(_obj_newObject("label"));
     obj.label356:setParent(obj.CorpoACorpo36);
@@ -14757,14 +14729,14 @@ local function constructNew_frmDZ_Ficha()
     obj.CorpoACorpo37:setLeft(413);
     obj.CorpoACorpo37:setTop(452);
 
-    obj.image186 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image186:setParent(obj.CorpoACorpo37);
-    obj.image186:setSRC("images/LojaCorpoACorpo.png");
-    obj.image186:setLeft(0);
-    obj.image186:setTop(0);
-    obj.image186:setWidth(399);
-    obj.image186:setHeight(174);
-    obj.image186:setName("image186");
+    obj.image185 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image185:setParent(obj.CorpoACorpo37);
+    obj.image185:setSRC("images/LojaCorpoACorpo.png");
+    obj.image185:setLeft(0);
+    obj.image185:setTop(0);
+    obj.image185:setWidth(399);
+    obj.image185:setHeight(174);
+    obj.image185:setName("image185");
 
     obj.label362 = GUI.fromHandle(_obj_newObject("label"));
     obj.label362:setParent(obj.CorpoACorpo37);
@@ -14794,17 +14766,17 @@ local function constructNew_frmDZ_Ficha()
     obj.Arma37:setHint("Clique aqui para comprar");
     obj.Arma37:setName("Arma37");
 
-    obj.image187 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image187:setParent(obj.CorpoACorpo37);
-    obj.image187:setLeft(2.56);
-    obj.image187:setTop(93.00);
-    obj.image187:setWidth(136.69);
-    obj.image187:setHeight(77.69);
-    obj.image187:setStyle("proportional");
-    obj.image187:setCenter(true);
-    obj.image187:setEditable(true);
-    obj.image187:setField("ImagemArma37");
-    obj.image187:setName("image187");
+    obj.image186 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image186:setParent(obj.CorpoACorpo37);
+    obj.image186:setLeft(2.56);
+    obj.image186:setTop(93.00);
+    obj.image186:setWidth(136.69);
+    obj.image186:setHeight(77.69);
+    obj.image186:setStyle("proportional");
+    obj.image186:setCenter(true);
+    obj.image186:setEditable(true);
+    obj.image186:setField("ImagemArma37");
+    obj.image186:setName("image186");
 
     obj.label363 = GUI.fromHandle(_obj_newObject("label"));
     obj.label363:setParent(obj.CorpoACorpo37);
@@ -14897,14 +14869,14 @@ local function constructNew_frmDZ_Ficha()
     obj.CorpoACorpo38:setLeft(413);
     obj.CorpoACorpo38:setTop(634);
 
-    obj.image188 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image188:setParent(obj.CorpoACorpo38);
-    obj.image188:setSRC("images/LojaCorpoACorpo.png");
-    obj.image188:setLeft(0);
-    obj.image188:setTop(0);
-    obj.image188:setWidth(399);
-    obj.image188:setHeight(174);
-    obj.image188:setName("image188");
+    obj.image187 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image187:setParent(obj.CorpoACorpo38);
+    obj.image187:setSRC("images/LojaCorpoACorpo.png");
+    obj.image187:setLeft(0);
+    obj.image187:setTop(0);
+    obj.image187:setWidth(399);
+    obj.image187:setHeight(174);
+    obj.image187:setName("image187");
 
     obj.label369 = GUI.fromHandle(_obj_newObject("label"));
     obj.label369:setParent(obj.CorpoACorpo38);
@@ -14934,17 +14906,17 @@ local function constructNew_frmDZ_Ficha()
     obj.Arma38:setHint("Clique aqui para comprar");
     obj.Arma38:setName("Arma38");
 
-    obj.image189 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image189:setParent(obj.CorpoACorpo38);
-    obj.image189:setLeft(2.56);
-    obj.image189:setTop(93.00);
-    obj.image189:setWidth(136.69);
-    obj.image189:setHeight(77.69);
-    obj.image189:setStyle("proportional");
-    obj.image189:setCenter(true);
-    obj.image189:setEditable(true);
-    obj.image189:setField("ImagemArma38");
-    obj.image189:setName("image189");
+    obj.image188 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image188:setParent(obj.CorpoACorpo38);
+    obj.image188:setLeft(2.56);
+    obj.image188:setTop(93.00);
+    obj.image188:setWidth(136.69);
+    obj.image188:setHeight(77.69);
+    obj.image188:setStyle("proportional");
+    obj.image188:setCenter(true);
+    obj.image188:setEditable(true);
+    obj.image188:setField("ImagemArma38");
+    obj.image188:setName("image188");
 
     obj.label370 = GUI.fromHandle(_obj_newObject("label"));
     obj.label370:setParent(obj.CorpoACorpo38);
@@ -15037,14 +15009,14 @@ local function constructNew_frmDZ_Ficha()
     obj.CorpoACorpo39:setLeft(413);
     obj.CorpoACorpo39:setTop(816);
 
-    obj.image190 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image190:setParent(obj.CorpoACorpo39);
-    obj.image190:setSRC("images/LojaCorpoACorpo.png");
-    obj.image190:setLeft(0);
-    obj.image190:setTop(0);
-    obj.image190:setWidth(399);
-    obj.image190:setHeight(174);
-    obj.image190:setName("image190");
+    obj.image189 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image189:setParent(obj.CorpoACorpo39);
+    obj.image189:setSRC("images/LojaCorpoACorpo.png");
+    obj.image189:setLeft(0);
+    obj.image189:setTop(0);
+    obj.image189:setWidth(399);
+    obj.image189:setHeight(174);
+    obj.image189:setName("image189");
 
     obj.label376 = GUI.fromHandle(_obj_newObject("label"));
     obj.label376:setParent(obj.CorpoACorpo39);
@@ -15074,17 +15046,17 @@ local function constructNew_frmDZ_Ficha()
     obj.Arma39:setHint("Clique aqui para comprar");
     obj.Arma39:setName("Arma39");
 
-    obj.image191 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image191:setParent(obj.CorpoACorpo39);
-    obj.image191:setLeft(2.56);
-    obj.image191:setTop(93.00);
-    obj.image191:setWidth(136.69);
-    obj.image191:setHeight(77.69);
-    obj.image191:setStyle("proportional");
-    obj.image191:setCenter(true);
-    obj.image191:setEditable(true);
-    obj.image191:setField("ImagemArma39");
-    obj.image191:setName("image191");
+    obj.image190 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image190:setParent(obj.CorpoACorpo39);
+    obj.image190:setLeft(2.56);
+    obj.image190:setTop(93.00);
+    obj.image190:setWidth(136.69);
+    obj.image190:setHeight(77.69);
+    obj.image190:setStyle("proportional");
+    obj.image190:setCenter(true);
+    obj.image190:setEditable(true);
+    obj.image190:setField("ImagemArma39");
+    obj.image190:setName("image190");
 
     obj.label377 = GUI.fromHandle(_obj_newObject("label"));
     obj.label377:setParent(obj.CorpoACorpo39);
@@ -15177,14 +15149,14 @@ local function constructNew_frmDZ_Ficha()
     obj.CorpoACorpo40:setLeft(413);
     obj.CorpoACorpo40:setTop(998);
 
-    obj.image192 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image192:setParent(obj.CorpoACorpo40);
-    obj.image192:setSRC("images/LojaCorpoACorpo.png");
-    obj.image192:setLeft(0);
-    obj.image192:setTop(0);
-    obj.image192:setWidth(399);
-    obj.image192:setHeight(174);
-    obj.image192:setName("image192");
+    obj.image191 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image191:setParent(obj.CorpoACorpo40);
+    obj.image191:setSRC("images/LojaCorpoACorpo.png");
+    obj.image191:setLeft(0);
+    obj.image191:setTop(0);
+    obj.image191:setWidth(399);
+    obj.image191:setHeight(174);
+    obj.image191:setName("image191");
 
     obj.label383 = GUI.fromHandle(_obj_newObject("label"));
     obj.label383:setParent(obj.CorpoACorpo40);
@@ -15214,17 +15186,17 @@ local function constructNew_frmDZ_Ficha()
     obj.Arma40:setHint("Clique aqui para comprar");
     obj.Arma40:setName("Arma40");
 
-    obj.image193 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image193:setParent(obj.CorpoACorpo40);
-    obj.image193:setLeft(2.56);
-    obj.image193:setTop(93.00);
-    obj.image193:setWidth(136.69);
-    obj.image193:setHeight(77.69);
-    obj.image193:setStyle("proportional");
-    obj.image193:setCenter(true);
-    obj.image193:setEditable(true);
-    obj.image193:setField("ImagemArma40");
-    obj.image193:setName("image193");
+    obj.image192 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image192:setParent(obj.CorpoACorpo40);
+    obj.image192:setLeft(2.56);
+    obj.image192:setTop(93.00);
+    obj.image192:setWidth(136.69);
+    obj.image192:setHeight(77.69);
+    obj.image192:setStyle("proportional");
+    obj.image192:setCenter(true);
+    obj.image192:setEditable(true);
+    obj.image192:setField("ImagemArma40");
+    obj.image192:setName("image192");
 
     obj.label384 = GUI.fromHandle(_obj_newObject("label"));
     obj.label384:setParent(obj.CorpoACorpo40);
@@ -15317,14 +15289,14 @@ local function constructNew_frmDZ_Ficha()
     obj.CorpoACorpo41:setLeft(413);
     obj.CorpoACorpo41:setTop(1180);
 
-    obj.image194 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image194:setParent(obj.CorpoACorpo41);
-    obj.image194:setSRC("images/LojaCorpoACorpo.png");
-    obj.image194:setLeft(0);
-    obj.image194:setTop(0);
-    obj.image194:setWidth(399);
-    obj.image194:setHeight(174);
-    obj.image194:setName("image194");
+    obj.image193 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image193:setParent(obj.CorpoACorpo41);
+    obj.image193:setSRC("images/LojaCorpoACorpo.png");
+    obj.image193:setLeft(0);
+    obj.image193:setTop(0);
+    obj.image193:setWidth(399);
+    obj.image193:setHeight(174);
+    obj.image193:setName("image193");
 
     obj.label390 = GUI.fromHandle(_obj_newObject("label"));
     obj.label390:setParent(obj.CorpoACorpo41);
@@ -15354,17 +15326,17 @@ local function constructNew_frmDZ_Ficha()
     obj.Arma41:setHint("Clique aqui para comprar");
     obj.Arma41:setName("Arma41");
 
-    obj.image195 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image195:setParent(obj.CorpoACorpo41);
-    obj.image195:setLeft(2.56);
-    obj.image195:setTop(93.00);
-    obj.image195:setWidth(136.69);
-    obj.image195:setHeight(77.69);
-    obj.image195:setStyle("proportional");
-    obj.image195:setCenter(true);
-    obj.image195:setEditable(true);
-    obj.image195:setField("ImagemArma41");
-    obj.image195:setName("image195");
+    obj.image194 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image194:setParent(obj.CorpoACorpo41);
+    obj.image194:setLeft(2.56);
+    obj.image194:setTop(93.00);
+    obj.image194:setWidth(136.69);
+    obj.image194:setHeight(77.69);
+    obj.image194:setStyle("proportional");
+    obj.image194:setCenter(true);
+    obj.image194:setEditable(true);
+    obj.image194:setField("ImagemArma41");
+    obj.image194:setName("image194");
 
     obj.label391 = GUI.fromHandle(_obj_newObject("label"));
     obj.label391:setParent(obj.CorpoACorpo41);
@@ -15457,14 +15429,14 @@ local function constructNew_frmDZ_Ficha()
     obj.CorpoACorpo42:setLeft(413);
     obj.CorpoACorpo42:setTop(1362);
 
-    obj.image196 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image196:setParent(obj.CorpoACorpo42);
-    obj.image196:setSRC("images/LojaCorpoACorpo.png");
-    obj.image196:setLeft(0);
-    obj.image196:setTop(0);
-    obj.image196:setWidth(399);
-    obj.image196:setHeight(174);
-    obj.image196:setName("image196");
+    obj.image195 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image195:setParent(obj.CorpoACorpo42);
+    obj.image195:setSRC("images/LojaCorpoACorpo.png");
+    obj.image195:setLeft(0);
+    obj.image195:setTop(0);
+    obj.image195:setWidth(399);
+    obj.image195:setHeight(174);
+    obj.image195:setName("image195");
 
     obj.label397 = GUI.fromHandle(_obj_newObject("label"));
     obj.label397:setParent(obj.CorpoACorpo42);
@@ -15494,17 +15466,17 @@ local function constructNew_frmDZ_Ficha()
     obj.Arma42:setHint("Clique aqui para comprar");
     obj.Arma42:setName("Arma42");
 
-    obj.image197 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image197:setParent(obj.CorpoACorpo42);
-    obj.image197:setLeft(2.56);
-    obj.image197:setTop(93.00);
-    obj.image197:setWidth(136.69);
-    obj.image197:setHeight(77.69);
-    obj.image197:setStyle("proportional");
-    obj.image197:setCenter(true);
-    obj.image197:setEditable(true);
-    obj.image197:setField("ImagemArma42");
-    obj.image197:setName("image197");
+    obj.image196 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image196:setParent(obj.CorpoACorpo42);
+    obj.image196:setLeft(2.56);
+    obj.image196:setTop(93.00);
+    obj.image196:setWidth(136.69);
+    obj.image196:setHeight(77.69);
+    obj.image196:setStyle("proportional");
+    obj.image196:setCenter(true);
+    obj.image196:setEditable(true);
+    obj.image196:setField("ImagemArma42");
+    obj.image196:setName("image196");
 
     obj.label398 = GUI.fromHandle(_obj_newObject("label"));
     obj.label398:setParent(obj.CorpoACorpo42);
@@ -15606,22 +15578,22 @@ local function constructNew_frmDZ_Ficha()
     obj.scrollBox12:setAlign("client");
     obj.scrollBox12:setName("scrollBox12");
 
-    obj.layout156 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout156:setParent(obj.scrollBox12);
-    obj.layout156:setAlign("client");
-    obj.layout156:setName("layout156");
+    obj.layout155 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout155:setParent(obj.scrollBox12);
+    obj.layout155:setAlign("client");
+    obj.layout155:setName("layout155");
 
-    obj.image198 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image198:setParent(obj.layout156);
-    obj.image198:setSRC("images/dinheiroArma.png");
-    obj.image198:setLeft(0);
-    obj.image198:setTop(5);
-    obj.image198:setWidth(180.37);
-    obj.image198:setHeight(80.25);
-    obj.image198:setName("image198");
+    obj.image197 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image197:setParent(obj.layout155);
+    obj.image197:setSRC("images/Seudinheiro.png");
+    obj.image197:setLeft(0);
+    obj.image197:setTop(5);
+    obj.image197:setWidth(180.37);
+    obj.image197:setHeight(80.25);
+    obj.image197:setName("image197");
 
     obj.labSoma5 = GUI.fromHandle(_obj_newObject("label"));
-    obj.labSoma5:setParent(obj.layout156);
+    obj.labSoma5:setParent(obj.layout155);
     obj.labSoma5:setLeft(26);
     obj.labSoma5:setTop(30);
     lfm_setPropAsString(obj.labSoma5, "fontStyle",  "bold");
@@ -15638,28 +15610,28 @@ local function constructNew_frmDZ_Ficha()
     obj.dataLink20:setField("Soma");
     obj.dataLink20:setName("dataLink20");
 
+    obj.image198 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image198:setParent(obj.scrollBox12);
+    obj.image198:setLeft(0);
+    obj.image198:setTop(0);
+    obj.image198:setWidth(130.37);
+    obj.image198:setHeight(62.25);
+    obj.image198:setHint("Seu dinheiro");
+    obj.image198:setCursor("handPoint");
+    obj.image198:setHitTest(true);
+    obj.image198:setName("image198");
+
     obj.image199 = GUI.fromHandle(_obj_newObject("image"));
     obj.image199:setParent(obj.scrollBox12);
-    obj.image199:setLeft(0);
-    obj.image199:setTop(0);
-    obj.image199:setWidth(130.37);
-    obj.image199:setHeight(62.25);
-    obj.image199:setHint("Seu dinheiro");
+    obj.image199:setSRC("images/botaoVoltar.png");
+    obj.image199:setLeft(200);
+    obj.image199:setTop(29);
+    obj.image199:setWidth(50);
+    obj.image199:setHeight(50);
     obj.image199:setCursor("handPoint");
+    obj.image199:setHint("Clique aqui para voltar");
     obj.image199:setHitTest(true);
     obj.image199:setName("image199");
-
-    obj.image200 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image200:setParent(obj.scrollBox12);
-    obj.image200:setSRC("images/botaoVoltar.png");
-    obj.image200:setLeft(200);
-    obj.image200:setTop(29);
-    obj.image200:setWidth(50);
-    obj.image200:setHeight(50);
-    obj.image200:setCursor("handPoint");
-    obj.image200:setHint("Clique aqui para voltar");
-    obj.image200:setHitTest(true);
-    obj.image200:setName("image200");
 
     obj.Armadura45 = GUI.fromHandle(_obj_newObject("layout"));
     obj.Armadura45:setParent(obj.scrollBox12);
@@ -15669,14 +15641,14 @@ local function constructNew_frmDZ_Ficha()
     obj.Armadura45:setLeft(0);
     obj.Armadura45:setTop(88);
 
-    obj.image201 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image201:setParent(obj.Armadura45);
-    obj.image201:setSRC("images/LojaparaArmaduras.png");
-    obj.image201:setLeft(0);
-    obj.image201:setTop(0);
-    obj.image201:setWidth(399);
-    obj.image201:setHeight(174);
-    obj.image201:setName("image201");
+    obj.image200 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image200:setParent(obj.Armadura45);
+    obj.image200:setSRC("images/LojaparaArmaduras.png");
+    obj.image200:setLeft(0);
+    obj.image200:setTop(0);
+    obj.image200:setWidth(399);
+    obj.image200:setHeight(174);
+    obj.image200:setName("image200");
 
     obj.label404 = GUI.fromHandle(_obj_newObject("label"));
     obj.label404:setParent(obj.Armadura45);
@@ -15706,17 +15678,17 @@ local function constructNew_frmDZ_Ficha()
     obj.Arma45:setHint("Clique aqui para comprar");
     obj.Arma45:setName("Arma45");
 
-    obj.image202 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image202:setParent(obj.Armadura45);
-    obj.image202:setLeft(2.56);
-    obj.image202:setTop(93.00);
-    obj.image202:setWidth(136.69);
-    obj.image202:setHeight(77.69);
-    obj.image202:setStyle("proportional");
-    obj.image202:setCenter(true);
-    obj.image202:setEditable(true);
-    obj.image202:setField("ImagemArma45");
-    obj.image202:setName("image202");
+    obj.image201 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image201:setParent(obj.Armadura45);
+    obj.image201:setLeft(2.56);
+    obj.image201:setTop(93.00);
+    obj.image201:setWidth(136.69);
+    obj.image201:setHeight(77.69);
+    obj.image201:setStyle("proportional");
+    obj.image201:setCenter(true);
+    obj.image201:setEditable(true);
+    obj.image201:setField("ImagemArma45");
+    obj.image201:setName("image201");
 
     obj.label405 = GUI.fromHandle(_obj_newObject("label"));
     obj.label405:setParent(obj.Armadura45);
@@ -15795,14 +15767,14 @@ local function constructNew_frmDZ_Ficha()
     obj.Armadura46:setLeft(0);
     obj.Armadura46:setTop(270);
 
-    obj.image203 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image203:setParent(obj.Armadura46);
-    obj.image203:setSRC("images/LojaparaArmaduras.png");
-    obj.image203:setLeft(0);
-    obj.image203:setTop(0);
-    obj.image203:setWidth(399);
-    obj.image203:setHeight(174);
-    obj.image203:setName("image203");
+    obj.image202 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image202:setParent(obj.Armadura46);
+    obj.image202:setSRC("images/LojaparaArmaduras.png");
+    obj.image202:setLeft(0);
+    obj.image202:setTop(0);
+    obj.image202:setWidth(399);
+    obj.image202:setHeight(174);
+    obj.image202:setName("image202");
 
     obj.label410 = GUI.fromHandle(_obj_newObject("label"));
     obj.label410:setParent(obj.Armadura46);
@@ -15832,17 +15804,17 @@ local function constructNew_frmDZ_Ficha()
     obj.Arma46:setHint("Clique aqui para comprar");
     obj.Arma46:setName("Arma46");
 
-    obj.image204 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image204:setParent(obj.Armadura46);
-    obj.image204:setLeft(2.56);
-    obj.image204:setTop(93.00);
-    obj.image204:setWidth(136.69);
-    obj.image204:setHeight(77.69);
-    obj.image204:setStyle("proportional");
-    obj.image204:setCenter(true);
-    obj.image204:setEditable(true);
-    obj.image204:setField("ImagemArma46");
-    obj.image204:setName("image204");
+    obj.image203 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image203:setParent(obj.Armadura46);
+    obj.image203:setLeft(2.56);
+    obj.image203:setTop(93.00);
+    obj.image203:setWidth(136.69);
+    obj.image203:setHeight(77.69);
+    obj.image203:setStyle("proportional");
+    obj.image203:setCenter(true);
+    obj.image203:setEditable(true);
+    obj.image203:setField("ImagemArma46");
+    obj.image203:setName("image203");
 
     obj.label411 = GUI.fromHandle(_obj_newObject("label"));
     obj.label411:setParent(obj.Armadura46);
@@ -15921,14 +15893,14 @@ local function constructNew_frmDZ_Ficha()
     obj.Armadura47:setLeft(0);
     obj.Armadura47:setTop(452);
 
-    obj.image205 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image205:setParent(obj.Armadura47);
-    obj.image205:setSRC("images/LojaparaArmaduras.png");
-    obj.image205:setLeft(0);
-    obj.image205:setTop(0);
-    obj.image205:setWidth(399);
-    obj.image205:setHeight(174);
-    obj.image205:setName("image205");
+    obj.image204 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image204:setParent(obj.Armadura47);
+    obj.image204:setSRC("images/LojaparaArmaduras.png");
+    obj.image204:setLeft(0);
+    obj.image204:setTop(0);
+    obj.image204:setWidth(399);
+    obj.image204:setHeight(174);
+    obj.image204:setName("image204");
 
     obj.label416 = GUI.fromHandle(_obj_newObject("label"));
     obj.label416:setParent(obj.Armadura47);
@@ -15958,17 +15930,17 @@ local function constructNew_frmDZ_Ficha()
     obj.Arma47:setHint("Clique aqui para comprar");
     obj.Arma47:setName("Arma47");
 
-    obj.image206 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image206:setParent(obj.Armadura47);
-    obj.image206:setLeft(2.56);
-    obj.image206:setTop(93.00);
-    obj.image206:setWidth(136.69);
-    obj.image206:setHeight(77.69);
-    obj.image206:setStyle("proportional");
-    obj.image206:setCenter(true);
-    obj.image206:setEditable(true);
-    obj.image206:setField("ImagemArma47");
-    obj.image206:setName("image206");
+    obj.image205 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image205:setParent(obj.Armadura47);
+    obj.image205:setLeft(2.56);
+    obj.image205:setTop(93.00);
+    obj.image205:setWidth(136.69);
+    obj.image205:setHeight(77.69);
+    obj.image205:setStyle("proportional");
+    obj.image205:setCenter(true);
+    obj.image205:setEditable(true);
+    obj.image205:setField("ImagemArma47");
+    obj.image205:setName("image205");
 
     obj.label417 = GUI.fromHandle(_obj_newObject("label"));
     obj.label417:setParent(obj.Armadura47);
@@ -16047,14 +16019,14 @@ local function constructNew_frmDZ_Ficha()
     obj.Armadura48:setLeft(0);
     obj.Armadura48:setTop(634);
 
-    obj.image207 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image207:setParent(obj.Armadura48);
-    obj.image207:setSRC("images/LojaparaArmaduras.png");
-    obj.image207:setLeft(0);
-    obj.image207:setTop(0);
-    obj.image207:setWidth(399);
-    obj.image207:setHeight(174);
-    obj.image207:setName("image207");
+    obj.image206 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image206:setParent(obj.Armadura48);
+    obj.image206:setSRC("images/LojaparaArmaduras.png");
+    obj.image206:setLeft(0);
+    obj.image206:setTop(0);
+    obj.image206:setWidth(399);
+    obj.image206:setHeight(174);
+    obj.image206:setName("image206");
 
     obj.label422 = GUI.fromHandle(_obj_newObject("label"));
     obj.label422:setParent(obj.Armadura48);
@@ -16084,17 +16056,17 @@ local function constructNew_frmDZ_Ficha()
     obj.Arma48:setHint("Clique aqui para comprar");
     obj.Arma48:setName("Arma48");
 
-    obj.image208 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image208:setParent(obj.Armadura48);
-    obj.image208:setLeft(2.56);
-    obj.image208:setTop(93.00);
-    obj.image208:setWidth(136.69);
-    obj.image208:setHeight(77.69);
-    obj.image208:setStyle("proportional");
-    obj.image208:setCenter(true);
-    obj.image208:setEditable(true);
-    obj.image208:setField("ImagemArma48");
-    obj.image208:setName("image208");
+    obj.image207 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image207:setParent(obj.Armadura48);
+    obj.image207:setLeft(2.56);
+    obj.image207:setTop(93.00);
+    obj.image207:setWidth(136.69);
+    obj.image207:setHeight(77.69);
+    obj.image207:setStyle("proportional");
+    obj.image207:setCenter(true);
+    obj.image207:setEditable(true);
+    obj.image207:setField("ImagemArma48");
+    obj.image207:setName("image207");
 
     obj.label423 = GUI.fromHandle(_obj_newObject("label"));
     obj.label423:setParent(obj.Armadura48);
@@ -16173,14 +16145,14 @@ local function constructNew_frmDZ_Ficha()
     obj.Armadura49:setLeft(0);
     obj.Armadura49:setTop(816);
 
-    obj.image209 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image209:setParent(obj.Armadura49);
-    obj.image209:setSRC("images/LojaparaArmaduras.png");
-    obj.image209:setLeft(0);
-    obj.image209:setTop(0);
-    obj.image209:setWidth(399);
-    obj.image209:setHeight(174);
-    obj.image209:setName("image209");
+    obj.image208 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image208:setParent(obj.Armadura49);
+    obj.image208:setSRC("images/LojaparaArmaduras.png");
+    obj.image208:setLeft(0);
+    obj.image208:setTop(0);
+    obj.image208:setWidth(399);
+    obj.image208:setHeight(174);
+    obj.image208:setName("image208");
 
     obj.label428 = GUI.fromHandle(_obj_newObject("label"));
     obj.label428:setParent(obj.Armadura49);
@@ -16210,17 +16182,17 @@ local function constructNew_frmDZ_Ficha()
     obj.Arma49:setHint("Clique aqui para comprar");
     obj.Arma49:setName("Arma49");
 
-    obj.image210 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image210:setParent(obj.Armadura49);
-    obj.image210:setLeft(2.56);
-    obj.image210:setTop(93.00);
-    obj.image210:setWidth(136.69);
-    obj.image210:setHeight(77.69);
-    obj.image210:setStyle("proportional");
-    obj.image210:setCenter(true);
-    obj.image210:setEditable(true);
-    obj.image210:setField("ImagemArma49");
-    obj.image210:setName("image210");
+    obj.image209 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image209:setParent(obj.Armadura49);
+    obj.image209:setLeft(2.56);
+    obj.image209:setTop(93.00);
+    obj.image209:setWidth(136.69);
+    obj.image209:setHeight(77.69);
+    obj.image209:setStyle("proportional");
+    obj.image209:setCenter(true);
+    obj.image209:setEditable(true);
+    obj.image209:setField("ImagemArma49");
+    obj.image209:setName("image209");
 
     obj.label429 = GUI.fromHandle(_obj_newObject("label"));
     obj.label429:setParent(obj.Armadura49);
@@ -16299,14 +16271,14 @@ local function constructNew_frmDZ_Ficha()
     obj.Armadura50:setLeft(0);
     obj.Armadura50:setTop(998);
 
-    obj.image211 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image211:setParent(obj.Armadura50);
-    obj.image211:setSRC("images/LojaparaArmaduras.png");
-    obj.image211:setLeft(0);
-    obj.image211:setTop(0);
-    obj.image211:setWidth(399);
-    obj.image211:setHeight(174);
-    obj.image211:setName("image211");
+    obj.image210 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image210:setParent(obj.Armadura50);
+    obj.image210:setSRC("images/LojaparaArmaduras.png");
+    obj.image210:setLeft(0);
+    obj.image210:setTop(0);
+    obj.image210:setWidth(399);
+    obj.image210:setHeight(174);
+    obj.image210:setName("image210");
 
     obj.label434 = GUI.fromHandle(_obj_newObject("label"));
     obj.label434:setParent(obj.Armadura50);
@@ -16336,17 +16308,17 @@ local function constructNew_frmDZ_Ficha()
     obj.Arma50:setHint("Clique aqui para comprar");
     obj.Arma50:setName("Arma50");
 
-    obj.image212 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image212:setParent(obj.Armadura50);
-    obj.image212:setLeft(2.56);
-    obj.image212:setTop(93.00);
-    obj.image212:setWidth(136.69);
-    obj.image212:setHeight(77.69);
-    obj.image212:setStyle("proportional");
-    obj.image212:setCenter(true);
-    obj.image212:setEditable(true);
-    obj.image212:setField("ImagemArma50");
-    obj.image212:setName("image212");
+    obj.image211 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image211:setParent(obj.Armadura50);
+    obj.image211:setLeft(2.56);
+    obj.image211:setTop(93.00);
+    obj.image211:setWidth(136.69);
+    obj.image211:setHeight(77.69);
+    obj.image211:setStyle("proportional");
+    obj.image211:setCenter(true);
+    obj.image211:setEditable(true);
+    obj.image211:setField("ImagemArma50");
+    obj.image211:setName("image211");
 
     obj.label435 = GUI.fromHandle(_obj_newObject("label"));
     obj.label435:setParent(obj.Armadura50);
@@ -16425,14 +16397,14 @@ local function constructNew_frmDZ_Ficha()
     obj.Armadura51:setLeft(413);
     obj.Armadura51:setTop(88);
 
-    obj.image213 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image213:setParent(obj.Armadura51);
-    obj.image213:setSRC("images/LojaparaArmaduras.png");
-    obj.image213:setLeft(0);
-    obj.image213:setTop(0);
-    obj.image213:setWidth(399);
-    obj.image213:setHeight(174);
-    obj.image213:setName("image213");
+    obj.image212 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image212:setParent(obj.Armadura51);
+    obj.image212:setSRC("images/LojaparaArmaduras.png");
+    obj.image212:setLeft(0);
+    obj.image212:setTop(0);
+    obj.image212:setWidth(399);
+    obj.image212:setHeight(174);
+    obj.image212:setName("image212");
 
     obj.label440 = GUI.fromHandle(_obj_newObject("label"));
     obj.label440:setParent(obj.Armadura51);
@@ -16462,17 +16434,17 @@ local function constructNew_frmDZ_Ficha()
     obj.Arma51:setHint("Clique aqui para comprar");
     obj.Arma51:setName("Arma51");
 
-    obj.image214 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image214:setParent(obj.Armadura51);
-    obj.image214:setLeft(2.56);
-    obj.image214:setTop(93.00);
-    obj.image214:setWidth(136.69);
-    obj.image214:setHeight(77.69);
-    obj.image214:setStyle("proportional");
-    obj.image214:setCenter(true);
-    obj.image214:setEditable(true);
-    obj.image214:setField("ImagemArma51");
-    obj.image214:setName("image214");
+    obj.image213 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image213:setParent(obj.Armadura51);
+    obj.image213:setLeft(2.56);
+    obj.image213:setTop(93.00);
+    obj.image213:setWidth(136.69);
+    obj.image213:setHeight(77.69);
+    obj.image213:setStyle("proportional");
+    obj.image213:setCenter(true);
+    obj.image213:setEditable(true);
+    obj.image213:setField("ImagemArma51");
+    obj.image213:setName("image213");
 
     obj.label441 = GUI.fromHandle(_obj_newObject("label"));
     obj.label441:setParent(obj.Armadura51);
@@ -16551,14 +16523,14 @@ local function constructNew_frmDZ_Ficha()
     obj.Armadura52:setLeft(413);
     obj.Armadura52:setTop(270);
 
-    obj.image215 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image215:setParent(obj.Armadura52);
-    obj.image215:setSRC("images/LojaparaArmaduras.png");
-    obj.image215:setLeft(0);
-    obj.image215:setTop(0);
-    obj.image215:setWidth(399);
-    obj.image215:setHeight(174);
-    obj.image215:setName("image215");
+    obj.image214 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image214:setParent(obj.Armadura52);
+    obj.image214:setSRC("images/LojaparaArmaduras.png");
+    obj.image214:setLeft(0);
+    obj.image214:setTop(0);
+    obj.image214:setWidth(399);
+    obj.image214:setHeight(174);
+    obj.image214:setName("image214");
 
     obj.label446 = GUI.fromHandle(_obj_newObject("label"));
     obj.label446:setParent(obj.Armadura52);
@@ -16588,17 +16560,17 @@ local function constructNew_frmDZ_Ficha()
     obj.Arma52:setHint("Clique aqui para comprar");
     obj.Arma52:setName("Arma52");
 
-    obj.image216 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image216:setParent(obj.Armadura52);
-    obj.image216:setLeft(2.56);
-    obj.image216:setTop(93.00);
-    obj.image216:setWidth(136.69);
-    obj.image216:setHeight(77.69);
-    obj.image216:setStyle("proportional");
-    obj.image216:setCenter(true);
-    obj.image216:setEditable(true);
-    obj.image216:setField("ImagemArma52");
-    obj.image216:setName("image216");
+    obj.image215 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image215:setParent(obj.Armadura52);
+    obj.image215:setLeft(2.56);
+    obj.image215:setTop(93.00);
+    obj.image215:setWidth(136.69);
+    obj.image215:setHeight(77.69);
+    obj.image215:setStyle("proportional");
+    obj.image215:setCenter(true);
+    obj.image215:setEditable(true);
+    obj.image215:setField("ImagemArma52");
+    obj.image215:setName("image215");
 
     obj.label447 = GUI.fromHandle(_obj_newObject("label"));
     obj.label447:setParent(obj.Armadura52);
@@ -16677,14 +16649,14 @@ local function constructNew_frmDZ_Ficha()
     obj.Armadura53:setLeft(413);
     obj.Armadura53:setTop(634);
 
-    obj.image217 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image217:setParent(obj.Armadura53);
-    obj.image217:setSRC("images/LojaparaArmaduras.png");
-    obj.image217:setLeft(0);
-    obj.image217:setTop(0);
-    obj.image217:setWidth(399);
-    obj.image217:setHeight(174);
-    obj.image217:setName("image217");
+    obj.image216 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image216:setParent(obj.Armadura53);
+    obj.image216:setSRC("images/LojaparaArmaduras.png");
+    obj.image216:setLeft(0);
+    obj.image216:setTop(0);
+    obj.image216:setWidth(399);
+    obj.image216:setHeight(174);
+    obj.image216:setName("image216");
 
     obj.label452 = GUI.fromHandle(_obj_newObject("label"));
     obj.label452:setParent(obj.Armadura53);
@@ -16714,17 +16686,17 @@ local function constructNew_frmDZ_Ficha()
     obj.Arma53:setHint("Clique aqui para comprar");
     obj.Arma53:setName("Arma53");
 
-    obj.image218 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image218:setParent(obj.Armadura53);
-    obj.image218:setLeft(2.56);
-    obj.image218:setTop(93.00);
-    obj.image218:setWidth(136.69);
-    obj.image218:setHeight(77.69);
-    obj.image218:setStyle("proportional");
-    obj.image218:setCenter(true);
-    obj.image218:setEditable(true);
-    obj.image218:setField("ImagemArma53");
-    obj.image218:setName("image218");
+    obj.image217 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image217:setParent(obj.Armadura53);
+    obj.image217:setLeft(2.56);
+    obj.image217:setTop(93.00);
+    obj.image217:setWidth(136.69);
+    obj.image217:setHeight(77.69);
+    obj.image217:setStyle("proportional");
+    obj.image217:setCenter(true);
+    obj.image217:setEditable(true);
+    obj.image217:setField("ImagemArma53");
+    obj.image217:setName("image217");
 
     obj.label453 = GUI.fromHandle(_obj_newObject("label"));
     obj.label453:setParent(obj.Armadura53);
@@ -16803,14 +16775,14 @@ local function constructNew_frmDZ_Ficha()
     obj.Armadura54:setLeft(413);
     obj.Armadura54:setTop(452);
 
-    obj.image219 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image219:setParent(obj.Armadura54);
-    obj.image219:setSRC("images/LojaparaArmaduras.png");
-    obj.image219:setLeft(0);
-    obj.image219:setTop(0);
-    obj.image219:setWidth(399);
-    obj.image219:setHeight(174);
-    obj.image219:setName("image219");
+    obj.image218 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image218:setParent(obj.Armadura54);
+    obj.image218:setSRC("images/LojaparaArmaduras.png");
+    obj.image218:setLeft(0);
+    obj.image218:setTop(0);
+    obj.image218:setWidth(399);
+    obj.image218:setHeight(174);
+    obj.image218:setName("image218");
 
     obj.label458 = GUI.fromHandle(_obj_newObject("label"));
     obj.label458:setParent(obj.Armadura54);
@@ -16840,17 +16812,17 @@ local function constructNew_frmDZ_Ficha()
     obj.Arma54:setHint("Clique aqui para comprar");
     obj.Arma54:setName("Arma54");
 
-    obj.image220 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image220:setParent(obj.Armadura54);
-    obj.image220:setLeft(2.56);
-    obj.image220:setTop(93.00);
-    obj.image220:setWidth(136.69);
-    obj.image220:setHeight(77.69);
-    obj.image220:setStyle("proportional");
-    obj.image220:setCenter(true);
-    obj.image220:setEditable(true);
-    obj.image220:setField("ImagemArma54");
-    obj.image220:setName("image220");
+    obj.image219 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image219:setParent(obj.Armadura54);
+    obj.image219:setLeft(2.56);
+    obj.image219:setTop(93.00);
+    obj.image219:setWidth(136.69);
+    obj.image219:setHeight(77.69);
+    obj.image219:setStyle("proportional");
+    obj.image219:setCenter(true);
+    obj.image219:setEditable(true);
+    obj.image219:setField("ImagemArma54");
+    obj.image219:setName("image219");
 
     obj.label459 = GUI.fromHandle(_obj_newObject("label"));
     obj.label459:setParent(obj.Armadura54);
@@ -16929,14 +16901,14 @@ local function constructNew_frmDZ_Ficha()
     obj.Armadura55:setLeft(413);
     obj.Armadura55:setTop(816);
 
-    obj.image221 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image221:setParent(obj.Armadura55);
-    obj.image221:setSRC("images/LojaparaArmaduras.png");
-    obj.image221:setLeft(0);
-    obj.image221:setTop(0);
-    obj.image221:setWidth(399);
-    obj.image221:setHeight(174);
-    obj.image221:setName("image221");
+    obj.image220 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image220:setParent(obj.Armadura55);
+    obj.image220:setSRC("images/LojaparaArmaduras.png");
+    obj.image220:setLeft(0);
+    obj.image220:setTop(0);
+    obj.image220:setWidth(399);
+    obj.image220:setHeight(174);
+    obj.image220:setName("image220");
 
     obj.label464 = GUI.fromHandle(_obj_newObject("label"));
     obj.label464:setParent(obj.Armadura55);
@@ -16966,17 +16938,17 @@ local function constructNew_frmDZ_Ficha()
     obj.Arma55:setHint("Clique aqui para comprar");
     obj.Arma55:setName("Arma55");
 
-    obj.image222 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image222:setParent(obj.Armadura55);
-    obj.image222:setLeft(2.56);
-    obj.image222:setTop(93.00);
-    obj.image222:setWidth(136.69);
-    obj.image222:setHeight(77.69);
-    obj.image222:setStyle("proportional");
-    obj.image222:setCenter(true);
-    obj.image222:setEditable(true);
-    obj.image222:setField("ImagemArma55");
-    obj.image222:setName("image222");
+    obj.image221 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image221:setParent(obj.Armadura55);
+    obj.image221:setLeft(2.56);
+    obj.image221:setTop(93.00);
+    obj.image221:setWidth(136.69);
+    obj.image221:setHeight(77.69);
+    obj.image221:setStyle("proportional");
+    obj.image221:setCenter(true);
+    obj.image221:setEditable(true);
+    obj.image221:setField("ImagemArma55");
+    obj.image221:setName("image221");
 
     obj.label465 = GUI.fromHandle(_obj_newObject("label"));
     obj.label465:setParent(obj.Armadura55);
@@ -17055,14 +17027,14 @@ local function constructNew_frmDZ_Ficha()
     obj.Armadura56:setLeft(413);
     obj.Armadura56:setTop(998);
 
-    obj.image223 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image223:setParent(obj.Armadura56);
-    obj.image223:setSRC("images/LojaparaArmaduras.png");
-    obj.image223:setLeft(0);
-    obj.image223:setTop(0);
-    obj.image223:setWidth(399);
-    obj.image223:setHeight(174);
-    obj.image223:setName("image223");
+    obj.image222 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image222:setParent(obj.Armadura56);
+    obj.image222:setSRC("images/LojaparaArmaduras.png");
+    obj.image222:setLeft(0);
+    obj.image222:setTop(0);
+    obj.image222:setWidth(399);
+    obj.image222:setHeight(174);
+    obj.image222:setName("image222");
 
     obj.label470 = GUI.fromHandle(_obj_newObject("label"));
     obj.label470:setParent(obj.Armadura56);
@@ -17092,17 +17064,17 @@ local function constructNew_frmDZ_Ficha()
     obj.Arma56:setHint("Clique aqui para comprar");
     obj.Arma56:setName("Arma56");
 
-    obj.image224 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image224:setParent(obj.Armadura56);
-    obj.image224:setLeft(2.56);
-    obj.image224:setTop(93.00);
-    obj.image224:setWidth(136.69);
-    obj.image224:setHeight(77.69);
-    obj.image224:setStyle("proportional");
-    obj.image224:setCenter(true);
-    obj.image224:setEditable(true);
-    obj.image224:setField("ImagemArma56");
-    obj.image224:setName("image224");
+    obj.image223 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image223:setParent(obj.Armadura56);
+    obj.image223:setLeft(2.56);
+    obj.image223:setTop(93.00);
+    obj.image223:setWidth(136.69);
+    obj.image223:setHeight(77.69);
+    obj.image223:setStyle("proportional");
+    obj.image223:setCenter(true);
+    obj.image223:setEditable(true);
+    obj.image223:setField("ImagemArma56");
+    obj.image223:setName("image223");
 
     obj.label471 = GUI.fromHandle(_obj_newObject("label"));
     obj.label471:setParent(obj.Armadura56);
@@ -17188,46 +17160,46 @@ local function constructNew_frmDZ_Ficha()
     obj.scrollBox13:setAlign("client");
     obj.scrollBox13:setName("scrollBox13");
 
+    obj.image224 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image224:setParent(obj.scrollBox13);
+    obj.image224:setLeft(0);
+    obj.image224:setTop(0);
+    obj.image224:setWidth(500);
+    obj.image224:setHeight(500);
+    obj.image224:setStyle("autoFit");
+    obj.image224:setSRC("logo_mesa");
+    obj.image224:setName("image224");
+
     obj.image225 = GUI.fromHandle(_obj_newObject("image"));
     obj.image225:setParent(obj.scrollBox13);
-    obj.image225:setLeft(0);
+    obj.image225:setLeft(480);
     obj.image225:setTop(0);
-    obj.image225:setWidth(500);
-    obj.image225:setHeight(500);
+    obj.image225:setWidth(350);
+    obj.image225:setHeight(125);
     obj.image225:setStyle("autoFit");
-    obj.image225:setSRC("logo_mesa");
+    obj.image225:setSRC("https://i.imgur.com/HNK29eO.png?1");
     obj.image225:setName("image225");
 
     obj.image226 = GUI.fromHandle(_obj_newObject("image"));
     obj.image226:setParent(obj.scrollBox13);
-    obj.image226:setLeft(480);
-    obj.image226:setTop(0);
+    obj.image226:setLeft(500);
+    obj.image226:setTop(125);
     obj.image226:setWidth(350);
     obj.image226:setHeight(125);
     obj.image226:setStyle("autoFit");
-    obj.image226:setSRC("https://i.imgur.com/HNK29eO.png?1");
+    obj.image226:setSRC("https://i.imgur.com/Xp12RUs.png");
     obj.image226:setName("image226");
 
-    obj.image227 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image227:setParent(obj.scrollBox13);
-    obj.image227:setLeft(500);
-    obj.image227:setTop(125);
-    obj.image227:setWidth(350);
-    obj.image227:setHeight(125);
-    obj.image227:setStyle("autoFit");
-    obj.image227:setSRC("https://i.imgur.com/Xp12RUs.png");
-    obj.image227:setName("image227");
-
-    obj.layout157 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout157:setParent(obj.scrollBox13);
-    obj.layout157:setLeft(460);
-    obj.layout157:setTop(290);
-    obj.layout157:setWidth(200);
-    obj.layout157:setHeight(160);
-    obj.layout157:setName("layout157");
+    obj.layout156 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout156:setParent(obj.scrollBox13);
+    obj.layout156:setLeft(460);
+    obj.layout156:setTop(290);
+    obj.layout156:setWidth(200);
+    obj.layout156:setHeight(160);
+    obj.layout156:setName("layout156");
 
     obj.rectangle28 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle28:setParent(obj.layout157);
+    obj.rectangle28:setParent(obj.layout156);
     obj.rectangle28:setAlign("client");
     obj.rectangle28:setColor("black");
     obj.rectangle28:setXradius(5);
@@ -17236,7 +17208,7 @@ local function constructNew_frmDZ_Ficha()
     obj.rectangle28:setName("rectangle28");
 
     obj.label476 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label476:setParent(obj.layout157);
+    obj.label476:setParent(obj.layout156);
     obj.label476:setLeft(0);
     obj.label476:setTop(10);
     obj.label476:setWidth(200);
@@ -17246,7 +17218,7 @@ local function constructNew_frmDZ_Ficha()
     obj.label476:setName("label476");
 
     obj.label477 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label477:setParent(obj.layout157);
+    obj.label477:setParent(obj.layout156);
     obj.label477:setLeft(0);
     obj.label477:setTop(35);
     obj.label477:setWidth(200);
@@ -17256,7 +17228,7 @@ local function constructNew_frmDZ_Ficha()
     obj.label477:setName("label477");
 
     obj.label478 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label478:setParent(obj.layout157);
+    obj.label478:setParent(obj.layout156);
     obj.label478:setLeft(0);
     obj.label478:setTop(60);
     obj.label478:setWidth(200);
@@ -17266,7 +17238,7 @@ local function constructNew_frmDZ_Ficha()
     obj.label478:setName("label478");
 
     obj.label479 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label479:setParent(obj.layout157);
+    obj.label479:setParent(obj.layout156);
     obj.label479:setLeft(0);
     obj.label479:setTop(85);
     obj.label479:setWidth(200);
@@ -17276,7 +17248,7 @@ local function constructNew_frmDZ_Ficha()
     obj.label479:setName("label479");
 
     obj.label480 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label480:setParent(obj.layout157);
+    obj.label480:setParent(obj.layout156);
     obj.label480:setLeft(0);
     obj.label480:setTop(105);
     obj.label480:setWidth(200);
@@ -17313,16 +17285,16 @@ local function constructNew_frmDZ_Ficha()
     obj.button88:setHint("Baixa a versão mais recente da ficha");
     obj.button88:setName("button88");
 
-    obj.layout158 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout158:setParent(obj.scrollBox13);
-    obj.layout158:setLeft(680);
-    obj.layout158:setTop(290);
-    obj.layout158:setWidth(200);
-    obj.layout158:setHeight(160);
-    obj.layout158:setName("layout158");
+    obj.layout157 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout157:setParent(obj.scrollBox13);
+    obj.layout157:setLeft(680);
+    obj.layout157:setTop(290);
+    obj.layout157:setWidth(200);
+    obj.layout157:setHeight(160);
+    obj.layout157:setName("layout157");
 
     obj.rectangle29 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle29:setParent(obj.layout158);
+    obj.rectangle29:setParent(obj.layout157);
     obj.rectangle29:setAlign("client");
     obj.rectangle29:setColor("black");
     obj.rectangle29:setXradius(5);
@@ -17331,7 +17303,7 @@ local function constructNew_frmDZ_Ficha()
     obj.rectangle29:setName("rectangle29");
 
     obj.label482 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label482:setParent(obj.layout158);
+    obj.label482:setParent(obj.layout157);
     obj.label482:setLeft(0);
     obj.label482:setTop(10);
     obj.label482:setWidth(200);
@@ -17341,7 +17313,7 @@ local function constructNew_frmDZ_Ficha()
     obj.label482:setName("label482");
 
     obj.label483 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label483:setParent(obj.layout158);
+    obj.label483:setParent(obj.layout157);
     obj.label483:setLeft(0);
     obj.label483:setTop(35);
     obj.label483:setWidth(200);
@@ -17352,7 +17324,7 @@ local function constructNew_frmDZ_Ficha()
     obj.label483:setName("label483");
 
     obj.button89 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button89:setParent(obj.layout158);
+    obj.button89:setParent(obj.layout157);
     obj.button89:setLeft(50);
     obj.button89:setTop(60);
     obj.button89:setWidth(100);
@@ -17363,7 +17335,7 @@ local function constructNew_frmDZ_Ficha()
     obj.button89:setName("button89");
 
     obj.button90 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button90:setParent(obj.layout158);
+    obj.button90:setParent(obj.layout157);
     obj.button90:setLeft(50);
     obj.button90:setTop(90);
     obj.button90:setWidth(100);
@@ -18215,50 +18187,17 @@ local function constructNew_frmDZ_Ficha()
             self.labSoma3.text = '$' .. format_thousand(sheet.soma);
         end, obj);
 
-    obj._e_event112 = obj.image77:addEventListener("onClick",
-        function (_)
-            if rrpg.getMesaDe(sheet).meuJogador.isMestre then
-                        dialogs.inputQuery("Carteira", "Novo valor:", "",
-                            function (valorPreenchido)
-                                sheet.Nivel = (sheet.Nivel or 0 ) + valorPreenchido; 
-                            end);
-                        end;
-        end, obj);
-
-    obj._e_event113 = obj.niveldoPlayer:addEventListener("onClick",
-        function (_)
-            if Firecast.getMesaDe(sheet).meuJogador.isMestre then
-                                        local Nivel = (sheet.Nivel or 0) +1;
-                                        if Nivel >= 0 then
-                                        sheet.Nivel = Nivel;
-                                                     else 
-                                            showMessage("OPA! Não pode passar de 0");   
-                                         end;		
-                                         end;
-        end, obj);
-
-    obj._e_event114 = obj.niveldoPlayer:addEventListener("onMenu",
-        function (_, x, y)
-            if Firecast.getMesaDe(sheet).meuJogador.isMestre then
-                                        local Nivel = (sheet.Nivel or 0) -1;
-                                        if Nivel >= 0 then
-                                        sheet.Nivel = Nivel;
-                                                     else 
-                                            showMessage("OPA! Não pode passar de 0");   
-                                         end;		
-                                         end;
-        end, obj);
-
-    obj._e_event115 = obj.nivelresetPlayer:addEventListener("onDblClick",
+    obj._e_event112 = obj.nivelresetPlayer:addEventListener("onDblClick",
         function (_)
             if Firecast.getMesaDe(sheet).meuJogador.isMestre then
                                         sheet.Nivel = 1
+                                        sheet.PontosDeBusca = 0
                                         else
                                         showMessage("OPA! Você não tem permissões aqui");
                                         end;
         end, obj);
 
-    obj._e_event116 = obj.dataLink17:addEventListener("onChange",
+    obj._e_event113 = obj.dataLink17:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet.Nivel >= 1 then
             sheet.ItemNome = 'Arco'
@@ -18649,30 +18588,30 @@ local function constructNew_frmDZ_Ficha()
                             end;
         end, obj);
 
-    obj._e_event117 = obj.button82:addEventListener("onClick",
+    obj._e_event114 = obj.button82:addEventListener("onClick",
         function (_)
             self.rclNote:append();
         end, obj);
 
-    obj._e_event118 = obj.image81:addEventListener("onClick",
+    obj._e_event115 = obj.image80:addEventListener("onClick",
         function (_)
             self.ApresentaLoja.visible = false;
                         self.LojaDeArmas.visible = true;
         end, obj);
 
-    obj._e_event119 = obj.image82:addEventListener("onClick",
+    obj._e_event116 = obj.image81:addEventListener("onClick",
         function (_)
             self.LojaCorpoACorpo.visible = true
                         self.ApresentaLoja.visible = false;
         end, obj);
 
-    obj._e_event120 = obj.image83:addEventListener("onClick",
+    obj._e_event117 = obj.image82:addEventListener("onClick",
         function (_)
             self.ApresentaLoja.visible = false;
                         self.LojaArmaduras.visible = true;
         end, obj);
 
-    obj._e_event121 = obj.button83:addEventListener("onClick",
+    obj._e_event118 = obj.button83:addEventListener("onClick",
         function (_)
             sheet.Preco = ''
                     sheet.ItemNome = ''
@@ -18900,7 +18839,7 @@ local function constructNew_frmDZ_Ficha()
             sheet.ImagemArma24 = ''
         end, obj);
 
-    obj._e_event122 = obj.button84:addEventListener("onClick",
+    obj._e_event119 = obj.button84:addEventListener("onClick",
         function (_)
             sheet.Preco = '1200'
             Iniciativa = '-2'
@@ -19160,7 +19099,7 @@ local function constructNew_frmDZ_Ficha()
             sheet.ItemNome23 = 'Submetralhadora'
         end, obj);
 
-    obj._e_event123 = obj.dataLink18:addEventListener("onChange",
+    obj._e_event120 = obj.dataLink18:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             function format_thousand(v)
                     local s = string.format("%d", math.floor(v))
@@ -19174,7 +19113,7 @@ local function constructNew_frmDZ_Ficha()
                       self.labSoma2.text = '$' .. format_thousand(sheet.soma);
         end, obj);
 
-    obj._e_event124 = obj.image85:addEventListener("onClick",
+    obj._e_event121 = obj.image84:addEventListener("onClick",
         function (_)
             if rrpg.getMesaDe(sheet).meuJogador.isMestre then
                         dialogs.inputQuery("Carteira", "Novo valor:", "",
@@ -19184,13 +19123,13 @@ local function constructNew_frmDZ_Ficha()
                         end;
         end, obj);
 
-    obj._e_event125 = obj.image86:addEventListener("onClick",
+    obj._e_event122 = obj.image85:addEventListener("onClick",
         function (_)
             self.LojaDeArmas.visible = false;
                         self.ApresentaLoja.visible = true;
         end, obj);
 
-    obj._e_event126 = obj.label85:addEventListener("onClick",
+    obj._e_event123 = obj.label85:addEventListener("onClick",
         function (_)
             if rrpg.getMesaDe(sheet).meuJogador.isMestre then
             			dialogs.inputQuery("Carteira", "Novo valor:", "",
@@ -19200,7 +19139,7 @@ local function constructNew_frmDZ_Ficha()
             			end;
         end, obj);
 
-    obj._e_event127 = obj.image88:addEventListener("onClick",
+    obj._e_event124 = obj.image87:addEventListener("onClick",
         function (_)
             local Soma = (sheet.Soma or 0) - 1200
                     if Soma >= 0 then
@@ -19213,7 +19152,7 @@ local function constructNew_frmDZ_Ficha()
                     end
         end, obj);
 
-    obj._e_event128 = obj.label93:addEventListener("onClick",
+    obj._e_event125 = obj.label93:addEventListener("onClick",
         function (_)
             if rrpg.getMesaDe(sheet).meuJogador.isMestre then
             			dialogs.inputQuery("Carteira", "Novo valor:", "",
@@ -19223,7 +19162,7 @@ local function constructNew_frmDZ_Ficha()
             			end;
         end, obj);
 
-    obj._e_event129 = obj.image91:addEventListener("onClick",
+    obj._e_event126 = obj.image90:addEventListener("onClick",
         function (_)
             local Soma = (sheet.Soma or 0) -1200;
             						         if Soma >= 0 then
@@ -19237,7 +19176,7 @@ local function constructNew_frmDZ_Ficha()
             		end;
         end, obj);
 
-    obj._e_event130 = obj.label101:addEventListener("onClick",
+    obj._e_event127 = obj.label101:addEventListener("onClick",
         function (_)
             if rrpg.getMesaDe(sheet).meuJogador.isMestre then
             			dialogs.inputQuery("Carteira", "Novo valor:", "",
@@ -19247,7 +19186,7 @@ local function constructNew_frmDZ_Ficha()
             			end;
         end, obj);
 
-    obj._e_event131 = obj.image94:addEventListener("onClick",
+    obj._e_event128 = obj.image93:addEventListener("onClick",
         function (_)
             local Soma = (sheet.Soma or 0) -1200;
             						         if Soma >= 0 then
@@ -19261,7 +19200,7 @@ local function constructNew_frmDZ_Ficha()
             		end;
         end, obj);
 
-    obj._e_event132 = obj.label109:addEventListener("onClick",
+    obj._e_event129 = obj.label109:addEventListener("onClick",
         function (_)
             if rrpg.getMesaDe(sheet).meuJogador.isMestre then
             			dialogs.inputQuery("Carteira", "Novo valor:", "",
@@ -19271,7 +19210,7 @@ local function constructNew_frmDZ_Ficha()
             			end;
         end, obj);
 
-    obj._e_event133 = obj.image97:addEventListener("onClick",
+    obj._e_event130 = obj.image96:addEventListener("onClick",
         function (_)
             local Soma = (sheet.Soma or 0) -1200;
             						         if Soma >= 0 then
@@ -19285,7 +19224,7 @@ local function constructNew_frmDZ_Ficha()
             		end;
         end, obj);
 
-    obj._e_event134 = obj.label117:addEventListener("onClick",
+    obj._e_event131 = obj.label117:addEventListener("onClick",
         function (_)
             if rrpg.getMesaDe(sheet).meuJogador.isMestre then
             			dialogs.inputQuery("Carteira", "Novo valor:", "",
@@ -19295,7 +19234,7 @@ local function constructNew_frmDZ_Ficha()
             			end;
         end, obj);
 
-    obj._e_event135 = obj.image100:addEventListener("onClick",
+    obj._e_event132 = obj.image99:addEventListener("onClick",
         function (_)
             local Soma = (sheet.Soma or 0) -1200;
             						         if Soma >= 0 then
@@ -19309,7 +19248,7 @@ local function constructNew_frmDZ_Ficha()
             		end;
         end, obj);
 
-    obj._e_event136 = obj.label125:addEventListener("onClick",
+    obj._e_event133 = obj.label125:addEventListener("onClick",
         function (_)
             if rrpg.getMesaDe(sheet).meuJogador.isMestre then
             			dialogs.inputQuery("Carteira", "Novo valor:", "",
@@ -19319,7 +19258,7 @@ local function constructNew_frmDZ_Ficha()
             			end;
         end, obj);
 
-    obj._e_event137 = obj.image103:addEventListener("onClick",
+    obj._e_event134 = obj.image102:addEventListener("onClick",
         function (_)
             local Soma = (sheet.Soma or 0) -1200;
             						         if Soma >= 0 then
@@ -19333,7 +19272,7 @@ local function constructNew_frmDZ_Ficha()
             		end;
         end, obj);
 
-    obj._e_event138 = obj.label133:addEventListener("onClick",
+    obj._e_event135 = obj.label133:addEventListener("onClick",
         function (_)
             if rrpg.getMesaDe(sheet).meuJogador.isMestre then
             			dialogs.inputQuery("Carteira", "Novo valor:", "",
@@ -19343,7 +19282,7 @@ local function constructNew_frmDZ_Ficha()
             			end;
         end, obj);
 
-    obj._e_event139 = obj.image106:addEventListener("onClick",
+    obj._e_event136 = obj.image105:addEventListener("onClick",
         function (_)
             local Soma = (sheet.Soma or 0) -1200;
             						         if Soma >= 0 then
@@ -19357,7 +19296,7 @@ local function constructNew_frmDZ_Ficha()
             		end;
         end, obj);
 
-    obj._e_event140 = obj.label141:addEventListener("onClick",
+    obj._e_event137 = obj.label141:addEventListener("onClick",
         function (_)
             if rrpg.getMesaDe(sheet).meuJogador.isMestre then
             			dialogs.inputQuery("Carteira", "Novo valor:", "",
@@ -19367,7 +19306,7 @@ local function constructNew_frmDZ_Ficha()
             			end;
         end, obj);
 
-    obj._e_event141 = obj.image109:addEventListener("onClick",
+    obj._e_event138 = obj.image108:addEventListener("onClick",
         function (_)
             local Soma = (sheet.Soma or 0) -1200;
             						         if Soma >= 0 then
@@ -19381,7 +19320,7 @@ local function constructNew_frmDZ_Ficha()
             		end;
         end, obj);
 
-    obj._e_event142 = obj.label149:addEventListener("onClick",
+    obj._e_event139 = obj.label149:addEventListener("onClick",
         function (_)
             if rrpg.getMesaDe(sheet).meuJogador.isMestre then
             			dialogs.inputQuery("Carteira", "Novo valor:", "",
@@ -19391,7 +19330,7 @@ local function constructNew_frmDZ_Ficha()
             			end;
         end, obj);
 
-    obj._e_event143 = obj.image112:addEventListener("onClick",
+    obj._e_event140 = obj.image111:addEventListener("onClick",
         function (_)
             local Soma = (sheet.Soma or 0) -1200;
             						         if Soma >= 0 then
@@ -19405,7 +19344,7 @@ local function constructNew_frmDZ_Ficha()
             		end;
         end, obj);
 
-    obj._e_event144 = obj.label157:addEventListener("onClick",
+    obj._e_event141 = obj.label157:addEventListener("onClick",
         function (_)
             if rrpg.getMesaDe(sheet).meuJogador.isMestre then
             			dialogs.inputQuery("Carteira", "Novo valor:", "",
@@ -19415,7 +19354,7 @@ local function constructNew_frmDZ_Ficha()
             			end;
         end, obj);
 
-    obj._e_event145 = obj.image115:addEventListener("onClick",
+    obj._e_event142 = obj.image114:addEventListener("onClick",
         function (_)
             local Soma = (sheet.Soma or 0) -1200;
             						         if Soma >= 0 then
@@ -19429,7 +19368,7 @@ local function constructNew_frmDZ_Ficha()
             		end;
         end, obj);
 
-    obj._e_event146 = obj.label166:addEventListener("onClick",
+    obj._e_event143 = obj.label166:addEventListener("onClick",
         function (_)
             if rrpg.getMesaDe(sheet).meuJogador.isMestre then
             			dialogs.inputQuery("Carteira", "Novo valor:", "",
@@ -19439,7 +19378,7 @@ local function constructNew_frmDZ_Ficha()
             			end;
         end, obj);
 
-    obj._e_event147 = obj.image118:addEventListener("onClick",
+    obj._e_event144 = obj.image117:addEventListener("onClick",
         function (_)
             local Soma = (sheet.Soma or 0) -1200;
             						         if Soma >= 0 then
@@ -19453,7 +19392,7 @@ local function constructNew_frmDZ_Ficha()
             		end;
         end, obj);
 
-    obj._e_event148 = obj.label174:addEventListener("onClick",
+    obj._e_event145 = obj.label174:addEventListener("onClick",
         function (_)
             if rrpg.getMesaDe(sheet).meuJogador.isMestre then
             			dialogs.inputQuery("Carteira", "Novo valor:", "",
@@ -19463,7 +19402,7 @@ local function constructNew_frmDZ_Ficha()
             			end;
         end, obj);
 
-    obj._e_event149 = obj.image121:addEventListener("onClick",
+    obj._e_event146 = obj.image120:addEventListener("onClick",
         function (_)
             local Soma = (sheet.Soma or 0) -1200;
             						         if Soma >= 0 then
@@ -19477,7 +19416,7 @@ local function constructNew_frmDZ_Ficha()
             		end;
         end, obj);
 
-    obj._e_event150 = obj.label182:addEventListener("onClick",
+    obj._e_event147 = obj.label182:addEventListener("onClick",
         function (_)
             if rrpg.getMesaDe(sheet).meuJogador.isMestre then
             			dialogs.inputQuery("Carteira", "Novo valor:", "",
@@ -19487,7 +19426,7 @@ local function constructNew_frmDZ_Ficha()
             			end;
         end, obj);
 
-    obj._e_event151 = obj.image124:addEventListener("onClick",
+    obj._e_event148 = obj.image123:addEventListener("onClick",
         function (_)
             local Soma = (sheet.Soma or 0) -1200;
             						         if Soma >= 0 then
@@ -19501,7 +19440,7 @@ local function constructNew_frmDZ_Ficha()
             		end;
         end, obj);
 
-    obj._e_event152 = obj.label190:addEventListener("onClick",
+    obj._e_event149 = obj.label190:addEventListener("onClick",
         function (_)
             if rrpg.getMesaDe(sheet).meuJogador.isMestre then
             			dialogs.inputQuery("Carteira", "Novo valor:", "",
@@ -19511,7 +19450,7 @@ local function constructNew_frmDZ_Ficha()
             			end;
         end, obj);
 
-    obj._e_event153 = obj.image127:addEventListener("onClick",
+    obj._e_event150 = obj.image126:addEventListener("onClick",
         function (_)
             local Soma = (sheet.Soma or 0) -1200;
             						         if Soma >= 0 then
@@ -19525,7 +19464,7 @@ local function constructNew_frmDZ_Ficha()
             		end;
         end, obj);
 
-    obj._e_event154 = obj.label198:addEventListener("onClick",
+    obj._e_event151 = obj.label198:addEventListener("onClick",
         function (_)
             if rrpg.getMesaDe(sheet).meuJogador.isMestre then
             			dialogs.inputQuery("Carteira", "Novo valor:", "",
@@ -19535,7 +19474,7 @@ local function constructNew_frmDZ_Ficha()
             			end;
         end, obj);
 
-    obj._e_event155 = obj.image130:addEventListener("onClick",
+    obj._e_event152 = obj.image129:addEventListener("onClick",
         function (_)
             local Soma = (sheet.Soma or 0) -1200;
             						         if Soma >= 0 then
@@ -19549,7 +19488,7 @@ local function constructNew_frmDZ_Ficha()
             		end;
         end, obj);
 
-    obj._e_event156 = obj.label206:addEventListener("onClick",
+    obj._e_event153 = obj.label206:addEventListener("onClick",
         function (_)
             if rrpg.getMesaDe(sheet).meuJogador.isMestre then
             			dialogs.inputQuery("Carteira", "Novo valor:", "",
@@ -19559,7 +19498,7 @@ local function constructNew_frmDZ_Ficha()
             			end;
         end, obj);
 
-    obj._e_event157 = obj.image133:addEventListener("onClick",
+    obj._e_event154 = obj.image132:addEventListener("onClick",
         function (_)
             local Soma = (sheet.Soma or 0) -1200;
             						         if Soma >= 0 then
@@ -19573,7 +19512,7 @@ local function constructNew_frmDZ_Ficha()
             		end;
         end, obj);
 
-    obj._e_event158 = obj.label214:addEventListener("onClick",
+    obj._e_event155 = obj.label214:addEventListener("onClick",
         function (_)
             if rrpg.getMesaDe(sheet).meuJogador.isMestre then
             			dialogs.inputQuery("Carteira", "Novo valor:", "",
@@ -19583,7 +19522,7 @@ local function constructNew_frmDZ_Ficha()
             			end;
         end, obj);
 
-    obj._e_event159 = obj.image136:addEventListener("onClick",
+    obj._e_event156 = obj.image135:addEventListener("onClick",
         function (_)
             local Soma = (sheet.Soma or 0) -1200;
             						         if Soma >= 0 then
@@ -19597,7 +19536,7 @@ local function constructNew_frmDZ_Ficha()
             		end;
         end, obj);
 
-    obj._e_event160 = obj.label222:addEventListener("onClick",
+    obj._e_event157 = obj.label222:addEventListener("onClick",
         function (_)
             if rrpg.getMesaDe(sheet).meuJogador.isMestre then
             			dialogs.inputQuery("Carteira", "Novo valor:", "",
@@ -19607,7 +19546,7 @@ local function constructNew_frmDZ_Ficha()
             			end;
         end, obj);
 
-    obj._e_event161 = obj.image139:addEventListener("onClick",
+    obj._e_event158 = obj.image138:addEventListener("onClick",
         function (_)
             local Soma = (sheet.Soma or 0) -1200;
             						         if Soma >= 0 then
@@ -19621,7 +19560,7 @@ local function constructNew_frmDZ_Ficha()
             		end;
         end, obj);
 
-    obj._e_event162 = obj.label230:addEventListener("onClick",
+    obj._e_event159 = obj.label230:addEventListener("onClick",
         function (_)
             if rrpg.getMesaDe(sheet).meuJogador.isMestre then
             			dialogs.inputQuery("Carteira", "Novo valor:", "",
@@ -19631,7 +19570,7 @@ local function constructNew_frmDZ_Ficha()
             			end;
         end, obj);
 
-    obj._e_event163 = obj.image142:addEventListener("onClick",
+    obj._e_event160 = obj.image141:addEventListener("onClick",
         function (_)
             local Soma = (sheet.Soma or 0) -1200;
             						         if Soma >= 0 then
@@ -19645,7 +19584,7 @@ local function constructNew_frmDZ_Ficha()
             		end;
         end, obj);
 
-    obj._e_event164 = obj.label238:addEventListener("onClick",
+    obj._e_event161 = obj.label238:addEventListener("onClick",
         function (_)
             if rrpg.getMesaDe(sheet).meuJogador.isMestre then
             			dialogs.inputQuery("Carteira", "Novo valor:", "",
@@ -19655,7 +19594,7 @@ local function constructNew_frmDZ_Ficha()
             			end;
         end, obj);
 
-    obj._e_event165 = obj.image145:addEventListener("onClick",
+    obj._e_event162 = obj.image144:addEventListener("onClick",
         function (_)
             local Soma = (sheet.Soma or 0) -1200;
             						         if Soma >= 0 then
@@ -19669,7 +19608,7 @@ local function constructNew_frmDZ_Ficha()
             		end;
         end, obj);
 
-    obj._e_event166 = obj.label246:addEventListener("onClick",
+    obj._e_event163 = obj.label246:addEventListener("onClick",
         function (_)
             if rrpg.getMesaDe(sheet).meuJogador.isMestre then
             			dialogs.inputQuery("Carteira", "Novo valor:", "",
@@ -19679,7 +19618,7 @@ local function constructNew_frmDZ_Ficha()
             			end;
         end, obj);
 
-    obj._e_event167 = obj.image148:addEventListener("onClick",
+    obj._e_event164 = obj.image147:addEventListener("onClick",
         function (_)
             local Soma = (sheet.Soma or 0) -1200;
             						         if Soma >= 0 then
@@ -19693,7 +19632,7 @@ local function constructNew_frmDZ_Ficha()
             		end;
         end, obj);
 
-    obj._e_event168 = obj.label254:addEventListener("onClick",
+    obj._e_event165 = obj.label254:addEventListener("onClick",
         function (_)
             if rrpg.getMesaDe(sheet).meuJogador.isMestre then
             			dialogs.inputQuery("Carteira", "Novo valor:", "",
@@ -19703,7 +19642,7 @@ local function constructNew_frmDZ_Ficha()
             			end;
         end, obj);
 
-    obj._e_event169 = obj.image151:addEventListener("onClick",
+    obj._e_event166 = obj.image150:addEventListener("onClick",
         function (_)
             local Soma = (sheet.Soma or 0) -1200;
             						         if Soma >= 0 then
@@ -19717,7 +19656,7 @@ local function constructNew_frmDZ_Ficha()
             		end;
         end, obj);
 
-    obj._e_event170 = obj.label262:addEventListener("onClick",
+    obj._e_event167 = obj.label262:addEventListener("onClick",
         function (_)
             if rrpg.getMesaDe(sheet).meuJogador.isMestre then
             			dialogs.inputQuery("Carteira", "Novo valor:", "",
@@ -19727,7 +19666,7 @@ local function constructNew_frmDZ_Ficha()
             			end;
         end, obj);
 
-    obj._e_event171 = obj.image154:addEventListener("onClick",
+    obj._e_event168 = obj.image153:addEventListener("onClick",
         function (_)
             local Soma = (sheet.Soma or 0) -1200;
             						         if Soma >= 0 then
@@ -19741,7 +19680,7 @@ local function constructNew_frmDZ_Ficha()
             		end;
         end, obj);
 
-    obj._e_event172 = obj.label270:addEventListener("onClick",
+    obj._e_event169 = obj.label270:addEventListener("onClick",
         function (_)
             if rrpg.getMesaDe(sheet).meuJogador.isMestre then
             			dialogs.inputQuery("Carteira", "Novo valor:", "",
@@ -19751,7 +19690,7 @@ local function constructNew_frmDZ_Ficha()
             			end;
         end, obj);
 
-    obj._e_event173 = obj.image157:addEventListener("onClick",
+    obj._e_event170 = obj.image156:addEventListener("onClick",
         function (_)
             local Soma = (sheet.Soma or 0) -1200;
             						         if Soma >= 0 then
@@ -19765,7 +19704,7 @@ local function constructNew_frmDZ_Ficha()
             		end;
         end, obj);
 
-    obj._e_event174 = obj.button85:addEventListener("onClick",
+    obj._e_event171 = obj.button85:addEventListener("onClick",
         function (_)
             sheet.ItemNome25 = ''
                 sheet.Iniciativa25 = ''
@@ -19901,7 +19840,7 @@ local function constructNew_frmDZ_Ficha()
                 sheet.CD43 = ''
         end, obj);
 
-    obj._e_event175 = obj.button86:addEventListener("onClick",
+    obj._e_event172 = obj.button86:addEventListener("onClick",
         function (_)
             sheet.Preco25 = '1200'
                         sheet.ImagemArma25 = 'https://montblancbr.vteximg.com.br/arquivos/ids/161838-490-490/10883_1.jpg?v=637511754991900000'
@@ -19915,7 +19854,7 @@ local function constructNew_frmDZ_Ficha()
                         sheet.Preco25 = '1200'
         end, obj);
 
-    obj._e_event176 = obj.dataLink19:addEventListener("onChange",
+    obj._e_event173 = obj.dataLink19:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             function format_thousand(v)
                 local s = string.format("%d", math.floor(v))
@@ -19929,7 +19868,7 @@ local function constructNew_frmDZ_Ficha()
                   self.labSoma4.text = '$' .. format_thousand(sheet.soma);
         end, obj);
 
-    obj._e_event177 = obj.image160:addEventListener("onClick",
+    obj._e_event174 = obj.image159:addEventListener("onClick",
         function (_)
             if rrpg.getMesaDe(sheet).meuJogador.isMestre then
                                 dialogs.inputQuery("Carteira", "Novo valor:", "",
@@ -19939,13 +19878,13 @@ local function constructNew_frmDZ_Ficha()
                                 end;
         end, obj);
 
-    obj._e_event178 = obj.image161:addEventListener("onClick",
+    obj._e_event175 = obj.image160:addEventListener("onClick",
         function (_)
             self.LojaCorpoACorpo.visible = false;
                     self.ApresentaLoja.visible = true;
         end, obj);
 
-    obj._e_event179 = obj.label278:addEventListener("onClick",
+    obj._e_event176 = obj.label278:addEventListener("onClick",
         function (_)
             if rrpg.getMesaDe(sheet).meuJogador.isMestre then
                 dialogs.inputQuery("Carteira", "Novo valor:", "",
@@ -19955,7 +19894,7 @@ local function constructNew_frmDZ_Ficha()
                 end;
         end, obj);
 
-    obj._e_event180 = obj.Arma25:addEventListener("onClick",
+    obj._e_event177 = obj.Arma25:addEventListener("onClick",
         function (_)
             local Soma = (sheet.Soma or 0) -1200;
                                if Soma >= 0 then
@@ -19968,7 +19907,7 @@ local function constructNew_frmDZ_Ficha()
               end;
         end, obj);
 
-    obj._e_event181 = obj.label285:addEventListener("onClick",
+    obj._e_event178 = obj.label285:addEventListener("onClick",
         function (_)
             if rrpg.getMesaDe(sheet).meuJogador.isMestre then
                         dialogs.inputQuery("Carteira", "Novo valor:", "",
@@ -19978,7 +19917,7 @@ local function constructNew_frmDZ_Ficha()
                         end;
         end, obj);
 
-    obj._e_event182 = obj.Arma26:addEventListener("onClick",
+    obj._e_event179 = obj.Arma26:addEventListener("onClick",
         function (_)
             local Soma = (sheet.Soma or 0) -1200;
                                        if Soma >= 0 then
@@ -19991,7 +19930,7 @@ local function constructNew_frmDZ_Ficha()
                       end;
         end, obj);
 
-    obj._e_event183 = obj.label292:addEventListener("onClick",
+    obj._e_event180 = obj.label292:addEventListener("onClick",
         function (_)
             if rrpg.getMesaDe(sheet).meuJogador.isMestre then
                 dialogs.inputQuery("Carteira", "Novo valor:", "",
@@ -20001,7 +19940,7 @@ local function constructNew_frmDZ_Ficha()
                 end;
         end, obj);
 
-    obj._e_event184 = obj.Arma27:addEventListener("onClick",
+    obj._e_event181 = obj.Arma27:addEventListener("onClick",
         function (_)
             local Soma = (sheet.Soma or 0) -1200;
                                if Soma >= 0 then
@@ -20014,7 +19953,7 @@ local function constructNew_frmDZ_Ficha()
               end;
         end, obj);
 
-    obj._e_event185 = obj.label299:addEventListener("onClick",
+    obj._e_event182 = obj.label299:addEventListener("onClick",
         function (_)
             if rrpg.getMesaDe(sheet).meuJogador.isMestre then
                 dialogs.inputQuery("Carteira", "Novo valor:", "",
@@ -20024,7 +19963,7 @@ local function constructNew_frmDZ_Ficha()
                 end;
         end, obj);
 
-    obj._e_event186 = obj.Arma28:addEventListener("onClick",
+    obj._e_event183 = obj.Arma28:addEventListener("onClick",
         function (_)
             local Soma = (sheet.Soma or 0) -1200;
                                if Soma >= 0 then
@@ -20037,7 +19976,7 @@ local function constructNew_frmDZ_Ficha()
               end;
         end, obj);
 
-    obj._e_event187 = obj.label306:addEventListener("onClick",
+    obj._e_event184 = obj.label306:addEventListener("onClick",
         function (_)
             if rrpg.getMesaDe(sheet).meuJogador.isMestre then
                 dialogs.inputQuery("Carteira", "Novo valor:", "",
@@ -20047,7 +19986,7 @@ local function constructNew_frmDZ_Ficha()
                 end;
         end, obj);
 
-    obj._e_event188 = obj.Arma29:addEventListener("onClick",
+    obj._e_event185 = obj.Arma29:addEventListener("onClick",
         function (_)
             local Soma = (sheet.Soma or 0) -1200;
                                if Soma >= 0 then
@@ -20060,7 +19999,7 @@ local function constructNew_frmDZ_Ficha()
               end;
         end, obj);
 
-    obj._e_event189 = obj.label313:addEventListener("onClick",
+    obj._e_event186 = obj.label313:addEventListener("onClick",
         function (_)
             if rrpg.getMesaDe(sheet).meuJogador.isMestre then
                 dialogs.inputQuery("Carteira", "Novo valor:", "",
@@ -20070,7 +20009,7 @@ local function constructNew_frmDZ_Ficha()
                 end;
         end, obj);
 
-    obj._e_event190 = obj.Arma30:addEventListener("onClick",
+    obj._e_event187 = obj.Arma30:addEventListener("onClick",
         function (_)
             local Soma = (sheet.Soma or 0) -1200;
                                if Soma >= 0 then
@@ -20083,7 +20022,7 @@ local function constructNew_frmDZ_Ficha()
               end;
         end, obj);
 
-    obj._e_event191 = obj.label320:addEventListener("onClick",
+    obj._e_event188 = obj.label320:addEventListener("onClick",
         function (_)
             if rrpg.getMesaDe(sheet).meuJogador.isMestre then
                 dialogs.inputQuery("Carteira", "Novo valor:", "",
@@ -20093,7 +20032,7 @@ local function constructNew_frmDZ_Ficha()
                 end;
         end, obj);
 
-    obj._e_event192 = obj.Arma31:addEventListener("onClick",
+    obj._e_event189 = obj.Arma31:addEventListener("onClick",
         function (_)
             local Soma = (sheet.Soma or 0) -1200;
                                if Soma >= 0 then
@@ -20106,7 +20045,7 @@ local function constructNew_frmDZ_Ficha()
               end;
         end, obj);
 
-    obj._e_event193 = obj.label327:addEventListener("onClick",
+    obj._e_event190 = obj.label327:addEventListener("onClick",
         function (_)
             if rrpg.getMesaDe(sheet).meuJogador.isMestre then
                 dialogs.inputQuery("Carteira", "Novo valor:", "",
@@ -20116,7 +20055,7 @@ local function constructNew_frmDZ_Ficha()
                 end;
         end, obj);
 
-    obj._e_event194 = obj.Arma32:addEventListener("onClick",
+    obj._e_event191 = obj.Arma32:addEventListener("onClick",
         function (_)
             local Soma = (sheet.Soma or 0) -1200;
                                if Soma >= 0 then
@@ -20129,7 +20068,7 @@ local function constructNew_frmDZ_Ficha()
               end;
         end, obj);
 
-    obj._e_event195 = obj.label334:addEventListener("onClick",
+    obj._e_event192 = obj.label334:addEventListener("onClick",
         function (_)
             if rrpg.getMesaDe(sheet).meuJogador.isMestre then
                 dialogs.inputQuery("Carteira", "Novo valor:", "",
@@ -20139,7 +20078,7 @@ local function constructNew_frmDZ_Ficha()
                 end;
         end, obj);
 
-    obj._e_event196 = obj.Arma33:addEventListener("onClick",
+    obj._e_event193 = obj.Arma33:addEventListener("onClick",
         function (_)
             local Soma = (sheet.Soma or 0) -1200;
                                if Soma >= 0 then
@@ -20152,7 +20091,7 @@ local function constructNew_frmDZ_Ficha()
               end;
         end, obj);
 
-    obj._e_event197 = obj.label341:addEventListener("onClick",
+    obj._e_event194 = obj.label341:addEventListener("onClick",
         function (_)
             if rrpg.getMesaDe(sheet).meuJogador.isMestre then
                 dialogs.inputQuery("Carteira", "Novo valor:", "",
@@ -20162,7 +20101,7 @@ local function constructNew_frmDZ_Ficha()
                 end;
         end, obj);
 
-    obj._e_event198 = obj.Arma34:addEventListener("onClick",
+    obj._e_event195 = obj.Arma34:addEventListener("onClick",
         function (_)
             local Soma = (sheet.Soma or 0) -1200;
                                if Soma >= 0 then
@@ -20175,7 +20114,7 @@ local function constructNew_frmDZ_Ficha()
               end;
         end, obj);
 
-    obj._e_event199 = obj.label348:addEventListener("onClick",
+    obj._e_event196 = obj.label348:addEventListener("onClick",
         function (_)
             if rrpg.getMesaDe(sheet).meuJogador.isMestre then
                 dialogs.inputQuery("Carteira", "Novo valor:", "",
@@ -20185,7 +20124,7 @@ local function constructNew_frmDZ_Ficha()
                 end;
         end, obj);
 
-    obj._e_event200 = obj.Arma35:addEventListener("onClick",
+    obj._e_event197 = obj.Arma35:addEventListener("onClick",
         function (_)
             local Soma = (sheet.Soma or 0) -1200;
                                if Soma >= 0 then
@@ -20198,7 +20137,7 @@ local function constructNew_frmDZ_Ficha()
               end;
         end, obj);
 
-    obj._e_event201 = obj.label355:addEventListener("onClick",
+    obj._e_event198 = obj.label355:addEventListener("onClick",
         function (_)
             if rrpg.getMesaDe(sheet).meuJogador.isMestre then
                 dialogs.inputQuery("Carteira", "Novo valor:", "",
@@ -20208,7 +20147,7 @@ local function constructNew_frmDZ_Ficha()
                 end;
         end, obj);
 
-    obj._e_event202 = obj.Arma36:addEventListener("onClick",
+    obj._e_event199 = obj.Arma36:addEventListener("onClick",
         function (_)
             local Soma = (sheet.Soma or 0) -1200;
                                if Soma >= 0 then
@@ -20221,7 +20160,7 @@ local function constructNew_frmDZ_Ficha()
               end;
         end, obj);
 
-    obj._e_event203 = obj.label362:addEventListener("onClick",
+    obj._e_event200 = obj.label362:addEventListener("onClick",
         function (_)
             if rrpg.getMesaDe(sheet).meuJogador.isMestre then
                 dialogs.inputQuery("Carteira", "Novo valor:", "",
@@ -20231,7 +20170,7 @@ local function constructNew_frmDZ_Ficha()
                 end;
         end, obj);
 
-    obj._e_event204 = obj.Arma37:addEventListener("onClick",
+    obj._e_event201 = obj.Arma37:addEventListener("onClick",
         function (_)
             local Soma = (sheet.Soma or 0) -1200;
                                if Soma >= 0 then
@@ -20244,7 +20183,7 @@ local function constructNew_frmDZ_Ficha()
               end;
         end, obj);
 
-    obj._e_event205 = obj.label369:addEventListener("onClick",
+    obj._e_event202 = obj.label369:addEventListener("onClick",
         function (_)
             if rrpg.getMesaDe(sheet).meuJogador.isMestre then
                       dialogs.inputQuery("Carteira", "Novo valor:", "",
@@ -20254,7 +20193,7 @@ local function constructNew_frmDZ_Ficha()
                       end;
         end, obj);
 
-    obj._e_event206 = obj.Arma38:addEventListener("onClick",
+    obj._e_event203 = obj.Arma38:addEventListener("onClick",
         function (_)
             local Soma = (sheet.Soma or 0) -1200;
                                      if Soma >= 0 then
@@ -20267,7 +20206,7 @@ local function constructNew_frmDZ_Ficha()
                     end;
         end, obj);
 
-    obj._e_event207 = obj.label376:addEventListener("onClick",
+    obj._e_event204 = obj.label376:addEventListener("onClick",
         function (_)
             if rrpg.getMesaDe(sheet).meuJogador.isMestre then
                       dialogs.inputQuery("Carteira", "Novo valor:", "",
@@ -20277,7 +20216,7 @@ local function constructNew_frmDZ_Ficha()
                       end;
         end, obj);
 
-    obj._e_event208 = obj.Arma39:addEventListener("onClick",
+    obj._e_event205 = obj.Arma39:addEventListener("onClick",
         function (_)
             local Soma = (sheet.Soma or 0) -1200;
                                      if Soma >= 0 then
@@ -20290,7 +20229,7 @@ local function constructNew_frmDZ_Ficha()
                     end;
         end, obj);
 
-    obj._e_event209 = obj.label383:addEventListener("onClick",
+    obj._e_event206 = obj.label383:addEventListener("onClick",
         function (_)
             if rrpg.getMesaDe(sheet).meuJogador.isMestre then
                         dialogs.inputQuery("Carteira", "Novo valor:", "",
@@ -20300,7 +20239,7 @@ local function constructNew_frmDZ_Ficha()
                         end;
         end, obj);
 
-    obj._e_event210 = obj.Arma40:addEventListener("onClick",
+    obj._e_event207 = obj.Arma40:addEventListener("onClick",
         function (_)
             local Soma = (sheet.Soma or 0) -1200;
                                        if Soma >= 0 then
@@ -20313,7 +20252,7 @@ local function constructNew_frmDZ_Ficha()
                       end;
         end, obj);
 
-    obj._e_event211 = obj.label390:addEventListener("onClick",
+    obj._e_event208 = obj.label390:addEventListener("onClick",
         function (_)
             if rrpg.getMesaDe(sheet).meuJogador.isMestre then
                 dialogs.inputQuery("Carteira", "Novo valor:", "",
@@ -20323,7 +20262,7 @@ local function constructNew_frmDZ_Ficha()
                 end;
         end, obj);
 
-    obj._e_event212 = obj.Arma41:addEventListener("onClick",
+    obj._e_event209 = obj.Arma41:addEventListener("onClick",
         function (_)
             local Soma = (sheet.Soma or 0) -1200;
                                if Soma >= 0 then
@@ -20336,7 +20275,7 @@ local function constructNew_frmDZ_Ficha()
               end;
         end, obj);
 
-    obj._e_event213 = obj.label397:addEventListener("onClick",
+    obj._e_event210 = obj.label397:addEventListener("onClick",
         function (_)
             if rrpg.getMesaDe(sheet).meuJogador.isMestre then
                         dialogs.inputQuery("Carteira", "Novo valor:", "",
@@ -20346,7 +20285,7 @@ local function constructNew_frmDZ_Ficha()
                         end;
         end, obj);
 
-    obj._e_event214 = obj.Arma42:addEventListener("onClick",
+    obj._e_event211 = obj.Arma42:addEventListener("onClick",
         function (_)
             local Soma = (sheet.Soma or 0) -1200;
                                        if Soma >= 0 then
@@ -20359,7 +20298,7 @@ local function constructNew_frmDZ_Ficha()
                       end;
         end, obj);
 
-    obj._e_event215 = obj.dataLink20:addEventListener("onChange",
+    obj._e_event212 = obj.dataLink20:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             function format_thousand(v)
                         local s = string.format("%d", math.floor(v))
@@ -20373,7 +20312,7 @@ local function constructNew_frmDZ_Ficha()
                           self.labSoma5.text = '$' .. format_thousand(sheet.soma);
         end, obj);
 
-    obj._e_event216 = obj.image199:addEventListener("onClick",
+    obj._e_event213 = obj.image198:addEventListener("onClick",
         function (_)
             if rrpg.getMesaDe(sheet).meuJogador.isMestre then
                                         dialogs.inputQuery("Carteira", "Novo valor:", "",
@@ -20383,13 +20322,13 @@ local function constructNew_frmDZ_Ficha()
                                         end;
         end, obj);
 
-    obj._e_event217 = obj.image200:addEventListener("onClick",
+    obj._e_event214 = obj.image199:addEventListener("onClick",
         function (_)
             self.LojaArmaduras.visible = false;
                             self.ApresentaLoja.visible = true;
         end, obj);
 
-    obj._e_event218 = obj.label404:addEventListener("onClick",
+    obj._e_event215 = obj.label404:addEventListener("onClick",
         function (_)
             if rrpg.getMesaDe(sheet).meuJogador.isMestre then
                 dialogs.inputQuery("Carteira", "Novo valor:", "",
@@ -20399,7 +20338,7 @@ local function constructNew_frmDZ_Ficha()
                 end;
         end, obj);
 
-    obj._e_event219 = obj.Arma45:addEventListener("onClick",
+    obj._e_event216 = obj.Arma45:addEventListener("onClick",
         function (_)
             local Soma = (sheet.Soma or 0) -1200;
                                if Soma >= 0 then
@@ -20412,7 +20351,7 @@ local function constructNew_frmDZ_Ficha()
               end;
         end, obj);
 
-    obj._e_event220 = obj.label410:addEventListener("onClick",
+    obj._e_event217 = obj.label410:addEventListener("onClick",
         function (_)
             if rrpg.getMesaDe(sheet).meuJogador.isMestre then
                 dialogs.inputQuery("Carteira", "Novo valor:", "",
@@ -20422,7 +20361,7 @@ local function constructNew_frmDZ_Ficha()
                 end;
         end, obj);
 
-    obj._e_event221 = obj.Arma46:addEventListener("onClick",
+    obj._e_event218 = obj.Arma46:addEventListener("onClick",
         function (_)
             local Soma = (sheet.Soma or 0) -1200;
                                if Soma >= 0 then
@@ -20435,7 +20374,7 @@ local function constructNew_frmDZ_Ficha()
               end;
         end, obj);
 
-    obj._e_event222 = obj.label416:addEventListener("onClick",
+    obj._e_event219 = obj.label416:addEventListener("onClick",
         function (_)
             if rrpg.getMesaDe(sheet).meuJogador.isMestre then
                 dialogs.inputQuery("Carteira", "Novo valor:", "",
@@ -20445,7 +20384,7 @@ local function constructNew_frmDZ_Ficha()
                 end;
         end, obj);
 
-    obj._e_event223 = obj.Arma47:addEventListener("onClick",
+    obj._e_event220 = obj.Arma47:addEventListener("onClick",
         function (_)
             local Soma = (sheet.Soma or 0) -1200;
                                if Soma >= 0 then
@@ -20458,7 +20397,7 @@ local function constructNew_frmDZ_Ficha()
               end;
         end, obj);
 
-    obj._e_event224 = obj.label422:addEventListener("onClick",
+    obj._e_event221 = obj.label422:addEventListener("onClick",
         function (_)
             if rrpg.getMesaDe(sheet).meuJogador.isMestre then
                 dialogs.inputQuery("Carteira", "Novo valor:", "",
@@ -20468,7 +20407,7 @@ local function constructNew_frmDZ_Ficha()
                 end;
         end, obj);
 
-    obj._e_event225 = obj.Arma48:addEventListener("onClick",
+    obj._e_event222 = obj.Arma48:addEventListener("onClick",
         function (_)
             local Soma = (sheet.Soma or 0) -1200;
                                if Soma >= 0 then
@@ -20481,7 +20420,7 @@ local function constructNew_frmDZ_Ficha()
               end;
         end, obj);
 
-    obj._e_event226 = obj.label428:addEventListener("onClick",
+    obj._e_event223 = obj.label428:addEventListener("onClick",
         function (_)
             if rrpg.getMesaDe(sheet).meuJogador.isMestre then
                 dialogs.inputQuery("Carteira", "Novo valor:", "",
@@ -20491,7 +20430,7 @@ local function constructNew_frmDZ_Ficha()
                 end;
         end, obj);
 
-    obj._e_event227 = obj.Arma49:addEventListener("onClick",
+    obj._e_event224 = obj.Arma49:addEventListener("onClick",
         function (_)
             local Soma = (sheet.Soma or 0) -1200;
                                if Soma >= 0 then
@@ -20504,7 +20443,7 @@ local function constructNew_frmDZ_Ficha()
               end;
         end, obj);
 
-    obj._e_event228 = obj.label434:addEventListener("onClick",
+    obj._e_event225 = obj.label434:addEventListener("onClick",
         function (_)
             if rrpg.getMesaDe(sheet).meuJogador.isMestre then
                 dialogs.inputQuery("Carteira", "Novo valor:", "",
@@ -20514,7 +20453,7 @@ local function constructNew_frmDZ_Ficha()
                 end;
         end, obj);
 
-    obj._e_event229 = obj.Arma50:addEventListener("onClick",
+    obj._e_event226 = obj.Arma50:addEventListener("onClick",
         function (_)
             local Soma = (sheet.Soma or 0) -1200;
                                if Soma >= 0 then
@@ -20527,7 +20466,7 @@ local function constructNew_frmDZ_Ficha()
               end;
         end, obj);
 
-    obj._e_event230 = obj.label440:addEventListener("onClick",
+    obj._e_event227 = obj.label440:addEventListener("onClick",
         function (_)
             if rrpg.getMesaDe(sheet).meuJogador.isMestre then
                 dialogs.inputQuery("Carteira", "Novo valor:", "",
@@ -20537,7 +20476,7 @@ local function constructNew_frmDZ_Ficha()
                 end;
         end, obj);
 
-    obj._e_event231 = obj.Arma51:addEventListener("onClick",
+    obj._e_event228 = obj.Arma51:addEventListener("onClick",
         function (_)
             local Soma = (sheet.Soma or 0) -1200;
                                if Soma >= 0 then
@@ -20550,7 +20489,7 @@ local function constructNew_frmDZ_Ficha()
               end;
         end, obj);
 
-    obj._e_event232 = obj.label446:addEventListener("onClick",
+    obj._e_event229 = obj.label446:addEventListener("onClick",
         function (_)
             if rrpg.getMesaDe(sheet).meuJogador.isMestre then
                 dialogs.inputQuery("Carteira", "Novo valor:", "",
@@ -20560,7 +20499,7 @@ local function constructNew_frmDZ_Ficha()
                 end;
         end, obj);
 
-    obj._e_event233 = obj.Arma52:addEventListener("onClick",
+    obj._e_event230 = obj.Arma52:addEventListener("onClick",
         function (_)
             local Soma = (sheet.Soma or 0) -1200;
                                if Soma >= 0 then
@@ -20573,7 +20512,7 @@ local function constructNew_frmDZ_Ficha()
               end;
         end, obj);
 
-    obj._e_event234 = obj.label452:addEventListener("onClick",
+    obj._e_event231 = obj.label452:addEventListener("onClick",
         function (_)
             if rrpg.getMesaDe(sheet).meuJogador.isMestre then
                 dialogs.inputQuery("Carteira", "Novo valor:", "",
@@ -20583,7 +20522,7 @@ local function constructNew_frmDZ_Ficha()
                 end;
         end, obj);
 
-    obj._e_event235 = obj.Arma53:addEventListener("onClick",
+    obj._e_event232 = obj.Arma53:addEventListener("onClick",
         function (_)
             local Soma = (sheet.Soma or 0) -1200;
                                if Soma >= 0 then
@@ -20596,7 +20535,7 @@ local function constructNew_frmDZ_Ficha()
               end;
         end, obj);
 
-    obj._e_event236 = obj.label458:addEventListener("onClick",
+    obj._e_event233 = obj.label458:addEventListener("onClick",
         function (_)
             if rrpg.getMesaDe(sheet).meuJogador.isMestre then
                 dialogs.inputQuery("Carteira", "Novo valor:", "",
@@ -20606,7 +20545,7 @@ local function constructNew_frmDZ_Ficha()
                 end;
         end, obj);
 
-    obj._e_event237 = obj.Arma54:addEventListener("onClick",
+    obj._e_event234 = obj.Arma54:addEventListener("onClick",
         function (_)
             local Soma = (sheet.Soma or 0) -1200;
                                if Soma >= 0 then
@@ -20619,7 +20558,7 @@ local function constructNew_frmDZ_Ficha()
               end;
         end, obj);
 
-    obj._e_event238 = obj.label464:addEventListener("onClick",
+    obj._e_event235 = obj.label464:addEventListener("onClick",
         function (_)
             if rrpg.getMesaDe(sheet).meuJogador.isMestre then
                 dialogs.inputQuery("Carteira", "Novo valor:", "",
@@ -20629,7 +20568,7 @@ local function constructNew_frmDZ_Ficha()
                 end;
         end, obj);
 
-    obj._e_event239 = obj.Arma55:addEventListener("onClick",
+    obj._e_event236 = obj.Arma55:addEventListener("onClick",
         function (_)
             local Soma = (sheet.Soma or 0) -1200;
                                if Soma >= 0 then
@@ -20642,7 +20581,7 @@ local function constructNew_frmDZ_Ficha()
               end;
         end, obj);
 
-    obj._e_event240 = obj.label470:addEventListener("onClick",
+    obj._e_event237 = obj.label470:addEventListener("onClick",
         function (_)
             if rrpg.getMesaDe(sheet).meuJogador.isMestre then
                 dialogs.inputQuery("Carteira", "Novo valor:", "",
@@ -20652,7 +20591,7 @@ local function constructNew_frmDZ_Ficha()
                 end;
         end, obj);
 
-    obj._e_event241 = obj.Arma56:addEventListener("onClick",
+    obj._e_event238 = obj.Arma56:addEventListener("onClick",
         function (_)
             local Soma = (sheet.Soma or 0) -1200;
                                if Soma >= 0 then
@@ -20665,25 +20604,22 @@ local function constructNew_frmDZ_Ficha()
               end;
         end, obj);
 
-    obj._e_event242 = obj.button87:addEventListener("onClick",
+    obj._e_event239 = obj.button87:addEventListener("onClick",
         function (_)
             GUI.openInBrowser('https://github.com/MestreWilll/DeadZone_3.0#readme')
         end, obj);
 
-    obj._e_event243 = obj.button88:addEventListener("onClick",
+    obj._e_event240 = obj.button88:addEventListener("onClick",
         function (_)
             GUI.openInBrowser('https://raw.githack.com/MestreWilll/DeadZone_3.0/master/output/Dead_Zone_3.0.rpk')
         end, obj);
 
-    obj._e_event244 = obj.button90:addEventListener("onClick",
+    obj._e_event241 = obj.button90:addEventListener("onClick",
         function (_)
             GUI.openInBrowser('https://github.com/MestreWilll')
         end, obj);
 
     function obj:_releaseEvents()
-        __o_rrpgObjs.removeEventListenerById(self._e_event244);
-        __o_rrpgObjs.removeEventListenerById(self._e_event243);
-        __o_rrpgObjs.removeEventListenerById(self._e_event242);
         __o_rrpgObjs.removeEventListenerById(self._e_event241);
         __o_rrpgObjs.removeEventListenerById(self._e_event240);
         __o_rrpgObjs.removeEventListenerById(self._e_event239);
@@ -21775,7 +21711,6 @@ local function constructNew_frmDZ_Ficha()
         if self.label437 ~= nil then self.label437:destroy(); self.label437 = nil; end;
         if self.Armadura54 ~= nil then self.Armadura54:destroy(); self.Armadura54 = nil; end;
         if self.Armadura56 ~= nil then self.Armadura56:destroy(); self.Armadura56 = nil; end;
-        if self.layout158 ~= nil then self.layout158:destroy(); self.layout158 = nil; end;
         if self.label366 ~= nil then self.label366:destroy(); self.label366 = nil; end;
         if self.label29 ~= nil then self.label29:destroy(); self.label29 = nil; end;
         if self.layout137 ~= nil then self.layout137:destroy(); self.layout137 = nil; end;
@@ -21833,9 +21768,9 @@ local function constructNew_frmDZ_Ficha()
         if self.layout39 ~= nil then self.layout39:destroy(); self.layout39 = nil; end;
         if self.layout136 ~= nil then self.layout136:destroy(); self.layout136 = nil; end;
         if self.tab3 ~= nil then self.tab3:destroy(); self.tab3 = nil; end;
-        if self.layout154 ~= nil then self.layout154:destroy(); self.layout154 = nil; end;
         if self.Arma2 ~= nil then self.Arma2:destroy(); self.Arma2 = nil; end;
         if self.label246 ~= nil then self.label246:destroy(); self.label246 = nil; end;
+        if self.layout154 ~= nil then self.layout154:destroy(); self.layout154 = nil; end;
         if self.CorpoACorpo27 ~= nil then self.CorpoACorpo27:destroy(); self.CorpoACorpo27 = nil; end;
         if self.layout69 ~= nil then self.layout69:destroy(); self.layout69 = nil; end;
         if self.image97 ~= nil then self.image97:destroy(); self.image97 = nil; end;
@@ -22037,7 +21972,6 @@ local function constructNew_frmDZ_Ficha()
         if self.image98 ~= nil then self.image98:destroy(); self.image98 = nil; end;
         if self.label343 ~= nil then self.label343:destroy(); self.label343 = nil; end;
         if self.scrollBox13 ~= nil then self.scrollBox13:destroy(); self.scrollBox13 = nil; end;
-        if self.image227 ~= nil then self.image227:destroy(); self.image227 = nil; end;
         if self.layout41 ~= nil then self.layout41:destroy(); self.layout41 = nil; end;
         if self.image20 ~= nil then self.image20:destroy(); self.image20 = nil; end;
         if self.label160 ~= nil then self.label160:destroy(); self.label160 = nil; end;
@@ -22155,19 +22089,18 @@ local function constructNew_frmDZ_Ficha()
         if self.scrollBox3 ~= nil then self.scrollBox3:destroy(); self.scrollBox3 = nil; end;
         if self.label438 ~= nil then self.label438:destroy(); self.label438 = nil; end;
         if self.Armadura53 ~= nil then self.Armadura53:destroy(); self.Armadura53 = nil; end;
-        if self.niveldoPlayer ~= nil then self.niveldoPlayer:destroy(); self.niveldoPlayer = nil; end;
+        if self.label369 ~= nil then self.label369:destroy(); self.label369 = nil; end;
         if self.textEditor1 ~= nil then self.textEditor1:destroy(); self.textEditor1 = nil; end;
         if self.edit137 ~= nil then self.edit137:destroy(); self.edit137 = nil; end;
         if self.edit146 ~= nil then self.edit146:destroy(); self.edit146 = nil; end;
-        if self.label369 ~= nil then self.label369:destroy(); self.label369 = nil; end;
+        if self.label460 ~= nil then self.label460:destroy(); self.label460 = nil; end;
         if self.button83 ~= nil then self.button83:destroy(); self.button83 = nil; end;
         if self.button9 ~= nil then self.button9:destroy(); self.button9 = nil; end;
         if self.label152 ~= nil then self.label152:destroy(); self.label152 = nil; end;
         if self.label182 ~= nil then self.label182:destroy(); self.label182 = nil; end;
-        if self.label460 ~= nil then self.label460:destroy(); self.label460 = nil; end;
+        if self.image224 ~= nil then self.image224:destroy(); self.image224 = nil; end;
         if self.edit6 ~= nil then self.edit6:destroy(); self.edit6 = nil; end;
         if self.textEditor21 ~= nil then self.textEditor21:destroy(); self.textEditor21 = nil; end;
-        if self.image224 ~= nil then self.image224:destroy(); self.image224 = nil; end;
         if self.button87 ~= nil then self.button87:destroy(); self.button87 = nil; end;
         if self.label473 ~= nil then self.label473:destroy(); self.label473 = nil; end;
         if self.label395 ~= nil then self.label395:destroy(); self.label395 = nil; end;
@@ -22249,8 +22182,8 @@ local function constructNew_frmDZ_Ficha()
         if self.edit89 ~= nil then self.edit89:destroy(); self.edit89 = nil; end;
         if self.textEditor24 ~= nil then self.textEditor24:destroy(); self.textEditor24 = nil; end;
         if self.button34 ~= nil then self.button34:destroy(); self.button34 = nil; end;
-        if self.image174 ~= nil then self.image174:destroy(); self.image174 = nil; end;
         if self.label320 ~= nil then self.label320:destroy(); self.label320 = nil; end;
+        if self.image174 ~= nil then self.image174:destroy(); self.image174 = nil; end;
         if self.label136 ~= nil then self.label136:destroy(); self.label136 = nil; end;
         if self.image39 ~= nil then self.image39:destroy(); self.image39 = nil; end;
         if self.PopExp ~= nil then self.PopExp:destroy(); self.PopExp = nil; end;

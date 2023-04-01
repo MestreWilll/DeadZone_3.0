@@ -1610,7 +1610,7 @@
 @########## ---- Area para dinheiro ---- ###########@
 
                 <!-- Imagem com clique para adicionar dinheiro -->
-                <image src="images/Seudinheiro.png" left="924" top="0" width="174" height="174" cursor="handPoint" hitTest="true" >
+                <image src="images/Seudinheiro.png" left="924" top="3" width="174" height="174" cursor="handPoint" hitTest="true" >
                     <event name="onClick">
 	if rrpg.getMesaDe(sheet).meuJogador.isMestre then
 	dialogs.inputQuery("Carteira do jogador", "Colocar dinheiro para jogador:", "",
@@ -1639,43 +1639,12 @@ self.labSoma3.text = '$' .. format_thousand(sheet.soma);
                     </dataLink>
                 </label>
  @########## ---- Area de nivel ---- ###########@
-                <layout align="client">
-                    <image src="images/NivelDoPlayer.png" left="1097" top="55" width="70" height="70" cursor="handPoint" hitTest="true">
-                        <event name="onClick">
-            if rrpg.getMesaDe(sheet).meuJogador.isMestre then
-            dialogs.inputQuery("Carteira", "Novo valor:", "",
-                function (valorPreenchido)
-                    sheet.Nivel = (sheet.Nivel or 0 ) + valorPreenchido; 
-                end);
-            end;        
-        </event>
-                    </image>
-                    <button name="niveldoPlayer" text="+/-" fontFamily="kalam" left="1163" top="84" width="30" height="30" fontColor="black" fontStyle="bold" fontSize="15">
-                        <event name="onClick">
-                            if Firecast.getMesaDe(sheet).meuJogador.isMestre then
-                            local Nivel = (sheet.Nivel or 0) +1;
-                            if Nivel >= 0 then
-                            sheet.Nivel = Nivel;
-                                         else 
-                                showMessage("OPA! Não pode passar de 0");   
-                             end;		
-                             end;
-                        </event>
-                        <event name="onMenu">
-                            if Firecast.getMesaDe(sheet).meuJogador.isMestre then
-                            local Nivel = (sheet.Nivel or 0) -1;
-                            if Nivel >= 0 then
-                            sheet.Nivel = Nivel;
-                                         else 
-                                showMessage("OPA! Não pode passar de 0");   
-                             end;		
-                             end;
-                        </event>
-                    </button> 
+ 
                     <button name="nivelresetPlayer" text="R" fontFamily="kalam" left="1195" top="84" width="30" height="30" fontColor="black" fontStyle="bold" fontSize="15">
                         <event name="onDblClick">
                             if Firecast.getMesaDe(sheet).meuJogador.isMestre then
                             sheet.Nivel = 1
+                            sheet.PontosDeBusca = 0
                             else
                             showMessage("OPA! Você não tem permissões aqui");
                             end;
@@ -1683,7 +1652,6 @@ self.labSoma3.text = '$' .. format_thousand(sheet.soma);
                     </button> 
                     <import file="NivelInf.xml"/>
                    
-                </layout>
             </rectangle>
         </scrollBox>
     </layout>

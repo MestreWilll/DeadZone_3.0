@@ -8734,7 +8734,7 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.image76:setParent(obj.rectangle2);
     obj.image76:setSRC("images/Seudinheiro.png");
     obj.image76:setLeft(924);
-    obj.image76:setTop(0);
+    obj.image76:setTop(3);
     obj.image76:setWidth(174);
     obj.image76:setHeight(174);
     obj.image76:setCursor("handPoint");
@@ -8761,37 +8761,8 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.dataLink16:setField("Soma");
     obj.dataLink16:setName("dataLink16");
 
-    obj.layout151 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout151:setParent(obj.rectangle2);
-    obj.layout151:setAlign("client");
-    obj.layout151:setName("layout151");
-
-    obj.image77 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image77:setParent(obj.layout151);
-    obj.image77:setSRC("images/NivelDoPlayer.png");
-    obj.image77:setLeft(1097);
-    obj.image77:setTop(55);
-    obj.image77:setWidth(70);
-    obj.image77:setHeight(70);
-    obj.image77:setCursor("handPoint");
-    obj.image77:setHitTest(true);
-    obj.image77:setName("image77");
-
-    obj.niveldoPlayer = GUI.fromHandle(_obj_newObject("button"));
-    obj.niveldoPlayer:setParent(obj.layout151);
-    obj.niveldoPlayer:setName("niveldoPlayer");
-    obj.niveldoPlayer:setText("+/-");
-    obj.niveldoPlayer:setFontFamily("kalam");
-    obj.niveldoPlayer:setLeft(1163);
-    obj.niveldoPlayer:setTop(84);
-    obj.niveldoPlayer:setWidth(30);
-    obj.niveldoPlayer:setHeight(30);
-    obj.niveldoPlayer:setFontColor("black");
-    lfm_setPropAsString(obj.niveldoPlayer, "fontStyle",  "bold");
-    obj.niveldoPlayer:setFontSize(15);
-
     obj.nivelresetPlayer = GUI.fromHandle(_obj_newObject("button"));
-    obj.nivelresetPlayer:setParent(obj.layout151);
+    obj.nivelresetPlayer:setParent(obj.rectangle2);
     obj.nivelresetPlayer:setName("nivelresetPlayer");
     obj.nivelresetPlayer:setText("R");
     obj.nivelresetPlayer:setFontFamily("kalam");
@@ -8804,10 +8775,11 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.nivelresetPlayer:setFontSize(15);
 
     obj.Nivel = GUI.fromHandle(_obj_newObject("label"));
-    obj.Nivel:setParent(obj.layout151);
+    obj.Nivel:setParent(obj.rectangle2);
     obj.Nivel:setName("Nivel");
     obj.Nivel:setField("Nivel");
     obj.Nivel:setLeft(1120);
+    obj.Nivel:setOpacity(0);
     obj.Nivel:setTop(85);
     obj.Nivel:setFontSize(26);
     obj.Nivel:setFontFamily("arial");
@@ -9663,50 +9635,17 @@ local function constructNew_frmDZ_Ficha1_svg()
             self.labSoma3.text = '$' .. format_thousand(sheet.soma);
         end, obj);
 
-    obj._e_event112 = obj.image77:addEventListener("onClick",
-        function (_)
-            if rrpg.getMesaDe(sheet).meuJogador.isMestre then
-                        dialogs.inputQuery("Carteira", "Novo valor:", "",
-                            function (valorPreenchido)
-                                sheet.Nivel = (sheet.Nivel or 0 ) + valorPreenchido; 
-                            end);
-                        end;
-        end, obj);
-
-    obj._e_event113 = obj.niveldoPlayer:addEventListener("onClick",
-        function (_)
-            if Firecast.getMesaDe(sheet).meuJogador.isMestre then
-                                        local Nivel = (sheet.Nivel or 0) +1;
-                                        if Nivel >= 0 then
-                                        sheet.Nivel = Nivel;
-                                                     else 
-                                            showMessage("OPA! Não pode passar de 0");   
-                                         end;		
-                                         end;
-        end, obj);
-
-    obj._e_event114 = obj.niveldoPlayer:addEventListener("onMenu",
-        function (_, x, y)
-            if Firecast.getMesaDe(sheet).meuJogador.isMestre then
-                                        local Nivel = (sheet.Nivel or 0) -1;
-                                        if Nivel >= 0 then
-                                        sheet.Nivel = Nivel;
-                                                     else 
-                                            showMessage("OPA! Não pode passar de 0");   
-                                         end;		
-                                         end;
-        end, obj);
-
-    obj._e_event115 = obj.nivelresetPlayer:addEventListener("onDblClick",
+    obj._e_event112 = obj.nivelresetPlayer:addEventListener("onDblClick",
         function (_)
             if Firecast.getMesaDe(sheet).meuJogador.isMestre then
                                         sheet.Nivel = 1
+                                        sheet.PontosDeBusca = 0
                                         else
                                         showMessage("OPA! Você não tem permissões aqui");
                                         end;
         end, obj);
 
-    obj._e_event116 = obj.dataLink17:addEventListener("onChange",
+    obj._e_event113 = obj.dataLink17:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet.Nivel >= 1 then
             sheet.ItemNome = 'Arco'
@@ -10098,9 +10037,6 @@ local function constructNew_frmDZ_Ficha1_svg()
         end, obj);
 
     function obj:_releaseEvents()
-        __o_rrpgObjs.removeEventListenerById(self._e_event116);
-        __o_rrpgObjs.removeEventListenerById(self._e_event115);
-        __o_rrpgObjs.removeEventListenerById(self._e_event114);
         __o_rrpgObjs.removeEventListenerById(self._e_event113);
         __o_rrpgObjs.removeEventListenerById(self._e_event112);
         __o_rrpgObjs.removeEventListenerById(self._e_event111);
@@ -10738,7 +10674,6 @@ local function constructNew_frmDZ_Ficha1_svg()
         if self.edit110 ~= nil then self.edit110:destroy(); self.edit110 = nil; end;
         if self.edit86 ~= nil then self.edit86:destroy(); self.edit86 = nil; end;
         if self.layout138 ~= nil then self.layout138:destroy(); self.layout138 = nil; end;
-        if self.layout151 ~= nil then self.layout151:destroy(); self.layout151 = nil; end;
         if self.edit38 ~= nil then self.edit38:destroy(); self.edit38 = nil; end;
         if self.button60 ~= nil then self.button60:destroy(); self.button60 = nil; end;
         if self.dataLink15 ~= nil then self.dataLink15:destroy(); self.dataLink15 = nil; end;
@@ -10751,7 +10686,6 @@ local function constructNew_frmDZ_Ficha1_svg()
         if self.label54 ~= nil then self.label54:destroy(); self.label54 = nil; end;
         if self.edit206 ~= nil then self.edit206:destroy(); self.edit206 = nil; end;
         if self.scrollBox3 ~= nil then self.scrollBox3:destroy(); self.scrollBox3 = nil; end;
-        if self.niveldoPlayer ~= nil then self.niveldoPlayer:destroy(); self.niveldoPlayer = nil; end;
         if self.textEditor1 ~= nil then self.textEditor1:destroy(); self.textEditor1 = nil; end;
         if self.edit137 ~= nil then self.edit137:destroy(); self.edit137 = nil; end;
         if self.edit146 ~= nil then self.edit146:destroy(); self.edit146 = nil; end;
@@ -10857,7 +10791,6 @@ local function constructNew_frmDZ_Ficha1_svg()
         if self.layout150 ~= nil then self.layout150:destroy(); self.layout150 = nil; end;
         if self.image39 ~= nil then self.image39:destroy(); self.image39 = nil; end;
         if self.PopExp ~= nil then self.PopExp:destroy(); self.PopExp = nil; end;
-        if self.image77 ~= nil then self.image77:destroy(); self.image77 = nil; end;
         if self.label74 ~= nil then self.label74:destroy(); self.label74 = nil; end;
         if self.image24 ~= nil then self.image24:destroy(); self.image24 = nil; end;
         if self.image66 ~= nil then self.image66:destroy(); self.image66 = nil; end;

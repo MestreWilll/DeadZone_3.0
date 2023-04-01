@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <group>
     
-    <label name="Nivel" field="Nivel" left="1120" top="85" fontSize="26" fontFamily="arial" fontStyle="bold" fontColor="yellow">
+    <label name="Nivel" field="Nivel" left="1120" opacity="0" top="85" fontSize="26" fontFamily="arial" fontStyle="bold" fontColor="yellow">
         <dataLink field="Nivel">
             <event name="onChange">
 if sheet.Nivel >= 1 then

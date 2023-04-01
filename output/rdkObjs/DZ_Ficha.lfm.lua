@@ -14317,8 +14317,8 @@ local function constructNew_frmDZ_Ficha()
     obj.CorpoACorpo34:setName("CorpoACorpo34");
     obj.CorpoACorpo34:setWidth(480);
     obj.CorpoACorpo34:setHeight(174);
-    obj.CorpoACorpo34:setLeft(0);
-    obj.CorpoACorpo34:setTop(1726);
+    obj.CorpoACorpo34:setLeft(413);
+    obj.CorpoACorpo34:setTop(1544);
 
     obj.image180 = GUI.fromHandle(_obj_newObject("image"));
     obj.image180:setParent(obj.CorpoACorpo34);
@@ -15572,286 +15572,6 @@ local function constructNew_frmDZ_Ficha()
     obj.label403:setFontFamily("kalam");
     obj.label403:setName("label403");
 
-    obj.CorpoACorpo43 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.CorpoACorpo43:setParent(obj.scrollBox11);
-    obj.CorpoACorpo43:setName("CorpoACorpo43");
-    obj.CorpoACorpo43:setWidth(480);
-    obj.CorpoACorpo43:setHeight(174);
-    obj.CorpoACorpo43:setLeft(413);
-    obj.CorpoACorpo43:setTop(1544);
-
-    obj.image198 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image198:setParent(obj.CorpoACorpo43);
-    obj.image198:setSRC("images/LojaCorpoACorpo.png");
-    obj.image198:setLeft(0);
-    obj.image198:setTop(0);
-    obj.image198:setWidth(399);
-    obj.image198:setHeight(174);
-    obj.image198:setName("image198");
-
-    obj.label404 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label404:setParent(obj.CorpoACorpo43);
-    obj.label404:setLeft(22.25);
-    obj.label404:setTop(20.50);
-    obj.label404:setWidth(107.25);
-    obj.label404:setHeight(37.88);
-    obj.label404:setFontSize(22);
-    obj.label404:setHint("Preço da Arma");
-    obj.label404:setField("Preco43");
-    obj.label404:setHorzTextAlign("center");
-    lfm_setPropAsString(obj.label404, "fontStyle",  "bold");
-    obj.label404:setFontColor("yellow");
-    obj.label404:setFontFamily("kalam");
-    obj.label404:setCursor("handPoint");
-    obj.label404:setHitTest(true);
-    obj.label404:setName("label404");
-
-    obj.Arma43 = GUI.fromHandle(_obj_newObject("image"));
-    obj.Arma43:setParent(obj.CorpoACorpo43);
-    obj.Arma43:setLeft(41.38);
-    obj.Arma43:setTop(61.75);
-    obj.Arma43:setWidth(67.88);
-    obj.Arma43:setHeight(30);
-    obj.Arma43:setCursor("handPoint");
-    obj.Arma43:setHitTest(true);
-    obj.Arma43:setHint("Clique aqui para comprar");
-    obj.Arma43:setName("Arma43");
-
-    obj.image199 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image199:setParent(obj.CorpoACorpo43);
-    obj.image199:setLeft(2.56);
-    obj.image199:setTop(93.00);
-    obj.image199:setWidth(136.69);
-    obj.image199:setHeight(77.69);
-    obj.image199:setStyle("proportional");
-    obj.image199:setCenter(true);
-    obj.image199:setEditable(true);
-    obj.image199:setField("ImagemArma43");
-    obj.image199:setName("image199");
-
-    obj.label405 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label405:setParent(obj.CorpoACorpo43);
-    obj.label405:setLeft(197);
-    obj.label405:setTop(10);
-    obj.label405:setWidth(249.25);
-    obj.label405:setHeight(39);
-    obj.label405:setFontSize(22);
-    obj.label405:setField("ItemNome43");
-    lfm_setPropAsString(obj.label405, "fontStyle",  "bold");
-    obj.label405:setFontColor("black");
-    obj.label405:setFontFamily("kalam");
-    obj.label405:setName("label405");
-
-    obj.label406 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label406:setParent(obj.CorpoACorpo43);
-    obj.label406:setLeft(207.88);
-    obj.label406:setTop(51);
-    obj.label406:setWidth(49.88);
-    obj.label406:setHeight(31.38);
-    obj.label406:setHorzTextAlign("center");
-    obj.label406:setField("Iniciativa43");
-    obj.label406:setFontSize(19);
-    lfm_setPropAsString(obj.label406, "fontStyle",  "bold");
-    obj.label406:setFontColor("black");
-    obj.label406:setFontFamily("kalam");
-    obj.label406:setName("label406");
-
-    obj.label407 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label407:setParent(obj.CorpoACorpo43);
-    obj.label407:setLeft(182.88);
-    obj.label407:setTop(90);
-    obj.label407:setWidth(50.88);
-    obj.label407:setHeight(31.38);
-    obj.label407:setHorzTextAlign("center");
-    obj.label407:setField("DanoItem43");
-    obj.label407:setFontSize(19);
-    lfm_setPropAsString(obj.label407, "fontStyle",  "bold");
-    obj.label407:setFontColor("black");
-    obj.label407:setFontFamily("kalam");
-    obj.label407:setName("label407");
-
-    obj.label408 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label408:setParent(obj.CorpoACorpo43);
-    obj.label408:setLeft(195.88);
-    obj.label408:setTop(128);
-    obj.label408:setWidth(50.88);
-    obj.label408:setHeight(32);
-    obj.label408:setHorzTextAlign("center");
-    obj.label408:setField("Golpear43");
-    obj.label408:setFontSize(15);
-    lfm_setPropAsString(obj.label408, "fontStyle",  "bold");
-    obj.label408:setFontColor("black");
-    obj.label408:setFontFamily("kalam");
-    obj.label408:setName("label408");
-
-    obj.label409 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label409:setParent(obj.CorpoACorpo43);
-    obj.label409:setLeft(317.88);
-    obj.label409:setTop(49);
-    obj.label409:setWidth(68.88);
-    obj.label409:setHeight(32);
-    obj.label409:setHorzTextAlign("center");
-    obj.label409:setField("Aparar43");
-    obj.label409:setFontSize(19);
-    lfm_setPropAsString(obj.label409, "fontStyle",  "bold");
-    obj.label409:setFontColor("black");
-    obj.label409:setFontFamily("kalam");
-    obj.label409:setName("label409");
-
-    obj.label410 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label410:setParent(obj.CorpoACorpo43);
-    obj.label410:setLeft(317.88);
-    obj.label410:setTop(89);
-    obj.label410:setWidth(68.88);
-    obj.label410:setHeight(32);
-    obj.label410:setHorzTextAlign("center");
-    obj.label410:setField("CD43");
-    obj.label410:setFontSize(19);
-    lfm_setPropAsString(obj.label410, "fontStyle",  "bold");
-    obj.label410:setFontColor("black");
-    obj.label410:setFontFamily("kalam");
-    obj.label410:setName("label410");
-
-    obj.CorpoACorpo44 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.CorpoACorpo44:setParent(obj.scrollBox11);
-    obj.CorpoACorpo44:setName("CorpoACorpo44");
-    obj.CorpoACorpo44:setWidth(480);
-    obj.CorpoACorpo44:setHeight(174);
-    obj.CorpoACorpo44:setLeft(413);
-    obj.CorpoACorpo44:setTop(1726);
-
-    obj.image200 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image200:setParent(obj.CorpoACorpo44);
-    obj.image200:setSRC("images/LojaCorpoACorpo.png");
-    obj.image200:setLeft(0);
-    obj.image200:setTop(0);
-    obj.image200:setWidth(399);
-    obj.image200:setHeight(174);
-    obj.image200:setName("image200");
-
-    obj.label411 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label411:setParent(obj.CorpoACorpo44);
-    obj.label411:setLeft(22.25);
-    obj.label411:setTop(20.50);
-    obj.label411:setWidth(107.25);
-    obj.label411:setHeight(37.88);
-    obj.label411:setFontSize(22);
-    obj.label411:setHint("Preço da Arma");
-    obj.label411:setField("Preco44");
-    obj.label411:setHorzTextAlign("center");
-    lfm_setPropAsString(obj.label411, "fontStyle",  "bold");
-    obj.label411:setFontColor("yellow");
-    obj.label411:setFontFamily("kalam");
-    obj.label411:setCursor("handPoint");
-    obj.label411:setHitTest(true);
-    obj.label411:setName("label411");
-
-    obj.Arma44 = GUI.fromHandle(_obj_newObject("image"));
-    obj.Arma44:setParent(obj.CorpoACorpo44);
-    obj.Arma44:setLeft(41.38);
-    obj.Arma44:setTop(61.75);
-    obj.Arma44:setWidth(67.88);
-    obj.Arma44:setHeight(30);
-    obj.Arma44:setCursor("handPoint");
-    obj.Arma44:setHitTest(true);
-    obj.Arma44:setHint("Clique aqui para comprar");
-    obj.Arma44:setName("Arma44");
-
-    obj.image201 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image201:setParent(obj.CorpoACorpo44);
-    obj.image201:setLeft(2.56);
-    obj.image201:setTop(93.00);
-    obj.image201:setWidth(136.69);
-    obj.image201:setHeight(77.69);
-    obj.image201:setStyle("proportional");
-    obj.image201:setCenter(true);
-    obj.image201:setEditable(true);
-    obj.image201:setField("ImagemArma44");
-    obj.image201:setName("image201");
-
-    obj.label412 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label412:setParent(obj.CorpoACorpo44);
-    obj.label412:setLeft(197);
-    obj.label412:setTop(10);
-    obj.label412:setWidth(249.25);
-    obj.label412:setHeight(39);
-    obj.label412:setFontSize(22);
-    obj.label412:setField("ItemNome44");
-    lfm_setPropAsString(obj.label412, "fontStyle",  "bold");
-    obj.label412:setFontColor("black");
-    obj.label412:setFontFamily("kalam");
-    obj.label412:setName("label412");
-
-    obj.label413 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label413:setParent(obj.CorpoACorpo44);
-    obj.label413:setLeft(207.88);
-    obj.label413:setTop(51);
-    obj.label413:setWidth(49.88);
-    obj.label413:setHeight(31.38);
-    obj.label413:setHorzTextAlign("center");
-    obj.label413:setField("Iniciativa44");
-    obj.label413:setFontSize(19);
-    lfm_setPropAsString(obj.label413, "fontStyle",  "bold");
-    obj.label413:setFontColor("black");
-    obj.label413:setFontFamily("kalam");
-    obj.label413:setName("label413");
-
-    obj.label414 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label414:setParent(obj.CorpoACorpo44);
-    obj.label414:setLeft(182.88);
-    obj.label414:setTop(90);
-    obj.label414:setWidth(50.88);
-    obj.label414:setHeight(31.38);
-    obj.label414:setHorzTextAlign("center");
-    obj.label414:setField("DanoItem44");
-    obj.label414:setFontSize(19);
-    lfm_setPropAsString(obj.label414, "fontStyle",  "bold");
-    obj.label414:setFontColor("black");
-    obj.label414:setFontFamily("kalam");
-    obj.label414:setName("label414");
-
-    obj.label415 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label415:setParent(obj.CorpoACorpo44);
-    obj.label415:setLeft(195.88);
-    obj.label415:setTop(128);
-    obj.label415:setWidth(50.88);
-    obj.label415:setHeight(32);
-    obj.label415:setHorzTextAlign("center");
-    obj.label415:setField("Golpear44");
-    obj.label415:setFontSize(15);
-    lfm_setPropAsString(obj.label415, "fontStyle",  "bold");
-    obj.label415:setFontColor("black");
-    obj.label415:setFontFamily("kalam");
-    obj.label415:setName("label415");
-
-    obj.label416 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label416:setParent(obj.CorpoACorpo44);
-    obj.label416:setLeft(317.88);
-    obj.label416:setTop(49);
-    obj.label416:setWidth(68.88);
-    obj.label416:setHeight(32);
-    obj.label416:setHorzTextAlign("center");
-    obj.label416:setField("Aparar44");
-    obj.label416:setFontSize(19);
-    lfm_setPropAsString(obj.label416, "fontStyle",  "bold");
-    obj.label416:setFontColor("black");
-    obj.label416:setFontFamily("kalam");
-    obj.label416:setName("label416");
-
-    obj.label417 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label417:setParent(obj.CorpoACorpo44);
-    obj.label417:setLeft(317.88);
-    obj.label417:setTop(89);
-    obj.label417:setWidth(68.88);
-    obj.label417:setHeight(32);
-    obj.label417:setHorzTextAlign("center");
-    obj.label417:setField("CD44");
-    obj.label417:setFontSize(19);
-    lfm_setPropAsString(obj.label417, "fontStyle",  "bold");
-    obj.label417:setFontColor("black");
-    obj.label417:setFontFamily("kalam");
-    obj.label417:setName("label417");
-
     obj.LojaArmaduras = GUI.fromHandle(_obj_newObject("layout"));
     obj.LojaArmaduras:setParent(obj.frmLoja_svg);
     obj.LojaArmaduras:setName("LojaArmaduras");
@@ -15874,14 +15594,14 @@ local function constructNew_frmDZ_Ficha()
     obj.layout156:setAlign("client");
     obj.layout156:setName("layout156");
 
-    obj.image202 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image202:setParent(obj.layout156);
-    obj.image202:setSRC("images/dinheiroArma.png");
-    obj.image202:setLeft(0);
-    obj.image202:setTop(5);
-    obj.image202:setWidth(180.37);
-    obj.image202:setHeight(80.25);
-    obj.image202:setName("image202");
+    obj.image198 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image198:setParent(obj.layout156);
+    obj.image198:setSRC("images/dinheiroArma.png");
+    obj.image198:setLeft(0);
+    obj.image198:setTop(5);
+    obj.image198:setWidth(180.37);
+    obj.image198:setHeight(80.25);
+    obj.image198:setName("image198");
 
     obj.labSoma5 = GUI.fromHandle(_obj_newObject("label"));
     obj.labSoma5:setParent(obj.layout156);
@@ -15901,28 +15621,28 @@ local function constructNew_frmDZ_Ficha()
     obj.dataLink20:setField("Soma");
     obj.dataLink20:setName("dataLink20");
 
-    obj.image203 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image203:setParent(obj.scrollBox12);
-    obj.image203:setLeft(0);
-    obj.image203:setTop(0);
-    obj.image203:setWidth(130.37);
-    obj.image203:setHeight(62.25);
-    obj.image203:setHint("Seu dinheiro");
-    obj.image203:setCursor("handPoint");
-    obj.image203:setHitTest(true);
-    obj.image203:setName("image203");
+    obj.image199 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image199:setParent(obj.scrollBox12);
+    obj.image199:setLeft(0);
+    obj.image199:setTop(0);
+    obj.image199:setWidth(130.37);
+    obj.image199:setHeight(62.25);
+    obj.image199:setHint("Seu dinheiro");
+    obj.image199:setCursor("handPoint");
+    obj.image199:setHitTest(true);
+    obj.image199:setName("image199");
 
-    obj.image204 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image204:setParent(obj.scrollBox12);
-    obj.image204:setSRC("images/botaoVoltar.png");
-    obj.image204:setLeft(200);
-    obj.image204:setTop(29);
-    obj.image204:setWidth(50);
-    obj.image204:setHeight(50);
-    obj.image204:setCursor("handPoint");
-    obj.image204:setHint("Clique aqui para voltar");
-    obj.image204:setHitTest(true);
-    obj.image204:setName("image204");
+    obj.image200 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image200:setParent(obj.scrollBox12);
+    obj.image200:setSRC("images/botaoVoltar.png");
+    obj.image200:setLeft(200);
+    obj.image200:setTop(29);
+    obj.image200:setWidth(50);
+    obj.image200:setHeight(50);
+    obj.image200:setCursor("handPoint");
+    obj.image200:setHint("Clique aqui para voltar");
+    obj.image200:setHitTest(true);
+    obj.image200:setName("image200");
 
     obj.Armadura45 = GUI.fromHandle(_obj_newObject("layout"));
     obj.Armadura45:setParent(obj.scrollBox12);
@@ -15932,31 +15652,31 @@ local function constructNew_frmDZ_Ficha()
     obj.Armadura45:setLeft(0);
     obj.Armadura45:setTop(88);
 
-    obj.image205 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image205:setParent(obj.Armadura45);
-    obj.image205:setSRC("images/LojaparaArmaduras.png");
-    obj.image205:setLeft(0);
-    obj.image205:setTop(0);
-    obj.image205:setWidth(399);
-    obj.image205:setHeight(174);
-    obj.image205:setName("image205");
+    obj.image201 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image201:setParent(obj.Armadura45);
+    obj.image201:setSRC("images/LojaparaArmaduras.png");
+    obj.image201:setLeft(0);
+    obj.image201:setTop(0);
+    obj.image201:setWidth(399);
+    obj.image201:setHeight(174);
+    obj.image201:setName("image201");
 
-    obj.label418 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label418:setParent(obj.Armadura45);
-    obj.label418:setLeft(22.25);
-    obj.label418:setTop(20.50);
-    obj.label418:setWidth(107.25);
-    obj.label418:setHeight(37.88);
-    obj.label418:setFontSize(22);
-    obj.label418:setHint("Preço da Arma");
-    obj.label418:setField("Preco45");
-    obj.label418:setHorzTextAlign("center");
-    lfm_setPropAsString(obj.label418, "fontStyle",  "bold");
-    obj.label418:setFontColor("yellow");
-    obj.label418:setFontFamily("kalam");
-    obj.label418:setCursor("handPoint");
-    obj.label418:setHitTest(true);
-    obj.label418:setName("label418");
+    obj.label404 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label404:setParent(obj.Armadura45);
+    obj.label404:setLeft(22.25);
+    obj.label404:setTop(20.50);
+    obj.label404:setWidth(107.25);
+    obj.label404:setHeight(37.88);
+    obj.label404:setFontSize(22);
+    obj.label404:setHint("Preço da Arma");
+    obj.label404:setField("Preco45");
+    obj.label404:setHorzTextAlign("center");
+    lfm_setPropAsString(obj.label404, "fontStyle",  "bold");
+    obj.label404:setFontColor("yellow");
+    obj.label404:setFontFamily("kalam");
+    obj.label404:setCursor("handPoint");
+    obj.label404:setHitTest(true);
+    obj.label404:setName("label404");
 
     obj.Arma45 = GUI.fromHandle(_obj_newObject("image"));
     obj.Arma45:setParent(obj.Armadura45);
@@ -15969,86 +15689,86 @@ local function constructNew_frmDZ_Ficha()
     obj.Arma45:setHint("Clique aqui para comprar");
     obj.Arma45:setName("Arma45");
 
-    obj.image206 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image206:setParent(obj.Armadura45);
-    obj.image206:setLeft(2.56);
-    obj.image206:setTop(93.00);
-    obj.image206:setWidth(136.69);
-    obj.image206:setHeight(77.69);
-    obj.image206:setStyle("proportional");
-    obj.image206:setCenter(true);
-    obj.image206:setEditable(true);
-    obj.image206:setField("ImagemArma45");
-    obj.image206:setName("image206");
+    obj.image202 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image202:setParent(obj.Armadura45);
+    obj.image202:setLeft(2.56);
+    obj.image202:setTop(93.00);
+    obj.image202:setWidth(136.69);
+    obj.image202:setHeight(77.69);
+    obj.image202:setStyle("proportional");
+    obj.image202:setCenter(true);
+    obj.image202:setEditable(true);
+    obj.image202:setField("ImagemArma45");
+    obj.image202:setName("image202");
 
-    obj.label419 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label419:setParent(obj.Armadura45);
-    obj.label419:setLeft(197);
-    obj.label419:setTop(10);
-    obj.label419:setWidth(249.25);
-    obj.label419:setHeight(39);
-    obj.label419:setFontSize(12.8);
-    obj.label419:setField("ItemNome45");
-    lfm_setPropAsString(obj.label419, "fontStyle",  "bold");
-    obj.label419:setFontColor("black");
-    obj.label419:setFontFamily("kalam");
-    obj.label419:setName("label419");
+    obj.label405 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label405:setParent(obj.Armadura45);
+    obj.label405:setLeft(197);
+    obj.label405:setTop(10);
+    obj.label405:setWidth(249.25);
+    obj.label405:setHeight(39);
+    obj.label405:setFontSize(12.8);
+    obj.label405:setField("ItemNome45");
+    lfm_setPropAsString(obj.label405, "fontStyle",  "bold");
+    obj.label405:setFontColor("black");
+    obj.label405:setFontFamily("kalam");
+    obj.label405:setName("label405");
 
-    obj.label420 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label420:setParent(obj.Armadura45);
-    obj.label420:setLeft(243.50);
-    obj.label420:setTop(46);
-    obj.label420:setWidth(149.25);
-    obj.label420:setHeight(38.63);
-    obj.label420:setHorzTextAlign("center");
-    obj.label420:setField("AbsorverAparar45");
-    obj.label420:setFontSize(19);
-    lfm_setPropAsString(obj.label420, "fontStyle",  "bold");
-    obj.label420:setFontColor("black");
-    obj.label420:setFontFamily("kalam");
-    obj.label420:setName("label420");
+    obj.label406 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label406:setParent(obj.Armadura45);
+    obj.label406:setLeft(243.50);
+    obj.label406:setTop(46);
+    obj.label406:setWidth(149.25);
+    obj.label406:setHeight(38.63);
+    obj.label406:setHorzTextAlign("center");
+    obj.label406:setField("AbsorverAparar45");
+    obj.label406:setFontSize(19);
+    lfm_setPropAsString(obj.label406, "fontStyle",  "bold");
+    obj.label406:setFontColor("black");
+    obj.label406:setFontFamily("kalam");
+    obj.label406:setName("label406");
 
-    obj.label421 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label421:setParent(obj.Armadura45);
-    obj.label421:setLeft(182);
-    obj.label421:setTop(86.13);
-    obj.label421:setWidth(61.88);
-    obj.label421:setHeight(38.87);
-    obj.label421:setHorzTextAlign("center");
-    obj.label421:setField("CD45");
-    obj.label421:setFontSize(19);
-    lfm_setPropAsString(obj.label421, "fontStyle",  "bold");
-    obj.label421:setFontColor("black");
-    obj.label421:setFontFamily("kalam");
-    obj.label421:setName("label421");
+    obj.label407 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label407:setParent(obj.Armadura45);
+    obj.label407:setLeft(182);
+    obj.label407:setTop(86.13);
+    obj.label407:setWidth(61.88);
+    obj.label407:setHeight(38.87);
+    obj.label407:setHorzTextAlign("center");
+    obj.label407:setField("CD45");
+    obj.label407:setFontSize(19);
+    lfm_setPropAsString(obj.label407, "fontStyle",  "bold");
+    obj.label407:setFontColor("black");
+    obj.label407:setFontFamily("kalam");
+    obj.label407:setName("label407");
 
-    obj.label422 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label422:setParent(obj.Armadura45);
-    obj.label422:setLeft(300);
-    obj.label422:setTop(127);
-    obj.label422:setWidth(61.88);
-    obj.label422:setHeight(38.88);
-    obj.label422:setHorzTextAlign("center");
-    obj.label422:setField("PenalidadedeMovimento45");
-    obj.label422:setFontSize(15);
-    lfm_setPropAsString(obj.label422, "fontStyle",  "bold");
-    obj.label422:setFontColor("black");
-    obj.label422:setFontFamily("kalam");
-    obj.label422:setName("label422");
+    obj.label408 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label408:setParent(obj.Armadura45);
+    obj.label408:setLeft(300);
+    obj.label408:setTop(127);
+    obj.label408:setWidth(61.88);
+    obj.label408:setHeight(38.88);
+    obj.label408:setHorzTextAlign("center");
+    obj.label408:setField("PenalidadedeMovimento45");
+    obj.label408:setFontSize(15);
+    lfm_setPropAsString(obj.label408, "fontStyle",  "bold");
+    obj.label408:setFontColor("black");
+    obj.label408:setFontFamily("kalam");
+    obj.label408:setName("label408");
 
-    obj.label423 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label423:setParent(obj.Armadura45);
-    obj.label423:setLeft(336);
-    obj.label423:setTop(86.12);
-    obj.label423:setWidth(61.88);
-    obj.label423:setHeight(38.88);
-    obj.label423:setHorzTextAlign("center");
-    obj.label423:setField("PenalidadeDePercepcao45");
-    obj.label423:setFontSize(19);
-    lfm_setPropAsString(obj.label423, "fontStyle",  "bold");
-    obj.label423:setFontColor("black");
-    obj.label423:setFontFamily("kalam");
-    obj.label423:setName("label423");
+    obj.label409 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label409:setParent(obj.Armadura45);
+    obj.label409:setLeft(336);
+    obj.label409:setTop(86.12);
+    obj.label409:setWidth(61.88);
+    obj.label409:setHeight(38.88);
+    obj.label409:setHorzTextAlign("center");
+    obj.label409:setField("PenalidadeDePercepcao45");
+    obj.label409:setFontSize(19);
+    lfm_setPropAsString(obj.label409, "fontStyle",  "bold");
+    obj.label409:setFontColor("black");
+    obj.label409:setFontFamily("kalam");
+    obj.label409:setName("label409");
 
     obj.Armadura46 = GUI.fromHandle(_obj_newObject("layout"));
     obj.Armadura46:setParent(obj.scrollBox12);
@@ -16058,31 +15778,31 @@ local function constructNew_frmDZ_Ficha()
     obj.Armadura46:setLeft(0);
     obj.Armadura46:setTop(270);
 
-    obj.image207 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image207:setParent(obj.Armadura46);
-    obj.image207:setSRC("images/LojaparaArmaduras.png");
-    obj.image207:setLeft(0);
-    obj.image207:setTop(0);
-    obj.image207:setWidth(399);
-    obj.image207:setHeight(174);
-    obj.image207:setName("image207");
+    obj.image203 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image203:setParent(obj.Armadura46);
+    obj.image203:setSRC("images/LojaparaArmaduras.png");
+    obj.image203:setLeft(0);
+    obj.image203:setTop(0);
+    obj.image203:setWidth(399);
+    obj.image203:setHeight(174);
+    obj.image203:setName("image203");
 
-    obj.label424 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label424:setParent(obj.Armadura46);
-    obj.label424:setLeft(22.25);
-    obj.label424:setTop(20.50);
-    obj.label424:setWidth(107.25);
-    obj.label424:setHeight(37.88);
-    obj.label424:setFontSize(22);
-    obj.label424:setHint("Preço da Arma");
-    obj.label424:setField("Preco46");
-    obj.label424:setHorzTextAlign("center");
-    lfm_setPropAsString(obj.label424, "fontStyle",  "bold");
-    obj.label424:setFontColor("yellow");
-    obj.label424:setFontFamily("kalam");
-    obj.label424:setCursor("handPoint");
-    obj.label424:setHitTest(true);
-    obj.label424:setName("label424");
+    obj.label410 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label410:setParent(obj.Armadura46);
+    obj.label410:setLeft(22.25);
+    obj.label410:setTop(20.50);
+    obj.label410:setWidth(107.25);
+    obj.label410:setHeight(37.88);
+    obj.label410:setFontSize(22);
+    obj.label410:setHint("Preço da Arma");
+    obj.label410:setField("Preco46");
+    obj.label410:setHorzTextAlign("center");
+    lfm_setPropAsString(obj.label410, "fontStyle",  "bold");
+    obj.label410:setFontColor("yellow");
+    obj.label410:setFontFamily("kalam");
+    obj.label410:setCursor("handPoint");
+    obj.label410:setHitTest(true);
+    obj.label410:setName("label410");
 
     obj.Arma46 = GUI.fromHandle(_obj_newObject("image"));
     obj.Arma46:setParent(obj.Armadura46);
@@ -16095,86 +15815,86 @@ local function constructNew_frmDZ_Ficha()
     obj.Arma46:setHint("Clique aqui para comprar");
     obj.Arma46:setName("Arma46");
 
-    obj.image208 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image208:setParent(obj.Armadura46);
-    obj.image208:setLeft(2.56);
-    obj.image208:setTop(93.00);
-    obj.image208:setWidth(136.69);
-    obj.image208:setHeight(77.69);
-    obj.image208:setStyle("proportional");
-    obj.image208:setCenter(true);
-    obj.image208:setEditable(true);
-    obj.image208:setField("ImagemArma46");
-    obj.image208:setName("image208");
+    obj.image204 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image204:setParent(obj.Armadura46);
+    obj.image204:setLeft(2.56);
+    obj.image204:setTop(93.00);
+    obj.image204:setWidth(136.69);
+    obj.image204:setHeight(77.69);
+    obj.image204:setStyle("proportional");
+    obj.image204:setCenter(true);
+    obj.image204:setEditable(true);
+    obj.image204:setField("ImagemArma46");
+    obj.image204:setName("image204");
 
-    obj.label425 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label425:setParent(obj.Armadura46);
-    obj.label425:setLeft(197);
-    obj.label425:setTop(10);
-    obj.label425:setWidth(249.25);
-    obj.label425:setHeight(39);
-    obj.label425:setFontSize(22);
-    obj.label425:setField("ItemNome46");
-    lfm_setPropAsString(obj.label425, "fontStyle",  "bold");
-    obj.label425:setFontColor("black");
-    obj.label425:setFontFamily("kalam");
-    obj.label425:setName("label425");
+    obj.label411 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label411:setParent(obj.Armadura46);
+    obj.label411:setLeft(197);
+    obj.label411:setTop(10);
+    obj.label411:setWidth(249.25);
+    obj.label411:setHeight(39);
+    obj.label411:setFontSize(22);
+    obj.label411:setField("ItemNome46");
+    lfm_setPropAsString(obj.label411, "fontStyle",  "bold");
+    obj.label411:setFontColor("black");
+    obj.label411:setFontFamily("kalam");
+    obj.label411:setName("label411");
 
-    obj.label426 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label426:setParent(obj.Armadura46);
-    obj.label426:setLeft(243.50);
-    obj.label426:setTop(46);
-    obj.label426:setWidth(149.25);
-    obj.label426:setHeight(38.63);
-    obj.label426:setHorzTextAlign("center");
-    obj.label426:setField("AbsorverAparar46");
-    obj.label426:setFontSize(19);
-    lfm_setPropAsString(obj.label426, "fontStyle",  "bold");
-    obj.label426:setFontColor("black");
-    obj.label426:setFontFamily("kalam");
-    obj.label426:setName("label426");
+    obj.label412 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label412:setParent(obj.Armadura46);
+    obj.label412:setLeft(243.50);
+    obj.label412:setTop(46);
+    obj.label412:setWidth(149.25);
+    obj.label412:setHeight(38.63);
+    obj.label412:setHorzTextAlign("center");
+    obj.label412:setField("AbsorverAparar46");
+    obj.label412:setFontSize(19);
+    lfm_setPropAsString(obj.label412, "fontStyle",  "bold");
+    obj.label412:setFontColor("black");
+    obj.label412:setFontFamily("kalam");
+    obj.label412:setName("label412");
 
-    obj.label427 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label427:setParent(obj.Armadura46);
-    obj.label427:setLeft(182);
-    obj.label427:setTop(86.13);
-    obj.label427:setWidth(61.88);
-    obj.label427:setHeight(38.87);
-    obj.label427:setHorzTextAlign("center");
-    obj.label427:setField("CD46");
-    obj.label427:setFontSize(19);
-    lfm_setPropAsString(obj.label427, "fontStyle",  "bold");
-    obj.label427:setFontColor("black");
-    obj.label427:setFontFamily("kalam");
-    obj.label427:setName("label427");
+    obj.label413 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label413:setParent(obj.Armadura46);
+    obj.label413:setLeft(182);
+    obj.label413:setTop(86.13);
+    obj.label413:setWidth(61.88);
+    obj.label413:setHeight(38.87);
+    obj.label413:setHorzTextAlign("center");
+    obj.label413:setField("CD46");
+    obj.label413:setFontSize(19);
+    lfm_setPropAsString(obj.label413, "fontStyle",  "bold");
+    obj.label413:setFontColor("black");
+    obj.label413:setFontFamily("kalam");
+    obj.label413:setName("label413");
 
-    obj.label428 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label428:setParent(obj.Armadura46);
-    obj.label428:setLeft(300);
-    obj.label428:setTop(127);
-    obj.label428:setWidth(61.88);
-    obj.label428:setHeight(38.88);
-    obj.label428:setHorzTextAlign("center");
-    obj.label428:setField("PenalidadedeMovimento46");
-    obj.label428:setFontSize(15);
-    lfm_setPropAsString(obj.label428, "fontStyle",  "bold");
-    obj.label428:setFontColor("black");
-    obj.label428:setFontFamily("kalam");
-    obj.label428:setName("label428");
+    obj.label414 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label414:setParent(obj.Armadura46);
+    obj.label414:setLeft(300);
+    obj.label414:setTop(127);
+    obj.label414:setWidth(61.88);
+    obj.label414:setHeight(38.88);
+    obj.label414:setHorzTextAlign("center");
+    obj.label414:setField("PenalidadedeMovimento46");
+    obj.label414:setFontSize(15);
+    lfm_setPropAsString(obj.label414, "fontStyle",  "bold");
+    obj.label414:setFontColor("black");
+    obj.label414:setFontFamily("kalam");
+    obj.label414:setName("label414");
 
-    obj.label429 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label429:setParent(obj.Armadura46);
-    obj.label429:setLeft(336);
-    obj.label429:setTop(86.12);
-    obj.label429:setWidth(61.88);
-    obj.label429:setHeight(38.88);
-    obj.label429:setHorzTextAlign("center");
-    obj.label429:setField("PenalidadeDePercepcao46");
-    obj.label429:setFontSize(19);
-    lfm_setPropAsString(obj.label429, "fontStyle",  "bold");
-    obj.label429:setFontColor("black");
-    obj.label429:setFontFamily("kalam");
-    obj.label429:setName("label429");
+    obj.label415 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label415:setParent(obj.Armadura46);
+    obj.label415:setLeft(336);
+    obj.label415:setTop(86.12);
+    obj.label415:setWidth(61.88);
+    obj.label415:setHeight(38.88);
+    obj.label415:setHorzTextAlign("center");
+    obj.label415:setField("PenalidadeDePercepcao46");
+    obj.label415:setFontSize(19);
+    lfm_setPropAsString(obj.label415, "fontStyle",  "bold");
+    obj.label415:setFontColor("black");
+    obj.label415:setFontFamily("kalam");
+    obj.label415:setName("label415");
 
     obj.Armadura47 = GUI.fromHandle(_obj_newObject("layout"));
     obj.Armadura47:setParent(obj.scrollBox12);
@@ -16184,31 +15904,31 @@ local function constructNew_frmDZ_Ficha()
     obj.Armadura47:setLeft(0);
     obj.Armadura47:setTop(452);
 
-    obj.image209 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image209:setParent(obj.Armadura47);
-    obj.image209:setSRC("images/LojaparaArmaduras.png");
-    obj.image209:setLeft(0);
-    obj.image209:setTop(0);
-    obj.image209:setWidth(399);
-    obj.image209:setHeight(174);
-    obj.image209:setName("image209");
+    obj.image205 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image205:setParent(obj.Armadura47);
+    obj.image205:setSRC("images/LojaparaArmaduras.png");
+    obj.image205:setLeft(0);
+    obj.image205:setTop(0);
+    obj.image205:setWidth(399);
+    obj.image205:setHeight(174);
+    obj.image205:setName("image205");
 
-    obj.label430 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label430:setParent(obj.Armadura47);
-    obj.label430:setLeft(22.25);
-    obj.label430:setTop(20.50);
-    obj.label430:setWidth(107.25);
-    obj.label430:setHeight(37.88);
-    obj.label430:setFontSize(22);
-    obj.label430:setHint("Preço da Arma");
-    obj.label430:setField("Preco47");
-    obj.label430:setHorzTextAlign("center");
-    lfm_setPropAsString(obj.label430, "fontStyle",  "bold");
-    obj.label430:setFontColor("yellow");
-    obj.label430:setFontFamily("kalam");
-    obj.label430:setCursor("handPoint");
-    obj.label430:setHitTest(true);
-    obj.label430:setName("label430");
+    obj.label416 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label416:setParent(obj.Armadura47);
+    obj.label416:setLeft(22.25);
+    obj.label416:setTop(20.50);
+    obj.label416:setWidth(107.25);
+    obj.label416:setHeight(37.88);
+    obj.label416:setFontSize(22);
+    obj.label416:setHint("Preço da Arma");
+    obj.label416:setField("Preco47");
+    obj.label416:setHorzTextAlign("center");
+    lfm_setPropAsString(obj.label416, "fontStyle",  "bold");
+    obj.label416:setFontColor("yellow");
+    obj.label416:setFontFamily("kalam");
+    obj.label416:setCursor("handPoint");
+    obj.label416:setHitTest(true);
+    obj.label416:setName("label416");
 
     obj.Arma47 = GUI.fromHandle(_obj_newObject("image"));
     obj.Arma47:setParent(obj.Armadura47);
@@ -16221,86 +15941,86 @@ local function constructNew_frmDZ_Ficha()
     obj.Arma47:setHint("Clique aqui para comprar");
     obj.Arma47:setName("Arma47");
 
-    obj.image210 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image210:setParent(obj.Armadura47);
-    obj.image210:setLeft(2.56);
-    obj.image210:setTop(93.00);
-    obj.image210:setWidth(136.69);
-    obj.image210:setHeight(77.69);
-    obj.image210:setStyle("proportional");
-    obj.image210:setCenter(true);
-    obj.image210:setEditable(true);
-    obj.image210:setField("ImagemArma47");
-    obj.image210:setName("image210");
+    obj.image206 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image206:setParent(obj.Armadura47);
+    obj.image206:setLeft(2.56);
+    obj.image206:setTop(93.00);
+    obj.image206:setWidth(136.69);
+    obj.image206:setHeight(77.69);
+    obj.image206:setStyle("proportional");
+    obj.image206:setCenter(true);
+    obj.image206:setEditable(true);
+    obj.image206:setField("ImagemArma47");
+    obj.image206:setName("image206");
 
-    obj.label431 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label431:setParent(obj.Armadura47);
-    obj.label431:setLeft(197);
-    obj.label431:setTop(10);
-    obj.label431:setWidth(249.25);
-    obj.label431:setHeight(39);
-    obj.label431:setFontSize(22);
-    obj.label431:setField("ItemNome47");
-    lfm_setPropAsString(obj.label431, "fontStyle",  "bold");
-    obj.label431:setFontColor("black");
-    obj.label431:setFontFamily("kalam");
-    obj.label431:setName("label431");
+    obj.label417 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label417:setParent(obj.Armadura47);
+    obj.label417:setLeft(197);
+    obj.label417:setTop(10);
+    obj.label417:setWidth(249.25);
+    obj.label417:setHeight(39);
+    obj.label417:setFontSize(22);
+    obj.label417:setField("ItemNome47");
+    lfm_setPropAsString(obj.label417, "fontStyle",  "bold");
+    obj.label417:setFontColor("black");
+    obj.label417:setFontFamily("kalam");
+    obj.label417:setName("label417");
 
-    obj.label432 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label432:setParent(obj.Armadura47);
-    obj.label432:setLeft(243.50);
-    obj.label432:setTop(46);
-    obj.label432:setWidth(149.25);
-    obj.label432:setHeight(38.63);
-    obj.label432:setHorzTextAlign("center");
-    obj.label432:setField("AbsorverAparar47");
-    obj.label432:setFontSize(19);
-    lfm_setPropAsString(obj.label432, "fontStyle",  "bold");
-    obj.label432:setFontColor("black");
-    obj.label432:setFontFamily("kalam");
-    obj.label432:setName("label432");
+    obj.label418 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label418:setParent(obj.Armadura47);
+    obj.label418:setLeft(243.50);
+    obj.label418:setTop(46);
+    obj.label418:setWidth(149.25);
+    obj.label418:setHeight(38.63);
+    obj.label418:setHorzTextAlign("center");
+    obj.label418:setField("AbsorverAparar47");
+    obj.label418:setFontSize(19);
+    lfm_setPropAsString(obj.label418, "fontStyle",  "bold");
+    obj.label418:setFontColor("black");
+    obj.label418:setFontFamily("kalam");
+    obj.label418:setName("label418");
 
-    obj.label433 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label433:setParent(obj.Armadura47);
-    obj.label433:setLeft(182);
-    obj.label433:setTop(86.13);
-    obj.label433:setWidth(61.88);
-    obj.label433:setHeight(38.87);
-    obj.label433:setHorzTextAlign("center");
-    obj.label433:setField("CD47");
-    obj.label433:setFontSize(19);
-    lfm_setPropAsString(obj.label433, "fontStyle",  "bold");
-    obj.label433:setFontColor("black");
-    obj.label433:setFontFamily("kalam");
-    obj.label433:setName("label433");
+    obj.label419 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label419:setParent(obj.Armadura47);
+    obj.label419:setLeft(182);
+    obj.label419:setTop(86.13);
+    obj.label419:setWidth(61.88);
+    obj.label419:setHeight(38.87);
+    obj.label419:setHorzTextAlign("center");
+    obj.label419:setField("CD47");
+    obj.label419:setFontSize(19);
+    lfm_setPropAsString(obj.label419, "fontStyle",  "bold");
+    obj.label419:setFontColor("black");
+    obj.label419:setFontFamily("kalam");
+    obj.label419:setName("label419");
 
-    obj.label434 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label434:setParent(obj.Armadura47);
-    obj.label434:setLeft(300);
-    obj.label434:setTop(127);
-    obj.label434:setWidth(61.88);
-    obj.label434:setHeight(38.88);
-    obj.label434:setHorzTextAlign("center");
-    obj.label434:setField("PenalidadedeMovimento47");
-    obj.label434:setFontSize(15);
-    lfm_setPropAsString(obj.label434, "fontStyle",  "bold");
-    obj.label434:setFontColor("black");
-    obj.label434:setFontFamily("kalam");
-    obj.label434:setName("label434");
+    obj.label420 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label420:setParent(obj.Armadura47);
+    obj.label420:setLeft(300);
+    obj.label420:setTop(127);
+    obj.label420:setWidth(61.88);
+    obj.label420:setHeight(38.88);
+    obj.label420:setHorzTextAlign("center");
+    obj.label420:setField("PenalidadedeMovimento47");
+    obj.label420:setFontSize(15);
+    lfm_setPropAsString(obj.label420, "fontStyle",  "bold");
+    obj.label420:setFontColor("black");
+    obj.label420:setFontFamily("kalam");
+    obj.label420:setName("label420");
 
-    obj.label435 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label435:setParent(obj.Armadura47);
-    obj.label435:setLeft(336);
-    obj.label435:setTop(86.12);
-    obj.label435:setWidth(61.88);
-    obj.label435:setHeight(38.88);
-    obj.label435:setHorzTextAlign("center");
-    obj.label435:setField("PenalidadeDePercepcao47");
-    obj.label435:setFontSize(19);
-    lfm_setPropAsString(obj.label435, "fontStyle",  "bold");
-    obj.label435:setFontColor("black");
-    obj.label435:setFontFamily("kalam");
-    obj.label435:setName("label435");
+    obj.label421 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label421:setParent(obj.Armadura47);
+    obj.label421:setLeft(336);
+    obj.label421:setTop(86.12);
+    obj.label421:setWidth(61.88);
+    obj.label421:setHeight(38.88);
+    obj.label421:setHorzTextAlign("center");
+    obj.label421:setField("PenalidadeDePercepcao47");
+    obj.label421:setFontSize(19);
+    lfm_setPropAsString(obj.label421, "fontStyle",  "bold");
+    obj.label421:setFontColor("black");
+    obj.label421:setFontFamily("kalam");
+    obj.label421:setName("label421");
 
     obj.Armadura48 = GUI.fromHandle(_obj_newObject("layout"));
     obj.Armadura48:setParent(obj.scrollBox12);
@@ -16310,31 +16030,31 @@ local function constructNew_frmDZ_Ficha()
     obj.Armadura48:setLeft(0);
     obj.Armadura48:setTop(634);
 
-    obj.image211 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image211:setParent(obj.Armadura48);
-    obj.image211:setSRC("images/LojaparaArmaduras.png");
-    obj.image211:setLeft(0);
-    obj.image211:setTop(0);
-    obj.image211:setWidth(399);
-    obj.image211:setHeight(174);
-    obj.image211:setName("image211");
+    obj.image207 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image207:setParent(obj.Armadura48);
+    obj.image207:setSRC("images/LojaparaArmaduras.png");
+    obj.image207:setLeft(0);
+    obj.image207:setTop(0);
+    obj.image207:setWidth(399);
+    obj.image207:setHeight(174);
+    obj.image207:setName("image207");
 
-    obj.label436 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label436:setParent(obj.Armadura48);
-    obj.label436:setLeft(22.25);
-    obj.label436:setTop(20.50);
-    obj.label436:setWidth(107.25);
-    obj.label436:setHeight(37.88);
-    obj.label436:setFontSize(22);
-    obj.label436:setHint("Preço da Arma");
-    obj.label436:setField("Preco48");
-    obj.label436:setHorzTextAlign("center");
-    lfm_setPropAsString(obj.label436, "fontStyle",  "bold");
-    obj.label436:setFontColor("yellow");
-    obj.label436:setFontFamily("kalam");
-    obj.label436:setCursor("handPoint");
-    obj.label436:setHitTest(true);
-    obj.label436:setName("label436");
+    obj.label422 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label422:setParent(obj.Armadura48);
+    obj.label422:setLeft(22.25);
+    obj.label422:setTop(20.50);
+    obj.label422:setWidth(107.25);
+    obj.label422:setHeight(37.88);
+    obj.label422:setFontSize(22);
+    obj.label422:setHint("Preço da Arma");
+    obj.label422:setField("Preco48");
+    obj.label422:setHorzTextAlign("center");
+    lfm_setPropAsString(obj.label422, "fontStyle",  "bold");
+    obj.label422:setFontColor("yellow");
+    obj.label422:setFontFamily("kalam");
+    obj.label422:setCursor("handPoint");
+    obj.label422:setHitTest(true);
+    obj.label422:setName("label422");
 
     obj.Arma48 = GUI.fromHandle(_obj_newObject("image"));
     obj.Arma48:setParent(obj.Armadura48);
@@ -16347,86 +16067,86 @@ local function constructNew_frmDZ_Ficha()
     obj.Arma48:setHint("Clique aqui para comprar");
     obj.Arma48:setName("Arma48");
 
-    obj.image212 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image212:setParent(obj.Armadura48);
-    obj.image212:setLeft(2.56);
-    obj.image212:setTop(93.00);
-    obj.image212:setWidth(136.69);
-    obj.image212:setHeight(77.69);
-    obj.image212:setStyle("proportional");
-    obj.image212:setCenter(true);
-    obj.image212:setEditable(true);
-    obj.image212:setField("ImagemArma48");
-    obj.image212:setName("image212");
+    obj.image208 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image208:setParent(obj.Armadura48);
+    obj.image208:setLeft(2.56);
+    obj.image208:setTop(93.00);
+    obj.image208:setWidth(136.69);
+    obj.image208:setHeight(77.69);
+    obj.image208:setStyle("proportional");
+    obj.image208:setCenter(true);
+    obj.image208:setEditable(true);
+    obj.image208:setField("ImagemArma48");
+    obj.image208:setName("image208");
 
-    obj.label437 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label437:setParent(obj.Armadura48);
-    obj.label437:setLeft(197);
-    obj.label437:setTop(10);
-    obj.label437:setWidth(249.25);
-    obj.label437:setHeight(39);
-    obj.label437:setFontSize(15);
-    obj.label437:setField("ItemNome48");
-    lfm_setPropAsString(obj.label437, "fontStyle",  "bold");
-    obj.label437:setFontColor("black");
-    obj.label437:setFontFamily("kalam");
-    obj.label437:setName("label437");
+    obj.label423 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label423:setParent(obj.Armadura48);
+    obj.label423:setLeft(197);
+    obj.label423:setTop(10);
+    obj.label423:setWidth(249.25);
+    obj.label423:setHeight(39);
+    obj.label423:setFontSize(15);
+    obj.label423:setField("ItemNome48");
+    lfm_setPropAsString(obj.label423, "fontStyle",  "bold");
+    obj.label423:setFontColor("black");
+    obj.label423:setFontFamily("kalam");
+    obj.label423:setName("label423");
 
-    obj.label438 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label438:setParent(obj.Armadura48);
-    obj.label438:setLeft(243.50);
-    obj.label438:setTop(47);
-    obj.label438:setWidth(149.25);
-    obj.label438:setHeight(38.63);
-    obj.label438:setHorzTextAlign("center");
-    obj.label438:setField("AbsorverAparar48");
-    obj.label438:setFontSize(19);
-    lfm_setPropAsString(obj.label438, "fontStyle",  "bold");
-    obj.label438:setFontColor("black");
-    obj.label438:setFontFamily("kalam");
-    obj.label438:setName("label438");
+    obj.label424 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label424:setParent(obj.Armadura48);
+    obj.label424:setLeft(243.50);
+    obj.label424:setTop(47);
+    obj.label424:setWidth(149.25);
+    obj.label424:setHeight(38.63);
+    obj.label424:setHorzTextAlign("center");
+    obj.label424:setField("AbsorverAparar48");
+    obj.label424:setFontSize(19);
+    lfm_setPropAsString(obj.label424, "fontStyle",  "bold");
+    obj.label424:setFontColor("black");
+    obj.label424:setFontFamily("kalam");
+    obj.label424:setName("label424");
 
-    obj.label439 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label439:setParent(obj.Armadura48);
-    obj.label439:setLeft(182);
-    obj.label439:setTop(86.13);
-    obj.label439:setWidth(61.88);
-    obj.label439:setHeight(38.87);
-    obj.label439:setHorzTextAlign("center");
-    obj.label439:setField("CD48");
-    obj.label439:setFontSize(19);
-    lfm_setPropAsString(obj.label439, "fontStyle",  "bold");
-    obj.label439:setFontColor("black");
-    obj.label439:setFontFamily("kalam");
-    obj.label439:setName("label439");
+    obj.label425 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label425:setParent(obj.Armadura48);
+    obj.label425:setLeft(182);
+    obj.label425:setTop(86.13);
+    obj.label425:setWidth(61.88);
+    obj.label425:setHeight(38.87);
+    obj.label425:setHorzTextAlign("center");
+    obj.label425:setField("CD48");
+    obj.label425:setFontSize(19);
+    lfm_setPropAsString(obj.label425, "fontStyle",  "bold");
+    obj.label425:setFontColor("black");
+    obj.label425:setFontFamily("kalam");
+    obj.label425:setName("label425");
 
-    obj.label440 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label440:setParent(obj.Armadura48);
-    obj.label440:setLeft(300);
-    obj.label440:setTop(127);
-    obj.label440:setWidth(61.88);
-    obj.label440:setHeight(38.88);
-    obj.label440:setHorzTextAlign("center");
-    obj.label440:setField("PenalidadedeMovimento48");
-    obj.label440:setFontSize(15);
-    lfm_setPropAsString(obj.label440, "fontStyle",  "bold");
-    obj.label440:setFontColor("black");
-    obj.label440:setFontFamily("kalam");
-    obj.label440:setName("label440");
+    obj.label426 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label426:setParent(obj.Armadura48);
+    obj.label426:setLeft(300);
+    obj.label426:setTop(127);
+    obj.label426:setWidth(61.88);
+    obj.label426:setHeight(38.88);
+    obj.label426:setHorzTextAlign("center");
+    obj.label426:setField("PenalidadedeMovimento48");
+    obj.label426:setFontSize(15);
+    lfm_setPropAsString(obj.label426, "fontStyle",  "bold");
+    obj.label426:setFontColor("black");
+    obj.label426:setFontFamily("kalam");
+    obj.label426:setName("label426");
 
-    obj.label441 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label441:setParent(obj.Armadura48);
-    obj.label441:setLeft(336);
-    obj.label441:setTop(86.12);
-    obj.label441:setWidth(61.88);
-    obj.label441:setHeight(38.88);
-    obj.label441:setHorzTextAlign("center");
-    obj.label441:setField("PenalidadeDePercepcao48");
-    obj.label441:setFontSize(19);
-    lfm_setPropAsString(obj.label441, "fontStyle",  "bold");
-    obj.label441:setFontColor("black");
-    obj.label441:setFontFamily("kalam");
-    obj.label441:setName("label441");
+    obj.label427 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label427:setParent(obj.Armadura48);
+    obj.label427:setLeft(336);
+    obj.label427:setTop(86.12);
+    obj.label427:setWidth(61.88);
+    obj.label427:setHeight(38.88);
+    obj.label427:setHorzTextAlign("center");
+    obj.label427:setField("PenalidadeDePercepcao48");
+    obj.label427:setFontSize(19);
+    lfm_setPropAsString(obj.label427, "fontStyle",  "bold");
+    obj.label427:setFontColor("black");
+    obj.label427:setFontFamily("kalam");
+    obj.label427:setName("label427");
 
     obj.Armadura49 = GUI.fromHandle(_obj_newObject("layout"));
     obj.Armadura49:setParent(obj.scrollBox12);
@@ -16436,31 +16156,31 @@ local function constructNew_frmDZ_Ficha()
     obj.Armadura49:setLeft(0);
     obj.Armadura49:setTop(816);
 
-    obj.image213 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image213:setParent(obj.Armadura49);
-    obj.image213:setSRC("images/LojaparaArmaduras.png");
-    obj.image213:setLeft(0);
-    obj.image213:setTop(0);
-    obj.image213:setWidth(399);
-    obj.image213:setHeight(174);
-    obj.image213:setName("image213");
+    obj.image209 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image209:setParent(obj.Armadura49);
+    obj.image209:setSRC("images/LojaparaArmaduras.png");
+    obj.image209:setLeft(0);
+    obj.image209:setTop(0);
+    obj.image209:setWidth(399);
+    obj.image209:setHeight(174);
+    obj.image209:setName("image209");
 
-    obj.label442 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label442:setParent(obj.Armadura49);
-    obj.label442:setLeft(22.25);
-    obj.label442:setTop(20.50);
-    obj.label442:setWidth(107.25);
-    obj.label442:setHeight(37.88);
-    obj.label442:setFontSize(22);
-    obj.label442:setHint("Preço da Arma");
-    obj.label442:setField("Preco49");
-    obj.label442:setHorzTextAlign("center");
-    lfm_setPropAsString(obj.label442, "fontStyle",  "bold");
-    obj.label442:setFontColor("yellow");
-    obj.label442:setFontFamily("kalam");
-    obj.label442:setCursor("handPoint");
-    obj.label442:setHitTest(true);
-    obj.label442:setName("label442");
+    obj.label428 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label428:setParent(obj.Armadura49);
+    obj.label428:setLeft(22.25);
+    obj.label428:setTop(20.50);
+    obj.label428:setWidth(107.25);
+    obj.label428:setHeight(37.88);
+    obj.label428:setFontSize(22);
+    obj.label428:setHint("Preço da Arma");
+    obj.label428:setField("Preco49");
+    obj.label428:setHorzTextAlign("center");
+    lfm_setPropAsString(obj.label428, "fontStyle",  "bold");
+    obj.label428:setFontColor("yellow");
+    obj.label428:setFontFamily("kalam");
+    obj.label428:setCursor("handPoint");
+    obj.label428:setHitTest(true);
+    obj.label428:setName("label428");
 
     obj.Arma49 = GUI.fromHandle(_obj_newObject("image"));
     obj.Arma49:setParent(obj.Armadura49);
@@ -16473,86 +16193,86 @@ local function constructNew_frmDZ_Ficha()
     obj.Arma49:setHint("Clique aqui para comprar");
     obj.Arma49:setName("Arma49");
 
-    obj.image214 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image214:setParent(obj.Armadura49);
-    obj.image214:setLeft(2.56);
-    obj.image214:setTop(93.00);
-    obj.image214:setWidth(136.69);
-    obj.image214:setHeight(77.69);
-    obj.image214:setStyle("proportional");
-    obj.image214:setCenter(true);
-    obj.image214:setEditable(true);
-    obj.image214:setField("ImagemArma49");
-    obj.image214:setName("image214");
+    obj.image210 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image210:setParent(obj.Armadura49);
+    obj.image210:setLeft(2.56);
+    obj.image210:setTop(93.00);
+    obj.image210:setWidth(136.69);
+    obj.image210:setHeight(77.69);
+    obj.image210:setStyle("proportional");
+    obj.image210:setCenter(true);
+    obj.image210:setEditable(true);
+    obj.image210:setField("ImagemArma49");
+    obj.image210:setName("image210");
 
-    obj.label443 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label443:setParent(obj.Armadura49);
-    obj.label443:setLeft(197);
-    obj.label443:setTop(10);
-    obj.label443:setWidth(249.25);
-    obj.label443:setHeight(39);
-    obj.label443:setFontSize(16);
-    obj.label443:setField("ItemNome49");
-    lfm_setPropAsString(obj.label443, "fontStyle",  "bold");
-    obj.label443:setFontColor("black");
-    obj.label443:setFontFamily("kalam");
-    obj.label443:setName("label443");
+    obj.label429 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label429:setParent(obj.Armadura49);
+    obj.label429:setLeft(197);
+    obj.label429:setTop(10);
+    obj.label429:setWidth(249.25);
+    obj.label429:setHeight(39);
+    obj.label429:setFontSize(16);
+    obj.label429:setField("ItemNome49");
+    lfm_setPropAsString(obj.label429, "fontStyle",  "bold");
+    obj.label429:setFontColor("black");
+    obj.label429:setFontFamily("kalam");
+    obj.label429:setName("label429");
 
-    obj.label444 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label444:setParent(obj.Armadura49);
-    obj.label444:setLeft(243.50);
-    obj.label444:setTop(47);
-    obj.label444:setWidth(149.25);
-    obj.label444:setHeight(38.63);
-    obj.label444:setHorzTextAlign("center");
-    obj.label444:setField("AbsorverAparar49");
-    obj.label444:setFontSize(19);
-    lfm_setPropAsString(obj.label444, "fontStyle",  "bold");
-    obj.label444:setFontColor("black");
-    obj.label444:setFontFamily("kalam");
-    obj.label444:setName("label444");
+    obj.label430 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label430:setParent(obj.Armadura49);
+    obj.label430:setLeft(243.50);
+    obj.label430:setTop(47);
+    obj.label430:setWidth(149.25);
+    obj.label430:setHeight(38.63);
+    obj.label430:setHorzTextAlign("center");
+    obj.label430:setField("AbsorverAparar49");
+    obj.label430:setFontSize(19);
+    lfm_setPropAsString(obj.label430, "fontStyle",  "bold");
+    obj.label430:setFontColor("black");
+    obj.label430:setFontFamily("kalam");
+    obj.label430:setName("label430");
 
-    obj.label445 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label445:setParent(obj.Armadura49);
-    obj.label445:setLeft(182);
-    obj.label445:setTop(86.13);
-    obj.label445:setWidth(61.88);
-    obj.label445:setHeight(38.87);
-    obj.label445:setHorzTextAlign("center");
-    obj.label445:setField("CD49");
-    obj.label445:setFontSize(19);
-    lfm_setPropAsString(obj.label445, "fontStyle",  "bold");
-    obj.label445:setFontColor("black");
-    obj.label445:setFontFamily("kalam");
-    obj.label445:setName("label445");
+    obj.label431 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label431:setParent(obj.Armadura49);
+    obj.label431:setLeft(182);
+    obj.label431:setTop(86.13);
+    obj.label431:setWidth(61.88);
+    obj.label431:setHeight(38.87);
+    obj.label431:setHorzTextAlign("center");
+    obj.label431:setField("CD49");
+    obj.label431:setFontSize(19);
+    lfm_setPropAsString(obj.label431, "fontStyle",  "bold");
+    obj.label431:setFontColor("black");
+    obj.label431:setFontFamily("kalam");
+    obj.label431:setName("label431");
 
-    obj.label446 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label446:setParent(obj.Armadura49);
-    obj.label446:setLeft(300);
-    obj.label446:setTop(127);
-    obj.label446:setWidth(61.88);
-    obj.label446:setHeight(38.88);
-    obj.label446:setHorzTextAlign("center");
-    obj.label446:setField("PenalidadedeMovimento49");
-    obj.label446:setFontSize(15);
-    lfm_setPropAsString(obj.label446, "fontStyle",  "bold");
-    obj.label446:setFontColor("black");
-    obj.label446:setFontFamily("kalam");
-    obj.label446:setName("label446");
+    obj.label432 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label432:setParent(obj.Armadura49);
+    obj.label432:setLeft(300);
+    obj.label432:setTop(127);
+    obj.label432:setWidth(61.88);
+    obj.label432:setHeight(38.88);
+    obj.label432:setHorzTextAlign("center");
+    obj.label432:setField("PenalidadedeMovimento49");
+    obj.label432:setFontSize(15);
+    lfm_setPropAsString(obj.label432, "fontStyle",  "bold");
+    obj.label432:setFontColor("black");
+    obj.label432:setFontFamily("kalam");
+    obj.label432:setName("label432");
 
-    obj.label447 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label447:setParent(obj.Armadura49);
-    obj.label447:setLeft(336);
-    obj.label447:setTop(86.12);
-    obj.label447:setWidth(61.88);
-    obj.label447:setHeight(38.88);
-    obj.label447:setHorzTextAlign("center");
-    obj.label447:setField("PenalidadeDePercepcao49");
-    obj.label447:setFontSize(19);
-    lfm_setPropAsString(obj.label447, "fontStyle",  "bold");
-    obj.label447:setFontColor("black");
-    obj.label447:setFontFamily("kalam");
-    obj.label447:setName("label447");
+    obj.label433 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label433:setParent(obj.Armadura49);
+    obj.label433:setLeft(336);
+    obj.label433:setTop(86.12);
+    obj.label433:setWidth(61.88);
+    obj.label433:setHeight(38.88);
+    obj.label433:setHorzTextAlign("center");
+    obj.label433:setField("PenalidadeDePercepcao49");
+    obj.label433:setFontSize(19);
+    lfm_setPropAsString(obj.label433, "fontStyle",  "bold");
+    obj.label433:setFontColor("black");
+    obj.label433:setFontFamily("kalam");
+    obj.label433:setName("label433");
 
     obj.Armadura50 = GUI.fromHandle(_obj_newObject("layout"));
     obj.Armadura50:setParent(obj.scrollBox12);
@@ -16562,31 +16282,31 @@ local function constructNew_frmDZ_Ficha()
     obj.Armadura50:setLeft(0);
     obj.Armadura50:setTop(998);
 
-    obj.image215 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image215:setParent(obj.Armadura50);
-    obj.image215:setSRC("images/LojaparaArmaduras.png");
-    obj.image215:setLeft(0);
-    obj.image215:setTop(0);
-    obj.image215:setWidth(399);
-    obj.image215:setHeight(174);
-    obj.image215:setName("image215");
+    obj.image211 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image211:setParent(obj.Armadura50);
+    obj.image211:setSRC("images/LojaparaArmaduras.png");
+    obj.image211:setLeft(0);
+    obj.image211:setTop(0);
+    obj.image211:setWidth(399);
+    obj.image211:setHeight(174);
+    obj.image211:setName("image211");
 
-    obj.label448 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label448:setParent(obj.Armadura50);
-    obj.label448:setLeft(22.25);
-    obj.label448:setTop(20.50);
-    obj.label448:setWidth(107.25);
-    obj.label448:setHeight(37.88);
-    obj.label448:setFontSize(22);
-    obj.label448:setHint("Preço da Arma");
-    obj.label448:setField("Preco50");
-    obj.label448:setHorzTextAlign("center");
-    lfm_setPropAsString(obj.label448, "fontStyle",  "bold");
-    obj.label448:setFontColor("yellow");
-    obj.label448:setFontFamily("kalam");
-    obj.label448:setCursor("handPoint");
-    obj.label448:setHitTest(true);
-    obj.label448:setName("label448");
+    obj.label434 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label434:setParent(obj.Armadura50);
+    obj.label434:setLeft(22.25);
+    obj.label434:setTop(20.50);
+    obj.label434:setWidth(107.25);
+    obj.label434:setHeight(37.88);
+    obj.label434:setFontSize(22);
+    obj.label434:setHint("Preço da Arma");
+    obj.label434:setField("Preco50");
+    obj.label434:setHorzTextAlign("center");
+    lfm_setPropAsString(obj.label434, "fontStyle",  "bold");
+    obj.label434:setFontColor("yellow");
+    obj.label434:setFontFamily("kalam");
+    obj.label434:setCursor("handPoint");
+    obj.label434:setHitTest(true);
+    obj.label434:setName("label434");
 
     obj.Arma50 = GUI.fromHandle(_obj_newObject("image"));
     obj.Arma50:setParent(obj.Armadura50);
@@ -16599,86 +16319,86 @@ local function constructNew_frmDZ_Ficha()
     obj.Arma50:setHint("Clique aqui para comprar");
     obj.Arma50:setName("Arma50");
 
-    obj.image216 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image216:setParent(obj.Armadura50);
-    obj.image216:setLeft(2.56);
-    obj.image216:setTop(93.00);
-    obj.image216:setWidth(136.69);
-    obj.image216:setHeight(77.69);
-    obj.image216:setStyle("proportional");
-    obj.image216:setCenter(true);
-    obj.image216:setEditable(true);
-    obj.image216:setField("ImagemArma50");
-    obj.image216:setName("image216");
+    obj.image212 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image212:setParent(obj.Armadura50);
+    obj.image212:setLeft(2.56);
+    obj.image212:setTop(93.00);
+    obj.image212:setWidth(136.69);
+    obj.image212:setHeight(77.69);
+    obj.image212:setStyle("proportional");
+    obj.image212:setCenter(true);
+    obj.image212:setEditable(true);
+    obj.image212:setField("ImagemArma50");
+    obj.image212:setName("image212");
 
-    obj.label449 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label449:setParent(obj.Armadura50);
-    obj.label449:setLeft(197);
-    obj.label449:setTop(10);
-    obj.label449:setWidth(249.25);
-    obj.label449:setHeight(39);
-    obj.label449:setFontSize(16.5);
-    obj.label449:setField("ItemNome50");
-    lfm_setPropAsString(obj.label449, "fontStyle",  "bold");
-    obj.label449:setFontColor("black");
-    obj.label449:setFontFamily("kalam");
-    obj.label449:setName("label449");
+    obj.label435 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label435:setParent(obj.Armadura50);
+    obj.label435:setLeft(197);
+    obj.label435:setTop(10);
+    obj.label435:setWidth(249.25);
+    obj.label435:setHeight(39);
+    obj.label435:setFontSize(16.5);
+    obj.label435:setField("ItemNome50");
+    lfm_setPropAsString(obj.label435, "fontStyle",  "bold");
+    obj.label435:setFontColor("black");
+    obj.label435:setFontFamily("kalam");
+    obj.label435:setName("label435");
 
-    obj.label450 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label450:setParent(obj.Armadura50);
-    obj.label450:setLeft(243.50);
-    obj.label450:setTop(47);
-    obj.label450:setWidth(149.25);
-    obj.label450:setHeight(38.63);
-    obj.label450:setHorzTextAlign("center");
-    obj.label450:setField("AbsorverAparar50");
-    obj.label450:setFontSize(19);
-    lfm_setPropAsString(obj.label450, "fontStyle",  "bold");
-    obj.label450:setFontColor("black");
-    obj.label450:setFontFamily("kalam");
-    obj.label450:setName("label450");
+    obj.label436 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label436:setParent(obj.Armadura50);
+    obj.label436:setLeft(243.50);
+    obj.label436:setTop(47);
+    obj.label436:setWidth(149.25);
+    obj.label436:setHeight(38.63);
+    obj.label436:setHorzTextAlign("center");
+    obj.label436:setField("AbsorverAparar50");
+    obj.label436:setFontSize(19);
+    lfm_setPropAsString(obj.label436, "fontStyle",  "bold");
+    obj.label436:setFontColor("black");
+    obj.label436:setFontFamily("kalam");
+    obj.label436:setName("label436");
 
-    obj.label451 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label451:setParent(obj.Armadura50);
-    obj.label451:setLeft(182);
-    obj.label451:setTop(86.13);
-    obj.label451:setWidth(61.88);
-    obj.label451:setHeight(38.87);
-    obj.label451:setHorzTextAlign("center");
-    obj.label451:setField("CD50");
-    obj.label451:setFontSize(19);
-    lfm_setPropAsString(obj.label451, "fontStyle",  "bold");
-    obj.label451:setFontColor("black");
-    obj.label451:setFontFamily("kalam");
-    obj.label451:setName("label451");
+    obj.label437 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label437:setParent(obj.Armadura50);
+    obj.label437:setLeft(182);
+    obj.label437:setTop(86.13);
+    obj.label437:setWidth(61.88);
+    obj.label437:setHeight(38.87);
+    obj.label437:setHorzTextAlign("center");
+    obj.label437:setField("CD50");
+    obj.label437:setFontSize(19);
+    lfm_setPropAsString(obj.label437, "fontStyle",  "bold");
+    obj.label437:setFontColor("black");
+    obj.label437:setFontFamily("kalam");
+    obj.label437:setName("label437");
 
-    obj.label452 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label452:setParent(obj.Armadura50);
-    obj.label452:setLeft(300);
-    obj.label452:setTop(127);
-    obj.label452:setWidth(61.88);
-    obj.label452:setHeight(38.88);
-    obj.label452:setHorzTextAlign("center");
-    obj.label452:setField("PenalidadedeMovimento50");
-    obj.label452:setFontSize(15);
-    lfm_setPropAsString(obj.label452, "fontStyle",  "bold");
-    obj.label452:setFontColor("black");
-    obj.label452:setFontFamily("kalam");
-    obj.label452:setName("label452");
+    obj.label438 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label438:setParent(obj.Armadura50);
+    obj.label438:setLeft(300);
+    obj.label438:setTop(127);
+    obj.label438:setWidth(61.88);
+    obj.label438:setHeight(38.88);
+    obj.label438:setHorzTextAlign("center");
+    obj.label438:setField("PenalidadedeMovimento50");
+    obj.label438:setFontSize(15);
+    lfm_setPropAsString(obj.label438, "fontStyle",  "bold");
+    obj.label438:setFontColor("black");
+    obj.label438:setFontFamily("kalam");
+    obj.label438:setName("label438");
 
-    obj.label453 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label453:setParent(obj.Armadura50);
-    obj.label453:setLeft(336);
-    obj.label453:setTop(86.12);
-    obj.label453:setWidth(61.88);
-    obj.label453:setHeight(38.88);
-    obj.label453:setHorzTextAlign("center");
-    obj.label453:setField("PenalidadeDePercepcao50");
-    obj.label453:setFontSize(19);
-    lfm_setPropAsString(obj.label453, "fontStyle",  "bold");
-    obj.label453:setFontColor("black");
-    obj.label453:setFontFamily("kalam");
-    obj.label453:setName("label453");
+    obj.label439 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label439:setParent(obj.Armadura50);
+    obj.label439:setLeft(336);
+    obj.label439:setTop(86.12);
+    obj.label439:setWidth(61.88);
+    obj.label439:setHeight(38.88);
+    obj.label439:setHorzTextAlign("center");
+    obj.label439:setField("PenalidadeDePercepcao50");
+    obj.label439:setFontSize(19);
+    lfm_setPropAsString(obj.label439, "fontStyle",  "bold");
+    obj.label439:setFontColor("black");
+    obj.label439:setFontFamily("kalam");
+    obj.label439:setName("label439");
 
     obj.Armadura51 = GUI.fromHandle(_obj_newObject("layout"));
     obj.Armadura51:setParent(obj.scrollBox12);
@@ -16688,31 +16408,31 @@ local function constructNew_frmDZ_Ficha()
     obj.Armadura51:setLeft(413);
     obj.Armadura51:setTop(88);
 
-    obj.image217 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image217:setParent(obj.Armadura51);
-    obj.image217:setSRC("images/LojaparaArmaduras.png");
-    obj.image217:setLeft(0);
-    obj.image217:setTop(0);
-    obj.image217:setWidth(399);
-    obj.image217:setHeight(174);
-    obj.image217:setName("image217");
+    obj.image213 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image213:setParent(obj.Armadura51);
+    obj.image213:setSRC("images/LojaparaArmaduras.png");
+    obj.image213:setLeft(0);
+    obj.image213:setTop(0);
+    obj.image213:setWidth(399);
+    obj.image213:setHeight(174);
+    obj.image213:setName("image213");
 
-    obj.label454 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label454:setParent(obj.Armadura51);
-    obj.label454:setLeft(22.25);
-    obj.label454:setTop(20.50);
-    obj.label454:setWidth(107.25);
-    obj.label454:setHeight(37.88);
-    obj.label454:setFontSize(22);
-    obj.label454:setHint("Preço da Arma");
-    obj.label454:setField("Preco51");
-    obj.label454:setHorzTextAlign("center");
-    lfm_setPropAsString(obj.label454, "fontStyle",  "bold");
-    obj.label454:setFontColor("yellow");
-    obj.label454:setFontFamily("kalam");
-    obj.label454:setCursor("handPoint");
-    obj.label454:setHitTest(true);
-    obj.label454:setName("label454");
+    obj.label440 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label440:setParent(obj.Armadura51);
+    obj.label440:setLeft(22.25);
+    obj.label440:setTop(20.50);
+    obj.label440:setWidth(107.25);
+    obj.label440:setHeight(37.88);
+    obj.label440:setFontSize(22);
+    obj.label440:setHint("Preço da Arma");
+    obj.label440:setField("Preco51");
+    obj.label440:setHorzTextAlign("center");
+    lfm_setPropAsString(obj.label440, "fontStyle",  "bold");
+    obj.label440:setFontColor("yellow");
+    obj.label440:setFontFamily("kalam");
+    obj.label440:setCursor("handPoint");
+    obj.label440:setHitTest(true);
+    obj.label440:setName("label440");
 
     obj.Arma51 = GUI.fromHandle(_obj_newObject("image"));
     obj.Arma51:setParent(obj.Armadura51);
@@ -16725,86 +16445,86 @@ local function constructNew_frmDZ_Ficha()
     obj.Arma51:setHint("Clique aqui para comprar");
     obj.Arma51:setName("Arma51");
 
-    obj.image218 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image218:setParent(obj.Armadura51);
-    obj.image218:setLeft(2.56);
-    obj.image218:setTop(93.00);
-    obj.image218:setWidth(136.69);
-    obj.image218:setHeight(77.69);
-    obj.image218:setStyle("proportional");
-    obj.image218:setCenter(true);
-    obj.image218:setEditable(true);
-    obj.image218:setField("ImagemArma51");
-    obj.image218:setName("image218");
+    obj.image214 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image214:setParent(obj.Armadura51);
+    obj.image214:setLeft(2.56);
+    obj.image214:setTop(93.00);
+    obj.image214:setWidth(136.69);
+    obj.image214:setHeight(77.69);
+    obj.image214:setStyle("proportional");
+    obj.image214:setCenter(true);
+    obj.image214:setEditable(true);
+    obj.image214:setField("ImagemArma51");
+    obj.image214:setName("image214");
 
-    obj.label455 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label455:setParent(obj.Armadura51);
-    obj.label455:setLeft(197);
-    obj.label455:setTop(10);
-    obj.label455:setWidth(249.25);
-    obj.label455:setHeight(39);
-    obj.label455:setFontSize(18);
-    obj.label455:setField("ItemNome51");
-    lfm_setPropAsString(obj.label455, "fontStyle",  "bold");
-    obj.label455:setFontColor("black");
-    obj.label455:setFontFamily("kalam");
-    obj.label455:setName("label455");
+    obj.label441 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label441:setParent(obj.Armadura51);
+    obj.label441:setLeft(197);
+    obj.label441:setTop(10);
+    obj.label441:setWidth(249.25);
+    obj.label441:setHeight(39);
+    obj.label441:setFontSize(18);
+    obj.label441:setField("ItemNome51");
+    lfm_setPropAsString(obj.label441, "fontStyle",  "bold");
+    obj.label441:setFontColor("black");
+    obj.label441:setFontFamily("kalam");
+    obj.label441:setName("label441");
 
-    obj.label456 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label456:setParent(obj.Armadura51);
-    obj.label456:setLeft(243.51);
-    obj.label456:setTop(47);
-    obj.label456:setWidth(149.25);
-    obj.label456:setHeight(38.63);
-    obj.label456:setHorzTextAlign("center");
-    obj.label456:setField("AbsorverAparar51");
-    obj.label456:setFontSize(19);
-    lfm_setPropAsString(obj.label456, "fontStyle",  "bold");
-    obj.label456:setFontColor("black");
-    obj.label456:setFontFamily("kalam");
-    obj.label456:setName("label456");
+    obj.label442 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label442:setParent(obj.Armadura51);
+    obj.label442:setLeft(243.51);
+    obj.label442:setTop(47);
+    obj.label442:setWidth(149.25);
+    obj.label442:setHeight(38.63);
+    obj.label442:setHorzTextAlign("center");
+    obj.label442:setField("AbsorverAparar51");
+    obj.label442:setFontSize(19);
+    lfm_setPropAsString(obj.label442, "fontStyle",  "bold");
+    obj.label442:setFontColor("black");
+    obj.label442:setFontFamily("kalam");
+    obj.label442:setName("label442");
 
-    obj.label457 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label457:setParent(obj.Armadura51);
-    obj.label457:setLeft(182);
-    obj.label457:setTop(86.13);
-    obj.label457:setWidth(61.88);
-    obj.label457:setHeight(38.87);
-    obj.label457:setHorzTextAlign("center");
-    obj.label457:setField("CD51");
-    obj.label457:setFontSize(19);
-    lfm_setPropAsString(obj.label457, "fontStyle",  "bold");
-    obj.label457:setFontColor("black");
-    obj.label457:setFontFamily("kalam");
-    obj.label457:setName("label457");
+    obj.label443 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label443:setParent(obj.Armadura51);
+    obj.label443:setLeft(182);
+    obj.label443:setTop(86.13);
+    obj.label443:setWidth(61.88);
+    obj.label443:setHeight(38.87);
+    obj.label443:setHorzTextAlign("center");
+    obj.label443:setField("CD51");
+    obj.label443:setFontSize(19);
+    lfm_setPropAsString(obj.label443, "fontStyle",  "bold");
+    obj.label443:setFontColor("black");
+    obj.label443:setFontFamily("kalam");
+    obj.label443:setName("label443");
 
-    obj.label458 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label458:setParent(obj.Armadura51);
-    obj.label458:setLeft(300);
-    obj.label458:setTop(127);
-    obj.label458:setWidth(61.88);
-    obj.label458:setHeight(38.88);
-    obj.label458:setHorzTextAlign("center");
-    obj.label458:setField("PenalidadedeMovimento51");
-    obj.label458:setFontSize(15);
-    lfm_setPropAsString(obj.label458, "fontStyle",  "bold");
-    obj.label458:setFontColor("black");
-    obj.label458:setFontFamily("kalam");
-    obj.label458:setName("label458");
+    obj.label444 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label444:setParent(obj.Armadura51);
+    obj.label444:setLeft(300);
+    obj.label444:setTop(127);
+    obj.label444:setWidth(61.88);
+    obj.label444:setHeight(38.88);
+    obj.label444:setHorzTextAlign("center");
+    obj.label444:setField("PenalidadedeMovimento51");
+    obj.label444:setFontSize(15);
+    lfm_setPropAsString(obj.label444, "fontStyle",  "bold");
+    obj.label444:setFontColor("black");
+    obj.label444:setFontFamily("kalam");
+    obj.label444:setName("label444");
 
-    obj.label459 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label459:setParent(obj.Armadura51);
-    obj.label459:setLeft(336);
-    obj.label459:setTop(86.12);
-    obj.label459:setWidth(61.88);
-    obj.label459:setHeight(38.88);
-    obj.label459:setHorzTextAlign("center");
-    obj.label459:setField("PenalidadeDePercepcao51");
-    obj.label459:setFontSize(19);
-    lfm_setPropAsString(obj.label459, "fontStyle",  "bold");
-    obj.label459:setFontColor("black");
-    obj.label459:setFontFamily("kalam");
-    obj.label459:setName("label459");
+    obj.label445 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label445:setParent(obj.Armadura51);
+    obj.label445:setLeft(336);
+    obj.label445:setTop(86.12);
+    obj.label445:setWidth(61.88);
+    obj.label445:setHeight(38.88);
+    obj.label445:setHorzTextAlign("center");
+    obj.label445:setField("PenalidadeDePercepcao51");
+    obj.label445:setFontSize(19);
+    lfm_setPropAsString(obj.label445, "fontStyle",  "bold");
+    obj.label445:setFontColor("black");
+    obj.label445:setFontFamily("kalam");
+    obj.label445:setName("label445");
 
     obj.Armadura52 = GUI.fromHandle(_obj_newObject("layout"));
     obj.Armadura52:setParent(obj.scrollBox12);
@@ -16814,31 +16534,31 @@ local function constructNew_frmDZ_Ficha()
     obj.Armadura52:setLeft(413);
     obj.Armadura52:setTop(270);
 
-    obj.image219 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image219:setParent(obj.Armadura52);
-    obj.image219:setSRC("images/LojaparaArmaduras.png");
-    obj.image219:setLeft(0);
-    obj.image219:setTop(0);
-    obj.image219:setWidth(399);
-    obj.image219:setHeight(174);
-    obj.image219:setName("image219");
+    obj.image215 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image215:setParent(obj.Armadura52);
+    obj.image215:setSRC("images/LojaparaArmaduras.png");
+    obj.image215:setLeft(0);
+    obj.image215:setTop(0);
+    obj.image215:setWidth(399);
+    obj.image215:setHeight(174);
+    obj.image215:setName("image215");
 
-    obj.label460 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label460:setParent(obj.Armadura52);
-    obj.label460:setLeft(22.25);
-    obj.label460:setTop(20.50);
-    obj.label460:setWidth(107.25);
-    obj.label460:setHeight(37.88);
-    obj.label460:setFontSize(22);
-    obj.label460:setHint("Preço da Arma");
-    obj.label460:setField("Preco52");
-    obj.label460:setHorzTextAlign("center");
-    lfm_setPropAsString(obj.label460, "fontStyle",  "bold");
-    obj.label460:setFontColor("yellow");
-    obj.label460:setFontFamily("kalam");
-    obj.label460:setCursor("handPoint");
-    obj.label460:setHitTest(true);
-    obj.label460:setName("label460");
+    obj.label446 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label446:setParent(obj.Armadura52);
+    obj.label446:setLeft(22.25);
+    obj.label446:setTop(20.50);
+    obj.label446:setWidth(107.25);
+    obj.label446:setHeight(37.88);
+    obj.label446:setFontSize(22);
+    obj.label446:setHint("Preço da Arma");
+    obj.label446:setField("Preco52");
+    obj.label446:setHorzTextAlign("center");
+    lfm_setPropAsString(obj.label446, "fontStyle",  "bold");
+    obj.label446:setFontColor("yellow");
+    obj.label446:setFontFamily("kalam");
+    obj.label446:setCursor("handPoint");
+    obj.label446:setHitTest(true);
+    obj.label446:setName("label446");
 
     obj.Arma52 = GUI.fromHandle(_obj_newObject("image"));
     obj.Arma52:setParent(obj.Armadura52);
@@ -16851,86 +16571,86 @@ local function constructNew_frmDZ_Ficha()
     obj.Arma52:setHint("Clique aqui para comprar");
     obj.Arma52:setName("Arma52");
 
-    obj.image220 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image220:setParent(obj.Armadura52);
-    obj.image220:setLeft(2.56);
-    obj.image220:setTop(93.00);
-    obj.image220:setWidth(136.69);
-    obj.image220:setHeight(77.69);
-    obj.image220:setStyle("proportional");
-    obj.image220:setCenter(true);
-    obj.image220:setEditable(true);
-    obj.image220:setField("ImagemArma52");
-    obj.image220:setName("image220");
+    obj.image216 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image216:setParent(obj.Armadura52);
+    obj.image216:setLeft(2.56);
+    obj.image216:setTop(93.00);
+    obj.image216:setWidth(136.69);
+    obj.image216:setHeight(77.69);
+    obj.image216:setStyle("proportional");
+    obj.image216:setCenter(true);
+    obj.image216:setEditable(true);
+    obj.image216:setField("ImagemArma52");
+    obj.image216:setName("image216");
 
-    obj.label461 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label461:setParent(obj.Armadura52);
-    obj.label461:setLeft(197);
-    obj.label461:setTop(10);
-    obj.label461:setWidth(249.25);
-    obj.label461:setHeight(39);
-    obj.label461:setFontSize(16);
-    obj.label461:setField("ItemNome52");
-    lfm_setPropAsString(obj.label461, "fontStyle",  "bold");
-    obj.label461:setFontColor("black");
-    obj.label461:setFontFamily("kalam");
-    obj.label461:setName("label461");
+    obj.label447 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label447:setParent(obj.Armadura52);
+    obj.label447:setLeft(197);
+    obj.label447:setTop(10);
+    obj.label447:setWidth(249.25);
+    obj.label447:setHeight(39);
+    obj.label447:setFontSize(16);
+    obj.label447:setField("ItemNome52");
+    lfm_setPropAsString(obj.label447, "fontStyle",  "bold");
+    obj.label447:setFontColor("black");
+    obj.label447:setFontFamily("kalam");
+    obj.label447:setName("label447");
 
-    obj.label462 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label462:setParent(obj.Armadura52);
-    obj.label462:setLeft(243.51);
-    obj.label462:setTop(47);
-    obj.label462:setWidth(149.25);
-    obj.label462:setHeight(38.63);
-    obj.label462:setHorzTextAlign("center");
-    obj.label462:setField("AbsorverAparar52");
-    obj.label462:setFontSize(19);
-    lfm_setPropAsString(obj.label462, "fontStyle",  "bold");
-    obj.label462:setFontColor("black");
-    obj.label462:setFontFamily("kalam");
-    obj.label462:setName("label462");
+    obj.label448 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label448:setParent(obj.Armadura52);
+    obj.label448:setLeft(243.51);
+    obj.label448:setTop(47);
+    obj.label448:setWidth(149.25);
+    obj.label448:setHeight(38.63);
+    obj.label448:setHorzTextAlign("center");
+    obj.label448:setField("AbsorverAparar52");
+    obj.label448:setFontSize(19);
+    lfm_setPropAsString(obj.label448, "fontStyle",  "bold");
+    obj.label448:setFontColor("black");
+    obj.label448:setFontFamily("kalam");
+    obj.label448:setName("label448");
 
-    obj.label463 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label463:setParent(obj.Armadura52);
-    obj.label463:setLeft(182);
-    obj.label463:setTop(86.13);
-    obj.label463:setWidth(61.88);
-    obj.label463:setHeight(38.87);
-    obj.label463:setHorzTextAlign("center");
-    obj.label463:setField("CD52");
-    obj.label463:setFontSize(19);
-    lfm_setPropAsString(obj.label463, "fontStyle",  "bold");
-    obj.label463:setFontColor("black");
-    obj.label463:setFontFamily("kalam");
-    obj.label463:setName("label463");
+    obj.label449 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label449:setParent(obj.Armadura52);
+    obj.label449:setLeft(182);
+    obj.label449:setTop(86.13);
+    obj.label449:setWidth(61.88);
+    obj.label449:setHeight(38.87);
+    obj.label449:setHorzTextAlign("center");
+    obj.label449:setField("CD52");
+    obj.label449:setFontSize(19);
+    lfm_setPropAsString(obj.label449, "fontStyle",  "bold");
+    obj.label449:setFontColor("black");
+    obj.label449:setFontFamily("kalam");
+    obj.label449:setName("label449");
 
-    obj.label464 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label464:setParent(obj.Armadura52);
-    obj.label464:setLeft(300);
-    obj.label464:setTop(127);
-    obj.label464:setWidth(61.88);
-    obj.label464:setHeight(38.88);
-    obj.label464:setHorzTextAlign("center");
-    obj.label464:setField("PenalidadedeMovimento52");
-    obj.label464:setFontSize(15);
-    lfm_setPropAsString(obj.label464, "fontStyle",  "bold");
-    obj.label464:setFontColor("black");
-    obj.label464:setFontFamily("kalam");
-    obj.label464:setName("label464");
+    obj.label450 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label450:setParent(obj.Armadura52);
+    obj.label450:setLeft(300);
+    obj.label450:setTop(127);
+    obj.label450:setWidth(61.88);
+    obj.label450:setHeight(38.88);
+    obj.label450:setHorzTextAlign("center");
+    obj.label450:setField("PenalidadedeMovimento52");
+    obj.label450:setFontSize(15);
+    lfm_setPropAsString(obj.label450, "fontStyle",  "bold");
+    obj.label450:setFontColor("black");
+    obj.label450:setFontFamily("kalam");
+    obj.label450:setName("label450");
 
-    obj.label465 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label465:setParent(obj.Armadura52);
-    obj.label465:setLeft(336);
-    obj.label465:setTop(86.12);
-    obj.label465:setWidth(61.88);
-    obj.label465:setHeight(38.88);
-    obj.label465:setHorzTextAlign("center");
-    obj.label465:setField("PenalidadeDePercepcao52");
-    obj.label465:setFontSize(19);
-    lfm_setPropAsString(obj.label465, "fontStyle",  "bold");
-    obj.label465:setFontColor("black");
-    obj.label465:setFontFamily("kalam");
-    obj.label465:setName("label465");
+    obj.label451 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label451:setParent(obj.Armadura52);
+    obj.label451:setLeft(336);
+    obj.label451:setTop(86.12);
+    obj.label451:setWidth(61.88);
+    obj.label451:setHeight(38.88);
+    obj.label451:setHorzTextAlign("center");
+    obj.label451:setField("PenalidadeDePercepcao52");
+    obj.label451:setFontSize(19);
+    lfm_setPropAsString(obj.label451, "fontStyle",  "bold");
+    obj.label451:setFontColor("black");
+    obj.label451:setFontFamily("kalam");
+    obj.label451:setName("label451");
 
     obj.Armadura53 = GUI.fromHandle(_obj_newObject("layout"));
     obj.Armadura53:setParent(obj.scrollBox12);
@@ -16940,31 +16660,31 @@ local function constructNew_frmDZ_Ficha()
     obj.Armadura53:setLeft(413);
     obj.Armadura53:setTop(634);
 
-    obj.image221 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image221:setParent(obj.Armadura53);
-    obj.image221:setSRC("images/LojaparaArmaduras.png");
-    obj.image221:setLeft(0);
-    obj.image221:setTop(0);
-    obj.image221:setWidth(399);
-    obj.image221:setHeight(174);
-    obj.image221:setName("image221");
+    obj.image217 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image217:setParent(obj.Armadura53);
+    obj.image217:setSRC("images/LojaparaArmaduras.png");
+    obj.image217:setLeft(0);
+    obj.image217:setTop(0);
+    obj.image217:setWidth(399);
+    obj.image217:setHeight(174);
+    obj.image217:setName("image217");
 
-    obj.label466 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label466:setParent(obj.Armadura53);
-    obj.label466:setLeft(22.25);
-    obj.label466:setTop(20.50);
-    obj.label466:setWidth(107.25);
-    obj.label466:setHeight(37.88);
-    obj.label466:setFontSize(18);
-    obj.label466:setHint("Preço da Arma");
-    obj.label466:setField("Preco53");
-    obj.label466:setHorzTextAlign("center");
-    lfm_setPropAsString(obj.label466, "fontStyle",  "bold");
-    obj.label466:setFontColor("yellow");
-    obj.label466:setFontFamily("kalam");
-    obj.label466:setCursor("handPoint");
-    obj.label466:setHitTest(true);
-    obj.label466:setName("label466");
+    obj.label452 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label452:setParent(obj.Armadura53);
+    obj.label452:setLeft(22.25);
+    obj.label452:setTop(20.50);
+    obj.label452:setWidth(107.25);
+    obj.label452:setHeight(37.88);
+    obj.label452:setFontSize(18);
+    obj.label452:setHint("Preço da Arma");
+    obj.label452:setField("Preco53");
+    obj.label452:setHorzTextAlign("center");
+    lfm_setPropAsString(obj.label452, "fontStyle",  "bold");
+    obj.label452:setFontColor("yellow");
+    obj.label452:setFontFamily("kalam");
+    obj.label452:setCursor("handPoint");
+    obj.label452:setHitTest(true);
+    obj.label452:setName("label452");
 
     obj.Arma53 = GUI.fromHandle(_obj_newObject("image"));
     obj.Arma53:setParent(obj.Armadura53);
@@ -16977,86 +16697,86 @@ local function constructNew_frmDZ_Ficha()
     obj.Arma53:setHint("Clique aqui para comprar");
     obj.Arma53:setName("Arma53");
 
-    obj.image222 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image222:setParent(obj.Armadura53);
-    obj.image222:setLeft(2.56);
-    obj.image222:setTop(93.00);
-    obj.image222:setWidth(136.69);
-    obj.image222:setHeight(77.69);
-    obj.image222:setStyle("proportional");
-    obj.image222:setCenter(true);
-    obj.image222:setEditable(true);
-    obj.image222:setField("ImagemArma53");
-    obj.image222:setName("image222");
+    obj.image218 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image218:setParent(obj.Armadura53);
+    obj.image218:setLeft(2.56);
+    obj.image218:setTop(93.00);
+    obj.image218:setWidth(136.69);
+    obj.image218:setHeight(77.69);
+    obj.image218:setStyle("proportional");
+    obj.image218:setCenter(true);
+    obj.image218:setEditable(true);
+    obj.image218:setField("ImagemArma53");
+    obj.image218:setName("image218");
 
-    obj.label467 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label467:setParent(obj.Armadura53);
-    obj.label467:setLeft(197);
-    obj.label467:setTop(10);
-    obj.label467:setWidth(249.25);
-    obj.label467:setHeight(39);
-    obj.label467:setFontSize(16);
-    obj.label467:setField("ItemNome53");
-    lfm_setPropAsString(obj.label467, "fontStyle",  "bold");
-    obj.label467:setFontColor("black");
-    obj.label467:setFontFamily("kalam");
-    obj.label467:setName("label467");
+    obj.label453 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label453:setParent(obj.Armadura53);
+    obj.label453:setLeft(197);
+    obj.label453:setTop(10);
+    obj.label453:setWidth(249.25);
+    obj.label453:setHeight(39);
+    obj.label453:setFontSize(16);
+    obj.label453:setField("ItemNome53");
+    lfm_setPropAsString(obj.label453, "fontStyle",  "bold");
+    obj.label453:setFontColor("black");
+    obj.label453:setFontFamily("kalam");
+    obj.label453:setName("label453");
 
-    obj.label468 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label468:setParent(obj.Armadura53);
-    obj.label468:setLeft(243.51);
-    obj.label468:setTop(47);
-    obj.label468:setWidth(149.25);
-    obj.label468:setHeight(38.63);
-    obj.label468:setHorzTextAlign("center");
-    obj.label468:setField("AbsorverAparar53");
-    obj.label468:setFontSize(19);
-    lfm_setPropAsString(obj.label468, "fontStyle",  "bold");
-    obj.label468:setFontColor("black");
-    obj.label468:setFontFamily("kalam");
-    obj.label468:setName("label468");
+    obj.label454 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label454:setParent(obj.Armadura53);
+    obj.label454:setLeft(243.51);
+    obj.label454:setTop(47);
+    obj.label454:setWidth(149.25);
+    obj.label454:setHeight(38.63);
+    obj.label454:setHorzTextAlign("center");
+    obj.label454:setField("AbsorverAparar53");
+    obj.label454:setFontSize(19);
+    lfm_setPropAsString(obj.label454, "fontStyle",  "bold");
+    obj.label454:setFontColor("black");
+    obj.label454:setFontFamily("kalam");
+    obj.label454:setName("label454");
 
-    obj.label469 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label469:setParent(obj.Armadura53);
-    obj.label469:setLeft(182);
-    obj.label469:setTop(86.13);
-    obj.label469:setWidth(61.88);
-    obj.label469:setHeight(38.87);
-    obj.label469:setHorzTextAlign("center");
-    obj.label469:setField("CD53");
-    obj.label469:setFontSize(19);
-    lfm_setPropAsString(obj.label469, "fontStyle",  "bold");
-    obj.label469:setFontColor("black");
-    obj.label469:setFontFamily("kalam");
-    obj.label469:setName("label469");
+    obj.label455 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label455:setParent(obj.Armadura53);
+    obj.label455:setLeft(182);
+    obj.label455:setTop(86.13);
+    obj.label455:setWidth(61.88);
+    obj.label455:setHeight(38.87);
+    obj.label455:setHorzTextAlign("center");
+    obj.label455:setField("CD53");
+    obj.label455:setFontSize(19);
+    lfm_setPropAsString(obj.label455, "fontStyle",  "bold");
+    obj.label455:setFontColor("black");
+    obj.label455:setFontFamily("kalam");
+    obj.label455:setName("label455");
 
-    obj.label470 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label470:setParent(obj.Armadura53);
-    obj.label470:setLeft(300);
-    obj.label470:setTop(127);
-    obj.label470:setWidth(61.88);
-    obj.label470:setHeight(38.88);
-    obj.label470:setHorzTextAlign("center");
-    obj.label470:setField("PenalidadedeMovimento53");
-    obj.label470:setFontSize(15);
-    lfm_setPropAsString(obj.label470, "fontStyle",  "bold");
-    obj.label470:setFontColor("black");
-    obj.label470:setFontFamily("kalam");
-    obj.label470:setName("label470");
+    obj.label456 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label456:setParent(obj.Armadura53);
+    obj.label456:setLeft(300);
+    obj.label456:setTop(127);
+    obj.label456:setWidth(61.88);
+    obj.label456:setHeight(38.88);
+    obj.label456:setHorzTextAlign("center");
+    obj.label456:setField("PenalidadedeMovimento53");
+    obj.label456:setFontSize(15);
+    lfm_setPropAsString(obj.label456, "fontStyle",  "bold");
+    obj.label456:setFontColor("black");
+    obj.label456:setFontFamily("kalam");
+    obj.label456:setName("label456");
 
-    obj.label471 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label471:setParent(obj.Armadura53);
-    obj.label471:setLeft(336);
-    obj.label471:setTop(86.12);
-    obj.label471:setWidth(61.88);
-    obj.label471:setHeight(38.88);
-    obj.label471:setHorzTextAlign("center");
-    obj.label471:setField("PenalidadeDePercepcao53");
-    obj.label471:setFontSize(19);
-    lfm_setPropAsString(obj.label471, "fontStyle",  "bold");
-    obj.label471:setFontColor("black");
-    obj.label471:setFontFamily("kalam");
-    obj.label471:setName("label471");
+    obj.label457 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label457:setParent(obj.Armadura53);
+    obj.label457:setLeft(336);
+    obj.label457:setTop(86.12);
+    obj.label457:setWidth(61.88);
+    obj.label457:setHeight(38.88);
+    obj.label457:setHorzTextAlign("center");
+    obj.label457:setField("PenalidadeDePercepcao53");
+    obj.label457:setFontSize(19);
+    lfm_setPropAsString(obj.label457, "fontStyle",  "bold");
+    obj.label457:setFontColor("black");
+    obj.label457:setFontFamily("kalam");
+    obj.label457:setName("label457");
 
     obj.Armadura54 = GUI.fromHandle(_obj_newObject("layout"));
     obj.Armadura54:setParent(obj.scrollBox12);
@@ -17066,31 +16786,31 @@ local function constructNew_frmDZ_Ficha()
     obj.Armadura54:setLeft(413);
     obj.Armadura54:setTop(452);
 
-    obj.image223 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image223:setParent(obj.Armadura54);
-    obj.image223:setSRC("images/LojaparaArmaduras.png");
-    obj.image223:setLeft(0);
-    obj.image223:setTop(0);
-    obj.image223:setWidth(399);
-    obj.image223:setHeight(174);
-    obj.image223:setName("image223");
+    obj.image219 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image219:setParent(obj.Armadura54);
+    obj.image219:setSRC("images/LojaparaArmaduras.png");
+    obj.image219:setLeft(0);
+    obj.image219:setTop(0);
+    obj.image219:setWidth(399);
+    obj.image219:setHeight(174);
+    obj.image219:setName("image219");
 
-    obj.label472 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label472:setParent(obj.Armadura54);
-    obj.label472:setLeft(22.25);
-    obj.label472:setTop(20.50);
-    obj.label472:setWidth(107.25);
-    obj.label472:setHeight(37.88);
-    obj.label472:setFontSize(22);
-    obj.label472:setHint("Preço da Arma");
-    obj.label472:setField("Preco54");
-    obj.label472:setHorzTextAlign("center");
-    lfm_setPropAsString(obj.label472, "fontStyle",  "bold");
-    obj.label472:setFontColor("yellow");
-    obj.label472:setFontFamily("kalam");
-    obj.label472:setCursor("handPoint");
-    obj.label472:setHitTest(true);
-    obj.label472:setName("label472");
+    obj.label458 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label458:setParent(obj.Armadura54);
+    obj.label458:setLeft(22.25);
+    obj.label458:setTop(20.50);
+    obj.label458:setWidth(107.25);
+    obj.label458:setHeight(37.88);
+    obj.label458:setFontSize(22);
+    obj.label458:setHint("Preço da Arma");
+    obj.label458:setField("Preco54");
+    obj.label458:setHorzTextAlign("center");
+    lfm_setPropAsString(obj.label458, "fontStyle",  "bold");
+    obj.label458:setFontColor("yellow");
+    obj.label458:setFontFamily("kalam");
+    obj.label458:setCursor("handPoint");
+    obj.label458:setHitTest(true);
+    obj.label458:setName("label458");
 
     obj.Arma54 = GUI.fromHandle(_obj_newObject("image"));
     obj.Arma54:setParent(obj.Armadura54);
@@ -17103,86 +16823,86 @@ local function constructNew_frmDZ_Ficha()
     obj.Arma54:setHint("Clique aqui para comprar");
     obj.Arma54:setName("Arma54");
 
-    obj.image224 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image224:setParent(obj.Armadura54);
-    obj.image224:setLeft(2.56);
-    obj.image224:setTop(93.00);
-    obj.image224:setWidth(136.69);
-    obj.image224:setHeight(77.69);
-    obj.image224:setStyle("proportional");
-    obj.image224:setCenter(true);
-    obj.image224:setEditable(true);
-    obj.image224:setField("ImagemArma54");
-    obj.image224:setName("image224");
+    obj.image220 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image220:setParent(obj.Armadura54);
+    obj.image220:setLeft(2.56);
+    obj.image220:setTop(93.00);
+    obj.image220:setWidth(136.69);
+    obj.image220:setHeight(77.69);
+    obj.image220:setStyle("proportional");
+    obj.image220:setCenter(true);
+    obj.image220:setEditable(true);
+    obj.image220:setField("ImagemArma54");
+    obj.image220:setName("image220");
 
-    obj.label473 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label473:setParent(obj.Armadura54);
-    obj.label473:setLeft(197);
-    obj.label473:setTop(10);
-    obj.label473:setWidth(249.25);
-    obj.label473:setHeight(39);
-    obj.label473:setFontSize(14.8);
-    obj.label473:setField("ItemNome54");
-    lfm_setPropAsString(obj.label473, "fontStyle",  "bold");
-    obj.label473:setFontColor("black");
-    obj.label473:setFontFamily("kalam");
-    obj.label473:setName("label473");
+    obj.label459 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label459:setParent(obj.Armadura54);
+    obj.label459:setLeft(197);
+    obj.label459:setTop(10);
+    obj.label459:setWidth(249.25);
+    obj.label459:setHeight(39);
+    obj.label459:setFontSize(14.8);
+    obj.label459:setField("ItemNome54");
+    lfm_setPropAsString(obj.label459, "fontStyle",  "bold");
+    obj.label459:setFontColor("black");
+    obj.label459:setFontFamily("kalam");
+    obj.label459:setName("label459");
 
-    obj.label474 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label474:setParent(obj.Armadura54);
-    obj.label474:setLeft(243.51);
-    obj.label474:setTop(47);
-    obj.label474:setWidth(149.25);
-    obj.label474:setHeight(38.63);
-    obj.label474:setHorzTextAlign("center");
-    obj.label474:setField("AbsorverAparar54");
-    obj.label474:setFontSize(19);
-    lfm_setPropAsString(obj.label474, "fontStyle",  "bold");
-    obj.label474:setFontColor("black");
-    obj.label474:setFontFamily("kalam");
-    obj.label474:setName("label474");
+    obj.label460 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label460:setParent(obj.Armadura54);
+    obj.label460:setLeft(243.51);
+    obj.label460:setTop(47);
+    obj.label460:setWidth(149.25);
+    obj.label460:setHeight(38.63);
+    obj.label460:setHorzTextAlign("center");
+    obj.label460:setField("AbsorverAparar54");
+    obj.label460:setFontSize(19);
+    lfm_setPropAsString(obj.label460, "fontStyle",  "bold");
+    obj.label460:setFontColor("black");
+    obj.label460:setFontFamily("kalam");
+    obj.label460:setName("label460");
 
-    obj.label475 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label475:setParent(obj.Armadura54);
-    obj.label475:setLeft(182);
-    obj.label475:setTop(86.13);
-    obj.label475:setWidth(61.88);
-    obj.label475:setHeight(38.87);
-    obj.label475:setHorzTextAlign("center");
-    obj.label475:setField("CD54");
-    obj.label475:setFontSize(19.9);
-    lfm_setPropAsString(obj.label475, "fontStyle",  "bold");
-    obj.label475:setFontColor("black");
-    obj.label475:setFontFamily("kalam");
-    obj.label475:setName("label475");
+    obj.label461 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label461:setParent(obj.Armadura54);
+    obj.label461:setLeft(182);
+    obj.label461:setTop(86.13);
+    obj.label461:setWidth(61.88);
+    obj.label461:setHeight(38.87);
+    obj.label461:setHorzTextAlign("center");
+    obj.label461:setField("CD54");
+    obj.label461:setFontSize(19.9);
+    lfm_setPropAsString(obj.label461, "fontStyle",  "bold");
+    obj.label461:setFontColor("black");
+    obj.label461:setFontFamily("kalam");
+    obj.label461:setName("label461");
 
-    obj.label476 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label476:setParent(obj.Armadura54);
-    obj.label476:setLeft(300);
-    obj.label476:setTop(127);
-    obj.label476:setWidth(61.88);
-    obj.label476:setHeight(38.88);
-    obj.label476:setHorzTextAlign("center");
-    obj.label476:setField("PenalidadedeMovimento54");
-    obj.label476:setFontSize(15);
-    lfm_setPropAsString(obj.label476, "fontStyle",  "bold");
-    obj.label476:setFontColor("black");
-    obj.label476:setFontFamily("kalam");
-    obj.label476:setName("label476");
+    obj.label462 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label462:setParent(obj.Armadura54);
+    obj.label462:setLeft(300);
+    obj.label462:setTop(127);
+    obj.label462:setWidth(61.88);
+    obj.label462:setHeight(38.88);
+    obj.label462:setHorzTextAlign("center");
+    obj.label462:setField("PenalidadedeMovimento54");
+    obj.label462:setFontSize(15);
+    lfm_setPropAsString(obj.label462, "fontStyle",  "bold");
+    obj.label462:setFontColor("black");
+    obj.label462:setFontFamily("kalam");
+    obj.label462:setName("label462");
 
-    obj.label477 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label477:setParent(obj.Armadura54);
-    obj.label477:setLeft(336);
-    obj.label477:setTop(86.12);
-    obj.label477:setWidth(61.88);
-    obj.label477:setHeight(38.88);
-    obj.label477:setHorzTextAlign("center");
-    obj.label477:setField("PenalidadeDePercepcao54");
-    obj.label477:setFontSize(19);
-    lfm_setPropAsString(obj.label477, "fontStyle",  "bold");
-    obj.label477:setFontColor("black");
-    obj.label477:setFontFamily("kalam");
-    obj.label477:setName("label477");
+    obj.label463 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label463:setParent(obj.Armadura54);
+    obj.label463:setLeft(336);
+    obj.label463:setTop(86.12);
+    obj.label463:setWidth(61.88);
+    obj.label463:setHeight(38.88);
+    obj.label463:setHorzTextAlign("center");
+    obj.label463:setField("PenalidadeDePercepcao54");
+    obj.label463:setFontSize(19);
+    lfm_setPropAsString(obj.label463, "fontStyle",  "bold");
+    obj.label463:setFontColor("black");
+    obj.label463:setFontFamily("kalam");
+    obj.label463:setName("label463");
 
     obj.Armadura55 = GUI.fromHandle(_obj_newObject("layout"));
     obj.Armadura55:setParent(obj.scrollBox12);
@@ -17192,31 +16912,31 @@ local function constructNew_frmDZ_Ficha()
     obj.Armadura55:setLeft(413);
     obj.Armadura55:setTop(816);
 
-    obj.image225 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image225:setParent(obj.Armadura55);
-    obj.image225:setSRC("images/LojaparaArmaduras.png");
-    obj.image225:setLeft(0);
-    obj.image225:setTop(0);
-    obj.image225:setWidth(399);
-    obj.image225:setHeight(174);
-    obj.image225:setName("image225");
+    obj.image221 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image221:setParent(obj.Armadura55);
+    obj.image221:setSRC("images/LojaparaArmaduras.png");
+    obj.image221:setLeft(0);
+    obj.image221:setTop(0);
+    obj.image221:setWidth(399);
+    obj.image221:setHeight(174);
+    obj.image221:setName("image221");
 
-    obj.label478 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label478:setParent(obj.Armadura55);
-    obj.label478:setLeft(22.25);
-    obj.label478:setTop(20.50);
-    obj.label478:setWidth(107.25);
-    obj.label478:setHeight(37.88);
-    obj.label478:setFontSize(22);
-    obj.label478:setHint("Preço da Arma");
-    obj.label478:setField("Preco55");
-    obj.label478:setHorzTextAlign("center");
-    lfm_setPropAsString(obj.label478, "fontStyle",  "bold");
-    obj.label478:setFontColor("yellow");
-    obj.label478:setFontFamily("kalam");
-    obj.label478:setCursor("handPoint");
-    obj.label478:setHitTest(true);
-    obj.label478:setName("label478");
+    obj.label464 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label464:setParent(obj.Armadura55);
+    obj.label464:setLeft(22.25);
+    obj.label464:setTop(20.50);
+    obj.label464:setWidth(107.25);
+    obj.label464:setHeight(37.88);
+    obj.label464:setFontSize(22);
+    obj.label464:setHint("Preço da Arma");
+    obj.label464:setField("Preco55");
+    obj.label464:setHorzTextAlign("center");
+    lfm_setPropAsString(obj.label464, "fontStyle",  "bold");
+    obj.label464:setFontColor("yellow");
+    obj.label464:setFontFamily("kalam");
+    obj.label464:setCursor("handPoint");
+    obj.label464:setHitTest(true);
+    obj.label464:setName("label464");
 
     obj.Arma55 = GUI.fromHandle(_obj_newObject("image"));
     obj.Arma55:setParent(obj.Armadura55);
@@ -17229,86 +16949,86 @@ local function constructNew_frmDZ_Ficha()
     obj.Arma55:setHint("Clique aqui para comprar");
     obj.Arma55:setName("Arma55");
 
-    obj.image226 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image226:setParent(obj.Armadura55);
-    obj.image226:setLeft(2.56);
-    obj.image226:setTop(93.00);
-    obj.image226:setWidth(136.69);
-    obj.image226:setHeight(77.69);
-    obj.image226:setStyle("proportional");
-    obj.image226:setCenter(true);
-    obj.image226:setEditable(true);
-    obj.image226:setField("ImagemArma55");
-    obj.image226:setName("image226");
+    obj.image222 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image222:setParent(obj.Armadura55);
+    obj.image222:setLeft(2.56);
+    obj.image222:setTop(93.00);
+    obj.image222:setWidth(136.69);
+    obj.image222:setHeight(77.69);
+    obj.image222:setStyle("proportional");
+    obj.image222:setCenter(true);
+    obj.image222:setEditable(true);
+    obj.image222:setField("ImagemArma55");
+    obj.image222:setName("image222");
 
-    obj.label479 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label479:setParent(obj.Armadura55);
-    obj.label479:setLeft(197);
-    obj.label479:setTop(10);
-    obj.label479:setWidth(249.25);
-    obj.label479:setHeight(39);
-    obj.label479:setFontSize(22);
-    obj.label479:setField("ItemNome55");
-    lfm_setPropAsString(obj.label479, "fontStyle",  "bold");
-    obj.label479:setFontColor("black");
-    obj.label479:setFontFamily("kalam");
-    obj.label479:setName("label479");
+    obj.label465 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label465:setParent(obj.Armadura55);
+    obj.label465:setLeft(197);
+    obj.label465:setTop(10);
+    obj.label465:setWidth(249.25);
+    obj.label465:setHeight(39);
+    obj.label465:setFontSize(22);
+    obj.label465:setField("ItemNome55");
+    lfm_setPropAsString(obj.label465, "fontStyle",  "bold");
+    obj.label465:setFontColor("black");
+    obj.label465:setFontFamily("kalam");
+    obj.label465:setName("label465");
 
-    obj.label480 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label480:setParent(obj.Armadura55);
-    obj.label480:setLeft(243.51);
-    obj.label480:setTop(47);
-    obj.label480:setWidth(149.25);
-    obj.label480:setHeight(38.63);
-    obj.label480:setHorzTextAlign("center");
-    obj.label480:setField("AbsorverAparar55");
-    obj.label480:setFontSize(19);
-    lfm_setPropAsString(obj.label480, "fontStyle",  "bold");
-    obj.label480:setFontColor("black");
-    obj.label480:setFontFamily("kalam");
-    obj.label480:setName("label480");
+    obj.label466 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label466:setParent(obj.Armadura55);
+    obj.label466:setLeft(243.51);
+    obj.label466:setTop(47);
+    obj.label466:setWidth(149.25);
+    obj.label466:setHeight(38.63);
+    obj.label466:setHorzTextAlign("center");
+    obj.label466:setField("AbsorverAparar55");
+    obj.label466:setFontSize(19);
+    lfm_setPropAsString(obj.label466, "fontStyle",  "bold");
+    obj.label466:setFontColor("black");
+    obj.label466:setFontFamily("kalam");
+    obj.label466:setName("label466");
 
-    obj.label481 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label481:setParent(obj.Armadura55);
-    obj.label481:setLeft(182);
-    obj.label481:setTop(86.13);
-    obj.label481:setWidth(61.88);
-    obj.label481:setHeight(38.87);
-    obj.label481:setHorzTextAlign("center");
-    obj.label481:setField("CD55");
-    obj.label481:setFontSize(19);
-    lfm_setPropAsString(obj.label481, "fontStyle",  "bold");
-    obj.label481:setFontColor("black");
-    obj.label481:setFontFamily("kalam");
-    obj.label481:setName("label481");
+    obj.label467 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label467:setParent(obj.Armadura55);
+    obj.label467:setLeft(182);
+    obj.label467:setTop(86.13);
+    obj.label467:setWidth(61.88);
+    obj.label467:setHeight(38.87);
+    obj.label467:setHorzTextAlign("center");
+    obj.label467:setField("CD55");
+    obj.label467:setFontSize(19);
+    lfm_setPropAsString(obj.label467, "fontStyle",  "bold");
+    obj.label467:setFontColor("black");
+    obj.label467:setFontFamily("kalam");
+    obj.label467:setName("label467");
 
-    obj.label482 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label482:setParent(obj.Armadura55);
-    obj.label482:setLeft(300);
-    obj.label482:setTop(127);
-    obj.label482:setWidth(61.88);
-    obj.label482:setHeight(38.88);
-    obj.label482:setHorzTextAlign("center");
-    obj.label482:setField("PenalidadedeMovimento55");
-    obj.label482:setFontSize(15);
-    lfm_setPropAsString(obj.label482, "fontStyle",  "bold");
-    obj.label482:setFontColor("black");
-    obj.label482:setFontFamily("kalam");
-    obj.label482:setName("label482");
+    obj.label468 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label468:setParent(obj.Armadura55);
+    obj.label468:setLeft(300);
+    obj.label468:setTop(127);
+    obj.label468:setWidth(61.88);
+    obj.label468:setHeight(38.88);
+    obj.label468:setHorzTextAlign("center");
+    obj.label468:setField("PenalidadedeMovimento55");
+    obj.label468:setFontSize(15);
+    lfm_setPropAsString(obj.label468, "fontStyle",  "bold");
+    obj.label468:setFontColor("black");
+    obj.label468:setFontFamily("kalam");
+    obj.label468:setName("label468");
 
-    obj.label483 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label483:setParent(obj.Armadura55);
-    obj.label483:setLeft(336);
-    obj.label483:setTop(86.12);
-    obj.label483:setWidth(61.88);
-    obj.label483:setHeight(38.88);
-    obj.label483:setHorzTextAlign("center");
-    obj.label483:setField("PenalidadeDePercepcao55");
-    obj.label483:setFontSize(19);
-    lfm_setPropAsString(obj.label483, "fontStyle",  "bold");
-    obj.label483:setFontColor("black");
-    obj.label483:setFontFamily("kalam");
-    obj.label483:setName("label483");
+    obj.label469 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label469:setParent(obj.Armadura55);
+    obj.label469:setLeft(336);
+    obj.label469:setTop(86.12);
+    obj.label469:setWidth(61.88);
+    obj.label469:setHeight(38.88);
+    obj.label469:setHorzTextAlign("center");
+    obj.label469:setField("PenalidadeDePercepcao55");
+    obj.label469:setFontSize(19);
+    lfm_setPropAsString(obj.label469, "fontStyle",  "bold");
+    obj.label469:setFontColor("black");
+    obj.label469:setFontFamily("kalam");
+    obj.label469:setName("label469");
 
     obj.Armadura56 = GUI.fromHandle(_obj_newObject("layout"));
     obj.Armadura56:setParent(obj.scrollBox12);
@@ -17318,31 +17038,31 @@ local function constructNew_frmDZ_Ficha()
     obj.Armadura56:setLeft(413);
     obj.Armadura56:setTop(998);
 
-    obj.image227 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image227:setParent(obj.Armadura56);
-    obj.image227:setSRC("images/LojaparaArmaduras.png");
-    obj.image227:setLeft(0);
-    obj.image227:setTop(0);
-    obj.image227:setWidth(399);
-    obj.image227:setHeight(174);
-    obj.image227:setName("image227");
+    obj.image223 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image223:setParent(obj.Armadura56);
+    obj.image223:setSRC("images/LojaparaArmaduras.png");
+    obj.image223:setLeft(0);
+    obj.image223:setTop(0);
+    obj.image223:setWidth(399);
+    obj.image223:setHeight(174);
+    obj.image223:setName("image223");
 
-    obj.label484 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label484:setParent(obj.Armadura56);
-    obj.label484:setLeft(22.25);
-    obj.label484:setTop(20.50);
-    obj.label484:setWidth(107.25);
-    obj.label484:setHeight(37.88);
-    obj.label484:setFontSize(22);
-    obj.label484:setHint("Preço da Arma");
-    obj.label484:setField("Preco56");
-    obj.label484:setHorzTextAlign("center");
-    lfm_setPropAsString(obj.label484, "fontStyle",  "bold");
-    obj.label484:setFontColor("yellow");
-    obj.label484:setFontFamily("kalam");
-    obj.label484:setCursor("handPoint");
-    obj.label484:setHitTest(true);
-    obj.label484:setName("label484");
+    obj.label470 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label470:setParent(obj.Armadura56);
+    obj.label470:setLeft(22.25);
+    obj.label470:setTop(20.50);
+    obj.label470:setWidth(107.25);
+    obj.label470:setHeight(37.88);
+    obj.label470:setFontSize(22);
+    obj.label470:setHint("Preço da Arma");
+    obj.label470:setField("Preco56");
+    obj.label470:setHorzTextAlign("center");
+    lfm_setPropAsString(obj.label470, "fontStyle",  "bold");
+    obj.label470:setFontColor("yellow");
+    obj.label470:setFontFamily("kalam");
+    obj.label470:setCursor("handPoint");
+    obj.label470:setHitTest(true);
+    obj.label470:setName("label470");
 
     obj.Arma56 = GUI.fromHandle(_obj_newObject("image"));
     obj.Arma56:setParent(obj.Armadura56);
@@ -17355,86 +17075,86 @@ local function constructNew_frmDZ_Ficha()
     obj.Arma56:setHint("Clique aqui para comprar");
     obj.Arma56:setName("Arma56");
 
-    obj.image228 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image228:setParent(obj.Armadura56);
-    obj.image228:setLeft(2.56);
-    obj.image228:setTop(93.00);
-    obj.image228:setWidth(136.69);
-    obj.image228:setHeight(77.69);
-    obj.image228:setStyle("proportional");
-    obj.image228:setCenter(true);
-    obj.image228:setEditable(true);
-    obj.image228:setField("ImagemArma56");
-    obj.image228:setName("image228");
+    obj.image224 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image224:setParent(obj.Armadura56);
+    obj.image224:setLeft(2.56);
+    obj.image224:setTop(93.00);
+    obj.image224:setWidth(136.69);
+    obj.image224:setHeight(77.69);
+    obj.image224:setStyle("proportional");
+    obj.image224:setCenter(true);
+    obj.image224:setEditable(true);
+    obj.image224:setField("ImagemArma56");
+    obj.image224:setName("image224");
 
-    obj.label485 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label485:setParent(obj.Armadura56);
-    obj.label485:setLeft(197);
-    obj.label485:setTop(10);
-    obj.label485:setWidth(249.25);
-    obj.label485:setHeight(39);
-    obj.label485:setFontSize(22);
-    obj.label485:setField("ItemNome56");
-    lfm_setPropAsString(obj.label485, "fontStyle",  "bold");
-    obj.label485:setFontColor("black");
-    obj.label485:setFontFamily("kalam");
-    obj.label485:setName("label485");
+    obj.label471 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label471:setParent(obj.Armadura56);
+    obj.label471:setLeft(197);
+    obj.label471:setTop(10);
+    obj.label471:setWidth(249.25);
+    obj.label471:setHeight(39);
+    obj.label471:setFontSize(22);
+    obj.label471:setField("ItemNome56");
+    lfm_setPropAsString(obj.label471, "fontStyle",  "bold");
+    obj.label471:setFontColor("black");
+    obj.label471:setFontFamily("kalam");
+    obj.label471:setName("label471");
 
-    obj.label486 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label486:setParent(obj.Armadura56);
-    obj.label486:setLeft(243.51);
-    obj.label486:setTop(47);
-    obj.label486:setWidth(149.25);
-    obj.label486:setHeight(38.63);
-    obj.label486:setHorzTextAlign("center");
-    obj.label486:setField("AbsorverAparar56");
-    obj.label486:setFontSize(19);
-    lfm_setPropAsString(obj.label486, "fontStyle",  "bold");
-    obj.label486:setFontColor("black");
-    obj.label486:setFontFamily("kalam");
-    obj.label486:setName("label486");
+    obj.label472 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label472:setParent(obj.Armadura56);
+    obj.label472:setLeft(243.51);
+    obj.label472:setTop(47);
+    obj.label472:setWidth(149.25);
+    obj.label472:setHeight(38.63);
+    obj.label472:setHorzTextAlign("center");
+    obj.label472:setField("AbsorverAparar56");
+    obj.label472:setFontSize(19);
+    lfm_setPropAsString(obj.label472, "fontStyle",  "bold");
+    obj.label472:setFontColor("black");
+    obj.label472:setFontFamily("kalam");
+    obj.label472:setName("label472");
 
-    obj.label487 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label487:setParent(obj.Armadura56);
-    obj.label487:setLeft(182);
-    obj.label487:setTop(86.13);
-    obj.label487:setWidth(61.88);
-    obj.label487:setHeight(38.87);
-    obj.label487:setHorzTextAlign("center");
-    obj.label487:setField("CD56");
-    obj.label487:setFontSize(19);
-    lfm_setPropAsString(obj.label487, "fontStyle",  "bold");
-    obj.label487:setFontColor("black");
-    obj.label487:setFontFamily("kalam");
-    obj.label487:setName("label487");
+    obj.label473 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label473:setParent(obj.Armadura56);
+    obj.label473:setLeft(182);
+    obj.label473:setTop(86.13);
+    obj.label473:setWidth(61.88);
+    obj.label473:setHeight(38.87);
+    obj.label473:setHorzTextAlign("center");
+    obj.label473:setField("CD56");
+    obj.label473:setFontSize(19);
+    lfm_setPropAsString(obj.label473, "fontStyle",  "bold");
+    obj.label473:setFontColor("black");
+    obj.label473:setFontFamily("kalam");
+    obj.label473:setName("label473");
 
-    obj.label488 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label488:setParent(obj.Armadura56);
-    obj.label488:setLeft(300);
-    obj.label488:setTop(127);
-    obj.label488:setWidth(61.88);
-    obj.label488:setHeight(38.88);
-    obj.label488:setHorzTextAlign("center");
-    obj.label488:setField("PenalidadedeMovimento56");
-    obj.label488:setFontSize(15);
-    lfm_setPropAsString(obj.label488, "fontStyle",  "bold");
-    obj.label488:setFontColor("black");
-    obj.label488:setFontFamily("kalam");
-    obj.label488:setName("label488");
+    obj.label474 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label474:setParent(obj.Armadura56);
+    obj.label474:setLeft(300);
+    obj.label474:setTop(127);
+    obj.label474:setWidth(61.88);
+    obj.label474:setHeight(38.88);
+    obj.label474:setHorzTextAlign("center");
+    obj.label474:setField("PenalidadedeMovimento56");
+    obj.label474:setFontSize(15);
+    lfm_setPropAsString(obj.label474, "fontStyle",  "bold");
+    obj.label474:setFontColor("black");
+    obj.label474:setFontFamily("kalam");
+    obj.label474:setName("label474");
 
-    obj.label489 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label489:setParent(obj.Armadura56);
-    obj.label489:setLeft(336);
-    obj.label489:setTop(86.12);
-    obj.label489:setWidth(61.88);
-    obj.label489:setHeight(38.88);
-    obj.label489:setHorzTextAlign("center");
-    obj.label489:setField("PenalidadeDePercepcao56");
-    obj.label489:setFontSize(19);
-    lfm_setPropAsString(obj.label489, "fontStyle",  "bold");
-    obj.label489:setFontColor("black");
-    obj.label489:setFontFamily("kalam");
-    obj.label489:setName("label489");
+    obj.label475 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label475:setParent(obj.Armadura56);
+    obj.label475:setLeft(336);
+    obj.label475:setTop(86.12);
+    obj.label475:setWidth(61.88);
+    obj.label475:setHeight(38.88);
+    obj.label475:setHorzTextAlign("center");
+    obj.label475:setField("PenalidadeDePercepcao56");
+    obj.label475:setFontSize(19);
+    lfm_setPropAsString(obj.label475, "fontStyle",  "bold");
+    obj.label475:setFontColor("black");
+    obj.label475:setFontFamily("kalam");
+    obj.label475:setName("label475");
 
     obj.tab5 = GUI.fromHandle(_obj_newObject("tab"));
     obj.tab5:setParent(obj.tabControl1);
@@ -17451,35 +17171,35 @@ local function constructNew_frmDZ_Ficha()
     obj.scrollBox13:setAlign("client");
     obj.scrollBox13:setName("scrollBox13");
 
-    obj.image229 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image229:setParent(obj.scrollBox13);
-    obj.image229:setLeft(0);
-    obj.image229:setTop(0);
-    obj.image229:setWidth(500);
-    obj.image229:setHeight(500);
-    obj.image229:setStyle("autoFit");
-    obj.image229:setSRC("logo_mesa");
-    obj.image229:setName("image229");
+    obj.image225 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image225:setParent(obj.scrollBox13);
+    obj.image225:setLeft(0);
+    obj.image225:setTop(0);
+    obj.image225:setWidth(500);
+    obj.image225:setHeight(500);
+    obj.image225:setStyle("autoFit");
+    obj.image225:setSRC("logo_mesa");
+    obj.image225:setName("image225");
 
-    obj.image230 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image230:setParent(obj.scrollBox13);
-    obj.image230:setLeft(480);
-    obj.image230:setTop(0);
-    obj.image230:setWidth(350);
-    obj.image230:setHeight(125);
-    obj.image230:setStyle("autoFit");
-    obj.image230:setSRC("https://i.imgur.com/HNK29eO.png?1");
-    obj.image230:setName("image230");
+    obj.image226 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image226:setParent(obj.scrollBox13);
+    obj.image226:setLeft(480);
+    obj.image226:setTop(0);
+    obj.image226:setWidth(350);
+    obj.image226:setHeight(125);
+    obj.image226:setStyle("autoFit");
+    obj.image226:setSRC("https://i.imgur.com/HNK29eO.png?1");
+    obj.image226:setName("image226");
 
-    obj.image231 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image231:setParent(obj.scrollBox13);
-    obj.image231:setLeft(500);
-    obj.image231:setTop(125);
-    obj.image231:setWidth(350);
-    obj.image231:setHeight(125);
-    obj.image231:setStyle("autoFit");
-    obj.image231:setSRC("https://i.imgur.com/Xp12RUs.png");
-    obj.image231:setName("image231");
+    obj.image227 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image227:setParent(obj.scrollBox13);
+    obj.image227:setLeft(500);
+    obj.image227:setTop(125);
+    obj.image227:setWidth(350);
+    obj.image227:setHeight(125);
+    obj.image227:setStyle("autoFit");
+    obj.image227:setSRC("https://i.imgur.com/Xp12RUs.png");
+    obj.image227:setName("image227");
 
     obj.layout157 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout157:setParent(obj.scrollBox13);
@@ -17498,65 +17218,65 @@ local function constructNew_frmDZ_Ficha()
     obj.rectangle28:setCornerType("round");
     obj.rectangle28:setName("rectangle28");
 
-    obj.label490 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label490:setParent(obj.layout157);
-    obj.label490:setLeft(0);
-    obj.label490:setTop(10);
-    obj.label490:setWidth(200);
-    obj.label490:setHeight(20);
-    obj.label490:setText("Ficha criada por ");
-    obj.label490:setHorzTextAlign("center");
-    obj.label490:setName("label490");
+    obj.label476 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label476:setParent(obj.layout157);
+    obj.label476:setLeft(0);
+    obj.label476:setTop(10);
+    obj.label476:setWidth(200);
+    obj.label476:setHeight(20);
+    obj.label476:setText("Ficha criada por ");
+    obj.label476:setHorzTextAlign("center");
+    obj.label476:setName("label476");
 
-    obj.label491 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label491:setParent(obj.layout157);
-    obj.label491:setLeft(0);
-    obj.label491:setTop(35);
-    obj.label491:setWidth(200);
-    obj.label491:setHeight(20);
-    obj.label491:setText("Marcio F. (Samelfero)");
-    obj.label491:setHorzTextAlign("center");
-    obj.label491:setName("label491");
+    obj.label477 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label477:setParent(obj.layout157);
+    obj.label477:setLeft(0);
+    obj.label477:setTop(35);
+    obj.label477:setWidth(200);
+    obj.label477:setHeight(20);
+    obj.label477:setText("Marcio F. (Samelfero)");
+    obj.label477:setHorzTextAlign("center");
+    obj.label477:setName("label477");
 
-    obj.label492 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label492:setParent(obj.layout157);
-    obj.label492:setLeft(0);
-    obj.label492:setTop(60);
-    obj.label492:setWidth(200);
-    obj.label492:setHeight(20);
-    obj.label492:setText("para o sistema Dead Zone");
-    obj.label492:setHorzTextAlign("center");
-    obj.label492:setName("label492");
+    obj.label478 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label478:setParent(obj.layout157);
+    obj.label478:setLeft(0);
+    obj.label478:setTop(60);
+    obj.label478:setWidth(200);
+    obj.label478:setHeight(20);
+    obj.label478:setText("para o sistema Dead Zone");
+    obj.label478:setHorzTextAlign("center");
+    obj.label478:setName("label478");
 
-    obj.label493 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label493:setParent(obj.layout157);
-    obj.label493:setLeft(0);
-    obj.label493:setTop(85);
-    obj.label493:setWidth(200);
-    obj.label493:setHeight(20);
-    obj.label493:setText("escrito por");
-    obj.label493:setHorzTextAlign("center");
-    obj.label493:setName("label493");
+    obj.label479 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label479:setParent(obj.layout157);
+    obj.label479:setLeft(0);
+    obj.label479:setTop(85);
+    obj.label479:setWidth(200);
+    obj.label479:setHeight(20);
+    obj.label479:setText("escrito por");
+    obj.label479:setHorzTextAlign("center");
+    obj.label479:setName("label479");
 
-    obj.label494 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label494:setParent(obj.layout157);
-    obj.label494:setLeft(0);
-    obj.label494:setTop(105);
-    obj.label494:setWidth(200);
-    obj.label494:setHeight(20);
-    obj.label494:setText("Allan (allan_fns)");
-    obj.label494:setHorzTextAlign("center");
-    obj.label494:setName("label494");
+    obj.label480 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label480:setParent(obj.layout157);
+    obj.label480:setLeft(0);
+    obj.label480:setTop(105);
+    obj.label480:setWidth(200);
+    obj.label480:setHeight(20);
+    obj.label480:setText("Allan (allan_fns)");
+    obj.label480:setHorzTextAlign("center");
+    obj.label480:setName("label480");
 
-    obj.label495 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label495:setParent(obj.scrollBox13);
-    obj.label495:setLeft(560);
-    obj.label495:setTop(480);
-    obj.label495:setWidth(210);
-    obj.label495:setHeight(20);
-    obj.label495:setText("Sua Versão: 2.3.1");
-    obj.label495:setHorzTextAlign("center");
-    obj.label495:setName("label495");
+    obj.label481 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label481:setParent(obj.scrollBox13);
+    obj.label481:setLeft(560);
+    obj.label481:setTop(480);
+    obj.label481:setWidth(210);
+    obj.label481:setHeight(20);
+    obj.label481:setText("Sua Versão: 2.3.1");
+    obj.label481:setHorzTextAlign("center");
+    obj.label481:setName("label481");
 
     obj.button87 = GUI.fromHandle(_obj_newObject("button"));
     obj.button87:setParent(obj.scrollBox13);
@@ -17593,26 +17313,26 @@ local function constructNew_frmDZ_Ficha()
     obj.rectangle29:setCornerType("round");
     obj.rectangle29:setName("rectangle29");
 
-    obj.label496 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label496:setParent(obj.layout158);
-    obj.label496:setLeft(0);
-    obj.label496:setTop(10);
-    obj.label496:setWidth(200);
-    obj.label496:setHeight(20);
-    obj.label496:setText("Mecânicas e implementações");
-    obj.label496:setHorzTextAlign("center");
-    obj.label496:setName("label496");
+    obj.label482 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label482:setParent(obj.layout158);
+    obj.label482:setLeft(0);
+    obj.label482:setTop(10);
+    obj.label482:setWidth(200);
+    obj.label482:setHeight(20);
+    obj.label482:setText("Mecânicas e implementações");
+    obj.label482:setHorzTextAlign("center");
+    obj.label482:setName("label482");
 
-    obj.label497 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label497:setParent(obj.layout158);
-    obj.label497:setLeft(0);
-    obj.label497:setTop(35);
-    obj.label497:setWidth(200);
-    obj.label497:setHeight(20);
-    obj.label497:setFontSize(11.5);
-    obj.label497:setText("Por MestreWill nick: (WillXOkumura)");
-    obj.label497:setHorzTextAlign("center");
-    obj.label497:setName("label497");
+    obj.label483 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label483:setParent(obj.layout158);
+    obj.label483:setLeft(0);
+    obj.label483:setTop(35);
+    obj.label483:setWidth(200);
+    obj.label483:setHeight(20);
+    obj.label483:setFontSize(11.5);
+    obj.label483:setText("Por MestreWill nick: (WillXOkumura)");
+    obj.label483:setHorzTextAlign("center");
+    obj.label483:setName("label483");
 
     obj.button89 = GUI.fromHandle(_obj_newObject("button"));
     obj.button89:setParent(obj.layout158);
@@ -17637,16 +17357,16 @@ local function constructNew_frmDZ_Ficha()
     obj.button90:setFontColor("red");
     obj.button90:setName("button90");
 
-    obj.label498 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label498:setParent(obj.layout158);
-    obj.label498:setLeft(0);
-    obj.label498:setTop(120);
-    obj.label498:setWidth(200);
-    obj.label498:setHeight(20);
-    obj.label498:setFontSize(15);
-    obj.label498:setText("Atualização provisória");
-    obj.label498:setHorzTextAlign("center");
-    obj.label498:setName("label498");
+    obj.label484 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label484:setParent(obj.layout158);
+    obj.label484:setLeft(0);
+    obj.label484:setTop(120);
+    obj.label484:setWidth(200);
+    obj.label484:setHeight(20);
+    obj.label484:setFontSize(15);
+    obj.label484:setText("Atualização provisória");
+    obj.label484:setHorzTextAlign("center");
+    obj.label484:setName("label484");
 
     obj._e_event0 = obj.dataLink1:addEventListener("onChange",
         function (_, field, oldValue, newValue)
@@ -20634,53 +20354,7 @@ local function constructNew_frmDZ_Ficha()
                       end;
         end, obj);
 
-    obj._e_event215 = obj.label404:addEventListener("onClick",
-        function (_)
-            if rrpg.getMesaDe(sheet).meuJogador.isMestre then
-                dialogs.inputQuery("Carteira", "Novo valor:", "",
-                   function (valorPreenchido)
-                        sheet.Preco43 = (sheet.Preco43 or 0 ) + valorPreenchido; 
-                end);
-                end;
-        end, obj);
-
-    obj._e_event216 = obj.Arma43:addEventListener("onClick",
-        function (_)
-            local Soma = (sheet.Soma or 0) -1200;
-                               if Soma >= 0 then
-            local minhaMesa = rrpg.getMesaDe(sheet); 
-                            local chat = minhaMesa.chat; 
-                            chat:enviarMensagem("/me [§K12][§B]Comprou uma arma. ");
-                     showMessage("Você acabou de comprar uma arma corpo a corpo, olhe na sua mochila");
-                         else
-                               showMessage("Você não mais dinheiro"); 	
-              end;
-        end, obj);
-
-    obj._e_event217 = obj.label411:addEventListener("onClick",
-        function (_)
-            if rrpg.getMesaDe(sheet).meuJogador.isMestre then
-                dialogs.inputQuery("Carteira", "Novo valor:", "",
-                   function (valorPreenchido)
-                        sheet.Preco44 = (sheet.Preco44 or 0 ) + valorPreenchido; 
-                end);
-                end;
-        end, obj);
-
-    obj._e_event218 = obj.Arma44:addEventListener("onClick",
-        function (_)
-            local Soma = (sheet.Soma or 0) -1200;
-                               if Soma >= 0 then
-            local minhaMesa = rrpg.getMesaDe(sheet); 
-                            local chat = minhaMesa.chat; 
-                            chat:enviarMensagem("/me [§K12][§B]Comprou uma arma. ");
-                     showMessage("Você acabou de comprar uma arma corpo a corpo, olhe na sua mochila");
-                         else
-                               showMessage("Você não mais dinheiro"); 	
-              end;
-        end, obj);
-
-    obj._e_event219 = obj.dataLink20:addEventListener("onChange",
+    obj._e_event215 = obj.dataLink20:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             function format_thousand(v)
                         local s = string.format("%d", math.floor(v))
@@ -20694,7 +20368,7 @@ local function constructNew_frmDZ_Ficha()
                           self.labSoma5.text = '$' .. format_thousand(sheet.soma);
         end, obj);
 
-    obj._e_event220 = obj.image203:addEventListener("onClick",
+    obj._e_event216 = obj.image199:addEventListener("onClick",
         function (_)
             if rrpg.getMesaDe(sheet).meuJogador.isMestre then
                                         dialogs.inputQuery("Carteira", "Novo valor:", "",
@@ -20704,13 +20378,13 @@ local function constructNew_frmDZ_Ficha()
                                         end;
         end, obj);
 
-    obj._e_event221 = obj.image204:addEventListener("onClick",
+    obj._e_event217 = obj.image200:addEventListener("onClick",
         function (_)
             self.LojaArmaduras.visible = false;
                             self.ApresentaLoja.visible = true;
         end, obj);
 
-    obj._e_event222 = obj.label418:addEventListener("onClick",
+    obj._e_event218 = obj.label404:addEventListener("onClick",
         function (_)
             if rrpg.getMesaDe(sheet).meuJogador.isMestre then
                 dialogs.inputQuery("Carteira", "Novo valor:", "",
@@ -20720,7 +20394,7 @@ local function constructNew_frmDZ_Ficha()
                 end;
         end, obj);
 
-    obj._e_event223 = obj.Arma45:addEventListener("onClick",
+    obj._e_event219 = obj.Arma45:addEventListener("onClick",
         function (_)
             local Soma = (sheet.Soma or 0) -1200;
                                if Soma >= 0 then
@@ -20733,7 +20407,7 @@ local function constructNew_frmDZ_Ficha()
               end;
         end, obj);
 
-    obj._e_event224 = obj.label424:addEventListener("onClick",
+    obj._e_event220 = obj.label410:addEventListener("onClick",
         function (_)
             if rrpg.getMesaDe(sheet).meuJogador.isMestre then
                 dialogs.inputQuery("Carteira", "Novo valor:", "",
@@ -20743,7 +20417,7 @@ local function constructNew_frmDZ_Ficha()
                 end;
         end, obj);
 
-    obj._e_event225 = obj.Arma46:addEventListener("onClick",
+    obj._e_event221 = obj.Arma46:addEventListener("onClick",
         function (_)
             local Soma = (sheet.Soma or 0) -1200;
                                if Soma >= 0 then
@@ -20756,7 +20430,7 @@ local function constructNew_frmDZ_Ficha()
               end;
         end, obj);
 
-    obj._e_event226 = obj.label430:addEventListener("onClick",
+    obj._e_event222 = obj.label416:addEventListener("onClick",
         function (_)
             if rrpg.getMesaDe(sheet).meuJogador.isMestre then
                 dialogs.inputQuery("Carteira", "Novo valor:", "",
@@ -20766,7 +20440,7 @@ local function constructNew_frmDZ_Ficha()
                 end;
         end, obj);
 
-    obj._e_event227 = obj.Arma47:addEventListener("onClick",
+    obj._e_event223 = obj.Arma47:addEventListener("onClick",
         function (_)
             local Soma = (sheet.Soma or 0) -1200;
                                if Soma >= 0 then
@@ -20779,7 +20453,7 @@ local function constructNew_frmDZ_Ficha()
               end;
         end, obj);
 
-    obj._e_event228 = obj.label436:addEventListener("onClick",
+    obj._e_event224 = obj.label422:addEventListener("onClick",
         function (_)
             if rrpg.getMesaDe(sheet).meuJogador.isMestre then
                 dialogs.inputQuery("Carteira", "Novo valor:", "",
@@ -20789,7 +20463,7 @@ local function constructNew_frmDZ_Ficha()
                 end;
         end, obj);
 
-    obj._e_event229 = obj.Arma48:addEventListener("onClick",
+    obj._e_event225 = obj.Arma48:addEventListener("onClick",
         function (_)
             local Soma = (sheet.Soma or 0) -1200;
                                if Soma >= 0 then
@@ -20802,7 +20476,7 @@ local function constructNew_frmDZ_Ficha()
               end;
         end, obj);
 
-    obj._e_event230 = obj.label442:addEventListener("onClick",
+    obj._e_event226 = obj.label428:addEventListener("onClick",
         function (_)
             if rrpg.getMesaDe(sheet).meuJogador.isMestre then
                 dialogs.inputQuery("Carteira", "Novo valor:", "",
@@ -20812,7 +20486,7 @@ local function constructNew_frmDZ_Ficha()
                 end;
         end, obj);
 
-    obj._e_event231 = obj.Arma49:addEventListener("onClick",
+    obj._e_event227 = obj.Arma49:addEventListener("onClick",
         function (_)
             local Soma = (sheet.Soma or 0) -1200;
                                if Soma >= 0 then
@@ -20825,7 +20499,7 @@ local function constructNew_frmDZ_Ficha()
               end;
         end, obj);
 
-    obj._e_event232 = obj.label448:addEventListener("onClick",
+    obj._e_event228 = obj.label434:addEventListener("onClick",
         function (_)
             if rrpg.getMesaDe(sheet).meuJogador.isMestre then
                 dialogs.inputQuery("Carteira", "Novo valor:", "",
@@ -20835,7 +20509,7 @@ local function constructNew_frmDZ_Ficha()
                 end;
         end, obj);
 
-    obj._e_event233 = obj.Arma50:addEventListener("onClick",
+    obj._e_event229 = obj.Arma50:addEventListener("onClick",
         function (_)
             local Soma = (sheet.Soma or 0) -1200;
                                if Soma >= 0 then
@@ -20848,7 +20522,7 @@ local function constructNew_frmDZ_Ficha()
               end;
         end, obj);
 
-    obj._e_event234 = obj.label454:addEventListener("onClick",
+    obj._e_event230 = obj.label440:addEventListener("onClick",
         function (_)
             if rrpg.getMesaDe(sheet).meuJogador.isMestre then
                 dialogs.inputQuery("Carteira", "Novo valor:", "",
@@ -20858,7 +20532,7 @@ local function constructNew_frmDZ_Ficha()
                 end;
         end, obj);
 
-    obj._e_event235 = obj.Arma51:addEventListener("onClick",
+    obj._e_event231 = obj.Arma51:addEventListener("onClick",
         function (_)
             local Soma = (sheet.Soma or 0) -1200;
                                if Soma >= 0 then
@@ -20871,7 +20545,7 @@ local function constructNew_frmDZ_Ficha()
               end;
         end, obj);
 
-    obj._e_event236 = obj.label460:addEventListener("onClick",
+    obj._e_event232 = obj.label446:addEventListener("onClick",
         function (_)
             if rrpg.getMesaDe(sheet).meuJogador.isMestre then
                 dialogs.inputQuery("Carteira", "Novo valor:", "",
@@ -20881,7 +20555,7 @@ local function constructNew_frmDZ_Ficha()
                 end;
         end, obj);
 
-    obj._e_event237 = obj.Arma52:addEventListener("onClick",
+    obj._e_event233 = obj.Arma52:addEventListener("onClick",
         function (_)
             local Soma = (sheet.Soma or 0) -1200;
                                if Soma >= 0 then
@@ -20894,7 +20568,7 @@ local function constructNew_frmDZ_Ficha()
               end;
         end, obj);
 
-    obj._e_event238 = obj.label466:addEventListener("onClick",
+    obj._e_event234 = obj.label452:addEventListener("onClick",
         function (_)
             if rrpg.getMesaDe(sheet).meuJogador.isMestre then
                 dialogs.inputQuery("Carteira", "Novo valor:", "",
@@ -20904,7 +20578,7 @@ local function constructNew_frmDZ_Ficha()
                 end;
         end, obj);
 
-    obj._e_event239 = obj.Arma53:addEventListener("onClick",
+    obj._e_event235 = obj.Arma53:addEventListener("onClick",
         function (_)
             local Soma = (sheet.Soma or 0) -1200;
                                if Soma >= 0 then
@@ -20917,7 +20591,7 @@ local function constructNew_frmDZ_Ficha()
               end;
         end, obj);
 
-    obj._e_event240 = obj.label472:addEventListener("onClick",
+    obj._e_event236 = obj.label458:addEventListener("onClick",
         function (_)
             if rrpg.getMesaDe(sheet).meuJogador.isMestre then
                 dialogs.inputQuery("Carteira", "Novo valor:", "",
@@ -20927,7 +20601,7 @@ local function constructNew_frmDZ_Ficha()
                 end;
         end, obj);
 
-    obj._e_event241 = obj.Arma54:addEventListener("onClick",
+    obj._e_event237 = obj.Arma54:addEventListener("onClick",
         function (_)
             local Soma = (sheet.Soma or 0) -1200;
                                if Soma >= 0 then
@@ -20940,7 +20614,7 @@ local function constructNew_frmDZ_Ficha()
               end;
         end, obj);
 
-    obj._e_event242 = obj.label478:addEventListener("onClick",
+    obj._e_event238 = obj.label464:addEventListener("onClick",
         function (_)
             if rrpg.getMesaDe(sheet).meuJogador.isMestre then
                 dialogs.inputQuery("Carteira", "Novo valor:", "",
@@ -20950,7 +20624,7 @@ local function constructNew_frmDZ_Ficha()
                 end;
         end, obj);
 
-    obj._e_event243 = obj.Arma55:addEventListener("onClick",
+    obj._e_event239 = obj.Arma55:addEventListener("onClick",
         function (_)
             local Soma = (sheet.Soma or 0) -1200;
                                if Soma >= 0 then
@@ -20963,7 +20637,7 @@ local function constructNew_frmDZ_Ficha()
               end;
         end, obj);
 
-    obj._e_event244 = obj.label484:addEventListener("onClick",
+    obj._e_event240 = obj.label470:addEventListener("onClick",
         function (_)
             if rrpg.getMesaDe(sheet).meuJogador.isMestre then
                 dialogs.inputQuery("Carteira", "Novo valor:", "",
@@ -20973,7 +20647,7 @@ local function constructNew_frmDZ_Ficha()
                 end;
         end, obj);
 
-    obj._e_event245 = obj.Arma56:addEventListener("onClick",
+    obj._e_event241 = obj.Arma56:addEventListener("onClick",
         function (_)
             local Soma = (sheet.Soma or 0) -1200;
                                if Soma >= 0 then
@@ -20986,31 +20660,27 @@ local function constructNew_frmDZ_Ficha()
               end;
         end, obj);
 
-    obj._e_event246 = obj.button87:addEventListener("onClick",
+    obj._e_event242 = obj.button87:addEventListener("onClick",
         function (_)
             GUI.openInBrowser('https://github.com/rrpgfirecast/firecast/blob/master/Plugins/Sheets/Dead%20Zone%202.0/README.md')
         end, obj);
 
-    obj._e_event247 = obj.button88:addEventListener("onClick",
+    obj._e_event243 = obj.button88:addEventListener("onClick",
         function (_)
             GUI.openInBrowser('https://github.com/ooicram/DeadZoneRPG/raw/master/Plugins/Sheets/Dead%20Zone%202.0/output/Dead%20Zone%202.0.rpk')
         end, obj);
 
-    obj._e_event248 = obj.button89:addEventListener("onClick",
+    obj._e_event244 = obj.button89:addEventListener("onClick",
         function (_)
             GUI.openInBrowser('https://dl.dropboxusercontent.com/s/znq35lnlfxt8c7k/Dead_Zone_3.0.rpk?dl=0')
         end, obj);
 
-    obj._e_event249 = obj.button90:addEventListener("onClick",
+    obj._e_event245 = obj.button90:addEventListener("onClick",
         function (_)
             GUI.openInBrowser('https://github.com/MestreWilll')
         end, obj);
 
     function obj:_releaseEvents()
-        __o_rrpgObjs.removeEventListenerById(self._e_event249);
-        __o_rrpgObjs.removeEventListenerById(self._e_event248);
-        __o_rrpgObjs.removeEventListenerById(self._e_event247);
-        __o_rrpgObjs.removeEventListenerById(self._e_event246);
         __o_rrpgObjs.removeEventListenerById(self._e_event245);
         __o_rrpgObjs.removeEventListenerById(self._e_event244);
         __o_rrpgObjs.removeEventListenerById(self._e_event243);
@@ -21296,7 +20966,6 @@ local function constructNew_frmDZ_Ficha()
         if self.label399 ~= nil then self.label399:destroy(); self.label399 = nil; end;
         if self.label430 ~= nil then self.label430:destroy(); self.label430 = nil; end;
         if self.CorpoACorpo35 ~= nil then self.CorpoACorpo35:destroy(); self.CorpoACorpo35 = nil; end;
-        if self.label488 ~= nil then self.label488:destroy(); self.label488 = nil; end;
         if self.layout47 ~= nil then self.layout47:destroy(); self.layout47 = nil; end;
         if self.Arma22 ~= nil then self.Arma22:destroy(); self.Arma22 = nil; end;
         if self.label75 ~= nil then self.label75:destroy(); self.label75 = nil; end;
@@ -21311,13 +20980,11 @@ local function constructNew_frmDZ_Ficha()
         if self.label331 ~= nil then self.label331:destroy(); self.label331 = nil; end;
         if self.layout123 ~= nil then self.layout123:destroy(); self.layout123 = nil; end;
         if self.image157 ~= nil then self.image157:destroy(); self.image157 = nil; end;
-        if self.image229 ~= nil then self.image229:destroy(); self.image229 = nil; end;
         if self.edit82 ~= nil then self.edit82:destroy(); self.edit82 = nil; end;
         if self.label192 ~= nil then self.label192:destroy(); self.label192 = nil; end;
         if self.label164 ~= nil then self.label164:destroy(); self.label164 = nil; end;
         if self.label293 ~= nil then self.label293:destroy(); self.label293 = nil; end;
         if self.image211 ~= nil then self.image211:destroy(); self.image211 = nil; end;
-        if self.label494 ~= nil then self.label494:destroy(); self.label494 = nil; end;
         if self.ItensComuns ~= nil then self.ItensComuns:destroy(); self.ItensComuns = nil; end;
         if self.CorpoACorpo40 ~= nil then self.CorpoACorpo40:destroy(); self.CorpoACorpo40 = nil; end;
         if self.button35 ~= nil then self.button35:destroy(); self.button35 = nil; end;
@@ -21375,7 +21042,6 @@ local function constructNew_frmDZ_Ficha()
         if self.button66 ~= nil then self.button66:destroy(); self.button66 = nil; end;
         if self.label455 ~= nil then self.label455:destroy(); self.label455 = nil; end;
         if self.button73 ~= nil then self.button73:destroy(); self.button73 = nil; end;
-        if self.Arma44 ~= nil then self.Arma44:destroy(); self.Arma44 = nil; end;
         if self.layout126 ~= nil then self.layout126:destroy(); self.layout126 = nil; end;
         if self.naoVende ~= nil then self.naoVende:destroy(); self.naoVende = nil; end;
         if self.layout5 ~= nil then self.layout5:destroy(); self.layout5 = nil; end;
@@ -21397,7 +21063,6 @@ local function constructNew_frmDZ_Ficha()
         if self.image198 ~= nil then self.image198:destroy(); self.image198 = nil; end;
         if self.image206 ~= nil then self.image206:destroy(); self.image206 = nil; end;
         if self.Arma7 ~= nil then self.Arma7:destroy(); self.Arma7 = nil; end;
-        if self.label489 ~= nil then self.label489:destroy(); self.label489 = nil; end;
         if self.label381 ~= nil then self.label381:destroy(); self.label381 = nil; end;
         if self.image10 ~= nil then self.image10:destroy(); self.image10 = nil; end;
         if self.button45 ~= nil then self.button45:destroy(); self.button45 = nil; end;
@@ -21478,7 +21143,6 @@ local function constructNew_frmDZ_Ficha()
         if self.layout59 ~= nil then self.layout59:destroy(); self.layout59 = nil; end;
         if self.image54 ~= nil then self.image54:destroy(); self.image54 = nil; end;
         if self.image133 ~= nil then self.image133:destroy(); self.image133 = nil; end;
-        if self.image231 ~= nil then self.image231:destroy(); self.image231 = nil; end;
         if self.label254 ~= nil then self.label254:destroy(); self.label254 = nil; end;
         if self.label235 ~= nil then self.label235:destroy(); self.label235 = nil; end;
         if self.edit92 ~= nil then self.edit92:destroy(); self.edit92 = nil; end;
@@ -21654,7 +21318,6 @@ local function constructNew_frmDZ_Ficha()
         if self.label480 ~= nil then self.label480:destroy(); self.label480 = nil; end;
         if self.button47 ~= nil then self.button47:destroy(); self.button47 = nil; end;
         if self.label71 ~= nil then self.label71:destroy(); self.label71 = nil; end;
-        if self.label496 ~= nil then self.label496:destroy(); self.label496 = nil; end;
         if self.edit85 ~= nil then self.edit85:destroy(); self.edit85 = nil; end;
         if self.edit201 ~= nil then self.edit201:destroy(); self.edit201 = nil; end;
         if self.image120 ~= nil then self.image120:destroy(); self.image120 = nil; end;
@@ -21681,7 +21344,6 @@ local function constructNew_frmDZ_Ficha()
         if self.layout105 ~= nil then self.layout105:destroy(); self.layout105 = nil; end;
         if self.label362 ~= nil then self.label362:destroy(); self.label362 = nil; end;
         if self.label140 ~= nil then self.label140:destroy(); self.label140 = nil; end;
-        if self.label490 ~= nil then self.label490:destroy(); self.label490 = nil; end;
         if self.edit120 ~= nil then self.edit120:destroy(); self.edit120 = nil; end;
         if self.label69 ~= nil then self.label69:destroy(); self.label69 = nil; end;
         if self.image166 ~= nil then self.image166:destroy(); self.image166 = nil; end;
@@ -21740,7 +21402,6 @@ local function constructNew_frmDZ_Ficha()
         if self.label221 ~= nil then self.label221:destroy(); self.label221 = nil; end;
         if self.layout18 ~= nil then self.layout18:destroy(); self.layout18 = nil; end;
         if self.PopCar ~= nil then self.PopCar:destroy(); self.PopCar = nil; end;
-        if self.CorpoACorpo44 ~= nil then self.CorpoACorpo44:destroy(); self.CorpoACorpo44 = nil; end;
         if self.edit139 ~= nil then self.edit139:destroy(); self.edit139 = nil; end;
         if self.rectangle6 ~= nil then self.rectangle6:destroy(); self.rectangle6 = nil; end;
         if self.label267 ~= nil then self.label267:destroy(); self.label267 = nil; end;
@@ -21792,7 +21453,6 @@ local function constructNew_frmDZ_Ficha()
         if self.edit140 ~= nil then self.edit140:destroy(); self.edit140 = nil; end;
         if self.image122 ~= nil then self.image122:destroy(); self.image122 = nil; end;
         if self.scrollBox1 ~= nil then self.scrollBox1:destroy(); self.scrollBox1 = nil; end;
-        if self.label492 ~= nil then self.label492:destroy(); self.label492 = nil; end;
         if self.label33 ~= nil then self.label33:destroy(); self.label33 = nil; end;
         if self.rectangle11 ~= nil then self.rectangle11:destroy(); self.rectangle11 = nil; end;
         if self.image82 ~= nil then self.image82:destroy(); self.image82 = nil; end;
@@ -21958,7 +21618,6 @@ local function constructNew_frmDZ_Ficha()
         if self.image113 ~= nil then self.image113:destroy(); self.image113 = nil; end;
         if self.button61 ~= nil then self.button61:destroy(); self.button61 = nil; end;
         if self.image112 ~= nil then self.image112:destroy(); self.image112 = nil; end;
-        if self.label497 ~= nil then self.label497:destroy(); self.label497 = nil; end;
         if self.edit202 ~= nil then self.edit202:destroy(); self.edit202 = nil; end;
         if self.layout157 ~= nil then self.layout157:destroy(); self.layout157 = nil; end;
         if self.edit70 ~= nil then self.edit70:destroy(); self.edit70 = nil; end;
@@ -21999,7 +21658,6 @@ local function constructNew_frmDZ_Ficha()
         if self.edit29 ~= nil then self.edit29:destroy(); self.edit29 = nil; end;
         if self.Armadura52 ~= nil then self.Armadura52:destroy(); self.Armadura52 = nil; end;
         if self.label350 ~= nil then self.label350:destroy(); self.label350 = nil; end;
-        if self.label498 ~= nil then self.label498:destroy(); self.label498 = nil; end;
         if self.layout94 ~= nil then self.layout94:destroy(); self.layout94 = nil; end;
         if self.image142 ~= nil then self.image142:destroy(); self.image142 = nil; end;
         if self.nivelresetPlayer ~= nil then self.nivelresetPlayer:destroy(); self.nivelresetPlayer = nil; end;
@@ -22119,12 +21777,10 @@ local function constructNew_frmDZ_Ficha()
         if self.label437 ~= nil then self.label437:destroy(); self.label437 = nil; end;
         if self.Armadura54 ~= nil then self.Armadura54:destroy(); self.Armadura54 = nil; end;
         if self.Armadura56 ~= nil then self.Armadura56:destroy(); self.Armadura56 = nil; end;
-        if self.image228 ~= nil then self.image228:destroy(); self.image228 = nil; end;
+        if self.layout158 ~= nil then self.layout158:destroy(); self.layout158 = nil; end;
         if self.label366 ~= nil then self.label366:destroy(); self.label366 = nil; end;
         if self.label29 ~= nil then self.label29:destroy(); self.label29 = nil; end;
         if self.layout137 ~= nil then self.layout137:destroy(); self.layout137 = nil; end;
-        if self.label486 ~= nil then self.label486:destroy(); self.label486 = nil; end;
-        if self.layout158 ~= nil then self.layout158:destroy(); self.layout158 = nil; end;
         if self.rectangle23 ~= nil then self.rectangle23:destroy(); self.rectangle23 = nil; end;
         if self.label91 ~= nil then self.label91:destroy(); self.label91 = nil; end;
         if self.dataLink6 ~= nil then self.dataLink6:destroy(); self.dataLink6 = nil; end;
@@ -22145,7 +21801,6 @@ local function constructNew_frmDZ_Ficha()
         if self.label225 ~= nil then self.label225:destroy(); self.label225 = nil; end;
         if self.label376 ~= nil then self.label376:destroy(); self.label376 = nil; end;
         if self.layout108 ~= nil then self.layout108:destroy(); self.layout108 = nil; end;
-        if self.label495 ~= nil then self.label495:destroy(); self.label495 = nil; end;
         if self.rectangle18 ~= nil then self.rectangle18:destroy(); self.rectangle18 = nil; end;
         if self.rectangle14 ~= nil then self.rectangle14:destroy(); self.rectangle14 = nil; end;
         if self.image92 ~= nil then self.image92:destroy(); self.image92 = nil; end;
@@ -22153,9 +21808,7 @@ local function constructNew_frmDZ_Ficha()
         if self.label147 ~= nil then self.label147:destroy(); self.label147 = nil; end;
         if self.label269 ~= nil then self.label269:destroy(); self.label269 = nil; end;
         if self.label228 ~= nil then self.label228:destroy(); self.label228 = nil; end;
-        if self.CorpoACorpo43 ~= nil then self.CorpoACorpo43:destroy(); self.CorpoACorpo43 = nil; end;
         if self.edit157 ~= nil then self.edit157:destroy(); self.edit157 = nil; end;
-        if self.label491 ~= nil then self.label491:destroy(); self.label491 = nil; end;
         if self.image153 ~= nil then self.image153:destroy(); self.image153 = nil; end;
         if self.label89 ~= nil then self.label89:destroy(); self.label89 = nil; end;
         if self.button33 ~= nil then self.button33:destroy(); self.button33 = nil; end;
@@ -22195,7 +21848,6 @@ local function constructNew_frmDZ_Ficha()
         if self.button51 ~= nil then self.button51:destroy(); self.button51 = nil; end;
         if self.image181 ~= nil then self.image181:destroy(); self.image181 = nil; end;
         if self.edit199 ~= nil then self.edit199:destroy(); self.edit199 = nil; end;
-        if self.Arma43 ~= nil then self.Arma43:destroy(); self.Arma43 = nil; end;
         if self.label198 ~= nil then self.label198:destroy(); self.label198 = nil; end;
         if self.label313 ~= nil then self.label313:destroy(); self.label313 = nil; end;
         if self.image125 ~= nil then self.image125:destroy(); self.image125 = nil; end;
@@ -22277,7 +21929,6 @@ local function constructNew_frmDZ_Ficha()
         if self.edit109 ~= nil then self.edit109:destroy(); self.edit109 = nil; end;
         if self.layout148 ~= nil then self.layout148:destroy(); self.layout148 = nil; end;
         if self.Arma1 ~= nil then self.Arma1:destroy(); self.Arma1 = nil; end;
-        if self.label493 ~= nil then self.label493:destroy(); self.label493 = nil; end;
         if self.label424 ~= nil then self.label424:destroy(); self.label424 = nil; end;
         if self.Arma41 ~= nil then self.Arma41:destroy(); self.Arma41 = nil; end;
         if self.button3 ~= nil then self.button3:destroy(); self.button3 = nil; end;
@@ -22324,7 +21975,6 @@ local function constructNew_frmDZ_Ficha()
         if self.label39 ~= nil then self.label39:destroy(); self.label39 = nil; end;
         if self.Armadura48 ~= nil then self.Armadura48:destroy(); self.Armadura48 = nil; end;
         if self.image72 ~= nil then self.image72:destroy(); self.image72 = nil; end;
-        if self.label485 ~= nil then self.label485:destroy(); self.label485 = nil; end;
         if self.label3 ~= nil then self.label3:destroy(); self.label3 = nil; end;
         if self.layout113 ~= nil then self.layout113:destroy(); self.layout113 = nil; end;
         if self.label309 ~= nil then self.label309:destroy(); self.label309 = nil; end;
@@ -22388,8 +22038,8 @@ local function constructNew_frmDZ_Ficha()
         if self.label432 ~= nil then self.label432:destroy(); self.label432 = nil; end;
         if self.image98 ~= nil then self.image98:destroy(); self.image98 = nil; end;
         if self.label343 ~= nil then self.label343:destroy(); self.label343 = nil; end;
-        if self.image227 ~= nil then self.image227:destroy(); self.image227 = nil; end;
         if self.scrollBox13 ~= nil then self.scrollBox13:destroy(); self.scrollBox13 = nil; end;
+        if self.image227 ~= nil then self.image227:destroy(); self.image227 = nil; end;
         if self.layout41 ~= nil then self.layout41:destroy(); self.layout41 = nil; end;
         if self.image20 ~= nil then self.image20:destroy(); self.image20 = nil; end;
         if self.label160 ~= nil then self.label160:destroy(); self.label160 = nil; end;
@@ -22506,7 +22156,7 @@ local function constructNew_frmDZ_Ficha()
         if self.label398 ~= nil then self.label398:destroy(); self.label398 = nil; end;
         if self.scrollBox3 ~= nil then self.scrollBox3:destroy(); self.scrollBox3 = nil; end;
         if self.label438 ~= nil then self.label438:destroy(); self.label438 = nil; end;
-        if self.label460 ~= nil then self.label460:destroy(); self.label460 = nil; end;
+        if self.Armadura53 ~= nil then self.Armadura53:destroy(); self.Armadura53 = nil; end;
         if self.niveldoPlayer ~= nil then self.niveldoPlayer:destroy(); self.niveldoPlayer = nil; end;
         if self.textEditor1 ~= nil then self.textEditor1:destroy(); self.textEditor1 = nil; end;
         if self.edit137 ~= nil then self.edit137:destroy(); self.edit137 = nil; end;
@@ -22516,11 +22166,10 @@ local function constructNew_frmDZ_Ficha()
         if self.button9 ~= nil then self.button9:destroy(); self.button9 = nil; end;
         if self.label152 ~= nil then self.label152:destroy(); self.label152 = nil; end;
         if self.label182 ~= nil then self.label182:destroy(); self.label182 = nil; end;
-        if self.Armadura53 ~= nil then self.Armadura53:destroy(); self.Armadura53 = nil; end;
+        if self.label460 ~= nil then self.label460:destroy(); self.label460 = nil; end;
         if self.edit6 ~= nil then self.edit6:destroy(); self.edit6 = nil; end;
         if self.textEditor21 ~= nil then self.textEditor21:destroy(); self.textEditor21 = nil; end;
         if self.image224 ~= nil then self.image224:destroy(); self.image224 = nil; end;
-        if self.image230 ~= nil then self.image230:destroy(); self.image230 = nil; end;
         if self.button87 ~= nil then self.button87:destroy(); self.button87 = nil; end;
         if self.label473 ~= nil then self.label473:destroy(); self.label473 = nil; end;
         if self.label395 ~= nil then self.label395:destroy(); self.label395 = nil; end;
@@ -22594,7 +22243,6 @@ local function constructNew_frmDZ_Ficha()
         if self.image222 ~= nil then self.image222:destroy(); self.image222 = nil; end;
         if self.layout150 ~= nil then self.layout150:destroy(); self.layout150 = nil; end;
         if self.image202 ~= nil then self.image202:destroy(); self.image202 = nil; end;
-        if self.label487 ~= nil then self.label487:destroy(); self.label487 = nil; end;
         if self.label311 ~= nil then self.label311:destroy(); self.label311 = nil; end;
         if self.layout46 ~= nil then self.layout46:destroy(); self.layout46 = nil; end;
         if self.label173 ~= nil then self.label173:destroy(); self.label173 = nil; end;

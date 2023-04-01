@@ -587,7 +587,7 @@ local minhaMesa = rrpg.getMesaDe(sheet);
   <label left="317.88" top="89" width="68.88" height="32" horzTextAlign="center" field="CD33" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
 </layout>
 <!-- 34 imagem -->
-<layout name="CorpoACorpo34" width="480" height="174" left="0" top="1726">
+<layout name="CorpoACorpo34" width="480" height="174" left="413" top="1544">
   <image src="images/LojaCorpoACorpo.png" left="0" top="0" width="399" height="174"/>
   // Preço da arma
   <label left="22.25" top="20.50" width="107.25" height="37.88" fontSize="22" hint="Preço da Arma" field="Preco34" horzTextAlign="center" fontStyle="bold" fontColor="yellow" fontFamily="kalam" cursor="handPoint" hitTest="true">
@@ -971,92 +971,6 @@ local minhaMesa = rrpg.getMesaDe(sheet);
                   // CD
                   <label left="317.88" top="89" width="68.88" height="32" horzTextAlign="center" field="CD42" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
               </layout>
-<!-- 43 imagem -->
-<layout name="CorpoACorpo43" width="480" height="174" left="413" top="1544">
-  <image src="images/LojaCorpoACorpo.png" left="0" top="0" width="399" height="174"/>
-  // Preço da arma
-  <label left="22.25" top="20.50" width="107.25" height="37.88" fontSize="22" hint="Preço da Arma" field="Preco43" horzTextAlign="center" fontStyle="bold" fontColor="yellow" fontFamily="kalam" cursor="handPoint" hitTest="true">
-          <event name="onClick">
-    if rrpg.getMesaDe(sheet).meuJogador.isMestre then
-    dialogs.inputQuery("Carteira", "Novo valor:", "",
-       function (valorPreenchido)
-            sheet.Preco43 = (sheet.Preco43 or 0 ) + valorPreenchido; 
-    end);
-    end;
-      </event>
-  </label>
-  // Comprar
-  <image left="41.38" top="61.75" width="67.88" height="30" cursor="handPoint" hitTest="true" hint="Clique aqui para comprar" name="Arma43">
-      <event name="onClick">
-                       local Soma = (sheet.Soma or 0) -1200;
-                   if Soma >= 0 then
-local minhaMesa = rrpg.getMesaDe(sheet); 
-                local chat = minhaMesa.chat; 
-                chat:enviarMensagem("/me [§K12][§B]Comprou uma arma. ");
-         showMessage("Você acabou de comprar uma arma corpo a corpo, olhe na sua mochila");
-             else
-                   showMessage("Você não mais dinheiro"); 	
-  end;
-      </event>
-  </image>
-         // imagem da arma
-         <image left="2.56" top="93.00" width="136.69" height="77.69" style="proportional" center="true" editable="true" field="ImagemArma43"/>
-          // Nome do Item
-          <label left="197" top="10" width="249.25" height="39" fontSize="22" field="ItemNome43" fontStyle="bold" fontColor="black" fontFamily="kalam"/>
-          // Iniciativa
-          <label left="207.88" top="51" width="49.88" height="31.38" horzTextAlign="center" field="Iniciativa43" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/>  
-          // dano 
-          <label left="182.88" top="90" width="50.88" height="31.38" horzTextAlign="center" field="DanoItem43" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
-          // Golpear
-          <label left="195.88" top="128" width="50.88" height="32" horzTextAlign="center" field="Golpear43" fontSize="15" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
-          // Aparar
-          <label left="317.88" top="49" width="68.88" height="32" horzTextAlign="center" field="Aparar43" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
-          // CD
-          <label left="317.88" top="89" width="68.88" height="32" horzTextAlign="center" field="CD43" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
-      </layout>
-<!-- 44 imagem -->
-<layout name="CorpoACorpo44" width="480" height="174" left="413" top="1726">
-  <image src="images/LojaCorpoACorpo.png" left="0" top="0" width="399" height="174"/>
-  // Preço da arma
-  <label left="22.25" top="20.50" width="107.25" height="37.88" fontSize="22" hint="Preço da Arma" field="Preco44" horzTextAlign="center" fontStyle="bold" fontColor="yellow" fontFamily="kalam" cursor="handPoint" hitTest="true">
-          <event name="onClick">
-    if rrpg.getMesaDe(sheet).meuJogador.isMestre then
-    dialogs.inputQuery("Carteira", "Novo valor:", "",
-       function (valorPreenchido)
-            sheet.Preco44 = (sheet.Preco44 or 0 ) + valorPreenchido; 
-    end);
-    end;
-      </event>
-  </label>
-  // Comprar
-  <image left="41.38" top="61.75" width="67.88" height="30" cursor="handPoint" hitTest="true" hint="Clique aqui para comprar" name="Arma44">
-      <event name="onClick">
-                       local Soma = (sheet.Soma or 0) -1200;
-                   if Soma >= 0 then
-local minhaMesa = rrpg.getMesaDe(sheet); 
-                local chat = minhaMesa.chat; 
-                chat:enviarMensagem("/me [§K12][§B]Comprou uma arma. ");
-         showMessage("Você acabou de comprar uma arma corpo a corpo, olhe na sua mochila");
-             else
-                   showMessage("Você não mais dinheiro"); 	
-  end;
-      </event>
-  </image>
-         // imagem da arma
-         <image left="2.56" top="93.00" width="136.69" height="77.69" style="proportional" center="true" editable="true" field="ImagemArma44"/>
-          // Nome do Item
-          <label left="197" top="10" width="249.25" height="39" fontSize="22" field="ItemNome44" fontStyle="bold" fontColor="black" fontFamily="kalam"/>
-          // Iniciativa
-          <label left="207.88" top="51" width="49.88" height="31.38" horzTextAlign="center" field="Iniciativa44" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/>  
-          // dano 
-          <label left="182.88" top="90" width="50.88" height="31.38" horzTextAlign="center" field="DanoItem44" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
-          // Golpear
-          <label left="195.88" top="128" width="50.88" height="32" horzTextAlign="center" field="Golpear44" fontSize="15" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
-          // Aparar
-          <label left="317.88" top="49" width="68.88" height="32" horzTextAlign="center" field="Aparar44" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
-          // CD
-          <label left="317.88" top="89" width="68.88" height="32" horzTextAlign="center" field="CD44" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/> 
-      </layout>
       </scrollBox>
     </rectangle>
   </layout>

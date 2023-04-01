@@ -35,3 +35,9 @@ Versão 2.1
 27 de Abril de 2022
 Versão 2.0
 - Ficha criada!
+---------------------------------------------------------------
+# Ilustrações de Mecânicas
+
+- Primeiro, Loja da ficha: 
+
+![LojaCompletaAllan](https://user-images.githubusercontent.com/87247824/229298359-d127aa9a-d72e-4f96-9b17-c403de5f2549.gif)

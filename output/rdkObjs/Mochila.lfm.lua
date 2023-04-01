@@ -47,7 +47,7 @@ local function constructNew_frmMochila()
     obj.rectangle1:setTop(0);
     obj.rectangle1:setWidth(600);
     obj.rectangle1:setHeight(600);
-    obj.rectangle1:setColor("gray");
+    obj.rectangle1:setColor("white");
     obj.rectangle1:setXradius(25);
     obj.rectangle1:setYradius(25);
     obj.rectangle1:setCornerType("round");

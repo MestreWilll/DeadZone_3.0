@@ -316,7 +316,7 @@ local minhaMesa = rrpg.getMesaDe(sheet);
  // imagem da arma
  <image left="2.56" top="93.00" width="136.69" height="77.69" style="proportional" center="true" editable="true" field="ImagemArma27"/>
   // Nome do Item
-  <label left="197" top="10" width="249.25" height="39" fontSize="22" field="ItemNome27" fontStyle="bold" fontColor="black" fontFamily="kalam"/>
+  <label left="197" top="10" width="249.25" height="39" fontSize="16.8" field="ItemNome27" fontStyle="bold" fontColor="black" fontFamily="kalam"/>
   // Iniciativa
   <label left="207.88" top="51" width="49.88" height="31.38" horzTextAlign="center" field="Iniciativa27" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/>  
   // dano 
@@ -359,7 +359,7 @@ local minhaMesa = rrpg.getMesaDe(sheet);
  // imagem da arma
  <image left="2.56" top="93.00" width="136.69" height="77.69" style="proportional" center="true" editable="true" field="ImagemArma28"/>
   // Nome do Item
-  <label left="197" top="10" width="249.25" height="39" fontSize="22" field="ItemNome28" fontStyle="bold" fontColor="black" fontFamily="kalam"/>
+  <label left="197" top="10" width="249.25" height="39" fontSize="19" field="ItemNome28" fontStyle="bold" fontColor="black" fontFamily="kalam"/>
   // Iniciativa
   <label left="207.88" top="51" width="49.88" height="31.38" horzTextAlign="center" field="Iniciativa28" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/>  
   // dano 
@@ -574,7 +574,7 @@ local minhaMesa = rrpg.getMesaDe(sheet);
  // imagem da arma
  <image left="2.56" top="93.00" width="136.69" height="77.69" style="proportional" center="true" editable="true" field="ImagemArma33"/>
   // Nome do Item
-  <label left="197" top="10" width="249.25" height="39" fontSize="22" field="ItemNome33" fontStyle="bold" fontColor="black" fontFamily="kalam"/>
+  <label left="197" top="10" width="249.25" height="39" fontSize="18" field="ItemNome33" fontStyle="bold" fontColor="black" fontFamily="kalam"/>
   // Iniciativa
   <label left="207.88" top="51" width="49.88" height="31.38" horzTextAlign="center" field="Iniciativa33" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/>  
   // dano 
@@ -703,7 +703,7 @@ local minhaMesa = rrpg.getMesaDe(sheet);
  // imagem da arma
  <image left="2.56" top="93.00" width="136.69" height="77.69" style="proportional" center="true" editable="true" field="ImagemArma36"/>
   // Nome do Item
-  <label left="197" top="10" width="249.25" height="39" fontSize="22" field="ItemNome36" fontStyle="bold" fontColor="black" fontFamily="kalam"/>
+  <label left="197" top="10" width="249.25" height="39" fontSize="14.8" field="ItemNome36" fontStyle="bold" fontColor="black" fontFamily="kalam"/>
   // Iniciativa
   <label left="207.88" top="51" width="49.88" height="31.38" horzTextAlign="center" field="Iniciativa36" fontSize="19" fontStyle="bold" fontColor="black" fontFamily="kalam"/>  
   // dano 

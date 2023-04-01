@@ -73,7 +73,7 @@ local function constructNew_frmDZ_Ficha()
     obj.rectangle1:setTop(0);
     obj.rectangle1:setWidth(600);
     obj.rectangle1:setHeight(600);
-    obj.rectangle1:setColor("gray");
+    obj.rectangle1:setColor("white");
     obj.rectangle1:setXradius(25);
     obj.rectangle1:setYradius(25);
     obj.rectangle1:setCornerType("round");
@@ -13369,7 +13369,7 @@ local function constructNew_frmDZ_Ficha()
     obj.label293:setTop(10);
     obj.label293:setWidth(249.25);
     obj.label293:setHeight(39);
-    obj.label293:setFontSize(22);
+    obj.label293:setFontSize(16.8);
     obj.label293:setField("ItemNome27");
     lfm_setPropAsString(obj.label293, "fontStyle",  "bold");
     obj.label293:setFontColor("black");
@@ -13509,7 +13509,7 @@ local function constructNew_frmDZ_Ficha()
     obj.label300:setTop(10);
     obj.label300:setWidth(249.25);
     obj.label300:setHeight(39);
-    obj.label300:setFontSize(22);
+    obj.label300:setFontSize(19);
     obj.label300:setField("ItemNome28");
     lfm_setPropAsString(obj.label300, "fontStyle",  "bold");
     obj.label300:setFontColor("black");
@@ -14209,7 +14209,7 @@ local function constructNew_frmDZ_Ficha()
     obj.label335:setTop(10);
     obj.label335:setWidth(249.25);
     obj.label335:setHeight(39);
-    obj.label335:setFontSize(22);
+    obj.label335:setFontSize(18);
     obj.label335:setField("ItemNome33");
     lfm_setPropAsString(obj.label335, "fontStyle",  "bold");
     obj.label335:setFontColor("black");
@@ -14629,7 +14629,7 @@ local function constructNew_frmDZ_Ficha()
     obj.label356:setTop(10);
     obj.label356:setWidth(249.25);
     obj.label356:setHeight(39);
-    obj.label356:setFontSize(22);
+    obj.label356:setFontSize(14.8);
     obj.label356:setField("ItemNome36");
     lfm_setPropAsString(obj.label356, "fontStyle",  "bold");
     obj.label356:setFontColor("black");
@@ -15961,7 +15961,7 @@ local function constructNew_frmDZ_Ficha()
     obj.label419:setTop(10);
     obj.label419:setWidth(249.25);
     obj.label419:setHeight(39);
-    obj.label419:setFontSize(22);
+    obj.label419:setFontSize(12.8);
     obj.label419:setField("ItemNome45");
     lfm_setPropAsString(obj.label419, "fontStyle",  "bold");
     obj.label419:setFontColor("black");
@@ -16017,7 +16017,7 @@ local function constructNew_frmDZ_Ficha()
     obj.label423:setWidth(61.88);
     obj.label423:setHeight(38.88);
     obj.label423:setHorzTextAlign("center");
-    obj.label423:setField("PenalidadeDePercepcao45");
+    obj.label423:setField("PenalidadeDePercepccão45");
     obj.label423:setFontSize(19);
     lfm_setPropAsString(obj.label423, "fontStyle",  "bold");
     obj.label423:setFontColor("black");
@@ -16143,7 +16143,7 @@ local function constructNew_frmDZ_Ficha()
     obj.label429:setWidth(61.88);
     obj.label429:setHeight(38.88);
     obj.label429:setHorzTextAlign("center");
-    obj.label429:setField("PenalidadeDePercepcao46");
+    obj.label429:setField("PenalidadeDePercepccão46");
     obj.label429:setFontSize(19);
     lfm_setPropAsString(obj.label429, "fontStyle",  "bold");
     obj.label429:setFontColor("black");
@@ -16269,7 +16269,7 @@ local function constructNew_frmDZ_Ficha()
     obj.label435:setWidth(61.88);
     obj.label435:setHeight(38.88);
     obj.label435:setHorzTextAlign("center");
-    obj.label435:setField("PenalidadeDePercepcao47");
+    obj.label435:setField("PenalidadeDePercepccão47");
     obj.label435:setFontSize(19);
     lfm_setPropAsString(obj.label435, "fontStyle",  "bold");
     obj.label435:setFontColor("black");
@@ -16339,7 +16339,7 @@ local function constructNew_frmDZ_Ficha()
     obj.label437:setTop(10);
     obj.label437:setWidth(249.25);
     obj.label437:setHeight(39);
-    obj.label437:setFontSize(22);
+    obj.label437:setFontSize(15);
     obj.label437:setField("ItemNome48");
     lfm_setPropAsString(obj.label437, "fontStyle",  "bold");
     obj.label437:setFontColor("black");
@@ -16395,7 +16395,7 @@ local function constructNew_frmDZ_Ficha()
     obj.label441:setWidth(61.88);
     obj.label441:setHeight(38.88);
     obj.label441:setHorzTextAlign("center");
-    obj.label441:setField("PenalidadeDePercepcao48");
+    obj.label441:setField("PenalidadeDePercepccão48");
     obj.label441:setFontSize(19);
     lfm_setPropAsString(obj.label441, "fontStyle",  "bold");
     obj.label441:setFontColor("black");
@@ -16465,7 +16465,7 @@ local function constructNew_frmDZ_Ficha()
     obj.label443:setTop(10);
     obj.label443:setWidth(249.25);
     obj.label443:setHeight(39);
-    obj.label443:setFontSize(22);
+    obj.label443:setFontSize(16);
     obj.label443:setField("ItemNome49");
     lfm_setPropAsString(obj.label443, "fontStyle",  "bold");
     obj.label443:setFontColor("black");
@@ -16521,7 +16521,7 @@ local function constructNew_frmDZ_Ficha()
     obj.label447:setWidth(61.88);
     obj.label447:setHeight(38.88);
     obj.label447:setHorzTextAlign("center");
-    obj.label447:setField("PenalidadeDePercepcao49");
+    obj.label447:setField("PenalidadeDePercepccão49");
     obj.label447:setFontSize(19);
     lfm_setPropAsString(obj.label447, "fontStyle",  "bold");
     obj.label447:setFontColor("black");
@@ -16591,7 +16591,7 @@ local function constructNew_frmDZ_Ficha()
     obj.label449:setTop(10);
     obj.label449:setWidth(249.25);
     obj.label449:setHeight(39);
-    obj.label449:setFontSize(22);
+    obj.label449:setFontSize(16.5);
     obj.label449:setField("ItemNome50");
     lfm_setPropAsString(obj.label449, "fontStyle",  "bold");
     obj.label449:setFontColor("black");
@@ -16647,7 +16647,7 @@ local function constructNew_frmDZ_Ficha()
     obj.label453:setWidth(61.88);
     obj.label453:setHeight(38.88);
     obj.label453:setHorzTextAlign("center");
-    obj.label453:setField("PenalidadeDePercepcao50");
+    obj.label453:setField("PenalidadeDePercepccão50");
     obj.label453:setFontSize(19);
     lfm_setPropAsString(obj.label453, "fontStyle",  "bold");
     obj.label453:setFontColor("black");
@@ -16717,7 +16717,7 @@ local function constructNew_frmDZ_Ficha()
     obj.label455:setTop(10);
     obj.label455:setWidth(249.25);
     obj.label455:setHeight(39);
-    obj.label455:setFontSize(22);
+    obj.label455:setFontSize(18);
     obj.label455:setField("ItemNome51");
     lfm_setPropAsString(obj.label455, "fontStyle",  "bold");
     obj.label455:setFontColor("black");
@@ -16773,7 +16773,7 @@ local function constructNew_frmDZ_Ficha()
     obj.label459:setWidth(61.88);
     obj.label459:setHeight(38.88);
     obj.label459:setHorzTextAlign("center");
-    obj.label459:setField("PenalidadeDePercepcao51");
+    obj.label459:setField("PenalidadeDePercepccão51");
     obj.label459:setFontSize(19);
     lfm_setPropAsString(obj.label459, "fontStyle",  "bold");
     obj.label459:setFontColor("black");
@@ -16843,7 +16843,7 @@ local function constructNew_frmDZ_Ficha()
     obj.label461:setTop(10);
     obj.label461:setWidth(249.25);
     obj.label461:setHeight(39);
-    obj.label461:setFontSize(22);
+    obj.label461:setFontSize(16);
     obj.label461:setField("ItemNome52");
     lfm_setPropAsString(obj.label461, "fontStyle",  "bold");
     obj.label461:setFontColor("black");
@@ -16899,7 +16899,7 @@ local function constructNew_frmDZ_Ficha()
     obj.label465:setWidth(61.88);
     obj.label465:setHeight(38.88);
     obj.label465:setHorzTextAlign("center");
-    obj.label465:setField("PenalidadeDePercepcao52");
+    obj.label465:setField("PenalidadeDePercepccão52");
     obj.label465:setFontSize(19);
     lfm_setPropAsString(obj.label465, "fontStyle",  "bold");
     obj.label465:setFontColor("black");
@@ -16929,7 +16929,7 @@ local function constructNew_frmDZ_Ficha()
     obj.label466:setTop(20.50);
     obj.label466:setWidth(107.25);
     obj.label466:setHeight(37.88);
-    obj.label466:setFontSize(22);
+    obj.label466:setFontSize(18);
     obj.label466:setHint("Preço da Arma");
     obj.label466:setField("Preco53");
     obj.label466:setHorzTextAlign("center");
@@ -16969,7 +16969,7 @@ local function constructNew_frmDZ_Ficha()
     obj.label467:setTop(10);
     obj.label467:setWidth(249.25);
     obj.label467:setHeight(39);
-    obj.label467:setFontSize(22);
+    obj.label467:setFontSize(16);
     obj.label467:setField("ItemNome53");
     lfm_setPropAsString(obj.label467, "fontStyle",  "bold");
     obj.label467:setFontColor("black");
@@ -17025,7 +17025,7 @@ local function constructNew_frmDZ_Ficha()
     obj.label471:setWidth(61.88);
     obj.label471:setHeight(38.88);
     obj.label471:setHorzTextAlign("center");
-    obj.label471:setField("PenalidadeDePercepão53");
+    obj.label471:setField("PenalidadeDePercepcao53");
     obj.label471:setFontSize(19);
     lfm_setPropAsString(obj.label471, "fontStyle",  "bold");
     obj.label471:setFontColor("black");
@@ -17095,7 +17095,7 @@ local function constructNew_frmDZ_Ficha()
     obj.label473:setTop(10);
     obj.label473:setWidth(249.25);
     obj.label473:setHeight(39);
-    obj.label473:setFontSize(22);
+    obj.label473:setFontSize(14.8);
     obj.label473:setField("ItemNome54");
     lfm_setPropAsString(obj.label473, "fontStyle",  "bold");
     obj.label473:setFontColor("black");
@@ -17124,7 +17124,7 @@ local function constructNew_frmDZ_Ficha()
     obj.label475:setHeight(38.87);
     obj.label475:setHorzTextAlign("center");
     obj.label475:setField("CD54");
-    obj.label475:setFontSize(19);
+    obj.label475:setFontSize(19.9);
     lfm_setPropAsString(obj.label475, "fontStyle",  "bold");
     obj.label475:setFontColor("black");
     obj.label475:setFontFamily("kalam");
@@ -17151,7 +17151,7 @@ local function constructNew_frmDZ_Ficha()
     obj.label477:setWidth(61.88);
     obj.label477:setHeight(38.88);
     obj.label477:setHorzTextAlign("center");
-    obj.label477:setField("PenalidadeDePercepcao54");
+    obj.label477:setField("PenalidadeDePercepccão54");
     obj.label477:setFontSize(19);
     lfm_setPropAsString(obj.label477, "fontStyle",  "bold");
     obj.label477:setFontColor("black");
@@ -17277,7 +17277,7 @@ local function constructNew_frmDZ_Ficha()
     obj.label483:setWidth(61.88);
     obj.label483:setHeight(38.88);
     obj.label483:setHorzTextAlign("center");
-    obj.label483:setField("PenalidadeDePercepcao55");
+    obj.label483:setField("PenalidadeDePercepccão55");
     obj.label483:setFontSize(19);
     lfm_setPropAsString(obj.label483, "fontStyle",  "bold");
     obj.label483:setFontColor("black");
@@ -17403,7 +17403,7 @@ local function constructNew_frmDZ_Ficha()
     obj.label489:setWidth(61.88);
     obj.label489:setHeight(38.88);
     obj.label489:setHorzTextAlign("center");
-    obj.label489:setField("PenalidadeDePercepcao56");
+    obj.label489:setField("PenalidadeDePercepccão56");
     obj.label489:setFontSize(19);
     lfm_setPropAsString(obj.label489, "fontStyle",  "bold");
     obj.label489:setFontColor("black");
@@ -18790,7 +18790,7 @@ local function constructNew_frmDZ_Ficha()
             sheet.Golpear42 = "+10"
             sheet.Aparar42 = "-1"
             sheet.CD42 = "-4"
-            sheet.ItemNome45 = 'Jaqueta de Couro - Anti-Perfurante'
+            sheet.ItemNome45 = 'Jaqueta de Couro/Anti-Perfurante'
             sheet.AbsorverAparar45 = '+3/+3'
             sheet.CD45 = '1'
             sheet.PenalidadedeMovimento45 = '-1'
@@ -18808,7 +18808,7 @@ local function constructNew_frmDZ_Ficha()
             sheet.PenalidadedeMovimento47 = '-2'
             sheet.PenalidadeDePercepcao47 = '???'
             
-            sheet.ItemNome48 = 'Armadura Acolchoada / Motim'
+            sheet.ItemNome48 = 'Armadura Acolchoada/Motim'
             sheet.AbsorverAparar48 = '+7/+7'
             sheet.CD48 = '2'
             sheet.PenalidadedeMovimento48 = '-2'

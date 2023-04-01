@@ -54,7 +54,7 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.rectangle1:setTop(0);
     obj.rectangle1:setWidth(600);
     obj.rectangle1:setHeight(600);
-    obj.rectangle1:setColor("gray");
+    obj.rectangle1:setColor("white");
     obj.rectangle1:setXradius(25);
     obj.rectangle1:setYradius(25);
     obj.rectangle1:setCornerType("round");
@@ -9964,7 +9964,7 @@ local function constructNew_frmDZ_Ficha1_svg()
             sheet.Golpear42 = "+10"
             sheet.Aparar42 = "-1"
             sheet.CD42 = "-4"
-            sheet.ItemNome45 = 'Jaqueta de Couro - Anti-Perfurante'
+            sheet.ItemNome45 = 'Jaqueta de Couro/Anti-Perfurante'
             sheet.AbsorverAparar45 = '+3/+3'
             sheet.CD45 = '1'
             sheet.PenalidadedeMovimento45 = '-1'
@@ -9982,7 +9982,7 @@ local function constructNew_frmDZ_Ficha1_svg()
             sheet.PenalidadedeMovimento47 = '-2'
             sheet.PenalidadeDePercepcao47 = '???'
             
-            sheet.ItemNome48 = 'Armadura Acolchoada / Motim'
+            sheet.ItemNome48 = 'Armadura Acolchoada/Motim'
             sheet.AbsorverAparar48 = '+7/+7'
             sheet.CD48 = '2'
             sheet.PenalidadedeMovimento48 = '-2'

@@ -4299,7 +4299,7 @@ local function constructNew_frmLoja_svg()
     obj.label209:setTop(10);
     obj.label209:setWidth(249.25);
     obj.label209:setHeight(39);
-    obj.label209:setFontSize(22);
+    obj.label209:setFontSize(16.8);
     obj.label209:setField("ItemNome27");
     lfm_setPropAsString(obj.label209, "fontStyle",  "bold");
     obj.label209:setFontColor("black");
@@ -4439,7 +4439,7 @@ local function constructNew_frmLoja_svg()
     obj.label216:setTop(10);
     obj.label216:setWidth(249.25);
     obj.label216:setHeight(39);
-    obj.label216:setFontSize(22);
+    obj.label216:setFontSize(19);
     obj.label216:setField("ItemNome28");
     lfm_setPropAsString(obj.label216, "fontStyle",  "bold");
     obj.label216:setFontColor("black");
@@ -5139,7 +5139,7 @@ local function constructNew_frmLoja_svg()
     obj.label251:setTop(10);
     obj.label251:setWidth(249.25);
     obj.label251:setHeight(39);
-    obj.label251:setFontSize(22);
+    obj.label251:setFontSize(18);
     obj.label251:setField("ItemNome33");
     lfm_setPropAsString(obj.label251, "fontStyle",  "bold");
     obj.label251:setFontColor("black");
@@ -5559,7 +5559,7 @@ local function constructNew_frmLoja_svg()
     obj.label272:setTop(10);
     obj.label272:setWidth(249.25);
     obj.label272:setHeight(39);
-    obj.label272:setFontSize(22);
+    obj.label272:setFontSize(14.8);
     obj.label272:setField("ItemNome36");
     lfm_setPropAsString(obj.label272, "fontStyle",  "bold");
     obj.label272:setFontColor("black");
@@ -6891,7 +6891,7 @@ local function constructNew_frmLoja_svg()
     obj.label335:setTop(10);
     obj.label335:setWidth(249.25);
     obj.label335:setHeight(39);
-    obj.label335:setFontSize(22);
+    obj.label335:setFontSize(12.8);
     obj.label335:setField("ItemNome45");
     lfm_setPropAsString(obj.label335, "fontStyle",  "bold");
     obj.label335:setFontColor("black");
@@ -6947,7 +6947,7 @@ local function constructNew_frmLoja_svg()
     obj.label339:setWidth(61.88);
     obj.label339:setHeight(38.88);
     obj.label339:setHorzTextAlign("center");
-    obj.label339:setField("PenalidadeDePercepcao45");
+    obj.label339:setField("PenalidadeDePercepccão45");
     obj.label339:setFontSize(19);
     lfm_setPropAsString(obj.label339, "fontStyle",  "bold");
     obj.label339:setFontColor("black");
@@ -7073,7 +7073,7 @@ local function constructNew_frmLoja_svg()
     obj.label345:setWidth(61.88);
     obj.label345:setHeight(38.88);
     obj.label345:setHorzTextAlign("center");
-    obj.label345:setField("PenalidadeDePercepcao46");
+    obj.label345:setField("PenalidadeDePercepccão46");
     obj.label345:setFontSize(19);
     lfm_setPropAsString(obj.label345, "fontStyle",  "bold");
     obj.label345:setFontColor("black");
@@ -7199,7 +7199,7 @@ local function constructNew_frmLoja_svg()
     obj.label351:setWidth(61.88);
     obj.label351:setHeight(38.88);
     obj.label351:setHorzTextAlign("center");
-    obj.label351:setField("PenalidadeDePercepcao47");
+    obj.label351:setField("PenalidadeDePercepccão47");
     obj.label351:setFontSize(19);
     lfm_setPropAsString(obj.label351, "fontStyle",  "bold");
     obj.label351:setFontColor("black");
@@ -7269,7 +7269,7 @@ local function constructNew_frmLoja_svg()
     obj.label353:setTop(10);
     obj.label353:setWidth(249.25);
     obj.label353:setHeight(39);
-    obj.label353:setFontSize(22);
+    obj.label353:setFontSize(15);
     obj.label353:setField("ItemNome48");
     lfm_setPropAsString(obj.label353, "fontStyle",  "bold");
     obj.label353:setFontColor("black");
@@ -7325,7 +7325,7 @@ local function constructNew_frmLoja_svg()
     obj.label357:setWidth(61.88);
     obj.label357:setHeight(38.88);
     obj.label357:setHorzTextAlign("center");
-    obj.label357:setField("PenalidadeDePercepcao48");
+    obj.label357:setField("PenalidadeDePercepccão48");
     obj.label357:setFontSize(19);
     lfm_setPropAsString(obj.label357, "fontStyle",  "bold");
     obj.label357:setFontColor("black");
@@ -7395,7 +7395,7 @@ local function constructNew_frmLoja_svg()
     obj.label359:setTop(10);
     obj.label359:setWidth(249.25);
     obj.label359:setHeight(39);
-    obj.label359:setFontSize(22);
+    obj.label359:setFontSize(16);
     obj.label359:setField("ItemNome49");
     lfm_setPropAsString(obj.label359, "fontStyle",  "bold");
     obj.label359:setFontColor("black");
@@ -7451,7 +7451,7 @@ local function constructNew_frmLoja_svg()
     obj.label363:setWidth(61.88);
     obj.label363:setHeight(38.88);
     obj.label363:setHorzTextAlign("center");
-    obj.label363:setField("PenalidadeDePercepcao49");
+    obj.label363:setField("PenalidadeDePercepccão49");
     obj.label363:setFontSize(19);
     lfm_setPropAsString(obj.label363, "fontStyle",  "bold");
     obj.label363:setFontColor("black");
@@ -7521,7 +7521,7 @@ local function constructNew_frmLoja_svg()
     obj.label365:setTop(10);
     obj.label365:setWidth(249.25);
     obj.label365:setHeight(39);
-    obj.label365:setFontSize(22);
+    obj.label365:setFontSize(16.5);
     obj.label365:setField("ItemNome50");
     lfm_setPropAsString(obj.label365, "fontStyle",  "bold");
     obj.label365:setFontColor("black");
@@ -7577,7 +7577,7 @@ local function constructNew_frmLoja_svg()
     obj.label369:setWidth(61.88);
     obj.label369:setHeight(38.88);
     obj.label369:setHorzTextAlign("center");
-    obj.label369:setField("PenalidadeDePercepcao50");
+    obj.label369:setField("PenalidadeDePercepccão50");
     obj.label369:setFontSize(19);
     lfm_setPropAsString(obj.label369, "fontStyle",  "bold");
     obj.label369:setFontColor("black");
@@ -7647,7 +7647,7 @@ local function constructNew_frmLoja_svg()
     obj.label371:setTop(10);
     obj.label371:setWidth(249.25);
     obj.label371:setHeight(39);
-    obj.label371:setFontSize(22);
+    obj.label371:setFontSize(18);
     obj.label371:setField("ItemNome51");
     lfm_setPropAsString(obj.label371, "fontStyle",  "bold");
     obj.label371:setFontColor("black");
@@ -7703,7 +7703,7 @@ local function constructNew_frmLoja_svg()
     obj.label375:setWidth(61.88);
     obj.label375:setHeight(38.88);
     obj.label375:setHorzTextAlign("center");
-    obj.label375:setField("PenalidadeDePercepcao51");
+    obj.label375:setField("PenalidadeDePercepccão51");
     obj.label375:setFontSize(19);
     lfm_setPropAsString(obj.label375, "fontStyle",  "bold");
     obj.label375:setFontColor("black");
@@ -7773,7 +7773,7 @@ local function constructNew_frmLoja_svg()
     obj.label377:setTop(10);
     obj.label377:setWidth(249.25);
     obj.label377:setHeight(39);
-    obj.label377:setFontSize(22);
+    obj.label377:setFontSize(16);
     obj.label377:setField("ItemNome52");
     lfm_setPropAsString(obj.label377, "fontStyle",  "bold");
     obj.label377:setFontColor("black");
@@ -7829,7 +7829,7 @@ local function constructNew_frmLoja_svg()
     obj.label381:setWidth(61.88);
     obj.label381:setHeight(38.88);
     obj.label381:setHorzTextAlign("center");
-    obj.label381:setField("PenalidadeDePercepcao52");
+    obj.label381:setField("PenalidadeDePercepccão52");
     obj.label381:setFontSize(19);
     lfm_setPropAsString(obj.label381, "fontStyle",  "bold");
     obj.label381:setFontColor("black");
@@ -7859,7 +7859,7 @@ local function constructNew_frmLoja_svg()
     obj.label382:setTop(20.50);
     obj.label382:setWidth(107.25);
     obj.label382:setHeight(37.88);
-    obj.label382:setFontSize(22);
+    obj.label382:setFontSize(18);
     obj.label382:setHint("Preço da Arma");
     obj.label382:setField("Preco53");
     obj.label382:setHorzTextAlign("center");
@@ -7899,7 +7899,7 @@ local function constructNew_frmLoja_svg()
     obj.label383:setTop(10);
     obj.label383:setWidth(249.25);
     obj.label383:setHeight(39);
-    obj.label383:setFontSize(22);
+    obj.label383:setFontSize(16);
     obj.label383:setField("ItemNome53");
     lfm_setPropAsString(obj.label383, "fontStyle",  "bold");
     obj.label383:setFontColor("black");
@@ -7955,7 +7955,7 @@ local function constructNew_frmLoja_svg()
     obj.label387:setWidth(61.88);
     obj.label387:setHeight(38.88);
     obj.label387:setHorzTextAlign("center");
-    obj.label387:setField("PenalidadeDePercepão53");
+    obj.label387:setField("PenalidadeDePercepcao53");
     obj.label387:setFontSize(19);
     lfm_setPropAsString(obj.label387, "fontStyle",  "bold");
     obj.label387:setFontColor("black");
@@ -8025,7 +8025,7 @@ local function constructNew_frmLoja_svg()
     obj.label389:setTop(10);
     obj.label389:setWidth(249.25);
     obj.label389:setHeight(39);
-    obj.label389:setFontSize(22);
+    obj.label389:setFontSize(14.8);
     obj.label389:setField("ItemNome54");
     lfm_setPropAsString(obj.label389, "fontStyle",  "bold");
     obj.label389:setFontColor("black");
@@ -8054,7 +8054,7 @@ local function constructNew_frmLoja_svg()
     obj.label391:setHeight(38.87);
     obj.label391:setHorzTextAlign("center");
     obj.label391:setField("CD54");
-    obj.label391:setFontSize(19);
+    obj.label391:setFontSize(19.9);
     lfm_setPropAsString(obj.label391, "fontStyle",  "bold");
     obj.label391:setFontColor("black");
     obj.label391:setFontFamily("kalam");
@@ -8081,7 +8081,7 @@ local function constructNew_frmLoja_svg()
     obj.label393:setWidth(61.88);
     obj.label393:setHeight(38.88);
     obj.label393:setHorzTextAlign("center");
-    obj.label393:setField("PenalidadeDePercepcao54");
+    obj.label393:setField("PenalidadeDePercepccão54");
     obj.label393:setFontSize(19);
     lfm_setPropAsString(obj.label393, "fontStyle",  "bold");
     obj.label393:setFontColor("black");
@@ -8207,7 +8207,7 @@ local function constructNew_frmLoja_svg()
     obj.label399:setWidth(61.88);
     obj.label399:setHeight(38.88);
     obj.label399:setHorzTextAlign("center");
-    obj.label399:setField("PenalidadeDePercepcao55");
+    obj.label399:setField("PenalidadeDePercepccão55");
     obj.label399:setFontSize(19);
     lfm_setPropAsString(obj.label399, "fontStyle",  "bold");
     obj.label399:setFontColor("black");
@@ -8333,7 +8333,7 @@ local function constructNew_frmLoja_svg()
     obj.label405:setWidth(61.88);
     obj.label405:setHeight(38.88);
     obj.label405:setHorzTextAlign("center");
-    obj.label405:setField("PenalidadeDePercepcao56");
+    obj.label405:setField("PenalidadeDePercepccão56");
     obj.label405:setFontSize(19);
     lfm_setPropAsString(obj.label405, "fontStyle",  "bold");
     obj.label405:setFontColor("black");

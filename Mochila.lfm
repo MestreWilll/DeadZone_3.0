@@ -4,7 +4,7 @@
 #frmDZ_Ficha1_svg label {fontColor: black; textTrimming: none; wordWrap: false; autoSize: true; fontFamily: kalam;;}</style>
 <layout name="Inventario" align="client" visible="false">
 <scrollBox align="client">
-      <rectangle left="0" top="0" width="600" height="600" color="gray"
+      <rectangle left="0" top="0" width="600" height="600" color="white"
          xradius="25" yradius="25" cornerType="round" >
         <label fontSize="28" fontColor="lime" fontStyle="bold"  
                    left="346" top="0" width="205" height="45" name="labSoma">

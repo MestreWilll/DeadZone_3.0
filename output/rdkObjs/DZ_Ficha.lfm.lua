@@ -549,6 +549,21 @@ local function constructNew_frmDZ_Ficha()
     obj.label9:setAutoSize(true);
     obj.label9:setFontFamily("kalam");
 
+    obj.PrimeiraLinha = GUI.fromHandle(_obj_newObject("edit"));
+    obj.PrimeiraLinha:setParent(obj.rectangle2);
+    obj.PrimeiraLinha:setName("PrimeiraLinha");
+    obj.PrimeiraLinha:setField("PrimeiraLinha");
+    obj.PrimeiraLinha:setLeft(309.45);
+    obj.PrimeiraLinha:setTop(1050.81);
+    obj.PrimeiraLinha:setWidth(148);
+    obj.PrimeiraLinha:setHeight(21.37);
+    obj.PrimeiraLinha:setFontColor("#C0504D");
+    obj.PrimeiraLinha:setFontSize(15);
+    obj.PrimeiraLinha:setHorzTextAlign("leading");
+    obj.PrimeiraLinha:setVertTextAlign("center");
+    obj.PrimeiraLinha:setFontFamily("kalam");
+    obj.PrimeiraLinha:setTransparent(true);
+
     obj.layout13 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout13:setParent(obj.rectangle2);
     obj.layout13:setLeft(649);
@@ -21744,6 +21759,7 @@ local function constructNew_frmDZ_Ficha()
         if self.edit157 ~= nil then self.edit157:destroy(); self.edit157 = nil; end;
         if self.image153 ~= nil then self.image153:destroy(); self.image153 = nil; end;
         if self.label89 ~= nil then self.label89:destroy(); self.label89 = nil; end;
+        if self.PrimeiraLinha ~= nil then self.PrimeiraLinha:destroy(); self.PrimeiraLinha = nil; end;
         if self.button33 ~= nil then self.button33:destroy(); self.button33 = nil; end;
         if self.edit83 ~= nil then self.edit83:destroy(); self.edit83 = nil; end;
         if self.Arma20 ~= nil then self.Arma20:destroy(); self.Arma20 = nil; end;

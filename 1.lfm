@@ -28,6 +28,8 @@
     <layout name="FichaPrincipal" align="client" visible="true">
         <scrollBox align="client">
             <rectangle width="1340" height="1188" color="white">
+                  <edit name="PrimeiraLinha" field="PrimeiraLinha" class="TXT_PCV" left="309.45" top="1050.81" width="148" height="21.37"></edit>
+
                 <image left="0" top="0" width="918" height="1188" src="images/Pg1.png" style="stretch" optimize="true" compilerOrder="0"/>
 ## Cabeçalho ##
             

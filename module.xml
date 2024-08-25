@@ -7,9 +7,5 @@
     <author>Allan,Samelfero e Will</author>
     <site/>
     <contact>Discord: (CoM4nDanT3)#9025, samelfero#5996 e MestreWill#3924 </contact>
-    <dataTypes>
-        <dataType title="Ficha 3.0 Dead Zone" name="frmDZ_Ficha" lfmFile="DZ_Ficha2.0/DZ_Ficha.lfm">DeadZoneRPG3.0</dataType>
-        <dataType title="Ficha 3.0 Dead Zone" name="frmDZ_Ficha" lfmFile="DZ_Ficha2.0/DZ_Ficha.lfm">DeadZoneRPG3.0</dataType>
-        <dataType title="Ficha 3.0 Dead Zone" name="frmDZ_Ficha" lfmFile="DZ_Ficha2.0/DZ_Ficha.lfm">DeadZoneRPG3.0</dataType>
-    </dataTypes>
+    
 </module>

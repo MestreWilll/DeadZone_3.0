@@ -1578,7 +1578,7 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.button12:setWidth(14);
     obj.button12:setHeight(14);
     obj.button12:setText("R");
-    obj.button12:setHint("Desc... ");
+    obj.button12:setHint("Clique para rolar");
     obj.button12:setName("button12");
 
     obj.image17 = GUI.fromHandle(_obj_newObject("image"));
@@ -1718,16 +1718,6 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.image23:setSRC("images/Dado.jpg");
     obj.image23:setName("image23");
 
-    obj.button19 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button19:setParent(obj.rectangle2);
-    obj.button19:setLeft(553);
-    obj.button19:setTop(487);
-    obj.button19:setWidth(14);
-    obj.button19:setHeight(14);
-    obj.button19:setText("R");
-    obj.button19:setHint("Desc... ");
-    obj.button19:setName("button19");
-
     obj.image24 = GUI.fromHandle(_obj_newObject("image"));
     obj.image24:setParent(obj.rectangle2);
     obj.image24:setWidth(17);
@@ -1739,15 +1729,15 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.image24:setSRC("images/Dado.jpg");
     obj.image24:setName("image24");
 
-    obj.button20 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button20:setParent(obj.rectangle2);
-    obj.button20:setLeft(553);
-    obj.button20:setTop(518);
-    obj.button20:setWidth(14);
-    obj.button20:setHeight(14);
-    obj.button20:setText("R");
-    obj.button20:setHint("Desc... ");
-    obj.button20:setName("button20");
+    obj.button19 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button19:setParent(obj.rectangle2);
+    obj.button19:setLeft(553);
+    obj.button19:setTop(518);
+    obj.button19:setWidth(14);
+    obj.button19:setHeight(14);
+    obj.button19:setText("R");
+    obj.button19:setHint("Desc... ");
+    obj.button19:setName("button19");
 
     obj.image25 = GUI.fromHandle(_obj_newObject("image"));
     obj.image25:setParent(obj.rectangle2);
@@ -1760,15 +1750,15 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.image25:setSRC("images/Dado.jpg");
     obj.image25:setName("image25");
 
-    obj.button21 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button21:setParent(obj.rectangle2);
-    obj.button21:setLeft(553);
-    obj.button21:setTop(550);
-    obj.button21:setWidth(14);
-    obj.button21:setHeight(14);
-    obj.button21:setText("R");
-    obj.button21:setHint("Desc... ");
-    obj.button21:setName("button21");
+    obj.button20 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button20:setParent(obj.rectangle2);
+    obj.button20:setLeft(553);
+    obj.button20:setTop(550);
+    obj.button20:setWidth(14);
+    obj.button20:setHeight(14);
+    obj.button20:setText("R");
+    obj.button20:setHint("Desc... ");
+    obj.button20:setName("button20");
 
     obj.image26 = GUI.fromHandle(_obj_newObject("image"));
     obj.image26:setParent(obj.rectangle2);
@@ -1781,15 +1771,15 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.image26:setSRC("images/Dado.jpg");
     obj.image26:setName("image26");
 
-    obj.button22 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button22:setParent(obj.rectangle2);
-    obj.button22:setLeft(553);
-    obj.button22:setTop(581);
-    obj.button22:setWidth(14);
-    obj.button22:setHeight(14);
-    obj.button22:setText("R");
-    obj.button22:setHint("Desc... ");
-    obj.button22:setName("button22");
+    obj.button21 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button21:setParent(obj.rectangle2);
+    obj.button21:setLeft(553);
+    obj.button21:setTop(581);
+    obj.button21:setWidth(14);
+    obj.button21:setHeight(14);
+    obj.button21:setText("R");
+    obj.button21:setHint("Desc... ");
+    obj.button21:setName("button21");
 
     obj.image27 = GUI.fromHandle(_obj_newObject("image"));
     obj.image27:setParent(obj.rectangle2);
@@ -1802,15 +1792,15 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.image27:setSRC("images/Dado.jpg");
     obj.image27:setName("image27");
 
-    obj.button23 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button23:setParent(obj.rectangle2);
-    obj.button23:setLeft(553);
-    obj.button23:setTop(611);
-    obj.button23:setWidth(14);
-    obj.button23:setHeight(14);
-    obj.button23:setText("R");
-    obj.button23:setHint("Desc... ");
-    obj.button23:setName("button23");
+    obj.button22 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button22:setParent(obj.rectangle2);
+    obj.button22:setLeft(553);
+    obj.button22:setTop(611);
+    obj.button22:setWidth(14);
+    obj.button22:setHeight(14);
+    obj.button22:setText("R");
+    obj.button22:setHint("Desc... ");
+    obj.button22:setName("button22");
 
     obj.image28 = GUI.fromHandle(_obj_newObject("image"));
     obj.image28:setParent(obj.rectangle2);
@@ -1823,15 +1813,15 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.image28:setSRC("images/Dado.jpg");
     obj.image28:setName("image28");
 
-    obj.button24 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button24:setParent(obj.rectangle2);
-    obj.button24:setLeft(553);
-    obj.button24:setTop(644);
-    obj.button24:setWidth(14);
-    obj.button24:setHeight(14);
-    obj.button24:setText("R");
-    obj.button24:setHint("Desc... ");
-    obj.button24:setName("button24");
+    obj.button23 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button23:setParent(obj.rectangle2);
+    obj.button23:setLeft(553);
+    obj.button23:setTop(644);
+    obj.button23:setWidth(14);
+    obj.button23:setHeight(14);
+    obj.button23:setText("R");
+    obj.button23:setHint("Desc... ");
+    obj.button23:setName("button23");
 
     obj.image29 = GUI.fromHandle(_obj_newObject("image"));
     obj.image29:setParent(obj.rectangle2);
@@ -1844,15 +1834,15 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.image29:setSRC("images/Dado.jpg");
     obj.image29:setName("image29");
 
-    obj.button25 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button25:setParent(obj.rectangle2);
-    obj.button25:setLeft(553);
-    obj.button25:setTop(675);
-    obj.button25:setWidth(14);
-    obj.button25:setHeight(14);
-    obj.button25:setText("R");
-    obj.button25:setHint("Desc... ");
-    obj.button25:setName("button25");
+    obj.button24 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button24:setParent(obj.rectangle2);
+    obj.button24:setLeft(553);
+    obj.button24:setTop(675);
+    obj.button24:setWidth(14);
+    obj.button24:setHeight(14);
+    obj.button24:setText("R");
+    obj.button24:setHint("Desc... ");
+    obj.button24:setName("button24");
 
     obj.image30 = GUI.fromHandle(_obj_newObject("image"));
     obj.image30:setParent(obj.rectangle2);
@@ -1865,15 +1855,15 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.image30:setSRC("images/Dado.jpg");
     obj.image30:setName("image30");
 
-    obj.button26 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button26:setParent(obj.rectangle2);
-    obj.button26:setLeft(553);
-    obj.button26:setTop(706);
-    obj.button26:setWidth(14);
-    obj.button26:setHeight(14);
-    obj.button26:setText("R");
-    obj.button26:setHint("Desc... ");
-    obj.button26:setName("button26");
+    obj.button25 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button25:setParent(obj.rectangle2);
+    obj.button25:setLeft(553);
+    obj.button25:setTop(706);
+    obj.button25:setWidth(14);
+    obj.button25:setHeight(14);
+    obj.button25:setText("R");
+    obj.button25:setHint("Desc... ");
+    obj.button25:setName("button25");
 
     obj.image31 = GUI.fromHandle(_obj_newObject("image"));
     obj.image31:setParent(obj.rectangle2);
@@ -1886,15 +1876,15 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.image31:setSRC("images/Dado.jpg");
     obj.image31:setName("image31");
 
-    obj.button27 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button27:setParent(obj.rectangle2);
-    obj.button27:setLeft(553);
-    obj.button27:setTop(737);
-    obj.button27:setWidth(14);
-    obj.button27:setHeight(14);
-    obj.button27:setText("R");
-    obj.button27:setHint("Desc... ");
-    obj.button27:setName("button27");
+    obj.button26 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button26:setParent(obj.rectangle2);
+    obj.button26:setLeft(553);
+    obj.button26:setTop(737);
+    obj.button26:setWidth(14);
+    obj.button26:setHeight(14);
+    obj.button26:setText("R");
+    obj.button26:setHint("Desc... ");
+    obj.button26:setName("button26");
 
     obj.image32 = GUI.fromHandle(_obj_newObject("image"));
     obj.image32:setParent(obj.rectangle2);
@@ -1907,15 +1897,15 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.image32:setSRC("images/Dado.jpg");
     obj.image32:setName("image32");
 
-    obj.button28 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button28:setParent(obj.rectangle2);
-    obj.button28:setLeft(553);
-    obj.button28:setTop(769);
-    obj.button28:setWidth(14);
-    obj.button28:setHeight(14);
-    obj.button28:setText("R");
-    obj.button28:setHint("Desc... ");
-    obj.button28:setName("button28");
+    obj.button27 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button27:setParent(obj.rectangle2);
+    obj.button27:setLeft(553);
+    obj.button27:setTop(769);
+    obj.button27:setWidth(14);
+    obj.button27:setHeight(14);
+    obj.button27:setText("R");
+    obj.button27:setHint("Desc... ");
+    obj.button27:setName("button27");
 
     obj.image33 = GUI.fromHandle(_obj_newObject("image"));
     obj.image33:setParent(obj.rectangle2);
@@ -1928,15 +1918,15 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.image33:setSRC("images/Dado.jpg");
     obj.image33:setName("image33");
 
-    obj.button29 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button29:setParent(obj.rectangle2);
-    obj.button29:setLeft(553);
-    obj.button29:setTop(801);
-    obj.button29:setWidth(14);
-    obj.button29:setHeight(14);
-    obj.button29:setText("R");
-    obj.button29:setHint("Desc... ");
-    obj.button29:setName("button29");
+    obj.button28 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button28:setParent(obj.rectangle2);
+    obj.button28:setLeft(553);
+    obj.button28:setTop(801);
+    obj.button28:setWidth(14);
+    obj.button28:setHeight(14);
+    obj.button28:setText("R");
+    obj.button28:setHint("Desc... ");
+    obj.button28:setName("button28");
 
     obj.image34 = GUI.fromHandle(_obj_newObject("image"));
     obj.image34:setParent(obj.rectangle2);
@@ -1949,15 +1939,15 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.image34:setSRC("images/Dado.jpg");
     obj.image34:setName("image34");
 
-    obj.button30 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button30:setParent(obj.rectangle2);
-    obj.button30:setLeft(553);
-    obj.button30:setTop(832);
-    obj.button30:setWidth(14);
-    obj.button30:setHeight(14);
-    obj.button30:setText("R");
-    obj.button30:setHint("Desc... ");
-    obj.button30:setName("button30");
+    obj.button29 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button29:setParent(obj.rectangle2);
+    obj.button29:setLeft(553);
+    obj.button29:setTop(832);
+    obj.button29:setWidth(14);
+    obj.button29:setHeight(14);
+    obj.button29:setText("R");
+    obj.button29:setHint("Desc... ");
+    obj.button29:setName("button29");
 
     obj.image35 = GUI.fromHandle(_obj_newObject("image"));
     obj.image35:setParent(obj.rectangle2);
@@ -1970,15 +1960,15 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.image35:setSRC("images/Dado.jpg");
     obj.image35:setName("image35");
 
-    obj.button31 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button31:setParent(obj.rectangle2);
-    obj.button31:setLeft(553);
-    obj.button31:setTop(863);
-    obj.button31:setWidth(14);
-    obj.button31:setHeight(14);
-    obj.button31:setText("R");
-    obj.button31:setHint("Desc... ");
-    obj.button31:setName("button31");
+    obj.button30 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button30:setParent(obj.rectangle2);
+    obj.button30:setLeft(553);
+    obj.button30:setTop(863);
+    obj.button30:setWidth(14);
+    obj.button30:setHeight(14);
+    obj.button30:setText("R");
+    obj.button30:setHint("Desc... ");
+    obj.button30:setName("button30");
 
     obj.image36 = GUI.fromHandle(_obj_newObject("image"));
     obj.image36:setParent(obj.rectangle2);
@@ -1991,15 +1981,15 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.image36:setSRC("images/Dado.jpg");
     obj.image36:setName("image36");
 
-    obj.button32 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button32:setParent(obj.rectangle2);
-    obj.button32:setLeft(553);
-    obj.button32:setTop(894);
-    obj.button32:setWidth(14);
-    obj.button32:setHeight(14);
-    obj.button32:setText("R");
-    obj.button32:setHint("Desc... ");
-    obj.button32:setName("button32");
+    obj.button31 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button31:setParent(obj.rectangle2);
+    obj.button31:setLeft(553);
+    obj.button31:setTop(894);
+    obj.button31:setWidth(14);
+    obj.button31:setHeight(14);
+    obj.button31:setText("R");
+    obj.button31:setHint("Desc... ");
+    obj.button31:setName("button31");
 
     obj.image37 = GUI.fromHandle(_obj_newObject("image"));
     obj.image37:setParent(obj.rectangle2);
@@ -2012,15 +2002,15 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.image37:setSRC("images/Dado.jpg");
     obj.image37:setName("image37");
 
-    obj.button33 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button33:setParent(obj.rectangle2);
-    obj.button33:setLeft(553);
-    obj.button33:setTop(926);
-    obj.button33:setWidth(14);
-    obj.button33:setHeight(14);
-    obj.button33:setText("R");
-    obj.button33:setHint("Desc... ");
-    obj.button33:setName("button33");
+    obj.button32 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button32:setParent(obj.rectangle2);
+    obj.button32:setLeft(553);
+    obj.button32:setTop(926);
+    obj.button32:setWidth(14);
+    obj.button32:setHeight(14);
+    obj.button32:setText("R");
+    obj.button32:setHint("Desc... ");
+    obj.button32:setName("button32");
 
     obj.image38 = GUI.fromHandle(_obj_newObject("image"));
     obj.image38:setParent(obj.rectangle2);
@@ -2033,15 +2023,15 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.image38:setSRC("images/Dado.jpg");
     obj.image38:setName("image38");
 
-    obj.button34 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button34:setParent(obj.rectangle2);
-    obj.button34:setLeft(553);
-    obj.button34:setTop(956);
-    obj.button34:setWidth(14);
-    obj.button34:setHeight(14);
-    obj.button34:setText("R");
-    obj.button34:setHint("Desc... ");
-    obj.button34:setName("button34");
+    obj.button33 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button33:setParent(obj.rectangle2);
+    obj.button33:setLeft(553);
+    obj.button33:setTop(956);
+    obj.button33:setWidth(14);
+    obj.button33:setHeight(14);
+    obj.button33:setText("R");
+    obj.button33:setHint("Desc... ");
+    obj.button33:setName("button33");
 
     obj.image39 = GUI.fromHandle(_obj_newObject("image"));
     obj.image39:setParent(obj.rectangle2);
@@ -2054,15 +2044,15 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.image39:setSRC("images/Dado.jpg");
     obj.image39:setName("image39");
 
-    obj.button35 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button35:setParent(obj.rectangle2);
-    obj.button35:setLeft(553);
-    obj.button35:setTop(989);
-    obj.button35:setWidth(14);
-    obj.button35:setHeight(14);
-    obj.button35:setText("R");
-    obj.button35:setHint("Desc... ");
-    obj.button35:setName("button35");
+    obj.button34 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button34:setParent(obj.rectangle2);
+    obj.button34:setLeft(553);
+    obj.button34:setTop(989);
+    obj.button34:setWidth(14);
+    obj.button34:setHeight(14);
+    obj.button34:setText("R");
+    obj.button34:setHint("Desc... ");
+    obj.button34:setName("button34");
 
     obj.image40 = GUI.fromHandle(_obj_newObject("image"));
     obj.image40:setParent(obj.rectangle2);
@@ -2075,15 +2065,15 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.image40:setSRC("images/Dado.jpg");
     obj.image40:setName("image40");
 
-    obj.button36 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button36:setParent(obj.rectangle2);
-    obj.button36:setLeft(555);
-    obj.button36:setTop(1020);
-    obj.button36:setWidth(14);
-    obj.button36:setHeight(14);
-    obj.button36:setText("R");
-    obj.button36:setHint("Desc... ");
-    obj.button36:setName("button36");
+    obj.button35 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button35:setParent(obj.rectangle2);
+    obj.button35:setLeft(555);
+    obj.button35:setTop(1020);
+    obj.button35:setWidth(14);
+    obj.button35:setHeight(14);
+    obj.button35:setText("R");
+    obj.button35:setHint("Desc... ");
+    obj.button35:setName("button35");
 
     obj.image41 = GUI.fromHandle(_obj_newObject("image"));
     obj.image41:setParent(obj.rectangle2);
@@ -2096,15 +2086,15 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.image41:setSRC("images/Dado.jpg");
     obj.image41:setName("image41");
 
-    obj.button37 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button37:setParent(obj.rectangle2);
-    obj.button37:setLeft(555);
-    obj.button37:setTop(1052);
-    obj.button37:setWidth(14);
-    obj.button37:setHeight(14);
-    obj.button37:setText("R");
-    obj.button37:setHint("Desc... ");
-    obj.button37:setName("button37");
+    obj.button36 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button36:setParent(obj.rectangle2);
+    obj.button36:setLeft(555);
+    obj.button36:setTop(1052);
+    obj.button36:setWidth(14);
+    obj.button36:setHeight(14);
+    obj.button36:setText("R");
+    obj.button36:setHint("Desc... ");
+    obj.button36:setName("button36");
 
     obj.image42 = GUI.fromHandle(_obj_newObject("image"));
     obj.image42:setParent(obj.rectangle2);
@@ -2117,15 +2107,15 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.image42:setSRC("images/Dado.jpg");
     obj.image42:setName("image42");
 
-    obj.button38 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button38:setParent(obj.rectangle2);
-    obj.button38:setLeft(556);
-    obj.button38:setTop(1084);
-    obj.button38:setWidth(14);
-    obj.button38:setHeight(14);
-    obj.button38:setText("R");
-    obj.button38:setHint("Desc... ");
-    obj.button38:setName("button38");
+    obj.button37 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button37:setParent(obj.rectangle2);
+    obj.button37:setLeft(556);
+    obj.button37:setTop(1084);
+    obj.button37:setWidth(14);
+    obj.button37:setHeight(14);
+    obj.button37:setText("R");
+    obj.button37:setHint("Desc... ");
+    obj.button37:setName("button37");
 
     obj.image43 = GUI.fromHandle(_obj_newObject("image"));
     obj.image43:setParent(obj.rectangle2);
@@ -2138,15 +2128,15 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.image43:setSRC("images/Dado.jpg");
     obj.image43:setName("image43");
 
-    obj.button39 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button39:setParent(obj.rectangle2);
-    obj.button39:setLeft(556);
-    obj.button39:setTop(1114);
-    obj.button39:setWidth(14);
-    obj.button39:setHeight(14);
-    obj.button39:setText("R");
-    obj.button39:setHint("Desc... ");
-    obj.button39:setName("button39");
+    obj.button38 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button38:setParent(obj.rectangle2);
+    obj.button38:setLeft(556);
+    obj.button38:setTop(1114);
+    obj.button38:setWidth(14);
+    obj.button38:setHeight(14);
+    obj.button38:setText("R");
+    obj.button38:setHint("Desc... ");
+    obj.button38:setName("button38");
 
     obj.image44 = GUI.fromHandle(_obj_newObject("image"));
     obj.image44:setParent(obj.rectangle2);
@@ -2159,15 +2149,15 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.image44:setSRC("images/Dado.jpg");
     obj.image44:setName("image44");
 
-    obj.button40 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button40:setParent(obj.rectangle2);
-    obj.button40:setLeft(557);
-    obj.button40:setTop(1148);
-    obj.button40:setWidth(14);
-    obj.button40:setHeight(14);
-    obj.button40:setText("R");
-    obj.button40:setHint("Desc... ");
-    obj.button40:setName("button40");
+    obj.button39 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button39:setParent(obj.rectangle2);
+    obj.button39:setLeft(557);
+    obj.button39:setTop(1148);
+    obj.button39:setWidth(14);
+    obj.button39:setHeight(14);
+    obj.button39:setText("R");
+    obj.button39:setHint("Desc... ");
+    obj.button39:setName("button39");
 
     obj.image45 = GUI.fromHandle(_obj_newObject("image"));
     obj.image45:setParent(obj.rectangle2);
@@ -2343,15 +2333,35 @@ local function constructNew_frmDZ_Ficha1_svg()
 
     obj.layout55 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout55:setParent(obj.rectangle2);
-    obj.layout55:setLeft(474);
-    obj.layout55:setTop(480);
+    obj.layout55:setLeft(469);
+    obj.layout55:setTop(483);
     obj.layout55:setWidth(74);
     obj.layout55:setHeight(26);
     obj.layout55:setName("layout55");
 
+    obj.descontinuado = GUI.fromHandle(_obj_newObject("label"));
+    obj.descontinuado:setParent(obj.layout55);
+    obj.descontinuado:setName("descontinuado");
+    obj.descontinuado:setWidth(74);
+    obj.descontinuado:setHeight(27);
+    obj.descontinuado:setText("Descontinuado");
+    obj.descontinuado:setFontColor("black");
+    obj.descontinuado:setTextTrimming("none");
+    obj.descontinuado:setWordWrap(false);
+    obj.descontinuado:setAutoSize(true);
+    obj.descontinuado:setFontFamily("kalam");
+
+    obj.layout56 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout56:setParent(obj.rectangle2);
+    obj.layout56:setLeft(472);
+    obj.layout56:setTop(511);
+    obj.layout56:setWidth(74);
+    obj.layout56:setHeight(26);
+    obj.layout56:setName("layout56");
+
     obj.edit43 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit43:setParent(obj.layout55);
-    obj.edit43:setField("Peri08");
+    obj.edit43:setParent(obj.layout56);
+    obj.edit43:setField("Peri09");
     obj.edit43:setWidth(74);
     obj.edit43:setHeight(27);
     obj.edit43:setName("edit43");
@@ -2364,18 +2374,18 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.edit43:setType("number");
     obj.edit43:setTransparent(true);
 
-    obj.layout56 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout56:setParent(obj.rectangle2);
-    obj.layout56:setLeft(472);
-    obj.layout56:setTop(511);
-    obj.layout56:setWidth(74);
-    obj.layout56:setHeight(26);
-    obj.layout56:setName("layout56");
+    obj.layout57 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout57:setParent(obj.rectangle2);
+    obj.layout57:setLeft(471);
+    obj.layout57:setTop(543);
+    obj.layout57:setWidth(77);
+    obj.layout57:setHeight(26);
+    obj.layout57:setName("layout57");
 
     obj.edit44 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit44:setParent(obj.layout56);
-    obj.edit44:setField("Peri09");
-    obj.edit44:setWidth(74);
+    obj.edit44:setParent(obj.layout57);
+    obj.edit44:setField("Peri10");
+    obj.edit44:setWidth(77);
     obj.edit44:setHeight(27);
     obj.edit44:setName("edit44");
     obj.edit44:setFontColor("#C0504D");
@@ -2387,18 +2397,18 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.edit44:setType("number");
     obj.edit44:setTransparent(true);
 
-    obj.layout57 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout57:setParent(obj.rectangle2);
-    obj.layout57:setLeft(471);
-    obj.layout57:setTop(543);
-    obj.layout57:setWidth(77);
-    obj.layout57:setHeight(26);
-    obj.layout57:setName("layout57");
+    obj.layout58 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout58:setParent(obj.rectangle2);
+    obj.layout58:setLeft(471);
+    obj.layout58:setTop(574);
+    obj.layout58:setWidth(76);
+    obj.layout58:setHeight(26);
+    obj.layout58:setName("layout58");
 
     obj.edit45 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit45:setParent(obj.layout57);
-    obj.edit45:setField("Peri10");
-    obj.edit45:setWidth(77);
+    obj.edit45:setParent(obj.layout58);
+    obj.edit45:setField("Peri11");
+    obj.edit45:setWidth(76);
     obj.edit45:setHeight(27);
     obj.edit45:setName("edit45");
     obj.edit45:setFontColor("#C0504D");
@@ -2410,17 +2420,17 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.edit45:setType("number");
     obj.edit45:setTransparent(true);
 
-    obj.layout58 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout58:setParent(obj.rectangle2);
-    obj.layout58:setLeft(471);
-    obj.layout58:setTop(574);
-    obj.layout58:setWidth(76);
-    obj.layout58:setHeight(26);
-    obj.layout58:setName("layout58");
+    obj.layout59 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout59:setParent(obj.rectangle2);
+    obj.layout59:setLeft(472);
+    obj.layout59:setTop(604);
+    obj.layout59:setWidth(76);
+    obj.layout59:setHeight(26);
+    obj.layout59:setName("layout59");
 
     obj.edit46 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit46:setParent(obj.layout58);
-    obj.edit46:setField("Peri11");
+    obj.edit46:setParent(obj.layout59);
+    obj.edit46:setField("Peri12");
     obj.edit46:setWidth(76);
     obj.edit46:setHeight(27);
     obj.edit46:setName("edit46");
@@ -2433,18 +2443,18 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.edit46:setType("number");
     obj.edit46:setTransparent(true);
 
-    obj.layout59 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout59:setParent(obj.rectangle2);
-    obj.layout59:setLeft(472);
-    obj.layout59:setTop(604);
-    obj.layout59:setWidth(76);
-    obj.layout59:setHeight(26);
-    obj.layout59:setName("layout59");
+    obj.layout60 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout60:setParent(obj.rectangle2);
+    obj.layout60:setLeft(471);
+    obj.layout60:setTop(637);
+    obj.layout60:setWidth(75);
+    obj.layout60:setHeight(26);
+    obj.layout60:setName("layout60");
 
     obj.edit47 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit47:setParent(obj.layout59);
-    obj.edit47:setField("Peri12");
-    obj.edit47:setWidth(76);
+    obj.edit47:setParent(obj.layout60);
+    obj.edit47:setField("Peri13");
+    obj.edit47:setWidth(75);
     obj.edit47:setHeight(27);
     obj.edit47:setName("edit47");
     obj.edit47:setFontColor("#C0504D");
@@ -2456,18 +2466,18 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.edit47:setType("number");
     obj.edit47:setTransparent(true);
 
-    obj.layout60 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout60:setParent(obj.rectangle2);
-    obj.layout60:setLeft(471);
-    obj.layout60:setTop(637);
-    obj.layout60:setWidth(75);
-    obj.layout60:setHeight(26);
-    obj.layout60:setName("layout60");
+    obj.layout61 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout61:setParent(obj.rectangle2);
+    obj.layout61:setLeft(469);
+    obj.layout61:setTop(668);
+    obj.layout61:setWidth(76);
+    obj.layout61:setHeight(26);
+    obj.layout61:setName("layout61");
 
     obj.edit48 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit48:setParent(obj.layout60);
-    obj.edit48:setField("Peri13");
-    obj.edit48:setWidth(75);
+    obj.edit48:setParent(obj.layout61);
+    obj.edit48:setField("Peri14");
+    obj.edit48:setWidth(76);
     obj.edit48:setHeight(27);
     obj.edit48:setName("edit48");
     obj.edit48:setFontColor("#C0504D");
@@ -2479,18 +2489,18 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.edit48:setType("number");
     obj.edit48:setTransparent(true);
 
-    obj.layout61 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout61:setParent(obj.rectangle2);
-    obj.layout61:setLeft(469);
-    obj.layout61:setTop(668);
-    obj.layout61:setWidth(76);
-    obj.layout61:setHeight(26);
-    obj.layout61:setName("layout61");
+    obj.layout62 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout62:setParent(obj.rectangle2);
+    obj.layout62:setLeft(470);
+    obj.layout62:setTop(699);
+    obj.layout62:setWidth(74);
+    obj.layout62:setHeight(26);
+    obj.layout62:setName("layout62");
 
     obj.edit49 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit49:setParent(obj.layout61);
-    obj.edit49:setField("Peri14");
-    obj.edit49:setWidth(76);
+    obj.edit49:setParent(obj.layout62);
+    obj.edit49:setField("Peri15");
+    obj.edit49:setWidth(74);
     obj.edit49:setHeight(27);
     obj.edit49:setName("edit49");
     obj.edit49:setFontColor("#C0504D");
@@ -2502,19 +2512,19 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.edit49:setType("number");
     obj.edit49:setTransparent(true);
 
-    obj.layout62 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout62:setParent(obj.rectangle2);
-    obj.layout62:setLeft(470);
-    obj.layout62:setTop(699);
-    obj.layout62:setWidth(74);
-    obj.layout62:setHeight(26);
-    obj.layout62:setName("layout62");
+    obj.layout63 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout63:setParent(obj.rectangle2);
+    obj.layout63:setLeft(471);
+    obj.layout63:setTop(730);
+    obj.layout63:setWidth(74);
+    obj.layout63:setHeight(27);
+    obj.layout63:setName("layout63");
 
     obj.edit50 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit50:setParent(obj.layout62);
-    obj.edit50:setField("Peri15");
+    obj.edit50:setParent(obj.layout63);
+    obj.edit50:setField("Peri16");
     obj.edit50:setWidth(74);
-    obj.edit50:setHeight(27);
+    obj.edit50:setHeight(28);
     obj.edit50:setName("edit50");
     obj.edit50:setFontColor("#C0504D");
     obj.edit50:setFontSize(18);
@@ -2525,19 +2535,19 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.edit50:setType("number");
     obj.edit50:setTransparent(true);
 
-    obj.layout63 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout63:setParent(obj.rectangle2);
-    obj.layout63:setLeft(471);
-    obj.layout63:setTop(730);
-    obj.layout63:setWidth(74);
-    obj.layout63:setHeight(27);
-    obj.layout63:setName("layout63");
+    obj.layout64 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout64:setParent(obj.rectangle2);
+    obj.layout64:setLeft(473);
+    obj.layout64:setTop(762);
+    obj.layout64:setWidth(73);
+    obj.layout64:setHeight(26);
+    obj.layout64:setName("layout64");
 
     obj.edit51 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit51:setParent(obj.layout63);
-    obj.edit51:setField("Peri16");
-    obj.edit51:setWidth(74);
-    obj.edit51:setHeight(28);
+    obj.edit51:setParent(obj.layout64);
+    obj.edit51:setField("Peri17");
+    obj.edit51:setWidth(73);
+    obj.edit51:setHeight(27);
     obj.edit51:setName("edit51");
     obj.edit51:setFontColor("#C0504D");
     obj.edit51:setFontSize(18);
@@ -2548,18 +2558,18 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.edit51:setType("number");
     obj.edit51:setTransparent(true);
 
-    obj.layout64 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout64:setParent(obj.rectangle2);
-    obj.layout64:setLeft(473);
-    obj.layout64:setTop(762);
-    obj.layout64:setWidth(73);
-    obj.layout64:setHeight(26);
-    obj.layout64:setName("layout64");
+    obj.layout65 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout65:setParent(obj.rectangle2);
+    obj.layout65:setLeft(472);
+    obj.layout65:setTop(794);
+    obj.layout65:setWidth(74);
+    obj.layout65:setHeight(26);
+    obj.layout65:setName("layout65");
 
     obj.edit52 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit52:setParent(obj.layout64);
-    obj.edit52:setField("Peri17");
-    obj.edit52:setWidth(73);
+    obj.edit52:setParent(obj.layout65);
+    obj.edit52:setField("Peri18");
+    obj.edit52:setWidth(74);
     obj.edit52:setHeight(27);
     obj.edit52:setName("edit52");
     obj.edit52:setFontColor("#C0504D");
@@ -2571,17 +2581,17 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.edit52:setType("number");
     obj.edit52:setTransparent(true);
 
-    obj.layout65 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout65:setParent(obj.rectangle2);
-    obj.layout65:setLeft(472);
-    obj.layout65:setTop(794);
-    obj.layout65:setWidth(74);
-    obj.layout65:setHeight(26);
-    obj.layout65:setName("layout65");
+    obj.layout66 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout66:setParent(obj.rectangle2);
+    obj.layout66:setLeft(472);
+    obj.layout66:setTop(825);
+    obj.layout66:setWidth(74);
+    obj.layout66:setHeight(26);
+    obj.layout66:setName("layout66");
 
     obj.edit53 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit53:setParent(obj.layout65);
-    obj.edit53:setField("Peri18");
+    obj.edit53:setParent(obj.layout66);
+    obj.edit53:setField("Peri19");
     obj.edit53:setWidth(74);
     obj.edit53:setHeight(27);
     obj.edit53:setName("edit53");
@@ -2594,19 +2604,19 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.edit53:setType("number");
     obj.edit53:setTransparent(true);
 
-    obj.layout66 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout66:setParent(obj.rectangle2);
-    obj.layout66:setLeft(472);
-    obj.layout66:setTop(825);
-    obj.layout66:setWidth(74);
-    obj.layout66:setHeight(26);
-    obj.layout66:setName("layout66");
+    obj.layout67 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout67:setParent(obj.rectangle2);
+    obj.layout67:setLeft(474);
+    obj.layout67:setTop(856);
+    obj.layout67:setWidth(70);
+    obj.layout67:setHeight(25);
+    obj.layout67:setName("layout67");
 
     obj.edit54 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit54:setParent(obj.layout66);
-    obj.edit54:setField("Peri19");
-    obj.edit54:setWidth(74);
-    obj.edit54:setHeight(27);
+    obj.edit54:setParent(obj.layout67);
+    obj.edit54:setField("Peri20");
+    obj.edit54:setWidth(70);
+    obj.edit54:setHeight(26);
     obj.edit54:setName("edit54");
     obj.edit54:setFontColor("#C0504D");
     obj.edit54:setFontSize(18);
@@ -2617,19 +2627,19 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.edit54:setType("number");
     obj.edit54:setTransparent(true);
 
-    obj.layout67 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout67:setParent(obj.rectangle2);
-    obj.layout67:setLeft(474);
-    obj.layout67:setTop(856);
-    obj.layout67:setWidth(70);
-    obj.layout67:setHeight(25);
-    obj.layout67:setName("layout67");
+    obj.layout68 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout68:setParent(obj.rectangle2);
+    obj.layout68:setLeft(471);
+    obj.layout68:setTop(887);
+    obj.layout68:setWidth(75);
+    obj.layout68:setHeight(26);
+    obj.layout68:setName("layout68");
 
     obj.edit55 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit55:setParent(obj.layout67);
-    obj.edit55:setField("Peri20");
-    obj.edit55:setWidth(70);
-    obj.edit55:setHeight(26);
+    obj.edit55:setParent(obj.layout68);
+    obj.edit55:setField("Peri21");
+    obj.edit55:setWidth(75);
+    obj.edit55:setHeight(27);
     obj.edit55:setName("edit55");
     obj.edit55:setFontColor("#C0504D");
     obj.edit55:setFontSize(18);
@@ -2640,18 +2650,18 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.edit55:setType("number");
     obj.edit55:setTransparent(true);
 
-    obj.layout68 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout68:setParent(obj.rectangle2);
-    obj.layout68:setLeft(471);
-    obj.layout68:setTop(887);
-    obj.layout68:setWidth(75);
-    obj.layout68:setHeight(26);
-    obj.layout68:setName("layout68");
+    obj.layout69 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout69:setParent(obj.rectangle2);
+    obj.layout69:setLeft(472);
+    obj.layout69:setTop(919);
+    obj.layout69:setWidth(74);
+    obj.layout69:setHeight(26);
+    obj.layout69:setName("layout69");
 
     obj.edit56 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit56:setParent(obj.layout68);
-    obj.edit56:setField("Peri21");
-    obj.edit56:setWidth(75);
+    obj.edit56:setParent(obj.layout69);
+    obj.edit56:setField("Peri22");
+    obj.edit56:setWidth(74);
     obj.edit56:setHeight(27);
     obj.edit56:setName("edit56");
     obj.edit56:setFontColor("#C0504D");
@@ -2663,18 +2673,18 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.edit56:setType("number");
     obj.edit56:setTransparent(true);
 
-    obj.layout69 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout69:setParent(obj.rectangle2);
-    obj.layout69:setLeft(472);
-    obj.layout69:setTop(919);
-    obj.layout69:setWidth(74);
-    obj.layout69:setHeight(26);
-    obj.layout69:setName("layout69");
+    obj.layout70 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout70:setParent(obj.rectangle2);
+    obj.layout70:setLeft(471);
+    obj.layout70:setTop(949);
+    obj.layout70:setWidth(73);
+    obj.layout70:setHeight(26);
+    obj.layout70:setName("layout70");
 
     obj.edit57 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit57:setParent(obj.layout69);
-    obj.edit57:setField("Peri22");
-    obj.edit57:setWidth(74);
+    obj.edit57:setParent(obj.layout70);
+    obj.edit57:setField("Peri23");
+    obj.edit57:setWidth(73);
     obj.edit57:setHeight(27);
     obj.edit57:setName("edit57");
     obj.edit57:setFontColor("#C0504D");
@@ -2686,19 +2696,19 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.edit57:setType("number");
     obj.edit57:setTransparent(true);
 
-    obj.layout70 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout70:setParent(obj.rectangle2);
-    obj.layout70:setLeft(471);
-    obj.layout70:setTop(949);
-    obj.layout70:setWidth(73);
-    obj.layout70:setHeight(26);
-    obj.layout70:setName("layout70");
+    obj.layout71 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout71:setParent(obj.rectangle2);
+    obj.layout71:setLeft(472);
+    obj.layout71:setTop(982);
+    obj.layout71:setWidth(74);
+    obj.layout71:setHeight(27);
+    obj.layout71:setName("layout71");
 
     obj.edit58 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit58:setParent(obj.layout70);
-    obj.edit58:setField("Peri23");
-    obj.edit58:setWidth(73);
-    obj.edit58:setHeight(27);
+    obj.edit58:setParent(obj.layout71);
+    obj.edit58:setField("Peri24");
+    obj.edit58:setWidth(74);
+    obj.edit58:setHeight(28);
     obj.edit58:setName("edit58");
     obj.edit58:setFontColor("#C0504D");
     obj.edit58:setFontSize(18);
@@ -2709,19 +2719,19 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.edit58:setType("number");
     obj.edit58:setTransparent(true);
 
-    obj.layout71 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout71:setParent(obj.rectangle2);
-    obj.layout71:setLeft(472);
-    obj.layout71:setTop(982);
-    obj.layout71:setWidth(74);
-    obj.layout71:setHeight(27);
-    obj.layout71:setName("layout71");
+    obj.layout72 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout72:setParent(obj.rectangle2);
+    obj.layout72:setLeft(473);
+    obj.layout72:setTop(1013);
+    obj.layout72:setWidth(73);
+    obj.layout72:setHeight(25);
+    obj.layout72:setName("layout72");
 
     obj.edit59 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit59:setParent(obj.layout71);
-    obj.edit59:setField("Peri24");
-    obj.edit59:setWidth(74);
-    obj.edit59:setHeight(28);
+    obj.edit59:setParent(obj.layout72);
+    obj.edit59:setField("Peri25");
+    obj.edit59:setWidth(73);
+    obj.edit59:setHeight(26);
     obj.edit59:setName("edit59");
     obj.edit59:setFontColor("#C0504D");
     obj.edit59:setFontSize(18);
@@ -2732,17 +2742,17 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.edit59:setType("number");
     obj.edit59:setTransparent(true);
 
-    obj.layout72 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout72:setParent(obj.rectangle2);
-    obj.layout72:setLeft(473);
-    obj.layout72:setTop(1013);
-    obj.layout72:setWidth(73);
-    obj.layout72:setHeight(25);
-    obj.layout72:setName("layout72");
+    obj.layout73 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout73:setParent(obj.rectangle2);
+    obj.layout73:setLeft(473);
+    obj.layout73:setTop(1045);
+    obj.layout73:setWidth(73);
+    obj.layout73:setHeight(25);
+    obj.layout73:setName("layout73");
 
     obj.edit60 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit60:setParent(obj.layout72);
-    obj.edit60:setField("Peri25");
+    obj.edit60:setParent(obj.layout73);
+    obj.edit60:setField("Peri26");
     obj.edit60:setWidth(73);
     obj.edit60:setHeight(26);
     obj.edit60:setName("edit60");
@@ -2755,17 +2765,17 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.edit60:setType("number");
     obj.edit60:setTransparent(true);
 
-    obj.layout73 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout73:setParent(obj.rectangle2);
-    obj.layout73:setLeft(473);
-    obj.layout73:setTop(1045);
-    obj.layout73:setWidth(73);
-    obj.layout73:setHeight(25);
-    obj.layout73:setName("layout73");
+    obj.layout74 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout74:setParent(obj.rectangle2);
+    obj.layout74:setLeft(473);
+    obj.layout74:setTop(1077);
+    obj.layout74:setWidth(73);
+    obj.layout74:setHeight(25);
+    obj.layout74:setName("layout74");
 
     obj.edit61 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit61:setParent(obj.layout73);
-    obj.edit61:setField("Peri26");
+    obj.edit61:setParent(obj.layout74);
+    obj.edit61:setField("Peri27");
     obj.edit61:setWidth(73);
     obj.edit61:setHeight(26);
     obj.edit61:setName("edit61");
@@ -2778,17 +2788,17 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.edit61:setType("number");
     obj.edit61:setTransparent(true);
 
-    obj.layout74 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout74:setParent(obj.rectangle2);
-    obj.layout74:setLeft(473);
-    obj.layout74:setTop(1077);
-    obj.layout74:setWidth(73);
-    obj.layout74:setHeight(25);
-    obj.layout74:setName("layout74");
+    obj.layout75 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout75:setParent(obj.rectangle2);
+    obj.layout75:setLeft(474);
+    obj.layout75:setTop(1107);
+    obj.layout75:setWidth(73);
+    obj.layout75:setHeight(25);
+    obj.layout75:setName("layout75");
 
     obj.edit62 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit62:setParent(obj.layout74);
-    obj.edit62:setField("Peri27");
+    obj.edit62:setParent(obj.layout75);
+    obj.edit62:setField("Peri28");
     obj.edit62:setWidth(73);
     obj.edit62:setHeight(26);
     obj.edit62:setName("edit62");
@@ -2801,17 +2811,17 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.edit62:setType("number");
     obj.edit62:setTransparent(true);
 
-    obj.layout75 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout75:setParent(obj.rectangle2);
-    obj.layout75:setLeft(474);
-    obj.layout75:setTop(1107);
-    obj.layout75:setWidth(73);
-    obj.layout75:setHeight(25);
-    obj.layout75:setName("layout75");
+    obj.layout76 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout76:setParent(obj.rectangle2);
+    obj.layout76:setLeft(474);
+    obj.layout76:setTop(1141);
+    obj.layout76:setWidth(73);
+    obj.layout76:setHeight(25);
+    obj.layout76:setName("layout76");
 
     obj.edit63 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit63:setParent(obj.layout75);
-    obj.edit63:setField("Peri28");
+    obj.edit63:setParent(obj.layout76);
+    obj.edit63:setField("Peri29");
     obj.edit63:setWidth(73);
     obj.edit63:setHeight(26);
     obj.edit63:setName("edit63");
@@ -2823,29 +2833,6 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.edit63:setFontFamily("kalam");
     obj.edit63:setType("number");
     obj.edit63:setTransparent(true);
-
-    obj.layout76 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout76:setParent(obj.rectangle2);
-    obj.layout76:setLeft(474);
-    obj.layout76:setTop(1141);
-    obj.layout76:setWidth(73);
-    obj.layout76:setHeight(25);
-    obj.layout76:setName("layout76");
-
-    obj.edit64 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit64:setParent(obj.layout76);
-    obj.edit64:setField("Peri29");
-    obj.edit64:setWidth(73);
-    obj.edit64:setHeight(26);
-    obj.edit64:setName("edit64");
-    obj.edit64:setFontColor("#C0504D");
-    obj.edit64:setFontSize(18);
-    obj.edit64:setHorzTextAlign("center");
-    obj.edit64:setVertTextAlign("center");
-    lfm_setPropAsString(obj.edit64, "fontStyle",  "bold");
-    obj.edit64:setFontFamily("kalam");
-    obj.edit64:setType("number");
-    obj.edit64:setTransparent(true);
 
     obj.DescCircunstancia1 = GUI.fromHandle(_obj_newObject("popup"));
     obj.DescCircunstancia1:setParent(obj.rectangle2);
@@ -3035,18 +3022,18 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.layout77:setHeight(35);
     obj.layout77:setName("layout77");
 
-    obj.edit65 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit65:setParent(obj.layout77);
-    obj.edit65:setWidth(191);
-    obj.edit65:setHeight(30);
-    obj.edit65:setField("CircField_1");
-    obj.edit65:setName("edit65");
-    obj.edit65:setFontColor("#C0504D");
-    obj.edit65:setFontSize(15);
-    obj.edit65:setHorzTextAlign("leading");
-    obj.edit65:setVertTextAlign("center");
-    obj.edit65:setFontFamily("kalam");
-    obj.edit65:setTransparent(true);
+    obj.edit64 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit64:setParent(obj.layout77);
+    obj.edit64:setWidth(191);
+    obj.edit64:setHeight(30);
+    obj.edit64:setField("CircField_1");
+    obj.edit64:setName("edit64");
+    obj.edit64:setFontColor("#C0504D");
+    obj.edit64:setFontSize(15);
+    obj.edit64:setHorzTextAlign("leading");
+    obj.edit64:setVertTextAlign("center");
+    obj.edit64:setFontFamily("kalam");
+    obj.edit64:setTransparent(true);
 
     obj.layout78 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout78:setParent(obj.rectangle2);
@@ -3056,41 +3043,41 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.layout78:setHeight(29);
     obj.layout78:setName("layout78");
 
-    obj.edit66 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit66:setParent(obj.layout78);
-    obj.edit66:setTransparent(true);
-    obj.edit66:setLeft(0);
-    obj.edit66:setTop(0);
-    obj.edit66:setWidth(67);
-    obj.edit66:setHeight(30);
-    obj.edit66:setField("CircXP_1");
-    obj.edit66:setName("edit66");
-    obj.edit66:setFontColor("#C0504D");
-    obj.edit66:setFontSize(18);
-    obj.edit66:setHorzTextAlign("center");
-    obj.edit66:setVertTextAlign("center");
-    lfm_setPropAsString(obj.edit66, "fontStyle",  "bold");
-    obj.edit66:setFontFamily("kalam");
-    obj.edit66:setType("number");
+    obj.edit65 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit65:setParent(obj.layout78);
+    obj.edit65:setTransparent(true);
+    obj.edit65:setLeft(0);
+    obj.edit65:setTop(0);
+    obj.edit65:setWidth(67);
+    obj.edit65:setHeight(30);
+    obj.edit65:setField("CircXP_1");
+    obj.edit65:setName("edit65");
+    obj.edit65:setFontColor("#C0504D");
+    obj.edit65:setFontSize(18);
+    obj.edit65:setHorzTextAlign("center");
+    obj.edit65:setVertTextAlign("center");
+    lfm_setPropAsString(obj.edit65, "fontStyle",  "bold");
+    obj.edit65:setFontFamily("kalam");
+    obj.edit65:setType("number");
+
+    obj.button40 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button40:setParent(obj.rectangle2);
+    obj.button40:setText("i");
+    obj.button40:setWidth(20);
+    obj.button40:setLeft(867);
+    obj.button40:setTop(273);
+    obj.button40:setHeight(20);
+    obj.button40:setName("button40");
 
     obj.button41 = GUI.fromHandle(_obj_newObject("button"));
     obj.button41:setParent(obj.rectangle2);
-    obj.button41:setText("i");
-    obj.button41:setWidth(20);
-    obj.button41:setLeft(867);
+    obj.button41:setLeft(887);
     obj.button41:setTop(273);
-    obj.button41:setHeight(20);
+    obj.button41:setWidth(14);
+    obj.button41:setHeight(14);
+    obj.button41:setText("R");
+    obj.button41:setHint("Desc... ");
     obj.button41:setName("button41");
-
-    obj.button42 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button42:setParent(obj.rectangle2);
-    obj.button42:setLeft(887);
-    obj.button42:setTop(273);
-    obj.button42:setWidth(14);
-    obj.button42:setHeight(14);
-    obj.button42:setText("R");
-    obj.button42:setHint("Desc... ");
-    obj.button42:setName("button42");
 
     obj.image46 = GUI.fromHandle(_obj_newObject("image"));
     obj.image46:setParent(obj.rectangle2);
@@ -3111,18 +3098,18 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.layout79:setHeight(30);
     obj.layout79:setName("layout79");
 
-    obj.edit67 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit67:setParent(obj.layout79);
-    obj.edit67:setWidth(191);
-    obj.edit67:setHeight(30);
-    obj.edit67:setField("CircField_2");
-    obj.edit67:setName("edit67");
-    obj.edit67:setFontColor("#C0504D");
-    obj.edit67:setFontSize(15);
-    obj.edit67:setHorzTextAlign("leading");
-    obj.edit67:setVertTextAlign("center");
-    obj.edit67:setFontFamily("kalam");
-    obj.edit67:setTransparent(true);
+    obj.edit66 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit66:setParent(obj.layout79);
+    obj.edit66:setWidth(191);
+    obj.edit66:setHeight(30);
+    obj.edit66:setField("CircField_2");
+    obj.edit66:setName("edit66");
+    obj.edit66:setFontColor("#C0504D");
+    obj.edit66:setFontSize(15);
+    obj.edit66:setHorzTextAlign("leading");
+    obj.edit66:setVertTextAlign("center");
+    obj.edit66:setFontFamily("kalam");
+    obj.edit66:setTransparent(true);
 
     obj.layout80 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout80:setParent(obj.rectangle2);
@@ -3132,41 +3119,41 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.layout80:setHeight(30);
     obj.layout80:setName("layout80");
 
-    obj.edit68 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit68:setParent(obj.layout80);
-    obj.edit68:setTransparent(true);
-    obj.edit68:setLeft(0);
-    obj.edit68:setTop(0);
-    obj.edit68:setWidth(67);
-    obj.edit68:setHeight(31);
-    obj.edit68:setField("CircXP_2");
-    obj.edit68:setName("edit68");
-    obj.edit68:setFontColor("#C0504D");
-    obj.edit68:setFontSize(18);
-    obj.edit68:setHorzTextAlign("center");
-    obj.edit68:setVertTextAlign("center");
-    lfm_setPropAsString(obj.edit68, "fontStyle",  "bold");
-    obj.edit68:setFontFamily("kalam");
-    obj.edit68:setType("number");
+    obj.edit67 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit67:setParent(obj.layout80);
+    obj.edit67:setTransparent(true);
+    obj.edit67:setLeft(0);
+    obj.edit67:setTop(0);
+    obj.edit67:setWidth(67);
+    obj.edit67:setHeight(31);
+    obj.edit67:setField("CircXP_2");
+    obj.edit67:setName("edit67");
+    obj.edit67:setFontColor("#C0504D");
+    obj.edit67:setFontSize(18);
+    obj.edit67:setHorzTextAlign("center");
+    obj.edit67:setVertTextAlign("center");
+    lfm_setPropAsString(obj.edit67, "fontStyle",  "bold");
+    obj.edit67:setFontFamily("kalam");
+    obj.edit67:setType("number");
+
+    obj.button42 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button42:setParent(obj.rectangle2);
+    obj.button42:setText("i");
+    obj.button42:setWidth(20);
+    obj.button42:setLeft(867);
+    obj.button42:setTop(306);
+    obj.button42:setHeight(20);
+    obj.button42:setName("button42");
 
     obj.button43 = GUI.fromHandle(_obj_newObject("button"));
     obj.button43:setParent(obj.rectangle2);
-    obj.button43:setText("i");
-    obj.button43:setWidth(20);
-    obj.button43:setLeft(867);
+    obj.button43:setLeft(887);
     obj.button43:setTop(306);
-    obj.button43:setHeight(20);
+    obj.button43:setWidth(14);
+    obj.button43:setHeight(14);
+    obj.button43:setText("R");
+    obj.button43:setHint("Desc... ");
     obj.button43:setName("button43");
-
-    obj.button44 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button44:setParent(obj.rectangle2);
-    obj.button44:setLeft(887);
-    obj.button44:setTop(306);
-    obj.button44:setWidth(14);
-    obj.button44:setHeight(14);
-    obj.button44:setText("R");
-    obj.button44:setHint("Desc... ");
-    obj.button44:setName("button44");
 
     obj.image47 = GUI.fromHandle(_obj_newObject("image"));
     obj.image47:setParent(obj.rectangle2);
@@ -3187,18 +3174,18 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.layout81:setHeight(30);
     obj.layout81:setName("layout81");
 
-    obj.edit69 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit69:setParent(obj.layout81);
-    obj.edit69:setWidth(191);
-    obj.edit69:setHeight(30);
-    obj.edit69:setField("CircField_3");
-    obj.edit69:setName("edit69");
-    obj.edit69:setFontColor("#C0504D");
-    obj.edit69:setFontSize(15);
-    obj.edit69:setHorzTextAlign("leading");
-    obj.edit69:setVertTextAlign("center");
-    obj.edit69:setFontFamily("kalam");
-    obj.edit69:setTransparent(true);
+    obj.edit68 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit68:setParent(obj.layout81);
+    obj.edit68:setWidth(191);
+    obj.edit68:setHeight(30);
+    obj.edit68:setField("CircField_3");
+    obj.edit68:setName("edit68");
+    obj.edit68:setFontColor("#C0504D");
+    obj.edit68:setFontSize(15);
+    obj.edit68:setHorzTextAlign("leading");
+    obj.edit68:setVertTextAlign("center");
+    obj.edit68:setFontFamily("kalam");
+    obj.edit68:setTransparent(true);
 
     obj.layout82 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout82:setParent(obj.rectangle2);
@@ -3208,41 +3195,41 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.layout82:setHeight(29);
     obj.layout82:setName("layout82");
 
-    obj.edit70 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit70:setParent(obj.layout82);
-    obj.edit70:setTransparent(true);
-    obj.edit70:setLeft(0);
-    obj.edit70:setTop(0);
-    obj.edit70:setWidth(67);
-    obj.edit70:setHeight(30);
-    obj.edit70:setField("CircXP_3");
-    obj.edit70:setName("edit70");
-    obj.edit70:setFontColor("#C0504D");
-    obj.edit70:setFontSize(18);
-    obj.edit70:setHorzTextAlign("center");
-    obj.edit70:setVertTextAlign("center");
-    lfm_setPropAsString(obj.edit70, "fontStyle",  "bold");
-    obj.edit70:setFontFamily("kalam");
-    obj.edit70:setType("number");
+    obj.edit69 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit69:setParent(obj.layout82);
+    obj.edit69:setTransparent(true);
+    obj.edit69:setLeft(0);
+    obj.edit69:setTop(0);
+    obj.edit69:setWidth(67);
+    obj.edit69:setHeight(30);
+    obj.edit69:setField("CircXP_3");
+    obj.edit69:setName("edit69");
+    obj.edit69:setFontColor("#C0504D");
+    obj.edit69:setFontSize(18);
+    obj.edit69:setHorzTextAlign("center");
+    obj.edit69:setVertTextAlign("center");
+    lfm_setPropAsString(obj.edit69, "fontStyle",  "bold");
+    obj.edit69:setFontFamily("kalam");
+    obj.edit69:setType("number");
+
+    obj.button44 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button44:setParent(obj.rectangle2);
+    obj.button44:setText("i");
+    obj.button44:setWidth(20);
+    obj.button44:setLeft(867);
+    obj.button44:setTop(341);
+    obj.button44:setHeight(20);
+    obj.button44:setName("button44");
 
     obj.button45 = GUI.fromHandle(_obj_newObject("button"));
     obj.button45:setParent(obj.rectangle2);
-    obj.button45:setText("i");
-    obj.button45:setWidth(20);
-    obj.button45:setLeft(867);
+    obj.button45:setLeft(887);
     obj.button45:setTop(341);
-    obj.button45:setHeight(20);
+    obj.button45:setWidth(14);
+    obj.button45:setHeight(14);
+    obj.button45:setText("R");
+    obj.button45:setHint("Desc... ");
     obj.button45:setName("button45");
-
-    obj.button46 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button46:setParent(obj.rectangle2);
-    obj.button46:setLeft(887);
-    obj.button46:setTop(341);
-    obj.button46:setWidth(14);
-    obj.button46:setHeight(14);
-    obj.button46:setText("R");
-    obj.button46:setHint("Desc... ");
-    obj.button46:setName("button46");
 
     obj.image48 = GUI.fromHandle(_obj_newObject("image"));
     obj.image48:setParent(obj.rectangle2);
@@ -3263,18 +3250,18 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.layout83:setHeight(30);
     obj.layout83:setName("layout83");
 
-    obj.edit71 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit71:setParent(obj.layout83);
-    obj.edit71:setWidth(191);
-    obj.edit71:setHeight(30);
-    obj.edit71:setField("CircField_4");
-    obj.edit71:setName("edit71");
-    obj.edit71:setFontColor("#C0504D");
-    obj.edit71:setFontSize(15);
-    obj.edit71:setHorzTextAlign("leading");
-    obj.edit71:setVertTextAlign("center");
-    obj.edit71:setFontFamily("kalam");
-    obj.edit71:setTransparent(true);
+    obj.edit70 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit70:setParent(obj.layout83);
+    obj.edit70:setWidth(191);
+    obj.edit70:setHeight(30);
+    obj.edit70:setField("CircField_4");
+    obj.edit70:setName("edit70");
+    obj.edit70:setFontColor("#C0504D");
+    obj.edit70:setFontSize(15);
+    obj.edit70:setHorzTextAlign("leading");
+    obj.edit70:setVertTextAlign("center");
+    obj.edit70:setFontFamily("kalam");
+    obj.edit70:setTransparent(true);
 
     obj.layout84 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout84:setParent(obj.rectangle2);
@@ -3284,41 +3271,41 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.layout84:setHeight(29);
     obj.layout84:setName("layout84");
 
-    obj.edit72 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit72:setParent(obj.layout84);
-    obj.edit72:setTransparent(true);
-    obj.edit72:setLeft(0);
-    obj.edit72:setTop(0);
-    obj.edit72:setWidth(67);
-    obj.edit72:setHeight(30);
-    obj.edit72:setField("CircXP_4");
-    obj.edit72:setName("edit72");
-    obj.edit72:setFontColor("#C0504D");
-    obj.edit72:setFontSize(18);
-    obj.edit72:setHorzTextAlign("center");
-    obj.edit72:setVertTextAlign("center");
-    lfm_setPropAsString(obj.edit72, "fontStyle",  "bold");
-    obj.edit72:setFontFamily("kalam");
-    obj.edit72:setType("number");
+    obj.edit71 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit71:setParent(obj.layout84);
+    obj.edit71:setTransparent(true);
+    obj.edit71:setLeft(0);
+    obj.edit71:setTop(0);
+    obj.edit71:setWidth(67);
+    obj.edit71:setHeight(30);
+    obj.edit71:setField("CircXP_4");
+    obj.edit71:setName("edit71");
+    obj.edit71:setFontColor("#C0504D");
+    obj.edit71:setFontSize(18);
+    obj.edit71:setHorzTextAlign("center");
+    obj.edit71:setVertTextAlign("center");
+    lfm_setPropAsString(obj.edit71, "fontStyle",  "bold");
+    obj.edit71:setFontFamily("kalam");
+    obj.edit71:setType("number");
+
+    obj.button46 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button46:setParent(obj.rectangle2);
+    obj.button46:setText("i");
+    obj.button46:setWidth(20);
+    obj.button46:setLeft(867);
+    obj.button46:setTop(375);
+    obj.button46:setHeight(20);
+    obj.button46:setName("button46");
 
     obj.button47 = GUI.fromHandle(_obj_newObject("button"));
     obj.button47:setParent(obj.rectangle2);
-    obj.button47:setText("i");
-    obj.button47:setWidth(20);
-    obj.button47:setLeft(867);
-    obj.button47:setTop(375);
-    obj.button47:setHeight(20);
+    obj.button47:setLeft(887);
+    obj.button47:setTop(376);
+    obj.button47:setWidth(14);
+    obj.button47:setHeight(14);
+    obj.button47:setText("R");
+    obj.button47:setHint("Desc... ");
     obj.button47:setName("button47");
-
-    obj.button48 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button48:setParent(obj.rectangle2);
-    obj.button48:setLeft(887);
-    obj.button48:setTop(376);
-    obj.button48:setWidth(14);
-    obj.button48:setHeight(14);
-    obj.button48:setText("R");
-    obj.button48:setHint("Desc... ");
-    obj.button48:setName("button48");
 
     obj.image49 = GUI.fromHandle(_obj_newObject("image"));
     obj.image49:setParent(obj.rectangle2);
@@ -3339,18 +3326,18 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.layout85:setHeight(30);
     obj.layout85:setName("layout85");
 
-    obj.edit73 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit73:setParent(obj.layout85);
-    obj.edit73:setWidth(191);
-    obj.edit73:setHeight(30);
-    obj.edit73:setField("CircField_5");
-    obj.edit73:setName("edit73");
-    obj.edit73:setFontColor("#C0504D");
-    obj.edit73:setFontSize(15);
-    obj.edit73:setHorzTextAlign("leading");
-    obj.edit73:setVertTextAlign("center");
-    obj.edit73:setFontFamily("kalam");
-    obj.edit73:setTransparent(true);
+    obj.edit72 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit72:setParent(obj.layout85);
+    obj.edit72:setWidth(191);
+    obj.edit72:setHeight(30);
+    obj.edit72:setField("CircField_5");
+    obj.edit72:setName("edit72");
+    obj.edit72:setFontColor("#C0504D");
+    obj.edit72:setFontSize(15);
+    obj.edit72:setHorzTextAlign("leading");
+    obj.edit72:setVertTextAlign("center");
+    obj.edit72:setFontFamily("kalam");
+    obj.edit72:setTransparent(true);
 
     obj.layout86 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout86:setParent(obj.rectangle2);
@@ -3360,41 +3347,41 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.layout86:setHeight(29);
     obj.layout86:setName("layout86");
 
-    obj.edit74 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit74:setParent(obj.layout86);
-    obj.edit74:setTransparent(true);
-    obj.edit74:setLeft(0);
-    obj.edit74:setTop(0);
-    obj.edit74:setWidth(67);
-    obj.edit74:setHeight(30);
-    obj.edit74:setField("CircXP_5");
-    obj.edit74:setName("edit74");
-    obj.edit74:setFontColor("#C0504D");
-    obj.edit74:setFontSize(18);
-    obj.edit74:setHorzTextAlign("center");
-    obj.edit74:setVertTextAlign("center");
-    lfm_setPropAsString(obj.edit74, "fontStyle",  "bold");
-    obj.edit74:setFontFamily("kalam");
-    obj.edit74:setType("number");
+    obj.edit73 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit73:setParent(obj.layout86);
+    obj.edit73:setTransparent(true);
+    obj.edit73:setLeft(0);
+    obj.edit73:setTop(0);
+    obj.edit73:setWidth(67);
+    obj.edit73:setHeight(30);
+    obj.edit73:setField("CircXP_5");
+    obj.edit73:setName("edit73");
+    obj.edit73:setFontColor("#C0504D");
+    obj.edit73:setFontSize(18);
+    obj.edit73:setHorzTextAlign("center");
+    obj.edit73:setVertTextAlign("center");
+    lfm_setPropAsString(obj.edit73, "fontStyle",  "bold");
+    obj.edit73:setFontFamily("kalam");
+    obj.edit73:setType("number");
+
+    obj.button48 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button48:setParent(obj.rectangle2);
+    obj.button48:setText("i");
+    obj.button48:setWidth(20);
+    obj.button48:setLeft(867);
+    obj.button48:setTop(409);
+    obj.button48:setHeight(20);
+    obj.button48:setName("button48");
 
     obj.button49 = GUI.fromHandle(_obj_newObject("button"));
     obj.button49:setParent(obj.rectangle2);
-    obj.button49:setText("i");
-    obj.button49:setWidth(20);
-    obj.button49:setLeft(867);
+    obj.button49:setLeft(887);
     obj.button49:setTop(409);
-    obj.button49:setHeight(20);
+    obj.button49:setWidth(14);
+    obj.button49:setHeight(14);
+    obj.button49:setText("R");
+    obj.button49:setHint("Desc... ");
     obj.button49:setName("button49");
-
-    obj.button50 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button50:setParent(obj.rectangle2);
-    obj.button50:setLeft(887);
-    obj.button50:setTop(409);
-    obj.button50:setWidth(14);
-    obj.button50:setHeight(14);
-    obj.button50:setText("R");
-    obj.button50:setHint("Desc... ");
-    obj.button50:setName("button50");
 
     obj.image50 = GUI.fromHandle(_obj_newObject("image"));
     obj.image50:setParent(obj.rectangle2);
@@ -3415,18 +3402,18 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.layout87:setHeight(30);
     obj.layout87:setName("layout87");
 
-    obj.edit75 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit75:setParent(obj.layout87);
-    obj.edit75:setWidth(191);
-    obj.edit75:setHeight(30);
-    obj.edit75:setField("CircField_6");
-    obj.edit75:setName("edit75");
-    obj.edit75:setFontColor("#C0504D");
-    obj.edit75:setFontSize(15);
-    obj.edit75:setHorzTextAlign("leading");
-    obj.edit75:setVertTextAlign("center");
-    obj.edit75:setFontFamily("kalam");
-    obj.edit75:setTransparent(true);
+    obj.edit74 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit74:setParent(obj.layout87);
+    obj.edit74:setWidth(191);
+    obj.edit74:setHeight(30);
+    obj.edit74:setField("CircField_6");
+    obj.edit74:setName("edit74");
+    obj.edit74:setFontColor("#C0504D");
+    obj.edit74:setFontSize(15);
+    obj.edit74:setHorzTextAlign("leading");
+    obj.edit74:setVertTextAlign("center");
+    obj.edit74:setFontFamily("kalam");
+    obj.edit74:setTransparent(true);
 
     obj.layout88 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout88:setParent(obj.rectangle2);
@@ -3436,41 +3423,41 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.layout88:setHeight(29);
     obj.layout88:setName("layout88");
 
-    obj.edit76 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit76:setParent(obj.layout88);
-    obj.edit76:setTransparent(true);
-    obj.edit76:setLeft(0);
-    obj.edit76:setTop(0);
-    obj.edit76:setWidth(67);
-    obj.edit76:setHeight(30);
-    obj.edit76:setField("CircXP_6");
-    obj.edit76:setName("edit76");
-    obj.edit76:setFontColor("#C0504D");
-    obj.edit76:setFontSize(18);
-    obj.edit76:setHorzTextAlign("center");
-    obj.edit76:setVertTextAlign("center");
-    lfm_setPropAsString(obj.edit76, "fontStyle",  "bold");
-    obj.edit76:setFontFamily("kalam");
-    obj.edit76:setType("number");
+    obj.edit75 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit75:setParent(obj.layout88);
+    obj.edit75:setTransparent(true);
+    obj.edit75:setLeft(0);
+    obj.edit75:setTop(0);
+    obj.edit75:setWidth(67);
+    obj.edit75:setHeight(30);
+    obj.edit75:setField("CircXP_6");
+    obj.edit75:setName("edit75");
+    obj.edit75:setFontColor("#C0504D");
+    obj.edit75:setFontSize(18);
+    obj.edit75:setHorzTextAlign("center");
+    obj.edit75:setVertTextAlign("center");
+    lfm_setPropAsString(obj.edit75, "fontStyle",  "bold");
+    obj.edit75:setFontFamily("kalam");
+    obj.edit75:setType("number");
+
+    obj.button50 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button50:setParent(obj.rectangle2);
+    obj.button50:setText("i");
+    obj.button50:setWidth(20);
+    obj.button50:setLeft(867);
+    obj.button50:setTop(443);
+    obj.button50:setHeight(20);
+    obj.button50:setName("button50");
 
     obj.button51 = GUI.fromHandle(_obj_newObject("button"));
     obj.button51:setParent(obj.rectangle2);
-    obj.button51:setText("i");
-    obj.button51:setWidth(20);
-    obj.button51:setLeft(867);
+    obj.button51:setLeft(887);
     obj.button51:setTop(443);
-    obj.button51:setHeight(20);
+    obj.button51:setWidth(14);
+    obj.button51:setHeight(14);
+    obj.button51:setText("R");
+    obj.button51:setHint("Desc... ");
     obj.button51:setName("button51");
-
-    obj.button52 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button52:setParent(obj.rectangle2);
-    obj.button52:setLeft(887);
-    obj.button52:setTop(443);
-    obj.button52:setWidth(14);
-    obj.button52:setHeight(14);
-    obj.button52:setText("R");
-    obj.button52:setHint("Desc... ");
-    obj.button52:setName("button52");
 
     obj.image51 = GUI.fromHandle(_obj_newObject("image"));
     obj.image51:setParent(obj.rectangle2);
@@ -3491,18 +3478,18 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.layout89:setHeight(30);
     obj.layout89:setName("layout89");
 
-    obj.edit77 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit77:setParent(obj.layout89);
-    obj.edit77:setWidth(191);
-    obj.edit77:setHeight(30);
-    obj.edit77:setField("CircField_7");
-    obj.edit77:setName("edit77");
-    obj.edit77:setFontColor("#C0504D");
-    obj.edit77:setFontSize(15);
-    obj.edit77:setHorzTextAlign("leading");
-    obj.edit77:setVertTextAlign("center");
-    obj.edit77:setFontFamily("kalam");
-    obj.edit77:setTransparent(true);
+    obj.edit76 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit76:setParent(obj.layout89);
+    obj.edit76:setWidth(191);
+    obj.edit76:setHeight(30);
+    obj.edit76:setField("CircField_7");
+    obj.edit76:setName("edit76");
+    obj.edit76:setFontColor("#C0504D");
+    obj.edit76:setFontSize(15);
+    obj.edit76:setHorzTextAlign("leading");
+    obj.edit76:setVertTextAlign("center");
+    obj.edit76:setFontFamily("kalam");
+    obj.edit76:setTransparent(true);
 
     obj.layout90 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout90:setParent(obj.rectangle2);
@@ -3512,41 +3499,41 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.layout90:setHeight(29);
     obj.layout90:setName("layout90");
 
-    obj.edit78 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit78:setParent(obj.layout90);
-    obj.edit78:setTransparent(true);
-    obj.edit78:setLeft(0);
-    obj.edit78:setTop(0);
-    obj.edit78:setWidth(67);
-    obj.edit78:setHeight(30);
-    obj.edit78:setField("CircXP_7");
-    obj.edit78:setName("edit78");
-    obj.edit78:setFontColor("#C0504D");
-    obj.edit78:setFontSize(18);
-    obj.edit78:setHorzTextAlign("center");
-    obj.edit78:setVertTextAlign("center");
-    lfm_setPropAsString(obj.edit78, "fontStyle",  "bold");
-    obj.edit78:setFontFamily("kalam");
-    obj.edit78:setType("number");
+    obj.edit77 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit77:setParent(obj.layout90);
+    obj.edit77:setTransparent(true);
+    obj.edit77:setLeft(0);
+    obj.edit77:setTop(0);
+    obj.edit77:setWidth(67);
+    obj.edit77:setHeight(30);
+    obj.edit77:setField("CircXP_7");
+    obj.edit77:setName("edit77");
+    obj.edit77:setFontColor("#C0504D");
+    obj.edit77:setFontSize(18);
+    obj.edit77:setHorzTextAlign("center");
+    obj.edit77:setVertTextAlign("center");
+    lfm_setPropAsString(obj.edit77, "fontStyle",  "bold");
+    obj.edit77:setFontFamily("kalam");
+    obj.edit77:setType("number");
+
+    obj.button52 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button52:setParent(obj.rectangle2);
+    obj.button52:setText("i");
+    obj.button52:setWidth(20);
+    obj.button52:setLeft(867);
+    obj.button52:setTop(477);
+    obj.button52:setHeight(20);
+    obj.button52:setName("button52");
 
     obj.button53 = GUI.fromHandle(_obj_newObject("button"));
     obj.button53:setParent(obj.rectangle2);
-    obj.button53:setText("i");
-    obj.button53:setWidth(20);
-    obj.button53:setLeft(867);
-    obj.button53:setTop(477);
-    obj.button53:setHeight(20);
+    obj.button53:setLeft(887);
+    obj.button53:setTop(476);
+    obj.button53:setWidth(14);
+    obj.button53:setHeight(14);
+    obj.button53:setText("R");
+    obj.button53:setHint("Desc... ");
     obj.button53:setName("button53");
-
-    obj.button54 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button54:setParent(obj.rectangle2);
-    obj.button54:setLeft(887);
-    obj.button54:setTop(476);
-    obj.button54:setWidth(14);
-    obj.button54:setHeight(14);
-    obj.button54:setText("R");
-    obj.button54:setHint("Desc... ");
-    obj.button54:setName("button54");
 
     obj.image52 = GUI.fromHandle(_obj_newObject("image"));
     obj.image52:setParent(obj.rectangle2);
@@ -3567,18 +3554,18 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.layout91:setHeight(30);
     obj.layout91:setName("layout91");
 
-    obj.edit79 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit79:setParent(obj.layout91);
-    obj.edit79:setWidth(191);
-    obj.edit79:setHeight(30);
-    obj.edit79:setField("CircField_8");
-    obj.edit79:setName("edit79");
-    obj.edit79:setFontColor("#C0504D");
-    obj.edit79:setFontSize(15);
-    obj.edit79:setHorzTextAlign("leading");
-    obj.edit79:setVertTextAlign("center");
-    obj.edit79:setFontFamily("kalam");
-    obj.edit79:setTransparent(true);
+    obj.edit78 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit78:setParent(obj.layout91);
+    obj.edit78:setWidth(191);
+    obj.edit78:setHeight(30);
+    obj.edit78:setField("CircField_8");
+    obj.edit78:setName("edit78");
+    obj.edit78:setFontColor("#C0504D");
+    obj.edit78:setFontSize(15);
+    obj.edit78:setHorzTextAlign("leading");
+    obj.edit78:setVertTextAlign("center");
+    obj.edit78:setFontFamily("kalam");
+    obj.edit78:setTransparent(true);
 
     obj.layout92 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout92:setParent(obj.rectangle2);
@@ -3588,41 +3575,41 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.layout92:setHeight(29);
     obj.layout92:setName("layout92");
 
-    obj.edit80 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit80:setParent(obj.layout92);
-    obj.edit80:setTransparent(true);
-    obj.edit80:setLeft(0);
-    obj.edit80:setTop(0);
-    obj.edit80:setWidth(67);
-    obj.edit80:setHeight(30);
-    obj.edit80:setField("CircXP_8");
-    obj.edit80:setName("edit80");
-    obj.edit80:setFontColor("#C0504D");
-    obj.edit80:setFontSize(18);
-    obj.edit80:setHorzTextAlign("center");
-    obj.edit80:setVertTextAlign("center");
-    lfm_setPropAsString(obj.edit80, "fontStyle",  "bold");
-    obj.edit80:setFontFamily("kalam");
-    obj.edit80:setType("number");
+    obj.edit79 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit79:setParent(obj.layout92);
+    obj.edit79:setTransparent(true);
+    obj.edit79:setLeft(0);
+    obj.edit79:setTop(0);
+    obj.edit79:setWidth(67);
+    obj.edit79:setHeight(30);
+    obj.edit79:setField("CircXP_8");
+    obj.edit79:setName("edit79");
+    obj.edit79:setFontColor("#C0504D");
+    obj.edit79:setFontSize(18);
+    obj.edit79:setHorzTextAlign("center");
+    obj.edit79:setVertTextAlign("center");
+    lfm_setPropAsString(obj.edit79, "fontStyle",  "bold");
+    obj.edit79:setFontFamily("kalam");
+    obj.edit79:setType("number");
+
+    obj.button54 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button54:setParent(obj.rectangle2);
+    obj.button54:setText("i");
+    obj.button54:setWidth(20);
+    obj.button54:setLeft(867);
+    obj.button54:setTop(511);
+    obj.button54:setHeight(20);
+    obj.button54:setName("button54");
 
     obj.button55 = GUI.fromHandle(_obj_newObject("button"));
     obj.button55:setParent(obj.rectangle2);
-    obj.button55:setText("i");
-    obj.button55:setWidth(20);
-    obj.button55:setLeft(867);
-    obj.button55:setTop(511);
-    obj.button55:setHeight(20);
+    obj.button55:setLeft(887);
+    obj.button55:setTop(510);
+    obj.button55:setWidth(14);
+    obj.button55:setHeight(14);
+    obj.button55:setText("R");
+    obj.button55:setHint("Desc... ");
     obj.button55:setName("button55");
-
-    obj.button56 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button56:setParent(obj.rectangle2);
-    obj.button56:setLeft(887);
-    obj.button56:setTop(510);
-    obj.button56:setWidth(14);
-    obj.button56:setHeight(14);
-    obj.button56:setText("R");
-    obj.button56:setHint("Desc... ");
-    obj.button56:setName("button56");
 
     obj.image53 = GUI.fromHandle(_obj_newObject("image"));
     obj.image53:setParent(obj.rectangle2);
@@ -3643,18 +3630,18 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.layout93:setHeight(30);
     obj.layout93:setName("layout93");
 
-    obj.edit81 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit81:setParent(obj.layout93);
-    obj.edit81:setWidth(191);
-    obj.edit81:setHeight(30);
-    obj.edit81:setField("CircField_9");
-    obj.edit81:setName("edit81");
-    obj.edit81:setFontColor("#C0504D");
-    obj.edit81:setFontSize(15);
-    obj.edit81:setHorzTextAlign("leading");
-    obj.edit81:setVertTextAlign("center");
-    obj.edit81:setFontFamily("kalam");
-    obj.edit81:setTransparent(true);
+    obj.edit80 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit80:setParent(obj.layout93);
+    obj.edit80:setWidth(191);
+    obj.edit80:setHeight(30);
+    obj.edit80:setField("CircField_9");
+    obj.edit80:setName("edit80");
+    obj.edit80:setFontColor("#C0504D");
+    obj.edit80:setFontSize(15);
+    obj.edit80:setHorzTextAlign("leading");
+    obj.edit80:setVertTextAlign("center");
+    obj.edit80:setFontFamily("kalam");
+    obj.edit80:setTransparent(true);
 
     obj.layout94 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout94:setParent(obj.rectangle2);
@@ -3664,41 +3651,41 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.layout94:setHeight(29);
     obj.layout94:setName("layout94");
 
-    obj.edit82 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit82:setParent(obj.layout94);
-    obj.edit82:setTransparent(true);
-    obj.edit82:setLeft(0);
-    obj.edit82:setTop(0);
-    obj.edit82:setWidth(67);
-    obj.edit82:setHeight(30);
-    obj.edit82:setField("CircXP_9");
-    obj.edit82:setName("edit82");
-    obj.edit82:setFontColor("#C0504D");
-    obj.edit82:setFontSize(18);
-    obj.edit82:setHorzTextAlign("center");
-    obj.edit82:setVertTextAlign("center");
-    lfm_setPropAsString(obj.edit82, "fontStyle",  "bold");
-    obj.edit82:setFontFamily("kalam");
-    obj.edit82:setType("number");
+    obj.edit81 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit81:setParent(obj.layout94);
+    obj.edit81:setTransparent(true);
+    obj.edit81:setLeft(0);
+    obj.edit81:setTop(0);
+    obj.edit81:setWidth(67);
+    obj.edit81:setHeight(30);
+    obj.edit81:setField("CircXP_9");
+    obj.edit81:setName("edit81");
+    obj.edit81:setFontColor("#C0504D");
+    obj.edit81:setFontSize(18);
+    obj.edit81:setHorzTextAlign("center");
+    obj.edit81:setVertTextAlign("center");
+    lfm_setPropAsString(obj.edit81, "fontStyle",  "bold");
+    obj.edit81:setFontFamily("kalam");
+    obj.edit81:setType("number");
+
+    obj.button56 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button56:setParent(obj.rectangle2);
+    obj.button56:setText("i");
+    obj.button56:setWidth(20);
+    obj.button56:setLeft(867);
+    obj.button56:setTop(545);
+    obj.button56:setHeight(20);
+    obj.button56:setName("button56");
 
     obj.button57 = GUI.fromHandle(_obj_newObject("button"));
     obj.button57:setParent(obj.rectangle2);
-    obj.button57:setText("i");
-    obj.button57:setWidth(20);
-    obj.button57:setLeft(867);
-    obj.button57:setTop(545);
-    obj.button57:setHeight(20);
+    obj.button57:setLeft(887);
+    obj.button57:setTop(544);
+    obj.button57:setWidth(14);
+    obj.button57:setHeight(14);
+    obj.button57:setText("R");
+    obj.button57:setHint("Desc... ");
     obj.button57:setName("button57");
-
-    obj.button58 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button58:setParent(obj.rectangle2);
-    obj.button58:setLeft(887);
-    obj.button58:setTop(544);
-    obj.button58:setWidth(14);
-    obj.button58:setHeight(14);
-    obj.button58:setText("R");
-    obj.button58:setHint("Desc... ");
-    obj.button58:setName("button58");
 
     obj.image54 = GUI.fromHandle(_obj_newObject("image"));
     obj.image54:setParent(obj.rectangle2);
@@ -3719,18 +3706,18 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.layout95:setHeight(30);
     obj.layout95:setName("layout95");
 
-    obj.edit83 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit83:setParent(obj.layout95);
-    obj.edit83:setTransparent(true);
-    obj.edit83:setWidth(191);
-    obj.edit83:setHeight(30);
-    obj.edit83:setField("CircField_1o");
-    obj.edit83:setName("edit83");
-    obj.edit83:setFontColor("#C0504D");
-    obj.edit83:setFontSize(15);
-    obj.edit83:setHorzTextAlign("leading");
-    obj.edit83:setVertTextAlign("center");
-    obj.edit83:setFontFamily("kalam");
+    obj.edit82 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit82:setParent(obj.layout95);
+    obj.edit82:setTransparent(true);
+    obj.edit82:setWidth(191);
+    obj.edit82:setHeight(30);
+    obj.edit82:setField("CircField_1o");
+    obj.edit82:setName("edit82");
+    obj.edit82:setFontColor("#C0504D");
+    obj.edit82:setFontSize(15);
+    obj.edit82:setHorzTextAlign("leading");
+    obj.edit82:setVertTextAlign("center");
+    obj.edit82:setFontFamily("kalam");
 
     obj.layout96 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout96:setParent(obj.rectangle2);
@@ -3740,41 +3727,41 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.layout96:setHeight(29);
     obj.layout96:setName("layout96");
 
-    obj.edit84 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit84:setParent(obj.layout96);
-    obj.edit84:setTransparent(true);
-    obj.edit84:setLeft(0);
-    obj.edit84:setTop(0);
-    obj.edit84:setWidth(67);
-    obj.edit84:setHeight(30);
-    obj.edit84:setField("CircXP_10");
-    obj.edit84:setName("edit84");
-    obj.edit84:setFontColor("#C0504D");
-    obj.edit84:setFontSize(18);
-    obj.edit84:setHorzTextAlign("center");
-    obj.edit84:setVertTextAlign("center");
-    lfm_setPropAsString(obj.edit84, "fontStyle",  "bold");
-    obj.edit84:setFontFamily("kalam");
-    obj.edit84:setType("number");
+    obj.edit83 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit83:setParent(obj.layout96);
+    obj.edit83:setTransparent(true);
+    obj.edit83:setLeft(0);
+    obj.edit83:setTop(0);
+    obj.edit83:setWidth(67);
+    obj.edit83:setHeight(30);
+    obj.edit83:setField("CircXP_10");
+    obj.edit83:setName("edit83");
+    obj.edit83:setFontColor("#C0504D");
+    obj.edit83:setFontSize(18);
+    obj.edit83:setHorzTextAlign("center");
+    obj.edit83:setVertTextAlign("center");
+    lfm_setPropAsString(obj.edit83, "fontStyle",  "bold");
+    obj.edit83:setFontFamily("kalam");
+    obj.edit83:setType("number");
+
+    obj.button58 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button58:setParent(obj.rectangle2);
+    obj.button58:setText("i");
+    obj.button58:setWidth(20);
+    obj.button58:setLeft(867);
+    obj.button58:setTop(579);
+    obj.button58:setHeight(20);
+    obj.button58:setName("button58");
 
     obj.button59 = GUI.fromHandle(_obj_newObject("button"));
     obj.button59:setParent(obj.rectangle2);
-    obj.button59:setText("i");
-    obj.button59:setWidth(20);
-    obj.button59:setLeft(867);
-    obj.button59:setTop(579);
-    obj.button59:setHeight(20);
+    obj.button59:setLeft(887);
+    obj.button59:setTop(578);
+    obj.button59:setWidth(14);
+    obj.button59:setHeight(14);
+    obj.button59:setText("R");
+    obj.button59:setHint("Desc... ");
     obj.button59:setName("button59");
-
-    obj.button60 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button60:setParent(obj.rectangle2);
-    obj.button60:setLeft(887);
-    obj.button60:setTop(578);
-    obj.button60:setWidth(14);
-    obj.button60:setHeight(14);
-    obj.button60:setText("R");
-    obj.button60:setHint("Desc... ");
-    obj.button60:setName("button60");
 
     obj.image55 = GUI.fromHandle(_obj_newObject("image"));
     obj.image55:setParent(obj.rectangle2);
@@ -3957,18 +3944,18 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.layout97:setHeight(30);
     obj.layout97:setName("layout97");
 
-    obj.edit85 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit85:setParent(obj.layout97);
-    obj.edit85:setWidth(193);
-    obj.edit85:setHeight(31);
-    obj.edit85:setField("VeD_Txt_1");
-    obj.edit85:setName("edit85");
-    obj.edit85:setFontColor("#C0504D");
-    obj.edit85:setFontSize(15);
-    obj.edit85:setHorzTextAlign("leading");
-    obj.edit85:setVertTextAlign("center");
-    obj.edit85:setFontFamily("kalam");
-    obj.edit85:setTransparent(true);
+    obj.edit84 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit84:setParent(obj.layout97);
+    obj.edit84:setWidth(193);
+    obj.edit84:setHeight(31);
+    obj.edit84:setField("VeD_Txt_1");
+    obj.edit84:setName("edit84");
+    obj.edit84:setFontColor("#C0504D");
+    obj.edit84:setFontSize(15);
+    obj.edit84:setHorzTextAlign("leading");
+    obj.edit84:setVertTextAlign("center");
+    obj.edit84:setFontFamily("kalam");
+    obj.edit84:setTransparent(true);
 
     obj.layout98 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout98:setParent(obj.rectangle2);
@@ -3978,29 +3965,29 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.layout98:setHeight(30);
     obj.layout98:setName("layout98");
 
-    obj.edit86 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit86:setParent(obj.layout98);
-    obj.edit86:setTransparent(true);
-    obj.edit86:setWidth(72);
-    obj.edit86:setHeight(30);
-    obj.edit86:setField("VeD_01");
-    obj.edit86:setName("edit86");
-    obj.edit86:setFontColor("#C0504D");
-    obj.edit86:setFontSize(18);
-    obj.edit86:setHorzTextAlign("center");
-    obj.edit86:setVertTextAlign("center");
-    lfm_setPropAsString(obj.edit86, "fontStyle",  "bold");
-    obj.edit86:setFontFamily("kalam");
-    obj.edit86:setType("number");
+    obj.edit85 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit85:setParent(obj.layout98);
+    obj.edit85:setTransparent(true);
+    obj.edit85:setWidth(72);
+    obj.edit85:setHeight(30);
+    obj.edit85:setField("VeD_01");
+    obj.edit85:setName("edit85");
+    obj.edit85:setFontColor("#C0504D");
+    obj.edit85:setFontSize(18);
+    obj.edit85:setHorzTextAlign("center");
+    obj.edit85:setVertTextAlign("center");
+    lfm_setPropAsString(obj.edit85, "fontStyle",  "bold");
+    obj.edit85:setFontFamily("kalam");
+    obj.edit85:setType("number");
 
-    obj.button61 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button61:setParent(obj.rectangle2);
-    obj.button61:setText("i");
-    obj.button61:setWidth(20);
-    obj.button61:setLeft(864);
-    obj.button61:setTop(682);
-    obj.button61:setHeight(20);
-    obj.button61:setName("button61");
+    obj.button60 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button60:setParent(obj.rectangle2);
+    obj.button60:setText("i");
+    obj.button60:setWidth(20);
+    obj.button60:setLeft(864);
+    obj.button60:setTop(682);
+    obj.button60:setHeight(20);
+    obj.button60:setName("button60");
 
     obj.layout99 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout99:setParent(obj.rectangle2);
@@ -4010,18 +3997,18 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.layout99:setHeight(30);
     obj.layout99:setName("layout99");
 
-    obj.edit87 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit87:setParent(obj.layout99);
-    obj.edit87:setWidth(193);
-    obj.edit87:setHeight(31);
-    obj.edit87:setField("VeD_Txt_2");
-    obj.edit87:setName("edit87");
-    obj.edit87:setFontColor("#C0504D");
-    obj.edit87:setFontSize(15);
-    obj.edit87:setHorzTextAlign("leading");
-    obj.edit87:setVertTextAlign("center");
-    obj.edit87:setFontFamily("kalam");
-    obj.edit87:setTransparent(true);
+    obj.edit86 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit86:setParent(obj.layout99);
+    obj.edit86:setWidth(193);
+    obj.edit86:setHeight(31);
+    obj.edit86:setField("VeD_Txt_2");
+    obj.edit86:setName("edit86");
+    obj.edit86:setFontColor("#C0504D");
+    obj.edit86:setFontSize(15);
+    obj.edit86:setHorzTextAlign("leading");
+    obj.edit86:setVertTextAlign("center");
+    obj.edit86:setFontFamily("kalam");
+    obj.edit86:setTransparent(true);
 
     obj.layout100 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout100:setParent(obj.rectangle2);
@@ -4031,29 +4018,29 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.layout100:setHeight(30);
     obj.layout100:setName("layout100");
 
-    obj.edit88 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit88:setParent(obj.layout100);
-    obj.edit88:setTransparent(true);
-    obj.edit88:setWidth(72);
-    obj.edit88:setHeight(30);
-    obj.edit88:setField("VeD_02");
-    obj.edit88:setName("edit88");
-    obj.edit88:setFontColor("#C0504D");
-    obj.edit88:setFontSize(18);
-    obj.edit88:setHorzTextAlign("center");
-    obj.edit88:setVertTextAlign("center");
-    lfm_setPropAsString(obj.edit88, "fontStyle",  "bold");
-    obj.edit88:setFontFamily("kalam");
-    obj.edit88:setType("number");
+    obj.edit87 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit87:setParent(obj.layout100);
+    obj.edit87:setTransparent(true);
+    obj.edit87:setWidth(72);
+    obj.edit87:setHeight(30);
+    obj.edit87:setField("VeD_02");
+    obj.edit87:setName("edit87");
+    obj.edit87:setFontColor("#C0504D");
+    obj.edit87:setFontSize(18);
+    obj.edit87:setHorzTextAlign("center");
+    obj.edit87:setVertTextAlign("center");
+    lfm_setPropAsString(obj.edit87, "fontStyle",  "bold");
+    obj.edit87:setFontFamily("kalam");
+    obj.edit87:setType("number");
 
-    obj.button62 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button62:setParent(obj.rectangle2);
-    obj.button62:setText("i");
-    obj.button62:setWidth(20);
-    obj.button62:setLeft(864);
-    obj.button62:setTop(716);
-    obj.button62:setHeight(20);
-    obj.button62:setName("button62");
+    obj.button61 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button61:setParent(obj.rectangle2);
+    obj.button61:setText("i");
+    obj.button61:setWidth(20);
+    obj.button61:setLeft(864);
+    obj.button61:setTop(716);
+    obj.button61:setHeight(20);
+    obj.button61:setName("button61");
 
     obj.layout101 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout101:setParent(obj.rectangle2);
@@ -4063,18 +4050,18 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.layout101:setHeight(30);
     obj.layout101:setName("layout101");
 
-    obj.edit89 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit89:setParent(obj.layout101);
-    obj.edit89:setWidth(193);
-    obj.edit89:setHeight(31);
-    obj.edit89:setField("VeD_Txt_3");
-    obj.edit89:setName("edit89");
-    obj.edit89:setFontColor("#C0504D");
-    obj.edit89:setFontSize(15);
-    obj.edit89:setHorzTextAlign("leading");
-    obj.edit89:setVertTextAlign("center");
-    obj.edit89:setFontFamily("kalam");
-    obj.edit89:setTransparent(true);
+    obj.edit88 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit88:setParent(obj.layout101);
+    obj.edit88:setWidth(193);
+    obj.edit88:setHeight(31);
+    obj.edit88:setField("VeD_Txt_3");
+    obj.edit88:setName("edit88");
+    obj.edit88:setFontColor("#C0504D");
+    obj.edit88:setFontSize(15);
+    obj.edit88:setHorzTextAlign("leading");
+    obj.edit88:setVertTextAlign("center");
+    obj.edit88:setFontFamily("kalam");
+    obj.edit88:setTransparent(true);
 
     obj.layout102 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout102:setParent(obj.rectangle2);
@@ -4084,29 +4071,29 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.layout102:setHeight(30);
     obj.layout102:setName("layout102");
 
-    obj.edit90 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit90:setParent(obj.layout102);
-    obj.edit90:setTransparent(true);
-    obj.edit90:setWidth(72);
-    obj.edit90:setHeight(30);
-    obj.edit90:setField("VeD_03");
-    obj.edit90:setName("edit90");
-    obj.edit90:setFontColor("#C0504D");
-    obj.edit90:setFontSize(18);
-    obj.edit90:setHorzTextAlign("center");
-    obj.edit90:setVertTextAlign("center");
-    lfm_setPropAsString(obj.edit90, "fontStyle",  "bold");
-    obj.edit90:setFontFamily("kalam");
-    obj.edit90:setType("number");
+    obj.edit89 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit89:setParent(obj.layout102);
+    obj.edit89:setTransparent(true);
+    obj.edit89:setWidth(72);
+    obj.edit89:setHeight(30);
+    obj.edit89:setField("VeD_03");
+    obj.edit89:setName("edit89");
+    obj.edit89:setFontColor("#C0504D");
+    obj.edit89:setFontSize(18);
+    obj.edit89:setHorzTextAlign("center");
+    obj.edit89:setVertTextAlign("center");
+    lfm_setPropAsString(obj.edit89, "fontStyle",  "bold");
+    obj.edit89:setFontFamily("kalam");
+    obj.edit89:setType("number");
 
-    obj.button63 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button63:setParent(obj.rectangle2);
-    obj.button63:setText("i");
-    obj.button63:setWidth(20);
-    obj.button63:setLeft(864);
-    obj.button63:setTop(751);
-    obj.button63:setHeight(20);
-    obj.button63:setName("button63");
+    obj.button62 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button62:setParent(obj.rectangle2);
+    obj.button62:setText("i");
+    obj.button62:setWidth(20);
+    obj.button62:setLeft(864);
+    obj.button62:setTop(751);
+    obj.button62:setHeight(20);
+    obj.button62:setName("button62");
 
     obj.layout103 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout103:setParent(obj.rectangle2);
@@ -4116,18 +4103,18 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.layout103:setHeight(30);
     obj.layout103:setName("layout103");
 
-    obj.edit91 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit91:setParent(obj.layout103);
-    obj.edit91:setWidth(193);
-    obj.edit91:setHeight(31);
-    obj.edit91:setField("VeD_Txt_4");
-    obj.edit91:setName("edit91");
-    obj.edit91:setFontColor("#C0504D");
-    obj.edit91:setFontSize(15);
-    obj.edit91:setHorzTextAlign("leading");
-    obj.edit91:setVertTextAlign("center");
-    obj.edit91:setFontFamily("kalam");
-    obj.edit91:setTransparent(true);
+    obj.edit90 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit90:setParent(obj.layout103);
+    obj.edit90:setWidth(193);
+    obj.edit90:setHeight(31);
+    obj.edit90:setField("VeD_Txt_4");
+    obj.edit90:setName("edit90");
+    obj.edit90:setFontColor("#C0504D");
+    obj.edit90:setFontSize(15);
+    obj.edit90:setHorzTextAlign("leading");
+    obj.edit90:setVertTextAlign("center");
+    obj.edit90:setFontFamily("kalam");
+    obj.edit90:setTransparent(true);
 
     obj.layout104 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout104:setParent(obj.rectangle2);
@@ -4137,29 +4124,29 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.layout104:setHeight(30);
     obj.layout104:setName("layout104");
 
-    obj.edit92 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit92:setParent(obj.layout104);
-    obj.edit92:setTransparent(true);
-    obj.edit92:setWidth(72);
-    obj.edit92:setHeight(30);
-    obj.edit92:setField("VeD_04");
-    obj.edit92:setName("edit92");
-    obj.edit92:setFontColor("#C0504D");
-    obj.edit92:setFontSize(18);
-    obj.edit92:setHorzTextAlign("center");
-    obj.edit92:setVertTextAlign("center");
-    lfm_setPropAsString(obj.edit92, "fontStyle",  "bold");
-    obj.edit92:setFontFamily("kalam");
-    obj.edit92:setType("number");
+    obj.edit91 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit91:setParent(obj.layout104);
+    obj.edit91:setTransparent(true);
+    obj.edit91:setWidth(72);
+    obj.edit91:setHeight(30);
+    obj.edit91:setField("VeD_04");
+    obj.edit91:setName("edit91");
+    obj.edit91:setFontColor("#C0504D");
+    obj.edit91:setFontSize(18);
+    obj.edit91:setHorzTextAlign("center");
+    obj.edit91:setVertTextAlign("center");
+    lfm_setPropAsString(obj.edit91, "fontStyle",  "bold");
+    obj.edit91:setFontFamily("kalam");
+    obj.edit91:setType("number");
 
-    obj.button64 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button64:setParent(obj.rectangle2);
-    obj.button64:setText("i");
-    obj.button64:setWidth(20);
-    obj.button64:setLeft(864);
-    obj.button64:setTop(785);
-    obj.button64:setHeight(20);
-    obj.button64:setName("button64");
+    obj.button63 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button63:setParent(obj.rectangle2);
+    obj.button63:setText("i");
+    obj.button63:setWidth(20);
+    obj.button63:setLeft(864);
+    obj.button63:setTop(785);
+    obj.button63:setHeight(20);
+    obj.button63:setName("button63");
 
     obj.layout105 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout105:setParent(obj.rectangle2);
@@ -4169,18 +4156,18 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.layout105:setHeight(30);
     obj.layout105:setName("layout105");
 
-    obj.edit93 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit93:setParent(obj.layout105);
-    obj.edit93:setWidth(193);
-    obj.edit93:setHeight(31);
-    obj.edit93:setField("VeD_Txt_5");
-    obj.edit93:setName("edit93");
-    obj.edit93:setFontColor("#C0504D");
-    obj.edit93:setFontSize(15);
-    obj.edit93:setHorzTextAlign("leading");
-    obj.edit93:setVertTextAlign("center");
-    obj.edit93:setFontFamily("kalam");
-    obj.edit93:setTransparent(true);
+    obj.edit92 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit92:setParent(obj.layout105);
+    obj.edit92:setWidth(193);
+    obj.edit92:setHeight(31);
+    obj.edit92:setField("VeD_Txt_5");
+    obj.edit92:setName("edit92");
+    obj.edit92:setFontColor("#C0504D");
+    obj.edit92:setFontSize(15);
+    obj.edit92:setHorzTextAlign("leading");
+    obj.edit92:setVertTextAlign("center");
+    obj.edit92:setFontFamily("kalam");
+    obj.edit92:setTransparent(true);
 
     obj.layout106 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout106:setParent(obj.rectangle2);
@@ -4190,29 +4177,29 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.layout106:setHeight(30);
     obj.layout106:setName("layout106");
 
-    obj.edit94 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit94:setParent(obj.layout106);
-    obj.edit94:setTransparent(true);
-    obj.edit94:setWidth(72);
-    obj.edit94:setHeight(30);
-    obj.edit94:setField("VeD_05");
-    obj.edit94:setName("edit94");
-    obj.edit94:setFontColor("#C0504D");
-    obj.edit94:setFontSize(18);
-    obj.edit94:setHorzTextAlign("center");
-    obj.edit94:setVertTextAlign("center");
-    lfm_setPropAsString(obj.edit94, "fontStyle",  "bold");
-    obj.edit94:setFontFamily("kalam");
-    obj.edit94:setType("number");
+    obj.edit93 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit93:setParent(obj.layout106);
+    obj.edit93:setTransparent(true);
+    obj.edit93:setWidth(72);
+    obj.edit93:setHeight(30);
+    obj.edit93:setField("VeD_05");
+    obj.edit93:setName("edit93");
+    obj.edit93:setFontColor("#C0504D");
+    obj.edit93:setFontSize(18);
+    obj.edit93:setHorzTextAlign("center");
+    obj.edit93:setVertTextAlign("center");
+    lfm_setPropAsString(obj.edit93, "fontStyle",  "bold");
+    obj.edit93:setFontFamily("kalam");
+    obj.edit93:setType("number");
 
-    obj.button65 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button65:setParent(obj.rectangle2);
-    obj.button65:setText("i");
-    obj.button65:setWidth(20);
-    obj.button65:setLeft(864);
-    obj.button65:setTop(818);
-    obj.button65:setHeight(20);
-    obj.button65:setName("button65");
+    obj.button64 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button64:setParent(obj.rectangle2);
+    obj.button64:setText("i");
+    obj.button64:setWidth(20);
+    obj.button64:setLeft(864);
+    obj.button64:setTop(818);
+    obj.button64:setHeight(20);
+    obj.button64:setName("button64");
 
     obj.layout107 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout107:setParent(obj.rectangle2);
@@ -4222,18 +4209,18 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.layout107:setHeight(30);
     obj.layout107:setName("layout107");
 
-    obj.edit95 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit95:setParent(obj.layout107);
-    obj.edit95:setWidth(193);
-    obj.edit95:setHeight(31);
-    obj.edit95:setField("VeD_Txt_6");
-    obj.edit95:setName("edit95");
-    obj.edit95:setFontColor("#C0504D");
-    obj.edit95:setFontSize(15);
-    obj.edit95:setHorzTextAlign("leading");
-    obj.edit95:setVertTextAlign("center");
-    obj.edit95:setFontFamily("kalam");
-    obj.edit95:setTransparent(true);
+    obj.edit94 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit94:setParent(obj.layout107);
+    obj.edit94:setWidth(193);
+    obj.edit94:setHeight(31);
+    obj.edit94:setField("VeD_Txt_6");
+    obj.edit94:setName("edit94");
+    obj.edit94:setFontColor("#C0504D");
+    obj.edit94:setFontSize(15);
+    obj.edit94:setHorzTextAlign("leading");
+    obj.edit94:setVertTextAlign("center");
+    obj.edit94:setFontFamily("kalam");
+    obj.edit94:setTransparent(true);
 
     obj.layout108 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout108:setParent(obj.rectangle2);
@@ -4243,29 +4230,29 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.layout108:setHeight(30);
     obj.layout108:setName("layout108");
 
-    obj.edit96 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit96:setParent(obj.layout108);
-    obj.edit96:setTransparent(true);
-    obj.edit96:setWidth(72);
-    obj.edit96:setHeight(30);
-    obj.edit96:setField("VeD_06");
-    obj.edit96:setName("edit96");
-    obj.edit96:setFontColor("#C0504D");
-    obj.edit96:setFontSize(18);
-    obj.edit96:setHorzTextAlign("center");
-    obj.edit96:setVertTextAlign("center");
-    lfm_setPropAsString(obj.edit96, "fontStyle",  "bold");
-    obj.edit96:setFontFamily("kalam");
-    obj.edit96:setType("number");
+    obj.edit95 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit95:setParent(obj.layout108);
+    obj.edit95:setTransparent(true);
+    obj.edit95:setWidth(72);
+    obj.edit95:setHeight(30);
+    obj.edit95:setField("VeD_06");
+    obj.edit95:setName("edit95");
+    obj.edit95:setFontColor("#C0504D");
+    obj.edit95:setFontSize(18);
+    obj.edit95:setHorzTextAlign("center");
+    obj.edit95:setVertTextAlign("center");
+    lfm_setPropAsString(obj.edit95, "fontStyle",  "bold");
+    obj.edit95:setFontFamily("kalam");
+    obj.edit95:setType("number");
 
-    obj.button66 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button66:setParent(obj.rectangle2);
-    obj.button66:setText("i");
-    obj.button66:setWidth(20);
-    obj.button66:setLeft(864);
-    obj.button66:setTop(852);
-    obj.button66:setHeight(20);
-    obj.button66:setName("button66");
+    obj.button65 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button65:setParent(obj.rectangle2);
+    obj.button65:setText("i");
+    obj.button65:setWidth(20);
+    obj.button65:setLeft(864);
+    obj.button65:setTop(852);
+    obj.button65:setHeight(20);
+    obj.button65:setName("button65");
 
     obj.layout109 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout109:setParent(obj.rectangle2);
@@ -4275,18 +4262,18 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.layout109:setHeight(30);
     obj.layout109:setName("layout109");
 
-    obj.edit97 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit97:setParent(obj.layout109);
-    obj.edit97:setWidth(193);
-    obj.edit97:setHeight(31);
-    obj.edit97:setField("VeD_Txt_7");
-    obj.edit97:setName("edit97");
-    obj.edit97:setFontColor("#C0504D");
-    obj.edit97:setFontSize(15);
-    obj.edit97:setHorzTextAlign("leading");
-    obj.edit97:setVertTextAlign("center");
-    obj.edit97:setFontFamily("kalam");
-    obj.edit97:setTransparent(true);
+    obj.edit96 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit96:setParent(obj.layout109);
+    obj.edit96:setWidth(193);
+    obj.edit96:setHeight(31);
+    obj.edit96:setField("VeD_Txt_7");
+    obj.edit96:setName("edit96");
+    obj.edit96:setFontColor("#C0504D");
+    obj.edit96:setFontSize(15);
+    obj.edit96:setHorzTextAlign("leading");
+    obj.edit96:setVertTextAlign("center");
+    obj.edit96:setFontFamily("kalam");
+    obj.edit96:setTransparent(true);
 
     obj.layout110 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout110:setParent(obj.rectangle2);
@@ -4296,29 +4283,29 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.layout110:setHeight(30);
     obj.layout110:setName("layout110");
 
-    obj.edit98 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit98:setParent(obj.layout110);
-    obj.edit98:setTransparent(true);
-    obj.edit98:setWidth(72);
-    obj.edit98:setHeight(30);
-    obj.edit98:setField("VeD_07");
-    obj.edit98:setName("edit98");
-    obj.edit98:setFontColor("#C0504D");
-    obj.edit98:setFontSize(18);
-    obj.edit98:setHorzTextAlign("center");
-    obj.edit98:setVertTextAlign("center");
-    lfm_setPropAsString(obj.edit98, "fontStyle",  "bold");
-    obj.edit98:setFontFamily("kalam");
-    obj.edit98:setType("number");
+    obj.edit97 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit97:setParent(obj.layout110);
+    obj.edit97:setTransparent(true);
+    obj.edit97:setWidth(72);
+    obj.edit97:setHeight(30);
+    obj.edit97:setField("VeD_07");
+    obj.edit97:setName("edit97");
+    obj.edit97:setFontColor("#C0504D");
+    obj.edit97:setFontSize(18);
+    obj.edit97:setHorzTextAlign("center");
+    obj.edit97:setVertTextAlign("center");
+    lfm_setPropAsString(obj.edit97, "fontStyle",  "bold");
+    obj.edit97:setFontFamily("kalam");
+    obj.edit97:setType("number");
 
-    obj.button67 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button67:setParent(obj.rectangle2);
-    obj.button67:setText("i");
-    obj.button67:setWidth(20);
-    obj.button67:setLeft(864);
-    obj.button67:setTop(887);
-    obj.button67:setHeight(20);
-    obj.button67:setName("button67");
+    obj.button66 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button66:setParent(obj.rectangle2);
+    obj.button66:setText("i");
+    obj.button66:setWidth(20);
+    obj.button66:setLeft(864);
+    obj.button66:setTop(887);
+    obj.button66:setHeight(20);
+    obj.button66:setName("button66");
 
     obj.layout111 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout111:setParent(obj.rectangle2);
@@ -4328,18 +4315,18 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.layout111:setHeight(30);
     obj.layout111:setName("layout111");
 
-    obj.edit99 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit99:setParent(obj.layout111);
-    obj.edit99:setWidth(191);
-    obj.edit99:setHeight(31);
-    obj.edit99:setField("VeD_Txt_8");
-    obj.edit99:setName("edit99");
-    obj.edit99:setFontColor("#C0504D");
-    obj.edit99:setFontSize(15);
-    obj.edit99:setHorzTextAlign("leading");
-    obj.edit99:setVertTextAlign("center");
-    obj.edit99:setFontFamily("kalam");
-    obj.edit99:setTransparent(true);
+    obj.edit98 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit98:setParent(obj.layout111);
+    obj.edit98:setWidth(191);
+    obj.edit98:setHeight(31);
+    obj.edit98:setField("VeD_Txt_8");
+    obj.edit98:setName("edit98");
+    obj.edit98:setFontColor("#C0504D");
+    obj.edit98:setFontSize(15);
+    obj.edit98:setHorzTextAlign("leading");
+    obj.edit98:setVertTextAlign("center");
+    obj.edit98:setFontFamily("kalam");
+    obj.edit98:setTransparent(true);
 
     obj.layout112 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout112:setParent(obj.rectangle2);
@@ -4349,29 +4336,29 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.layout112:setHeight(30);
     obj.layout112:setName("layout112");
 
-    obj.edit100 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit100:setParent(obj.layout112);
-    obj.edit100:setTransparent(true);
-    obj.edit100:setWidth(72);
-    obj.edit100:setHeight(30);
-    obj.edit100:setField("VeD_08");
-    obj.edit100:setName("edit100");
-    obj.edit100:setFontColor("#C0504D");
-    obj.edit100:setFontSize(18);
-    obj.edit100:setHorzTextAlign("center");
-    obj.edit100:setVertTextAlign("center");
-    lfm_setPropAsString(obj.edit100, "fontStyle",  "bold");
-    obj.edit100:setFontFamily("kalam");
-    obj.edit100:setType("number");
+    obj.edit99 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit99:setParent(obj.layout112);
+    obj.edit99:setTransparent(true);
+    obj.edit99:setWidth(72);
+    obj.edit99:setHeight(30);
+    obj.edit99:setField("VeD_08");
+    obj.edit99:setName("edit99");
+    obj.edit99:setFontColor("#C0504D");
+    obj.edit99:setFontSize(18);
+    obj.edit99:setHorzTextAlign("center");
+    obj.edit99:setVertTextAlign("center");
+    lfm_setPropAsString(obj.edit99, "fontStyle",  "bold");
+    obj.edit99:setFontFamily("kalam");
+    obj.edit99:setType("number");
 
-    obj.button68 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button68:setParent(obj.rectangle2);
-    obj.button68:setText("i");
-    obj.button68:setWidth(20);
-    obj.button68:setLeft(864);
-    obj.button68:setTop(920);
-    obj.button68:setHeight(20);
-    obj.button68:setName("button68");
+    obj.button67 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button67:setParent(obj.rectangle2);
+    obj.button67:setText("i");
+    obj.button67:setWidth(20);
+    obj.button67:setLeft(864);
+    obj.button67:setTop(920);
+    obj.button67:setHeight(20);
+    obj.button67:setName("button67");
 
     obj.layout113 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout113:setParent(obj.rectangle2);
@@ -4381,18 +4368,18 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.layout113:setHeight(30);
     obj.layout113:setName("layout113");
 
-    obj.edit101 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit101:setParent(obj.layout113);
-    obj.edit101:setWidth(194);
-    obj.edit101:setHeight(31);
-    obj.edit101:setField("VeD_Txt_9");
-    obj.edit101:setName("edit101");
-    obj.edit101:setFontColor("#C0504D");
-    obj.edit101:setFontSize(15);
-    obj.edit101:setHorzTextAlign("leading");
-    obj.edit101:setVertTextAlign("center");
-    obj.edit101:setFontFamily("kalam");
-    obj.edit101:setTransparent(true);
+    obj.edit100 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit100:setParent(obj.layout113);
+    obj.edit100:setWidth(194);
+    obj.edit100:setHeight(31);
+    obj.edit100:setField("VeD_Txt_9");
+    obj.edit100:setName("edit100");
+    obj.edit100:setFontColor("#C0504D");
+    obj.edit100:setFontSize(15);
+    obj.edit100:setHorzTextAlign("leading");
+    obj.edit100:setVertTextAlign("center");
+    obj.edit100:setFontFamily("kalam");
+    obj.edit100:setTransparent(true);
 
     obj.layout114 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout114:setParent(obj.rectangle2);
@@ -4402,29 +4389,29 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.layout114:setHeight(30);
     obj.layout114:setName("layout114");
 
-    obj.edit102 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit102:setParent(obj.layout114);
-    obj.edit102:setTransparent(true);
-    obj.edit102:setWidth(72);
-    obj.edit102:setHeight(30);
-    obj.edit102:setField("VeD_09");
-    obj.edit102:setName("edit102");
-    obj.edit102:setFontColor("#C0504D");
-    obj.edit102:setFontSize(18);
-    obj.edit102:setHorzTextAlign("center");
-    obj.edit102:setVertTextAlign("center");
-    lfm_setPropAsString(obj.edit102, "fontStyle",  "bold");
-    obj.edit102:setFontFamily("kalam");
-    obj.edit102:setType("number");
+    obj.edit101 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit101:setParent(obj.layout114);
+    obj.edit101:setTransparent(true);
+    obj.edit101:setWidth(72);
+    obj.edit101:setHeight(30);
+    obj.edit101:setField("VeD_09");
+    obj.edit101:setName("edit101");
+    obj.edit101:setFontColor("#C0504D");
+    obj.edit101:setFontSize(18);
+    obj.edit101:setHorzTextAlign("center");
+    obj.edit101:setVertTextAlign("center");
+    lfm_setPropAsString(obj.edit101, "fontStyle",  "bold");
+    obj.edit101:setFontFamily("kalam");
+    obj.edit101:setType("number");
 
-    obj.button69 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button69:setParent(obj.rectangle2);
-    obj.button69:setText("i");
-    obj.button69:setWidth(20);
-    obj.button69:setLeft(864);
-    obj.button69:setTop(954);
-    obj.button69:setHeight(20);
-    obj.button69:setName("button69");
+    obj.button68 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button68:setParent(obj.rectangle2);
+    obj.button68:setText("i");
+    obj.button68:setWidth(20);
+    obj.button68:setLeft(864);
+    obj.button68:setTop(954);
+    obj.button68:setHeight(20);
+    obj.button68:setName("button68");
 
     obj.layout115 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout115:setParent(obj.rectangle2);
@@ -4498,14 +4485,14 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.dataLink11:setFields({'XPInicial', 'XPS1', 'XPS2', 'XPS3', 'XPS4', 'XPS5', 'XPS6', 'XPS7', 'XPS8', 'XPS9', 'XPS10', 'ExpExtraGanha'});
     obj.dataLink11:setName("dataLink11");
 
-    obj.button70 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button70:setParent(obj.rectangle2);
-    obj.button70:setText("i");
-    obj.button70:setWidth(20);
-    obj.button70:setLeft(762);
-    obj.button70:setTop(1035);
-    obj.button70:setHeight(20);
-    obj.button70:setName("button70");
+    obj.button69 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button69:setParent(obj.rectangle2);
+    obj.button69:setText("i");
+    obj.button69:setWidth(20);
+    obj.button69:setLeft(762);
+    obj.button69:setTop(1035);
+    obj.button69:setHeight(20);
+    obj.button69:setName("button69");
 
     obj.PopExp = GUI.fromHandle(_obj_newObject("popup"));
     obj.PopExp:setParent(obj.rectangle2);
@@ -4698,15 +4685,15 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.label24:setAutoSize(true);
     obj.label24:setFontFamily("kalam");
 
-    obj.edit103 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit103:setParent(obj.layout122);
-    obj.edit103:setField("ExpMoralidadeG");
-    obj.edit103:setAlign("right");
-    obj.edit103:setHorzTextAlign("trailing");
-    obj.edit103:setWidth(300);
-    obj.edit103:setTransparent(true);
-    obj.edit103:setFontColor("#696969");
-    obj.edit103:setName("edit103");
+    obj.edit102 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit102:setParent(obj.layout122);
+    obj.edit102:setField("ExpMoralidadeG");
+    obj.edit102:setAlign("right");
+    obj.edit102:setHorzTextAlign("trailing");
+    obj.edit102:setWidth(300);
+    obj.edit102:setTransparent(true);
+    obj.edit102:setFontColor("#696969");
+    obj.edit102:setName("edit102");
 
     obj.layout123 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout123:setParent(obj.scrollBox3);
@@ -4727,15 +4714,15 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.label25:setAutoSize(true);
     obj.label25:setFontFamily("kalam");
 
-    obj.edit104 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit104:setParent(obj.layout123);
-    obj.edit104:setField("ExpExtraGanha");
-    obj.edit104:setAlign("right");
-    obj.edit104:setHorzTextAlign("trailing");
-    obj.edit104:setWidth(300);
-    obj.edit104:setTransparent(true);
-    obj.edit104:setFontColor("#696969");
-    obj.edit104:setName("edit104");
+    obj.edit103 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit103:setParent(obj.layout123);
+    obj.edit103:setField("ExpExtraGanha");
+    obj.edit103:setAlign("right");
+    obj.edit103:setHorzTextAlign("trailing");
+    obj.edit103:setWidth(300);
+    obj.edit103:setTransparent(true);
+    obj.edit103:setFontColor("#696969");
+    obj.edit103:setName("edit103");
 
     obj.layout124 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout124:setParent(obj.scrollBox3);
@@ -4756,15 +4743,15 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.label26:setAutoSize(true);
     obj.label26:setFontFamily("kalam");
 
-    obj.edit105 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit105:setParent(obj.layout124);
-    obj.edit105:setField("XP_t_gasta");
-    obj.edit105:setAlign("right");
-    obj.edit105:setHorzTextAlign("trailing");
-    obj.edit105:setWidth(50);
-    obj.edit105:setTransparent(true);
-    obj.edit105:setFontColor("#C0504D");
-    obj.edit105:setName("edit105");
+    obj.edit104 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit104:setParent(obj.layout124);
+    obj.edit104:setField("XP_t_gasta");
+    obj.edit104:setAlign("right");
+    obj.edit104:setHorzTextAlign("trailing");
+    obj.edit104:setWidth(50);
+    obj.edit104:setTransparent(true);
+    obj.edit104:setFontColor("#C0504D");
+    obj.edit104:setName("edit104");
 
     obj.layout125 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout125:setParent(obj.scrollBox3);
@@ -4785,15 +4772,15 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.label27:setAutoSize(true);
     obj.label27:setFontFamily("kalam");
 
-    obj.edit106 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit106:setParent(obj.layout125);
-    obj.edit106:setField("XPInicial");
-    obj.edit106:setAlign("right");
-    obj.edit106:setHorzTextAlign("trailing");
-    obj.edit106:setWidth(300);
-    obj.edit106:setTransparent(true);
-    obj.edit106:setFontColor("#000000");
-    obj.edit106:setName("edit106");
+    obj.edit105 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit105:setParent(obj.layout125);
+    obj.edit105:setField("XPInicial");
+    obj.edit105:setAlign("right");
+    obj.edit105:setHorzTextAlign("trailing");
+    obj.edit105:setWidth(300);
+    obj.edit105:setTransparent(true);
+    obj.edit105:setFontColor("#000000");
+    obj.edit105:setName("edit105");
 
     obj.layout126 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout126:setParent(obj.scrollBox3);
@@ -4814,15 +4801,15 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.label28:setAutoSize(true);
     obj.label28:setFontFamily("kalam");
 
-    obj.edit107 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit107:setParent(obj.layout126);
-    obj.edit107:setField("XPS1");
-    obj.edit107:setAlign("right");
-    obj.edit107:setHorzTextAlign("trailing");
-    obj.edit107:setWidth(300);
-    obj.edit107:setTransparent(true);
-    obj.edit107:setFontColor("#696969");
-    obj.edit107:setName("edit107");
+    obj.edit106 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit106:setParent(obj.layout126);
+    obj.edit106:setField("XPS1");
+    obj.edit106:setAlign("right");
+    obj.edit106:setHorzTextAlign("trailing");
+    obj.edit106:setWidth(300);
+    obj.edit106:setTransparent(true);
+    obj.edit106:setFontColor("#696969");
+    obj.edit106:setName("edit106");
 
     obj.layout127 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout127:setParent(obj.scrollBox3);
@@ -4843,15 +4830,15 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.label29:setAutoSize(true);
     obj.label29:setFontFamily("kalam");
 
-    obj.edit108 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit108:setParent(obj.layout127);
-    obj.edit108:setField("XPS2");
-    obj.edit108:setAlign("right");
-    obj.edit108:setHorzTextAlign("trailing");
-    obj.edit108:setWidth(300);
-    obj.edit108:setTransparent(true);
-    obj.edit108:setFontColor("#000000");
-    obj.edit108:setName("edit108");
+    obj.edit107 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit107:setParent(obj.layout127);
+    obj.edit107:setField("XPS2");
+    obj.edit107:setAlign("right");
+    obj.edit107:setHorzTextAlign("trailing");
+    obj.edit107:setWidth(300);
+    obj.edit107:setTransparent(true);
+    obj.edit107:setFontColor("#000000");
+    obj.edit107:setName("edit107");
 
     obj.layout128 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout128:setParent(obj.scrollBox3);
@@ -4872,15 +4859,15 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.label30:setAutoSize(true);
     obj.label30:setFontFamily("kalam");
 
-    obj.edit109 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit109:setParent(obj.layout128);
-    obj.edit109:setField("XPS3");
-    obj.edit109:setAlign("right");
-    obj.edit109:setHorzTextAlign("trailing");
-    obj.edit109:setWidth(300);
-    obj.edit109:setTransparent(true);
-    obj.edit109:setFontColor("#696969");
-    obj.edit109:setName("edit109");
+    obj.edit108 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit108:setParent(obj.layout128);
+    obj.edit108:setField("XPS3");
+    obj.edit108:setAlign("right");
+    obj.edit108:setHorzTextAlign("trailing");
+    obj.edit108:setWidth(300);
+    obj.edit108:setTransparent(true);
+    obj.edit108:setFontColor("#696969");
+    obj.edit108:setName("edit108");
 
     obj.layout129 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout129:setParent(obj.scrollBox3);
@@ -4901,15 +4888,15 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.label31:setAutoSize(true);
     obj.label31:setFontFamily("kalam");
 
-    obj.edit110 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit110:setParent(obj.layout129);
-    obj.edit110:setField("XPS4");
-    obj.edit110:setAlign("right");
-    obj.edit110:setHorzTextAlign("trailing");
-    obj.edit110:setWidth(300);
-    obj.edit110:setTransparent(true);
-    obj.edit110:setFontColor("#000000");
-    obj.edit110:setName("edit110");
+    obj.edit109 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit109:setParent(obj.layout129);
+    obj.edit109:setField("XPS4");
+    obj.edit109:setAlign("right");
+    obj.edit109:setHorzTextAlign("trailing");
+    obj.edit109:setWidth(300);
+    obj.edit109:setTransparent(true);
+    obj.edit109:setFontColor("#000000");
+    obj.edit109:setName("edit109");
 
     obj.layout130 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout130:setParent(obj.scrollBox3);
@@ -4930,15 +4917,15 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.label32:setAutoSize(true);
     obj.label32:setFontFamily("kalam");
 
-    obj.edit111 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit111:setParent(obj.layout130);
-    obj.edit111:setField("XPS5");
-    obj.edit111:setAlign("right");
-    obj.edit111:setHorzTextAlign("trailing");
-    obj.edit111:setWidth(300);
-    obj.edit111:setTransparent(true);
-    obj.edit111:setFontColor("#696969");
-    obj.edit111:setName("edit111");
+    obj.edit110 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit110:setParent(obj.layout130);
+    obj.edit110:setField("XPS5");
+    obj.edit110:setAlign("right");
+    obj.edit110:setHorzTextAlign("trailing");
+    obj.edit110:setWidth(300);
+    obj.edit110:setTransparent(true);
+    obj.edit110:setFontColor("#696969");
+    obj.edit110:setName("edit110");
 
     obj.layout131 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout131:setParent(obj.scrollBox3);
@@ -4959,15 +4946,15 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.label33:setAutoSize(true);
     obj.label33:setFontFamily("kalam");
 
-    obj.edit112 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit112:setParent(obj.layout131);
-    obj.edit112:setField("XPS6");
-    obj.edit112:setAlign("right");
-    obj.edit112:setHorzTextAlign("trailing");
-    obj.edit112:setWidth(300);
-    obj.edit112:setTransparent(true);
-    obj.edit112:setFontColor("#000000");
-    obj.edit112:setName("edit112");
+    obj.edit111 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit111:setParent(obj.layout131);
+    obj.edit111:setField("XPS6");
+    obj.edit111:setAlign("right");
+    obj.edit111:setHorzTextAlign("trailing");
+    obj.edit111:setWidth(300);
+    obj.edit111:setTransparent(true);
+    obj.edit111:setFontColor("#000000");
+    obj.edit111:setName("edit111");
 
     obj.layout132 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout132:setParent(obj.scrollBox3);
@@ -4988,15 +4975,15 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.label34:setAutoSize(true);
     obj.label34:setFontFamily("kalam");
 
-    obj.edit113 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit113:setParent(obj.layout132);
-    obj.edit113:setField("XPS7");
-    obj.edit113:setAlign("right");
-    obj.edit113:setHorzTextAlign("trailing");
-    obj.edit113:setWidth(300);
-    obj.edit113:setTransparent(true);
-    obj.edit113:setFontColor("#696969");
-    obj.edit113:setName("edit113");
+    obj.edit112 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit112:setParent(obj.layout132);
+    obj.edit112:setField("XPS7");
+    obj.edit112:setAlign("right");
+    obj.edit112:setHorzTextAlign("trailing");
+    obj.edit112:setWidth(300);
+    obj.edit112:setTransparent(true);
+    obj.edit112:setFontColor("#696969");
+    obj.edit112:setName("edit112");
 
     obj.layout133 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout133:setParent(obj.scrollBox3);
@@ -5017,15 +5004,15 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.label35:setAutoSize(true);
     obj.label35:setFontFamily("kalam");
 
-    obj.edit114 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit114:setParent(obj.layout133);
-    obj.edit114:setField("XPS8");
-    obj.edit114:setAlign("right");
-    obj.edit114:setHorzTextAlign("trailing");
-    obj.edit114:setWidth(300);
-    obj.edit114:setTransparent(true);
-    obj.edit114:setFontColor("#000000");
-    obj.edit114:setName("edit114");
+    obj.edit113 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit113:setParent(obj.layout133);
+    obj.edit113:setField("XPS8");
+    obj.edit113:setAlign("right");
+    obj.edit113:setHorzTextAlign("trailing");
+    obj.edit113:setWidth(300);
+    obj.edit113:setTransparent(true);
+    obj.edit113:setFontColor("#000000");
+    obj.edit113:setName("edit113");
 
     obj.layout134 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout134:setParent(obj.scrollBox3);
@@ -5046,15 +5033,15 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.label36:setAutoSize(true);
     obj.label36:setFontFamily("kalam");
 
-    obj.edit115 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit115:setParent(obj.layout134);
-    obj.edit115:setField("XPS9");
-    obj.edit115:setAlign("right");
-    obj.edit115:setHorzTextAlign("trailing");
-    obj.edit115:setWidth(300);
-    obj.edit115:setTransparent(true);
-    obj.edit115:setFontColor("#696969");
-    obj.edit115:setName("edit115");
+    obj.edit114 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit114:setParent(obj.layout134);
+    obj.edit114:setField("XPS9");
+    obj.edit114:setAlign("right");
+    obj.edit114:setHorzTextAlign("trailing");
+    obj.edit114:setWidth(300);
+    obj.edit114:setTransparent(true);
+    obj.edit114:setFontColor("#696969");
+    obj.edit114:setName("edit114");
 
     obj.layout135 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout135:setParent(obj.scrollBox3);
@@ -5075,15 +5062,15 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.label37:setAutoSize(true);
     obj.label37:setFontFamily("kalam");
 
-    obj.edit116 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit116:setParent(obj.layout135);
-    obj.edit116:setField("XPS10");
-    obj.edit116:setAlign("right");
-    obj.edit116:setHorzTextAlign("trailing");
-    obj.edit116:setWidth(300);
-    obj.edit116:setTransparent(true);
-    obj.edit116:setFontColor("#000000");
-    obj.edit116:setName("edit116");
+    obj.edit115 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit115:setParent(obj.layout135);
+    obj.edit115:setField("XPS10");
+    obj.edit115:setAlign("right");
+    obj.edit115:setHorzTextAlign("trailing");
+    obj.edit115:setWidth(300);
+    obj.edit115:setTransparent(true);
+    obj.edit115:setFontColor("#000000");
+    obj.edit115:setName("edit115");
 
     obj.layout136 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout136:setParent(obj.scrollBox3);
@@ -5104,15 +5091,15 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.label38:setAutoSize(true);
     obj.label38:setFontFamily("kalam");
 
-    obj.edit117 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit117:setParent(obj.layout136);
-    obj.edit117:setField("XP_t");
-    obj.edit117:setAlign("right");
-    obj.edit117:setHorzTextAlign("trailing");
-    obj.edit117:setWidth(50);
-    obj.edit117:setTransparent(true);
-    obj.edit117:setFontColor("#C0504D");
-    obj.edit117:setName("edit117");
+    obj.edit116 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit116:setParent(obj.layout136);
+    obj.edit116:setField("XP_t");
+    obj.edit116:setAlign("right");
+    obj.edit116:setHorzTextAlign("trailing");
+    obj.edit116:setWidth(50);
+    obj.edit116:setTransparent(true);
+    obj.edit116:setFontColor("#C0504D");
+    obj.edit116:setName("edit116");
 
     obj.dataLink12 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink12:setParent(obj.rectangle2);
@@ -5147,16 +5134,16 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.scrollBox4:setAlign("client");
     obj.scrollBox4:setName("scrollBox4");
 
-    obj.button71 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button71:setParent(obj.scrollBox4);
-    obj.button71:setHeight(25);
-    obj.button71:setFontFamily("kalam");
-    obj.button71:setText("+");
-    obj.button71:setTop(5);
-    obj.button71:setWidth(25);
-    obj.button71:setLeft(35);
-    obj.button71:setHint("Adiciona um novo ataque.");
-    obj.button71:setName("button71");
+    obj.button70 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button70:setParent(obj.scrollBox4);
+    obj.button70:setHeight(25);
+    obj.button70:setFontFamily("kalam");
+    obj.button70:setText("+");
+    obj.button70:setTop(5);
+    obj.button70:setWidth(25);
+    obj.button70:setLeft(35);
+    obj.button70:setHint("Adiciona um novo ataque.");
+    obj.button70:setName("button70");
 
     obj.label39 = GUI.fromHandle(_obj_newObject("label"));
     obj.label39:setParent(obj.scrollBox4);
@@ -5222,21 +5209,21 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.rectangle4:setStrokeSize(1);
     obj.rectangle4:setName("rectangle4");
 
-    obj.edit118 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit118:setParent(obj.rectangle3);
-    obj.edit118:setWidth(200);
-    obj.edit118:setField("ARMADURA_nick");
-    obj.edit118:setHeight(40);
-    obj.edit118:setTop(32);
-    obj.edit118:setLeft(1);
-    obj.edit118:setName("edit118");
-    obj.edit118:setFontColor("#C0504D");
-    obj.edit118:setFontSize(20);
-    obj.edit118:setHorzTextAlign("center");
-    obj.edit118:setVertTextAlign("leading");
-    lfm_setPropAsString(obj.edit118, "fontStyle",  "bold");
-    obj.edit118:setFontFamily("kalam");
-    obj.edit118:setTransparent(true);
+    obj.edit117 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit117:setParent(obj.rectangle3);
+    obj.edit117:setWidth(200);
+    obj.edit117:setField("ARMADURA_nick");
+    obj.edit117:setHeight(40);
+    obj.edit117:setTop(32);
+    obj.edit117:setLeft(1);
+    obj.edit117:setName("edit117");
+    obj.edit117:setFontColor("#C0504D");
+    obj.edit117:setFontSize(20);
+    obj.edit117:setHorzTextAlign("center");
+    obj.edit117:setVertTextAlign("leading");
+    lfm_setPropAsString(obj.edit117, "fontStyle",  "bold");
+    obj.edit117:setFontFamily("kalam");
+    obj.edit117:setTransparent(true);
 
     obj.label41 = GUI.fromHandle(_obj_newObject("label"));
     obj.label41:setParent(obj.rectangle3);
@@ -5269,19 +5256,19 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.rectangle5:setXradius(8);
     obj.rectangle5:setYradius(8);
 
-    obj.edit119 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit119:setParent(obj.rectangle5);
-    obj.edit119:setField("ARMADURA_TorsoA");
-    obj.edit119:setWidth(45);
-    obj.edit119:setHeight(30);
-    obj.edit119:setName("edit119");
-    obj.edit119:setFontColor("#C0504D");
-    obj.edit119:setFontSize(18);
-    obj.edit119:setHorzTextAlign("center");
-    obj.edit119:setVertTextAlign("center");
-    lfm_setPropAsString(obj.edit119, "fontStyle",  "bold");
-    obj.edit119:setFontFamily("kalam");
-    obj.edit119:setTransparent(true);
+    obj.edit118 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit118:setParent(obj.rectangle5);
+    obj.edit118:setField("ARMADURA_TorsoA");
+    obj.edit118:setWidth(45);
+    obj.edit118:setHeight(30);
+    obj.edit118:setName("edit118");
+    obj.edit118:setFontColor("#C0504D");
+    obj.edit118:setFontSize(18);
+    obj.edit118:setHorzTextAlign("center");
+    obj.edit118:setVertTextAlign("center");
+    lfm_setPropAsString(obj.edit118, "fontStyle",  "bold");
+    obj.edit118:setFontFamily("kalam");
+    obj.edit118:setTransparent(true);
 
     obj.label42 = GUI.fromHandle(_obj_newObject("label"));
     obj.label42:setParent(obj.rectangle5);
@@ -5300,20 +5287,20 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.label42:setWordWrap(false);
     obj.label42:setAutoSize(true);
 
-    obj.edit120 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit120:setParent(obj.rectangle5);
-    obj.edit120:setField("ARMADURA_TorsoB");
-    obj.edit120:setWidth(45);
-    obj.edit120:setHeight(30);
-    obj.edit120:setLeft(46);
-    obj.edit120:setName("edit120");
-    obj.edit120:setFontColor("#C0504D");
-    obj.edit120:setFontSize(18);
-    obj.edit120:setHorzTextAlign("center");
-    obj.edit120:setVertTextAlign("center");
-    lfm_setPropAsString(obj.edit120, "fontStyle",  "bold");
-    obj.edit120:setFontFamily("kalam");
-    obj.edit120:setTransparent(true);
+    obj.edit119 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit119:setParent(obj.rectangle5);
+    obj.edit119:setField("ARMADURA_TorsoB");
+    obj.edit119:setWidth(45);
+    obj.edit119:setHeight(30);
+    obj.edit119:setLeft(46);
+    obj.edit119:setName("edit119");
+    obj.edit119:setFontColor("#C0504D");
+    obj.edit119:setFontSize(18);
+    obj.edit119:setHorzTextAlign("center");
+    obj.edit119:setVertTextAlign("center");
+    lfm_setPropAsString(obj.edit119, "fontStyle",  "bold");
+    obj.edit119:setFontFamily("kalam");
+    obj.edit119:setTransparent(true);
 
     obj.label43 = GUI.fromHandle(_obj_newObject("label"));
     obj.label43:setParent(obj.rectangle3);
@@ -5346,30 +5333,30 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.rectangle6:setXradius(8);
     obj.rectangle6:setYradius(8);
 
-    obj.edit121 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit121:setParent(obj.rectangle6);
-    obj.edit121:setField("ARMADURA_TorsoCD");
-    obj.edit121:setWidth(40);
-    obj.edit121:setHeight(30);
-    obj.edit121:setName("edit121");
-    obj.edit121:setFontColor("#C0504D");
-    obj.edit121:setFontSize(18);
-    obj.edit121:setHorzTextAlign("center");
-    obj.edit121:setVertTextAlign("center");
-    lfm_setPropAsString(obj.edit121, "fontStyle",  "bold");
-    obj.edit121:setFontFamily("kalam");
-    obj.edit121:setType("number");
-    obj.edit121:setTransparent(true);
+    obj.edit120 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit120:setParent(obj.rectangle6);
+    obj.edit120:setField("ARMADURA_TorsoCD");
+    obj.edit120:setWidth(40);
+    obj.edit120:setHeight(30);
+    obj.edit120:setName("edit120");
+    obj.edit120:setFontColor("#C0504D");
+    obj.edit120:setFontSize(18);
+    obj.edit120:setHorzTextAlign("center");
+    obj.edit120:setVertTextAlign("center");
+    lfm_setPropAsString(obj.edit120, "fontStyle",  "bold");
+    obj.edit120:setFontFamily("kalam");
+    obj.edit120:setType("number");
+    obj.edit120:setTransparent(true);
 
-    obj.button72 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button72:setParent(obj.rectangle3);
-    obj.button72:setLeft(190);
-    obj.button72:setTop(85);
-    obj.button72:setWidth(14);
-    obj.button72:setHeight(14);
-    obj.button72:setText("R");
-    obj.button72:setHint("Desc... ");
-    obj.button72:setName("button72");
+    obj.button71 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button71:setParent(obj.rectangle3);
+    obj.button71:setLeft(190);
+    obj.button71:setTop(85);
+    obj.button71:setWidth(14);
+    obj.button71:setHeight(14);
+    obj.button71:setText("R");
+    obj.button71:setHint("Desc... ");
+    obj.button71:setName("button71");
 
     obj.image56 = GUI.fromHandle(_obj_newObject("image"));
     obj.image56:setParent(obj.rectangle3);
@@ -5413,19 +5400,19 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.rectangle7:setXradius(8);
     obj.rectangle7:setYradius(8);
 
-    obj.edit122 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit122:setParent(obj.rectangle7);
-    obj.edit122:setField("ARMADURA_CabecaA");
-    obj.edit122:setWidth(45);
-    obj.edit122:setHeight(30);
-    obj.edit122:setName("edit122");
-    obj.edit122:setFontColor("#C0504D");
-    obj.edit122:setFontSize(18);
-    obj.edit122:setHorzTextAlign("center");
-    obj.edit122:setVertTextAlign("center");
-    lfm_setPropAsString(obj.edit122, "fontStyle",  "bold");
-    obj.edit122:setFontFamily("kalam");
-    obj.edit122:setTransparent(true);
+    obj.edit121 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit121:setParent(obj.rectangle7);
+    obj.edit121:setField("ARMADURA_CabecaA");
+    obj.edit121:setWidth(45);
+    obj.edit121:setHeight(30);
+    obj.edit121:setName("edit121");
+    obj.edit121:setFontColor("#C0504D");
+    obj.edit121:setFontSize(18);
+    obj.edit121:setHorzTextAlign("center");
+    obj.edit121:setVertTextAlign("center");
+    lfm_setPropAsString(obj.edit121, "fontStyle",  "bold");
+    obj.edit121:setFontFamily("kalam");
+    obj.edit121:setTransparent(true);
 
     obj.label45 = GUI.fromHandle(_obj_newObject("label"));
     obj.label45:setParent(obj.rectangle7);
@@ -5444,20 +5431,20 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.label45:setWordWrap(false);
     obj.label45:setAutoSize(true);
 
-    obj.edit123 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit123:setParent(obj.rectangle7);
-    obj.edit123:setField("ARMADURA_CabecaB");
-    obj.edit123:setWidth(45);
-    obj.edit123:setLeft(46);
-    obj.edit123:setHeight(30);
-    obj.edit123:setName("edit123");
-    obj.edit123:setFontColor("#C0504D");
-    obj.edit123:setFontSize(18);
-    obj.edit123:setHorzTextAlign("center");
-    obj.edit123:setVertTextAlign("center");
-    lfm_setPropAsString(obj.edit123, "fontStyle",  "bold");
-    obj.edit123:setFontFamily("kalam");
-    obj.edit123:setTransparent(true);
+    obj.edit122 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit122:setParent(obj.rectangle7);
+    obj.edit122:setField("ARMADURA_CabecaB");
+    obj.edit122:setWidth(45);
+    obj.edit122:setLeft(46);
+    obj.edit122:setHeight(30);
+    obj.edit122:setName("edit122");
+    obj.edit122:setFontColor("#C0504D");
+    obj.edit122:setFontSize(18);
+    obj.edit122:setHorzTextAlign("center");
+    obj.edit122:setVertTextAlign("center");
+    lfm_setPropAsString(obj.edit122, "fontStyle",  "bold");
+    obj.edit122:setFontFamily("kalam");
+    obj.edit122:setTransparent(true);
 
     obj.label46 = GUI.fromHandle(_obj_newObject("label"));
     obj.label46:setParent(obj.rectangle3);
@@ -5490,30 +5477,30 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.rectangle8:setXradius(8);
     obj.rectangle8:setYradius(8);
 
-    obj.edit124 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit124:setParent(obj.rectangle8);
-    obj.edit124:setField("ARMADURA_CabecaCD");
-    obj.edit124:setWidth(40);
-    obj.edit124:setHeight(30);
-    obj.edit124:setName("edit124");
-    obj.edit124:setFontColor("#C0504D");
-    obj.edit124:setFontSize(18);
-    obj.edit124:setHorzTextAlign("center");
-    obj.edit124:setVertTextAlign("center");
-    lfm_setPropAsString(obj.edit124, "fontStyle",  "bold");
-    obj.edit124:setFontFamily("kalam");
-    obj.edit124:setType("number");
-    obj.edit124:setTransparent(true);
+    obj.edit123 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit123:setParent(obj.rectangle8);
+    obj.edit123:setField("ARMADURA_CabecaCD");
+    obj.edit123:setWidth(40);
+    obj.edit123:setHeight(30);
+    obj.edit123:setName("edit123");
+    obj.edit123:setFontColor("#C0504D");
+    obj.edit123:setFontSize(18);
+    obj.edit123:setHorzTextAlign("center");
+    obj.edit123:setVertTextAlign("center");
+    lfm_setPropAsString(obj.edit123, "fontStyle",  "bold");
+    obj.edit123:setFontFamily("kalam");
+    obj.edit123:setType("number");
+    obj.edit123:setTransparent(true);
 
-    obj.button73 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button73:setParent(obj.rectangle3);
-    obj.button73:setLeft(190);
-    obj.button73:setTop(125);
-    obj.button73:setWidth(14);
-    obj.button73:setHeight(14);
-    obj.button73:setText("R");
-    obj.button73:setHint("Desc... ");
-    obj.button73:setName("button73");
+    obj.button72 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button72:setParent(obj.rectangle3);
+    obj.button72:setLeft(190);
+    obj.button72:setTop(125);
+    obj.button72:setWidth(14);
+    obj.button72:setHeight(14);
+    obj.button72:setText("R");
+    obj.button72:setHint("Desc... ");
+    obj.button72:setName("button72");
 
     obj.image57 = GUI.fromHandle(_obj_newObject("image"));
     obj.image57:setParent(obj.rectangle3);
@@ -5526,20 +5513,20 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.image57:setSRC("images/Dado.jpg");
     obj.image57:setName("image57");
 
-    obj.edit125 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit125:setParent(obj.rectangle3);
-    obj.edit125:setText("Outro");
-    obj.edit125:setWidth(50);
-    obj.edit125:setHeight(30);
-    obj.edit125:setTop(160);
-    obj.edit125:setLeft(1);
-    obj.edit125:setTransparent(true);
-    obj.edit125:setName("edit125");
-    obj.edit125:setFontColor("#000000");
-    obj.edit125:setFontSize(15);
-    obj.edit125:setHorzTextAlign("center");
-    obj.edit125:setVertTextAlign("center");
-    obj.edit125:setFontFamily("kalam");
+    obj.edit124 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit124:setParent(obj.rectangle3);
+    obj.edit124:setText("Outro");
+    obj.edit124:setWidth(50);
+    obj.edit124:setHeight(30);
+    obj.edit124:setTop(160);
+    obj.edit124:setLeft(1);
+    obj.edit124:setTransparent(true);
+    obj.edit124:setName("edit124");
+    obj.edit124:setFontColor("#000000");
+    obj.edit124:setFontSize(15);
+    obj.edit124:setHorzTextAlign("center");
+    obj.edit124:setVertTextAlign("center");
+    obj.edit124:setFontFamily("kalam");
 
     obj.rectangle9 = GUI.fromHandle(_obj_newObject("rectangle"));
     obj.rectangle9:setParent(obj.rectangle3);
@@ -5555,19 +5542,19 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.rectangle9:setXradius(8);
     obj.rectangle9:setYradius(8);
 
-    obj.edit126 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit126:setParent(obj.rectangle9);
-    obj.edit126:setField("ARMADURA_OutroA");
-    obj.edit126:setWidth(45);
-    obj.edit126:setHeight(30);
-    obj.edit126:setName("edit126");
-    obj.edit126:setFontColor("#C0504D");
-    obj.edit126:setFontSize(18);
-    obj.edit126:setHorzTextAlign("center");
-    obj.edit126:setVertTextAlign("center");
-    lfm_setPropAsString(obj.edit126, "fontStyle",  "bold");
-    obj.edit126:setFontFamily("kalam");
-    obj.edit126:setTransparent(true);
+    obj.edit125 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit125:setParent(obj.rectangle9);
+    obj.edit125:setField("ARMADURA_OutroA");
+    obj.edit125:setWidth(45);
+    obj.edit125:setHeight(30);
+    obj.edit125:setName("edit125");
+    obj.edit125:setFontColor("#C0504D");
+    obj.edit125:setFontSize(18);
+    obj.edit125:setHorzTextAlign("center");
+    obj.edit125:setVertTextAlign("center");
+    lfm_setPropAsString(obj.edit125, "fontStyle",  "bold");
+    obj.edit125:setFontFamily("kalam");
+    obj.edit125:setTransparent(true);
 
     obj.label47 = GUI.fromHandle(_obj_newObject("label"));
     obj.label47:setParent(obj.rectangle9);
@@ -5586,20 +5573,20 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.label47:setWordWrap(false);
     obj.label47:setAutoSize(true);
 
-    obj.edit127 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit127:setParent(obj.rectangle9);
-    obj.edit127:setField("ARMADURA_OutroB");
-    obj.edit127:setWidth(45);
-    obj.edit127:setLeft(46);
-    obj.edit127:setHeight(30);
-    obj.edit127:setName("edit127");
-    obj.edit127:setFontColor("#C0504D");
-    obj.edit127:setFontSize(18);
-    obj.edit127:setHorzTextAlign("center");
-    obj.edit127:setVertTextAlign("center");
-    lfm_setPropAsString(obj.edit127, "fontStyle",  "bold");
-    obj.edit127:setFontFamily("kalam");
-    obj.edit127:setTransparent(true);
+    obj.edit126 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit126:setParent(obj.rectangle9);
+    obj.edit126:setField("ARMADURA_OutroB");
+    obj.edit126:setWidth(45);
+    obj.edit126:setLeft(46);
+    obj.edit126:setHeight(30);
+    obj.edit126:setName("edit126");
+    obj.edit126:setFontColor("#C0504D");
+    obj.edit126:setFontSize(18);
+    obj.edit126:setHorzTextAlign("center");
+    obj.edit126:setVertTextAlign("center");
+    lfm_setPropAsString(obj.edit126, "fontStyle",  "bold");
+    obj.edit126:setFontFamily("kalam");
+    obj.edit126:setTransparent(true);
 
     obj.label48 = GUI.fromHandle(_obj_newObject("label"));
     obj.label48:setParent(obj.rectangle3);
@@ -5632,30 +5619,30 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.rectangle10:setXradius(8);
     obj.rectangle10:setYradius(8);
 
-    obj.edit128 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit128:setParent(obj.rectangle10);
-    obj.edit128:setField("ARMADURA_OutroCD");
-    obj.edit128:setWidth(40);
-    obj.edit128:setHeight(30);
-    obj.edit128:setName("edit128");
-    obj.edit128:setFontColor("#C0504D");
-    obj.edit128:setFontSize(18);
-    obj.edit128:setHorzTextAlign("center");
-    obj.edit128:setVertTextAlign("center");
-    lfm_setPropAsString(obj.edit128, "fontStyle",  "bold");
-    obj.edit128:setFontFamily("kalam");
-    obj.edit128:setType("number");
-    obj.edit128:setTransparent(true);
+    obj.edit127 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit127:setParent(obj.rectangle10);
+    obj.edit127:setField("ARMADURA_OutroCD");
+    obj.edit127:setWidth(40);
+    obj.edit127:setHeight(30);
+    obj.edit127:setName("edit127");
+    obj.edit127:setFontColor("#C0504D");
+    obj.edit127:setFontSize(18);
+    obj.edit127:setHorzTextAlign("center");
+    obj.edit127:setVertTextAlign("center");
+    lfm_setPropAsString(obj.edit127, "fontStyle",  "bold");
+    obj.edit127:setFontFamily("kalam");
+    obj.edit127:setType("number");
+    obj.edit127:setTransparent(true);
 
-    obj.button74 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button74:setParent(obj.rectangle3);
-    obj.button74:setLeft(190);
-    obj.button74:setTop(165);
-    obj.button74:setWidth(14);
-    obj.button74:setHeight(14);
-    obj.button74:setText("R");
-    obj.button74:setHint("Desc... ");
-    obj.button74:setName("button74");
+    obj.button73 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button73:setParent(obj.rectangle3);
+    obj.button73:setLeft(190);
+    obj.button73:setTop(165);
+    obj.button73:setWidth(14);
+    obj.button73:setHeight(14);
+    obj.button73:setText("R");
+    obj.button73:setHint("Desc... ");
+    obj.button73:setName("button73");
 
     obj.image58 = GUI.fromHandle(_obj_newObject("image"));
     obj.image58:setParent(obj.rectangle3);
@@ -5699,20 +5686,20 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.rectangle11:setXradius(8);
     obj.rectangle11:setYradius(8);
 
-    obj.edit129 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit129:setParent(obj.rectangle11);
-    obj.edit129:setField("PenalidadeMovimento");
-    obj.edit129:setWidth(40);
-    obj.edit129:setHeight(30);
-    obj.edit129:setName("edit129");
-    obj.edit129:setFontColor("#C0504D");
-    obj.edit129:setFontSize(18);
-    obj.edit129:setHorzTextAlign("center");
-    obj.edit129:setVertTextAlign("center");
-    lfm_setPropAsString(obj.edit129, "fontStyle",  "bold");
-    obj.edit129:setFontFamily("kalam");
-    obj.edit129:setType("number");
-    obj.edit129:setTransparent(true);
+    obj.edit128 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit128:setParent(obj.rectangle11);
+    obj.edit128:setField("PenalidadeMovimento");
+    obj.edit128:setWidth(40);
+    obj.edit128:setHeight(30);
+    obj.edit128:setName("edit128");
+    obj.edit128:setFontColor("#C0504D");
+    obj.edit128:setFontSize(18);
+    obj.edit128:setHorzTextAlign("center");
+    obj.edit128:setVertTextAlign("center");
+    lfm_setPropAsString(obj.edit128, "fontStyle",  "bold");
+    obj.edit128:setFontFamily("kalam");
+    obj.edit128:setType("number");
+    obj.edit128:setTransparent(true);
 
     obj.label50 = GUI.fromHandle(_obj_newObject("label"));
     obj.label50:setParent(obj.rectangle3);
@@ -5745,20 +5732,20 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.rectangle12:setXradius(8);
     obj.rectangle12:setYradius(8);
 
-    obj.edit130 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit130:setParent(obj.rectangle12);
-    obj.edit130:setField("PenalidadedePercepcao");
-    obj.edit130:setWidth(40);
-    obj.edit130:setHeight(30);
-    obj.edit130:setName("edit130");
-    obj.edit130:setFontColor("#C0504D");
-    obj.edit130:setFontSize(18);
-    obj.edit130:setHorzTextAlign("center");
-    obj.edit130:setVertTextAlign("center");
-    lfm_setPropAsString(obj.edit130, "fontStyle",  "bold");
-    obj.edit130:setFontFamily("kalam");
-    obj.edit130:setType("number");
-    obj.edit130:setTransparent(true);
+    obj.edit129 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit129:setParent(obj.rectangle12);
+    obj.edit129:setField("PenalidadedePercepcao");
+    obj.edit129:setWidth(40);
+    obj.edit129:setHeight(30);
+    obj.edit129:setName("edit129");
+    obj.edit129:setFontColor("#C0504D");
+    obj.edit129:setFontSize(18);
+    obj.edit129:setHorzTextAlign("center");
+    obj.edit129:setVertTextAlign("center");
+    lfm_setPropAsString(obj.edit129, "fontStyle",  "bold");
+    obj.edit129:setFontFamily("kalam");
+    obj.edit129:setType("number");
+    obj.edit129:setTransparent(true);
 
     obj.label51 = GUI.fromHandle(_obj_newObject("label"));
     obj.label51:setParent(obj.rectangle2);
@@ -5777,13 +5764,13 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.label51:setWordWrap(false);
     obj.label51:setAutoSize(true);
 
-    obj.button75 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button75:setParent(obj.rectangle2);
-    obj.button75:setWidth(100);
-    obj.button75:setHeight(100);
-    obj.button75:setLeft(1200);
-    obj.button75:setTop(200);
-    obj.button75:setName("button75");
+    obj.button74 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button74:setParent(obj.rectangle2);
+    obj.button74:setWidth(100);
+    obj.button74:setHeight(100);
+    obj.button74:setLeft(1200);
+    obj.button74:setTop(200);
+    obj.button74:setName("button74");
 
     obj.image59 = GUI.fromHandle(_obj_newObject("image"));
     obj.image59:setParent(obj.rectangle2);
@@ -5844,14 +5831,14 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.label52:setWordWrap(false);
     obj.label52:setAutoSize(true);
 
-    obj.button76 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button76:setParent(obj.scrollBox5);
-    obj.button76:setLeft(10);
-    obj.button76:setTop(50);
-    obj.button76:setHeight(25);
-    obj.button76:setText("Novo Item");
-    obj.button76:setWidth(80);
-    obj.button76:setName("button76");
+    obj.button75 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button75:setParent(obj.scrollBox5);
+    obj.button75:setLeft(10);
+    obj.button75:setTop(50);
+    obj.button75:setHeight(25);
+    obj.button75:setText("Novo Item");
+    obj.button75:setWidth(80);
+    obj.button75:setName("button75");
 
     obj.image60 = GUI.fromHandle(_obj_newObject("image"));
     obj.image60:setParent(obj.scrollBox5);
@@ -5879,19 +5866,19 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.rectangle14:setXradius(8);
     obj.rectangle14:setYradius(8);
 
-    obj.edit131 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit131:setParent(obj.rectangle14);
-    obj.edit131:setField("PesoA");
-    obj.edit131:setWidth(45);
-    obj.edit131:setHeight(30);
-    obj.edit131:setFontColor("black");
-    obj.edit131:setName("edit131");
-    obj.edit131:setFontSize(18);
-    obj.edit131:setHorzTextAlign("center");
-    obj.edit131:setVertTextAlign("center");
-    lfm_setPropAsString(obj.edit131, "fontStyle",  "bold");
-    obj.edit131:setFontFamily("kalam");
-    obj.edit131:setTransparent(true);
+    obj.edit130 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit130:setParent(obj.rectangle14);
+    obj.edit130:setField("PesoA");
+    obj.edit130:setWidth(45);
+    obj.edit130:setHeight(30);
+    obj.edit130:setFontColor("black");
+    obj.edit130:setName("edit130");
+    obj.edit130:setFontSize(18);
+    obj.edit130:setHorzTextAlign("center");
+    obj.edit130:setVertTextAlign("center");
+    lfm_setPropAsString(obj.edit130, "fontStyle",  "bold");
+    obj.edit130:setFontFamily("kalam");
+    obj.edit130:setTransparent(true);
 
     obj.label53 = GUI.fromHandle(_obj_newObject("label"));
     obj.label53:setParent(obj.rectangle14);
@@ -5910,20 +5897,20 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.label53:setWordWrap(false);
     obj.label53:setAutoSize(true);
 
-    obj.edit132 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit132:setParent(obj.rectangle14);
-    obj.edit132:setField("PesoB");
-    obj.edit132:setWidth(45);
-    obj.edit132:setLeft(48);
-    obj.edit132:setHeight(30);
-    obj.edit132:setFontColor("black");
-    obj.edit132:setName("edit132");
-    obj.edit132:setFontSize(18);
-    obj.edit132:setHorzTextAlign("center");
-    obj.edit132:setVertTextAlign("center");
-    lfm_setPropAsString(obj.edit132, "fontStyle",  "bold");
-    obj.edit132:setFontFamily("kalam");
-    obj.edit132:setTransparent(true);
+    obj.edit131 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit131:setParent(obj.rectangle14);
+    obj.edit131:setField("PesoB");
+    obj.edit131:setWidth(45);
+    obj.edit131:setLeft(48);
+    obj.edit131:setHeight(30);
+    obj.edit131:setFontColor("black");
+    obj.edit131:setName("edit131");
+    obj.edit131:setFontSize(18);
+    obj.edit131:setHorzTextAlign("center");
+    obj.edit131:setVertTextAlign("center");
+    lfm_setPropAsString(obj.edit131, "fontStyle",  "bold");
+    obj.edit131:setFontFamily("kalam");
+    obj.edit131:setTransparent(true);
 
     obj.label54 = GUI.fromHandle(_obj_newObject("label"));
     obj.label54:setParent(obj.rectangle2);
@@ -5942,13 +5929,13 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.label54:setWordWrap(false);
     obj.label54:setAutoSize(true);
 
-    obj.button77 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button77:setParent(obj.rectangle2);
-    obj.button77:setWidth(100);
-    obj.button77:setHeight(100);
-    obj.button77:setLeft(1200);
-    obj.button77:setTop(590);
-    obj.button77:setName("button77");
+    obj.button76 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button76:setParent(obj.rectangle2);
+    obj.button76:setWidth(100);
+    obj.button76:setHeight(100);
+    obj.button76:setLeft(1200);
+    obj.button76:setTop(590);
+    obj.button76:setName("button76");
 
     obj.image61 = GUI.fromHandle(_obj_newObject("image"));
     obj.image61:setParent(obj.rectangle2);
@@ -6028,21 +6015,21 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.label55:setWordWrap(false);
     obj.label55:setAutoSize(true);
 
-    obj.edit133 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit133:setParent(obj.layout138);
-    obj.edit133:setField("Conducao_Nick");
-    obj.edit133:setWidth(250);
-    obj.edit133:setHorzTextAlign("leading");
-    obj.edit133:setFontSize(30);
-    lfm_setPropAsString(obj.edit133, "fontStyle",  "bold");
-    obj.edit133:setHeight(40);
-    obj.edit133:setTop(50);
-    obj.edit133:setLeft(190);
-    obj.edit133:setName("edit133");
-    obj.edit133:setFontColor("#C0504D");
-    obj.edit133:setVertTextAlign("center");
-    obj.edit133:setFontFamily("kalam");
-    obj.edit133:setTransparent(true);
+    obj.edit132 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit132:setParent(obj.layout138);
+    obj.edit132:setField("Conducao_Nick");
+    obj.edit132:setWidth(250);
+    obj.edit132:setHorzTextAlign("leading");
+    obj.edit132:setFontSize(30);
+    lfm_setPropAsString(obj.edit132, "fontStyle",  "bold");
+    obj.edit132:setHeight(40);
+    obj.edit132:setTop(50);
+    obj.edit132:setLeft(190);
+    obj.edit132:setName("edit132");
+    obj.edit132:setFontColor("#C0504D");
+    obj.edit132:setVertTextAlign("center");
+    obj.edit132:setFontFamily("kalam");
+    obj.edit132:setTransparent(true);
 
     obj.label56 = GUI.fromHandle(_obj_newObject("label"));
     obj.label56:setParent(obj.layout138);
@@ -6061,20 +6048,20 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.label56:setWordWrap(false);
     obj.label56:setAutoSize(true);
 
-    obj.edit134 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit134:setParent(obj.layout138);
-    obj.edit134:setField("Conducao_Manobra");
-    obj.edit134:setWidth(30);
-    obj.edit134:setHeight(30);
-    obj.edit134:setTop(110);
-    obj.edit134:setLeft(170);
-    obj.edit134:setName("edit134");
-    obj.edit134:setFontSize(20);
-    obj.edit134:setFontColor("#C0504D");
-    obj.edit134:setHorzTextAlign("center");
-    obj.edit134:setVertTextAlign("center");
-    obj.edit134:setFontFamily("kalam");
-    obj.edit134:setTransparent(true);
+    obj.edit133 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit133:setParent(obj.layout138);
+    obj.edit133:setField("Conducao_Manobra");
+    obj.edit133:setWidth(30);
+    obj.edit133:setHeight(30);
+    obj.edit133:setTop(110);
+    obj.edit133:setLeft(170);
+    obj.edit133:setName("edit133");
+    obj.edit133:setFontSize(20);
+    obj.edit133:setFontColor("#C0504D");
+    obj.edit133:setHorzTextAlign("center");
+    obj.edit133:setVertTextAlign("center");
+    obj.edit133:setFontFamily("kalam");
+    obj.edit133:setTransparent(true);
 
     obj.label57 = GUI.fromHandle(_obj_newObject("label"));
     obj.label57:setParent(obj.layout138);
@@ -6093,20 +6080,20 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.label57:setWordWrap(false);
     obj.label57:setAutoSize(true);
 
-    obj.edit135 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit135:setParent(obj.layout138);
-    obj.edit135:setField("Conducao_Blindagem");
-    obj.edit135:setWidth(30);
-    obj.edit135:setHeight(30);
-    obj.edit135:setTop(145);
-    obj.edit135:setLeft(170);
-    obj.edit135:setName("edit135");
-    obj.edit135:setFontSize(20);
-    obj.edit135:setFontColor("#C0504D");
-    obj.edit135:setHorzTextAlign("center");
-    obj.edit135:setVertTextAlign("center");
-    obj.edit135:setFontFamily("kalam");
-    obj.edit135:setTransparent(true);
+    obj.edit134 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit134:setParent(obj.layout138);
+    obj.edit134:setField("Conducao_Blindagem");
+    obj.edit134:setWidth(30);
+    obj.edit134:setHeight(30);
+    obj.edit134:setTop(145);
+    obj.edit134:setLeft(170);
+    obj.edit134:setName("edit134");
+    obj.edit134:setFontSize(20);
+    obj.edit134:setFontColor("#C0504D");
+    obj.edit134:setHorzTextAlign("center");
+    obj.edit134:setVertTextAlign("center");
+    obj.edit134:setFontFamily("kalam");
+    obj.edit134:setTransparent(true);
 
     obj.label58 = GUI.fromHandle(_obj_newObject("label"));
     obj.label58:setParent(obj.layout138);
@@ -6125,20 +6112,20 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.label58:setWordWrap(false);
     obj.label58:setAutoSize(true);
 
-    obj.edit136 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit136:setParent(obj.layout138);
-    obj.edit136:setField("Conducao_Capacidade");
-    obj.edit136:setWidth(30);
-    obj.edit136:setHeight(30);
-    obj.edit136:setTop(175);
-    obj.edit136:setLeft(170);
-    obj.edit136:setName("edit136");
-    obj.edit136:setFontSize(20);
-    obj.edit136:setFontColor("#C0504D");
-    obj.edit136:setHorzTextAlign("center");
-    obj.edit136:setVertTextAlign("center");
-    obj.edit136:setFontFamily("kalam");
-    obj.edit136:setTransparent(true);
+    obj.edit135 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit135:setParent(obj.layout138);
+    obj.edit135:setField("Conducao_Capacidade");
+    obj.edit135:setWidth(30);
+    obj.edit135:setHeight(30);
+    obj.edit135:setTop(175);
+    obj.edit135:setLeft(170);
+    obj.edit135:setName("edit135");
+    obj.edit135:setFontSize(20);
+    obj.edit135:setFontColor("#C0504D");
+    obj.edit135:setHorzTextAlign("center");
+    obj.edit135:setVertTextAlign("center");
+    obj.edit135:setFontFamily("kalam");
+    obj.edit135:setTransparent(true);
 
     obj.label59 = GUI.fromHandle(_obj_newObject("label"));
     obj.label59:setParent(obj.layout138);
@@ -6157,20 +6144,20 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.label59:setWordWrap(false);
     obj.label59:setAutoSize(true);
 
-    obj.edit137 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit137:setParent(obj.layout138);
-    obj.edit137:setField("Conducao_CD");
-    obj.edit137:setWidth(30);
-    obj.edit137:setHeight(30);
-    obj.edit137:setTop(207);
-    obj.edit137:setLeft(170);
-    obj.edit137:setName("edit137");
-    obj.edit137:setFontSize(20);
-    obj.edit137:setFontColor("#C0504D");
-    obj.edit137:setHorzTextAlign("center");
-    obj.edit137:setVertTextAlign("center");
-    obj.edit137:setFontFamily("kalam");
-    obj.edit137:setTransparent(true);
+    obj.edit136 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit136:setParent(obj.layout138);
+    obj.edit136:setField("Conducao_CD");
+    obj.edit136:setWidth(30);
+    obj.edit136:setHeight(30);
+    obj.edit136:setTop(207);
+    obj.edit136:setLeft(170);
+    obj.edit136:setName("edit136");
+    obj.edit136:setFontSize(20);
+    obj.edit136:setFontColor("#C0504D");
+    obj.edit136:setHorzTextAlign("center");
+    obj.edit136:setVertTextAlign("center");
+    obj.edit136:setFontFamily("kalam");
+    obj.edit136:setTransparent(true);
 
     obj.label60 = GUI.fromHandle(_obj_newObject("label"));
     obj.label60:setParent(obj.layout138);
@@ -6189,13 +6176,28 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.label60:setWordWrap(false);
     obj.label60:setAutoSize(true);
 
+    obj.edit137 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit137:setParent(obj.layout138);
+    obj.edit137:setField("Conducao_Integridade1");
+    obj.edit137:setWidth(30);
+    obj.edit137:setHeight(30);
+    obj.edit137:setTop(142);
+    obj.edit137:setLeft(240);
+    obj.edit137:setName("edit137");
+    obj.edit137:setFontSize(20);
+    obj.edit137:setFontColor("#C0504D");
+    obj.edit137:setHorzTextAlign("center");
+    obj.edit137:setVertTextAlign("center");
+    obj.edit137:setFontFamily("kalam");
+    obj.edit137:setTransparent(true);
+
     obj.edit138 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit138:setParent(obj.layout138);
-    obj.edit138:setField("Conducao_Integridade1");
+    obj.edit138:setField("Conducao_Integridade2");
     obj.edit138:setWidth(30);
     obj.edit138:setHeight(30);
     obj.edit138:setTop(142);
-    obj.edit138:setLeft(240);
+    obj.edit138:setLeft(275);
     obj.edit138:setName("edit138");
     obj.edit138:setFontSize(20);
     obj.edit138:setFontColor("#C0504D");
@@ -6206,11 +6208,11 @@ local function constructNew_frmDZ_Ficha1_svg()
 
     obj.edit139 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit139:setParent(obj.layout138);
-    obj.edit139:setField("Conducao_Integridade2");
+    obj.edit139:setField("Conducao_Integridade3");
     obj.edit139:setWidth(30);
     obj.edit139:setHeight(30);
     obj.edit139:setTop(142);
-    obj.edit139:setLeft(275);
+    obj.edit139:setLeft(310);
     obj.edit139:setName("edit139");
     obj.edit139:setFontSize(20);
     obj.edit139:setFontColor("#C0504D");
@@ -6218,21 +6220,6 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.edit139:setVertTextAlign("center");
     obj.edit139:setFontFamily("kalam");
     obj.edit139:setTransparent(true);
-
-    obj.edit140 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit140:setParent(obj.layout138);
-    obj.edit140:setField("Conducao_Integridade3");
-    obj.edit140:setWidth(30);
-    obj.edit140:setHeight(30);
-    obj.edit140:setTop(142);
-    obj.edit140:setLeft(310);
-    obj.edit140:setName("edit140");
-    obj.edit140:setFontSize(20);
-    obj.edit140:setFontColor("#C0504D");
-    obj.edit140:setHorzTextAlign("center");
-    obj.edit140:setVertTextAlign("center");
-    obj.edit140:setFontFamily("kalam");
-    obj.edit140:setTransparent(true);
 
     obj.label61 = GUI.fromHandle(_obj_newObject("label"));
     obj.label61:setParent(obj.layout138);
@@ -6251,20 +6238,20 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.label61:setWordWrap(false);
     obj.label61:setAutoSize(true);
 
-    obj.edit141 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit141:setParent(obj.layout138);
-    obj.edit141:setField("Conducao_Gasolina1");
-    obj.edit141:setWidth(30);
-    obj.edit141:setHeight(30);
-    obj.edit141:setTop(142);
-    obj.edit141:setLeft(370);
-    obj.edit141:setName("edit141");
-    obj.edit141:setFontSize(20);
-    obj.edit141:setFontColor("#C0504D");
-    obj.edit141:setHorzTextAlign("center");
-    obj.edit141:setVertTextAlign("center");
-    obj.edit141:setFontFamily("kalam");
-    obj.edit141:setTransparent(true);
+    obj.edit140 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit140:setParent(obj.layout138);
+    obj.edit140:setField("Conducao_Gasolina1");
+    obj.edit140:setWidth(30);
+    obj.edit140:setHeight(30);
+    obj.edit140:setTop(142);
+    obj.edit140:setLeft(370);
+    obj.edit140:setName("edit140");
+    obj.edit140:setFontSize(20);
+    obj.edit140:setFontColor("#C0504D");
+    obj.edit140:setHorzTextAlign("center");
+    obj.edit140:setVertTextAlign("center");
+    obj.edit140:setFontFamily("kalam");
+    obj.edit140:setTransparent(true);
 
     obj.label62 = GUI.fromHandle(_obj_newObject("label"));
     obj.label62:setParent(obj.layout138);
@@ -6283,20 +6270,20 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.label62:setWordWrap(false);
     obj.label62:setAutoSize(true);
 
-    obj.edit142 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit142:setParent(obj.layout138);
-    obj.edit142:setField("Conducao_Gasolina2");
-    obj.edit142:setWidth(30);
-    obj.edit142:setHeight(30);
-    obj.edit142:setTop(142);
-    obj.edit142:setLeft(425);
-    obj.edit142:setName("edit142");
-    obj.edit142:setFontSize(20);
-    obj.edit142:setFontColor("#C0504D");
-    obj.edit142:setHorzTextAlign("center");
-    obj.edit142:setVertTextAlign("center");
-    obj.edit142:setFontFamily("kalam");
-    obj.edit142:setTransparent(true);
+    obj.edit141 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit141:setParent(obj.layout138);
+    obj.edit141:setField("Conducao_Gasolina2");
+    obj.edit141:setWidth(30);
+    obj.edit141:setHeight(30);
+    obj.edit141:setTop(142);
+    obj.edit141:setLeft(425);
+    obj.edit141:setName("edit141");
+    obj.edit141:setFontSize(20);
+    obj.edit141:setFontColor("#C0504D");
+    obj.edit141:setHorzTextAlign("center");
+    obj.edit141:setVertTextAlign("center");
+    obj.edit141:setFontFamily("kalam");
+    obj.edit141:setTransparent(true);
 
     obj.label63 = GUI.fromHandle(_obj_newObject("label"));
     obj.label63:setParent(obj.layout138);
@@ -6436,21 +6423,21 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.label66:setWordWrap(false);
     obj.label66:setAutoSize(true);
 
-    obj.edit143 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit143:setParent(obj.layout141);
-    obj.edit143:setField("Conducao2_Nick");
-    obj.edit143:setWidth(250);
-    lfm_setPropAsString(obj.edit143, "fontStyle",  "bold");
-    obj.edit143:setFontSize(30);
-    obj.edit143:setHorzTextAlign("leading");
-    obj.edit143:setHeight(40);
-    obj.edit143:setTop(50);
-    obj.edit143:setLeft(190);
-    obj.edit143:setName("edit143");
-    obj.edit143:setFontColor("#C0504D");
-    obj.edit143:setVertTextAlign("center");
-    obj.edit143:setFontFamily("kalam");
-    obj.edit143:setTransparent(true);
+    obj.edit142 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit142:setParent(obj.layout141);
+    obj.edit142:setField("Conducao2_Nick");
+    obj.edit142:setWidth(250);
+    lfm_setPropAsString(obj.edit142, "fontStyle",  "bold");
+    obj.edit142:setFontSize(30);
+    obj.edit142:setHorzTextAlign("leading");
+    obj.edit142:setHeight(40);
+    obj.edit142:setTop(50);
+    obj.edit142:setLeft(190);
+    obj.edit142:setName("edit142");
+    obj.edit142:setFontColor("#C0504D");
+    obj.edit142:setVertTextAlign("center");
+    obj.edit142:setFontFamily("kalam");
+    obj.edit142:setTransparent(true);
 
     obj.label67 = GUI.fromHandle(_obj_newObject("label"));
     obj.label67:setParent(obj.layout141);
@@ -6469,20 +6456,20 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.label67:setWordWrap(false);
     obj.label67:setAutoSize(true);
 
-    obj.edit144 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit144:setParent(obj.layout141);
-    obj.edit144:setField("Conducao2_Manobra");
-    obj.edit144:setWidth(30);
-    obj.edit144:setHeight(30);
-    obj.edit144:setTop(110);
-    obj.edit144:setLeft(170);
-    obj.edit144:setName("edit144");
-    obj.edit144:setFontSize(20);
-    obj.edit144:setFontColor("#C0504D");
-    obj.edit144:setHorzTextAlign("center");
-    obj.edit144:setVertTextAlign("center");
-    obj.edit144:setFontFamily("kalam");
-    obj.edit144:setTransparent(true);
+    obj.edit143 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit143:setParent(obj.layout141);
+    obj.edit143:setField("Conducao2_Manobra");
+    obj.edit143:setWidth(30);
+    obj.edit143:setHeight(30);
+    obj.edit143:setTop(110);
+    obj.edit143:setLeft(170);
+    obj.edit143:setName("edit143");
+    obj.edit143:setFontSize(20);
+    obj.edit143:setFontColor("#C0504D");
+    obj.edit143:setHorzTextAlign("center");
+    obj.edit143:setVertTextAlign("center");
+    obj.edit143:setFontFamily("kalam");
+    obj.edit143:setTransparent(true);
 
     obj.label68 = GUI.fromHandle(_obj_newObject("label"));
     obj.label68:setParent(obj.layout141);
@@ -6501,20 +6488,20 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.label68:setWordWrap(false);
     obj.label68:setAutoSize(true);
 
-    obj.edit145 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit145:setParent(obj.layout141);
-    obj.edit145:setField("Conducao2_Blindagem");
-    obj.edit145:setWidth(30);
-    obj.edit145:setHeight(30);
-    obj.edit145:setTop(145);
-    obj.edit145:setLeft(170);
-    obj.edit145:setName("edit145");
-    obj.edit145:setFontSize(20);
-    obj.edit145:setFontColor("#C0504D");
-    obj.edit145:setHorzTextAlign("center");
-    obj.edit145:setVertTextAlign("center");
-    obj.edit145:setFontFamily("kalam");
-    obj.edit145:setTransparent(true);
+    obj.edit144 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit144:setParent(obj.layout141);
+    obj.edit144:setField("Conducao2_Blindagem");
+    obj.edit144:setWidth(30);
+    obj.edit144:setHeight(30);
+    obj.edit144:setTop(145);
+    obj.edit144:setLeft(170);
+    obj.edit144:setName("edit144");
+    obj.edit144:setFontSize(20);
+    obj.edit144:setFontColor("#C0504D");
+    obj.edit144:setHorzTextAlign("center");
+    obj.edit144:setVertTextAlign("center");
+    obj.edit144:setFontFamily("kalam");
+    obj.edit144:setTransparent(true);
 
     obj.label69 = GUI.fromHandle(_obj_newObject("label"));
     obj.label69:setParent(obj.layout141);
@@ -6533,20 +6520,20 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.label69:setWordWrap(false);
     obj.label69:setAutoSize(true);
 
-    obj.edit146 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit146:setParent(obj.layout141);
-    obj.edit146:setField("Conducao2_Capacidade");
-    obj.edit146:setWidth(30);
-    obj.edit146:setHeight(30);
-    obj.edit146:setTop(175);
-    obj.edit146:setLeft(170);
-    obj.edit146:setName("edit146");
-    obj.edit146:setFontSize(20);
-    obj.edit146:setFontColor("#C0504D");
-    obj.edit146:setHorzTextAlign("center");
-    obj.edit146:setVertTextAlign("center");
-    obj.edit146:setFontFamily("kalam");
-    obj.edit146:setTransparent(true);
+    obj.edit145 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit145:setParent(obj.layout141);
+    obj.edit145:setField("Conducao2_Capacidade");
+    obj.edit145:setWidth(30);
+    obj.edit145:setHeight(30);
+    obj.edit145:setTop(175);
+    obj.edit145:setLeft(170);
+    obj.edit145:setName("edit145");
+    obj.edit145:setFontSize(20);
+    obj.edit145:setFontColor("#C0504D");
+    obj.edit145:setHorzTextAlign("center");
+    obj.edit145:setVertTextAlign("center");
+    obj.edit145:setFontFamily("kalam");
+    obj.edit145:setTransparent(true);
 
     obj.label70 = GUI.fromHandle(_obj_newObject("label"));
     obj.label70:setParent(obj.layout141);
@@ -6565,20 +6552,20 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.label70:setWordWrap(false);
     obj.label70:setAutoSize(true);
 
-    obj.edit147 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit147:setParent(obj.layout141);
-    obj.edit147:setField("Conducao2_CD");
-    obj.edit147:setWidth(30);
-    obj.edit147:setHeight(30);
-    obj.edit147:setTop(207);
-    obj.edit147:setLeft(170);
-    obj.edit147:setName("edit147");
-    obj.edit147:setFontSize(20);
-    obj.edit147:setFontColor("#C0504D");
-    obj.edit147:setHorzTextAlign("center");
-    obj.edit147:setVertTextAlign("center");
-    obj.edit147:setFontFamily("kalam");
-    obj.edit147:setTransparent(true);
+    obj.edit146 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit146:setParent(obj.layout141);
+    obj.edit146:setField("Conducao2_CD");
+    obj.edit146:setWidth(30);
+    obj.edit146:setHeight(30);
+    obj.edit146:setTop(207);
+    obj.edit146:setLeft(170);
+    obj.edit146:setName("edit146");
+    obj.edit146:setFontSize(20);
+    obj.edit146:setFontColor("#C0504D");
+    obj.edit146:setHorzTextAlign("center");
+    obj.edit146:setVertTextAlign("center");
+    obj.edit146:setFontFamily("kalam");
+    obj.edit146:setTransparent(true);
 
     obj.label71 = GUI.fromHandle(_obj_newObject("label"));
     obj.label71:setParent(obj.layout141);
@@ -6597,13 +6584,28 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.label71:setWordWrap(false);
     obj.label71:setAutoSize(true);
 
+    obj.edit147 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit147:setParent(obj.layout141);
+    obj.edit147:setField("Conducao2_Integridade1");
+    obj.edit147:setWidth(30);
+    obj.edit147:setHeight(30);
+    obj.edit147:setTop(142);
+    obj.edit147:setLeft(240);
+    obj.edit147:setName("edit147");
+    obj.edit147:setFontSize(20);
+    obj.edit147:setFontColor("#C0504D");
+    obj.edit147:setHorzTextAlign("center");
+    obj.edit147:setVertTextAlign("center");
+    obj.edit147:setFontFamily("kalam");
+    obj.edit147:setTransparent(true);
+
     obj.edit148 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit148:setParent(obj.layout141);
-    obj.edit148:setField("Conducao2_Integridade1");
+    obj.edit148:setField("Conducao2_Integridade2");
     obj.edit148:setWidth(30);
     obj.edit148:setHeight(30);
     obj.edit148:setTop(142);
-    obj.edit148:setLeft(240);
+    obj.edit148:setLeft(275);
     obj.edit148:setName("edit148");
     obj.edit148:setFontSize(20);
     obj.edit148:setFontColor("#C0504D");
@@ -6614,11 +6616,11 @@ local function constructNew_frmDZ_Ficha1_svg()
 
     obj.edit149 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit149:setParent(obj.layout141);
-    obj.edit149:setField("Conducao2_Integridade2");
+    obj.edit149:setField("Conducao2_Integridade3");
     obj.edit149:setWidth(30);
     obj.edit149:setHeight(30);
     obj.edit149:setTop(142);
-    obj.edit149:setLeft(275);
+    obj.edit149:setLeft(310);
     obj.edit149:setName("edit149");
     obj.edit149:setFontSize(20);
     obj.edit149:setFontColor("#C0504D");
@@ -6626,21 +6628,6 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.edit149:setVertTextAlign("center");
     obj.edit149:setFontFamily("kalam");
     obj.edit149:setTransparent(true);
-
-    obj.edit150 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit150:setParent(obj.layout141);
-    obj.edit150:setField("Conducao2_Integridade3");
-    obj.edit150:setWidth(30);
-    obj.edit150:setHeight(30);
-    obj.edit150:setTop(142);
-    obj.edit150:setLeft(310);
-    obj.edit150:setName("edit150");
-    obj.edit150:setFontSize(20);
-    obj.edit150:setFontColor("#C0504D");
-    obj.edit150:setHorzTextAlign("center");
-    obj.edit150:setVertTextAlign("center");
-    obj.edit150:setFontFamily("kalam");
-    obj.edit150:setTransparent(true);
 
     obj.label72 = GUI.fromHandle(_obj_newObject("label"));
     obj.label72:setParent(obj.layout141);
@@ -6659,20 +6646,20 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.label72:setWordWrap(false);
     obj.label72:setAutoSize(true);
 
-    obj.edit151 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit151:setParent(obj.layout141);
-    obj.edit151:setField("Conducao2_Gasolina1");
-    obj.edit151:setWidth(30);
-    obj.edit151:setHeight(30);
-    obj.edit151:setTop(142);
-    obj.edit151:setLeft(370);
-    obj.edit151:setName("edit151");
-    obj.edit151:setFontSize(20);
-    obj.edit151:setFontColor("#C0504D");
-    obj.edit151:setHorzTextAlign("center");
-    obj.edit151:setVertTextAlign("center");
-    obj.edit151:setFontFamily("kalam");
-    obj.edit151:setTransparent(true);
+    obj.edit150 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit150:setParent(obj.layout141);
+    obj.edit150:setField("Conducao2_Gasolina1");
+    obj.edit150:setWidth(30);
+    obj.edit150:setHeight(30);
+    obj.edit150:setTop(142);
+    obj.edit150:setLeft(370);
+    obj.edit150:setName("edit150");
+    obj.edit150:setFontSize(20);
+    obj.edit150:setFontColor("#C0504D");
+    obj.edit150:setHorzTextAlign("center");
+    obj.edit150:setVertTextAlign("center");
+    obj.edit150:setFontFamily("kalam");
+    obj.edit150:setTransparent(true);
 
     obj.label73 = GUI.fromHandle(_obj_newObject("label"));
     obj.label73:setParent(obj.layout141);
@@ -6691,20 +6678,20 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.label73:setWordWrap(false);
     obj.label73:setAutoSize(true);
 
-    obj.edit152 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit152:setParent(obj.layout141);
-    obj.edit152:setField("Conducao2_Gasolina2");
-    obj.edit152:setWidth(30);
-    obj.edit152:setHeight(30);
-    obj.edit152:setTop(142);
-    obj.edit152:setLeft(425);
-    obj.edit152:setName("edit152");
-    obj.edit152:setFontSize(20);
-    obj.edit152:setFontColor("#C0504D");
-    obj.edit152:setHorzTextAlign("center");
-    obj.edit152:setVertTextAlign("center");
-    obj.edit152:setFontFamily("kalam");
-    obj.edit152:setTransparent(true);
+    obj.edit151 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit151:setParent(obj.layout141);
+    obj.edit151:setField("Conducao2_Gasolina2");
+    obj.edit151:setWidth(30);
+    obj.edit151:setHeight(30);
+    obj.edit151:setTop(142);
+    obj.edit151:setLeft(425);
+    obj.edit151:setName("edit151");
+    obj.edit151:setFontSize(20);
+    obj.edit151:setFontColor("#C0504D");
+    obj.edit151:setHorzTextAlign("center");
+    obj.edit151:setVertTextAlign("center");
+    obj.edit151:setFontFamily("kalam");
+    obj.edit151:setTransparent(true);
 
     obj.label74 = GUI.fromHandle(_obj_newObject("label"));
     obj.label74:setParent(obj.layout141);
@@ -6825,13 +6812,13 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.label77:setWordWrap(false);
     obj.label77:setAutoSize(true);
 
-    obj.button78 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button78:setParent(obj.rectangle2);
-    obj.button78:setWidth(100);
-    obj.button78:setHeight(100);
-    obj.button78:setLeft(1200);
-    obj.button78:setTop(460);
-    obj.button78:setName("button78");
+    obj.button77 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button77:setParent(obj.rectangle2);
+    obj.button77:setWidth(100);
+    obj.button77:setHeight(100);
+    obj.button77:setLeft(1200);
+    obj.button77:setTop(460);
+    obj.button77:setName("button77");
 
     obj.image66 = GUI.fromHandle(_obj_newObject("image"));
     obj.image66:setParent(obj.rectangle2);
@@ -6889,17 +6876,33 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.image67:setSRC("images/FichaPET.png");
     obj.image67:setName("image67");
 
+    obj.edit152 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit152:setParent(obj.layout144);
+    obj.edit152:setField("Pet_Nick");
+    obj.edit152:setWidth(500);
+    obj.edit152:setHeight(60);
+    obj.edit152:setTop(150);
+    obj.edit152:setLeft(100);
+    obj.edit152:setFontSize(30);
+    obj.edit152:setHorzTextAlign("leading");
+    obj.edit152:setName("edit152");
+    obj.edit152:setFontColor("#C0504D");
+    obj.edit152:setVertTextAlign("center");
+    lfm_setPropAsString(obj.edit152, "fontStyle",  "bold");
+    obj.edit152:setFontFamily("kalam");
+    obj.edit152:setTransparent(true);
+
     obj.edit153 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit153:setParent(obj.layout144);
-    obj.edit153:setField("Pet_Nick");
-    obj.edit153:setWidth(500);
-    obj.edit153:setHeight(60);
-    obj.edit153:setTop(150);
-    obj.edit153:setLeft(100);
-    obj.edit153:setFontSize(30);
-    obj.edit153:setHorzTextAlign("leading");
+    obj.edit153:setField("Pet_Fisico");
+    obj.edit153:setWidth(40);
+    obj.edit153:setHeight(30);
+    obj.edit153:setTop(208);
+    obj.edit153:setLeft(180);
     obj.edit153:setName("edit153");
     obj.edit153:setFontColor("#C0504D");
+    obj.edit153:setFontSize(15);
+    obj.edit153:setHorzTextAlign("center");
     obj.edit153:setVertTextAlign("center");
     lfm_setPropAsString(obj.edit153, "fontStyle",  "bold");
     obj.edit153:setFontFamily("kalam");
@@ -6907,10 +6910,10 @@ local function constructNew_frmDZ_Ficha1_svg()
 
     obj.edit154 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit154:setParent(obj.layout144);
-    obj.edit154:setField("Pet_Fisico");
+    obj.edit154:setField("Pet_Social");
     obj.edit154:setWidth(40);
     obj.edit154:setHeight(30);
-    obj.edit154:setTop(208);
+    obj.edit154:setTop(240);
     obj.edit154:setLeft(180);
     obj.edit154:setName("edit154");
     obj.edit154:setFontColor("#C0504D");
@@ -6923,10 +6926,10 @@ local function constructNew_frmDZ_Ficha1_svg()
 
     obj.edit155 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit155:setParent(obj.layout144);
-    obj.edit155:setField("Pet_Social");
+    obj.edit155:setField("Pet_Inteligencia");
     obj.edit155:setWidth(40);
     obj.edit155:setHeight(30);
-    obj.edit155:setTop(240);
+    obj.edit155:setTop(270);
     obj.edit155:setLeft(180);
     obj.edit155:setName("edit155");
     obj.edit155:setFontColor("#C0504D");
@@ -6939,10 +6942,10 @@ local function constructNew_frmDZ_Ficha1_svg()
 
     obj.edit156 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit156:setParent(obj.layout144);
-    obj.edit156:setField("Pet_Inteligencia");
+    obj.edit156:setField("Pet_Percep");
     obj.edit156:setWidth(40);
     obj.edit156:setHeight(30);
-    obj.edit156:setTop(270);
+    obj.edit156:setTop(310);
     obj.edit156:setLeft(180);
     obj.edit156:setName("edit156");
     obj.edit156:setFontColor("#C0504D");
@@ -6955,10 +6958,10 @@ local function constructNew_frmDZ_Ficha1_svg()
 
     obj.edit157 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit157:setParent(obj.layout144);
-    obj.edit157:setField("Pet_Percep");
+    obj.edit157:setField("Pet_Espiritual");
     obj.edit157:setWidth(40);
     obj.edit157:setHeight(30);
-    obj.edit157:setTop(310);
+    obj.edit157:setTop(340);
     obj.edit157:setLeft(180);
     obj.edit157:setName("edit157");
     obj.edit157:setFontColor("#C0504D");
@@ -6971,11 +6974,11 @@ local function constructNew_frmDZ_Ficha1_svg()
 
     obj.edit158 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit158:setParent(obj.layout144);
-    obj.edit158:setField("Pet_Espiritual");
+    obj.edit158:setField("Pet_Per1");
     obj.edit158:setWidth(40);
     obj.edit158:setHeight(30);
-    obj.edit158:setTop(340);
-    obj.edit158:setLeft(180);
+    obj.edit158:setTop(208);
+    obj.edit158:setLeft(325);
     obj.edit158:setName("edit158");
     obj.edit158:setFontColor("#C0504D");
     obj.edit158:setFontSize(15);
@@ -6987,10 +6990,10 @@ local function constructNew_frmDZ_Ficha1_svg()
 
     obj.edit159 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit159:setParent(obj.layout144);
-    obj.edit159:setField("Pet_Per1");
+    obj.edit159:setField("Pet_Per2");
     obj.edit159:setWidth(40);
     obj.edit159:setHeight(30);
-    obj.edit159:setTop(208);
+    obj.edit159:setTop(240);
     obj.edit159:setLeft(325);
     obj.edit159:setName("edit159");
     obj.edit159:setFontColor("#C0504D");
@@ -7003,10 +7006,10 @@ local function constructNew_frmDZ_Ficha1_svg()
 
     obj.edit160 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit160:setParent(obj.layout144);
-    obj.edit160:setField("Pet_Per2");
+    obj.edit160:setField("Pet_Per3");
     obj.edit160:setWidth(40);
     obj.edit160:setHeight(30);
-    obj.edit160:setTop(240);
+    obj.edit160:setTop(270);
     obj.edit160:setLeft(325);
     obj.edit160:setName("edit160");
     obj.edit160:setFontColor("#C0504D");
@@ -7019,10 +7022,10 @@ local function constructNew_frmDZ_Ficha1_svg()
 
     obj.edit161 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit161:setParent(obj.layout144);
-    obj.edit161:setField("Pet_Per3");
+    obj.edit161:setField("Pet_Per4");
     obj.edit161:setWidth(40);
     obj.edit161:setHeight(30);
-    obj.edit161:setTop(270);
+    obj.edit161:setTop(300);
     obj.edit161:setLeft(325);
     obj.edit161:setName("edit161");
     obj.edit161:setFontColor("#C0504D");
@@ -7035,10 +7038,10 @@ local function constructNew_frmDZ_Ficha1_svg()
 
     obj.edit162 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit162:setParent(obj.layout144);
-    obj.edit162:setField("Pet_Per4");
+    obj.edit162:setField("Pet_Per5");
     obj.edit162:setWidth(40);
     obj.edit162:setHeight(30);
-    obj.edit162:setTop(300);
+    obj.edit162:setTop(330);
     obj.edit162:setLeft(325);
     obj.edit162:setName("edit162");
     obj.edit162:setFontColor("#C0504D");
@@ -7051,10 +7054,10 @@ local function constructNew_frmDZ_Ficha1_svg()
 
     obj.edit163 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit163:setParent(obj.layout144);
-    obj.edit163:setField("Pet_Per5");
+    obj.edit163:setField("Pet_Per6");
     obj.edit163:setWidth(40);
     obj.edit163:setHeight(30);
-    obj.edit163:setTop(330);
+    obj.edit163:setTop(360);
     obj.edit163:setLeft(325);
     obj.edit163:setName("edit163");
     obj.edit163:setFontColor("#C0504D");
@@ -7067,10 +7070,10 @@ local function constructNew_frmDZ_Ficha1_svg()
 
     obj.edit164 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit164:setParent(obj.layout144);
-    obj.edit164:setField("Pet_Per6");
+    obj.edit164:setField("Pet_Per7");
     obj.edit164:setWidth(40);
     obj.edit164:setHeight(30);
-    obj.edit164:setTop(360);
+    obj.edit164:setTop(400);
     obj.edit164:setLeft(325);
     obj.edit164:setName("edit164");
     obj.edit164:setFontColor("#C0504D");
@@ -7083,11 +7086,11 @@ local function constructNew_frmDZ_Ficha1_svg()
 
     obj.edit165 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit165:setParent(obj.layout144);
-    obj.edit165:setField("Pet_Per7");
+    obj.edit165:setField("Pet_Saude1");
     obj.edit165:setWidth(40);
     obj.edit165:setHeight(30);
-    obj.edit165:setTop(400);
-    obj.edit165:setLeft(325);
+    obj.edit165:setTop(256);
+    obj.edit165:setLeft(385);
     obj.edit165:setName("edit165");
     obj.edit165:setFontColor("#C0504D");
     obj.edit165:setFontSize(15);
@@ -7099,11 +7102,11 @@ local function constructNew_frmDZ_Ficha1_svg()
 
     obj.edit166 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit166:setParent(obj.layout144);
-    obj.edit166:setField("Pet_Saude1");
+    obj.edit166:setField("Pet_Saude2");
     obj.edit166:setWidth(40);
     obj.edit166:setHeight(30);
     obj.edit166:setTop(256);
-    obj.edit166:setLeft(385);
+    obj.edit166:setLeft(422);
     obj.edit166:setName("edit166");
     obj.edit166:setFontColor("#C0504D");
     obj.edit166:setFontSize(15);
@@ -7115,11 +7118,11 @@ local function constructNew_frmDZ_Ficha1_svg()
 
     obj.edit167 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit167:setParent(obj.layout144);
-    obj.edit167:setField("Pet_Saude2");
+    obj.edit167:setField("Pet_Saude3");
     obj.edit167:setWidth(40);
     obj.edit167:setHeight(30);
     obj.edit167:setTop(256);
-    obj.edit167:setLeft(422);
+    obj.edit167:setLeft(452);
     obj.edit167:setName("edit167");
     obj.edit167:setFontColor("#C0504D");
     obj.edit167:setFontSize(15);
@@ -7131,11 +7134,11 @@ local function constructNew_frmDZ_Ficha1_svg()
 
     obj.edit168 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit168:setParent(obj.layout144);
-    obj.edit168:setField("Pet_Saude3");
+    obj.edit168:setField("Pet_Iniciativa");
     obj.edit168:setWidth(40);
     obj.edit168:setHeight(30);
-    obj.edit168:setTop(256);
-    obj.edit168:setLeft(452);
+    obj.edit168:setTop(325);
+    obj.edit168:setLeft(470);
     obj.edit168:setName("edit168");
     obj.edit168:setFontColor("#C0504D");
     obj.edit168:setFontSize(15);
@@ -7147,14 +7150,14 @@ local function constructNew_frmDZ_Ficha1_svg()
 
     obj.edit169 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit169:setParent(obj.layout144);
-    obj.edit169:setField("Pet_Iniciativa");
-    obj.edit169:setWidth(40);
+    obj.edit169:setField("Pet_AtkNick");
+    obj.edit169:setWidth(200);
     obj.edit169:setHeight(30);
-    obj.edit169:setTop(325);
-    obj.edit169:setLeft(470);
+    obj.edit169:setTop(430);
+    obj.edit169:setLeft(100);
+    obj.edit169:setFontSize(20);
     obj.edit169:setName("edit169");
-    obj.edit169:setFontColor("#C0504D");
-    obj.edit169:setFontSize(15);
+    obj.edit169:setFontColor("black");
     obj.edit169:setHorzTextAlign("center");
     obj.edit169:setVertTextAlign("center");
     lfm_setPropAsString(obj.edit169, "fontStyle",  "bold");
@@ -7163,15 +7166,15 @@ local function constructNew_frmDZ_Ficha1_svg()
 
     obj.edit170 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit170:setParent(obj.layout144);
-    obj.edit170:setField("Pet_AtkNick");
+    obj.edit170:setField("Pet_AtkGolpe");
     obj.edit170:setWidth(200);
     obj.edit170:setHeight(30);
-    obj.edit170:setTop(430);
-    obj.edit170:setLeft(100);
-    obj.edit170:setFontSize(20);
+    obj.edit170:setTop(458);
+    obj.edit170:setLeft(200);
+    obj.edit170:setFontColor("gray");
+    obj.edit170:setHorzTextAlign("leading");
     obj.edit170:setName("edit170");
-    obj.edit170:setFontColor("black");
-    obj.edit170:setHorzTextAlign("center");
+    obj.edit170:setFontSize(15);
     obj.edit170:setVertTextAlign("center");
     lfm_setPropAsString(obj.edit170, "fontStyle",  "bold");
     obj.edit170:setFontFamily("kalam");
@@ -7179,15 +7182,15 @@ local function constructNew_frmDZ_Ficha1_svg()
 
     obj.edit171 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit171:setParent(obj.layout144);
-    obj.edit171:setField("Pet_AtkGolpe");
-    obj.edit171:setWidth(200);
+    obj.edit171:setField("Pet_AtkDano");
+    obj.edit171:setWidth(40);
     obj.edit171:setHeight(30);
-    obj.edit171:setTop(458);
-    obj.edit171:setLeft(200);
+    obj.edit171:setTop(478);
+    obj.edit171:setLeft(195);
     obj.edit171:setFontColor("gray");
-    obj.edit171:setHorzTextAlign("leading");
     obj.edit171:setName("edit171");
     obj.edit171:setFontSize(15);
+    obj.edit171:setHorzTextAlign("center");
     obj.edit171:setVertTextAlign("center");
     lfm_setPropAsString(obj.edit171, "fontStyle",  "bold");
     obj.edit171:setFontFamily("kalam");
@@ -7195,13 +7198,13 @@ local function constructNew_frmDZ_Ficha1_svg()
 
     obj.edit172 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit172:setParent(obj.layout144);
-    obj.edit172:setField("Pet_AtkDano");
+    obj.edit172:setField("Pet_AtkCD");
     obj.edit172:setWidth(40);
     obj.edit172:setHeight(30);
     obj.edit172:setTop(478);
-    obj.edit172:setLeft(195);
-    obj.edit172:setFontColor("gray");
+    obj.edit172:setLeft(270);
     obj.edit172:setName("edit172");
+    obj.edit172:setFontColor("#C0504D");
     obj.edit172:setFontSize(15);
     obj.edit172:setHorzTextAlign("center");
     obj.edit172:setVertTextAlign("center");
@@ -7211,15 +7214,15 @@ local function constructNew_frmDZ_Ficha1_svg()
 
     obj.edit173 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit173:setParent(obj.layout144);
-    obj.edit173:setField("Pet_AtkCD");
-    obj.edit173:setWidth(40);
+    obj.edit173:setField("Pet_Des");
+    obj.edit173:setWidth(140);
     obj.edit173:setHeight(30);
-    obj.edit173:setTop(478);
-    obj.edit173:setLeft(270);
+    obj.edit173:setTop(400);
+    obj.edit173:setLeft(385);
+    obj.edit173:setHorzTextAlign("leading");
     obj.edit173:setName("edit173");
-    obj.edit173:setFontColor("#C0504D");
+    obj.edit173:setFontColor("black");
     obj.edit173:setFontSize(15);
-    obj.edit173:setHorzTextAlign("center");
     obj.edit173:setVertTextAlign("center");
     lfm_setPropAsString(obj.edit173, "fontStyle",  "bold");
     obj.edit173:setFontFamily("kalam");
@@ -7227,10 +7230,10 @@ local function constructNew_frmDZ_Ficha1_svg()
 
     obj.edit174 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit174:setParent(obj.layout144);
-    obj.edit174:setField("Pet_Des");
+    obj.edit174:setField("Pet_Des2");
     obj.edit174:setWidth(140);
     obj.edit174:setHeight(30);
-    obj.edit174:setTop(400);
+    obj.edit174:setTop(420);
     obj.edit174:setLeft(385);
     obj.edit174:setHorzTextAlign("leading");
     obj.edit174:setName("edit174");
@@ -7240,22 +7243,6 @@ local function constructNew_frmDZ_Ficha1_svg()
     lfm_setPropAsString(obj.edit174, "fontStyle",  "bold");
     obj.edit174:setFontFamily("kalam");
     obj.edit174:setTransparent(true);
-
-    obj.edit175 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit175:setParent(obj.layout144);
-    obj.edit175:setField("Pet_Des2");
-    obj.edit175:setWidth(140);
-    obj.edit175:setHeight(30);
-    obj.edit175:setTop(420);
-    obj.edit175:setLeft(385);
-    obj.edit175:setHorzTextAlign("leading");
-    obj.edit175:setName("edit175");
-    obj.edit175:setFontColor("black");
-    obj.edit175:setFontSize(15);
-    obj.edit175:setVertTextAlign("center");
-    lfm_setPropAsString(obj.edit175, "fontStyle",  "bold");
-    obj.edit175:setFontFamily("kalam");
-    obj.edit175:setTransparent(true);
 
     obj.image68 = GUI.fromHandle(_obj_newObject("image"));
     obj.image68:setParent(obj.layout144);
@@ -7290,17 +7277,33 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.image69:setSRC("images/FichaPET.png");
     obj.image69:setName("image69");
 
+    obj.edit175 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit175:setParent(obj.layout145);
+    obj.edit175:setField("Pet2_Nick");
+    obj.edit175:setWidth(500);
+    obj.edit175:setHeight(60);
+    obj.edit175:setTop(150);
+    obj.edit175:setLeft(100);
+    obj.edit175:setFontSize(30);
+    obj.edit175:setHorzTextAlign("leading");
+    obj.edit175:setName("edit175");
+    obj.edit175:setFontColor("#C0504D");
+    obj.edit175:setVertTextAlign("center");
+    lfm_setPropAsString(obj.edit175, "fontStyle",  "bold");
+    obj.edit175:setFontFamily("kalam");
+    obj.edit175:setTransparent(true);
+
     obj.edit176 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit176:setParent(obj.layout145);
-    obj.edit176:setField("Pet2_Nick");
-    obj.edit176:setWidth(500);
-    obj.edit176:setHeight(60);
-    obj.edit176:setTop(150);
-    obj.edit176:setLeft(100);
-    obj.edit176:setFontSize(30);
-    obj.edit176:setHorzTextAlign("leading");
+    obj.edit176:setField("Pet2_Fisico");
+    obj.edit176:setWidth(40);
+    obj.edit176:setHeight(30);
+    obj.edit176:setTop(208);
+    obj.edit176:setLeft(180);
     obj.edit176:setName("edit176");
     obj.edit176:setFontColor("#C0504D");
+    obj.edit176:setFontSize(15);
+    obj.edit176:setHorzTextAlign("center");
     obj.edit176:setVertTextAlign("center");
     lfm_setPropAsString(obj.edit176, "fontStyle",  "bold");
     obj.edit176:setFontFamily("kalam");
@@ -7308,10 +7311,10 @@ local function constructNew_frmDZ_Ficha1_svg()
 
     obj.edit177 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit177:setParent(obj.layout145);
-    obj.edit177:setField("Pet2_Fisico");
+    obj.edit177:setField("Pet2_Social");
     obj.edit177:setWidth(40);
     obj.edit177:setHeight(30);
-    obj.edit177:setTop(208);
+    obj.edit177:setTop(240);
     obj.edit177:setLeft(180);
     obj.edit177:setName("edit177");
     obj.edit177:setFontColor("#C0504D");
@@ -7324,10 +7327,10 @@ local function constructNew_frmDZ_Ficha1_svg()
 
     obj.edit178 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit178:setParent(obj.layout145);
-    obj.edit178:setField("Pet2_Social");
+    obj.edit178:setField("Pet2_Inteligencia");
     obj.edit178:setWidth(40);
     obj.edit178:setHeight(30);
-    obj.edit178:setTop(240);
+    obj.edit178:setTop(270);
     obj.edit178:setLeft(180);
     obj.edit178:setName("edit178");
     obj.edit178:setFontColor("#C0504D");
@@ -7340,10 +7343,10 @@ local function constructNew_frmDZ_Ficha1_svg()
 
     obj.edit179 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit179:setParent(obj.layout145);
-    obj.edit179:setField("Pet2_Inteligencia");
+    obj.edit179:setField("Pet2_Percep");
     obj.edit179:setWidth(40);
     obj.edit179:setHeight(30);
-    obj.edit179:setTop(270);
+    obj.edit179:setTop(310);
     obj.edit179:setLeft(180);
     obj.edit179:setName("edit179");
     obj.edit179:setFontColor("#C0504D");
@@ -7356,10 +7359,10 @@ local function constructNew_frmDZ_Ficha1_svg()
 
     obj.edit180 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit180:setParent(obj.layout145);
-    obj.edit180:setField("Pet2_Percep");
+    obj.edit180:setField("Pet2_Espiritual");
     obj.edit180:setWidth(40);
     obj.edit180:setHeight(30);
-    obj.edit180:setTop(310);
+    obj.edit180:setTop(340);
     obj.edit180:setLeft(180);
     obj.edit180:setName("edit180");
     obj.edit180:setFontColor("#C0504D");
@@ -7372,11 +7375,11 @@ local function constructNew_frmDZ_Ficha1_svg()
 
     obj.edit181 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit181:setParent(obj.layout145);
-    obj.edit181:setField("Pet2_Espiritual");
+    obj.edit181:setField("Pet2_Per1");
     obj.edit181:setWidth(40);
     obj.edit181:setHeight(30);
-    obj.edit181:setTop(340);
-    obj.edit181:setLeft(180);
+    obj.edit181:setTop(208);
+    obj.edit181:setLeft(325);
     obj.edit181:setName("edit181");
     obj.edit181:setFontColor("#C0504D");
     obj.edit181:setFontSize(15);
@@ -7388,10 +7391,10 @@ local function constructNew_frmDZ_Ficha1_svg()
 
     obj.edit182 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit182:setParent(obj.layout145);
-    obj.edit182:setField("Pet2_Per1");
+    obj.edit182:setField("Pet2_Per2");
     obj.edit182:setWidth(40);
     obj.edit182:setHeight(30);
-    obj.edit182:setTop(208);
+    obj.edit182:setTop(240);
     obj.edit182:setLeft(325);
     obj.edit182:setName("edit182");
     obj.edit182:setFontColor("#C0504D");
@@ -7404,10 +7407,10 @@ local function constructNew_frmDZ_Ficha1_svg()
 
     obj.edit183 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit183:setParent(obj.layout145);
-    obj.edit183:setField("Pet2_Per2");
+    obj.edit183:setField("Pet2_Per3");
     obj.edit183:setWidth(40);
     obj.edit183:setHeight(30);
-    obj.edit183:setTop(240);
+    obj.edit183:setTop(270);
     obj.edit183:setLeft(325);
     obj.edit183:setName("edit183");
     obj.edit183:setFontColor("#C0504D");
@@ -7420,10 +7423,10 @@ local function constructNew_frmDZ_Ficha1_svg()
 
     obj.edit184 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit184:setParent(obj.layout145);
-    obj.edit184:setField("Pet2_Per3");
+    obj.edit184:setField("Pet2_Per4");
     obj.edit184:setWidth(40);
     obj.edit184:setHeight(30);
-    obj.edit184:setTop(270);
+    obj.edit184:setTop(300);
     obj.edit184:setLeft(325);
     obj.edit184:setName("edit184");
     obj.edit184:setFontColor("#C0504D");
@@ -7436,10 +7439,10 @@ local function constructNew_frmDZ_Ficha1_svg()
 
     obj.edit185 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit185:setParent(obj.layout145);
-    obj.edit185:setField("Pet2_Per4");
+    obj.edit185:setField("Pet2_Per5");
     obj.edit185:setWidth(40);
     obj.edit185:setHeight(30);
-    obj.edit185:setTop(300);
+    obj.edit185:setTop(330);
     obj.edit185:setLeft(325);
     obj.edit185:setName("edit185");
     obj.edit185:setFontColor("#C0504D");
@@ -7452,10 +7455,10 @@ local function constructNew_frmDZ_Ficha1_svg()
 
     obj.edit186 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit186:setParent(obj.layout145);
-    obj.edit186:setField("Pet2_Per5");
+    obj.edit186:setField("Pet2_Per6");
     obj.edit186:setWidth(40);
     obj.edit186:setHeight(30);
-    obj.edit186:setTop(330);
+    obj.edit186:setTop(360);
     obj.edit186:setLeft(325);
     obj.edit186:setName("edit186");
     obj.edit186:setFontColor("#C0504D");
@@ -7468,10 +7471,10 @@ local function constructNew_frmDZ_Ficha1_svg()
 
     obj.edit187 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit187:setParent(obj.layout145);
-    obj.edit187:setField("Pet2_Per6");
+    obj.edit187:setField("Pet2_Per7");
     obj.edit187:setWidth(40);
     obj.edit187:setHeight(30);
-    obj.edit187:setTop(360);
+    obj.edit187:setTop(400);
     obj.edit187:setLeft(325);
     obj.edit187:setName("edit187");
     obj.edit187:setFontColor("#C0504D");
@@ -7484,11 +7487,11 @@ local function constructNew_frmDZ_Ficha1_svg()
 
     obj.edit188 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit188:setParent(obj.layout145);
-    obj.edit188:setField("Pet2_Per7");
+    obj.edit188:setField("Pet2_Saude1");
     obj.edit188:setWidth(40);
     obj.edit188:setHeight(30);
-    obj.edit188:setTop(400);
-    obj.edit188:setLeft(325);
+    obj.edit188:setTop(256);
+    obj.edit188:setLeft(385);
     obj.edit188:setName("edit188");
     obj.edit188:setFontColor("#C0504D");
     obj.edit188:setFontSize(15);
@@ -7500,11 +7503,11 @@ local function constructNew_frmDZ_Ficha1_svg()
 
     obj.edit189 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit189:setParent(obj.layout145);
-    obj.edit189:setField("Pet2_Saude1");
+    obj.edit189:setField("Pet2_Saude2");
     obj.edit189:setWidth(40);
     obj.edit189:setHeight(30);
     obj.edit189:setTop(256);
-    obj.edit189:setLeft(385);
+    obj.edit189:setLeft(422);
     obj.edit189:setName("edit189");
     obj.edit189:setFontColor("#C0504D");
     obj.edit189:setFontSize(15);
@@ -7516,11 +7519,11 @@ local function constructNew_frmDZ_Ficha1_svg()
 
     obj.edit190 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit190:setParent(obj.layout145);
-    obj.edit190:setField("Pet2_Saude2");
+    obj.edit190:setField("Pet2_Saude3");
     obj.edit190:setWidth(40);
     obj.edit190:setHeight(30);
     obj.edit190:setTop(256);
-    obj.edit190:setLeft(422);
+    obj.edit190:setLeft(452);
     obj.edit190:setName("edit190");
     obj.edit190:setFontColor("#C0504D");
     obj.edit190:setFontSize(15);
@@ -7532,11 +7535,11 @@ local function constructNew_frmDZ_Ficha1_svg()
 
     obj.edit191 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit191:setParent(obj.layout145);
-    obj.edit191:setField("Pet2_Saude3");
+    obj.edit191:setField("Pet2_Iniciativa");
     obj.edit191:setWidth(40);
     obj.edit191:setHeight(30);
-    obj.edit191:setTop(256);
-    obj.edit191:setLeft(452);
+    obj.edit191:setTop(325);
+    obj.edit191:setLeft(470);
     obj.edit191:setName("edit191");
     obj.edit191:setFontColor("#C0504D");
     obj.edit191:setFontSize(15);
@@ -7548,14 +7551,14 @@ local function constructNew_frmDZ_Ficha1_svg()
 
     obj.edit192 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit192:setParent(obj.layout145);
-    obj.edit192:setField("Pet2_Iniciativa");
-    obj.edit192:setWidth(40);
+    obj.edit192:setField("Pet2_AtkNick");
+    obj.edit192:setWidth(200);
     obj.edit192:setHeight(30);
-    obj.edit192:setTop(325);
-    obj.edit192:setLeft(470);
+    obj.edit192:setTop(430);
+    obj.edit192:setLeft(100);
+    obj.edit192:setFontSize(20);
     obj.edit192:setName("edit192");
-    obj.edit192:setFontColor("#C0504D");
-    obj.edit192:setFontSize(15);
+    obj.edit192:setFontColor("black");
     obj.edit192:setHorzTextAlign("center");
     obj.edit192:setVertTextAlign("center");
     lfm_setPropAsString(obj.edit192, "fontStyle",  "bold");
@@ -7564,15 +7567,15 @@ local function constructNew_frmDZ_Ficha1_svg()
 
     obj.edit193 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit193:setParent(obj.layout145);
-    obj.edit193:setField("Pet2_AtkNick");
+    obj.edit193:setField("Pet2_AtkGolpe");
     obj.edit193:setWidth(200);
     obj.edit193:setHeight(30);
-    obj.edit193:setTop(430);
-    obj.edit193:setLeft(100);
-    obj.edit193:setFontSize(20);
+    obj.edit193:setTop(458);
+    obj.edit193:setLeft(200);
+    obj.edit193:setFontColor("gray");
+    obj.edit193:setHorzTextAlign("leading");
     obj.edit193:setName("edit193");
-    obj.edit193:setFontColor("black");
-    obj.edit193:setHorzTextAlign("center");
+    obj.edit193:setFontSize(15);
     obj.edit193:setVertTextAlign("center");
     lfm_setPropAsString(obj.edit193, "fontStyle",  "bold");
     obj.edit193:setFontFamily("kalam");
@@ -7580,15 +7583,15 @@ local function constructNew_frmDZ_Ficha1_svg()
 
     obj.edit194 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit194:setParent(obj.layout145);
-    obj.edit194:setField("Pet2_AtkGolpe");
-    obj.edit194:setWidth(200);
+    obj.edit194:setField("Pet2_AtkDano");
+    obj.edit194:setWidth(40);
     obj.edit194:setHeight(30);
-    obj.edit194:setTop(458);
-    obj.edit194:setLeft(200);
+    obj.edit194:setTop(478);
+    obj.edit194:setLeft(195);
     obj.edit194:setFontColor("gray");
-    obj.edit194:setHorzTextAlign("leading");
     obj.edit194:setName("edit194");
     obj.edit194:setFontSize(15);
+    obj.edit194:setHorzTextAlign("center");
     obj.edit194:setVertTextAlign("center");
     lfm_setPropAsString(obj.edit194, "fontStyle",  "bold");
     obj.edit194:setFontFamily("kalam");
@@ -7596,13 +7599,13 @@ local function constructNew_frmDZ_Ficha1_svg()
 
     obj.edit195 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit195:setParent(obj.layout145);
-    obj.edit195:setField("Pet2_AtkDano");
+    obj.edit195:setField("Pet2_AtkCD");
     obj.edit195:setWidth(40);
     obj.edit195:setHeight(30);
     obj.edit195:setTop(478);
-    obj.edit195:setLeft(195);
-    obj.edit195:setFontColor("gray");
+    obj.edit195:setLeft(270);
     obj.edit195:setName("edit195");
+    obj.edit195:setFontColor("#C0504D");
     obj.edit195:setFontSize(15);
     obj.edit195:setHorzTextAlign("center");
     obj.edit195:setVertTextAlign("center");
@@ -7612,15 +7615,15 @@ local function constructNew_frmDZ_Ficha1_svg()
 
     obj.edit196 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit196:setParent(obj.layout145);
-    obj.edit196:setField("Pet2_AtkCD");
-    obj.edit196:setWidth(40);
+    obj.edit196:setField("Pet2_Des");
+    obj.edit196:setWidth(140);
     obj.edit196:setHeight(30);
-    obj.edit196:setTop(478);
-    obj.edit196:setLeft(270);
+    obj.edit196:setTop(400);
+    obj.edit196:setLeft(385);
+    obj.edit196:setHorzTextAlign("leading");
     obj.edit196:setName("edit196");
-    obj.edit196:setFontColor("#C0504D");
+    obj.edit196:setFontColor("black");
     obj.edit196:setFontSize(15);
-    obj.edit196:setHorzTextAlign("center");
     obj.edit196:setVertTextAlign("center");
     lfm_setPropAsString(obj.edit196, "fontStyle",  "bold");
     obj.edit196:setFontFamily("kalam");
@@ -7628,10 +7631,10 @@ local function constructNew_frmDZ_Ficha1_svg()
 
     obj.edit197 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit197:setParent(obj.layout145);
-    obj.edit197:setField("Pet2_Des");
+    obj.edit197:setField("Pet2_Des2");
     obj.edit197:setWidth(140);
     obj.edit197:setHeight(30);
-    obj.edit197:setTop(400);
+    obj.edit197:setTop(420);
     obj.edit197:setLeft(385);
     obj.edit197:setHorzTextAlign("leading");
     obj.edit197:setName("edit197");
@@ -7641,22 +7644,6 @@ local function constructNew_frmDZ_Ficha1_svg()
     lfm_setPropAsString(obj.edit197, "fontStyle",  "bold");
     obj.edit197:setFontFamily("kalam");
     obj.edit197:setTransparent(true);
-
-    obj.edit198 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit198:setParent(obj.layout145);
-    obj.edit198:setField("Pet2_Des2");
-    obj.edit198:setWidth(140);
-    obj.edit198:setHeight(30);
-    obj.edit198:setTop(420);
-    obj.edit198:setLeft(385);
-    obj.edit198:setHorzTextAlign("leading");
-    obj.edit198:setName("edit198");
-    obj.edit198:setFontColor("black");
-    obj.edit198:setFontSize(15);
-    obj.edit198:setVertTextAlign("center");
-    lfm_setPropAsString(obj.edit198, "fontStyle",  "bold");
-    obj.edit198:setFontFamily("kalam");
-    obj.edit198:setTransparent(true);
 
     obj.image70 = GUI.fromHandle(_obj_newObject("image"));
     obj.image70:setParent(obj.layout145);
@@ -7689,13 +7676,13 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.label78:setWordWrap(false);
     obj.label78:setAutoSize(true);
 
-    obj.button79 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button79:setParent(obj.rectangle2);
-    obj.button79:setWidth(100);
-    obj.button79:setHeight(100);
-    obj.button79:setLeft(1200);
-    obj.button79:setTop(330);
-    obj.button79:setName("button79");
+    obj.button78 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button78:setParent(obj.rectangle2);
+    obj.button78:setWidth(100);
+    obj.button78:setHeight(100);
+    obj.button78:setLeft(1200);
+    obj.button78:setTop(330);
+    obj.button78:setName("button78");
 
     obj.image71 = GUI.fromHandle(_obj_newObject("image"));
     obj.image71:setParent(obj.rectangle2);
@@ -7735,18 +7722,18 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.layout146:setMargins({bottom=4});
     obj.layout146:setName("layout146");
 
-    obj.button80 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button80:setParent(obj.layout146);
-    obj.button80:setText("Adicionar");
-    obj.button80:setWidth(120);
-    obj.button80:setAlign("left");
-    obj.button80:setName("button80");
-    obj.button80:setFontColor("#000000");
-    obj.button80:setFontSize(20);
-    obj.button80:setHorzTextAlign("center");
-    obj.button80:setVertTextAlign("center");
-    lfm_setPropAsString(obj.button80, "fontStyle",  "bold");
-    obj.button80:setFontFamily("kalam");
+    obj.button79 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button79:setParent(obj.layout146);
+    obj.button79:setText("Adicionar");
+    obj.button79:setWidth(120);
+    obj.button79:setAlign("left");
+    obj.button79:setName("button79");
+    obj.button79:setFontColor("#000000");
+    obj.button79:setFontSize(20);
+    obj.button79:setHorzTextAlign("center");
+    obj.button79:setVertTextAlign("center");
+    lfm_setPropAsString(obj.button79, "fontStyle",  "bold");
+    obj.button79:setFontFamily("kalam");
 
     obj.rclListaNPC = GUI.fromHandle(_obj_newObject("recordList"));
     obj.rclListaNPC:setParent(obj.frmDZ_NPC_svg);
@@ -7798,15 +7785,31 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.image73:setField("NpcII");
     obj.image73:setName("image73");
 
+    obj.edit198 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit198:setParent(obj.rectangle17);
+    obj.edit198:setTransparent(true);
+    obj.edit198:setFontSize(28);
+    obj.edit198:setLeft(125);
+    obj.edit198:setTop(20);
+    obj.edit198:setWidth(300);
+    obj.edit198:setHeight(50);
+    obj.edit198:setField("NPC_nick");
+    obj.edit198:setHorzTextAlign("leading");
+    obj.edit198:setVertTextAlign("leading");
+    obj.edit198:setName("edit198");
+    obj.edit198:setFontColor("#C0504D");
+    lfm_setPropAsString(obj.edit198, "fontStyle",  "bold");
+    obj.edit198:setFontFamily("kalam");
+
     obj.edit199 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit199:setParent(obj.rectangle17);
     obj.edit199:setTransparent(true);
-    obj.edit199:setFontSize(28);
-    obj.edit199:setLeft(125);
+    obj.edit199:setFontSize(30);
+    obj.edit199:setLeft(500);
     obj.edit199:setTop(20);
-    obj.edit199:setWidth(300);
+    obj.edit199:setWidth(50);
     obj.edit199:setHeight(50);
-    obj.edit199:setField("NPC_nick");
+    obj.edit199:setField("NPC_idade");
     obj.edit199:setHorzTextAlign("leading");
     obj.edit199:setVertTextAlign("leading");
     obj.edit199:setName("edit199");
@@ -7817,16 +7820,16 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.edit200 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit200:setParent(obj.rectangle17);
     obj.edit200:setTransparent(true);
-    obj.edit200:setFontSize(30);
-    obj.edit200:setLeft(500);
-    obj.edit200:setTop(20);
-    obj.edit200:setWidth(50);
-    obj.edit200:setHeight(50);
-    obj.edit200:setField("NPC_idade");
-    obj.edit200:setHorzTextAlign("leading");
+    obj.edit200:setLeft(146);
+    obj.edit200:setTop(80);
+    obj.edit200:setWidth(25);
+    obj.edit200:setHeight(30);
+    obj.edit200:setField("NPC_fisico");
     obj.edit200:setVertTextAlign("leading");
     obj.edit200:setName("edit200");
     obj.edit200:setFontColor("#C0504D");
+    obj.edit200:setFontSize(15);
+    obj.edit200:setHorzTextAlign("center");
     lfm_setPropAsString(obj.edit200, "fontStyle",  "bold");
     obj.edit200:setFontFamily("kalam");
 
@@ -7834,10 +7837,10 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.edit201:setParent(obj.rectangle17);
     obj.edit201:setTransparent(true);
     obj.edit201:setLeft(146);
-    obj.edit201:setTop(80);
+    obj.edit201:setTop(105);
     obj.edit201:setWidth(25);
     obj.edit201:setHeight(30);
-    obj.edit201:setField("NPC_fisico");
+    obj.edit201:setField("NPC_social");
     obj.edit201:setVertTextAlign("leading");
     obj.edit201:setName("edit201");
     obj.edit201:setFontColor("#C0504D");
@@ -7850,10 +7853,10 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.edit202:setParent(obj.rectangle17);
     obj.edit202:setTransparent(true);
     obj.edit202:setLeft(146);
-    obj.edit202:setTop(105);
+    obj.edit202:setTop(130);
     obj.edit202:setWidth(25);
     obj.edit202:setHeight(30);
-    obj.edit202:setField("NPC_social");
+    obj.edit202:setField("NPC_mental");
     obj.edit202:setVertTextAlign("leading");
     obj.edit202:setName("edit202");
     obj.edit202:setFontColor("#C0504D");
@@ -7866,10 +7869,10 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.edit203:setParent(obj.rectangle17);
     obj.edit203:setTransparent(true);
     obj.edit203:setLeft(146);
-    obj.edit203:setTop(130);
+    obj.edit203:setTop(155);
     obj.edit203:setWidth(25);
     obj.edit203:setHeight(30);
-    obj.edit203:setField("NPC_mental");
+    obj.edit203:setField("NPC_espiritual");
     obj.edit203:setVertTextAlign("leading");
     obj.edit203:setName("edit203");
     obj.edit203:setFontColor("#C0504D");
@@ -7881,11 +7884,11 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.edit204 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit204:setParent(obj.rectangle17);
     obj.edit204:setTransparent(true);
-    obj.edit204:setLeft(146);
-    obj.edit204:setTop(155);
+    obj.edit204:setLeft(275);
+    obj.edit204:setTop(75);
     obj.edit204:setWidth(25);
     obj.edit204:setHeight(30);
-    obj.edit204:setField("NPC_espiritual");
+    obj.edit204:setField("NPC_P1");
     obj.edit204:setVertTextAlign("leading");
     obj.edit204:setName("edit204");
     obj.edit204:setFontColor("#C0504D");
@@ -7898,10 +7901,10 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.edit205:setParent(obj.rectangle17);
     obj.edit205:setTransparent(true);
     obj.edit205:setLeft(275);
-    obj.edit205:setTop(75);
+    obj.edit205:setTop(96);
     obj.edit205:setWidth(25);
     obj.edit205:setHeight(30);
-    obj.edit205:setField("NPC_P1");
+    obj.edit205:setField("NPC_P2");
     obj.edit205:setVertTextAlign("leading");
     obj.edit205:setName("edit205");
     obj.edit205:setFontColor("#C0504D");
@@ -7914,10 +7917,10 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.edit206:setParent(obj.rectangle17);
     obj.edit206:setTransparent(true);
     obj.edit206:setLeft(275);
-    obj.edit206:setTop(96);
+    obj.edit206:setTop(117);
     obj.edit206:setWidth(25);
     obj.edit206:setHeight(30);
-    obj.edit206:setField("NPC_P2");
+    obj.edit206:setField("NPC_P3");
     obj.edit206:setVertTextAlign("leading");
     obj.edit206:setName("edit206");
     obj.edit206:setFontColor("#C0504D");
@@ -7930,10 +7933,10 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.edit207:setParent(obj.rectangle17);
     obj.edit207:setTransparent(true);
     obj.edit207:setLeft(275);
-    obj.edit207:setTop(117);
+    obj.edit207:setTop(138);
     obj.edit207:setWidth(25);
     obj.edit207:setHeight(30);
-    obj.edit207:setField("NPC_P3");
+    obj.edit207:setField("NPC_P4");
     obj.edit207:setVertTextAlign("leading");
     obj.edit207:setName("edit207");
     obj.edit207:setFontColor("#C0504D");
@@ -7946,10 +7949,10 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.edit208:setParent(obj.rectangle17);
     obj.edit208:setTransparent(true);
     obj.edit208:setLeft(275);
-    obj.edit208:setTop(138);
+    obj.edit208:setTop(159);
     obj.edit208:setWidth(25);
     obj.edit208:setHeight(30);
-    obj.edit208:setField("NPC_P4");
+    obj.edit208:setField("NPC_P5");
     obj.edit208:setVertTextAlign("leading");
     obj.edit208:setName("edit208");
     obj.edit208:setFontColor("#C0504D");
@@ -7962,10 +7965,10 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.edit209:setParent(obj.rectangle17);
     obj.edit209:setTransparent(true);
     obj.edit209:setLeft(275);
-    obj.edit209:setTop(159);
+    obj.edit209:setTop(182);
     obj.edit209:setWidth(25);
     obj.edit209:setHeight(30);
-    obj.edit209:setField("NPC_P5");
+    obj.edit209:setField("NPC_P6");
     obj.edit209:setVertTextAlign("leading");
     obj.edit209:setName("edit209");
     obj.edit209:setFontColor("#C0504D");
@@ -7978,10 +7981,10 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.edit210:setParent(obj.rectangle17);
     obj.edit210:setTransparent(true);
     obj.edit210:setLeft(275);
-    obj.edit210:setTop(182);
+    obj.edit210:setTop(205);
     obj.edit210:setWidth(25);
     obj.edit210:setHeight(30);
-    obj.edit210:setField("NPC_P6");
+    obj.edit210:setField("NPC_P7");
     obj.edit210:setVertTextAlign("leading");
     obj.edit210:setName("edit210");
     obj.edit210:setFontColor("#C0504D");
@@ -7994,10 +7997,10 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.edit211:setParent(obj.rectangle17);
     obj.edit211:setTransparent(true);
     obj.edit211:setLeft(275);
-    obj.edit211:setTop(205);
+    obj.edit211:setTop(225);
     obj.edit211:setWidth(25);
     obj.edit211:setHeight(30);
-    obj.edit211:setField("NPC_P7");
+    obj.edit211:setField("NPC_P8");
     obj.edit211:setVertTextAlign("leading");
     obj.edit211:setName("edit211");
     obj.edit211:setFontColor("#C0504D");
@@ -8010,10 +8013,10 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.edit212:setParent(obj.rectangle17);
     obj.edit212:setTransparent(true);
     obj.edit212:setLeft(275);
-    obj.edit212:setTop(225);
+    obj.edit212:setTop(250);
     obj.edit212:setWidth(25);
     obj.edit212:setHeight(30);
-    obj.edit212:setField("NPC_P8");
+    obj.edit212:setField("NPC_P9");
     obj.edit212:setVertTextAlign("leading");
     obj.edit212:setName("edit212");
     obj.edit212:setFontColor("#C0504D");
@@ -8026,10 +8029,10 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.edit213:setParent(obj.rectangle17);
     obj.edit213:setTransparent(true);
     obj.edit213:setLeft(275);
-    obj.edit213:setTop(250);
+    obj.edit213:setTop(275);
     obj.edit213:setWidth(25);
     obj.edit213:setHeight(30);
-    obj.edit213:setField("NPC_P9");
+    obj.edit213:setField("NPC_P10");
     obj.edit213:setVertTextAlign("leading");
     obj.edit213:setName("edit213");
     obj.edit213:setFontColor("#C0504D");
@@ -8041,11 +8044,11 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.edit214 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit214:setParent(obj.rectangle17);
     obj.edit214:setTransparent(true);
-    obj.edit214:setLeft(275);
-    obj.edit214:setTop(275);
+    obj.edit214:setLeft(315);
+    obj.edit214:setTop(100);
     obj.edit214:setWidth(25);
     obj.edit214:setHeight(30);
-    obj.edit214:setField("NPC_P10");
+    obj.edit214:setField("NPC_Saude1");
     obj.edit214:setVertTextAlign("leading");
     obj.edit214:setName("edit214");
     obj.edit214:setFontColor("#C0504D");
@@ -8057,11 +8060,11 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.edit215 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit215:setParent(obj.rectangle17);
     obj.edit215:setTransparent(true);
-    obj.edit215:setLeft(315);
+    obj.edit215:setLeft(340);
     obj.edit215:setTop(100);
     obj.edit215:setWidth(25);
     obj.edit215:setHeight(30);
-    obj.edit215:setField("NPC_Saude1");
+    obj.edit215:setField("NPC_Saude2");
     obj.edit215:setVertTextAlign("leading");
     obj.edit215:setName("edit215");
     obj.edit215:setFontColor("#C0504D");
@@ -8073,11 +8076,11 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.edit216 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit216:setParent(obj.rectangle17);
     obj.edit216:setTransparent(true);
-    obj.edit216:setLeft(340);
+    obj.edit216:setLeft(365);
     obj.edit216:setTop(100);
     obj.edit216:setWidth(25);
     obj.edit216:setHeight(30);
-    obj.edit216:setField("NPC_Saude2");
+    obj.edit216:setField("NPC_Saude3");
     obj.edit216:setVertTextAlign("leading");
     obj.edit216:setName("edit216");
     obj.edit216:setFontColor("#C0504D");
@@ -8089,11 +8092,11 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.edit217 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit217:setParent(obj.rectangle17);
     obj.edit217:setTransparent(true);
-    obj.edit217:setLeft(365);
-    obj.edit217:setTop(100);
+    obj.edit217:setLeft(508);
+    obj.edit217:setTop(74);
     obj.edit217:setWidth(25);
     obj.edit217:setHeight(30);
-    obj.edit217:setField("NPC_Saude3");
+    obj.edit217:setField("NPC_Moralidade");
     obj.edit217:setVertTextAlign("leading");
     obj.edit217:setName("edit217");
     obj.edit217:setFontColor("#C0504D");
@@ -8101,22 +8104,6 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.edit217:setHorzTextAlign("center");
     lfm_setPropAsString(obj.edit217, "fontStyle",  "bold");
     obj.edit217:setFontFamily("kalam");
-
-    obj.edit218 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit218:setParent(obj.rectangle17);
-    obj.edit218:setTransparent(true);
-    obj.edit218:setLeft(508);
-    obj.edit218:setTop(74);
-    obj.edit218:setWidth(25);
-    obj.edit218:setHeight(30);
-    obj.edit218:setField("NPC_Moralidade");
-    obj.edit218:setVertTextAlign("leading");
-    obj.edit218:setName("edit218");
-    obj.edit218:setFontColor("#C0504D");
-    obj.edit218:setFontSize(15);
-    obj.edit218:setHorzTextAlign("center");
-    lfm_setPropAsString(obj.edit218, "fontStyle",  "bold");
-    obj.edit218:setFontFamily("kalam");
 
     obj.comboBox2 = GUI.fromHandle(_obj_newObject("comboBox"));
     obj.comboBox2:setParent(obj.rectangle17);
@@ -8136,14 +8123,30 @@ local function constructNew_frmDZ_Ficha1_svg()
     lfm_setPropAsString(obj.comboBox2, "fontStyle",  "bold");
     obj.comboBox2:setFontFamily("kalam");
 
+    obj.edit218 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit218:setParent(obj.rectangle17);
+    obj.edit218:setTransparent(true);
+    obj.edit218:setLeft(128);
+    obj.edit218:setTop(218);
+    obj.edit218:setWidth(25);
+    obj.edit218:setHeight(30);
+    obj.edit218:setField("NPC_Iniciativa");
+    obj.edit218:setVertTextAlign("leading");
+    obj.edit218:setName("edit218");
+    obj.edit218:setFontColor("#C0504D");
+    obj.edit218:setFontSize(15);
+    obj.edit218:setHorzTextAlign("center");
+    lfm_setPropAsString(obj.edit218, "fontStyle",  "bold");
+    obj.edit218:setFontFamily("kalam");
+
     obj.edit219 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit219:setParent(obj.rectangle17);
     obj.edit219:setTransparent(true);
     obj.edit219:setLeft(128);
-    obj.edit219:setTop(218);
+    obj.edit219:setTop(251);
     obj.edit219:setWidth(25);
     obj.edit219:setHeight(30);
-    obj.edit219:setField("NPC_Iniciativa");
+    obj.edit219:setField("NPC_Imunidade");
     obj.edit219:setVertTextAlign("leading");
     obj.edit219:setName("edit219");
     obj.edit219:setFontColor("#C0504D");
@@ -8155,11 +8158,11 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.edit220 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit220:setParent(obj.rectangle17);
     obj.edit220:setTransparent(true);
-    obj.edit220:setLeft(128);
-    obj.edit220:setTop(251);
+    obj.edit220:setLeft(100);
+    obj.edit220:setTop(290);
     obj.edit220:setWidth(25);
     obj.edit220:setHeight(30);
-    obj.edit220:setField("NPC_Imunidade");
+    obj.edit220:setField("NPC_ATK");
     obj.edit220:setVertTextAlign("leading");
     obj.edit220:setName("edit220");
     obj.edit220:setFontColor("#C0504D");
@@ -8171,11 +8174,11 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.edit221 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit221:setParent(obj.rectangle17);
     obj.edit221:setTransparent(true);
-    obj.edit221:setLeft(100);
-    obj.edit221:setTop(290);
+    obj.edit221:setLeft(55);
+    obj.edit221:setTop(315);
     obj.edit221:setWidth(25);
     obj.edit221:setHeight(30);
-    obj.edit221:setField("NPC_ATK");
+    obj.edit221:setField("NPC_ATK1");
     obj.edit221:setVertTextAlign("leading");
     obj.edit221:setName("edit221");
     obj.edit221:setFontColor("#C0504D");
@@ -8187,11 +8190,11 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.edit222 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit222:setParent(obj.rectangle17);
     obj.edit222:setTransparent(true);
-    obj.edit222:setLeft(55);
+    obj.edit222:setLeft(125);
     obj.edit222:setTop(315);
     obj.edit222:setWidth(25);
     obj.edit222:setHeight(30);
-    obj.edit222:setField("NPC_ATK1");
+    obj.edit222:setField("NPC_ATK2");
     obj.edit222:setVertTextAlign("leading");
     obj.edit222:setName("edit222");
     obj.edit222:setFontColor("#C0504D");
@@ -8203,11 +8206,11 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.edit223 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit223:setParent(obj.rectangle17);
     obj.edit223:setTransparent(true);
-    obj.edit223:setLeft(125);
+    obj.edit223:setLeft(190);
     obj.edit223:setTop(315);
     obj.edit223:setWidth(25);
     obj.edit223:setHeight(30);
-    obj.edit223:setField("NPC_ATK2");
+    obj.edit223:setField("NPC_ATK3");
     obj.edit223:setVertTextAlign("leading");
     obj.edit223:setName("edit223");
     obj.edit223:setFontColor("#C0504D");
@@ -8219,11 +8222,11 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.edit224 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit224:setParent(obj.rectangle17);
     obj.edit224:setTransparent(true);
-    obj.edit224:setLeft(190);
-    obj.edit224:setTop(315);
+    obj.edit224:setLeft(185);
+    obj.edit224:setTop(420);
     obj.edit224:setWidth(25);
     obj.edit224:setHeight(30);
-    obj.edit224:setField("NPC_ATK3");
+    obj.edit224:setField("NPC_DEF");
     obj.edit224:setVertTextAlign("leading");
     obj.edit224:setName("edit224");
     obj.edit224:setFontColor("#C0504D");
@@ -8235,11 +8238,11 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.edit225 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit225:setParent(obj.rectangle17);
     obj.edit225:setTransparent(true);
-    obj.edit225:setLeft(185);
-    obj.edit225:setTop(420);
+    obj.edit225:setLeft(55);
+    obj.edit225:setTop(445);
     obj.edit225:setWidth(25);
     obj.edit225:setHeight(30);
-    obj.edit225:setField("NPC_DEF");
+    obj.edit225:setField("NPC_DEF1");
     obj.edit225:setVertTextAlign("leading");
     obj.edit225:setName("edit225");
     obj.edit225:setFontColor("#C0504D");
@@ -8251,11 +8254,11 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.edit226 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit226:setParent(obj.rectangle17);
     obj.edit226:setTransparent(true);
-    obj.edit226:setLeft(55);
+    obj.edit226:setLeft(125);
     obj.edit226:setTop(445);
     obj.edit226:setWidth(25);
     obj.edit226:setHeight(30);
-    obj.edit226:setField("NPC_DEF1");
+    obj.edit226:setField("NPC_DEF2");
     obj.edit226:setVertTextAlign("leading");
     obj.edit226:setName("edit226");
     obj.edit226:setFontColor("#C0504D");
@@ -8267,11 +8270,11 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.edit227 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit227:setParent(obj.rectangle17);
     obj.edit227:setTransparent(true);
-    obj.edit227:setLeft(125);
+    obj.edit227:setLeft(190);
     obj.edit227:setTop(445);
     obj.edit227:setWidth(25);
     obj.edit227:setHeight(30);
-    obj.edit227:setField("NPC_DEF2");
+    obj.edit227:setField("NPC_DEF3");
     obj.edit227:setVertTextAlign("leading");
     obj.edit227:setName("edit227");
     obj.edit227:setFontColor("#C0504D");
@@ -8279,22 +8282,6 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.edit227:setHorzTextAlign("center");
     lfm_setPropAsString(obj.edit227, "fontStyle",  "bold");
     obj.edit227:setFontFamily("kalam");
-
-    obj.edit228 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit228:setParent(obj.rectangle17);
-    obj.edit228:setTransparent(true);
-    obj.edit228:setLeft(190);
-    obj.edit228:setTop(445);
-    obj.edit228:setWidth(25);
-    obj.edit228:setHeight(30);
-    obj.edit228:setField("NPC_DEF3");
-    obj.edit228:setVertTextAlign("leading");
-    obj.edit228:setName("edit228");
-    obj.edit228:setFontColor("#C0504D");
-    obj.edit228:setFontSize(15);
-    obj.edit228:setHorzTextAlign("center");
-    lfm_setPropAsString(obj.edit228, "fontStyle",  "bold");
-    obj.edit228:setFontFamily("kalam");
 
     obj.layout147 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout147:setParent(obj.rectangle17);
@@ -8670,13 +8657,13 @@ local function constructNew_frmDZ_Ficha1_svg()
     obj.label79:setWordWrap(false);
     obj.label79:setAutoSize(true);
 
-    obj.button81 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button81:setParent(obj.rectangle2);
-    obj.button81:setWidth(100);
-    obj.button81:setHeight(100);
-    obj.button81:setLeft(1200);
-    obj.button81:setTop(200);
-    obj.button81:setName("button81");
+    obj.button80 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button80:setParent(obj.rectangle2);
+    obj.button80:setWidth(100);
+    obj.button80:setHeight(100);
+    obj.button80:setLeft(1200);
+    obj.button80:setTop(200);
+    obj.button80:setName("button80");
 
     obj.image74 = GUI.fromHandle(_obj_newObject("image"));
     obj.image74:setParent(obj.rectangle2);
@@ -9109,21 +9096,13 @@ local function constructNew_frmDZ_Ficha1_svg()
 
     obj._e_event35 = obj.button19:addEventListener("onClick",
         function (_)
-            local mesaDoPersonagem = Firecast.getMesaDe(sheet);			
-            					local rolagem = Firecast.interpretarRolagem(sheet.Peri08); 
-            					if not rolagem.possuiAlgumDado then rolagem = Firecast.interpretarRolagem("1d10"):concatenar(rolagem); end; 
-            					if mesaDoPersonagem ~= nil then mesaDoPersonagem.chat:rolarDados(rolagem,"[§B][§K8][ Pericia ] [§K14]Esquiva de "..sheet.Nick_Personagem); end;
-        end, obj);
-
-    obj._e_event36 = obj.button20:addEventListener("onClick",
-        function (_)
             local mesaDoPersonagem = Firecast.getMesaDe(sheet);				
             					local rolagem = Firecast.interpretarRolagem(sheet.Peri09); 
             					if not rolagem.possuiAlgumDado then rolagem = Firecast.interpretarRolagem("1d10"):concatenar(rolagem); end; 
             					if mesaDoPersonagem ~= nil then mesaDoPersonagem.chat:rolarDados(rolagem,"[§B][§K8][ Pericia ] [§K14]Doméstico de "..sheet.Nick_Personagem); end;
         end, obj);
 
-    obj._e_event37 = obj.button21:addEventListener("onClick",
+    obj._e_event36 = obj.button20:addEventListener("onClick",
         function (_)
             local mesaDoPersonagem = Firecast.getMesaDe(sheet);				
             					local rolagem = Firecast.interpretarRolagem(sheet.Peri10); 
@@ -9131,7 +9110,7 @@ local function constructNew_frmDZ_Ficha1_svg()
             					if mesaDoPersonagem ~= nil then mesaDoPersonagem.chat:rolarDados(rolagem,"[§B][§K8][ Pericia ] [§K14]Briga de "..sheet.Nick_Personagem); end;
         end, obj);
 
-    obj._e_event38 = obj.button22:addEventListener("onClick",
+    obj._e_event37 = obj.button21:addEventListener("onClick",
         function (_)
             local mesaDoPersonagem = Firecast.getMesaDe(sheet);
             					local rolagem = Firecast.interpretarRolagem(sheet.Peri11); 
@@ -9139,7 +9118,7 @@ local function constructNew_frmDZ_Ficha1_svg()
             					if mesaDoPersonagem ~= nil then mesaDoPersonagem.chat:rolarDados(rolagem,"[§B][§K8][ Pericia ] [§K14]Intimidação de "..sheet.Nick_Personagem); end;
         end, obj);
 
-    obj._e_event39 = obj.button23:addEventListener("onClick",
+    obj._e_event38 = obj.button22:addEventListener("onClick",
         function (_)
             local mesaDoPersonagem = Firecast.getMesaDe(sheet);				
             					local rolagem = Firecast.interpretarRolagem(sheet.Peri12); 
@@ -9147,7 +9126,7 @@ local function constructNew_frmDZ_Ficha1_svg()
             					if mesaDoPersonagem ~= nil then mesaDoPersonagem.chat:rolarDados(rolagem,"[§B][§K8][ Pericia ] [§K14]Conhecimento Geral de "..sheet.Nick_Personagem); end;
         end, obj);
 
-    obj._e_event40 = obj.button24:addEventListener("onClick",
+    obj._e_event39 = obj.button23:addEventListener("onClick",
         function (_)
             local mesaDoPersonagem = Firecast.getMesaDe(sheet);			
             					local rolagem = Firecast.interpretarRolagem(sheet.Peri13); 
@@ -9155,7 +9134,7 @@ local function constructNew_frmDZ_Ficha1_svg()
             					if mesaDoPersonagem ~= nil then mesaDoPersonagem.chat:rolarDados(rolagem,"[§B][§K8][ Pericia ] [§K14]Idioma "..sheet.Idiomas.." de "..sheet.Nick_Personagem); end;
         end, obj);
 
-    obj._e_event41 = obj.button25:addEventListener("onClick",
+    obj._e_event40 = obj.button24:addEventListener("onClick",
         function (_)
             local mesaDoPersonagem = Firecast.getMesaDe(sheet);				
             					local rolagem = Firecast.interpretarRolagem(sheet.Peri14); 
@@ -9163,7 +9142,7 @@ local function constructNew_frmDZ_Ficha1_svg()
             					if mesaDoPersonagem ~= nil then mesaDoPersonagem.chat:rolarDados(rolagem,"[§B][§K8][ Pericia ] [§K14]Arma branca de "..sheet.Nick_Personagem); end;
         end, obj);
 
-    obj._e_event42 = obj.button26:addEventListener("onClick",
+    obj._e_event41 = obj.button25:addEventListener("onClick",
         function (_)
             local mesaDoPersonagem = Firecast.getMesaDe(sheet);				
             					local rolagem = Firecast.interpretarRolagem(sheet.Peri15); 
@@ -9171,7 +9150,7 @@ local function constructNew_frmDZ_Ficha1_svg()
             					if mesaDoPersonagem ~= nil then mesaDoPersonagem.chat:rolarDados(rolagem,"[§B][§K8][ Pericia ] [§K14]Arma de fogo de "..sheet.Nick_Personagem); end;
         end, obj);
 
-    obj._e_event43 = obj.button27:addEventListener("onClick",
+    obj._e_event42 = obj.button26:addEventListener("onClick",
         function (_)
             local mesaDoPersonagem = Firecast.getMesaDe(sheet);				
             					local rolagem = Firecast.interpretarRolagem(sheet.Peri16); 
@@ -9179,7 +9158,7 @@ local function constructNew_frmDZ_Ficha1_svg()
             					if mesaDoPersonagem ~= nil then mesaDoPersonagem.chat:rolarDados(rolagem,"[§B][§K8][ Pericia ] [§K14]Estratégia militar de "..sheet.Nick_Personagem); end;
         end, obj);
 
-    obj._e_event44 = obj.button28:addEventListener("onClick",
+    obj._e_event43 = obj.button27:addEventListener("onClick",
         function (_)
             local mesaDoPersonagem = Firecast.getMesaDe(sheet);				
             					local rolagem = Firecast.interpretarRolagem(sheet.Peri17); 
@@ -9187,7 +9166,7 @@ local function constructNew_frmDZ_Ficha1_svg()
             					if mesaDoPersonagem ~= nil then mesaDoPersonagem.chat:rolarDados(rolagem,"[§B][§K8][ Pericia ] [§K14]Observar de "..sheet.Nick_Personagem); end;
         end, obj);
 
-    obj._e_event45 = obj.button29:addEventListener("onClick",
+    obj._e_event44 = obj.button28:addEventListener("onClick",
         function (_)
             local mesaDoPersonagem = Firecast.getMesaDe(sheet);				
             					local rolagem = Firecast.interpretarRolagem(sheet.Peri18); 
@@ -9195,7 +9174,7 @@ local function constructNew_frmDZ_Ficha1_svg()
             					if mesaDoPersonagem ~= nil then mesaDoPersonagem.chat:rolarDados(rolagem,"[§B][§K8][ Pericia ] [§K14]Performance de "..sheet.Performance.." de " ..sheet.Nick_Personagem); end;
         end, obj);
 
-    obj._e_event46 = obj.button30:addEventListener("onClick",
+    obj._e_event45 = obj.button29:addEventListener("onClick",
         function (_)
             local mesaDoPersonagem = Firecast.getMesaDe(sheet);				
             					local rolagem = Firecast.interpretarRolagem(sheet.Peri19); 
@@ -9203,7 +9182,7 @@ local function constructNew_frmDZ_Ficha1_svg()
             					if mesaDoPersonagem ~= nil then mesaDoPersonagem.chat:rolarDados(rolagem,"[§B][§K8][ Pericia ] [§K14]Pilotagem de "..sheet.Pilotagem.." de " ..sheet.Nick_Personagem); end;
         end, obj);
 
-    obj._e_event47 = obj.button31:addEventListener("onClick",
+    obj._e_event46 = obj.button30:addEventListener("onClick",
         function (_)
             local mesaDoPersonagem = Firecast.getMesaDe(sheet);				
             					local rolagem = Firecast.interpretarRolagem(sheet.Peri20); 
@@ -9211,7 +9190,7 @@ local function constructNew_frmDZ_Ficha1_svg()
             					if mesaDoPersonagem ~= nil then mesaDoPersonagem.chat:rolarDados(rolagem,"[§B][§K8][ Pericia ] [§K14]Condução de "..sheet.Conducao.." de " ..sheet.Nick_Personagem); end;
         end, obj);
 
-    obj._e_event48 = obj.button32:addEventListener("onClick",
+    obj._e_event47 = obj.button31:addEventListener("onClick",
         function (_)
             local mesaDoPersonagem = Firecast.getMesaDe(sheet);				
             					local rolagem = Firecast.interpretarRolagem(sheet.Peri21); 
@@ -9219,7 +9198,7 @@ local function constructNew_frmDZ_Ficha1_svg()
             					if mesaDoPersonagem ~= nil then mesaDoPersonagem.chat:rolarDados(rolagem,"[§B][§K8][ Pericia ] [§K14]Manha de "..sheet.Nick_Personagem); end;
         end, obj);
 
-    obj._e_event49 = obj.button33:addEventListener("onClick",
+    obj._e_event48 = obj.button32:addEventListener("onClick",
         function (_)
             local mesaDoPersonagem = Firecast.getMesaDe(sheet);				
             					local rolagem = Firecast.interpretarRolagem(sheet.Peri22); 
@@ -9227,7 +9206,7 @@ local function constructNew_frmDZ_Ficha1_svg()
             					if mesaDoPersonagem ~= nil then mesaDoPersonagem.chat:rolarDados(rolagem,"[§B][§K8][ Pericia ] [§K14]Furtar de "..sheet.Nick_Personagem); end;
         end, obj);
 
-    obj._e_event50 = obj.button34:addEventListener("onClick",
+    obj._e_event49 = obj.button33:addEventListener("onClick",
         function (_)
             local mesaDoPersonagem = Firecast.getMesaDe(sheet);				
             					local rolagem = Firecast.interpretarRolagem(sheet.Peri23); 
@@ -9235,7 +9214,7 @@ local function constructNew_frmDZ_Ficha1_svg()
             					if mesaDoPersonagem ~= nil then mesaDoPersonagem.chat:rolarDados(rolagem,"[§B][§K8][ Pericia ] [§K14]Furtividade de "..sheet.Nick_Personagem); end;
         end, obj);
 
-    obj._e_event51 = obj.button35:addEventListener("onClick",
+    obj._e_event50 = obj.button34:addEventListener("onClick",
         function (_)
             local mesaDoPersonagem = Firecast.getMesaDe(sheet);				
             					local rolagem = Firecast.interpretarRolagem(sheet.Peri24); 
@@ -9243,7 +9222,7 @@ local function constructNew_frmDZ_Ficha1_svg()
             					if mesaDoPersonagem ~= nil then mesaDoPersonagem.chat:rolarDados(rolagem,"[§B][§K8][ Pericia ] [§K14]Sobrevivencia de "..sheet.Nick_Personagem); end;
         end, obj);
 
-    obj._e_event52 = obj.button36:addEventListener("onClick",
+    obj._e_event51 = obj.button35:addEventListener("onClick",
         function (_)
             local mesaDoPersonagem = Firecast.getMesaDe(sheet);
             					local rolagem = Firecast.interpretarRolagem(sheet.Peri25); 
@@ -9251,7 +9230,7 @@ local function constructNew_frmDZ_Ficha1_svg()
             					if mesaDoPersonagem ~= nil then mesaDoPersonagem.chat:rolarDados(rolagem,"[§B][§K8][ Pericia ] [§K14]Medicina de "..sheet.Nick_Personagem); end;
         end, obj);
 
-    obj._e_event53 = obj.button37:addEventListener("onClick",
+    obj._e_event52 = obj.button36:addEventListener("onClick",
         function (_)
             local mesaDoPersonagem = Firecast.getMesaDe(sheet);
             					local rolagem = Firecast.interpretarRolagem(sheet.Peri26); 
@@ -9259,7 +9238,7 @@ local function constructNew_frmDZ_Ficha1_svg()
             					if mesaDoPersonagem ~= nil then mesaDoPersonagem.chat:rolarDados(rolagem,"[§B][§K8][ Pericia ] [§K14]Cavalgar de "..sheet.Nick_Personagem); end;
         end, obj);
 
-    obj._e_event54 = obj.button38:addEventListener("onClick",
+    obj._e_event53 = obj.button37:addEventListener("onClick",
         function (_)
             local mesaDoPersonagem = Firecast.getMesaDe(sheet);
             					local rolagem = Firecast.interpretarRolagem(sheet.Peri27); 
@@ -9267,7 +9246,7 @@ local function constructNew_frmDZ_Ficha1_svg()
             					if mesaDoPersonagem ~= nil then mesaDoPersonagem.chat:rolarDados(rolagem,"[§B][§K8][ Pericia ] [§K14]"..sheet.Coringa1); end;
         end, obj);
 
-    obj._e_event55 = obj.button39:addEventListener("onClick",
+    obj._e_event54 = obj.button38:addEventListener("onClick",
         function (_)
             local mesaDoPersonagem = Firecast.getMesaDe(sheet);
             					local rolagem = Firecast.interpretarRolagem(sheet.Peri28); 
@@ -9275,7 +9254,7 @@ local function constructNew_frmDZ_Ficha1_svg()
             					if mesaDoPersonagem ~= nil then mesaDoPersonagem.chat:rolarDados(rolagem,"[§B][§K8][ Pericia ] [§K14]"..sheet.Coringa2); end;
         end, obj);
 
-    obj._e_event56 = obj.button40:addEventListener("onClick",
+    obj._e_event55 = obj.button39:addEventListener("onClick",
         function (_)
             local mesaDoPersonagem = Firecast.getMesaDe(sheet);
             					local rolagem = Firecast.interpretarRolagem(sheet.Peri29); 
@@ -9283,12 +9262,12 @@ local function constructNew_frmDZ_Ficha1_svg()
             					if mesaDoPersonagem ~= nil then mesaDoPersonagem.chat:rolarDados(rolagem,"[§B][§K8][ Pericia ] [§K14]"..sheet.Coringa3); end;
         end, obj);
 
-    obj._e_event57 = obj.button41:addEventListener("onClick",
+    obj._e_event56 = obj.button40:addEventListener("onClick",
         function (_)
             self.DescCircunstancia1:show('bottom', self.labNome);
         end, obj);
 
-    obj._e_event58 = obj.button42:addEventListener("onClick",
+    obj._e_event57 = obj.button41:addEventListener("onClick",
         function (_)
             local mesaDoPersonagem = Firecast.getMesaDe(sheet);
             					local rolagem = Firecast.interpretarRolagem(sheet.CircXP_1); 
@@ -9296,12 +9275,12 @@ local function constructNew_frmDZ_Ficha1_svg()
             					if mesaDoPersonagem ~= nil then mesaDoPersonagem.chat:rolarDados(rolagem,"[§B][§K1][ Circunstancia ][§B][§K14] de "..sheet.Nick_Personagem); end;
         end, obj);
 
-    obj._e_event59 = obj.button43:addEventListener("onClick",
+    obj._e_event58 = obj.button42:addEventListener("onClick",
         function (_)
             self.DescCircunstancia2:show('bottom', self.labNome);
         end, obj);
 
-    obj._e_event60 = obj.button44:addEventListener("onClick",
+    obj._e_event59 = obj.button43:addEventListener("onClick",
         function (_)
             local mesaDoPersonagem = Firecast.getMesaDe(sheet);
             					local rolagem = Firecast.interpretarRolagem(sheet.CircXP_2); 
@@ -9309,12 +9288,12 @@ local function constructNew_frmDZ_Ficha1_svg()
             					if mesaDoPersonagem ~= nil then mesaDoPersonagem.chat:rolarDados(rolagem,"[§B][§K1][ Circunstancia ][§B][§K14] de "..sheet.Nick_Personagem); end;
         end, obj);
 
-    obj._e_event61 = obj.button45:addEventListener("onClick",
+    obj._e_event60 = obj.button44:addEventListener("onClick",
         function (_)
             self.DescCircunstancia3:show('bottom', self.labNome);
         end, obj);
 
-    obj._e_event62 = obj.button46:addEventListener("onClick",
+    obj._e_event61 = obj.button45:addEventListener("onClick",
         function (_)
             local mesaDoPersonagem = Firecast.getMesaDe(sheet);
             					local rolagem = Firecast.interpretarRolagem(sheet.CircXP_3); 
@@ -9322,12 +9301,12 @@ local function constructNew_frmDZ_Ficha1_svg()
             					if mesaDoPersonagem ~= nil then mesaDoPersonagem.chat:rolarDados(rolagem,"[§B][§K1][ Circunstancia ][§B][§K14] de "..sheet.Nick_Personagem); end;
         end, obj);
 
-    obj._e_event63 = obj.button47:addEventListener("onClick",
+    obj._e_event62 = obj.button46:addEventListener("onClick",
         function (_)
             self.DescCircunstancia4:show('bottom', self.labNome);
         end, obj);
 
-    obj._e_event64 = obj.button48:addEventListener("onClick",
+    obj._e_event63 = obj.button47:addEventListener("onClick",
         function (_)
             local mesaDoPersonagem = Firecast.getMesaDe(sheet);
             					local rolagem = Firecast.interpretarRolagem(sheet.CircXP_4); 
@@ -9335,12 +9314,12 @@ local function constructNew_frmDZ_Ficha1_svg()
             					if mesaDoPersonagem ~= nil then mesaDoPersonagem.chat:rolarDados(rolagem,"[§B][§K1][ Circunstancia ][§B][§K14] de"..sheet.Nick_Personagem); end;
         end, obj);
 
-    obj._e_event65 = obj.button49:addEventListener("onClick",
+    obj._e_event64 = obj.button48:addEventListener("onClick",
         function (_)
             self.DescCircunstancia5:show('bottom', self.labNome);
         end, obj);
 
-    obj._e_event66 = obj.button50:addEventListener("onClick",
+    obj._e_event65 = obj.button49:addEventListener("onClick",
         function (_)
             local mesaDoPersonagem = Firecast.getMesaDe(sheet);
             					local rolagem = Firecast.interpretarRolagem(sheet.CircXP_5); 
@@ -9348,12 +9327,12 @@ local function constructNew_frmDZ_Ficha1_svg()
             					if mesaDoPersonagem ~= nil then mesaDoPersonagem.chat:rolarDados(rolagem,"[§B][§K1][ Circunstancia ][§B][§K14] de "..sheet.Nick_Personagem); end;
         end, obj);
 
-    obj._e_event67 = obj.button51:addEventListener("onClick",
+    obj._e_event66 = obj.button50:addEventListener("onClick",
         function (_)
             self.DescCircunstancia6:show('bottom', self.labNome);
         end, obj);
 
-    obj._e_event68 = obj.button52:addEventListener("onClick",
+    obj._e_event67 = obj.button51:addEventListener("onClick",
         function (_)
             local mesaDoPersonagem = Firecast.getMesaDe(sheet);
             					local rolagem = Firecast.interpretarRolagem(sheet.CircXP_6); 
@@ -9361,12 +9340,12 @@ local function constructNew_frmDZ_Ficha1_svg()
             					if mesaDoPersonagem ~= nil then mesaDoPersonagem.chat:rolarDados(rolagem,"[§B][§K1][ Circunstancia ][§B][§K14] de "..sheet.Nick_Personagem); end;
         end, obj);
 
-    obj._e_event69 = obj.button53:addEventListener("onClick",
+    obj._e_event68 = obj.button52:addEventListener("onClick",
         function (_)
             self.DescCircunstancia7:show('bottom', self.labNome);
         end, obj);
 
-    obj._e_event70 = obj.button54:addEventListener("onClick",
+    obj._e_event69 = obj.button53:addEventListener("onClick",
         function (_)
             local mesaDoPersonagem = Firecast.getMesaDe(sheet);
             					local rolagem = Firecast.interpretarRolagem(sheet.CircXP_7); 
@@ -9374,12 +9353,12 @@ local function constructNew_frmDZ_Ficha1_svg()
             					if mesaDoPersonagem ~= nil then mesaDoPersonagem.chat:rolarDados(rolagem,"[§B][§K1][ Circunstancia ][§B][§K14] de "..sheet.Nick_Personagem); end;
         end, obj);
 
-    obj._e_event71 = obj.button55:addEventListener("onClick",
+    obj._e_event70 = obj.button54:addEventListener("onClick",
         function (_)
             self.DescCircunstancia8:show('bottom', self.labNome);
         end, obj);
 
-    obj._e_event72 = obj.button56:addEventListener("onClick",
+    obj._e_event71 = obj.button55:addEventListener("onClick",
         function (_)
             local mesaDoPersonagem = Firecast.getMesaDe(sheet);
             					local rolagem = Firecast.interpretarRolagem(sheet.CircXP_8); 
@@ -9387,12 +9366,12 @@ local function constructNew_frmDZ_Ficha1_svg()
             					if mesaDoPersonagem ~= nil then mesaDoPersonagem.chat:rolarDados(rolagem,"[§B][§K1][ Circunstancia ][§B][§K14] de "..sheet.Nick_Personagem); end;
         end, obj);
 
-    obj._e_event73 = obj.button57:addEventListener("onClick",
+    obj._e_event72 = obj.button56:addEventListener("onClick",
         function (_)
             self.DescCircunstancia9:show('bottom', self.labNome);
         end, obj);
 
-    obj._e_event74 = obj.button58:addEventListener("onClick",
+    obj._e_event73 = obj.button57:addEventListener("onClick",
         function (_)
             local mesaDoPersonagem = Firecast.getMesaDe(sheet);
             					local rolagem = Firecast.interpretarRolagem(sheet.CircXP_9); 
@@ -9400,12 +9379,12 @@ local function constructNew_frmDZ_Ficha1_svg()
             					if mesaDoPersonagem ~= nil then mesaDoPersonagem.chat:rolarDados(rolagem,"[§B][§K1][ Circunstancia ][§B][§K14] de "..sheet.Nick_Personagem); end;
         end, obj);
 
-    obj._e_event75 = obj.button59:addEventListener("onClick",
+    obj._e_event74 = obj.button58:addEventListener("onClick",
         function (_)
             self.DescCircunstancia10:show('bottom', self.labNome);
         end, obj);
 
-    obj._e_event76 = obj.button60:addEventListener("onClick",
+    obj._e_event75 = obj.button59:addEventListener("onClick",
         function (_)
             local mesaDoPersonagem = Firecast.getMesaDe(sheet);
             					local rolagem = Firecast.interpretarRolagem(sheet.CircXP_10); 
@@ -9413,102 +9392,102 @@ local function constructNew_frmDZ_Ficha1_svg()
             					if mesaDoPersonagem ~= nil then mesaDoPersonagem.chat:rolarDados(rolagem,"[§B][§K1][ Circunstancia ][§B][§K14] de "..sheet.Nick_Personagem); end;
         end, obj);
 
-    obj._e_event77 = obj.button61:addEventListener("onClick",
+    obj._e_event76 = obj.button60:addEventListener("onClick",
         function (_)
             self.DescVanDes1:show('bottom', self.labNome);
         end, obj);
 
-    obj._e_event78 = obj.button62:addEventListener("onClick",
+    obj._e_event77 = obj.button61:addEventListener("onClick",
         function (_)
             self.DescVanDes2:show('bottom', self.labNome);
         end, obj);
 
-    obj._e_event79 = obj.button63:addEventListener("onClick",
+    obj._e_event78 = obj.button62:addEventListener("onClick",
         function (_)
             self.DescVanDes3:show('bottom', self.labNome);
         end, obj);
 
-    obj._e_event80 = obj.button64:addEventListener("onClick",
+    obj._e_event79 = obj.button63:addEventListener("onClick",
         function (_)
             self.DescVanDes4:show('bottom', self.labNome);
         end, obj);
 
-    obj._e_event81 = obj.button65:addEventListener("onClick",
+    obj._e_event80 = obj.button64:addEventListener("onClick",
         function (_)
             self.DescVanDes5:show('bottom', self.labNome);
         end, obj);
 
-    obj._e_event82 = obj.button66:addEventListener("onClick",
+    obj._e_event81 = obj.button65:addEventListener("onClick",
         function (_)
             self.DescVanDes6:show('bottom', self.labNome);
         end, obj);
 
-    obj._e_event83 = obj.button67:addEventListener("onClick",
+    obj._e_event82 = obj.button66:addEventListener("onClick",
         function (_)
             self.DescVanDes7:show('bottom', self.labNome);
         end, obj);
 
-    obj._e_event84 = obj.button68:addEventListener("onClick",
+    obj._e_event83 = obj.button67:addEventListener("onClick",
         function (_)
             self.DescVanDes8:show('bottom', self.labNome);
         end, obj);
 
-    obj._e_event85 = obj.button69:addEventListener("onClick",
+    obj._e_event84 = obj.button68:addEventListener("onClick",
         function (_)
             self.DescVanDes9:show('bottom', self.labNome);
         end, obj);
 
-    obj._e_event86 = obj.dataLink8:addEventListener("onChange",
+    obj._e_event85 = obj.dataLink8:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             sheet.Exp_nUtil = (tonumber(sheet.XP_t) or 0) - (tonumber(sheet.XP_t_gasta) or 0);
         end, obj);
 
-    obj._e_event87 = obj.dataLink9:addEventListener("onChange",
+    obj._e_event86 = obj.dataLink9:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             sheet.XP_t_gasta = (tonumber(sheet.Satts) or 0) + (tonumber(sheet.Sper) or 0) + (tonumber(sheet.Scir) or 0) + (tonumber(sheet.XP_Gasto_Adicional) or 0) + (tonumber(sheet.Svan) or 0) + (tonumber(sheet.ExpMoralidadeG) or 0) + ((tonumber(sheet.Saude_Extra) or 0)*2);
         end, obj);
 
-    obj._e_event88 = obj.dataLink10:addEventListener("onChange",
+    obj._e_event87 = obj.dataLink10:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             sheet.ExpSaudeExtra = ((tonumber(sheet.Saude_Extra) or 0)*2);
         end, obj);
 
-    obj._e_event89 = obj.dataLink11:addEventListener("onChange",
+    obj._e_event88 = obj.dataLink11:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             sheet.XP_t = (tonumber(sheet.XPInicial) or 0) + (tonumber(sheet.XPS1) or 0) + (tonumber(sheet.XPS2) or 0) + (tonumber(sheet.XPS3) or 0) + (tonumber(sheet.XPS4) or 0) + (tonumber(sheet.XPS5) or 0) + (tonumber(sheet.XPS6) or 0) + (tonumber(sheet.XPS7) or 0) + (tonumber(sheet.XPS8) or 0) + (tonumber(sheet.XPS9) or 0) + (tonumber(sheet.XPS10) or 0) + (tonumber(sheet.ExpExtraGanha) or 0);
         end, obj);
 
-    obj._e_event90 = obj.button70:addEventListener("onClick",
+    obj._e_event89 = obj.button69:addEventListener("onClick",
         function (_)
             self.PopExp:show('bottom', self.labNome);
         end, obj);
 
-    obj._e_event91 = obj.dataLink12:addEventListener("onChange",
+    obj._e_event90 = obj.dataLink12:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             sheet.Sper = (tonumber(sheet.Peri01) or 0) + (tonumber(sheet.Peri02) or 0) + (tonumber(sheet.Peri03) or 0) + (tonumber(sheet.Peri04) or 0) + (tonumber(sheet.Peri05) or 0) + (tonumber(sheet.Peri06) or 0) + (tonumber(sheet.Peri07) or 0) + (tonumber(sheet.Peri08) or 0) + (tonumber(sheet.Peri09) or 0) + (tonumber(sheet.Peri10) or 0) + (tonumber(sheet.Peri11) or 0) + (tonumber(sheet.Peri12) or 0) + (tonumber(sheet.Peri13) or 0) + (tonumber(sheet.Peri14) or 0) + (tonumber(sheet.Peri15) or 0) + (tonumber(sheet.Peri16) or 0) + (tonumber(sheet.Peri17) or 0) + (tonumber(sheet.Peri18) or 0) + (tonumber(sheet.Peri19) or 0) + (tonumber(sheet.Peri20) or 0) + (tonumber(sheet.Peri21) or 0) + (tonumber(sheet.Peri22) or 0) + (tonumber(sheet.Peri23) or 0) + (tonumber(sheet.Peri24) or 0) + (tonumber(sheet.Peri25) or 0) + (tonumber(sheet.Peri26) or 0) + (tonumber(sheet.Peri27) or 0) + (tonumber(sheet.Peri28) or 0) + (tonumber(sheet.Peri29) or 0);
         end, obj);
 
-    obj._e_event92 = obj.dataLink13:addEventListener("onChange",
+    obj._e_event91 = obj.dataLink13:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             sheet.Scir = ((tonumber(sheet.CircXP_1) or 0) + (tonumber(sheet.CircXP_2) or 0) + (tonumber(sheet.CircXP_3) or 0) + (tonumber(sheet.CircXP_4) or 0) + (tonumber(sheet.CircXP_5) or 0) + (tonumber(sheet.CircXP_6) or 0) + (tonumber(sheet.CircXP_7) or 0) + (tonumber(sheet.CircXP_8) or 0) + (tonumber(sheet.CircXP_9) or 0) + (tonumber(sheet.CircXP_10) or 0))*2;
         end, obj);
 
-    obj._e_event93 = obj.dataLink14:addEventListener("onChange",
+    obj._e_event92 = obj.dataLink14:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             sheet.Svan = (tonumber(sheet.VeD_01) or 0) + (tonumber(sheet.VeD_02) or 0) +(tonumber(sheet.VeD_03) or 0) +(tonumber(sheet.VeD_04) or 0) +(tonumber(sheet.VeD_05) or 0) +(tonumber(sheet.VeD_06) or 0) +(tonumber(sheet.VeD_07) or 0) +(tonumber(sheet.VeD_08) or 0) +(tonumber(sheet.VeD_09) or 0);
         end, obj);
 
-    obj._e_event94 = obj.dataLink15:addEventListener("onChange",
+    obj._e_event93 = obj.dataLink15:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             sheet.Satts = ((tonumber(sheet.FOR) or 0) + (tonumber(sheet.DES) or 0) + (tonumber(sheet.PRE) or 0) + (tonumber(sheet.TAT) or 0) + (tonumber(sheet.PER) or 0) + (tonumber(sheet.INT) or 0) + (tonumber(sheet.DET) or 0) + (tonumber(sheet.SOR) or 0)) * 4 ;
         end, obj);
 
-    obj._e_event95 = obj.button71:addEventListener("onClick",
+    obj._e_event94 = obj.button70:addEventListener("onClick",
         function (_)
             self.rclAtaque:append(); 
         end, obj);
 
-    obj._e_event96 = obj.button72:addEventListener("onClick",
+    obj._e_event95 = obj.button71:addEventListener("onClick",
         function (_)
             local mesaDoPersonagem = Firecast.getMesaDe(sheet);
             								local rolagem = Firecast.interpretarRolagem(sheet.ARMADURA_TorsoA + sheet.FOR); 
@@ -9519,7 +9498,7 @@ local function constructNew_frmDZ_Ficha1_svg()
             								if mesaDoPersonagem ~= nil then mesaDoPersonagem.chat:rolarDados(rolagem,"[§B][§K10][ Atributo ] [§K14]Sorte[§K9] [§K14]+ [§K9][ Armadura ][§K14] " ..sheet.ARMADURA_nick.. " de " ..sheet.Nick_Personagem); end;
         end, obj);
 
-    obj._e_event97 = obj.button73:addEventListener("onClick",
+    obj._e_event96 = obj.button72:addEventListener("onClick",
         function (_)
             local mesaDoPersonagem = Firecast.getMesaDe(sheet);
             								local rolagem = Firecast.interpretarRolagem(sheet.ARMADURA_CabecaA + sheet.FOR); 
@@ -9530,7 +9509,7 @@ local function constructNew_frmDZ_Ficha1_svg()
             								if mesaDoPersonagem ~= nil then mesaDoPersonagem.chat:rolarDados(rolagem,"[§B][§K10][ Atributo ] [§K14]Sorte[§K9] [§K14]+ [§K9][ Armadura ][§K14] " ..sheet.ARMADURA_nick.. " de " ..sheet.Nick_Personagem); end;
         end, obj);
 
-    obj._e_event98 = obj.button74:addEventListener("onClick",
+    obj._e_event97 = obj.button73:addEventListener("onClick",
         function (_)
             local mesaDoPersonagem = Firecast.getMesaDe(sheet);
             								local rolagem = Firecast.interpretarRolagem(sheet.ARMADURA_OutroA + sheet.FOR); 
@@ -9541,45 +9520,45 @@ local function constructNew_frmDZ_Ficha1_svg()
             								if mesaDoPersonagem ~= nil then mesaDoPersonagem.chat:rolarDados(rolagem,"[§B][§K10][ Atributo ] [§K14]Sorte[§K9] [§K14]+ [§K9][ Armadura ][§K14] " ..sheet.ARMADURA_nick.. " de " ..sheet.Nick_Personagem); end;
         end, obj);
 
-    obj._e_event99 = obj.button75:addEventListener("onClick",
+    obj._e_event98 = obj.button74:addEventListener("onClick",
         function (_)
             self.PopInventario:show('bottom', self.labNome);
         end, obj);
 
-    obj._e_event100 = obj.button77:addEventListener("onClick",
+    obj._e_event99 = obj.button76:addEventListener("onClick",
         function (_)
             self.PopCar:show('bottom', self.labNome);
         end, obj);
 
-    obj._e_event101 = obj.button78:addEventListener("onClick",
+    obj._e_event100 = obj.button77:addEventListener("onClick",
         function (_)
             self.PopAnimal:show('bottom', self.labNome);
         end, obj);
 
-    obj._e_event102 = obj.button79:addEventListener("onClick",
+    obj._e_event101 = obj.button78:addEventListener("onClick",
         function (_)
             self.PopNPCfrente:show('bottom', self.labNome);
         end, obj);
 
-    obj._e_event103 = obj.button80:addEventListener("onClick",
+    obj._e_event102 = obj.button79:addEventListener("onClick",
         function (_)
             self.rclListaNPC:append();
         end, obj);
 
-    obj._e_event104 = obj.rclListaNPC:addEventListener("onSelect",
+    obj._e_event103 = obj.rclListaNPC:addEventListener("onSelect",
         function (_)
             local node = self.rclListaNPC.selectedNode; 
                                      self.boxDetalhesDoItem3.node = node;                       
                                       self.boxDetalhesDoItem3.visible = (node ~= nil);
         end, obj);
 
-    obj._e_event105 = obj.button81:addEventListener("onClick",
+    obj._e_event104 = obj.button80:addEventListener("onClick",
         function (_)
             self.Inventario.visible = true;
             			 self.FichaPrincipal.visible = false
         end, obj);
 
-    obj._e_event106 = obj.image75:addEventListener("onClick",
+    obj._e_event105 = obj.image75:addEventListener("onClick",
         function (_)
             if Firecast.getMesaDe(sheet).meuJogador.isMestre then
                                     local PontosDeBusca = (sheet.PontosDeBusca or 0) +1;
@@ -9591,7 +9570,7 @@ local function constructNew_frmDZ_Ficha1_svg()
                                      end;
         end, obj);
 
-    obj._e_event107 = obj.image75:addEventListener("onMenu",
+    obj._e_event106 = obj.image75:addEventListener("onMenu",
         function (_, x, y)
             if Firecast.getMesaDe(sheet).meuJogador.isMestre then
                                     local PontosDeBusca = (sheet.PontosDeBusca or 0) -1;
@@ -9603,7 +9582,7 @@ local function constructNew_frmDZ_Ficha1_svg()
                                      end;
         end, obj);
 
-    obj._e_event108 = obj.ItensComuns:addEventListener("onClick",
+    obj._e_event107 = obj.ItensComuns:addEventListener("onClick",
         function (_)
             local PontosDeBusca = (sheet.PontosDeBusca or 0) -1;
             					 if PontosDeBusca >= 0 then
@@ -9613,7 +9592,7 @@ local function constructNew_frmDZ_Ficha1_svg()
             					  end;
         end, obj);
 
-    obj._e_event109 = obj.label81:addEventListener("onClick",
+    obj._e_event108 = obj.label81:addEventListener("onClick",
         function (_)
             if Firecast.getMesaDe(sheet).meuJogador.isMestre then
             				   dialogs.inputQuery("Pontos", "Insira a quantidade de pontos:", "",
@@ -9626,7 +9605,7 @@ local function constructNew_frmDZ_Ficha1_svg()
             			   end
         end, obj);
 
-    obj._e_event110 = obj.image76:addEventListener("onClick",
+    obj._e_event109 = obj.image76:addEventListener("onClick",
         function (_)
             if rrpg.getMesaDe(sheet).meuJogador.isMestre then
             	dialogs.inputQuery("Carteira do jogador", "Colocar dinheiro para jogador:", "",
@@ -9636,7 +9615,7 @@ local function constructNew_frmDZ_Ficha1_svg()
             	end;
         end, obj);
 
-    obj._e_event111 = obj.dataLink16:addEventListener("onChange",
+    obj._e_event110 = obj.dataLink16:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             function format_thousand(v)
             local s = string.format("%d", math.floor(v))
@@ -9650,7 +9629,7 @@ local function constructNew_frmDZ_Ficha1_svg()
             self.labSoma3.text = '$' .. format_thousand(sheet.soma);
         end, obj);
 
-    obj._e_event112 = obj.nivelresetPlayer:addEventListener("onDblClick",
+    obj._e_event111 = obj.nivelresetPlayer:addEventListener("onDblClick",
         function (_)
             if Firecast.getMesaDe(sheet).meuJogador.isMestre then
                                         sheet.Nivel = 1
@@ -9660,7 +9639,7 @@ local function constructNew_frmDZ_Ficha1_svg()
                                         end;
         end, obj);
 
-    obj._e_event113 = obj.dataLink17:addEventListener("onChange",
+    obj._e_event112 = obj.dataLink17:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet.Nivel >= 1 then
             sheet.ItemNome = 'Arco'
@@ -10052,7 +10031,6 @@ local function constructNew_frmDZ_Ficha1_svg()
         end, obj);
 
     function obj:_releaseEvents()
-        __o_rrpgObjs.removeEventListenerById(self._e_event113);
         __o_rrpgObjs.removeEventListenerById(self._e_event112);
         __o_rrpgObjs.removeEventListenerById(self._e_event111);
         __o_rrpgObjs.removeEventListenerById(self._e_event110);
@@ -10263,7 +10241,6 @@ local function constructNew_frmDZ_Ficha1_svg()
         if self.edit16 ~= nil then self.edit16:destroy(); self.edit16 = nil; end;
         if self.label47 ~= nil then self.label47:destroy(); self.label47 = nil; end;
         if self.edit205 ~= nil then self.edit205:destroy(); self.edit205 = nil; end;
-        if self.edit228 ~= nil then self.edit228:destroy(); self.edit228 = nil; end;
         if self.button26 ~= nil then self.button26:destroy(); self.button26 = nil; end;
         if self.label48 ~= nil then self.label48:destroy(); self.label48 = nil; end;
         if self.edit116 ~= nil then self.edit116:destroy(); self.edit116 = nil; end;
@@ -10479,9 +10456,9 @@ local function constructNew_frmDZ_Ficha1_svg()
         if self.layout97 ~= nil then self.layout97:destroy(); self.layout97 = nil; end;
         if self.button6 ~= nil then self.button6:destroy(); self.button6 = nil; end;
         if self.layout130 ~= nil then self.layout130:destroy(); self.layout130 = nil; end;
-        if self.button78 ~= nil then self.button78:destroy(); self.button78 = nil; end;
-        if self.button5 ~= nil then self.button5:destroy(); self.button5 = nil; end;
         if self.edit166 ~= nil then self.edit166:destroy(); self.edit166 = nil; end;
+        if self.button5 ~= nil then self.button5:destroy(); self.button5 = nil; end;
+        if self.button78 ~= nil then self.button78:destroy(); self.button78 = nil; end;
         if self.edit37 ~= nil then self.edit37:destroy(); self.edit37 = nil; end;
         if self.label81 ~= nil then self.label81:destroy(); self.label81 = nil; end;
         if self.image76 ~= nil then self.image76:destroy(); self.image76 = nil; end;
@@ -10583,8 +10560,8 @@ local function constructNew_frmDZ_Ficha1_svg()
         if self.button56 ~= nil then self.button56:destroy(); self.button56 = nil; end;
         if self.button2 ~= nil then self.button2:destroy(); self.button2 = nil; end;
         if self.layout38 ~= nil then self.layout38:destroy(); self.layout38 = nil; end;
-        if self.button70 ~= nil then self.button70:destroy(); self.button70 = nil; end;
         if self.label22 ~= nil then self.label22:destroy(); self.label22 = nil; end;
+        if self.button70 ~= nil then self.button70:destroy(); self.button70 = nil; end;
         if self.layout13 ~= nil then self.layout13:destroy(); self.layout13 = nil; end;
         if self.edit192 ~= nil then self.edit192:destroy(); self.edit192 = nil; end;
         if self.label13 ~= nil then self.label13:destroy(); self.label13 = nil; end;
@@ -10755,11 +10732,11 @@ local function constructNew_frmDZ_Ficha1_svg()
         if self.layout57 ~= nil then self.layout57:destroy(); self.layout57 = nil; end;
         if self.layout82 ~= nil then self.layout82:destroy(); self.layout82 = nil; end;
         if self.edit108 ~= nil then self.edit108:destroy(); self.edit108 = nil; end;
-        if self.label55 ~= nil then self.label55:destroy(); self.label55 = nil; end;
+        if self.descontinuado ~= nil then self.descontinuado:destroy(); self.descontinuado = nil; end;
         if self.edit12 ~= nil then self.edit12:destroy(); self.edit12 = nil; end;
         if self.edit80 ~= nil then self.edit80:destroy(); self.edit80 = nil; end;
         if self.edit95 ~= nil then self.edit95:destroy(); self.edit95 = nil; end;
-        if self.label66 ~= nil then self.label66:destroy(); self.label66 = nil; end;
+        if self.label55 ~= nil then self.label55:destroy(); self.label55 = nil; end;
         if self.edit35 ~= nil then self.edit35:destroy(); self.edit35 = nil; end;
         if self.layout65 ~= nil then self.layout65:destroy(); self.layout65 = nil; end;
         if self.label26 ~= nil then self.label26:destroy(); self.label26 = nil; end;
@@ -10789,9 +10766,9 @@ local function constructNew_frmDZ_Ficha1_svg()
         if self.layout77 ~= nil then self.layout77:destroy(); self.layout77 = nil; end;
         if self.label64 ~= nil then self.label64:destroy(); self.label64 = nil; end;
         if self.label65 ~= nil then self.label65:destroy(); self.label65 = nil; end;
+        if self.label66 ~= nil then self.label66:destroy(); self.label66 = nil; end;
         if self.edit147 ~= nil then self.edit147:destroy(); self.edit147 = nil; end;
         if self.edit171 ~= nil then self.edit171:destroy(); self.edit171 = nil; end;
-        if self.edit186 ~= nil then self.edit186:destroy(); self.edit186 = nil; end;
         if self.layout46 ~= nil then self.layout46:destroy(); self.layout46 = nil; end;
         if self.layout56 ~= nil then self.layout56:destroy(); self.layout56 = nil; end;
         if self.edit44 ~= nil then self.edit44:destroy(); self.edit44 = nil; end;
@@ -10804,9 +10781,10 @@ local function constructNew_frmDZ_Ficha1_svg()
         if self.button34 ~= nil then self.button34:destroy(); self.button34 = nil; end;
         if self.layout66 ~= nil then self.layout66:destroy(); self.layout66 = nil; end;
         if self.dataLink14 ~= nil then self.dataLink14:destroy(); self.dataLink14 = nil; end;
-        if self.layout150 ~= nil then self.layout150:destroy(); self.layout150 = nil; end;
+        if self.edit186 ~= nil then self.edit186:destroy(); self.edit186 = nil; end;
         if self.image39 ~= nil then self.image39:destroy(); self.image39 = nil; end;
         if self.PopExp ~= nil then self.PopExp:destroy(); self.PopExp = nil; end;
+        if self.layout150 ~= nil then self.layout150:destroy(); self.layout150 = nil; end;
         if self.label74 ~= nil then self.label74:destroy(); self.label74 = nil; end;
         if self.image24 ~= nil then self.image24:destroy(); self.image24 = nil; end;
         if self.image66 ~= nil then self.image66:destroy(); self.image66 = nil; end;
@@ -10878,7 +10856,6 @@ local function constructNew_frmDZ_Ficha1_svg()
         if self.textEditor14 ~= nil then self.textEditor14:destroy(); self.textEditor14 = nil; end;
         if self.Conducao_Equipamentos ~= nil then self.Conducao_Equipamentos:destroy(); self.Conducao_Equipamentos = nil; end;
         if self.layout121 ~= nil then self.layout121:destroy(); self.layout121 = nil; end;
-        if self.button81 ~= nil then self.button81:destroy(); self.button81 = nil; end;
         if self.DescVanDes8 ~= nil then self.DescVanDes8:destroy(); self.DescVanDes8 = nil; end;
         if self.layout84 ~= nil then self.layout84:destroy(); self.layout84 = nil; end;
         if self.layout40 ~= nil then self.layout40:destroy(); self.layout40 = nil; end;

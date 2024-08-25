@@ -286,7 +286,7 @@
                 </layout>
 		## ROLL ##
 			
-                <button left="553" top="268" width="14" height="14" text="R" hint="Desc... ">
+                <button left="553" top="268" width="14" height="14" text="R" hint="Clique para rolar">
                     <event name="onClick">
 					local mesaDoPersonagem = Firecast.getMesaDe(sheet);
 					local rolagem = Firecast.interpretarRolagem(sheet.Peri01); 
@@ -350,14 +350,14 @@
 				</event>
                 </button>
                 <image width="17" height="17" left="552" top="456" style="proportional" center="true" src="images/Dado.jpg"/>
-                <button left="553" top="487" width="14" height="14" text="R" hint="Desc... ">
+                <!-- <button left="553" top="487" width="14" height="14" text="R" hint="Desc... ">
                     <event name="onClick">
 					local mesaDoPersonagem = Firecast.getMesaDe(sheet);			
 					local rolagem = Firecast.interpretarRolagem(sheet.Peri08); 
 					if not rolagem.possuiAlgumDado then rolagem = Firecast.interpretarRolagem("1d10"):concatenar(rolagem); end; 
 					if mesaDoPersonagem ~= nil then mesaDoPersonagem.chat:rolarDados(rolagem,"[§B][§K8][ Pericia ] [§K14]Esquiva de "..sheet.Nick_Personagem); end;										
 				</event>
-                </button>
+                </button> -->
                 <image width="17" height="17" left="552" top="487" style="proportional" center="true" src="images/Dado.jpg"/>
                 <button left="553" top="518" width="14" height="14" text="R" hint="Desc... ">
                     <event name="onClick">
@@ -572,8 +572,8 @@
                 <layout left="473" top="449" width="74" height="26">
                     <edit field="Peri07" class="NUMEROS" width="74" height="27" />
                 </layout>
-                <layout left="474" top="480" width="74" height="26">
-                    <edit field="Peri08" class="NUMEROS" width="74" height="27" />
+                <layout left="469" top="483" width="74" height="26">
+                    <label name="descontinuado" width="74" height="27" text="Descontinuado" />
                 </layout>
                 <layout left="472" top="511" width="74" height="26">
                     <edit field="Peri09" class="NUMEROS" width="74" height="27" />

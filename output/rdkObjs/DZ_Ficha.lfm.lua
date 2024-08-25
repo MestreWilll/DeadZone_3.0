@@ -17265,7 +17265,7 @@ local function constructNew_frmDZ_Ficha()
     obj.label481:setTop(480);
     obj.label481:setWidth(210);
     obj.label481:setHeight(20);
-    obj.label481:setText("Sua Versão: 3.0");
+    obj.label481:setText("Sua Versão: 3.0.1");
     obj.label481:setHorzTextAlign("center");
     obj.label481:setName("label481");
 

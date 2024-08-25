@@ -137,7 +137,7 @@ local function constructNew_frmFichaCreditos()
     obj.label6:setTop(480);
     obj.label6:setWidth(210);
     obj.label6:setHeight(20);
-    obj.label6:setText("Sua Versão: 3.0");
+    obj.label6:setText("Sua Versão: 3.0.1");
     obj.label6:setHorzTextAlign("center");
     obj.label6:setName("label6");
 

@@ -358,7 +358,9 @@
 					if mesaDoPersonagem ~= nil then mesaDoPersonagem.chat:rolarDados(rolagem,"[§B][§K8][ Pericia ] [§K14]Esquiva de "..sheet.Nick_Personagem); end;										
 				</event>
                 </button> -->
-                <image width="17" height="17" left="552" top="487" style="proportional" center="true" src="images/Dado.jpg"/>
+                # Descontinuado
+                # Apenas tirei a visibilidade...
+                <image width="17" height="17" left="552" top="487" style="proportional" center="true" visible="false" src="images/Dado.jpg"/>
                 <button left="553" top="518" width="14" height="14" text="R" hint="Desc... ">
                     <event name="onClick">
 					local mesaDoPersonagem = Firecast.getMesaDe(sheet);				
@@ -572,9 +574,7 @@
                 <layout left="473" top="449" width="74" height="26">
                     <edit field="Peri07" class="NUMEROS" width="74" height="27" />
                 </layout>
-                <layout left="469" top="483" width="74" height="26">
-                    <label name="descontinuado" width="74" height="27" text="Descontinuado" />
-                </layout>
+  # Descontinuado... ESQUIVA
                 <layout left="472" top="511" width="74" height="26">
                     <edit field="Peri09" class="NUMEROS" width="74" height="27" />
                 </layout>
@@ -707,7 +707,7 @@
 					if mesaDoPersonagem ~= nil then mesaDoPersonagem.chat:rolarDados(rolagem,"[§B][§K1][ Circunstancia ][§B][§K14] de "..sheet.Nick_Personagem); end;										
 				</event>
                 </button>
-                <image width="17" height="17" left="886" top="306" style="proportional" center="true" src="images/Dado.jpg"/>
+                <image width="17" height="17" left="886" top="306" style="proportional" visible="true" center="true" src="images/Dado.jpg"/>
 			
 			### 03/10 ###
             

@@ -1,6 +1,12 @@
 # Ficha Dead Zone
 Ficha criada para o sistema Dead Zone. 
 ----------------------------------------------
+25 Agosto de 2024
+Versão 3.0.1
+- Descontinuação do atributo "esquiva"
+- Modificações na Pag1
+- Preparado para novas implementações
+  
 29 Março de 2023
 Versão 3.0
 - Implementações de mecânica 
